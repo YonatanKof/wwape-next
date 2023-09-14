@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="400" viewBox="0 0 640 400">
+  <style>
+    .pink {
+      stroke: #A200C2;
+    }
+
+    .anim-stroke-long {
+      stroke-dasharray: 1408 1408;
+      stroke-dashoffset: 1407;
+      animation: stroke-draw 6000ms cubic-bezier(0.35, 0, 0.75, 1) alternate infinite;
+    }
+
+    .anim-stroke-short {
+      stroke-dasharray: 616 616;
+      stroke-dashoffset: 615;
+      animation: stroke-draw 2000ms cubic-bezier(0.75, 0, 0.25, 1) alternate infinite;
+    }
+
+    @keyframes stroke-draw {
+      100% {
+        stroke-dashoffset: 0;
+      }
+    }
+  </style>
+
+  <defs>
+    <linearGradient id="linearGradient-1" x1="100%" x2="0%" y1="69.531%" y2="30.469%">
+      <stop offset="0%" stop-color="#eeee87" />
+      <stop offset="90%" stop-color="#eeee87" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <g id="shortcuts-for-macos" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+
+    <rect width="640" height="400" fill="#FBFBE0" />
+    <rect id="grad" fill="url(#linearGradient-1)" x="0" y="0" width="640" height="400"></rect>
+    <path id="Maze" fill="#1A1A1A"
+      d="M106,129 L106,217 L150,217 L150,229 L106,229 L106,305 L270,305 L270,261 L282,261 L282,305 L358,305 L358,273 L314,273 L314,217 L326,217 L326,261 L402,261 L402,229 L358,229 L358,185 L314,185 L314,141 L270,141 L270,129 L326,129 L326,173 L370,173 L370,217 L446,217 L446,141 L414,141 L414,185 L402,185 L402,129 L502,129 L502,141 L458,141 L458,229 L414,229 L414,273 L370,273 L370,305 L502,305 L502,317 L94,317 L94,129 L106,129 Z M546,317 L534,317 L534,273 L446,273 L446,261 L534,261 L534,185 L502,185 L502,229 L490,229 L490,173 L534,173 L534,97 L370,97 L370,141 L358,141 L358,97 L238,97 L238,173 L282,173 L282,229 L238,229 L238,273 L138,273 L138,261 L226,261 L226,217 L270,217 L270,185 L194,185 L194,229 L182,229 L182,185 L138,185 L138,129 L182,129 L182,141 L150,141 L150,173 L226,173 L226,97 L94,97 L94,85 L546,85 L546,317 Z"
+      opacity=".45" />
+    <polyline class="anim-stroke-long pink" id="line-long" leanth="1408" stroke-linecap="round" stroke-width="12"
+      points="100 113 122 113 122 201 166 201 166 245 122 245 122 289 254 289 254 245 298 245 298 157 254 157 254 113 342 113 342 157 386 157 386 113 518 113 518 157 474 157 474 245 430 245 430 289 518 289 518 311"
+      opacity=".5" />
+    <polyline class="anim-stroke-short pink" id="line-short" leanth="616" stroke-linecap="round" stroke-width="12"
+      points="78 135 78 333 496 333" opacity=".5" />
+    <g id="letter-A" class="pink" stroke-width="6" transform="translate(69.374 99.737)">
+      <path
+        d="M0,22 C7.36695529,6.32309026 12.1503367,-0.975450193 14.3501443,0.104378631 C16.5499519,1.18420746 16.5499519,8.48274791 14.3501443,22" />
+      <path d="M14.7244635,12.2487684 C10.5780321,12.2487684 2.93179395,13.8276148 0.180877299,14.6938315" />
+    </g>
+    <g id="letter-B" class="pink" stroke-width="5.665" transform="translate(509 322.081)">
+      <path stroke-linejoin="round"
+        d="M6.63250996,0.585696721 C11.8696764,-2.20717473 25,5.54748564 7.30249742,12.0220537 C22.1298849,11.9628411 13.5639399,30.6556716 1.40970368,21.3072159" />
+      <path d="M7.83733615,1.34478036 C4.41187371,14.8872935 1.79942833,22.0126841 5.68434189e-14,22.720952" />
+    </g>
+  </g>
+</svg>
