@@ -1,0 +1,51 @@
+// Vars
+:root {
+	--header-height: var(--space-4xl);
+	--border-radius: var(--space-3xs);
+
+	--display-width-normal: 800px;
+	--display-width-narrow: 544px;
+
+	--color-sys-main: hsl(180, 25%, 15%);
+	--color-sys-dim: hsla(0, 0%, 10%, 0.5);
+	--color-sys-dis: hsla(0, 0%, 10%, 0.1);
+	--color-sys-invert: antiquewhite;
+
+	--bg-primary: var(--color-sys-invert);
+	--content-space: 1rem;
+	--space-md: 1rem;
+	--bg-pre: none;
+
+	--shadow-md: 
+		0px 0.15rem 0.2rem 0 var(--color-sys-dis), 
+		0px 0.3rem 0.4rem 0 var(--color-sys-dis),
+		0px 0.6rem 0.8rem 0 var(--color-sys-dis), 
+		0px 1.2rem 1.6rem 0 var(--color-sys-dis);
+	--shadow-lg: 
+		0.05rem 0.2rem 0.2rem 0 var(--color-sys-dis), 
+		0.1rem 0.4rem 0.4rem 0 var(--color-sys-dis),
+		0.2rem 0.8rem 0.8rem 0 var(--color-sys-dis), 
+		0.4rem 1.6rem 1.6rem 0 var(--color-sys-dis);
+	--font-wight--bolder: bolder;
+	--font-size-2xl: 2em;
+}
+
+body {
+	background-color: var(--color-sys-invert);
+}
+
+.color-me-red {
+	color: red;
+}
+img {
+	width: 100%;
+	height: auto;
+	border-radius: var(--border-radius);
+}
+
+img ~ em {
+	color: var(--color-sys-dim);
+	font-size: var(--step--1);
+	padding-inline-start: var(--space-3xs);
+	border-inline-start: var(--color-sys-dim) solid var(--space-4xs);
+}

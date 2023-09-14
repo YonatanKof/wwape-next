@@ -1,0 +1,126 @@
+@font-face {
+	font-family: 'RecMonoCasual';
+	src: url('~/assets/fonts/Recursive_VF_1.085--subset-GF_latin_basic.woff2');
+}
+@font-face {
+	font-family: 'CaveatBold';
+	src: url('~/assets/fonts/Caveat-Bold.ttf');
+}
+:root {
+	--font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+		'Segoe UI Emoji', 'Segoe UI Symbol';
+	--font-mono: RecMonoCasual;
+	--font-hand: CaveatBold;
+}
+html,
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+input,
+textarea {
+	font-family: var(--font-body);
+	font-size: var(--step-0);
+	line-height: 1.5;
+	color: var(--color-sys-main);
+	margin-block-end: var(--space-2xs);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 500;
+}
+i,
+em {
+	font-style: italic;
+}
+strong {
+	font-weight: bold;
+}
+h1 {
+	font-family: var(--font-hand);
+	font-size: var(--step-6);
+	margin-block-end: var(--space-s);
+}
+h2 {
+	font-size: var(--step-4);
+}
+h3 {
+	font-size: var(--step-3);
+}
+h4 {
+	font-size: var(--step-2);
+}
+h5 {
+	font-size: var(--step-1);
+}
+h6 {
+	font-size: var(--step-0);
+}
+a {
+	font-family: var(--font-mono);
+	font-weight: 444;
+	transition: font-weight 0.15s ease-in-out;
+	&:hover {
+		font-weight: 777;
+	}
+}
+:is(h1, h2, h3, h4, h5, h6, code) a {
+	color: inherit;
+	text-decoration: inherit;
+	font-family: inherit;
+	font-weight: inherit;
+	&:before {
+		color: var(--color-sys-dim);
+		content: '#';
+		display: inline-block;
+		margin-left: -0.8em;
+		text-decoration: none;
+		visibility: hidden;
+		width: 0.8em;
+	}
+	&:hover::before {
+		visibility: visible;
+	}
+	&:hover {
+		font-weight: unset;
+		text-decoration: underline;
+	}
+}
+code {
+	background-color: var(--color-sys-dis);
+	padding: var(--space-4xs) var(--space-3xs);
+	border-radius: var(--border-radius);
+	margin-block-end: var(--space-s);
+	font-size: 80%;
+}
+pre {
+	background-color: var(--color-sys-dis);
+	border-radius: var(--border-radius);
+	padding: var(--space-s);
+	margin-block-end: var(--space-xs);
+}
+
+code,
+pre {
+	font-family: monospace;
+	word-spacing: normal;
+	word-break: normal;
+	white-space: break-spaces;
+	word-wrap: anywhere;
+}
+
+pre code {
+	background-color: unset;
+	padding: unset;
+	border-radius: unset;
+}

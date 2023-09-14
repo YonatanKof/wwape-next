@@ -1,0 +1,18 @@
+@mixin flex-center() {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	// background-color: red;
+}
+@mixin display-width($width: var(--display-width-normal)) {
+	// width: 100%;
+	// width: -moz-available;
+	max-width: $width;
+	margin: 0 auto;
+	padding-inline: var(--space-m);
+}
+
+@mixin linear-gradient($deg, $clr, $int, $end) {
+    background: linear-gradient($deg, rgba($clr, $int) 0%, rgba($clr, 0) $end);
+}
