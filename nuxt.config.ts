@@ -30,7 +30,6 @@ export default defineNuxtConfig({
 		// Private keys are only available on the server
 		// Public keys that are exposed to the client
 		public: {
-			apiSecret: process.env.NUXT_OMDBAPI_KEY,
 			siteOwnerName: 'Yonatan Ben Knaan',
 			missingImg: '/missing.svg',
 		},
