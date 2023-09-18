@@ -1,15 +1,15 @@
 ---
-title: Children of God
-author_name: Yonatan Ben Knaan
-urlname: allah-child
-date: 2007-10-03
-updated: 2013-05-13
+title: 'Children of God'
+author_name: 'Yonatan Ben Knaan'
+urlname: 'allah-child'
+date: '2007-10-03'
+updated: '2013-05-13'
 published: true
 tags: ['Creative']
-cover_image: designs/children_of_god/COG.jpg
-social_image: children_of_god/social-cover-COG.jpg
-cover_caption: Arabic lettering saying "We are all children of god"
-description: We are all children of god
+cover_image: '/designs/children_of_god/COG.jpg'
+social_image: '/designs/children_of_god/social-cover-COG.jpg'
+cover_caption: 'Arabic lettering saying "We are all children of god"'
+description: 'We are all children of god'
 canonical_url: false
 series: false
 ---

@@ -1,17 +1,15 @@
 ---
-title: The jagged edges
-author_name: Yonatan Ben Knaan
-urlname: all-the-love
-date: 2017-01-01
-updated: 2021-09-24
+title: 'The jagged edges'
+author_name: 'Yonatan Ben Knaan'
+urlname: 'all-the-love'
+date: '2017-01-01'
+updated: '2021-09-24'
 published: true
 tags: ['Creative']
-cover_image: designs/all_the_love/all-the-love.jpg
-social_image: designs/all-the-love-social.jpg
-cover_caption: Two line works loosely depicting a pistol with the text - All the love in the world
-description: People love people not guns
-canonical_url: false
-series: false
+cover_image: 'designs/all_the_love/all-the-love.jpg'
+social_image: 'designs/all_the_love/all-the-love-social.jpg'
+cover_caption: 'Two line works loosely depicting a pistol with the text - All the love in the world'
+description: 'People love people not guns'
 ---
 
 #### *All the love in the world* by NIN

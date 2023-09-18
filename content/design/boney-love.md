@@ -1,15 +1,15 @@
 ---
-title: Hold My Bones
-author_name: Yonatan Ben Knaan
-urlname: love-bone
-date: 2016-11-24
-updated: 2016-11-24
+title: 'Hold My Bones'
+author_name: 'Yonatan Ben Knaan'
+urlname: 'love-bone'
+date: '2016-11-24'
+updated: '2016-11-24'
 published: true
 tags: ['Creative']
-cover_image: designs/boney-love/myBones-myLove-dark.jpg
-social_image: boney-love/myBones-myLove-social-cover.jpg
-cover_caption: My love lettering with 2 bones
-description: From Bat Yam to Infinity
+cover_image: 'designs/boney-love/myBones-myLove-dark.jpg'
+social_image: 'boney-love/myBones-myLove-social-cover.jpg'
+cover_caption: 'My love lettering with 2 bones'
+description: 'From Bat Yam to Infinity'
 canonical_url: false
 series: false
 ---
