@@ -1,6 +1,16 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
 	modules: ['@nuxt/content'],
+	content: {
+		highlight: {
+			theme: 'github-light',
+		},
+		markdown: {
+			anchorLinks: {
+				depth: 6,
+			},
+		},
+	},
 	devtools: { enabled: true },
 	css: ['~/assets/styles/style.scss'],
 	vite: {
@@ -26,7 +36,7 @@ export default defineNuxtConfig({
 			mode: 'out-in', // default
 		},
 	},
-  runtimeConfig: {
+	runtimeConfig: {
 		// Private keys are only available on the server
 		// Public keys that are exposed to the client
 		public: {
