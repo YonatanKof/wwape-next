@@ -1,16 +1,13 @@
 <script setup>
-// import { useDateFormat } from '@vueuse/core';
-
-// const formatted = (date) => {
-// 	return useDateFormat(date, 'YYYY-MM-DD');
-// };
-
-defineProps({
-	navigation: {
+const props = defineProps({
+	designData: {
 		type: Array,
-		default: () => [],
+		required: true,
 	},
-	// When it comes to layout you should choose either this one ↓
+	message: {
+		type: String,
+		default: 'There are no designs right now, but stay tuned for newer releases in the future.',
+	},
 	hasColumns: {
 		type: Boolean,
 		default: false,
@@ -21,23 +18,27 @@ defineProps({
 		default: false,
 	},
 });
+// const { $formatDate } = useNuxtApp();
 </script>
 
 <template>
-	<section :class="{ columns: hasColumns, flex: hasFlex }">
-		<div v-for="(item, index) in navigation" :key="index">
-			<NuxtLink :to="item._path" style="text-decoration: none">
-				<img :src="item.cover_image" alt="" />
-				<h3>{{ item.title }}</h3>
-				<p style="font-weight: normal" v-if="item.description">{{ item.description }}</p>
-				<p style="font-weight: normal" v-if="item.date">{{ item.date }}</p>
+	<main :class="{ columns: hasColumns, flex: hasFlex }">
+		<div v-for="designItem in designData" :key="designItem._path">
+			<NuxtLink :to="designItem._path + '/'">
+				<h2>{{ designItem.title }}</h2>
+				<p>{{ designItem.date }}</p>
+				<img :src="designItem.cover_image" alt="" />
+				<img :src="designItem.social_image" alt="" />
 			</NuxtLink>
 		</div>
-	</section>
+	</main>
+	<p v-if="designData.length == 0">
+		{{ message }}
+	</p>
 </template>
 
 <style scoped>
-section {
+main {
 	gap: var(--space-s);
 }
 .columns {
