@@ -9,6 +9,10 @@ export default defineNuxtConfig({
 			anchorLinks: {
 				depth: 6,
 			},
+			externalLinks: {      
+				target: '_self' // désactive target="_blank"      
+				rel: false // désactive rel="nofollow noopener"   
+			 },
 		},
 	},
 	devtools: { enabled: true },
