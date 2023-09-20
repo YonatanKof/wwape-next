@@ -4,12 +4,12 @@ author_name: 'Yonatan Ben Knaan'
 urlname: 'bvm-nera'
 date: '2018-07-18'
 updated: ''
-published: true
-tags: ['Creative']
 cover_image: 'designs/beata_vergine_maria_black/BVM-her-hands-and-man.jpg'
 social_image: 'beata_vergine_maria_black/social-cover-BVM-her-hands-and-man.jpg'
 cover_caption: 'The hands of BVM holding the father'
 description: 'Sweet Mary, black fragments made the world'
+tags: ['Creative']
+published: true
 canonical_url: false
 series: false
 ---

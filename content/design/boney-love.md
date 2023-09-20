@@ -4,16 +4,15 @@ author_name: 'Yonatan Ben Knaan'
 urlname: 'love-bone'
 date: '2016-11-24'
 updated: '2016-11-24'
-published: true
-tags: ['Creative']
 cover_image: 'designs/boney-love/myBones-myLove-dark.jpg'
 social_image: 'boney-love/myBones-myLove-social-cover.jpg'
 cover_caption: 'My love lettering with 2 bones'
 description: 'From Bat Yam to Infinity'
+tags: ['Creative']
+published: true
 canonical_url: false
 series: false
 ---
-
 
 Tribute artwork for [_Coastline Paradox_](https://hilaruach.bandcamp.com/track/--9), a song by _Hila Ruach_
 
@@ -21,6 +20,9 @@ Tribute artwork for [_Coastline Paradox_](https://hilaruach.bandcamp.com/track/-
 
 ![My love lettering with 2 bones](/designs/boney-love/myBones-myLove-red.jpg)
 *Red Version*
+
+![My love lettering with 2 bones](/designs/boney-love/myBones-myLove-raw.jpg)
+*Raw Version*
 
 ![My love lettering with 2 bones](/designs/boney-love/myBones-myLove-dark.jpg)
 *Dark Version*

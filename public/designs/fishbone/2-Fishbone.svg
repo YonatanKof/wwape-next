@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1280px" height="1280px" viewBox="0 0 1280 1280" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>16185DE5-F373-4F11-875B-262082D9EE78@1x</title>
+    <defs>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="50%" id="radialGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="52.7426722%"></stop>
+            <stop stop-color="#FFBF00" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2---Fishbone">
+            <rect fill="#FFF2CC" x="0" y="0" width="1280" height="1280"></rect>
+            <circle id="Oval" fill="url(#radialGradient-1)" opacity="0.5" style="mix-blend-mode: multiply;" cx="0" cy="1280" r="1818"></circle>
+            <g id="Group-2" transform="translate(472.000000, 184.000000)">
+                <g id="Group-Copy-2" transform="translate(96.000000, 0.000000)">
+                    <polygon id="Rectangle-Copy-4" fill="#595959" points="144 144 240 96 96 96 -2.84217094e-14 144"></polygon>
+                    <polygon id="Rectangle-Copy-5" fill="#9B9B9B" points="0 48 96 9.99200722e-15 96 96 0 144"></polygon>
+                    <rect id="Rectangle-Copy-3" fill="#DFDFDF" x="96" y="0" width="144" height="96"></rect>
+                </g>
+                <g id="Group-2-Copy" transform="translate(0.000000, 96.000000)">
+                    <rect id="Rectangle" fill="#DFDFDF" x="96" y="0" width="144" height="96"></rect>
+                    <polygon id="Rectangle-Copy" fill="#FFFFFF" points="0 48 96 9.99200722e-15 96 96 -6.82121026e-13 144"></polygon>
+                    <polygon id="Rectangle-Copy-2" fill="#595959" points="144 144 240 96 96 96 0 144"></polygon>
+                </g>
+                <g id="Group" transform="translate(96.000000, 192.000000)">
+                    <polygon id="Rectangle-Copy-4" fill="#595959" points="144 144 240 96 96 96 -2.84217094e-14 144"></polygon>
+                    <polygon id="Rectangle-Copy-5" fill="#9B9B9B" points="0 48 96 9.99200722e-15 96 96 0 144"></polygon>
+                    <rect id="Rectangle-Copy-3" fill="#DFDFDF" x="96" y="0" width="144" height="96"></rect>
+                </g>
+                <g id="Group-2-Copy" transform="translate(0.000000, 288.000000)">
+                    <rect id="Rectangle" fill="#DFDFDF" x="96" y="0" width="144" height="96"></rect>
+                    <polygon id="Rectangle-Copy" fill="#FFFFFF" points="0 48 96 9.99200722e-15 96 96 -6.82121026e-13 144"></polygon>
+                    <polygon id="Rectangle-Copy-2" fill="#595959" points="144 144 240 96 96 96 0 144"></polygon>
+                </g>
+                <g id="Group" transform="translate(96.000000, 384.000000)">
+                    <polygon id="Rectangle-Copy-4" fill="#595959" points="144 144 240 96 96 96 -2.84217094e-14 144"></polygon>
+                    <polygon id="Rectangle-Copy-5" fill="#9B9B9B" points="0 48 96 9.99200722e-15 96 96 0 144"></polygon>
+                    <rect id="Rectangle-Copy-3" fill="#DFDFDF" x="96" y="0" width="144" height="96"></rect>
+                </g>
+                <g id="Group-2-Copy" transform="translate(0.000000, 480.000000)">
+                    <rect id="Rectangle" fill="#DFDFDF" x="96" y="0" width="144" height="96"></rect>
+                    <polygon id="Rectangle-Copy" fill="#FFFFFF" points="0 48 96 9.99200722e-15 96 96 -6.82121026e-13 144"></polygon>
+                    <polygon id="Rectangle-Copy-2" fill="#595959" points="144 144 240 96 96 96 0 144"></polygon>
+                </g>
+                <g id="Group" transform="translate(96.000000, 576.000000)">
+                    <polygon id="Rectangle-Copy-4" fill="#595959" points="144 144 240 96 96 96 -2.84217094e-14 144"></polygon>
+                    <polygon id="Rectangle-Copy-5" fill="#9B9B9B" points="0 48 96 9.99200722e-15 96 96 0 144"></polygon>
+                    <rect id="Rectangle-Copy-3" fill="#DFDFDF" x="96" y="0" width="144" height="96"></rect>
+                </g>
+                <g id="Group-2-Copy" transform="translate(0.000000, 672.000000)">
+                    <rect id="Rectangle" fill="#DFDFDF" x="96" y="0" width="144" height="96"></rect>
+                    <polygon id="Rectangle-Copy" fill="#FFFFFF" points="0 48 96 9.99200722e-15 96 96 -6.82121026e-13 144"></polygon>
+                    <polygon id="Rectangle-Copy-2" fill="#595959" points="144 144 240 96 96 96 0 144"></polygon>
+                </g>
+                <g id="Group" transform="translate(96.000000, 768.000000)">
+                    <polygon id="Rectangle-Copy-4" fill="#595959" points="144 144 240 96 96 96 -2.84217094e-14 144"></polygon>
+                    <polygon id="Rectangle-Copy-5" fill="#9B9B9B" points="0 48 96 9.99200722e-15 96 96 0 144"></polygon>
+                    <rect id="Rectangle-Copy-3" fill="#DFDFDF" x="96" y="0" width="144" height="96"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
