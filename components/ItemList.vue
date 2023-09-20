@@ -28,7 +28,6 @@ const props = defineProps({
 				<h2>{{ designItem.title }}</h2>
 				<p>{{ designItem.date }}</p>
 				<img :src="designItem.cover_image" alt="" />
-				<img :src="designItem.social_image" alt="" />
 			</NuxtLink>
 		</div>
 	</main>
