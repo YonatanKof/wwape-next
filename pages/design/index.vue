@@ -10,7 +10,7 @@
                 :limit="designCountLimit"
                 v-slot="{ data }"
             >
-                <ItemList :design-data="data" has-columns />
+                <ItemList :design-data="data" />
             </ContentQuery>
             <Pagination
                 v-if="data > 1"

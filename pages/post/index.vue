@@ -24,6 +24,6 @@ const { data } = await useAsyncData('equal', () => {
 <template>
 	<div>
 		<h1>Posts</h1>
-		<ItemList :design-data="data" has-flex />
+		<ItemList :design-data="data" masonryMaxColumns="2"/>
 	</div>
 </template>
