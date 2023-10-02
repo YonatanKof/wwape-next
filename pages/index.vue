@@ -17,10 +17,7 @@ useSeoMeta({
 </script>
 <template>
 	<main>
-		<h1>Index</h1>
-		<MyComp>
-			<code>You slot!</code><br />
-			<h3>I love you</h3>
-		</MyComp>
+		<h1>Welcome to my site 👋</h1>
+		<p>I'm Yonatan and here's a nice description: a friend, a family man, a designer, a developer, an illustrator, a maker, a mismatched persona and an all-around alright dude (not necessarily in this order)</p>
 	</main>
 </template>
