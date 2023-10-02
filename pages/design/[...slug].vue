@@ -1,21 +1,26 @@
 <template>
-	<main class="blog-post-text">
-		<ContentDoc>
-			<template v-slot="{ doc }">
-				<!-- Content -->
-				<section id="main" class="!pt-0 relative grid grid-cols-10 gap-8 lg:gap-12">
-					<article class="prose col-span-full md:col-span-7 relative">
-						<!-- Blog content -->
-						<ContentRenderer :value="doc" class="blog-content blog-post-text" />
-					</article>
-
-				</section>
-			
-			</template>
-			<!-- Error in case not found -->
-			<template #not-found>
-				<!-- <sectionsError /> -->
-			</template>
+	<main>
+		<ContentDoc v-slot="{ doc }">
+			<article>
+				<h1 id="title">{{ doc.title }}</h1>
+				<span>
+					<p>Created {{ doc.date }}</p>
+					<p v-if="doc.updated">•</p>
+					<p v-if="doc.updated">Updated {{ doc.updated }}</p>
+				</span>
+				<hr />
+				<ContentRenderer :value="doc" />
+			</article>
 		</ContentDoc>
 	</main>
 </template>
+<style scoped>
+main{
+	margin-block-end: var(--space-l);
+}
+span {
+	display: flex;
+	flex-direction: row;
+	gap: var(--space-2xs);
+}
+</style>
