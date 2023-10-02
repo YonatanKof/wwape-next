@@ -14,7 +14,8 @@ canonical_url: false
 series: false
 ---
 <!-- import Hanuman from '/designs/hanuman-langur-skull/hanuman-langur-skull.vue' -->
-![Hanuman Langur Skull](/designs/hanuman-langur-skull/hanuman-langur-skull.jpg)
 An Old World monkey, the Gray langur [AKA the *Hanuman langur*](https://en.wikipedia.org/wiki/Gray_langur) got a nice skull
+
+![Hanuman Langur Skull](/designs/hanuman-langur-skull/hanuman-langur-skull.jpg)
 
 <Hanuman />

@@ -13,9 +13,7 @@ published: true
 canonical_url: false
 series: false
 ---
-<!-- ::Elongated
-:: -->
+Don't stretch it, it's *[the Mystery of the Elongated Skulls](https://www.historicmysteries.com/elongated-skulls-mystery/)*
 
 ![](/designs/elongated/elongated.jpg)
 
-Don't stretch it, it's *[the Mystery of the Elongated Skulls](https://www.historicmysteries.com/elongated-skulls-mystery/)*

@@ -14,7 +14,7 @@ canonical_url: false
 series: false
 ---
 
-## Beata Vergine Maria <> Pink Version
+### Beata Vergine Maria <> Pink Version
 
 A manly tale of a godly birth by an excluded woman  
 

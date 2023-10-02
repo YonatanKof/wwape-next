@@ -12,7 +12,7 @@ published: true
 tags: ['Creative']
 ---
 
-#### *All the love in the world* by NIN
+Inspired by *All the love in the world* by NIN
 
 Oh boy, do I love this song
 

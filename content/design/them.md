@@ -13,7 +13,6 @@ published: true
 canonical_url: false
 series: false
 ---
-<!-- import Them from '/designs/them/Them.vue' -->
 
 This illustration is based on an [Aboriginal rock engraving](https://commons.wikimedia.org/wiki/File:N%27Dhala_Gorge005a.jpg#/media/File:N'Dhala_Gorge005a.jpg) form the [N'Dhala Gorge Nature Park](https://en.wikipedia.org/wiki/N%27Dhala_Gorge_Nature_Park), which in turn is based on a [drawing by Franz Gnaedinger](http://www.seshat.ch/home/ndhala.GIF) – showing two figures wearing a **rayed headdresses**. 
 

@@ -14,6 +14,8 @@ canonical_url: false
 series: false
 ---
 
+For the Love of _Ilan Gai_
+
 ![Some people love too much bad things can happen](/designs/love_nazi/love-nazi.svg)
 *Some people love so much bad things can happen*
 

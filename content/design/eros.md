@@ -13,6 +13,7 @@ published: true
 canonical_url: false
 series: false
 ---
+Art work for Noa -> now at SwisRing residents 
 
 ![A mesh of Eros statues](/designs/eros/eros.jpg)
 

@@ -3,7 +3,7 @@ title: 'Fishbone'
 author_name: 'Yonatan Ben Knaan'
 urlname: 'fishbone'
 date: '2021-01-03'
-updated:
+updated: ''
 cover_image: '/designs/fishbone/1-Fishbone.jpg'
 social_image: '/designs/fishbone/social-cover-Fishbone.jpg'
 cover_caption: 'Step into the fishbone'

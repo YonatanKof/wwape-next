@@ -14,9 +14,9 @@ canonical_url: false
 series: false
 ---
 
->I'll fight him in my dreams  
->And I'll fight him till he kills me
->**– Adam Ant**
+> I'll fight him in my dreams  
+> And I'll fight him till he kills me  
+> **– Adam Ant**
 
 ![This are the guns of Home Killer](/designs/home_killer_guns_of/guns-of-home-killer.jpg)
 *These are the guns of Home Killer*

@@ -14,9 +14,9 @@ canonical_url: false
 series: false
 ---
 
->I've seen him in the streets  
->And I've seen him in the pictures  
->***– Adam Ant***
+> I've seen him in the streets  
+> And I've seen him in the pictures  
+> ***– Adam Ant***
 
 ![A man falling through a single helix for guns](/designs/home_killer/home-killer.jpg)
 *Killer in the home*

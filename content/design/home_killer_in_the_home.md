@@ -14,9 +14,9 @@ canonical_url: false
 series: false
 ---
 
->Now's the time I must digress  
->From going through the motions  
->***– Adam Ant***
+> Now's the time I must digress  
+> From going through the motions  
+> ***– Adam Ant***
 
 ![Homekiller](/designs/home_killer_in_the_home/killer-in-the-home.jpg)
 *Homekiller hovering at his home*

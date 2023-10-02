@@ -13,7 +13,7 @@ published: true
 canonical_url: false
 series: false
 ---
-## Beata Vergine Maria <> Black Version
+### Beata Vergine Maria <> Black Version
 
 She had hard life told by men what to do
 

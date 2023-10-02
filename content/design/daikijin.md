@@ -3,7 +3,7 @@ title: 'Hairless Daikijin'
 author_name: 'Yonatan Ben Knaan'
 urlname: 'daikijin'
 date: '2008-06-19'
-updated: '2008-06-19'
+updated: ''
 cover_image: '/designs/daikijin/daikijin.jpg'
 social_image: '/designs/daikijin/daikijin-social-cover.jpg'
 cover_caption: 'An Oni Daikijin mask over geometric background'
@@ -13,5 +13,6 @@ published: true
 canonical_url: false
 series: false
 ---
+The Daikijin mask
 
 ![An Oni Daikijin mask over geometric background](/designs/daikijin/daikijin.jpg)
