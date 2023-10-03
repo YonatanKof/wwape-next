@@ -1,7 +1,9 @@
 <template>
 	<div class="pagination-list text-typography_primary">
 		<!-- Chevron -->
-		<nuxt-link v-show="currentPage > 1" class="pagination-item pagination-icon" :to="prevLink">←</nuxt-link>
+		<nuxt-link v-show="currentPage > 1" class="pagination-item" :to="prevLink">
+			<Chevron class="pagination-icon" />
+		</nuxt-link>
 		<!-- First Page -->
 		<nuxt-link :class="['pagination-item', currentPage === 1 ? 'active' : '']" :to="baseUrl">1</nuxt-link>
 		<!-- ... -->
@@ -25,11 +27,10 @@
 			>{{ totalPages }}</nuxt-link
 		>
 		<!-- Chevron -->
-		<nuxt-link
-			v-show="currentPage < totalPages"
-			class="pagination-item pagination-icon"
-			:to="getPageUrl(currentPage + 1)"
-		>→</nuxt-link>
+		<nuxt-link v-show="currentPage < totalPages" class="pagination-item" :to="getPageUrl(currentPage + 1)">
+			<Chevron class="pagination-icon flip" />
+			<!-- <img src="/images/Chevron.svg" class="chevron" alt="" /> -->
+		</nuxt-link>
 	</div>
 </template>
 
@@ -73,17 +74,47 @@ const prevLink = computed(() => {
 });
 </script>
 
-<style scoped>
-.pagination-list {
+<style lang="scss" scoped>
+a {
+	text-decoration: none;
 }
-.pagination-item.active {
+.pagination-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: var(--space-3xs);
+	margin-block-end: var(--space-s);
 }
 .pagination-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: var(--space-l);
+	height: var(--space-l);
+	border-radius: var(--border-radius);
+	background-color: var(--color-sys-dis);
 }
-.pagination-item:not(.active):hover {
+.pagination-item.active {
+	transition: box-shadow 0.25s ease-in-out;
+	box-shadow: inset 0 0 0 1px var(--color-sys-dim);
+	&:hover {
+		box-shadow: inset 0 0 0 1px var(--color-sys-slight);
+	}
+}
+.pagination-item:not(.active) {
+	transition: box-shadow 0.25s ease-in-out;
+	&:hover {
+		box-shadow: inset 0 0 0 1px var(--color-sys-slight);
+	}
 }
 .pagination-extra {
 }
 .pagination-icon {
+	width: var(--space-xs);
+	height: var(--space-xs);
+}
+.flip {
+	transform: rotateY(180deg);
 }
 </style>

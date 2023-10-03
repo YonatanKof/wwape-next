@@ -8,7 +8,7 @@ const config = useRuntimeConfig();
 			<nuxt-link href="//github.com/yonatankof" target="_blank" rel="nofollow noopener noreferrer">GitHub</nuxt-link>
 			<nuxt-link href="//linkedin.com/in/yonatankof/" target="_blank" rel="nofollow noopener noreferrer">Linkedin</nuxt-link>
 			<nuxt-link href="//dribbble.com/yonatan_kof" target="_blank" rel="nofollow noopener noreferrer">Dribbble</nuxt-link>
-			<p>ToggleTheme</p>
+			<!-- <p>ToggleTheme</p> -->
 		</p>
 		<span class="footer__copyright">
 			<p>Copyright © {{ config.public.siteOwnerName }}・{{ new Date().getFullYear() }}</p>

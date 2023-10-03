@@ -45,18 +45,9 @@ const props = defineProps({
 </template>
 
 <style scoped>
-main {
-	gap: var(--space-s);
+.masonry-wall {
+	margin-block-end: var(--space-s);
 }
-.columns {
-	display: block;
-	columns: 2 auto;
-}
-.flex {
-	display: flex;
-	flex-direction: column;
-}
-
 .item {
 	/* margin-block-end: var(--space-s); */
 	background-color: aliceblue;
