@@ -7,10 +7,10 @@
 	font-style: oblique 0deg 15deg;
 	font-weight: 300 1000;
 	font-display: swap;
-	font-variation-settings: "CASL" 1, "slnt" -7.5, "MONO" 0, "CRSV" 0.5;
+	font-variation-settings: 'CASL' 1, 'slnt' -7.5, 'MONO' 0, 'CRSV' 0.5;
 	src: url('~/assets/fonts/Recursive_VF_1.085--subset_range_english_basic.woff2') format('woff2');
-	unicode-range: U+0020-007F,U+00A9,U+2190-2193,U+2018,U+2019,U+201C,U+201D,U+2022;
-  }
+	unicode-range: U+0020-007F, U+00A9, U+2190-2193, U+2018, U+2019, U+201C, U+201D, U+2022;
+}
 @font-face {
 	font-family: 'CaveatBold';
 	src: url('~/assets/fonts/Caveat-Bold.ttf');
@@ -21,7 +21,11 @@
 	--font-mono: RecVar;
 	--font-hand: CaveatBold;
 }
-
+body,
+html {
+	font-family: var(--font-body);
+	font-size: var(--step-0);
+}
 p,
 h1,
 h2,
