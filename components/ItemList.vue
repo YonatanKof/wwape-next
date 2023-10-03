@@ -34,10 +34,10 @@ const props = defineProps({
 	>
 		<template #default="{ item, index }">
 			<NuxtLink class="item" :to="item._path + '/'">
-				<span>
+				<div class="item-content">
 					<h4 id="title">{{ item.title }}</h4>
 					<p>{{ item.date }}</p>
-				</span>
+				</div>
 				<img :src="item.cover_image" alt="" />
 			</NuxtLink>
 		</template>
@@ -58,20 +58,20 @@ const props = defineProps({
 		box-shadow: var(--shadow-lg);
 	}
 }
-img{
+img {
 	border-radius: unset;
 }
-span {
+.item-content {
 	margin: var(--space-s);
 	display: block;
 }
-#title{
+#title {
 	margin: 0;
 }
 a {
 	inset: 0;
 	display: block;
-	&:hover{
+	&:hover {
 		font-weight: initial;
 	}
 	text-decoration: none;
