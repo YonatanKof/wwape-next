@@ -13,7 +13,7 @@ const { data, error } = await useAsyncData(`content-${cleanPath}`, async () => {
 // Set the meta
 const baseUrl = 'https://wwape.com';
 const canonicalPath = baseUrl + (path + '/').replace(/\/+$/, '/');
-const image = data.value?.article?.image.src || '/images/main.png';
+const image = data.value?.article?.social_image.src || '/images/main.png';
 
 
 useHead({
@@ -27,17 +27,17 @@ useHead({
         { hid: 'og:description', property: 'og:description', content: data.value?.article?.description },
         { hid: 'og:image', name: 'image', property: 'og:image', content: image },
         { hid: 'og:type', property: 'og:type', content: 'Article' },
-        // { hid: 'og:image:type', property: 'og:image:type', content: `image/${data.value?.article?.image.mime}` },
-        // { hid: 'og:image:width', property: 'og:image:width', content: data.value?.article?.image.width || 190 },
-        // { hid: 'og:image:height', property: 'og:image:height', content: data.value?.article?.image.height || 190 },
-        { hid: 'og:image:alt', property: 'og:image:alt', content: data.value?.article?.image.alt },
+        // { hid: 'og:image:type', property: 'og:image:type', content: `image/${data.value?.article?.social_image.mime}` },
+        // { hid: 'og:image:width', property: 'og:image:width', content: data.value?.article?.social_image.width || 190 },
+        // { hid: 'og:image:height', property: 'og:image:height', content: data.value?.article?.social_image.height || 190 },
+        { hid: 'og:image:alt', property: 'og:image:alt', content: data.value?.article?.social_image.alt },
         // Twitter
         { hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
         { hid: 'twitter:title', name: 'twitter:title', content: data.value?.article?.title },
         { hid: 'twitter:url', name: 'twitter:url', content: canonicalPath },
         { hid: 'twitter:description', name: 'twitter:description', content: data.value?.article?.description },
         { hid: 'twitter:image', name: 'twitter:image', content: image },
-        { hid: 'twitter:image:alt', name: 'twitter:image:alt', content: data.value?.article?.image.alt }
+        { hid: 'twitter:image:alt', name: 'twitter:image:alt', content: data.value?.article?.social_image.alt }
     ],
     link: [
         {
