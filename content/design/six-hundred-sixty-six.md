@@ -1,17 +1,14 @@
 ---
 title: 'To buy & to sell'
 author_name: 'Yonatan Ben Knaan'
-urlname: 'six-hundred-sixty-six'
 date: '2021-07-23'
 updated: '2021-07-23'
 cover_image: '/designs/six-hundred-sixty-six/social-six-hundred-sixty-six.jpg'
-social_image: '/designs/six-hundred-sixty-six/social-six-hundred-sixty-six.jpg'
-cover_caption: "An Hebrew take of Aphrodite's Child's 666 album cover"
+social_image:
+    src:  '/designs/six-hundred-sixty-six/social-six-hundred-sixty-six.jpg'
+    alt: "An Hebrew take of Aphrodite's Child's 666 album cover"
 description: "You know, it's the Beast of Revelation"
 tags: ['Creative']
-published: true
-canonical_url: false
-series: false
 ---
 
 It's all about the trade  

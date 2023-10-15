@@ -1,17 +1,14 @@
 ---
 title: 'Hold My Bones'
 author_name: 'Yonatan Ben Knaan'
-urlname: 'love-bone'
 date: '2016-11-24'
 updated: ''
-cover_image: 'designs/boney-love/myBones-myLove-dark.jpg'
-social_image: 'boney-love/myBones-myLove-social-cover.jpg'
-cover_caption: 'My love lettering with 2 bones'
+cover_image: '/designs/boney-love/myBones-myLove-dark.jpg'
+social_image: 
+    src: '/boney-love/myBones-myLove-social-cover.jpg'
+    alt: 'My love lettering with 2 bones'
 description: 'From Bat Yam to Infinity'
 tags: ['Creative']
-published: true
-canonical_url: false
-series: false
 ---
 
 Tribute artwork for [_Coastline Paradox_](https://hilaruach.bandcamp.com/track/--9), a song by _Hila Ruach_

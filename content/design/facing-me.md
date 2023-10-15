@@ -1,17 +1,14 @@
 ---
 title: 'Facing Me'
 author_name: 'Yonatan Ben Knaan'
-urlname: 'facing-me'
 date: '2009-01-19'
 updated: '2010-02-06'
 cover_image: '/designs/facing-me/facing-me.jpg'
-social_image: '/designs/facing-me/social-cover-facing-me.jpg'
-cover_caption: 'The missing gun is facing me'
+social_image: 
+    src: '/designs/facing-me/social-cover-facing-me.jpg'
+    alt: 'The missing gun is facing me'
 description: "I don't see the missing gun facing me"
 tags: ['Creative']
-published: true
-canonical_url: false
-series: false
 ---
 
 > I shall tell you where we are  

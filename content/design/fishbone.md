@@ -1,17 +1,14 @@
 ---
 title: 'Fishbone'
 author_name: 'Yonatan Ben Knaan'
-urlname: 'fishbone'
 date: '2021-01-03'
 updated: ''
 cover_image: '/designs/fishbone/1-Fishbone.jpg'
-social_image: '/designs/fishbone/social-cover-Fishbone.jpg'
-cover_caption: 'Step into the fishbone'
+social_image: 
+    src: '/designs/fishbone/social-cover-Fishbone.jpg'
+    alt: 'Step into the fishbone'
 description: 'A shape I shaped'
 tags: ['Creative']
-published: true
-canonical_url: false
-series: false
 ---
 
 ![Fishbone](/designs/fishbone/1-Fishbone.svg)

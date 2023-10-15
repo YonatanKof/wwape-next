@@ -1,17 +1,14 @@
 ---
 title: 'Them Calendar'
 author_name: 'Yonatan Ben Knaan'
-urlname: 'them-calendar'
 date: '2021-05-22'
 updated: ''
 cover_image: '/designs/them/them.jpg'
-social_image: '/designs/them/them.jpg'
-cover_caption: "Two figures that are the N'Dhala people calender"
+social_image:
+    src:  '/designs/them/them.jpg'
+    alt: "Two figures that are the N'Dhala people calender"
 description: "The N'Dhala people calender"
 tags: ['Creative']
-published: true
-canonical_url: false
-series: false
 ---
 
 This illustration is based on an [Aboriginal rock engraving](https://commons.wikimedia.org/wiki/File:N%27Dhala_Gorge005a.jpg#/media/File:N'Dhala_Gorge005a.jpg) form the [N'Dhala Gorge Nature Park](https://en.wikipedia.org/wiki/N%27Dhala_Gorge_Nature_Park), which in turn is based on a [drawing by Franz Gnaedinger](http://www.seshat.ch/home/ndhala.GIF) – showing two figures wearing a **rayed headdresses**. 
