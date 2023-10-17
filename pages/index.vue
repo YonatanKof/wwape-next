@@ -19,9 +19,10 @@ useSeoMeta({
 	<main>
 		<h1>Welcome to my site 👋</h1>
 		<p>Hi, I'm Yonatan and here's a nice intro text: a friend, a family man, a designer, a developer, an illustrator, a maker, a mismatched persona and an all-around alright dude (not necessarily in this order)</p>
+		<p>Under contraction 🚧 expect much more design and a few blog posts soon</p>
 	</main>
 </template>
 <style scoped>
 p{
-	font-size: var(--step-2);
+	font-size: var(--step-1);
 }</style>

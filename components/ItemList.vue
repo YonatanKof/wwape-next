@@ -35,7 +35,7 @@ const props = defineProps({
 		<template #default="{ item, index }">
 			<NuxtLink class="item" :to="item._path + '/'">
 				<div class="item-content">
-					<h4 id="title">{{ item.title }}</h4>
+					<h3 id="title">{{ item.title }}</h3>
 					<p>{{ item.date }}</p>
 				</div>
 				<img :src="item.cover_image" alt="" />
@@ -45,6 +45,12 @@ const props = defineProps({
 </template>
 
 <style scoped>
+h3 {
+	font-size: var(--step-1);
+}
+p {
+	font-size: var(--step--1);
+}
 .masonry-wall {
 	margin-block-end: var(--space-s);
 }
