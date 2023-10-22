@@ -10,7 +10,7 @@ const props = defineProps({
 	},
 	masonryColumnWidth: {
 		type: Number,
-		default: 250,
+		default: 200,
 	},
 	masonryGap: {
 		type: Number,
@@ -35,7 +35,7 @@ const props = defineProps({
 		<template #default="{ item, index }">
 			<NuxtLink class="item" :to="item._path + '/'">
 				<div class="item-content">
-					<h3 id="title">{{ item.title }}</h3>
+					<h2 id="title">{{ item.title }}</h2>
 					<p>{{ item.date }}</p>
 				</div>
 				<img :src="item.cover_image" alt="" />
@@ -55,13 +55,15 @@ p {
 	margin-block-end: var(--space-s);
 }
 .item {
-	/* margin-block-end: var(--space-s); */
 	background-color: var(--color-sys-invert-highlight);
 	box-shadow: var(--shadow-md);
 	overflow: auto;
 	border-radius: var(--border-radius);
+	transition: transform 0.35s, box-shadow ease-in-out 0.35s;
+	transform: translateY(0);
 	&:hover {
-		box-shadow: var(--shadow-lg);
+		transform: translateY(var(--space-4xs));
+		box-shadow: var(--shadow-sm);
 	}
 }
 img {
@@ -77,8 +79,9 @@ img {
 a {
 	inset: 0;
 	display: block;
+	font-weight: 400;
 	&:hover {
-		font-weight: initial;
+		font-weight: 400;
 	}
 	text-decoration: none;
 }
