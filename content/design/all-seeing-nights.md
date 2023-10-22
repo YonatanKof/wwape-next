@@ -1,5 +1,5 @@
 ---
-title: 'City Nights'
+title: 'All Seeing Nights'
 author_name: 'Yonatan Ben Knaan'
 date: '2023-02-28'
 updated: ''

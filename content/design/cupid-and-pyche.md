@@ -1,5 +1,5 @@
 ---
-title: 'Cupid & Psyche are gone'
+title: 'Cupid & Psyche are Gone'
 author_name: 'Yonatan Ben Knaan'
 date: '2023-06-29'
 updated: ''

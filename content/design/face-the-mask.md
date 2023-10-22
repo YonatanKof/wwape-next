@@ -1,7 +1,6 @@
 ---
-title: 'Face the mask'
+title: 'Face the Mask'
 author_name: 'Yonatan Ben Knaan'
-urlname: 'mask-face'
 date: '2010-12-05'
 updated: '2011-01-22'
 cover_image: '/designs/mask-face/mask-face-detail.jpg'

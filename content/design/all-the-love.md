@@ -1,5 +1,5 @@
 ---
-title: 'The jagged edges'
+title: 'Jagged Edges'
 author_name: 'Yonatan Ben Knaan'
 date: '2017-01-01'
 updated: '2021-09-24'

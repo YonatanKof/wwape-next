@@ -1,5 +1,5 @@
 ---
-title: 'Work It'
+title: 'Constructed Safety'
 author_name: 'Yonatan Ben Knaan'
 date: '2023-02-23'
 updated: ''

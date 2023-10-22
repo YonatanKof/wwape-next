@@ -1,5 +1,5 @@
 ---
-title: 'Lights at Sunset'
+title: 'Surrender at Sunset'
 author_name: 'Yonatan Ben Knaan'
 date: '2023-07-18'
 updated: ''

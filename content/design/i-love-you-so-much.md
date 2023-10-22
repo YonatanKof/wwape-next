@@ -1,5 +1,5 @@
 ---
-title: 'I Love So Much'
+title: 'I Love You So Much'
 author_name: 'Yonatan Ben Knaan'
 date: '2003-06-28'
 updated: ''

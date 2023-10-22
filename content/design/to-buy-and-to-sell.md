@@ -1,5 +1,5 @@
 ---
-title: 'To buy & to sell'
+title: 'To Buy & to Sell'
 author_name: 'Yonatan Ben Knaan'
 date: '2021-07-23'
 updated: '2021-07-23'
