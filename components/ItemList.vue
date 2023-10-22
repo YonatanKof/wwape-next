@@ -10,7 +10,7 @@ const props = defineProps({
 	},
 	masonryColumnWidth: {
 		type: Number,
-		default: 200,
+		default: 250,
 	},
 	masonryGap: {
 		type: Number,
@@ -18,7 +18,7 @@ const props = defineProps({
 	},
 	masonryMaxColumns: {
 		type: Number,
-		default: 3,
+		default: 2,
 	},
 });
 // const { $formatDate } = useNuxtApp();

@@ -18,7 +18,7 @@ useSeoMeta({
 	twitterSite: '@yonatankof',
 });
 // Find the number of blogs present
-const designCountLimit = 16;
+const designCountLimit = 20;
 const { data } = await useAsyncData(`content-/design`, async () => {
 	const _designs = await queryContent('/design').only('title').find();
 	return Math.ceil(_designs.length / designCountLimit);
@@ -36,7 +36,7 @@ const { data } = await useAsyncData(`content-/design`, async () => {
 				:limit="designCountLimit"
 				v-slot="{ data }"
 			>
-				<ItemList :design-data="data" />
+				<ItemList :design-data="data"/>
 			</ContentQuery>
 			<Pagination
 				v-if="data > 1"
