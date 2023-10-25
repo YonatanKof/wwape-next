@@ -16,7 +16,7 @@
                     <ItemList :design-data="data" />
                     <ContentQuery
                         path="/design"
-                        :only="['title', 'date', '_path', 'cover_image']"
+                        :only="['title', 'date', '_path', 'cover_image', 'cover_image_thumbhash']"
                     >
                         <template v-slot="{ data }">
                             <Pagination

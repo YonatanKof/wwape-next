@@ -29,14 +29,14 @@ const { data } = await useAsyncData(`content-/design`, async () => {
 		<section id="main" class="!pt-0">
 			<ContentQuery
 				path="/design"
-				:only="['title', 'date', '_path', 'cover_image']"
+				:only="['title', 'date', '_path', 'cover_image', 'cover_image_thumbhash']"
 				:sort="{
 					date: -1,
 				}"
 				:limit="designCountLimit"
 				v-slot="{ data }"
 			>
-				<ItemList :design-data="data"/>
+				<ItemList :design-data="data" />
 			</ContentQuery>
 			<Pagination
 				v-if="data > 1"

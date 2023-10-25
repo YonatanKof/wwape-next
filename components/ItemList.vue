@@ -38,7 +38,12 @@ const props = defineProps({
 					<h2 id="title">{{ item.title }}</h2>
 					<p>{{ item.date }}</p>
 				</div>
-				<img :src="item.cover_image" alt="" />
+				<!-- <img :src="item.cover_image" alt="" /> -->
+				<UnLazyImage
+					:thumbhash="item.cover_image_thumbhash"
+					:src="item.cover_image"
+					auto-sizes
+				/>
 			</NuxtLink>
 		</template>
 	</masonry-wall>
