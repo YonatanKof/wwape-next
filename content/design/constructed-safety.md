@@ -3,9 +3,10 @@ title: 'Constructed Safety'
 author_name: 'Yonatan Ben Knaan'
 date: '2023-02-23'
 updated: ''
-cover_image: '/designs/work-it/work-it.webp'
+cover_image: '/designs/constructed-safety/constructed-safety.webp'
+cover_image_thumbhash: '1gcOBIAGh3dud4WGiZfsoDrxVQ'
 social_image: 
-    src: '/designs/work-it/work-it-social.webp'
+    src: '/designs/constructed-safety/constructed-safety-social.webp'
     alt: 'A collage of crane and construction sites'
 description: "The city is working it all day through"
 tags: ['Creative']
@@ -13,4 +14,4 @@ tags: ['Creative']
 
 The city is working it all day through – A collage of crane and construction sites
 
-![A collage of crane and construction sites](/designs/work-it/work-it.webp)
+![A collage of crane and construction sites](/designs/constructed-safety/constructed-safety.webp)

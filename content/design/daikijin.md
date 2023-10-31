@@ -4,6 +4,7 @@ author_name: 'Yonatan Ben Knaan'
 date: '2008-06-19'
 updated: ''
 cover_image: '/designs/daikijin/daikijin.jpg'
+cover_image_thumbhash: 'VhgODQIIWIaIJ6d4iHSJaAeHkANX'
 social_image: 
     src: '/designs/daikijin/daikijin-social-cover.jpg'
     alt: 'An Oni Daikijin mask over geometric background'

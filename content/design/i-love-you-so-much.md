@@ -3,9 +3,12 @@ title: 'I Love You So Much'
 author_name: 'Yonatan Ben Knaan'
 date: '2003-06-28'
 updated: ''
-cover_image: '/designs/love_nazi/love-nazi.jpg'
+cover_image: '/designs/i-love-you-so-much/i-love-you-so-much.webp
+'
+cover_image_thumbhash: 'VHkGCwT2eMdYiHnX93h7j7c'
 social_image: 
-    src: '/designs/love_nazi/social-cover-love-nazi.jpg'
+    src: '/designs/i-love-you-so-much/i-love-you-so-much-social.webp
+    '
     alt: 'Some people love too much bad things can happen'
 description: 'I love you so much it hurts'
 tags: ['Creative']
@@ -13,7 +16,7 @@ tags: ['Creative']
 
 For the Love of _Ilan Gai_
 
-![Some people love too much bad things can happen](/designs/love_nazi/love-nazi.svg)
+![Some people love too much bad things can happen](/designs/i-love-you-so-much/i-love-you-so-much.svg)
 *Some people love so much bad things can happen*
 
 

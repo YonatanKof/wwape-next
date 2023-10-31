@@ -4,6 +4,7 @@ author_name: 'Yonatan Ben Knaan'
 date: '2007-04-25'
 updated: ''
 cover_image: '/designs/cut-girl/cut-girl_ShoppingHandsOfTheElectricCockroach.jpg'
+cover_image_thumbhash: 'dfcFFQLD94Z3p3h4eIxnphCDBwI3'
 social_image: 
     src: '/designs/cut-girl/social-cover-cut-girl.jpg'
     alt: 'A composition showing a girl being cut by forces greater then us'

@@ -3,9 +3,10 @@ title: 'Facing Me'
 author_name: 'Yonatan Ben Knaan'
 date: '2009-01-19'
 updated: '2010-02-06'
-cover_image: '/designs/facing-me/facing-me.jpg'
+cover_image: '/designs/facing-me/facing-me.webp'
+cover_image_thumbhash: 'b+cFFYQ3Fh9Xt2p0c4N5dQamRlB9'
 social_image: 
-    src: '/designs/facing-me/social-cover-facing-me.jpg'
+    src: '/designs/facing-me/facing-me-social.webp'
     alt: 'The missing gun is facing me'
 description: "I don't see the missing gun facing me"
 tags: ['Creative']
@@ -18,5 +19,5 @@ A radiant abyss where men meet themselves
 We're in hell  
 **– The Ripper** 	
 
-![It is facing me](/designs/facing-me/facing-me.jpg)
+![It is facing me](/designs/facing-me/facing-me.webp)
 *The missing gun is facing me*

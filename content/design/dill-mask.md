@@ -4,6 +4,7 @@ author_name: 'Yonatan Ben Knaan'
 date: '2006-12-21'
 updated: '2023-10-20'
 cover_image: '/designs/dill-mask/dill-mask.webp'
+cover_image_thumbhash: 'JQgGCgAohqhYingI93h5j3c'
 social_image: 
     src: '/designs/dill-mask/dill-mask-social.webp'
     alt: 'A composition showing a girl being cut by forces greater then us'
