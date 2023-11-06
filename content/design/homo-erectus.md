@@ -1,5 +1,5 @@
 ---
-title: 'Erectus'
+title: 'Homo Erectus'
 author_name: 'Yonatan Ben Knaan'
 date: '2010-06-10'
 updated: '2021-05-16'
