@@ -1,13 +1,20 @@
 <script setup>
 const { path } = useRoute();
 const cleanPath = path.replace(/\/+$/, '');
-const { data, error } = await useAsyncData(`content-${cleanPath}`, async () => {
-    // Remove a trailing slash in case the browser adds it, it might break the routing
-    // fetch document where the document path matches with the cuurent route
-    let article = queryContent('/design').where({ _path: cleanPath }).findOne();
-    return {
-        article: await article,
-    };
+const { data, error } = await useAsyncData(cleanPath, async () => {
+	// Remove a trailing slash in case the browser adds it, it might break the routing
+	// fetch document where the document path matches with the cuurent route
+	let article = queryContent('/design').where({ _path: cleanPath }).findOne();
+	// get the surround information,
+	// which is an array of documents that come before and after the current document
+	let surround = queryContent('/design')
+		.only(['_path', 'title', 'social_image', 'date'])
+		.sort({ date: -1 })
+		.findSurround(cleanPath, { before: 1, after: 1 });
+	return {
+		article: await article,
+		surround: await surround,
+	};
 });
 
 // Set the meta
@@ -22,35 +29,38 @@ useHead({
 	titleTemplate: (titleChunk) => {
 		return titleChunk ? `${titleChunk} - ` + siteTitle : siteTitle;
 	},
-    // title: data.value?.article?.title,
-    meta: [
-        { name: 'description', content: data.value?.article?.description },
-        { property: 'article:published_time', content: data.value?.article?.updated.split('T')[0] || data.value?.article?.date.split('T')[0] },
-        // OG
-        // { hid: 'og:title', property: 'og:title', content: data.value?.article?.title },
-        { hid: 'og:url', property: 'og:url', content: canonicalPath },
-        { hid: 'og:description', property: 'og:description', content: data.value?.article?.description },
-        { hid: 'og:image', name: 'image', property: 'og:image', content: image },
-        { hid: 'og:type', property: 'og:type', content: 'Article' },
-        // { hid: 'og:image:type', property: 'og:image:type', content: `image/${data.value?.article?.social_image.mime}` },
-        // { hid: 'og:image:width', property: 'og:image:width', content: data.value?.article?.social_image.width || 190 },
-        // { hid: 'og:image:height', property: 'og:image:height', content: data.value?.article?.social_image.height || 190 },
-        { hid: 'og:image:alt', property: 'og:image:alt', content: data.value?.article?.social_image.alt },
-        // Twitter
-        { hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
-        // { hid: 'twitter:title', name: 'twitter:title', content: data.value?.article?.title },
-        { hid: 'twitter:url', name: 'twitter:url', content: canonicalPath },
-        { hid: 'twitter:description', name: 'twitter:description', content: data.value?.article?.description },
-        { hid: 'twitter:image', name: 'twitter:image', content: image },
-        { hid: 'twitter:image:alt', name: 'twitter:image:alt', content: data.value?.article?.social_image.alt }
-    ],
-    link: [
-        {
-            hid: 'canonical',
-            rel: 'canonical',
-            href: canonicalPath
-        }
-    ],
+	// title: data.value?.article?.title,
+	meta: [
+		{ name: 'description', content: data.value?.article?.description },
+		{
+			property: 'article:published_time',
+			content: data.value?.article?.updated.split('T')[0] || data.value?.article?.date.split('T')[0],
+		},
+		// OG
+		// { hid: 'og:title', property: 'og:title', content: data.value?.article?.title },
+		{ hid: 'og:url', property: 'og:url', content: canonicalPath },
+		{ hid: 'og:description', property: 'og:description', content: data.value?.article?.description },
+		{ hid: 'og:image', name: 'image', property: 'og:image', content: image },
+		{ hid: 'og:type', property: 'og:type', content: 'Article' },
+		// { hid: 'og:image:type', property: 'og:image:type', content: `image/${data.value?.article?.social_image.mime}` },
+		// { hid: 'og:image:width', property: 'og:image:width', content: data.value?.article?.social_image.width || 190 },
+		// { hid: 'og:image:height', property: 'og:image:height', content: data.value?.article?.social_image.height || 190 },
+		{ hid: 'og:image:alt', property: 'og:image:alt', content: data.value?.article?.social_image.alt },
+		// Twitter
+		{ hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
+		// { hid: 'twitter:title', name: 'twitter:title', content: data.value?.article?.title },
+		{ hid: 'twitter:url', name: 'twitter:url', content: canonicalPath },
+		{ hid: 'twitter:description', name: 'twitter:description', content: data.value?.article?.description },
+		{ hid: 'twitter:image', name: 'twitter:image', content: image },
+		{ hid: 'twitter:image:alt', name: 'twitter:image:alt', content: data.value?.article?.social_image.alt },
+	],
+	link: [
+		{
+			hid: 'canonical',
+			rel: 'canonical',
+			href: canonicalPath,
+		},
+	],
 });
 </script>
 
@@ -59,6 +69,9 @@ useHead({
 		<ContentDoc v-slot="{ doc }">
 			<article>
 				<h1 id="title">{{ doc.title }}</h1>
+				<div v-if="data?.surround?.filter((elem) => elem !== null)?.length > 0">
+					<SeeMore :surround="data?.surround" />
+				</div>
 				<span>
 					<p>Created {{ doc.date }}</p>
 					<p v-if="doc.updated">•</p>
@@ -71,7 +84,7 @@ useHead({
 	</main>
 </template>
 <style scoped>
-main{
+main {
 	margin-block-end: var(--space-l);
 }
 span {
