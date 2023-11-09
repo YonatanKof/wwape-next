@@ -1,22 +1,20 @@
 <script setup>
 const { path } = useRoute();
 const cleanPath = path.replace(/\/+$/, '');
+// For the previous & next items
+const [prev, next] = await queryContent('/design')
+	.only(['_path', 'title', 'social_image'])
+	.sort({ date: -1 })
+	.findSurround(cleanPath);
+// Data for the meta tags ↓
 const { data, error } = await useAsyncData(cleanPath, async () => {
 	// Remove a trailing slash in case the browser adds it, it might break the routing
-	// fetch document where the document path matches with the cuurent route
+	// fetch document where the document path matches with the current route
 	let article = queryContent('/design').where({ _path: cleanPath }).findOne();
-	// get the surround information,
-	// which is an array of documents that come before and after the current document
-	let surround = queryContent('/design')
-		.only(['_path', 'title', 'social_image', 'date'])
-		.sort({ date: -1 })
-		.findSurround(cleanPath, { before: 1, after: 1 });
 	return {
 		article: await article,
-		surround: await surround,
 	};
 });
-
 // Set the meta
 const baseUrl = 'https://wwape.com';
 const canonicalPath = baseUrl + (path + '/').replace(/\/+$/, '/');
@@ -69,9 +67,6 @@ useHead({
 		<ContentDoc v-slot="{ doc }">
 			<article>
 				<h1 id="title">{{ doc.title }}</h1>
-				<div v-if="data?.surround?.filter((elem) => elem !== null)?.length > 0">
-					<SeeMore :surround="data?.surround" />
-				</div>
 				<span>
 					<p>Created {{ doc.date }}</p>
 					<p v-if="doc.updated">•</p>
@@ -81,6 +76,7 @@ useHead({
 				<ContentRenderer :value="doc" />
 			</article>
 		</ContentDoc>
+		<SeeMore :prev="prev" :next="next"/>
 	</main>
 </template>
 <style scoped>

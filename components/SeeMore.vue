@@ -1,24 +1,29 @@
 <script setup>
 defineProps({
-	surround: {
-		type: Array,
+	prev: {
+		type: Object,
+		required: true,
+	},
+	next: {
+		type: Object,
 		required: true,
 	},
 });
 </script>
 
 <template>
-	<div class="more">
-		<template v-for="other in surround" :key="other._path">
-			<NuxtLink v-if="other" class="item" :to="other._path + '/'" :aria-label="other.title">
-				<div class="item-content">
-					<h4 id="title">{{ other.title }}</h4>
-					<p>{{ other.date }}</p>
-				</div>
-				<img :src="other.social_image.src" />
-			</NuxtLink>
-		</template>
-	</div>
+	<nav class="more">
+		<nuxt-link class="item" v-if="prev" :to="prev?._path">
+			<h4 id="" class="item-content"> Go back → {{ prev.title }}</h4>
+			<img :src="prev?.social_image.src" :alt="prev?.social_image.alt" />
+		</nuxt-link>
+		<span v-else>The 1st item</span>
+		<nuxt-link class="item" v-if="next" :to="next?._path">
+			<h4 id="" class="item-content"> Go next → {{ next.title }}</h4>
+			<img :src="next?.social_image.src" :alt="next?.social_image.alt" />
+		</nuxt-link>
+		<span v-else>The last item</span>
+	</nav>
 </template>
 
 <style scoped>
