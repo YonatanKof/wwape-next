@@ -1,5 +1,6 @@
 <template>
     <main>
+        <IntroText title="Art & Design" text="Please enjoy some art, design, illustration, motion graphics created throughout the years"/>
         <!-- Query for the given blog page number -->
         <ContentQuery
             path="/design"
@@ -21,7 +22,6 @@
                         <template v-slot="{ data }">
                             <Pagination
                                 v-if="getPageLimit(data.length) > 1"
-                                class="mt-8"
                                 :currentPage="getPageNumber()"
                                 :totalPages="getPageLimit(data.length)"
                                 :nextPage="getPageNumber() < getPageLimit(data.length)"
@@ -38,7 +38,7 @@
             <!-- In case not found -->
             <template #not-found>
                 <!-- Show hero and message -->
-                <section id="main" class="!pt-0">
+                <section id="main">
                     <ItemList :data="[]" message="There are no posts in this page, maybe try searching on another one."/>
                 </section>
             </template>

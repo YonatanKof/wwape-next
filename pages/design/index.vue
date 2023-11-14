@@ -26,7 +26,8 @@ const { data } = await useAsyncData(`content-/design`, async () => {
 </script>
 <template>
 	<main>
-		<section id="main" class="!pt-0">
+		<IntroText title="Art & Design" text="Please enjoy some art, design, illustration, motion graphics created throughout the years"/>
+		<section id="main">
 			<ContentQuery
 				path="/design"
 				:only="['title', 'date', '_path', 'cover_image', 'cover_image_thumbhash']"
@@ -40,7 +41,6 @@ const { data } = await useAsyncData(`content-/design`, async () => {
 			</ContentQuery>
 			<Pagination
 				v-if="data > 1"
-				class="mt-8"
 				:currentPage="1"
 				:totalPages="data"
 				:nextPage="data > 1"
