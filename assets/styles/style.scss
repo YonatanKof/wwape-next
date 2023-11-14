@@ -10,10 +10,11 @@
 	--color-sys-slight: hsla(0, 0%, 10%, 0.75);
 	--color-sys-dim: hsla(0, 0%, 10%, 0.25);
 	--color-sys-dis: hsla(0, 0%, 10%, 0.1);
+	--color-sys-none: hsla(0, 0%, 10%, 0);
 	--color-sys-invert: antiquewhite;
 	--color-sys-invert-highlight: white;
-	--color-link-main: hsl(270, 100%, 25%);
-	--color-link-slight: hsla(270, 100%, 25%, 0.75);
+	--color-link-main: hsl(300, 100%, 20%);
+	--color-link-slight: hsl(300, 100%, 30%);
 
 	--bg-primary: var(--color-sys-invert);
 	--content-space: 1rem;
@@ -21,41 +22,65 @@
 	--bg-pre: none;
 
 	--shadow-sm: 
-		0px 0.1rem 0.1rem 0 var(--color-sys-dis), 
-		0px 0.2rem 0.2rem 0 var(--color-sys-dis),
-		0px 0.4rem 0.4rem 0 var(--color-sys-dis), 
-		0px 0.8rem 0.8rem 0 var(--color-sys-dis);
+		0 0.1rem 0.1rem var(--color-sys-dis), 
+		0 0.2rem 0.2rem var(--color-sys-dis),
+		0 0.3rem 0.3rem var(--color-sys-dis);
 	--shadow-md: 
-		0px 0.15rem 0.2rem 0 var(--color-sys-dis), 
-		0px 0.3rem 0.4rem 0 var(--color-sys-dis),
-		0px 0.6rem 0.8rem 0 var(--color-sys-dis), 
-		0px 1.2rem 1.6rem 0 var(--color-sys-dis);
+		0 0.2rem 0.2rem var(--color-sys-dis), 
+		0 0.4rem 0.4rem var(--color-sys-dis),
+		0 0.8rem 0.8rem var(--color-sys-dis);
 	--shadow-lg: 
-		0.05rem 0.2rem 0.2rem 0 var(--color-sys-dis), 
-		0.1rem 0.4rem 0.4rem 0 var(--color-sys-dis),
-		0.2rem 0.8rem 0.8rem 0 var(--color-sys-dis), 
-		0.4rem 1.6rem 1.6rem 0 var(--color-sys-dis);
+		0 0.3rem 0.3rem var(--color-sys-dis), 
+		0 0.6rem 0.6rem var(--color-sys-dis),
+		0 1.2rem 1.2rem var(--color-sys-dis);
 	--font-wight--bolder: bolder;
 	--font-size-2xl: 2em;
 }
 
 body {
 	background-color: var(--color-sys-invert);
+	color: var(--color-sys-main);
 }
 
-.color-me-red {
-	color: red
-}
 img {
 	width: 100%;
 	height: auto;
 	border-radius: var(--border-radius);
 	display: flow-root;
 }
-
+button {
+	@include link(none);
+	background-color: var(--color-sys-invert-highlight);
+	// box-shadow: inset 0 0 0 1px var(--color-link-slight);
+	box-shadow: 0 var(--space-4xs) var(--color-link-main), inset 0 0 0 1px var(--color-link-slight);
+	border: none;
+	padding: var(--space-2xs) var(--space-xs);
+	font-size: var(--step--1);
+	border-radius: var(--border-radius);
+	font-family: var(--font-mono);
+	cursor: pointer;
+	transition: transform 0.35s ease-in-out, box-shadow 0.25s ease-in-out;
+	transform: translateY(calc(var(--space-4xs) * -1));
+	&:hover {
+		transform: translateY(0);
+		box-shadow: 0 0 var(--color-link-main), inset 0 0 0 1px var(--color-link-main);
+		font-weight: var(--font-wight--bolder);
+	}
+}
 img ~ em {
 	color: var(--color-sys-dim);
 	font-size: var(--step--1);
 	padding-inline-start: var(--space-3xs);
 	border-inline-start: var(--color-sys-dim) solid var(--space-4xs);
+}
+
+.dark {
+	--color-sys-main: hsl(34, 78%, 91%);
+	--color-sys-slight: hsla(34, 78%, 91%, 0.75);
+	--color-sys-dim: hsla(34, 78%, 91%, 0.25);
+	--color-sys-dis: hsla(34, 78%, 91%, 0.1);
+	--color-sys-invert: hsl(34, 8%, 16%);
+	--color-sys-invert-highlight: hsl(34, 8%, 10%);
+	--color-link-main: hsl(300, 100%, 90%);
+	--color-link-slight: hsl(300, 100%, 80%);
 }

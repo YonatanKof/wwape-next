@@ -13,3 +13,13 @@
 @mixin linear-gradient($deg, $clr, $int, $end) {
 	background: linear-gradient($deg, rgba($clr, $int) 0%, rgba($clr, 0) $end);
 }
+@mixin content-item() {
+	background-color: var(--color-sys-invert-highlight);
+	overflow: auto;
+	border-radius: var(--border-radius);
+	transition: transform 0.25s, box-shadow ease-in-out 0.25s;
+	transform: translateY(0);
+	&:hover {
+		transform: translateY(calc(var(--space-3xs) * -1));
+	}
+}

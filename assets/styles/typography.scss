@@ -81,14 +81,37 @@ h5 {
 h6 {
 	font-size: var(--step-0);
 }
-a {
+@mixin clearfix($width: 'auto') {
+	@if $width == 'auto' {
+	  // if width is not passed, or empty do this
+	} @else {
+	  display: inline-block;
+	  width: $width;
+	}
+  }
+@mixin link($none-ul: null) {
+	@if not ($none-ul) {
+		border-bottom: solid 1px var(--color-sys-none);
+	} @else {	
+		// If you don't want an underline pass in 'none'
+		// @include link(none);
+		border-bottom: $none-ul;
+	}
 	font-family: var(--font-mono);
 	font-weight: 444;
-	transition: font-weight 0.25s ease-in-out;
-	color: var(--color-link-main);
+	transition: font-weight 0.25s ease-in-out, color 0.25s ease-in-out, border-color 0.25s ease-in-out;
+	color: var(--color-link-slight);
+	text-decoration: none;
 	&:hover {
 		font-weight: 666;
+		color: var(--color-link-main);
+		border-color: var(--color-link-main);
 	}
+}
+	
+
+a {
+	@include link();
 }
 :is(h1, h2, h3, h4, h5, h6, code) a {
 	color: inherit;
