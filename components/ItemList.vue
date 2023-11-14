@@ -35,7 +35,7 @@ const props = defineProps({
 		<template #default="{ item, index }">
 			<NuxtLink class="item" :to="item._path + '/'">
 				<div class="item-content">
-					<h2 id="title">{{ item.title }}</h2>
+					<h3 id="title">{{ item.title }}</h3>
 					<p>{{ item.date }}</p>
 				</div>
 				<!-- <img :src="item.cover_image" alt="" /> -->
@@ -49,10 +49,7 @@ const props = defineProps({
 	</masonry-wall>
 </template>
 
-<style scoped>
-h3 {
-	font-size: var(--step-1);
-}
+<style lang="scss" scoped>
 p {
 	font-size: var(--step--1);
 }
@@ -60,16 +57,7 @@ p {
 	margin-block-end: var(--space-s);
 }
 .item {
-	background-color: var(--color-sys-invert-highlight);
-	box-shadow: var(--shadow-md);
-	overflow: auto;
-	border-radius: var(--border-radius);
-	transition: transform 0.35s, box-shadow ease-in-out 0.35s;
-	transform: translateY(0);
-	&:hover {
-		transform: translateY(var(--space-4xs));
-		box-shadow: var(--shadow-sm);
-	}
+	@include content-item();
 }
 img {
 	border-radius: unset;
@@ -82,6 +70,7 @@ img {
 	margin: 0;
 }
 a {
+	@include link(none);
 	inset: 0;
 	display: block;
 	font-weight: 400;

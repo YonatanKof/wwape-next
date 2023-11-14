@@ -26,23 +26,14 @@ defineProps({
 	</nav>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .more {
 	display: flex;
 	flex-direction: row;
 	gap: var(--space-s);
 }
 .item {
-	background-color: var(--color-sys-invert-highlight);
-	box-shadow: var(--shadow-md);
-	overflow: auto;
-	border-radius: var(--border-radius);
-	transition: transform 0.35s, box-shadow ease-in-out 0.35s;
-	transform: translateY(0);
-	&:hover {
-		transform: translateY(var(--space-4xs));
-		box-shadow: var(--shadow-sm);
-	}
+	@include content-item();
 }
 img {
 	border-radius: unset;
@@ -55,6 +46,7 @@ img {
 	margin: 0;
 }
 a {
+	@include link(none);
 	inset: 0;
 	display: block;
 	font-weight: 400;

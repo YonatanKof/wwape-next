@@ -76,10 +76,13 @@ useHead({
 				<ContentRenderer :value="doc" />
 			</article>
 		</ContentDoc>
-		<SeeMore :prev="prev" :next="next"/>
+		<SeeMore :prev="prev" :next="next" />
 	</main>
 </template>
 <style scoped>
+article {
+	margin-block-end: var(--space-s);
+}
 main {
 	margin-block-end: var(--space-l);
 }

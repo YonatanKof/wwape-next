@@ -46,7 +46,7 @@ defineProps({
 	// padding-bottom: 75%; // 4x3
 	padding-bottom: 56.5%; // 16x9
 	height: 0;
-
+	margin-block-end: var(--space-2xs);
 	&__item {
 		position: absolute;
 		top: 0;

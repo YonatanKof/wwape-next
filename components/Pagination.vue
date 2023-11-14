@@ -76,6 +76,7 @@ const prevLink = computed(() => {
 
 <style lang="scss" scoped>
 a {
+	@include link(none);
 	text-decoration: none;
 }
 .pagination-list {
