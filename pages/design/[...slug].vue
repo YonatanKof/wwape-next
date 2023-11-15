@@ -23,6 +23,8 @@ const image = data.value?.article?.social_image.src || '/images/main.png';
 const config = useRuntimeConfig();
 const siteTitle = `A design by ${config.public.siteOwnerName}`;
 
+const { $formatDate } = useNuxtApp();
+
 useHead({
 	titleTemplate: (titleChunk) => {
 		return titleChunk ? `${titleChunk} - ` + siteTitle : siteTitle;
@@ -67,10 +69,11 @@ useHead({
 		<ContentDoc v-slot="{ doc }">
 			<article>
 				<h1 id="title">{{ doc.title }}</h1>
-				<span>
-					<p>Created {{ doc.date }}</p>
+				<hr />
+				<span class="dates">
+					<p>Created {{ $formatDate(doc.date) }}</p>
 					<p v-if="doc.updated">•</p>
-					<p v-if="doc.updated">Updated {{ doc.updated }}</p>
+					<p v-if="doc.updated">Updated {{ $formatDate(doc.updated) }}</p>
 				</span>
 				<hr />
 				<ContentRenderer :value="doc" />
@@ -79,16 +82,25 @@ useHead({
 		<SeeMore :prev="prev" :next="next" />
 	</main>
 </template>
-<style scoped>
+<style lang="scss" scoped>
 article {
 	margin-block-end: var(--space-s);
 }
 main {
 	margin-block-end: var(--space-l);
 }
-span {
+.dates {
 	display: flex;
 	flex-direction: row;
 	gap: var(--space-2xs);
+}
+.dates > p {
+	font-size: var(--step--1);
+	margin-block-end: unset;
+}
+@media (width <= $display-width-narrow) {
+	.dates > p {
+		font-size: var(--step--3);
+	}
 }
 </style>

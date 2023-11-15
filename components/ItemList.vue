@@ -36,9 +36,8 @@ const props = defineProps({
 			<NuxtLink class="item" :to="item._path + '/'">
 				<div class="item-content">
 					<h3 id="title">{{ item.title }}</h3>
-					<p>{{ item.date }}</p>
+					<p>{{ $formatDate(item.date) }}</p>
 				</div>
-				<!-- <img :src="item.cover_image" alt="" /> -->
 				<UnLazyImage
 					:thumbhash="item.cover_image_thumbhash"
 					:src="item.cover_image"
