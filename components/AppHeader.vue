@@ -31,7 +31,7 @@ div, nav {
 	@include flex-center;
 	gap: var(--space-xs);
 }
-@media screen and (max-width: 640px) {
+@media (width <= $display-width-narrow) {
 	header {
 		flex-direction: column-reverse;
 		align-items: start;

@@ -19,6 +19,7 @@ export default defineNuxtConfig({
 				scss: {
 					additionalData: `
 						@use '~/assets/styles/reset' as *; 
+						@use '~/assets/styles/vars' as *; 
 						@use '~/assets/styles/mixins' as *; 
 						@use '~/assets/styles/utopia' as *; 
 						@use '~/assets/styles/typography' as *;`,

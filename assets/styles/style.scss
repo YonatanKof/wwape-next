@@ -3,9 +3,6 @@
 	--header-height: var(--space-4xl);
 	--border-radius: var(--space-3xs);
 
-	--display-width-normal: 960px;
-	--display-width-narrow: 544px;
-
 	--color-sys-main: hsl(180, 25%, 15%);
 	--color-sys-slight: hsla(0, 0%, 10%, 0.75);
 	--color-sys-dim: hsla(0, 0%, 10%, 0.25);
@@ -73,7 +70,10 @@ img ~ em {
 	padding-inline-start: var(--space-3xs);
 	border-inline-start: var(--color-sys-dim) solid var(--space-4xs);
 }
-
+hr{
+	border: none;
+	border-bottom: solid 1px var(--color-sys-dim);
+}
 .dark {
 	--color-sys-main: hsl(34, 78%, 91%);
 	--color-sys-slight: hsla(34, 78%, 91%, 0.75);
