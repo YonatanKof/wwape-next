@@ -21,7 +21,7 @@ const props = defineProps({
 		default: 2,
 	},
 });
-// const { $formatDate } = useNuxtApp();
+const { $formatDate } = useNuxtApp();
 </script>
 
 <template>
