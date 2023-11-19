@@ -37,7 +37,7 @@ useHead({
 			content: data.value?.article?.updated.split('T')[0] || data.value?.article?.date.split('T')[0],
 		},
 		// OG
-		// { hid: 'og:title', property: 'og:title', content: data.value?.article?.title },
+		{ hid: 'og:title', property: 'og:title', content: data.value?.article?.title },
 		{ hid: 'og:url', property: 'og:url', content: canonicalPath },
 		{ hid: 'og:description', property: 'og:description', content: data.value?.article?.description },
 		{ hid: 'og:image', name: 'image', property: 'og:image', content: image },
@@ -48,10 +48,13 @@ useHead({
 		{ hid: 'og:image:alt', property: 'og:image:alt', content: data.value?.article?.social_image.alt },
 		// Twitter
 		{ hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
-		// { hid: 'twitter:title', name: 'twitter:title', content: data.value?.article?.title },
+		{ hid: 'twitter:title', name: 'twitter:title', content: data.value?.article?.title },
 		{ hid: 'twitter:url', name: 'twitter:url', content: canonicalPath },
 		{ hid: 'twitter:description', name: 'twitter:description', content: data.value?.article?.description },
 		{ hid: 'twitter:image', name: 'twitter:image', content: image },
+		{ hid: 'twitter:image:src', name: 'twitter:image:src', content: image },
+		{ hid: 'twitter:image:width', name: 'twitter:image:width', content: 1200 },
+		{ hid: 'twitter:image:height', name: 'twitter:image:height', content: 630 },
 		{ hid: 'twitter:image:alt', name: 'twitter:image:alt', content: data.value?.article?.social_image.alt },
 	],
 	link: [
