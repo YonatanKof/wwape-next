@@ -3,11 +3,10 @@ title: 'Kof Mask'
 author_name: 'Yonatan Ben Knaan'
 date: '2023-09-22'
 updated: ''
-cover_image: '/designs/kof-mask/kof-mask-v1.webp'
-cover_image_pre: '/designs/kof-mask/kof-mask-v1-pre.webp'
+cover_image: '/designs/kof-mask/kof-mask-v1-tn.webp'
 cover_image_thumbhash: '3xcOBwAHeHeHiHeAeYp3eKiHh4AI94gP'
 social_image: 
-    src: '/designs/kof-mask/kof-mask-v1-social.webp'
+    src: '/designs/kof-mask/kof-mask-v1-social.jpg'
     alt: 'We put our faith in clouds'
 description: 'Sacred Balinese Mask'
 tags: ['Creative']

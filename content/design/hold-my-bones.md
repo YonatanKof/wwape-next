@@ -3,10 +3,10 @@ title: 'Hold My Bones'
 author_name: 'Yonatan Ben Knaan'
 date: '2016-11-24'
 updated: ''
-cover_image: '/designs/hold-my-bones/hold-my-bones-dark.jpg'
+cover_image: '/designs/hold-my-bones/hold-my-bones-dark-tn.webp'
 cover_image_thumbhash: 'CAgKDII4NreIiHdwi3YoiICCCA'
 social_image: 
-    src: '/designs/hold-my-bones/hold-my-bones-social.jpg'
+    src: '/designs/hold-my-bones/hold-my-bones-dark-social.jpg'
     alt: 'My love lettering with 2 bones'
 description: 'From Bat Yam to Infinity'
 tags: ['Creative']
@@ -16,10 +16,10 @@ Tribute artwork for [_Coastline Paradox_](https://hilaruach.bandcamp.com/track/-
 
 #### Some versions here:
 
-![My love lettering with 2 bones](/designs/hold-my-bones/hold-my-bones-red.jpg)
+![My love lettering with 2 bones](/designs/hold-my-bones/hold-my-bones-red.webp)
 *Red Version*
 
-![My love lettering with 2 bones](/designs/hold-my-bones/hold-my-bones-dark.jpg)
+![My love lettering with 2 bones](/designs/hold-my-bones/hold-my-bones-dark.webp)
 *Dark Version*
 
 My lose translation:

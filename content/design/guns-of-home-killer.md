@@ -3,10 +3,10 @@ title: 'Guns of Home Killer'
 author_name: 'Yonatan Ben Knaan'
 date: '2008-11-28'
 updated: '2008-11-28'
-cover_image: '/designs/guns-of-home-killer/guns-of-home-killer.webp'
+cover_image: '/designs/guns-of-home-killer/guns-of-home-killer-tn.webp'
 cover_image_thumbhash: '7AcKE4abeHdweXdpv9irSp8'
 social_image: 
-    src: '/designs/guns-of-home-killer/guns-of-home-killer-social.webp'
+    src: '/designs/guns-of-home-killer/guns-of-home-killer-social.jpg'
     alt: 'This are the guns of Home Killer'
 description: 'Cut by half with a gun'
 tags: ['Creative']

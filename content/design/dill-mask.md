@@ -6,7 +6,7 @@ updated: '2023-10-20'
 cover_image: '/designs/dill-mask/dill-mask.webp'
 cover_image_thumbhash: 'JQgGCgAohqhYingI93h5j3c'
 social_image: 
-    src: '/designs/dill-mask/dill-mask-social.webp'
+    src: '/designs/dill-mask/dill-mask-social.jpg'
     alt: 'A composition showing a girl being cut by forces greater then us'
 description: 'We are all a girl being cut'
 tags: ['Creative']
@@ -21,6 +21,8 @@ And they are the beginning of just wretched series
 Of addict blood, familiar like a head 
 
 ![Dill Mask – The prints](/designs/dill-mask/dill-mask-prints.webp)
+
+![Dill Mask – In motion](/designs/dill-mask/dill-mask-move.webp)
 
 ![Dill Mask – Bug](/designs/dill-mask/dill-mask-Bug.webp)
 

@@ -3,10 +3,10 @@ title: 'Rosa BVM'
 author_name: 'Yonatan Ben Knaan'
 date: '2009-10-11'
 updated: '2010-02-16'
-cover_image: '/designs/bvm-pink/BVM.png'
+cover_image: '/designs/rosa-bvm/rosa-bvm-tn.webp'
 cover_image_thumbhash: 'NxgGBQK6aK92iaVXSYmGyQmBfgOG'
 social_image: 
-    src: '/designs/bvm-pink/social-cover-BVM.jpg'
+    src: '/designs/rosa-bvm/rosa-bvm-social.jpg'
     alt: 'A close up of the heavenly source'
 description: 'Born out of love'
 tags: ['Creative']
@@ -16,7 +16,9 @@ tags: ['Creative']
 
 A manly tale of a godly birth by an excluded woman  
 
-![bvm](/designs/bvm-pink/BVM.jpg)
+![bvm](/designs/rosa-bvm/rosa-bvm.webp)
+
+![bvm](/designs/rosa-bvm/rosa-bvm-detail.webp)
 
 
 

@@ -3,10 +3,10 @@ title: 'Hanuman Langur Skull'
 author_name: 'Yonatan Ben Knaan'
 date: '2009-03-09'
 updated: '2022-01-28'
-cover_image: '/designs/hanuman-langur-skull/hanuman-langur-skull.webp'
+cover_image: '/designs/hanuman-langur-skull/hanuman-langur-skull-tn.webp'
 cover_image_thumbhash: 'ZPkFDQhRc5B2R3YpqHR4d8u7YEMJ'
 social_image: 
-    src: '/designs/hanuman-langur-skull/hanuman-langur-skull-social.webp'
+    src: '/designs/hanuman-langur-skull/hanuman-langur-skull-social.jpg'
     alt: 'Outlined Hanuman Langur Skull'
 description: 'Screaming monkeys scream "You fucking monkey!"'
 tags: ['Creative', 'Skull']
