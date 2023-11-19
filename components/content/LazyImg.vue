@@ -1,5 +1,6 @@
 <template>
 	<UnLazyImage :thumbhash="thumbhash" :src="refinedSrc" :alt="alt" :width="width" :height="height" auto-sizes />
+	<em>{{ desc }}</em>
 </template>
 
 <script setup lang="ts">
@@ -24,6 +25,10 @@ const props = defineProps({
 		default: undefined,
 	},
 	thumbhash: {
+		type: String,
+		default: undefined,
+	},
+	desc: {
 		type: String,
 		default: undefined,
 	},

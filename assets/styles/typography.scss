@@ -81,14 +81,7 @@ h5 {
 h6 {
 	font-size: var(--step-0);
 }
-@mixin clearfix($width: 'auto') {
-	@if $width == 'auto' {
-	  // if width is not passed, or empty do this
-	} @else {
-	  display: inline-block;
-	  width: $width;
-	}
-  }
+
 @mixin link($none-ul: null) {
 	@if not ($none-ul) {
 		border-bottom: solid 1px var(--color-sys-none);

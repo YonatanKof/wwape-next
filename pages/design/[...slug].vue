@@ -98,6 +98,7 @@ main {
 	gap: var(--space-2xs);
 }
 .dates > p {
+	color: var(--color-sys-slight);
 	font-size: var(--step--1);
 	margin-block-end: unset;
 }

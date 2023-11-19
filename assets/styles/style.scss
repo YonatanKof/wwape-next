@@ -65,12 +65,14 @@ button {
 	}
 }
 img ~ em {
-	color: var(--color-sys-dim);
+	color: var(--color-sys-slight);
 	font-size: var(--step--1);
-	padding-inline-start: var(--space-3xs);
+	padding-inline-start: var(--space-2xs);
 	border-inline-start: var(--color-sys-dim) solid var(--space-4xs);
+	display: inline-block;
+	margin-block-start: var(--space-2xs);
 }
-hr{
+hr {
 	border: none;
 	border-bottom: solid 1px var(--color-sys-dim);
 }
