@@ -7,10 +7,9 @@ cover_image: '/designs/i-love-you-so-much/i-love-you-so-much-tn.webp
 '
 cover_image_height: '2524'
 cover_image_thumbhash: 'VHkGCwT2eMdYiHnX93h7j7c'
-social_image: 
-    src: '/designs/i-love-you-so-much/i-love-you-so-much-social.jpg
+social_image: '/designs/i-love-you-so-much/i-love-you-so-much-social.jpg
     '
-    alt: 'Some people love too much bad things can happen'
+image_alt: 'Some people love too much bad things can happen'
 description: 'I love you so much it hurts'
 tags: ['Creative']
 ---

@@ -6,9 +6,8 @@ updated: ''
 cover_image: '/designs/hold-my-raw-bones/hold-my-raw-bones-tn.webp'
 cover_image_height: '777'
 cover_image_thumbhash: '8CgCDYJ9SWiNl3eAiXuJjLR0X0r3'
-social_image: 
-    src: '/designs/hold-my-raw-bones/hold-my-raw-bones-social.jpg'
-    alt: 'My love lettering with 2 bones'
+social_image: '/designs/hold-my-raw-bones/hold-my-raw-bones-social.jpg'
+image_alt: 'My love lettering with 2 bones'
 description: 'From Bat Yam to Infinity'
 tags: ['Creative']
 ---

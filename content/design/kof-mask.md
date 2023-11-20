@@ -6,9 +6,8 @@ updated: ''
 cover_image: '/designs/kof-mask/kof-mask-v1-tn.webp'
 cover_image_height: '1000'
 cover_image_thumbhash: '3xcOBwAHeHeHiHeAeYp3eKiHh4AI94gP'
-social_image: 
-    src: '/designs/kof-mask/kof-mask-v1-social.jpg'
-    alt: 'We put our faith in clouds'
+social_image: '/designs/kof-mask/kof-mask-v1-social.jpg'
+image_alt: 'We put our faith in clouds'
 description: 'Sacred Balinese Mask'
 tags: ['Creative']
 ---

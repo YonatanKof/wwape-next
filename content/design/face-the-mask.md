@@ -6,9 +6,8 @@ updated: '2011-01-22'
 cover_image: '/designs/face-the-mask/face-the-mask-tn.webp'
 cover_image_height: '1765'
 cover_image_thumbhash: 'INgFDACrtWdKmQtKhkRoj2vl+Q'
-social_image: 
-    src: '/designs/face-the-mask/face-the-mask-social.jpg'
-    alt: 'Sacred Balinese Mask'
+social_image: '/designs/face-the-mask/face-the-mask-social.jpg'
+image_alt: 'Sacred Balinese Mask'
 description: 'Sacred Balinese Mask'
 tags: ['Creative']
 ---

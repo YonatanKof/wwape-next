@@ -6,9 +6,8 @@ updated: '2010-02-16'
 cover_image: '/designs/rosa-bvm/rosa-bvm-tn.webp'
 cover_image_height: '1401'
 cover_image_thumbhash: 'NxgGBQK6aK92iaVXSYmGyQmBfgOG'
-social_image: 
-    src: '/designs/rosa-bvm/rosa-bvm-social.jpg'
-    alt: 'A close up of the heavenly source'
+social_image: '/designs/rosa-bvm/rosa-bvm-social.jpg'
+image_alt: 'A close up of the heavenly source'
 description: 'Born out of love'
 tags: ['Creative']
 ---

@@ -6,9 +6,8 @@ updated: '2022-01-28'
 cover_image: '/designs/hanuman-langur-skull/hanuman-langur-skull-tn.webp'
 cover_image_thumbhash: 'ZPkFDQhRc5B2R3YpqHR4d8u7YEMJ'
 cover_image_height: '1361'
-social_image: 
-    src: '/designs/hanuman-langur-skull/hanuman-langur-skull-social.jpg'
-    alt: 'Outlined Hanuman Langur Skull'
+social_image: '/designs/hanuman-langur-skull/hanuman-langur-skull-social.jpg'
+image_alt: 'Outlined Hanuman Langur Skull'
 description: 'Screaming monkeys scream "You fucking monkey!"'
 tags: ['Creative', 'Skull']
 ---

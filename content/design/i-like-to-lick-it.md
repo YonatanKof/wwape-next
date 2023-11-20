@@ -6,9 +6,8 @@ updated: '2007-11-27'
 cover_image: '/designs/i-like-to-lick-it/i-like-to-lick-it-tn.webp'
 cover_image_height: '1569'
 cover_image_thumbhash: 'NlgKBAyEB5V3iZdneIecr733mg'
-social_image: 
-    src: '/designs/i-like-to-lick-it/i-like-to-lick-it-social.jpg'
-    alt: 'A face in the gravel licking upwards  '
+social_image: '/designs/i-like-to-lick-it/i-like-to-lick-it-social.jpg'
+image_alt: 'A face in the gravel licking upwards  '
 description: 'A monster from a pink ass'
 tags: ['Creative']
 ---

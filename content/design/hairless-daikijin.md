@@ -6,13 +6,12 @@ updated: ''
 cover_image: '/designs/hairless-daikijin/daikijin-tn.webp'
 cover_image_height: '1333'
 cover_image_thumbhash: 'VhgODQIIWIaIJ6d4iHSJaAeHkANX'
-social_image: 
-    src: '/designs/hairless-daikijin/daikijin-social.jpg'
-    alt: 'An Oni Daikijin mask over geometric background'
+social_image: '/designs/hairless-daikijin/daikijin-social.jpg'
+image_alt: 'An Oni Daikijin mask over geometric background'
 description: 'A Great Demon God'
 tags: ['Creative', 'Tribeless']
 ---
-{{ $doc.description}} - {{ $doc.social_image.alt}}
+{{ $doc.description}} - {{ $doc.image_alt }}
 
 ![An Oni Daikijin mask over geometric background](/designs/hairless-daikijin/daikijin.webp)
 

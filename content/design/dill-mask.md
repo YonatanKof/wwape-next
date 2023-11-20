@@ -6,9 +6,8 @@ updated: '2023-10-20'
 cover_image: '/designs/dill-mask/dill-mask-tn.webp'
 cover_image_height: '2926'
 cover_image_thumbhash: 'JQgGCgAohqhYingI93h5j3c'
-social_image: 
-    src: '/designs/dill-mask/dill-mask-social.jpg'
-    alt: 'A composition showing a girl being cut by forces greater then us'
+social_image: '/designs/dill-mask/dill-mask-social.jpg'
+image_alt: 'A composition showing a girl being cut by forces greater then us'
 description: 'We are all a girl being cut'
 tags: ['Creative']
 ---

@@ -6,9 +6,8 @@ updated: '2022-01-22'
 cover_image: '/designs/elongated/elongated-tn.webp'
 cover_image_height: '1333'
 cover_image_thumbhash: 'JQgGCgAohqhYingI93h5j3c'
-social_image: 
-    src: '/designs/elongated/elongated-social.jpg'
-    alt: 'A glitched elongated human skull'
+social_image: '/designs/elongated/elongated-social.jpg'
+image_alt: 'A glitched elongated human skull'
 description: "Don't stretch it"
 tags: ['Creative', 'Skull']
 ---

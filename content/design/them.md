@@ -6,9 +6,8 @@ updated: ''
 cover_image: '/designs/them/them-tn.webp'
 cover_image_height: '525'
 cover_image_thumbhash: 'z/cFBIRpBaeIeHhimHdviPOIiA'
-social_image:
-    src:  '/designs/them/them-social.jpg'
-    alt: "Two figures that are the N'Dhala people calender"
+social_image: '/designs/them/them-social.jpg'
+image_alt: "Two figures that are the N'Dhala people calender"
 description: "The N'Dhala people calender"
 tags: ['Creative']
 ---

@@ -6,9 +6,8 @@ updated: ''
 cover_image: '/designs/hold-my-bones/hold-my-bones-dark-tn.webp'
 cover_image_height: '625'
 cover_image_thumbhash: 'CAgKDII4NreIiHdwi3YoiICCCA'
-social_image: 
-    src: '/designs/hold-my-bones/hold-my-bones-dark-social.jpg'
-    alt: 'My love lettering with 2 bones'
+social_image: '/designs/hold-my-bones/hold-my-bones-dark-social.jpg'
+image_alt: 'My love lettering with 2 bones'
 description: 'From Bat Yam to Infinity'
 tags: ['Creative']
 ---

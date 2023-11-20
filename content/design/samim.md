@@ -6,9 +6,8 @@ updated: ''
 cover_image: '/designs/samim/samim-Face-tn.webp'
 cover_image_height: '1000'
 cover_image_thumbhash: 'G2oGHwxqVmdviXZiZkiIp5eBWcAnBHkE'
-social_image: 
-    src: '/designs/samim/samim-Plane-social.jpg'
-    alt: 'We put our faith in clouds'
+social_image: '/designs/samim/samim-Plane-social.jpg'
+image_alt: 'We put our faith in clouds'
 description: "This is the verb for 'put' form Heb to Eng"
 tags: ['Creative']
 ---

@@ -6,9 +6,8 @@ updated: '2021-09-24'
 cover_image: '/designs/all-the-love/all-the-love-tn.webp'
 cover_image_height: '563'
 cover_image_thumbhash: 'LsgGBIQFeYh4iIegbJf/qZht9w'
-social_image: 
-    src: '/designs/all-the-love/all-the-love-social.jpg'
-    alt: 'Two line works loosely depicting a pistol with the text - All the love in the world'
+social_image: '/designs/all-the-love/all-the-love-social.jpg'
+image_alt: 'Two line works loosely depicting a pistol with the text - All the love in the world'
 description: 'People love people not guns'
 tags: ['Creative']
 ---

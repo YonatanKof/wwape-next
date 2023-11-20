@@ -6,9 +6,8 @@ updated: '2010-02-20'
 cover_image: '/designs/defecate/defecate-tn.webp'
 cover_image_height: '1920'
 cover_image_thumbhash: 'Z/cFDAIK53ont2aHaHcsr/aTVw'
-social_image: 
-    src: '/designs/defecate/defecate-social.jpg'
-    alt: 'A man defecating on the toilet with a crown of pistols'
+social_image: '/designs/defecate/defecate-social.jpg'
+image_alt: 'A man defecating on the toilet with a crown of pistols'
 description: 'One way or another'
 tags: ['Creative']
 ---

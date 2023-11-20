@@ -6,9 +6,8 @@ updated: '2008-11-28'
 cover_image: '/designs/killer-in-the-home/killer-in-the-home-tn.webp'
 cover_image_height: '1427'
 cover_image_thumbhash: 'IhcKFQKNaI+JWIeoeIh4d1efN2X8'
-social_image: 
-    src: '/designs/killer-in-the-home/killer-in-the-home-social.jpg'
-    alt: 'Homekiller hovering at his home'
+social_image: '/designs/killer-in-the-home/killer-in-the-home-social.jpg'
+image_alt: 'Homekiller hovering at his home'
 description: 'Take his head out of its sling'
 tags: ['Creative']
 ---

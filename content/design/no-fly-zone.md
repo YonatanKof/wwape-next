@@ -6,9 +6,8 @@ updated: ''
 cover_image: '/designs/no-fly-zone/no-fly-zone-tn.webp'
 cover_image_height: '667'
 cover_image_thumbhash: '3AcSBYBndoh/h3iEmKd4dw1QL/8K'
-social_image: 
-    src: '/designs/no-fly-zone/no-fly-zone-social.jpg'
-    alt: 'A collage of happenings at the beach'
+social_image: '/designs/no-fly-zone/no-fly-zone-social.jpg'
+image_alt: 'A collage of happenings at the beach'
 description: "So busy at beach"
 tags: ['Creative']
 ---

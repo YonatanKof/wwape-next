@@ -6,9 +6,8 @@ updated: ''
 cover_image: '/designs/nera-bvm/nera-bvm-her-hands-and-man-tn.webp'
 cover_image_height: '684'
 cover_image_thumbhash: 'EvgBDYQ2eXhthYeEeAapiDVpUJMG'
-social_image: 
-    src: '/designs/nera-bvm/nera-bvm-her-hands-and-man-social.jpg'
-    alt: 'The hands of BVM holding the father'
+social_image: '/designs/nera-bvm/nera-bvm-her-hands-and-man-social.jpg'
+image_alt: 'The hands of BVM holding the father'
 description: 'Sweet Mary, black fragments made the world'
 tags: ['Creative']
 ---

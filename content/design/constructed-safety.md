@@ -6,9 +6,8 @@ updated: ''
 cover_image: '/designs/constructed-safety/constructed-safety-tn.webp'
 cover_image_height: '563'
 cover_image_thumbhash: '1gcOBIAGh3dud4WGiZfsoDrxVQ'
-social_image: 
-    src: '/designs/constructed-safety/constructed-safety-social.jpg'
-    alt: 'A collage of crane and construction sites'
+social_image: '/designs/constructed-safety/constructed-safety-social.jpg'
+image_alt: 'A collage of crane and construction sites'
 description: "The city is working it all day through"
 tags: ['Creative']
 ---

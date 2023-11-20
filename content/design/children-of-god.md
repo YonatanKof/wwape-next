@@ -6,9 +6,8 @@ updated: '2013-05-13'
 cover_image: '/designs/children-of-god/children-of-god-tn.webp'
 cover_image_height: '667'
 cover_image_thumbhash: 'NwgKBYD3qGeoaHd/c3eGigAAAAAA'
-social_image: 
-    src: '/designs/children-of-god/children-of-god-social.jpg'
-    alt: 'Arabic lettering saying "We are all children of god"'
+social_image: '/designs/children-of-god/children-of-god-social.jpg'
+image_alt: 'Arabic lettering saying "We are all children of god"'
 description: 'We are all children of god'
 tags: ['Creative']
 ---

@@ -6,9 +6,8 @@ updated: '2008-11-28'
 cover_image: '/designs/guns-of-home-killer/guns-of-home-killer-tn.webp'
 cover_image_height: '450'
 cover_image_thumbhash: '7AcKE4abeHdweXdpv9irSp8'
-social_image: 
-    src: '/designs/guns-of-home-killer/guns-of-home-killer-social.jpg'
-    alt: 'This are the guns of Home Killer'
+social_image: '/designs/guns-of-home-killer/guns-of-home-killer-social.jpg'
+image_alt: 'This are the guns of Home Killer'
 description: 'Cut by half with a gun'
 tags: ['Creative']
 ---
