@@ -4,6 +4,7 @@ author_name: 'Yonatan Ben Knaan'
 date: '2009-01-19'
 updated: '2010-02-06'
 cover_image: '/designs/facing-me/facing-me-tn.webp'
+cover_image_height: '714'
 cover_image_thumbhash: 'b+cFFYQ3Fh9Xt2p0c4N5dQamRlB9'
 social_image: 
     src: '/designs/facing-me/facing-me-social.jpg'

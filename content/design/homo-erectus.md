@@ -4,6 +4,7 @@ author_name: 'Yonatan Ben Knaan'
 date: '2010-06-10'
 updated: '2021-05-16'
 cover_image: '/designs/homo-erectus/homo-erectus-tn.webp'
+cover_image_height: '700'
 cover_image_thumbhash: 'ZfYFDIIHeHiDeHh3d3iof4r1yA'
 social_image: 
     src: '/designs/homo-erectus/homo-erectus-social.jpg'

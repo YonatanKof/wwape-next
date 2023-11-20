@@ -4,6 +4,7 @@ author_name: 'Yonatan Ben Knaan'
 date: '2009-02-22'
 updated: '2010-02-20'
 cover_image: '/designs/defecate/defecate-tn.webp'
+cover_image_height: '1920'
 cover_image_thumbhash: 'Z/cFDAIK53ont2aHaHcsr/aTVw'
 social_image: 
     src: '/designs/defecate/defecate-social.jpg'

@@ -4,6 +4,7 @@ author_name: 'Yonatan Ben Knaan'
 date: '2023-09-22'
 updated: ''
 cover_image: '/designs/kof-mask/kof-mask-v1-tn.webp'
+cover_image_height: '1000'
 cover_image_thumbhash: '3xcOBwAHeHeHiHeAeYp3eKiHh4AI94gP'
 social_image: 
     src: '/designs/kof-mask/kof-mask-v1-social.jpg'

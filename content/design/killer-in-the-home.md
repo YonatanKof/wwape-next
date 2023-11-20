@@ -4,6 +4,7 @@ author_name: 'Yonatan Ben Knaan'
 date: '2008-11-28'
 updated: '2008-11-28'
 cover_image: '/designs/killer-in-the-home/killer-in-the-home-tn.webp'
+cover_image_height: '1427'
 cover_image_thumbhash: 'IhcKFQKNaI+JWIeoeIh4d1efN2X8'
 social_image: 
     src: '/designs/killer-in-the-home/killer-in-the-home-social.jpg'

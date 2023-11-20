@@ -5,6 +5,7 @@ date: '2009-03-09'
 updated: '2022-01-28'
 cover_image: '/designs/hanuman-langur-skull/hanuman-langur-skull-tn.webp'
 cover_image_thumbhash: 'ZPkFDQhRc5B2R3YpqHR4d8u7YEMJ'
+cover_image_height: '1361'
 social_image: 
     src: '/designs/hanuman-langur-skull/hanuman-langur-skull-social.jpg'
     alt: 'Outlined Hanuman Langur Skull'

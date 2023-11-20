@@ -4,6 +4,7 @@ author_name: 'Yonatan Ben Knaan'
 date: '2017-01-01'
 updated: '2021-09-24'
 cover_image: '/designs/all-the-love/all-the-love-tn.webp'
+cover_image_height: '563'
 cover_image_thumbhash: 'LsgGBIQFeYh4iIegbJf/qZht9w'
 social_image: 
     src: '/designs/all-the-love/all-the-love-social.jpg'

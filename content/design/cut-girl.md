@@ -4,6 +4,7 @@ author_name: 'Yonatan Ben Knaan'
 date: '2007-04-25'
 updated: ''
 cover_image: '/designs/cut-girl/cut-girl-tn.webp'
+cover_image_height: '1435'
 cover_image_thumbhash: 'MRgGDQKT+IZ3pnh4eItnpjCEBzM3'
 social_image: 
     src: '/designs/cut-girl/cut-girl-social.jpg'

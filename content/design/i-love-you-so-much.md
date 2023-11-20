@@ -5,6 +5,7 @@ date: '2003-06-28'
 updated: ''
 cover_image: '/designs/i-love-you-so-much/i-love-you-so-much-tn.webp
 '
+cover_image_height: '2524'
 cover_image_thumbhash: 'VHkGCwT2eMdYiHnX93h7j7c'
 social_image: 
     src: '/designs/i-love-you-so-much/i-love-you-so-much-social.jpg

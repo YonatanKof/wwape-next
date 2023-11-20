@@ -4,6 +4,7 @@ author_name: 'Yonatan Ben Knaan'
 date: '2023-02-23'
 updated: ''
 cover_image: '/designs/no-fly-zone/no-fly-zone-tn.webp'
+cover_image_height: '667'
 cover_image_thumbhash: '3AcSBYBndoh/h3iEmKd4dw1QL/8K'
 social_image: 
     src: '/designs/no-fly-zone/no-fly-zone-social.jpg'

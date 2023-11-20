@@ -4,6 +4,7 @@ author_name: 'Yonatan Ben Knaan'
 date: '2021-05-22'
 updated: ''
 cover_image: '/designs/them/them-tn.webp'
+cover_image_height: '525'
 cover_image_thumbhash: 'z/cFBIRpBaeIeHhimHdviPOIiA'
 social_image:
     src:  '/designs/them/them-social.jpg'

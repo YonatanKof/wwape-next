@@ -4,6 +4,7 @@ author_name: 'Yonatan Ben Knaan'
 date: '2016-11-24'
 updated: ''
 cover_image: '/designs/hold-my-bones/hold-my-bones-dark-tn.webp'
+cover_image_height: '625'
 cover_image_thumbhash: 'CAgKDII4NreIiHdwi3YoiICCCA'
 social_image: 
     src: '/designs/hold-my-bones/hold-my-bones-dark-social.jpg'

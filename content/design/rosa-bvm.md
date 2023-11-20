@@ -4,6 +4,7 @@ author_name: 'Yonatan Ben Knaan'
 date: '2009-10-11'
 updated: '2010-02-16'
 cover_image: '/designs/rosa-bvm/rosa-bvm-tn.webp'
+cover_image_height: '1401'
 cover_image_thumbhash: 'NxgGBQK6aK92iaVXSYmGyQmBfgOG'
 social_image: 
     src: '/designs/rosa-bvm/rosa-bvm-social.jpg'

@@ -4,6 +4,7 @@ author_name: 'Yonatan Ben Knaan'
 date: '2023-07-18'
 updated: ''
 cover_image: '/designs/surrender-at-sunset/surrender-at-sunset-tn.webp'
+cover_image_height: '667'
 cover_image_thumbhash: 'HSkSJYZoh3ePiIhziJd3h2iGgGYI'
 social_image: 
     src: '/designs/surrender-at-sunset/surrender-at-sunset-social.jpg'

@@ -42,7 +42,8 @@ const { $formatDate } = useNuxtApp();
 					:thumbhash="item.cover_image_thumbhash"
 					:src="item.cover_image"
 					:alt="item.social_image.alt"
-					auto-sizes
+					width="1000"
+  					:height="item.cover_image_height"
 				/>
 			</NuxtLink>
 		</template>

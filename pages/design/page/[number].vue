@@ -4,7 +4,7 @@
         <!-- Query for the given blog page number -->
         <ContentQuery
             path="/design"
-            :only="['title', 'date', '_path', 'cover_image', 'social_image', 'cover_image_thumbhash']"
+            :only="['title', 'date', '_path', 'cover_image', 'social_image', 'cover_image_thumbhash', 'cover_image_height']"
             :sort="{
                 date: -1
             }"
@@ -17,7 +17,7 @@
                     <ItemList :design-data="data" />
                     <ContentQuery
                         path="/design"
-                        :only="['title', 'date', '_path', 'cover_image', 'social_image', 'cover_image_thumbhash']"
+                        :only="['title', 'date', '_path', 'cover_image', 'social_image', 'cover_image_thumbhash', 'cover_image_height']"
                     >
                         <template v-slot="{ data }">
                             <Pagination

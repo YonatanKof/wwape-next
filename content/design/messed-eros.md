@@ -4,6 +4,7 @@ author_name: 'Yonatan Ben Knaan'
 date: '2013-07-13'
 updated: ''
 cover_image: '/designs/messed-eros/messed-eros-tn.webp'
+cover_image_height: '1500'
 cover_image_thumbhash: 'CggGDQIHiYdoCLiHeHiIZweGdGAo'
 social_image: 
     src: '/designs/messed-eros/messed-eros-social.jpg'

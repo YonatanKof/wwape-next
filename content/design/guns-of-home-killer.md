@@ -4,6 +4,7 @@ author_name: 'Yonatan Ben Knaan'
 date: '2008-11-28'
 updated: '2008-11-28'
 cover_image: '/designs/guns-of-home-killer/guns-of-home-killer-tn.webp'
+cover_image_height: '450'
 cover_image_thumbhash: '7AcKE4abeHdweXdpv9irSp8'
 social_image: 
     src: '/designs/guns-of-home-killer/guns-of-home-killer-social.jpg'

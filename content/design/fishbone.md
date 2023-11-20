@@ -4,6 +4,7 @@ author_name: 'Yonatan Ben Knaan'
 date: '2021-01-03'
 updated: ''
 cover_image: '/designs/fishbone/fishbone-v1-tn.webp'
+cover_image_height: '1000'
 cover_image_thumbhash: 'thkGHwLvCZiSdnl4dWmHmFd2KN/G8W0M'
 social_image: 
     src: '/designs/fishbone/fishbone-v1-social.jpg'

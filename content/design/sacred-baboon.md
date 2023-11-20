@@ -4,6 +4,7 @@ author_name: 'Yonatan Ben Knaan'
 date: '2023-10-22'
 updated: ''
 cover_image: '/designs/sacred-baboon/sacred-baboon-tn.webp'
+cover_image_height: '1373'
 cover_image_thumbhash: '31gGFQT4d7lW52Z4hn1HhhpfhdB2'
 social_image: 
     src: '/designs/sacred-baboon/sacred-baboon-social.jpg'
