@@ -30,7 +30,7 @@ const { data } = await useAsyncData(`content-/design`, async () => {
 		<section id="main">
 			<ContentQuery
 				path="/design"
-				:only="['title', 'date', '_path', 'cover_image', 'social_image', 'cover_image_thumbhash', 'cover_image_height']"
+				:only="['title', 'date', '_path', 'cover_image', 'cover_image_thumbhash', 'cover_image_height', 'image_alt']"
 				:sort="{
 					date: -1,
 				}"

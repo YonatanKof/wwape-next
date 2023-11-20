@@ -41,7 +41,7 @@ const { $formatDate } = useNuxtApp();
 				<UnLazyImage
 					:thumbhash="item.cover_image_thumbhash"
 					:src="item.cover_image"
-					:alt="item.social_image.alt"
+					:alt="item.image_alt"
 					width="1000"
   					:height="item.cover_image_height"
 				/>
