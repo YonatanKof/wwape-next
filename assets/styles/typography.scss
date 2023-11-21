@@ -19,8 +19,8 @@
 :root {
 	--font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
 		'Segoe UI Emoji', 'Segoe UI Symbol';
-	--font-mono: RecVar;
-	--font-hand: CaveatBold;
+	--font-mono: RecVar, monospace;
+	--font-hand: CaveatBold, cursive;
 }
 body,
 html {
