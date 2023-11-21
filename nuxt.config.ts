@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-	modules: ['@nuxt/content', '@unlazy/nuxt'],
+	modules: ['@nuxt/content', '@unlazy/nuxt', 'nuxt-clarity-analytics'],
 	content: {
 		highlight: {
 			theme: 'github-light',
@@ -39,6 +39,7 @@ export default defineNuxtConfig({
 	},
 	runtimeConfig: {
 		// Private keys are only available on the server
+		clarityId: process.env.MICROSOFT_CLARITY_ID,
 		// Public keys that are exposed to the client
 		public: {
 			siteOwnerName: 'Yonatan Ben Knaan',
