@@ -18,7 +18,7 @@ const { data, error } = await useAsyncData(cleanPath, async () => {
 // Set the meta
 const baseUrl = 'https://wwape.com';
 const canonicalPath = baseUrl + (path + '/').replace(/\/+$/, '/');
-const image = data.value?.article?.social_image.src || '/images/main.png';
+const image = baseUrl + data.value?.article?.social_image || '/images/main.png';
 
 const config = useRuntimeConfig();
 const siteTitle = `A design by ${config.public.siteOwnerName}`;
@@ -41,21 +41,21 @@ useHead({
 		{ hid: 'og:url', property: 'og:url', content: canonicalPath },
 		{ hid: 'og:description', property: 'og:description', content: data.value?.article?.description },
 		{ hid: 'og:image', name: 'image', property: 'og:image', content: image },
-		{ hid: 'og:type', property: 'og:type', content: 'Article' },
-		// { hid: 'og:image:type', property: 'og:image:type', content: `image/${data.value?.article?.social_image.mime}` },
-		// { hid: 'og:image:width', property: 'og:image:width', content: data.value?.article?.social_image.width || 190 },
-		// { hid: 'og:image:height', property: 'og:image:height', content: data.value?.article?.social_image.height || 190 },
-		{ hid: 'og:image:alt', property: 'og:image:alt', content: data.value?.article?.social_image.alt },
+		{ hid: 'og:type', property: 'og:type', content: 'article' },
+		{ hid: 'og:image:type', property: 'og:image:type', content: `image/jpeg` },
+		{ hid: 'og:image:width', property: 'og:image:width', content: 1200 },
+		{ hid: 'og:image:height', property: 'og:image:height', content: 630 },
+		{ hid: 'og:image:alt', property: 'og:image:alt', content: data.value?.article?.image_alt },
 		// Twitter
 		{ hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
+		{ hid: 'twitter:creator', name: 'twitter:creator', content: '@yonatankof' },
 		{ hid: 'twitter:title', name: 'twitter:title', content: data.value?.article?.title },
-		{ hid: 'twitter:url', name: 'twitter:url', content: canonicalPath },
 		{ hid: 'twitter:description', name: 'twitter:description', content: data.value?.article?.description },
+		{ hid: 'twitter:url', name: 'twitter:url', content: canonicalPath },
 		{ hid: 'twitter:image', name: 'twitter:image', content: image },
-		{ hid: 'twitter:image:src', name: 'twitter:image:src', content: image },
 		{ hid: 'twitter:image:width', name: 'twitter:image:width', content: 1200 },
 		{ hid: 'twitter:image:height', name: 'twitter:image:height', content: 630 },
-		{ hid: 'twitter:image:alt', name: 'twitter:image:alt', content: data.value?.article?.social_image.alt },
+		{ hid: 'twitter:image:alt', name: 'twitter:image:alt', content: data.value?.article?.image_alt },
 	],
 	link: [
 		{
