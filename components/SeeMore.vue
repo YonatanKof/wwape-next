@@ -12,25 +12,29 @@ defineProps({
 </script>
 
 <template>
-	<nav class="more">
-		<nuxt-link class="item" v-if="prev" :to="prev?._path">
-			<h4 id="" class="item-content">Go back → {{ prev.title }}</h4>
-			<img :src="prev?.social_image" :alt="prev?.image_alt" />
-		</nuxt-link>
-		<nuxt-link v-else class="item">
-			<h4 id="" class="item-content">No previous items</h4>
-			<img src="/no-prev-next.webp" alt="An image for no previous items" />
-		</nuxt-link>
-		<!-- <span v-else>The 1st item</span> -->
-		<nuxt-link class="item" v-if="next" :to="next?._path">
-			<h4 id="" class="item-content">Go next → {{ next.title }}</h4>
-			<img :src="next?.social_image" :alt="next?.image_alt" />
-		</nuxt-link>
-		<nuxt-link v-else class="item">
-			<h4 id="" class="item-content">No next items</h4>
-			<img src="/no-prev-next.webp" alt="An image for no next items" />
-		</nuxt-link>
-	</nav>
+	<section>
+		<h2 id="title">See More</h2>
+		<hr />
+		<nav class="more">
+			<nuxt-link class="item" v-if="prev" :to="prev?._path">
+				<h4 id="" class="item-content">Go back → {{ prev.title }}</h4>
+				<img :src="prev?.social_image" :alt="prev?.image_alt" />
+			</nuxt-link>
+			<nuxt-link v-else class="item">
+				<h4 id="" class="item-content">No previous items</h4>
+				<img src="/no-prev-next.webp" alt="An image for no previous items" />
+			</nuxt-link>
+			<!-- <span v-else>The 1st item</span> -->
+			<nuxt-link class="item" v-if="next" :to="next?._path">
+				<h4 id="" class="item-content">Go next → {{ next.title }}</h4>
+				<img :src="next?.social_image" :alt="next?.image_alt" />
+			</nuxt-link>
+			<nuxt-link v-else class="item">
+				<h4 id="" class="item-content">No next items</h4>
+				<img src="/no-prev-next.webp" alt="An image for no next items" />
+			</nuxt-link>
+		</nav>
+	</section>
 </template>
 
 <style lang="scss" scoped>
@@ -49,8 +53,11 @@ img {
 	margin: var(--space-s);
 	display: block;
 }
+hr {
+	margin-block-end: var(--space-s);
+}
 #title {
-	margin: 0;
+	margin-block-start: var(--space-s);
 }
 a {
 	@include link(none);
