@@ -93,7 +93,7 @@ a {
 	align-items: center;
 	width: var(--space-l);
 	height: var(--space-l);
-	border-radius: var(--border-radius);
+	border-radius: var(--border-radius-regular);
 	background-color: var(--color-sys-dis);
 }
 .pagination-item.active {

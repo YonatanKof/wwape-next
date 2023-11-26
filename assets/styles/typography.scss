@@ -136,13 +136,13 @@ a {
 code {
 	background-color: var(--color-sys-dis);
 	padding: var(--space-4xs) var(--space-3xs);
-	border-radius: var(--border-radius);
+	border-radius: var(--border-radius-regular);
 	margin-block-end: var(--space-s);
 	font-size: 80%;
 }
 pre {
 	background-color: var(--color-sys-dis);
-	border-radius: var(--border-radius);
+	border-radius: var(--border-radius-regular);
 	padding: var(--space-s);
 	margin-block-end: var(--space-xs);
 }
