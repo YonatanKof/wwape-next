@@ -1,8 +1,9 @@
-@mixin flex-center() {
+@mixin flex-center($flex-direction: row, $justify-content: space-between, $gap: var(--space-xs)) {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	flex-direction: $flex-direction;
+	justify-content: $justify-content;
 	align-items: center;
+	gap: $gap;
 }
 @mixin display-width($width: var(--display-width-normal)) {
 	max-width: $width;
@@ -17,7 +18,7 @@
 	height: fit-content;
 	background-color: var(--color-sys-invert-highlight);
 	overflow: auto;
-	border-radius: var(--border-radius);
+	border-radius: var(--border-radius-regular);
 	transition: transform 0.25s, box-shadow ease-in-out 0.25s;
 	transform: translateY(0);
 	&:hover {
