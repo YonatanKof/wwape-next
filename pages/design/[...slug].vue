@@ -65,26 +65,42 @@ useHead({
 		},
 	],
 });
+const goHome = () => clearError({ redirect: '/' });
+const goDesign = () => clearError({ redirect: '/design' });
 </script>
 
 <template>
 	<main>
-		<ContentDoc v-slot="{ doc }">
-			<article>
-				<h1 id="title">{{ doc.title }}</h1>
-				<hr />
-				<span class="dates">
-					<p>Created {{ $formatDate(doc.date) }}</p>
-					<p v-if="doc.updated">•</p>
-					<p v-if="doc.updated">Updated {{ $formatDate(doc.updated) }}</p>
-				</span>
-				<hr />
-				<ContentRenderer :value="doc" />
-			</article>
+		<ContentDoc>
+			<template v-slot="{ doc }">
+				<article>
+					<h1 id="title">{{ doc.title }}</h1>
+					<hr />
+					<span class="dates">
+						<p>Created {{ $formatDate(doc.date) }}</p>
+						<p v-if="doc.updated">•</p>
+						<p v-if="doc.updated">Updated {{ $formatDate(doc.updated) }}</p>
+					</span>
+					<hr />
+					<ContentRenderer :value="doc" />
+				</article>
+				<SeeMore :prev="prev" :next="next" />
+			</template>
+			<template #not-found>
+				<section id="error">
+					<h1>
+						Oh my! <span>Can't find this page</span>
+					</h1>
+					<div id="link-buttons">
+						<button @click="goHome">Back to home page</button>
+						<button @click="goDesign">See some nice designs</button>
+					</div>
+				</section>
+			</template>
 		</ContentDoc>
-		<SeeMore :prev="prev" :next="next" />
 	</main>
 </template>
+
 <style lang="scss" scoped>
 article {
 	margin-block-end: var(--space-s);
@@ -106,5 +122,11 @@ main {
 	.dates > p {
 		font-size: var(--step--3);
 	}
+}
+#error{
+	height: 100%;
+}
+#error, #link-buttons {
+	@include flex-center($flex-direction: column, $justify-content: center, $gap: var(--space-2xs));
 }
 </style>
