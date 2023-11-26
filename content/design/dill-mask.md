@@ -7,20 +7,19 @@ cover_image: '/designs/dill-mask/dill-mask-tn.webp'
 cover_image_height: '2926'
 cover_image_thumbhash: 'JQgGCgAohqhYingI93h5j3c'
 social_image: '/designs/dill-mask/dill-mask-social.jpg'
-image_alt: 'A composition showing a girl being cut by forces greater then us'
-description: 'We are all a girl being cut'
+image_alt: 'Three mask designs - Left to right: Animal, Sun King and City Living'
+description: 'Animal, Sun King and City Living composed for Ms. Shamir, Dill in Hebrew, therefor the Dill masks'
 tags: ['Creative']
 ---
-I'm a candy soldier  
-A good beast in armies of bad love  
 
-I'm a cruel soldier  
-A wicked beast, battle ready to lose ahead
+I'm a candy soldier – A good beast in armies of bad loves
 
-And they are the beginning of just wretched series  
-Of addict blood, familiar like a head 
+A cruel soldier – A wicked beast, battle ready to lose ahead
+
+Just the start wretched series – Of addict blood, known like a head 
 
 ![Dill Mask – The prints](/designs/dill-mask/dill-mask-prints.webp)
+*{{ $doc.description }}*
 
 ![Dill Mask – In motion](/designs/dill-mask/dill-mask-move.webp)
 
