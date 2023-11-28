@@ -1,7 +1,7 @@
 ---
 title: 'Fear Head'
 author_name: 'Yonatan Ben Knaan'
-date: '2007-26-06'
+date: '2007-06-26'
 updated: '2023-10-21'
 cover_image: '/designs/fear-head/fear-head-tn.webp'
 cover_image_height: '1201'
