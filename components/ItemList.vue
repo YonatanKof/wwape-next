@@ -37,6 +37,7 @@ const { $formatDate } = useNuxtApp();
 				<div class="item-content">
 					<h3 id="title">{{ item.title }}</h3>
 					<p>{{ $formatDate(item.date) }}</p>
+					<p v-if="item.description">{{ item.description }}</p>
 				</div>
 				<UnLazyImage
 					:thumbhash="item.cover_image_thumbhash"
@@ -53,6 +54,12 @@ const { $formatDate } = useNuxtApp();
 <style lang="scss" scoped>
 p {
 	font-size: var(--step--1);
+	margin-block-end: unset;
+}
+p:first-of-type {
+	font-size: var(--step--2);
+	color: var(--color-sys-slight);
+	margin-block-end: var(--space-3xs);
 }
 .masonry-wall {
 	margin-block-end: var(--space-s);
@@ -68,7 +75,7 @@ img {
 	display: block;
 }
 #title {
-	margin: 0;
+	margin-block-end: var(--space-4xs);
 }
 a {
 	@include link(none);
