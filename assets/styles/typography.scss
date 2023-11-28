@@ -14,11 +14,8 @@
 @font-face {
 	font-family: 'LoremipsumLight';
 	font-display: swap;
-	src: 
-		url('~/assets/fonts/LoremipsumLight.woff2'), 
-		url('~/assets/fonts/LoremipsumLight.woff');
+	src: url('~/assets/fonts/LoremipsumLight.woff2'), url('~/assets/fonts/LoremipsumLight.woff');
 	font-weight: 200;
-
 }
 :root {
 	--font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
@@ -88,9 +85,9 @@ h6 {
 }
 
 @mixin link($none-ul: null) {
-	@if not ($none-ul) {
+	@if not($none-ul) {
 		border-bottom: solid 1px var(--color-sys-none);
-	} @else {	
+	} @else {
 		// If you don't want an underline pass in 'none'
 		// @include link(none);
 		border-bottom: $none-ul;
@@ -106,10 +103,22 @@ h6 {
 		border-color: var(--color-link-main);
 	}
 }
-	
+
+@mixin focus {
+	&:focus-visible {
+		outline: none;
+	}
+	&:focus {
+		box-shadow: 0 0 0 var(--space-3xs) var(--color-focus-slight);
+	}
+	&:active {
+		box-shadow: 0 0 0 var(--space-2xs) var(--color-focus-main);
+	}
+}
 
 a {
 	@include link();
+	@include focus();
 }
 :is(h1, h2, h3, h4, h5, h6, code) a {
 	color: inherit;

@@ -8,10 +8,15 @@
 	--color-sys-dim: hsla(0, 0%, 10%, 0.25);
 	--color-sys-dis: hsla(0, 0%, 10%, 0.1);
 	--color-sys-none: hsla(0, 0%, 10%, 0);
+
 	--color-sys-invert: antiquewhite;
 	--color-sys-invert-highlight: white;
+	
 	--color-link-main: hsl(300, 100%, 20%);
 	--color-link-slight: hsl(300, 100%, 30%);
+	
+	--color-focus-main: hsl(200, 100%, 30%);
+	--color-focus-slight: hsl(200, 100%, 50%);
 
 	--bg-primary: var(--color-sys-invert);
 	--content-space: 1rem;
@@ -46,6 +51,7 @@ img {
 	display: flow-root;
 }
 button {
+	@include focus();
 	color: var(--color-link-main);
 	background-color: var(--color-sys-invert-highlight);
 	box-shadow: 0 var(--space-4xs) var(--color-link-main), inset 0 0 0 1px var(--color-link-slight);
@@ -79,8 +85,13 @@ hr {
 	--color-sys-slight: hsla(34, 78%, 91%, 0.75);
 	--color-sys-dim: hsla(34, 78%, 91%, 0.25);
 	--color-sys-dis: hsla(34, 78%, 91%, 0.1);
+
 	--color-sys-invert: hsl(34, 8%, 16%);
 	--color-sys-invert-highlight: hsl(34, 8%, 10%);
+
 	--color-link-main: hsl(300, 100%, 90%);
 	--color-link-slight: hsl(300, 100%, 80%);
+
+	--color-focus-main: hsl(200, 100%, 60%);
+	--color-focus-slight: hsl(200, 100%, 80%);
 }
