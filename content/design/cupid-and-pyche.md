@@ -8,10 +8,10 @@ cover_image_height: '1338'
 cover_image_thumbhash: 'DxgKFQQId3aJB5iHiHdodwiEhFAo'
 social_image: '/designs/cupid-and-pyche/cupid-and-pyche-social.jpg'
 image_alt: 'A collage image of Cupid & Psyche'
-description: 'We looked for them all night long but what we found was something different'
+description: 'We looked for them all night long but we found something different'
 tags: ['Creative', 'Skull']
 ---
-Housewarming gift for the SwisRing family 
+{{ $doc.description }} – An housewarming gift for the beloved **SwisRing** family 
 
-![A collage image of Cupid & Psyche](/designs/cupid-and-pyche/cupid-and-pyche.webp)
-*We looked for them all night long but what we found was something different*
+::lazy-img{src="/designs/cupid-and-pyche/cupid-and-pyche.webp" thumbhash="DxgKFQQId3aJB5iHiHdodwiEhFAo" alt="A collage image of Cupid & Psyche"}
+::

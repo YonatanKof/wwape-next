@@ -8,13 +8,10 @@ cover_image_height: '563'
 cover_image_thumbhash: 'LsgGBIQFeYh4iIegbJf/qZht9w'
 social_image: '/designs/all-the-love/all-the-love-social.jpg'
 image_alt: 'Two line works loosely depicting a pistol with the text - All the love in the world'
-description: 'People love people not guns'
+description: "Guns don't love people, people love people"
 tags: ['Creative']
 ---
-
-Inspired by *All the love in the world* by NIN
-
-Oh boy, do I love this song
+{{ $doc.description }} – Inspired by *All the love in the world* by NIN, and oh boy, do I love this song
 
 ![All the jagged edges disappear](/designs/all-the-love/all-the-love.webp)
 *All the jagged edges disappear*
