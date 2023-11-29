@@ -3,8 +3,18 @@ export default defineNuxtConfig({
 	modules: ['@nuxt/content', '@unlazy/nuxt', 'nuxt-clarity-analytics'],
 	content: {
 		highlight: {
-			theme: 'github-light',
-		},
+			// Theme used in all color schemes.
+			// theme: 'github-light'
+			// OR
+			theme: {
+			  // Default theme (same as single string)
+			  default: 'light-plus',
+			  // Theme used if `html.dark`
+			  dark: 'dracula',
+			  // Theme used if `html.sepia`
+			  sepia: 'monokai'
+			}
+		  },
 		markdown: {
 			anchorLinks: {
 				depth: 6,

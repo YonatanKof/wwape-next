@@ -4,10 +4,10 @@
 // }
 @font-face {
 	font-family: 'RecVar';
-	font-style: oblique 0deg 15deg;
+	// font-style: oblique 0deg 15deg;
 	font-weight: 300 1000;
 	font-display: swap;
-	font-variation-settings: 'CASL' 1, 'slnt' -7.5, 'MONO' 0, 'CRSV' 0.5;
+	font-variation-settings: 'CASL' 1, 'slnt' -15, 'MONO' 1, 'CRSV' 1;
 	src: url('~/assets/fonts/Recursive_VF_1.085--subset_range_english_basic.woff2') format('woff2');
 	unicode-range: U+0020-007F, U+00A9, U+2190-2193, U+2018, U+2019, U+201C, U+201D, U+2022;
 }
@@ -93,14 +93,14 @@ h6 {
 		border-bottom: $none-ul;
 	}
 	font-family: var(--font-mono);
-	font-weight: 444;
-	transition: font-weight 0.25s ease-in-out, color 0.25s ease-in-out, border-color 0.25s ease-in-out;
+	font-weight: 360;
+	font-variation-settings: 'slnt' -15;
+	transition: font-variation-settings 0.25s ease-in-out, border-color 0.25s ease-in-out;
 	color: var(--color-link-slight);
 	text-decoration: none;
 	&:hover {
-		font-weight: 666;
-		color: var(--color-link-main);
-		border-color: var(--color-link-main);
+		font-variation-settings: 'slnt' 0;
+		border-color: var(--color-link-slight);
 	}
 }
 
@@ -111,35 +111,31 @@ h6 {
 	&:focus {
 		box-shadow: 0 0 0 var(--space-3xs) var(--color-focus-slight);
 	}
-	&:active {
-		box-shadow: 0 0 0 var(--space-2xs) var(--color-focus-main);
-	}
 }
-
 a {
 	@include link();
-	@include focus();
 }
 :is(h1, h2, h3, h4, h5, h6, code) a {
 	color: inherit;
 	text-decoration: inherit;
 	font-family: inherit;
 	font-weight: inherit;
+	border: unset;
 	&:before {
-		color: var(--color-sys-dim);
+		color: var(--color-sys-slight);
 		content: '#';
 		display: inline-block;
-		margin-left: -0.8em;
+		margin-left: calc(var(--space-l) * -1);
 		text-decoration: none;
 		visibility: hidden;
-		width: 0.8em;
+		width: var(--space-l);
 	}
 	&:hover::before {
 		visibility: visible;
 	}
 	&:hover {
 		font-weight: unset;
-		text-decoration: underline;
+		border: unset;
 	}
 }
 code {
@@ -150,7 +146,10 @@ code {
 	font-size: 80%;
 }
 pre {
-	background-color: var(--color-sys-dis);
+	background-color: var(--color-sys-invert-highlight);
+	font-size: var(--step-1);
+	font-variation-settings: 'slnt' 0;
+	line-height: 1.6;
 	border-radius: var(--border-radius-regular);
 	padding: var(--space-s);
 	margin-block-end: var(--space-xs);
@@ -158,7 +157,8 @@ pre {
 
 code,
 pre {
-	font-family: monospace;
+	font-family: var(--font-mono);
+	font-weight: 300;
 	word-spacing: normal;
 	word-break: normal;
 	white-space: break-spaces;
