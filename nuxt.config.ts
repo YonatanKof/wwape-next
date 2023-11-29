@@ -52,6 +52,7 @@ export default defineNuxtConfig({
 		clarityId: process.env.MICROSOFT_CLARITY_ID,
 		// Public keys that are exposed to the client
 		public: {
+			baseUrl: process.env.BASE_URL,
 			siteOwnerName: 'Yonatan Ben Knaan',
 			missingImg: '/missing.svg',
 		},

@@ -15,13 +15,14 @@ const { data, error } = await useAsyncData(cleanPath, async () => {
 		article: await article,
 	};
 });
-// Set the meta
-const baseUrl = 'https://wwape.com';
-const canonicalPath = baseUrl + (path + '/').replace(/\/+$/, '/');
-const image = baseUrl + data.value?.article?.social_image || '/images/main.png';
 
 const config = useRuntimeConfig();
 const siteTitle = `A design by ${config.public.siteOwnerName}`;
+
+// Set the meta
+const dynamicUrl = config.public.baseUrl;
+const canonicalPath = dynamicUrl + (path + '/').replace(/\/+$/, '/');
+const image = dynamicUrl + data.value?.article?.social_image || '/images/main.png';
 
 const { $formatDate } = useNuxtApp();
 
