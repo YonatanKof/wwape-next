@@ -1,7 +1,13 @@
-<script setup>
-import { useDark, useToggle } from '@vueuse/core';
-const isDark = useDark();
-const toggleDark = useToggle(isDark);
+<script setup lang="ts">
+import { useColorMode, useCycleList } from "@vueuse/core";
+
+const mode = useColorMode({
+  emitAuto: true,
+})
+
+const { state, next } = useCycleList(['dark', 'light', 'auto'], { initialValue: mode })
+
+watchEffect(() => mode.value = state.value as any)
 </script>
 <template>
 	<header>
@@ -12,9 +18,11 @@ const toggleDark = useToggle(isDark);
 				<!-- <nuxt-link :to="{name: 'post'}">Posts</nuxt-link> -->
 				<nuxt-link :to="{ name: 'design' }">Designs</nuxt-link>
 			</nav>
-			<button @click="toggleDark()">
-				<span v-if="isDark">Light</span>
-				<span v-else>Dark</span>
+			<button @click="next()">
+				<i v-if="state === 'auto'" />
+				<i v-if="state === 'dark'" />
+				<i v-if="state === 'light'" />
+				<span>{{ (state).charAt(0).toUpperCase() + (state).slice(1) }}</span>
 			</button>
 		</div>
 	</header>
@@ -27,7 +35,8 @@ header {
 span {
 	white-space: nowrap;
 }
-div, nav {
+div,
+nav {
 	@include flex-center;
 	gap: var(--space-xs);
 }
@@ -39,7 +48,7 @@ div, nav {
 		padding-block: var(--space-xs);
 		height: unset;
 	}
-	div{
+	div {
 		width: 100%;
 	}
 }
