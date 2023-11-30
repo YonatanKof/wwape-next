@@ -26,7 +26,7 @@ const { data } = await useAsyncData(`content-/design`, async () => {
 </script>
 <template>
 	<main>
-		<IntroText title="Art & Design" text="Please enjoy some art, design, illustration, motion graphics created throughout the years"/>
+		<IntroText title="Art & Design" text="Please enjoy some art, design, illustration, motion graphics & collage I created throughout the years"/>
 		<section id="main">
 			<ContentQuery
 				path="/design"

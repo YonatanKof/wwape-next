@@ -18,14 +18,9 @@ useSeoMeta({
 <template>
 	<main>
 		<IntroText
-			title="Welcome to my site 👋"
-			text="Hi, I'm Yonatan and here's a nice intro text: a friend, a family man, a designer, a developer, an illustrator, a maker, a mismatched persona and an all-around alright dude (not necessarily in this order)"
-			text2="Under contraction 🚧 expect much more designs and a few blog posts soon"
+			title="World Wide Ape"
+			text="Hi, I'm Yonatan; a friend, a family man, a designer, a developer, an illustrator, a maker, a mismatched persona and an alright dude – Welcome to my site 👋"
+			text2="This site is under contraction 🚧 expect much more design articles and a few blog posts soon"
 		/>
 	</main>
 </template>
-<style scoped>
-p {
-	font-size: var(--step-1);
-}
-</style>

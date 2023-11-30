@@ -5,17 +5,17 @@ date: '2010-12-05'
 updated: '2011-01-22'
 cover_image: '/designs/face-the-mask/face-the-mask-tn.webp'
 cover_image_height: '1765'
-cover_image_thumbhash: 'INgFDACrtWdKmQtKhkRoj2vl+Q'
+cover_image_thumbhash: 'IrkFDAKa9niIeltoh3dvrY/H9w'
 social_image: '/designs/face-the-mask/face-the-mask-social.jpg'
-image_alt: 'Sacred Balinese Mask'
-description: 'Sacred Balinese Mask'
+image_alt: 'A digital painting of a sacred Balinese mask'
+description: 'A sacred Balinese mask just got dirty'
 tags: ['Creative']
 ---
 
 {{ $doc.description}}
 
-![Sacred Balinese Mask](/designs/face-the-mask/face-the-mask.webp)
-*Sacred Balinese Mask*
+::lazy-img{src="/designs/face-the-mask/face-the-mask.webp" thumbhash="I7kFDYJXl2h/h4iIh6iXdiufjdr3" alt="A digital painting of a sacred Balinese mask" desc="A digital painting of a sacred Balinese mask"}
+::
 
-![Sacred Balinese Mask](/designs/face-the-mask/face-the-mask-detail.webp)
-*Detail of the Sacred Balinese Mask*
+::lazy-img{src="/designs/face-the-mask/face-the-mask-detail.webp" thumbhash="IrkFDAKa9niIeltoh3dvrY/H9w" alt="A digital painting of a sacred Balinese mask - a detail" desc="A digital painting of a sacred Balinese mask - a detail"}
+::
