@@ -38,7 +38,7 @@ useHead({
 			content: data.value?.article?.updated.split('T')[0] || data.value?.article?.date.split('T')[0],
 		},
 		// OG
-		{ hid: 'og:title', property: 'og:title', content: data.value?.article?.title },
+		{ hid: 'og:title', property: 'og:title', content: data.value?.article?.title + ` - ` + siteTitle},
 		{ hid: 'og:url', property: 'og:url', content: canonicalPath },
 		{ hid: 'og:description', property: 'og:description', content: data.value?.article?.description },
 		{ hid: 'og:image', name: 'image', property: 'og:image', content: image },
@@ -50,7 +50,7 @@ useHead({
 		// Twitter
 		{ hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
 		{ hid: 'twitter:creator', name: 'twitter:creator', content: '@yonatankof' },
-		{ hid: 'twitter:title', name: 'twitter:title', content: data.value?.article?.title },
+		{ hid: 'twitter:title', name: 'twitter:title', content: data.value?.article?.title + ` - ` + siteTitle },
 		{ hid: 'twitter:description', name: 'twitter:description', content: data.value?.article?.description },
 		{ hid: 'twitter:url', name: 'twitter:url', content: canonicalPath },
 		{ hid: 'twitter:image', name: 'twitter:image', content: image },
