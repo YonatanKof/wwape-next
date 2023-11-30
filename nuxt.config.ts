@@ -54,6 +54,7 @@ export default defineNuxtConfig({
 		public: {
 			baseUrl: process.env.BASE_URL,
 			siteOwnerName: 'Yonatan Ben Knaan',
+			siteName: 'World Wide Ape',
 			missingImg: '/missing.svg',
 		},
 	},

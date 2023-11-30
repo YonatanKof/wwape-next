@@ -17,12 +17,12 @@ const { data, error } = await useAsyncData(cleanPath, async () => {
 });
 
 const config = useRuntimeConfig();
-const siteTitle = `A design by ${config.public.siteOwnerName}`;
+const siteTitle = `A design by ${config.public.siteOwnerName} form the ${config.public.siteName}`;
 
 // Set the meta
 const dynamicUrl = config.public.baseUrl;
 const canonicalPath = dynamicUrl + (path + '/').replace(/\/+$/, '/');
-const image = dynamicUrl + data.value?.article?.social_image || '/images/main.png';
+const image = dynamicUrl + data.value?.article?.social_image || '/images/index-social.jpg';
 
 const { $formatDate } = useNuxtApp();
 
@@ -30,7 +30,6 @@ useHead({
 	titleTemplate: (titleChunk) => {
 		return titleChunk ? `${titleChunk} - ` + siteTitle : siteTitle;
 	},
-	// title: data.value?.article?.title,
 	meta: [
 		{ name: 'description', content: data.value?.article?.description },
 		{

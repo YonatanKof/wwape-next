@@ -1,19 +1,22 @@
 <script setup>
 const config = useRuntimeConfig();
+const pageDesc = `Amazing posts by ${config.public.siteOwnerName}`;
+const pageImg = '/images/posts-social.jpg';
+const pageAlt = 'Social cover for this site posts page';
 useHead({
 	title: 'Posts',
 });
 useSeoMeta({
 	ogType: 'website',
-	description: () => `Amazing posts by ${config.public.siteOwnerName}`,
-	ogDescription: () => `Amazing posts by ${config.public.siteOwnerName}`,
-	twitterDescription: () => `Amazing posts by ${config.public.siteOwnerName}`,
-	image: '/images/posts.png',
-	ogImage: '/images/posts.png',
-	twitterImage: '/images/posts.png',
-	imageAlt: 'Social cover for this site posts page',
-	ogImageAlt: 'Social cover for this site posts page',
-	twitterImageAlt: 'Social cover for this site posts page',
+	description: () => pageDesc,
+	ogDescription: () => pageDesc,
+	twitterDescription: () => pageDesc,
+	image: pageImg,
+	ogImage: pageImg,
+	twitterImage: pageImg,
+	imageAlt: pageAlt,
+	ogImageAlt: pageAlt,
+	twitterImageAlt: pageAlt,
 	twitterCard: 'summary_large_image',
 	twitterSite: '@yonatankof',
 });

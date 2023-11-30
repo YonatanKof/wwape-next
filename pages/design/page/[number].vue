@@ -73,20 +73,23 @@ try {
 }
 
 const config = useRuntimeConfig();
+const pageDesc = `Amazing designs by ${config.public.siteOwnerName}`;
+const pageImg = '/images/designs-social.jpg';
+const pageAlt = 'Social cover for this site designs page';
 useHead({
 	title: 'Designs',
 });
 useSeoMeta({
 	ogType: 'website',
-	description: () => `Amazing designs by ${config.public.siteOwnerName}`,
-	ogDescription: () => `Amazing designs by ${config.public.siteOwnerName}`,
-	twitterDescription: () => `Amazing designs by ${config.public.siteOwnerName}`,
-	image: '/images/designs.png',
-	ogImage: '/images/designs.png',
-	twitterImage: '/images/designs.png',
-	imageAlt: 'Social cover for this site designs page',
-	ogImageAlt: 'Social cover for this site designs page',
-	twitterImageAlt: 'Social cover for this site designs page',
+	description: () => pageDesc,
+	ogDescription: () => pageDesc,
+	twitterDescription: () => pageDesc,
+	image: pageImg,
+	ogImage: pageImg,
+	twitterImage: pageImg,
+	imageAlt: pageAlt,
+	ogImageAlt: pageAlt,
+	twitterImageAlt: pageAlt,
 	twitterCard: 'summary_large_image',
 	twitterSite: '@yonatankof',
 });
