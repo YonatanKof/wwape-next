@@ -115,6 +115,9 @@ h6 {
 a {
 	@include link();
 }
+.router-link-active {
+	border-color: var(--color-sys-dim);
+}
 :is(h1, h2, h3, h4, h5, h6, code) a {
 	color: inherit;
 	text-decoration: inherit;
