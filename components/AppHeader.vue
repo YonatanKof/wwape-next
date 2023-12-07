@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import { useColorMode, useCycleList } from "@vueuse/core";
+import { useColorMode, useCycleList } from '@vueuse/core';
 
 const mode = useColorMode({
-  emitAuto: true,
-})
+	emitAuto: true,
+});
 
-const { state, next } = useCycleList(['dark', 'light', 'auto'], { initialValue: mode })
+const { state, next } = useCycleList(['dark', 'light', 'auto'], { initialValue: mode });
 
-watchEffect(() => mode.value = state.value as any)
+watchEffect(() => (mode.value = state.value as any));
 </script>
 <template>
 	<header>
@@ -18,16 +18,31 @@ watchEffect(() => mode.value = state.value as any)
 				<!-- <nuxt-link :to="{name: 'post'}">Posts</nuxt-link> -->
 				<nuxt-link :to="{ name: 'design' }">Designs</nuxt-link>
 			</nav>
-			<button @click="next()">
-				<i v-if="state === 'auto'" />
-				<i v-if="state === 'dark'" />
-				<i v-if="state === 'light'" />
-				<span>{{ (state).charAt(0).toUpperCase() + (state).slice(1) }}</span>
+			<button class="icon-btn" @click="next()" :title="`Theme is: ` + (state).charAt(0).toUpperCase() + (state).slice(1)">
+				<i v-if="state === 'auto'">
+					<SvgIconBase stroke-color="var(--color-link-main)">
+						<IconAuto />
+					</SvgIconBase>
+				</i>
+				<i v-if="state === 'dark'">
+					<SvgIconBase stroke-color="var(--color-link-main)">
+						<IconDark />
+					</SvgIconBase>
+				</i>
+				<i v-if="state === 'light'">
+					<SvgIconBase stroke-color="var(--color-link-main)">
+						<IconLight />
+					</SvgIconBase>
+				</i>
+				<!-- <span>{{ (state).charAt(0).toUpperCase() + (state).slice(1) }}</span> -->
 			</button>
 		</div>
 	</header>
 </template>
 <style lang="scss" scoped>
+i {
+	@include flex-center();
+}
 header {
 	height: var(--header-height);
 	@include flex-center;

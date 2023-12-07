@@ -68,6 +68,9 @@ button {
 		box-shadow: 0 0 var(--color-link-main), inset 0 0 0 1px var(--color-link-main);
 	}
 }
+.icon-btn {
+	padding: var(--space-2xs);
+}
 img ~ em {
 	color: var(--color-sys-slight);
 	font-size: var(--step--1);
