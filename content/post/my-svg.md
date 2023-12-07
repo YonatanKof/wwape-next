@@ -1,263 +1,198 @@
 ---
-title: Vuedoo SVG Magic
-author_name: Yonatan Ben Knaan
-urlname: svg-vue-gridsome
-date: 2022-01-01
-updated: 
-published: true
-tags: ['SVG', 'Creative', 'Code']
+title: 'SVG Vuedoo Magic'
+author_name: 'Yonatan Ben Knaan'
+date: '2022-01-01'
+updated: ''
 cover_image: '/posts/about-my-svg/about-my-svg.svg'
+cover_image_height: ''
+cover_image_thumbhash: ''
 social_image: '/posts/about-my-svg/about-my-svgs-social-cover.jpg'
-cover_caption: Cover art for SVGs & Vue article
-description: How I use SVGs with Vue and Gridsome
-color: blue
-feeling: mad
-id: 004
+image_alt: 'Cover art for SVGs & Vue article'
+description: 'How I use SVGs with Vue and Nuxt'
+tags: ['SVG', 'Creative', 'Code']
 --- 
-
-::LShape
+::BtnExample
 ::
 
-> SVGs are **nice**  
-Inline SVGs are **nicer**  
+SVGs are **nice**
+
+Inline SVGs are **nicer**
+
 SVG as components are the **nicest**
 
-# The need
+## The need
 
-I'd like my SVGs:
-   - Inline so I can CSS them
-   - As a component for a cleaner file
-   - With *props* like size and color
-   - To be able to use CSS or SCSS variants
-   - Available for both systematic and free-form use
+This is what I need from my SVGs:
 
-# The use cases 
+- Inline so I can use on CSS them
+- To use CSS vars and SCSS
+- As a component for a cleaner file
+- With `props` for control
+- Reduce boilerplate needed for "good" SVGs
+- Reduce the chance of variation, I.e opinionated
 
-1. As an *Icon System*, where there's a lot of similarly and a few differences. 
-2. For general purpose, where the SVGs shown have nothing in common but you still want it as component and to use all the Veudoo magic
+## The response – icon system
 
-Let's dive in to some real world examples
+You can approach an icon system in two ways per **design** or pre **development**
 
-# The Icon System SVG
+### Icon system per design
 
-In my *icon system* all the icons have the **same size, color and behavior** which I might override at the instance level.
+In terms of graphic design an *icon system* is a collection of icons that work together as one group with consistency and harmony. Therefor there's a lot of similarly between the icons, like **size**, **color**, **behavior** and **themes**.
 
-**I use 2 *SFC*s for each icon** – The 1st file is the SVG wrapper called `SVGIconBase.vue`. T  he 2nd file is the actual SVG drawing of the icon, it's unique in its shape and name, and it's also a *Vue* file called something like `IconSomeName.vue`.
+You can see a nice example for an icon system I created in the embedded Sketch document below. It's used by [Pepperi](https://www.pepperi.com/), and it utilizes a color token and is hooked up to Pepperi's theme editor. 
 
-It will look like this in the HTML:
+Checkout the [icons on Storybook](https://60ae3e9eff8e4c003b2f90d4-rocitoujqz.chromatic.com/?path=/docs/components-icon--base) too.
+
+::SketchEmbed{src="84463519-df2a-475d-b8d2-bd250755763d/p/3195B629-1FA9-4D9B-9AB6-BEA52F6DC7A8/canvas" height="var(--space-7xl)"}
+::
+
+### Icon system per development
+
+In terms of development an *icon system* can help avoid repetition and boilerplate code, on the one hand. On the other hand it helps you keep consistency and to reduce the chance of human error. 
+
+It will reduce error and will keep it consistent because it's opinionated – there's only one of doing it, otherwise it just wont work. 
+
+And is will reduce boilerplate coding because you won’t have to write the same code needed to make the SVG robust and accessible, you’ll just write it once and every improvement or change  will be automatically updated for all icons used.
+
+## Review KIS (Kof Icon System)
+
+*KIS* uses 2 Single File Components (SFC) to show 1 icon.
+
+The **1st** file is the SVG wrapper called `SvgIconBase`. It's a generic placeholder and will repeat for every icon. It contains the boilerplate code that keeps it robust and accessible and some props that will allow me to override colors and size at the instance level, if needed.
+
+The **2nd** `SFC` is called something like `IconCool` and it's unique for each icon. It contains the actual SVG drawing, title, description and every other unique, uncontrollable element of the icon.
+
+The 2 components will look like this in the `template` tag:
 
 ```html
-<SVGIconBase> <!-- The wrapper -->
-    <IconSomeName /> <!-- The icon -->
-</SVGIconBase>
+<template>
+	<!-- The wrapper -->
+	<SvgIconBase>
+		<!-- The icon -->
+		<IconCool />
+	</SvgIconBase>
+
+	<SvgIconBase>
+		<IconExtraCool />
+	</SvgIconBase>
+</template>
+
 ```
 
 Now let's review these two files
-## The SVGIconBase SFC
 
-This is the 1st file called `SVGIconBase.vue`:
-- The *xmlns*, *viewBox*, *aria-labelledby* and *role* are fixed 
-- The *size* and *fill* are props, data binded with the `:`, with defaults set at the `props` section
-- The icon name and the path will be passed along at the `<slot />`, this is where the SVG paths will be pushed in
-- I've added a BG rect for better hovers regardless of the icons shape
-- Control over styles like *hovers* and *transitions* will be done with CSS
+### The SvgIconBase SFC
 
-Here's how the file looks:
+What’s under the hood?
+
+- Props: they all have default so you won't have to add anything to make it work:
+    - `viewBox`: I use a 32×32, but I added it just in case. If you’ll make the all icons the same size in your design tool so you won’t have to change it.
+    - `size`: All my icons are square so the width and height props are bound ([apparently *binded* is not a word](https://writingexplained.org/binded-or-bound))
+    - `fillColor`: As the name suggest
+    - `strokeColor`: As the name suggest
+    - `strokeWidth`: As the name suggest
+- Boilerplate:
+    - To make it robust I use all the following: `baseProfile`, `xmlns`, `xmlns:xlink`, `xmlns:ev`
+    - To make it accessible I add a `role` & `aria-labelledby` with and ID for both the title and desc tags that will be typed in the 2nd file
+- To add the 2nd `SFC` I’ll use the `slot` tag and this is where the icon drawing will fit in
+- Just i case I've added a rect, `id="bounding-box"` for better hovers regardless of the icons shape
+- For styling I added some `v-bind`s to the props to control the colors with CSS
+
+#### Here's how the file looks:
 
 ```html
+<script setup>
+defineProps({
+	viewBox: {
+		type: String,
+		default: '0 0 32 32',
+	},
+	size: {
+		type: String,
+		default: '1.25rem',
+		// default: 'var(--space-m)',
+	},
+	fillColor: {
+		type: String,
+		default: 'none',
+	},
+	strokeColor: {
+		type: String,
+		default: 'var(--color-sys-slight)',
+	},
+	strokeWidth: {
+		type: String,
+		default: '0.125rem',
+		// default: 'var(--space-4xs)',
+	},
+});
+</script>
+
 <template>
 	<svg
-        xmlns="http://www.w3.org/2000/svg"
-		viewBox="0 0 24 24" 
-		aria-labelledby="title"
-		role="presentation"
+		version="1.1"
+		baseProfile="full"
+		xmlns="<http://www.w3.org/2000/svg>"
+		xmlns:xlink="<http://www.w3.org/1999/xlink>"
+		xmlns:ev="<http://www.w3.org/2001/xml-events>"
+		aria-labelledby="title description"
+		role="img"
+		:viewBox="viewBox"
 		:width="size"
-        :height="size"
-		:fill="iconColor"
+		:height="size"
 	>
-		<slot /> <!-- The icon -->
-		<rect id="BG" fill="none" width="100%" height="100%"/>  
+		<slot />
+		<rect id="bounding-box" fill="none" stroke="none" width="100%" height="100%" />
 	</svg>
 </template>
 
-<script>
-export default {
-	props: {
-		size: {
-			type: [Number, String],
-			default: "1.5em",
-		},
-		iconColor: {
-			type: String,
-			default: "var(--system-dimmed)",
-		},
-	},
-};
-</script>
-
-<style lang="scss" scoped>
-svg {
-	transition: transform 0.25s ease-out;
-	&:hover {
-		transform: scale(1.025);
-	}
+<style scoped>
+svg, path {
+	fill: v-bind(fillColor);
+	stroke: v-bind(strokeColor);
+	stroke-width: v-bind(strokeWidth);
 }
 </style>
+
 ```
-## The Icon File
 
-For the icon drawing I tore apart the *path* form the the *SVG* and added the *title* tag and the *lang* attribute. 
+## The Icon SFC
 
-x> Plan a multi-lang icon system?  
-Make sure to expose the *title* & *lang* values *props* as well
-
-x> Using a *stroke* with or instead of a *fill*?  
-Make sure to expose the *stroke* as a *prop* too
+For the icon drawing I tore apart the *path* form the the *SVG* and added `title` and `desc` tags.
 
 ```html
 <template>
-	<g>
-		<title id="title" lang="en">Some Icon Name</title>
-		<path d="..." />
-	</g>
+	<title id="title">Cool icon</title>
+	<desc>A cool example</desc>
+	<path
+		stroke-linecap="round"
+		stroke-linejoin="round"
+		d="..."
+	/>
 </template>
+
 ```
 
 ## Basic Use
 
+::BtnExample
+::
+
 Here are a few icons of my *Icon System* to play around with:
 
-<Hr />
+I can have them inline
 
-<SVGIconBase>
-    <IconAttach />
-</SVGIconBase>
+and can easily change their size and color
 
-<SVGIconBase>
-    <IconDoor/>
-</SVGIconBase>
+## The Nuxt Setup
 
-<SVGIconBase>
-    <IconImage/>
-</SVGIconBase>
+FYI, when placing a component in a sub-folder in the components folder, it derive the name form the folder name + the file name. So these 3 will be `IconCool`, `IconCooler` and `ExtraCool`
 
-<SVGIconBase>
-    <IconSettings/>
-</SVGIconBase>
-
-<SVGIconBase>
-    <IconOk/>
-</SVGIconBase>
-
-<Hr />
-
-I can have them inline 
-<SVGIconBase>
-    <IconOk/>
-</SVGIconBase>
-and can easley change their size and color
-
-
-<SVGIconBase size="16" fill="var(--bg-caution-HL)">
-    <IconAttach />
-</SVGIconBase>
-
-<SVGIconBase>
-    <IconAttach />
-</SVGIconBase>
-
-<SVGIconBase size="48" fill="var(--system-dim)">
-    <IconAttach />
-</SVGIconBase>
-
-<SVGIconBase size="96" fill="var(--bg-primary-HL)">
-    <IconAttach />
-</SVGIconBase>
-
-
-So an example code will look like so:
-
-```html
-<SVGIconBase size="96" fill="var(--bg-primary-HL)">
-    <IconAttach />
-</SVGIconBase>
 ```
-
-x> My icon system is 24\*24 – If you built your system in a different size make sure to change the *viewBox* and the default *props*
-
-<Hr />
-
-Nice, now for the 2nd use case
-
-# Free Style SVG
-
-For this one is just change your SVG to a *Vue* file and wrap it with a *template* tag. The end. And again, the value of it is that you can use your css/scss vars and to better organize your file - like so:
-
-```html
-<<template>
-	<svg viewBox="0 0 640 240">
-		<rect 
-            fill="var(--bg-code)" 
-            width="100%" height="100%" />
-        <polygon 
-            transform-origin="320 120" 
-            points="320 40 390 80 390 160 320 200 250 160 250 80">
-        </polygon>
-	</svg>
-</template>
-
-<style lang="scss" scoped>
-@keyframes rotate {
-	0% { transform: rotate(0); }
-	to { transform: rotate(360deg); }
-}
-polygon {
-	fill: var(--system-color);
-	transition: fill 0.5s ease-in-out,;
-	animation: rotate 5s cubic-bezier(0.75, 0, 0.25, 1) alternate infinite;
-	&:hover {
-		fill: var(--link-color);
-	}
-}
-</style> 
+| components/
+---| SvgIconBase.vue
+---| icon/
+-----| Cool.vue
+-----| Cooler.vue
+-----| ExtraCool.vue
 ```
-
-Which looks like that:
-
-<Example />
-
-# The Gridsome Setup
-
-I'm using the [vue-remark](https://gridsome.org/plugins/@gridsome/vue-remark) plugin which allows, among other, to add vue components into the *markdown* file. 
-
-So the above example, with the 4 attached icons, looks like so
-
-```md
----
-frontmatter: It matters!
----
-import SVGIconBase from '~/components/SVGIconBase.vue';    
-import IconAttach from '~/icons-system/IconAttach.vue';    
-
-<SVGIconBase size="16" fill="var(--bg-caution-HL)">
-    <IconAttach />
-</SVGIconBase>
-
-<SVGIconBase>
-    <IconAttach />
-</SVGIconBase>
-
-<SVGIconBase size="48" fill="var(--system-dim)">
-    <IconAttach />
-</SVGIconBase>
-
-<SVGIconBase size="96" fill="var(--bg-primary-HL)">
-    <IconAttach />
-</SVGIconBase>
-```
-
-<Hr />
-
-#### That's all folks, see ya'll next time
-
-<Hr />
