@@ -9,29 +9,40 @@ defineProps({
 		default: 'var(--space-8xl)',
 	},
 });
+// Prevent Firefox to auto-scroll to an HTML embedded iframe 
+const displayIt = ref('none');
+const changeIt = () => {
+  setTimeout(() => {
+    displayIt.value = 'block'
+  }, 2000)
+}
+changeIt();
 </script>
 
 <template>
-	<div class="frame">
-		<iframe class="iframe" :src="`https://www.sketch.com/embed/s/` + src" allowfullscreen> </iframe>
+	<div class="frame base">
+		<iframe class="iframe base" loading="lazy" :src="`https://www.sketch.com/embed/s/` + src" allowfullscreen> </iframe>
 	</div>
 </template>
 
 <style scoped>
-.frame {
-	left: 0;
+.base {
 	width: 100%;
 	height: calc(v-bind(height) * 4);
+	border-radius: var(--border-radius-regular);
+}
+.frame {
 	position: relative;
 	margin-block: var(--space-m);
+	background-color: var(--color-sys-dis);
 }
 .iframe {
 	top: 0;
+	display: v-bind(displayIt);
 	left: 0;
 	width: 100%;
 	height: 100%;
 	position: absolute;
 	border: 0;
-	border-radius: var(--border-radius-regular);
 }
 </style>
