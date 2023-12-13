@@ -19,7 +19,7 @@ defineProps({
 	},
 	strokeWidth: {
 		type: String,
-		default: '0.125rem',
+		default: '0.1125em',
 		// default: 'var(--space-4xs)',
 	},
 });
@@ -45,7 +45,7 @@ defineProps({
 
 <style>
 svg, path {
-	fill: v-bind(fillColor) !important;
+	fill: v-bind(fillColor);
 	stroke: v-bind(strokeColor);
 	stroke-width: v-bind(strokeWidth);
 }
