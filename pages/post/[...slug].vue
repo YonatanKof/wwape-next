@@ -3,7 +3,7 @@
 const { path } = useRoute();
 const cleanPath = path.replace(/\/+$/, '');
 // For the previous & next items
-const [prev, next] = await queryContent('/design')
+const [prev, next] = await queryContent('/post')
 	.only(['_path', 'title', 'social_image'])
 	.sort({ date: -1 })
 	.findSurround(cleanPath);
@@ -11,7 +11,7 @@ const [prev, next] = await queryContent('/design')
 const { data, error } = await useAsyncData(cleanPath, async () => {
 	// Remove a trailing slash in case the browser adds it, it might break the routing
 	// fetch document where the document path matches with the current route
-	let article = queryContent('/design').where({ _path: cleanPath }).findOne();
+	let article = queryContent('/post').where({ _path: cleanPath }).findOne();
 	return {
 		article: await article,
 	};
@@ -68,6 +68,7 @@ useHead({
 });
 const goHome = () => clearError({ redirect: '/' });
 const goDesign = () => clearError({ redirect: '/design' });
+const goPost = () => clearError({ redirect: '/post' });
 </script>
 
 <template>
@@ -95,6 +96,7 @@ const goDesign = () => clearError({ redirect: '/design' });
 					<div id="link-buttons">
 						<button @click="goHome">Back to home page</button>
 						<button @click="goDesign">See some nice designs</button>
+						<button @click="goPost">Read some nice articles</button>
 					</div>
 				</section>
 			</template>

@@ -67,6 +67,7 @@ useHead({
 });
 const goHome = () => clearError({ redirect: '/' });
 const goDesign = () => clearError({ redirect: '/design' });
+const goPost = () => clearError({ redirect: '/post' });
 </script>
 
 <template>
@@ -94,6 +95,7 @@ const goDesign = () => clearError({ redirect: '/design' });
 					<div id="link-buttons">
 						<button @click="goHome">Back to home page</button>
 						<button @click="goDesign">See some nice designs</button>
+						<button @click="goPost">Read some nice articles</button>
 					</div>
 				</section>
 			</template>
