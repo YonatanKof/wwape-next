@@ -11,13 +11,9 @@ image_alt: 'Cover art for SVGs & Vue article'
 description: 'How I use SVGs with Vue and Nuxt'
 tags: ['SVG', 'Creative', 'Code']
 --- 
-::BtnExample
-::
 
-SVGs are **nice**
-
-Inline SVGs are **nicer**
-
+SVGs are **nice**  
+Inline SVGs are **nicer**  
 SVG as components are the **nicest**
 
 ## The need
@@ -33,9 +29,9 @@ This is what I need from my SVGs:
 
 ## The response – icon system
 
-You can approach an icon system in two ways per **design** or pre **development**
+You can approach an icon system in two ways for **design** or for **development**
 
-### Icon system per design
+### Icon system for design
 
 In terms of graphic design an *icon system* is a collection of icons that work together as one group with consistency and harmony. Therefor there's a lot of similarly between the icons, like **size**, **color**, **behavior** and **themes**.
 
@@ -46,7 +42,7 @@ Checkout the [icons on Storybook](https://60ae3e9eff8e4c003b2f90d4-rocitoujqz.ch
 ::SketchEmbed{src="84463519-df2a-475d-b8d2-bd250755763d/p/3195B629-1FA9-4D9B-9AB6-BEA52F6DC7A8/canvas" height="var(--space-7xl)"}
 ::
 
-### Icon system per development
+### Icon system for development
 
 In terms of development an *icon system* can help avoid repetition and boilerplate code, on the one hand. On the other hand it helps you keep consistency and to reduce the chance of human error. 
 
@@ -54,9 +50,9 @@ It will reduce error and will keep it consistent because it's opinionated – th
 
 And is will reduce boilerplate coding because you won’t have to write the same code needed to make the SVG robust and accessible, you’ll just write it once and every improvement or change  will be automatically updated for all icons used.
 
-## Review KIS (Kof Icon System)
+## Review the Icon System
 
-*KIS* uses 2 Single File Components (SFC) to show 1 icon.
+This *Icon System* uses 2 Single File Components (SFC) to show 1 icon.
 
 The **1st** file is the SVG wrapper called `SvgIconBase`. It's a generic placeholder and will repeat for every icon. It contains the boilerplate code that keeps it robust and accessible and some props that will allow me to override colors and size at the instance level, if needed.
 
@@ -110,7 +106,6 @@ defineProps({
 	size: {
 		type: String,
 		default: '1.25rem',
-		// default: 'var(--space-m)',
 	},
 	fillColor: {
 		type: String,
@@ -123,7 +118,6 @@ defineProps({
 	strokeWidth: {
 		type: String,
 		default: '0.125rem',
-		// default: 'var(--space-4xs)',
 	},
 });
 </script>
@@ -173,18 +167,14 @@ For the icon drawing I tore apart the *path* form the the *SVG* and added `title
 
 ```
 
-## Basic Use
+## Live Example
 
-::BtnExample
+Here are a few icons of my *Icon System* to play around with
+
+::IconExample
 ::
 
-Here are a few icons of my *Icon System* to play around with:
-
-I can have them inline
-
-and can easily change their size and color
-
-## The Nuxt Setup
+## Nuxt Setup
 
 FYI, when placing a component in a sub-folder in the components folder, it derive the name form the folder name + the file name. So these 3 will be `IconCool`, `IconCooler` and `ExtraCool`
 
@@ -196,3 +186,5 @@ FYI, when placing a component in a sub-folder in the components folder, it deriv
 -----| Cooler.vue
 -----| ExtraCool.vue
 ```
+
+#### That's All Folks

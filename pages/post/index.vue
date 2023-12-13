@@ -26,7 +26,7 @@ const { data } = await useAsyncData('equal', () => {
 </script>
 <template>
 	<div>
-		<h1>Posts</h1>
-		<ItemList :design-data="data" masonryMaxColumns="2"/>
+		<IntroText title="Posts" text="Please enjoy some content I've written throughout the years"/>
+		<ItemList :design-data="data" masonryMaxColumns="1"/>
 	</div>
 </template>

@@ -78,14 +78,16 @@ const goDesign = () => clearError({ redirect: '/design' });
 					<h1 id="title">{{ doc.title }}</h1>
 					<hr />
 					<span class="dates">
-						<p>Created {{ $formatDate(doc.date) }}</p>
+						<p>Posted {{ $formatDate(doc.date) }}</p>
 						<p v-if="doc.updated">•</p>
 						<p v-if="doc.updated">Updated {{ $formatDate(doc.updated) }}</p>
 					</span>
 					<hr />
+					<img :src="doc.cover_image" :alt="doc.image_alt">
+					<hr />
 					<ContentRenderer :value="doc" />
 				</article>
-				<SeeMore :prev="prev" :next="next" />
+				<!-- <SeeMore :prev="prev" :next="next" /> -->
 			</template>
 			<template #not-found>
 				<section id="error">

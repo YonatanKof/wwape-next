@@ -15,8 +15,8 @@ watchEffect(() => (mode.value = state.value as any));
 		<div>
 			<nav>
 				<nuxt-link :to="{ name: 'index' }">Home</nuxt-link>
-				<!-- <nuxt-link :to="{name: 'post'}">Posts</nuxt-link> -->
 				<nuxt-link :to="{ name: 'design' }">Designs</nuxt-link>
+				<nuxt-link :to="{name: 'post'}">Posts</nuxt-link>
 			</nav>
 			<button class="icon-btn" @click="next()" :title="`Theme is: ` + (state).charAt(0).toUpperCase() + (state).slice(1)">
 				<i v-if="state === 'auto'">
