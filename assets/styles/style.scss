@@ -2,6 +2,7 @@
 :root {
 	--header-height: var(--space-4xl);
 	--border-radius-regular: var(--space-3xs);
+	--border-radius-medium: var(--space-2xs);
 
 	--color-sys-main: hsl(180, 25%, 15%);
 	--color-sys-slight: hsla(0, 0%, 10%, 0.75);
@@ -95,6 +96,6 @@ hr {
 	--color-link-main: hsl(290, 100%, 90%);
 	--color-link-slight: hsl(290, 100%, 80%);
 
-	--color-focus-main: hsl(200, 100%, 60%);
-	--color-focus-slight: hsl(200, 100%, 80%);
+	--color-focus-main: hsl(200, 100%, 40%);
+	--color-focus-slight: hsl(200, 100%, 60%);
 }

@@ -43,7 +43,6 @@ textarea {
 	font-size: var(--step-1);
 	line-height: 1.5;
 	color: var(--color-sys-main);
-	margin-block-end: var(--space-2xs);
 }
 
 h1,
@@ -55,6 +54,21 @@ h6 {
 	font-weight: 500;
 	line-height: 1.125;
 	font-family: var(--font-hand);
+}
+[data-content-id] {
+	p {
+		margin-block-end: var(--space-2xs);
+	}
+}
+[data-content-id] {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin-block-start: var(--space-l);
+	}
 }
 i,
 em {
