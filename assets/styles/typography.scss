@@ -44,7 +44,8 @@ h6,
 em,
 label,
 input,
-textarea {
+textarea, 
+li {
 	font-family: var(--font-body);
 	font-size: var(--step-1);
 	line-height: 1.5;
@@ -61,7 +62,10 @@ h6 {
 	font-family: var(--font-hand);
 }
 [data-content-id] {
-	p {
+	ul {
+		margin: unset;
+	}
+	p, li {
 		margin-block-end: var(--space-2xs);
 	}
 }
@@ -174,7 +178,7 @@ pre {
 	line-height: 1.6;
 	border-radius: var(--border-radius-regular);
 	padding: var(--space-s);
-	margin-block-end: var(--space-xs);
+	margin-block: var(--space-xs);
 }
 
 code,
