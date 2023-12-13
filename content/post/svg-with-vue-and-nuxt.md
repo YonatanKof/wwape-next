@@ -1,12 +1,12 @@
 ---
-title: 'SVG Vuedoo Magic'
+title: 'SVGs with Vue & Nuxt'
 author_name: 'Yonatan Ben Knaan'
 date: '2022-01-01'
 updated: ''
 cover_image: '/posts/about-my-svg/about-my-svg.svg'
 cover_image_height: ''
 cover_image_thumbhash: ''
-social_image: '/posts/about-my-svg/about-my-svgs-social-cover.jpg'
+social_image: '/posts/about-my-svg/about-my-svgs-social.jpg'
 image_alt: 'Cover art for SVGs & Vue article'
 description: 'How I use SVGs with Vue and Nuxt'
 tags: ['SVG', 'Creative', 'Code']
