@@ -106,4 +106,9 @@ fieldset div {
 	flex-direction: column;
 	gap: var(--space-m);
 }
+@media (width <= $display-width-narrow) {
+	fieldset {
+	flex-direction: column;
+}
+}
 </style>

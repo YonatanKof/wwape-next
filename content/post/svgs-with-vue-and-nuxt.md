@@ -4,8 +4,8 @@ author_name: 'Yonatan Ben Knaan'
 date: '2022-01-01'
 updated: ''
 cover_image: '/posts/about-my-svg/about-my-svg.svg'
-cover_image_height: ''
-cover_image_thumbhash: ''
+cover_image_height: '400'
+cover_image_thumbhash: 'dikGI4jIV5hwd6hn+I58cDc'
 social_image: '/posts/about-my-svg/about-my-svgs-social.jpg'
 image_alt: 'Cover art for SVGs & Vue article'
 description: 'How I use SVGs with Vue and Nuxt'
@@ -169,7 +169,7 @@ For the icon drawing I tore apart the *path* form the the *SVG* and added `title
 
 ## Live Example
 
-Here are a few icons of my *Icon System* to play around with
+A few icons to play around with to show case the power of an *Icon System*. Of course this will make more sense when you'll have more then 3 icons 😋
 
 ::IconExample
 ::
