@@ -172,6 +172,7 @@ code {
 	font-size: 80%;
 }
 pre {
+	position: relative;
 	background-color: var(--color-sys-invert-highlight);
 	font-size: var(--step-1);
 	font-variation-settings: 'slnt' 0;
@@ -179,19 +180,21 @@ pre {
 	border-radius: var(--border-radius-regular);
 	padding: var(--space-s);
 	margin-block: var(--space-xs);
+	overflow-x: scroll;
+	max-width: calc(100vw - var(--space-2xl));
 }
 
 code,
 pre {
 	font-family: var(--font-mono);
-	font-weight: 300;
 	word-spacing: normal;
-	word-break: normal;
+	word-break:  break-word;
 	white-space: break-spaces;
 	word-wrap: anywhere;
 }
 
 pre code {
+	white-space: pre;
 	background-color: unset;
 	padding: unset;
 	border-radius: unset;
