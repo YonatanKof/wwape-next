@@ -1,13 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 160">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160">
     <defs>
         <linearGradient id="myGradient" gradientTransform="rotate(90)">
             <stop offset="5%" stop-color="#eeee87" />
             <stop offset="95%" stop-color="#fbfbe0" />
         </linearGradient>
         <g id="shape">
-            <circle cx="143" cy="80" r="11" />
-            <circle cx="241" cy="80" r="11" />
-            <rect x="140" y="72" width="104" height="16" />
+            <circle cx="68" cy="80" r="11" />
+            <circle cx="172" cy="80" r="11" />
+            <rect x="68" y="72" width="104" height="16" />
         </g>
     </defs>
     <style>
@@ -78,12 +78,12 @@
 
     </style>
     <rect fill="url('#myGradient')" width="100%" height="100%" />
-    <use href="#shape" transform-origin="192 80" class="anim1" />
-    <use href="#shape" transform-origin="192 80" class="anim2 " />
-    <use href="#shape" transform-origin="192 80" class="anim3" />
-    <use href="#shape" transform-origin="192 80" class="anim4" />
-    <use href="#shape" transform-origin="192 80" class="fill anim1" />
-    <use href="#shape" transform-origin="192 80" class="fill anim2" />
-    <use href="#shape" transform-origin="192 80" class="fill anim3" />
-    <use href="#shape" transform-origin="192 80" class="fill anim4" />
+    <use href="#shape" transform-origin="120 80" class="anim1" />
+    <use href="#shape" transform-origin="120 80" class="anim2 " />
+    <use href="#shape" transform-origin="120 80" class="anim3" />
+    <use href="#shape" transform-origin="120 80" class="anim4" />
+    <use href="#shape" transform-origin="120 80" class="fill anim1" />
+    <use href="#shape" transform-origin="120 80" class="fill anim2" />
+    <use href="#shape" transform-origin="120 80" class="fill anim3" />
+    <use href="#shape" transform-origin="120 80" class="fill anim4" />
 </svg>

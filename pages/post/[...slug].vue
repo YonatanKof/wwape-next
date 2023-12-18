@@ -76,35 +76,82 @@ const goPost = () => clearError({ redirect: '/post' });
 		<ContentDoc>
 			<template v-slot="{ doc }">
 				<article>
-					<h1 id="title">{{ doc.title }}</h1>
-					<hr />
-					<span class="dates">
-						<p>Posted {{ $formatDate(doc.date) }}</p>
-						<p v-if="doc.updated">•</p>
-						<p v-if="doc.updated">Updated {{ $formatDate(doc.updated) }}</p>
-					</span>
-					<hr />
-					<img :src="doc.cover_image" :alt="doc.image_alt">
-					<hr />
+					<section id="article-header">
+						<div id="article-info">
+							<h1 id="title">{{ doc.title }}</h1>
+							<hr />
+							<span class="dates">
+								<p>Posted {{ $formatDate(doc.date) }}</p>
+								<p v-if="doc.updated">•</p>
+								<p v-if="doc.updated">Updated {{ $formatDate(doc.updated) }}</p>
+							</span>
+							<hr />
+							<h3 id="sub-title">{{ doc.description }}</h3>
+						</div>
+						<img id="article-image" :src="doc.cover_image" :alt="doc.image_alt" />
+					</section>
 					<ContentRenderer :value="doc" />
 				</article>
 				<!-- <SeeMore :prev="prev" :next="next" /> -->
-			</template>
-			<template #not-found>
-				<section id="error">
-					<h1>Oh my! <span>Can't find this page</span></h1>
-					<div id="link-buttons">
-						<button @click="goHome">Back to home page</button>
-						<button @click="goDesign">See some nice designs</button>
-						<button @click="goPost">Read some nice articles</button>
-					</div>
-				</section>
 			</template>
 		</ContentDoc>
 	</main>
 </template>
 
 <style lang="scss" scoped>
+section {
+	display: grid;
+	grid-template-columns: 4fr 1fr 6fr;
+	grid-template-rows: var(--space-2xl) auto var(--space-2xl);
+	height: min-content;
+	margin-block-end: var(--space-m);
+	@media (width <= $display-width-md) {
+		grid-template-columns: 5fr 1fr 6fr;
+		// background-color: teal;
+	}
+	@media (width <= $display-width-sm) {
+		grid-template-columns: var(--space-5xl) 1fr var(--space-5xl);
+		grid-template-rows: var(--space-5xl) auto 1fr;
+		// background-color: red;
+	}
+	@media (width <= $display-width-xs) {
+		grid-template-columns: var(--space-2xl) 1fr var(--space-2xl);
+		grid-template-rows: var(--space-6xl) auto 1fr;
+		// background-color: goldenrod;
+	}
+	@media (width <= $display-width-2xs) {
+		grid-template-columns: var(--space-s) 1fr var(--space-s);
+		// background-color: palegreen;
+	}
+}
+#article-info {
+	background-color: var(--color-sys-invert-highlight);
+	grid-column: 1 / span 2;
+	grid-row: 1 / span 2;
+	padding: calc(var(--space-s) + var(--space-3xs));
+	z-index: 10;
+	border-radius: var(--border-radius-medium);
+	height: min-content;
+	@media (width <= $display-width-sm) {
+		padding: var(--space-s);
+	}
+}
+#article-image {
+	grid-column: 2 / span 2;
+	grid-row: 2 / span 2;
+}
+#title {
+	font-size: var(--step-4);
+}
+#sub-title {
+	font-family: var(--font-mono);
+	font-size: var(--step-0);
+	margin-block-start: var(--space-s);
+	@media (width <= $display-width-2xs) {
+		font-size: var(--step--1);
+	}
+}
+
 article {
 	margin-block-end: var(--space-s);
 }
@@ -120,9 +167,7 @@ main {
 	color: var(--color-sys-slight);
 	font-size: var(--step--1);
 	margin-block-end: unset;
-}
-@media (width <= $display-width-narrow) {
-	.dates > p {
+	@media (width <= $display-width-sm) {
 		font-size: var(--step--3);
 	}
 }

@@ -1,14 +1,14 @@
 ---
-title: 'SVGs with Vue & Nuxt'
+title: 'Simple Icon System'
 author_name: 'Yonatan Ben Knaan'
 date: '2022-01-01'
 updated: ''
 cover_image: '/posts/about-my-svg/about-my-svg.svg'
-cover_image_height: '400'
-cover_image_thumbhash: 'dikGI4jIV5hwd6hn+I58cDc'
+cover_image_height: '640'
+cover_image_thumbhash: '9TgGNYrYZ3dwh4iLdWiHePiMfYAn'
 social_image: '/posts/about-my-svg/about-my-svgs-social.jpg'
 image_alt: 'Cover art for SVGs & Vue article'
-description: 'How I use SVGs with Vue and Nuxt'
+description: 'Build a simple SVG icon system with Vue & Nuxt'
 tags: ['SVG', 'Creative', 'Code']
 --- 
 
@@ -188,3 +188,5 @@ FYI, when placing a component in a sub-folder in the components folder, it deriv
 ```
 
 #### That's All Folks
+
+See ya'll next time
