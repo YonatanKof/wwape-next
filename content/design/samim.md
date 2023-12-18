@@ -1,5 +1,5 @@
 ---
-title: 'Shamim'
+title: 'Samim'
 author_name: 'Yonatan Ben Knaan'
 date: '2002-02-28'
 updated: ''

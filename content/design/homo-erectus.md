@@ -11,7 +11,7 @@ image_alt: 'A crown of penises, cycling form lose to erected hovering in a space
 description: 'A man life cycle'
 tags: ['Creative']
 ---
-As us Israeli say - הייתה עשר
+As us Israeli say → היית עשר
 
 ![A crown of penises, cycling form lose to erected hovering in a space](/designs/homo-erectus/homo-erectus.webp)
 *Erected we hover in space*
