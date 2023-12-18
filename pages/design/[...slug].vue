@@ -119,9 +119,7 @@ main {
 	color: var(--color-sys-slight);
 	font-size: var(--step--1);
 	margin-block-end: unset;
-}
-@media (width <= $display-width-narrow) {
-	.dates > p {
+	@media (width <= $display-width-xs) {
 		font-size: var(--step--3);
 	}
 }

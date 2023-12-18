@@ -55,7 +55,7 @@ nav {
 	@include flex-center;
 	gap: var(--space-xs);
 }
-@media (width <= $display-width-narrow) {
+@media (width <= $display-width-xs) {
 	header {
 		flex-direction: column-reverse;
 		align-items: start;

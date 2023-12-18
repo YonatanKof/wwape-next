@@ -19,6 +19,10 @@ const config = useRuntimeConfig();
 a, p {
 	font-size: var(--step--1);
 	margin-block-end: var(--space-3xs);
+	@media (width <= $display-width-2xs) {
+		font-size: var(--step--2);
+	}
+	
 }
 footer {
 	display: flex;
@@ -31,5 +35,9 @@ footer {
 	flex-direction: row;
 	justify-content: center;
 	gap: var(--space-s);
+	@media (width <= $display-width-2xs) {
+		gap: var(--space-2xs);
+
+	}
 }
 </style>

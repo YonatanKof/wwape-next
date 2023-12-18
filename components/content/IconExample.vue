@@ -84,6 +84,7 @@ em {
 input {
 	margin: unset;
 	margin-block-start: var(--space-2xs);
+	width: 100%;
 }
 hr {
 	margin-block-start: var(--space-xs);
@@ -106,7 +107,7 @@ fieldset div {
 	flex-direction: column;
 	gap: var(--space-m);
 }
-@media (width <= $display-width-narrow) {
+@media (width <= $display-width-xs) {
 	fieldset {
 	flex-direction: column;
 }
