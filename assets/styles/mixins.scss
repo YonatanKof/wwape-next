@@ -5,7 +5,7 @@
 	align-items: center;
 	gap: $gap;
 }
-@mixin display-width($width: var(--display-width-normal)) {
+@mixin display-width($width: var(--display-width-md)) {
 	max-width: $width;
 	margin: 0 auto;
 	padding-inline: var(--space-xs-l);
