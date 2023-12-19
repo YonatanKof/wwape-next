@@ -1,7 +1,7 @@
 ---
 title: 'Simple Icon System'
 author_name: 'Yonatan Ben Knaan'
-date: '2022-01-01'
+date: '2023-12-18'
 updated: ''
 cover_image: '/posts/simple-icon-system/simple-icon-system.svg'
 cover_image_height: '640'
