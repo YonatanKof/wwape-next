@@ -33,20 +33,29 @@ const { $formatDate } = useNuxtApp();
 		:max-columns="masonryMaxColumns"
 	>
 		<template #default="{ item, index }">
-			<NuxtLink class="item" :to="item._path + '/'">
+			<NuxtLink class="item" v-if="item._path" :to="item._path + '/'">
 				<div class="item-content">
 					<h3 id="title">{{ item.title }}</h3>
-					<p>{{ $formatDate(item.date) }}</p>
+					<p id="date">{{ $formatDate(item.date) }}</p>
 					<p v-if="item.description">{{ item.description }}</p>
 				</div>
-				<UnLazyImage
+				<UnLazyImage 
+					
 					:thumbhash="item.cover_image_thumbhash"
 					:src="item.cover_image"
 					:alt="item.image_alt"
 					width="1000"
-  					:height="item.cover_image_height"
+					:height="item.cover_image_height"
 				/>
 			</NuxtLink>
+
+			<article v-else class="item">
+				<div class="item-content">
+					<h3 id="title">{{ item.name }}</h3>
+					<p v-if="item.description">{{ item.description }}</p>
+				</div>
+				<img :src="item.image" :alt="`The ` + item.name + ` symbol`" />
+			</article>
 		</template>
 	</masonry-wall>
 </template>
@@ -56,7 +65,7 @@ p {
 	font-size: var(--step--1);
 	margin-block-end: unset;
 }
-p:first-of-type {
+#date {
 	font-size: var(--step--2);
 	color: var(--color-sys-slight);
 	margin-block-end: var(--space-3xs);
@@ -75,6 +84,7 @@ img {
 	display: block;
 }
 #title {
+	margin-block-start: unset;
 	margin-block-end: var(--space-4xs);
 }
 a {
