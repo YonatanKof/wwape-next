@@ -9,7 +9,7 @@ const props = defineProps({
 	text2: {
 		type: String,
 	},
-});
+}); 
 </script>
 <template>
 	<div>
@@ -20,7 +20,7 @@ const props = defineProps({
 </template>
 <style scoped>
 p {
-	font-size: var(--step-1);
+	font-size: var(--step-2);
 }
 div {
 	margin-block-end: var(--space-m);

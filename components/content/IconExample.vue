@@ -84,7 +84,7 @@ em {
 input {
 	margin: unset;
 	margin-block-start: var(--space-2xs);
-	width: 100%;
+	// width: 100%;
 }
 hr {
 	margin-block-start: var(--space-xs);

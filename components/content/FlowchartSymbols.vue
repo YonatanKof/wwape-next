@@ -4,7 +4,7 @@ import symbolData from 'public/posts/flowchart-symbols/FlowchartSymbols.json';
 
 <template>
 	<div>
-		<ItemList :design-data="symbolData" />
+		<ItemList :design-data="symbolData" :masonryMaxColumns="4"/>
 	</div>
 </template>
 

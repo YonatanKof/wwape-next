@@ -144,7 +144,7 @@ section {
 	font-size: var(--step-4);
 }
 #sub-title {
-	font-family: var(--font-mono);
+	font-family: var(--font-system);
 	font-size: var(--step-0);
 	margin-block-start: var(--space-s);
 	@media (width <= $display-width-2xs) {
