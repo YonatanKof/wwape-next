@@ -1,23 +1,23 @@
 ---
 title: 'Flowchart Symbols'
 author_name: 'Yonatan Ben Knaan'
-date: '2023-12-19'
+date: '2023-12-23'
 updated: ''
-cover_image: ''
-cover_image_height: ''
-cover_image_thumbhash: ''
-social_image: '/posts/'
-image_alt: ''
-description: 'What are these symbols anyways?'
+cover_image: '/posts/flowchart-symbols/FlowchartSymbols-tn.webp'
+cover_image_height: '695'
+cover_image_thumbhash: 'OwgCBYBlivltmWiLqFd4iPt/nPvH'
+social_image: '/posts/flowchart-symbols/FlowchartSymbols-social.jpg'
+image_alt: 'A simple flowchart that represent a viewer liking or disliking this content'
+description: 'A visual cheat sheet to help you effectively convey ideas with flowcharts'
 tags: ['Creative']
 ---
 
-Working a lot with [Whimsical](https://whimsical.com/) Diagram shapes I found myself thinking what the hack are these symbols anyways? Do they have a meaning or are they just nice looking shapes? As it turns up they do have meaning and it has been standardized by ISO and ANSI and now by me 😛 
+Working with [Whimsical](https://whimsical.com/) diagram shapes I found myself thinking what the hack are these symbols anyways? Do they have a meaning or are they just nice looking shapes? Well, this is a visual sign language and language have a meaning, so much so it's been standardized by ISO and ANSI.
 
-These shapes are called flowcharts and they represents a workflow or a process. Whimsical are using just a part of the flowcharts symbols and are mixing some other shapes too, but you can totally use it to plot your system be it a UX flow, a program or chip inside a spaceship to Mars.
+With these symbols you can create flowcharts to represents any workflow or process that other people can read – the only condition is that you and your audience are reading them correctly. With this list you can totally plot any UX flow, software logic or a spaceship to Mars.
 
-Each symbol has a designated meaning and this way you can use them to convey a story. 
-
+<!-- Each symbol has a designated meaning and this way you can use them to convey a story.  -->
+ <!-- Whimsical are using just a part of the flowcharts symbols and are mixing some other shapes too. -->
 ## The shape goes as follow: 
 
 ---
