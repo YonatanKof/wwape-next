@@ -1,0 +1,107 @@
+﻿[
+	{
+		"id": "fcs-01",
+		"name": "Process",
+		"shape": "Process",
+		"description": "An operation or action step – Indicates any processing function. Illustrate actions taken, calculations performed, or tasks completed",
+		"image": "/posts/flowchart-symbols/Process.webp"
+	},
+	{
+		"id": "fcs-02",
+		"name": "Terminator",
+		"shape": "Pill",
+		"description": "Used to clearly define the start or stop point in a process or a flow in your diagram",
+		"image": "/posts/flowchart-symbols/Terminator.webp"
+	},
+	{
+		"id": "fcs-03",
+		"name": "On-page Connector",
+		"shape": "Oval",
+		"description": "A jump from one point to another, and replace a long line on a flowchart page. Represented by a small circle with a letter inside",
+		"image": "/posts/flowchart-symbols/On-page-Connector.webp"
+	},
+	{
+		"id": "fcs-01",
+		"name": "Decision",
+		"shape": "Diamond",
+		"description": "A question or a needed decision in the process between two or more paths in a flowchart. Usually a yes/no or true/false condition that shows a branching point based on different outcomes",
+		"image": "/posts/flowchart-symbols/Decision.webp"
+	},
+	{
+		"id": "fcs-01",
+		"name": "Input/Output",
+		"shape": "Parallelogram",
+		"description": "Indicates data inputs and outputs to and from a process, be it a user input, system output, or data exchange with external sources",
+		"image": "/posts/flowchart-symbols/Input-Output.webp"
+	},
+	{
+		"id": "fcs-01",
+		"name": "Manual Operation",
+		"shape": "Trapezoid",
+		"description": "A process step that isn't automated, requiring a manual intervention or human action. Used to show a user tasks, operator involvement, or steps requiring external human input",
+		"image": "/posts/flowchart-symbols/ManualOperation.webp"
+	},
+	{
+		"id": "fcs-01",
+		"name": "Merge",
+		"shape": "Triangle",
+		"description": "Indicates a step that merge multiple processes into one",
+		"image": "/posts/flowchart-symbols/Merge.webp"
+	},
+	{
+		"id": "fcs-01",
+		"name": "Preparation",
+		"shape": "Hexagon",
+		"description": "A preparation process step, like setting a switch or setting-up a routine",
+		"image": "/posts/flowchart-symbols/Preparation.webp"
+	},
+	{
+		"id": "fcs-01",
+		"name": "Database",
+		"shape": "Cylinder",
+		"description": "Indicates a database that allows for searching and sorting",
+		"image": "/posts/flowchart-symbols/Database.webp"
+	},
+	{
+		"id": "fcs-01",
+		"name": "Delay",
+		"shape": "Half Rounded Rectangular",
+		"description": "A waiting period – Indicates a delay in the process",
+		"image": "/posts/flowchart-symbols/Delay.webp"
+	},
+	{
+		"id": "fcs-01",
+		"name": "Extract",
+		"shape": "Triangle",
+		"description": "Extract (split processes) or more commonly - a measurement or finished goods",
+		"image": "/posts/flowchart-symbols/Extract.webp"
+	},
+	{
+		"id": "fcs-01",
+		"name": "Document",
+		"shape": "Bottom Wavey Rectangular",
+		"description": "A printed document or report",
+		"image": "/posts/flowchart-symbols/Database.webp"
+	},
+	{
+		"id": "fcs-01",
+		"name": "Multiple Documents",
+		"shape": "Stack of Bottom Wavey Rectangular",
+		"description": "Represents multiple documents in the process",
+		"image": "/posts/flowchart-symbols/Database.webp"
+	},
+	{
+		"id": "fcs-01",
+		"name": "Off-page Connector",
+		"shape": "Square with One Pointed Edge",
+		"description": "Represents multiple documents in the process",
+		"image": "/posts/flowchart-symbols/Database.webp"
+	},
+	{
+		"id": "fcs-01",
+		"name": "Manual input",
+		"shape": "Trapezoid",
+		"description": "Represented by quadrilateral, with the top irregularly sloping up from left to right, like the side view of a keyboard. ",
+		"image": "/posts/flowchart-symbols/Database.webp"
+	}
+]
