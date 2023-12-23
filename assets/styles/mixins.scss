@@ -21,7 +21,4 @@
 	border-radius: var(--border-radius-regular);
 	transition: transform 0.25s, box-shadow ease-in-out 0.25s;
 	transform: translateY(0);
-	&:hover {
-		transform: translateY(calc(var(--space-3xs) * -1));
-	}
 }
