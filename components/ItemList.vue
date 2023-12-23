@@ -36,11 +36,10 @@ const { $formatDate } = useNuxtApp();
 			<NuxtLink class="item" v-if="item._path" :to="item._path + '/'">
 				<div class="item-content">
 					<h3 id="title">{{ item.title }}</h3>
-					<p id="date">{{ $formatDate(item.date) }}</p>
+					<p id="mata-data">{{ $formatDate(item.date) }}</p>
 					<p v-if="item.description">{{ item.description }}</p>
 				</div>
-				<UnLazyImage 
-					
+				<UnLazyImage
 					:thumbhash="item.cover_image_thumbhash"
 					:src="item.cover_image"
 					:alt="item.image_alt"
@@ -49,12 +48,16 @@ const { $formatDate } = useNuxtApp();
 				/>
 			</NuxtLink>
 
-			<article v-else class="item">
+			<article v-else class="item-hover-less">
 				<div class="item-content">
 					<h3 id="title">{{ item.name }}</h3>
+					<hr />
+					<p id="mata-data">{{ item.shape }}</p>
+					<!-- <code>{{ item.id }}</code> -->
+					<hr />
 					<p v-if="item.description">{{ item.description }}</p>
 				</div>
-				<img :src="item.image" :alt="`The ` + item.name + ` symbol`" />
+				<img loading="lazy" :src="item.image" class="this-image" :alt="`The ` + item.name + ` symbol`" />
 			</article>
 		</template>
 	</masonry-wall>
@@ -65,7 +68,7 @@ p {
 	font-size: var(--step--1);
 	margin-block-end: unset;
 }
-#date {
+#mata-data {
 	font-size: var(--step--2);
 	color: var(--color-sys-slight);
 	margin-block-end: var(--space-3xs);
@@ -74,6 +77,12 @@ p {
 	margin-block-end: var(--space-s);
 }
 .item {
+	@include content-item();
+	&:hover {
+		transform: translateY(calc(var(--space-3xs) * -1));
+	}
+}
+.item-hover-less {
 	@include content-item();
 }
 img {
@@ -98,5 +107,12 @@ a {
 		font-weight: 400;
 	}
 	text-decoration: none;
+}
+</style>
+<style>
+.dark {
+	.this-image {
+		filter: invert(100%) hue-rotate(180deg) contrast(75%);
+	}
 }
 </style>
