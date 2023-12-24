@@ -1,0 +1,150 @@
+﻿[
+	{
+		"id": "fcs-02",
+		"name": "Terminator",
+		"shape": "Pill",
+		"description": "Used to clearly define the start or stop point in a process or a flow in your diagram",
+		"image": "/posts/flowchart-symbols/fcs-2-Terminator.webp"
+	},
+	{
+		"id": "fcs-01",
+		"name": "Process",
+		"shape": "Rectangular",
+		"description": "An operation or action step - Indicates any processing function. Illustrate actions taken, calculations performed, or tasks completed",
+		"image": "/posts/flowchart-symbols/fcs-1-Process.webp"
+	},
+	{
+		"id": "fcs-03",
+		"name": "Decision",
+		"shape": "Diamond",
+		"description": "A question or a decision in the process between two or more paths in a flowchart. Usually a yes/no or true/false branching duo to different outcomes",
+		"image": "/posts/flowchart-symbols/fcs-3-Decision.webp"
+	},
+	{
+		"id": "fcs-04",
+		"name": "Preparation",
+		"shape": "Elongated Hexagon",
+		"description": "A preparation process step, like setting a switch or setting-up a routine",
+		"image": "/posts/flowchart-symbols/fcs-4-Preparation.webp"
+	},
+	{
+		"id": "fcs-05",
+		"name": "Input/Output",
+		"shape": "Parallelogram",
+		"description": "Indicates data inputs and outputs to and from a process, be it a user input, system output, or data exchange with external sources",
+		"image": "/posts/flowchart-symbols/fcs-5-Input-Output.webp"
+	},
+	{
+		"id": "fcs-06",
+		"name": "Manual Input",
+		"shape": "Trapezoid",
+		"description": "A process step that isn't automated, requiring a manual intervention or human action. Used to show a user tasks, operator involvement, or steps requiring external human input",
+		"image": "/posts/flowchart-symbols/fcs-6-Manual-Input.webp"
+	},
+	{
+		"id": "fcs-07",
+		"name": "Display",
+		"shape": "Half Pointed, Half Rounded Rectangular",
+		"description": "Indicates displayed data for a screen of exported to a text file",
+		"image": "/posts/flowchart-symbols/fcs-7-Display.webp"
+	},
+	
+	{
+		"id": "fcs-8",
+		"name": "Delay",
+		"shape": "Half Rounded Rectangular",
+		"description": "A waiting period - Indicates a delay in the process",
+		"image": "/posts/flowchart-symbols/fcs-8-Delay.webp"
+	},
+	{
+		"id": "fcs-9",
+		"name": "Merge",
+		"shape": "Flipped Triangle",
+		"description": "Indicates a step that merge multiple processes into one",
+		"image": "/posts/flowchart-symbols/fcs-9-Merge.webp"
+	},
+	{
+		"id": "fcs-10",
+		"name": "Extract",
+		"shape": "Triangle",
+		"description": "Used to extract or to split a processes. Also used to indicates a measurement or finished goods",
+		"image": "/posts/flowchart-symbols/fcs-10-Extract.webp"
+	},
+	{
+		"id": "fcs-11",
+		"name": "Document",
+		"shape": "Bottom Wavey Rectangular",
+		"description": "Represents the input or output of a printed document or report",
+		"image": "/posts/flowchart-symbols/fcs-11-Document.webp"
+	},
+	{
+		"id": "fcs-12",
+		"name": "Multiple Documents",
+		"shape": "Stack of Bottom Wavey Rectangular",
+		"description": "Represents multiple inputs or outputs of a printed documents or reports",
+		"image": "/posts/flowchart-symbols/fcs-12-Multiple-Documents.webp"
+	},
+	{
+		"id": "fcs-14",
+		"name": "On Page Connector",
+		"shape": "Circle",
+		"description": "A jump from one point to another, and replace a long line on a flowchart page. Represented by a small circle with a letter inside",
+		"image": "/posts/flowchart-symbols/fcs-14-On-Page-Connector.webp"
+	},
+	{
+		"id": "fcs-13",
+		"name": "Off Page Connector",
+		"shape": "Square with One Pointed Edge",
+		"description": "Indicates a jump from one page of the diagram to another page. Represented by a square with one pointed edge with a letter inside",
+		"image": "/posts/flowchart-symbols/fcs-13-Off-Page-Connector.webp"
+	},
+	{
+		"id": "fcs-15",
+		"name": "Database",
+		"shape": "Cylinder with an Oval on Top",
+		"description": "Indicates a database that allows for searching and sorting",
+		"image": "/posts/flowchart-symbols/fcs-15-Database.webp"
+	},
+	{
+		"id": "fcs-16",
+		"name": "Internal Storage",
+		"shape": "Square with Two Rectangles Inside",
+		"description": "Indicates an internal storage that allows for searching and sorting",
+		"image": "/posts/flowchart-symbols/fcs-16-Internal-Storage.webp"
+	},
+	{
+		"id": "fcs-17",
+		"name": "Predefined Process",
+		"shape": "Rectangle Containing Narrower Rectangle",
+		"description": "A process defined elsewhere in the flowchart or from another source",
+		"image": "/posts/flowchart-symbols/fcs-17-Predefined-Process.webp"
+	},
+	{
+		"id": "fcs-18",
+		"name": "Or",
+		"shape": "Circle with a Plus Sign Inside",
+		"description": "Logical OR operator",
+		"image": "/posts/flowchart-symbols/fcs-18-Or.webp"
+	},
+	{
+		"id": "fcs-19",
+		"name": "And",
+		"shape": "Circle with a Cross Sign Inside",
+		"description": "Logical AND operator",
+		"image": "/posts/flowchart-symbols/fcs-19-And.webp"
+	},
+	{
+		"id": "fcs-20",
+		"name": "Sort",
+		"shape": "Rhombus with a Line Crossing",
+		"description": "Step that organizes data into lists using a schema",
+		"image": "/posts/flowchart-symbols/fcs-20-Sort.webp"
+	},
+	{
+		"id": "fcs-21",
+		"name": "Collate",
+		"shape": "Two Triangles on Top of Each Other",
+		"description": "Step that organizes data into a schema",
+		"image": "/posts/flowchart-symbols/fcs-21-Collate.webp"
+	}
+]

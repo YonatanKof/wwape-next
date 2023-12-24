@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import symbolData from 'public/posts/flowchart-symbols/FlowchartSymbols.json';
+import symbolData from '~/assets/data/FlowchartSymbols.json';
 </script>
 
 <template>
