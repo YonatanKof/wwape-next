@@ -1,9 +1,23 @@
 <script setup lang="ts">
 import { VueFinalModal } from 'vue-final-modal';
 
-defineProps<{
-	title?: string;
-}>();
+// defineProps<{
+// 	title?: string;
+// }>();
+const props = defineProps({
+	title: {
+		type: String,
+		default: 'Yo yo yo!',
+	},
+	shape: {
+		type: String,
+		default: 'Yo yo yo!',
+	},
+	description: {
+		type: String,
+		default: 'Yo yo yo!',
+	},
+});
 
 const emit = defineEmits<{
 	(e: 'confirm'): void;
@@ -17,7 +31,9 @@ const emit = defineEmits<{
 		overlay-transition="vfm-fade"
 		content-transition="vfm-fade"
 	>
-		<h2>{{ title }}</h2>
+		<h2>{{ props.title }}</h2>
+		<h3>{{ props.shape }}</h3>
+		<p>{{ props.description }}</p>
 		<slot />
 		<button @click="emit('confirm')">Confirm</button>
 	</VueFinalModal>
