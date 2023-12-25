@@ -56,7 +56,7 @@ const { $formatDate } = useNuxtApp();
 					<!-- <code>{{ item.id }}</code> -->
 					<hr />
 					<p v-if="item.description">{{ item.description }}</p>
-					<Preview :title="item.name" :description="item.description" :shape="item.shape" />
+					<ModalPreview :modalTitle="item.name" :modalDescription="item.description" :modalShape="item.shape" />
 				</div>
 				<img loading="lazy" :src="item.image" class="this-image" :alt="`The ` + item.name + ` symbol`" />
 			</article>

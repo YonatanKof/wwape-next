@@ -1,30 +1,33 @@
 <script setup lang="ts">
 import { ModalsContainer, useModal } from 'vue-final-modal';
-import ModalConfirmPlainCss from '~/components/ModalConfirmPlainCss.vue';
+import Modal from '~/components/Modal.vue';
 const props = defineProps({
-	title: {
+	modalTitle: {
 		type: String,
 	},
-	description: {
+	modalDescription: {
 		type: String,
 	},
-	shape: {
+	modalShape: {
+		type: String,
+	},
+	modalControl: {
 		type: String,
 	},
 });
 
 const { open, close } = useModal({
-	component: ModalConfirmPlainCss,
+	component: Modal,
 	attrs: {
-		title: props.title,
-		description: props.description,
-		shape: props.shape,
+		title: props.modalTitle,
+		description: props.modalDescription,
+		shape: props.modalShape,
 		onConfirm() {
 			close();
 		},
 	},
 	slots: {
-		default: '<p>The content of the modal</p>',
+		// default: '<p>The content of the modal</p>',
 	},
 });
 </script>
