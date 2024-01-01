@@ -32,7 +32,7 @@ const { $formatDate } = useNuxtApp();
 		:gap="masonryGap"
 		:max-columns="masonryMaxColumns"
 	>
-		<template #default="{ item, index }">
+		<template #default="{ item, index }" :key="index">
 			<NuxtLink class="item" v-if="item._path" :to="item._path + '/'">
 				<div class="item-content">
 					<h3 id="title">{{ item.title }}</h3>
@@ -48,18 +48,14 @@ const { $formatDate } = useNuxtApp();
 				/>
 			</NuxtLink>
 
-			<article v-else class="item-hover-less">
-				<div class="item-content">
-					<h3 id="title">{{ item.name }}</h3>
-					<hr />
-					<p id="mata-data">{{ item.shape }}</p>
-					<!-- <code>{{ item.id }}</code> -->
-					<hr />
-					<p v-if="item.description">{{ item.description }}</p>
-					<ModalPreview :modalTitle="item.name" :modalDescription="item.description" :modalShape="item.shape" />
-				</div>
-				<img loading="lazy" :src="item.image" class="this-image" :alt="`The ` + item.name + ` symbol`" />
-			</article>
+			<div v-else class="item">
+				<ModalPreview
+					:modalTitle="item.name"
+					:modalDescription="item.description"
+					:modalShape="item.shape"
+					:modalImage="item.image"
+				/>
+			</div>
 		</template>
 	</masonry-wall>
 </template>
@@ -108,12 +104,5 @@ a {
 		font-weight: 400;
 	}
 	text-decoration: none;
-}
-</style>
-<style>
-.dark {
-	.this-image {
-		filter: invert(100%) hue-rotate(180deg) contrast(75%);
-	}
 }
 </style>
