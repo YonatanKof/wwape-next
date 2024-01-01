@@ -1,9 +1,6 @@
 <script setup lang="ts">
 import { VueFinalModal } from 'vue-final-modal';
 
-// defineProps<{
-// 	title?: string;
-// }>();
 const props = defineProps({
 	title: {
 		type: String,
@@ -14,6 +11,10 @@ const props = defineProps({
 		default: 'Yo yo yo!',
 	},
 	description: {
+		type: String,
+		default: 'Yo yo yo!',
+	},
+	image: {
 		type: String,
 		default: 'Yo yo yo!',
 	},
