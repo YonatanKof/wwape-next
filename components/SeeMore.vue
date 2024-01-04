@@ -61,6 +61,7 @@ hr {
 }
 a {
 	@include link(none);
+	@include focus();
 	inset: 0;
 	display: block;
 	font-weight: 400;

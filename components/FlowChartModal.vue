@@ -32,7 +32,7 @@ const emit = defineEmits<{
 		overlay-transition="vfm-fade"
 		content-transition="vfm-fade"
 	>
-		<div class="card-item-content">
+		<div>
 			<h2>{{ props.title }}</h2>
 			<hr />
 			<p>{{ props.shape }}</p>
@@ -45,6 +45,7 @@ const emit = defineEmits<{
 </template>
 
 <style lang="scss">
+
 img {
 	width: 100%;
 	height: auto;
@@ -62,7 +63,7 @@ img {
 	display: flex;
 	flex-direction: column;
 	padding: var(--space-m);
-	background: var(--color-sys-invert);
+	background-color: var(--color-sys-invert-highlight);
 	border-radius: var(--border-radius-regular);
 	box-shadow: var(--shadow-lg);
 	max-width: calc(var(--space-8xl) * 2);
