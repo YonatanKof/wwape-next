@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ModalsContainer, useModal } from 'vue-final-modal';
-import Modal from '~/components/Modal.vue';
+import Modal from '~/components/FlowChartModal.vue';
 const props = defineProps({
 	modalTitle: {
 		type: String,
@@ -38,8 +38,8 @@ const { open, close } = useModal({
 
 <template>
 	<div>
-		<article @click="open">
-			<div class="item-content">
+		<article class="card-item" @click="open">
+			<div class="card-item-content">
 				<h3 id="title">{{ modalTitle }}</h3>
 				<hr />
 				<p id="mata-data">{{ modalShape }}</p>
@@ -47,57 +47,15 @@ const { open, close } = useModal({
 				<p v-if="modalDescription">{{ modalDescription }}</p>
 			</div>
 			<img loading="lazy" :src="modalImage" class="this-image" :alt="`The ` + modalTitle + ` symbol`" />
-			<ModalsContainer />
+			<ModalsContainer>
+				<template v-slot:kof>
+					<h1>XXX!</h1>
+				</template>
+			</ModalsContainer>
 		</article>
 	</div>
 </template>
 
-<style lang="scss" scoped>
-p {
-	font-size: var(--step--1);
-	margin-block-end: unset;
-}
-#mata-data {
-	font-size: var(--step--2);
-	color: var(--color-sys-slight);
-	margin-block-end: var(--space-3xs);
-}
-.masonry-wall {
-	margin-block-end: var(--space-s);
-}
-.item {
-	@include content-item();
-	&:hover {
-		transform: translateY(calc(var(--space-3xs) * -1));
-	}
-}
-.item-hover-less {
-	@include content-item();
-}
-img {
-	border-radius: unset;
-}
-.item-content {
-	margin: var(--space-s);
-	display: block;
-}
-#title {
-	margin-block-start: unset;
-	margin-block-end: var(--space-4xs);
-}
-article {
-	@include link(none);
-	@include focus();
-
-	inset: 0;
-	display: block;
-	font-weight: 400;
-	&:hover {
-		font-weight: 400;
-	}
-	text-decoration: none;
-}
-</style>
 <style>
 .dark {
 	.this-image {

@@ -32,16 +32,24 @@ const emit = defineEmits<{
 		overlay-transition="vfm-fade"
 		content-transition="vfm-fade"
 	>
-		<h2>{{ props.title }}</h2>
-		<h3>{{ props.shape }}</h3>
-		<p>{{ props.description }}</p>
-		<slot />
-		<button @click="emit('confirm')">Confirm</button>
+		<div class="card-item-content">
+			<h2>{{ props.title }}</h2>
+			<hr />
+			<p>{{ props.shape }}</p>
+			<hr />
+			<p>{{ props.description }}</p>
+			<img :src="props.image" :alt="props.description" />
+		</div>
+		<!-- <button @click="emit('confirm')">Confirm</button> -->
 	</VueFinalModal>
 </template>
 
 <style lang="scss">
-.vfm--overlay{
+img {
+	width: 100%;
+	height: auto;
+}
+.vfm--overlay {
 	background: var(--color-sys-slight);
 }
 .confirm-modal {
@@ -57,6 +65,7 @@ const emit = defineEmits<{
 	background: var(--color-sys-invert);
 	border-radius: var(--border-radius-regular);
 	box-shadow: var(--shadow-lg);
+	max-width: calc(var(--space-8xl) * 2);
 }
 .confirm-modal-content > * + * {
 }
