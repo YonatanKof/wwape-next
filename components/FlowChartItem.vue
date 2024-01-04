@@ -38,7 +38,7 @@ const { open, close } = useModal({
 
 <template>
 	<div>
-		<article class="card-item" @click="open">
+		<article @click="open" @keyup.enter="open" tabindex="0">
 			<div class="card-item-content">
 				<h3 id="title">{{ modalTitle }}</h3>
 				<hr />
@@ -47,6 +47,7 @@ const { open, close } = useModal({
 				<p v-if="modalDescription">{{ modalDescription }}</p>
 			</div>
 			<img loading="lazy" :src="modalImage" class="this-image" :alt="`The ` + modalTitle + ` symbol`" />
+
 			<ModalsContainer>
 				<template v-slot:kof>
 					<h1>XXX!</h1>
@@ -56,6 +57,33 @@ const { open, close } = useModal({
 	</div>
 </template>
 
+<style lang="scss" scoped>
+p {
+	font-size: var(--step--1);
+	margin-block-end: unset;
+}
+#mata-data {
+	font-size: var(--step--2);
+	color: var(--color-sys-slight);
+	margin-block-end: var(--space-3xs);
+}
+#title {
+	margin-block-start: unset;
+	margin-block-end: var(--space-4xs);
+}
+article {
+	@include content-item();
+	cursor: pointer;
+	@include focus();
+}
+// article:focus {
+// 	@include focus();
+// }
+.card-item-content {
+	padding: var(--space-s);
+	display: block;
+}
+</style>
 <style>
 .dark {
 	.this-image {
