@@ -22,7 +22,7 @@ export default defineNuxtConfig({
 		},
 	},
 	devtools: { enabled: true },
-	css: ['~/assets/styles/style.scss'],
+	css: ['~/assets/styles/style.scss', 'vue-final-modal/style.css'],
 	vite: {
 		css: {
 			preprocessorOptions: {

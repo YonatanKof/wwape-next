@@ -1,7 +1,12 @@
+<script setup lang="ts">
+import { ModalsContainer } from 'vue-final-modal'
+</script>
+
 <template>
 	<main>
 		<AppHeader />
 		<slot />
+		<ModalsContainer />
 		<AppFooter />
 	</main>
 </template>
