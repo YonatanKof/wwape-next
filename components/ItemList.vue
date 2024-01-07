@@ -54,6 +54,7 @@ const { $formatDate } = useNuxtApp();
 					:modalDescription="item.description"
 					:modalShape="item.shape"
 					:modalImage="item.image"
+					:modalBigImage="item.bigImage"
 				/>
 			</div>
 		</template>

@@ -11,10 +11,10 @@ const props = defineProps({
 	modalShape: {
 		type: String,
 	},
-	modalControl: {
+	modalImage: {
 		type: String,
 	},
-	modalImage: {
+	modalBigImage: {
 		type: String,
 	},
 });
@@ -25,13 +25,10 @@ const { open, close } = useModal({
 		title: props.modalTitle,
 		description: props.modalDescription,
 		shape: props.modalShape,
-		image: props.modalImage,
+		bigImage: props.modalBigImage,
 		onConfirm() {
 			close();
 		},
-	},
-	slots: {
-		// default: '<p>The content of the modal</p>',
 	},
 });
 </script>
@@ -48,11 +45,7 @@ const { open, close } = useModal({
 			</div>
 			<img loading="lazy" :src="modalImage" class="this-image" :alt="`The ` + modalTitle + ` symbol`" />
 
-			<ModalsContainer>
-				<template v-slot:kof>
-					<h1>XXX!</h1>
-				</template>
-			</ModalsContainer>
+			<ModalsContainer />
 		</article>
 	</div>
 </template>
@@ -76,11 +69,9 @@ article {
 	cursor: pointer;
 	@include focus();
 }
-// article:focus {
-// 	@include focus();
-// }
 .card-item-content {
 	padding: var(--space-s);
+	padding-block-end: 0;
 	display: block;
 }
 </style>
