@@ -79,6 +79,8 @@ img {
 	max-width: calc(var(--space-8xl) * 3);
 	overflow: hidden;
 	margin-inline: var(--space-l);
+	max-height: calc(100vh - var(--space-l));
+	overflow: auto;
 	@media (width <= $display-width-2xs) {
 		position: absolute;
 		bottom: 0;
@@ -86,9 +88,8 @@ img {
 		border-radius: unset;
 		// background-color: goldenrod;
 	}
-	
 }
-button{
+button {
 	font-size: var(--step-0);
 	// width: max-content;
 	margin: var(--space-m);
