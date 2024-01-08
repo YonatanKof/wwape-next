@@ -41,7 +41,7 @@ const emit = defineEmits<{
 			<p>{{ props.description }}</p>
 		</div>
 		<img :src="props.bigImage" :alt="props.description" />
-		<!-- <button @click="emit('confirm')">Confirm</button> -->
+		<button @click="emit('confirm')">Got it</button>
 	</VueFinalModal>
 </template>
 
@@ -73,7 +73,7 @@ img {
 .confirm-modal-content {
 	display: flex;
 	flex-direction: column;
-	background-color: var(--color-sys-invert-highlight);
+	background-color: var(--color-sys-invert);
 	border-radius: var(--border-radius-regular);
 	box-shadow: var(--shadow-lg);
 	max-width: calc(var(--space-8xl) * 3);
@@ -87,6 +87,11 @@ img {
 		// background-color: goldenrod;
 	}
 	
+}
+button{
+	font-size: var(--step-0);
+	// width: max-content;
+	margin: var(--space-m);
 }
 .confirm-modal-content > * + * {
 }
