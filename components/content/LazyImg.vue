@@ -44,3 +44,8 @@ const refinedSrc = computed(() => {
 	return props.src;
 });
 </script>
+
+<style scoped>
+em {
+	margin-block-end: 1.5em;
+}</style>
