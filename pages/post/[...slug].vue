@@ -90,7 +90,7 @@ const goPost = () => clearError({ redirect: '/post' });
 						</div>
 						<UnLazyImage id="article-image" :thumbhash="doc.cover_image_thumbhash" :src="doc.cover_image" :alt="doc.image_alt" :height="doc.cover_image_height" auto-sizes />
 					</section>
-					<ContentRenderer :value="doc" />
+					<span class="content-renderer"><ContentRenderer :value="doc" /></span>
 				</article>
 				<!-- <SeeMore :prev="prev" :next="next" /> -->
 			</template>

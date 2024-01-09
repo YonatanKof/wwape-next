@@ -83,7 +83,7 @@ const goPost = () => clearError({ redirect: '/post' });
 						<p v-if="doc.updated">Updated {{ $formatDate(doc.updated) }}</p>
 					</span>
 					<hr />
-					<ContentRenderer :value="doc" />
+					<span class="content-renderer"><ContentRenderer :value="doc" /></span>
 				</article>
 				<SeeMore :prev="prev" :next="next" />
 			</template>
