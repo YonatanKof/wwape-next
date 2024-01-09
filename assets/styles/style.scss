@@ -57,7 +57,8 @@ button {
 	background-color: var(--color-sys-invert-highlight);
 	box-shadow: 0 var(--space-4xs) var(--color-link-main), inset 0 0 0 1px var(--color-link-slight);
 	border: none;
-	padding: var(--space-2xs) var(--space-xs);
+	// padding: var(--space-2xs) var(--space-xs);
+	padding: 0.8em 1em;
 	font-size: var(--step--1);
 	border-radius: var(--border-radius-regular);
 	font-family: var(--font-mono);
