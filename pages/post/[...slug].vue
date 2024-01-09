@@ -88,7 +88,7 @@ const goPost = () => clearError({ redirect: '/post' });
 							<hr />
 							<h3 id="sub-title">{{ doc.description }}</h3>
 						</div>
-						<img id="article-image" :src="doc.cover_image" :alt="doc.image_alt" />
+						<UnLazyImage id="article-image" :thumbhash="doc.cover_image_thumbhash" :src="doc.cover_image" :alt="doc.image_alt" :height="doc.cover_image_height" auto-sizes />
 					</section>
 					<ContentRenderer :value="doc" />
 				</article>

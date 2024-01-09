@@ -40,7 +40,7 @@ const emit = defineEmits<{
 			<hr />
 			<p>{{ props.description }}</p>
 		</div>
-		<img :src="props.bigImage" :alt="props.description" />
+		<UnLazyImage class="that-image" thumbhash="fggCBYBS1Ttwdmhudsh4k86ftdgI" :src="props.bigImage" :alt="`The ` + props.title + ` symbol in use - ` + props.shape" height="347.733" auto-sizes/>
 		<button @click="emit('confirm')">Got it</button>
 	</VueFinalModal>
 </template>
@@ -54,7 +54,7 @@ div {
 	padding: var(--space-m);
 }
 
-img {
+.that-image {
 	border-radius: unset;
 	width: 100%;
 	height: auto;

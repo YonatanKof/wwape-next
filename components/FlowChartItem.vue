@@ -43,7 +43,7 @@ const { open, close } = useModal({
 				<hr />
 				<p v-if="modalDescription">{{ modalDescription }}</p>
 			</div>
-			<img loading="lazy" :src="modalImage" class="this-image" :alt="`The ` + modalTitle + ` symbol`" />
+			<img loading="lazy" :src="modalImage" class="this-image" :alt="`The ` + modalTitle + ` symbol`" height="208" width="152" />
 
 			<ModalsContainer />
 		</article>
