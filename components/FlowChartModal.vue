@@ -41,7 +41,7 @@ const emit = defineEmits<{
 			<p>{{ props.description }}</p>
 		</div>
 		<UnLazyImage class="that-image" thumbhash="fggCBYBS1Ttwdmhudsh4k86ftdgI" :src="props.bigImage" :alt="`The ` + props.title + ` symbol in use - ` + props.shape" height="347.733" auto-sizes/>
-		<button @click="emit('confirm')">Got it</button>
+		<button class="modal-btn" @click="emit('confirm')">Got it</button>
 	</VueFinalModal>
 </template>
 
@@ -89,9 +89,8 @@ div {
 		// background-color: goldenrod;
 	}
 }
-button {
+.modal-btn {
 	font-size: var(--step-0);
-	// width: max-content;
 	margin: var(--space-m);
 }
 .confirm-modal-content > * + * {
