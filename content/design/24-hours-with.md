@@ -11,7 +11,7 @@ image_alt: "A digital painting of a snake's face, with multiple large teeth and 
 description: 'Who is the king? Personified by a snake? An anthropomorphic transformation to challenges us with the inherent distinction between human and an animal, the snake... or was it a mongoose?'
 tags: ['Creative']
 ---
-### With the king of snakes
+### The king of snakes
 
 {{ $doc.description}}
 
