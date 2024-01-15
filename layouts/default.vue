@@ -13,7 +13,7 @@ import { ModalsContainer } from 'vue-final-modal'
 
 <style lang="scss" scoped>
 main {
-	height: 100vh;
+	height: 100dvh;
 	display: grid;
 	grid-template-rows: auto 1fr auto;
 	@include display-width;
