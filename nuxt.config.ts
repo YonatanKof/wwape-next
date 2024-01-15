@@ -7,14 +7,14 @@ export default defineNuxtConfig({
 			// theme: 'github-light'
 			// OR
 			theme: {
-			  // Default theme (same as single string)
-			  default: 'light-plus',
-			  // Theme used if `html.dark`
-			  dark: 'dracula',
-			  // Theme used if `html.sepia`
-			  sepia: 'monokai'
-			}
-		  },
+				// Default theme (same as single string)
+				default: 'light-plus',
+				// Theme used if `html.dark`
+				dark: 'dracula',
+				// Theme used if `html.sepia`
+				sepia: 'monokai',
+			},
+		},
 		markdown: {
 			anchorLinks: {
 				depth: 6,
@@ -38,6 +38,10 @@ export default defineNuxtConfig({
 		},
 	},
 	app: {
+		head: {
+			charset: 'utf-8',
+			viewport: 'width=device-width, initial-scale=1, viewport-fit=cover',
+		},
 		pageTransition: {
 			name: 'page',
 			mode: 'out-in', // default
