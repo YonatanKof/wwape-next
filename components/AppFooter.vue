@@ -4,14 +4,13 @@ const config = useRuntimeConfig();
 <template>
 	<footer class="footer">
 		<p class="links">
-			<nuxt-link href="//twitter.com/yonatankof" target="_blank" rel="nofollow noopener noreferrer">Twitter</nuxt-link>
 			<nuxt-link href="//github.com/yonatankof" target="_blank" rel="nofollow noopener noreferrer">GitHub</nuxt-link>
 			<nuxt-link href="//linkedin.com/in/yonatankof/" target="_blank" rel="nofollow noopener noreferrer">Linkedin</nuxt-link>
 			<nuxt-link href="//dribbble.com/yonatan_kof" target="_blank" rel="nofollow noopener noreferrer">Dribbble</nuxt-link>
-			<!-- <p>ToggleTheme</p> -->
+			<nuxt-link href="//twitter.com/yonatankof" target="_blank" rel="nofollow noopener noreferrer">Twitter</nuxt-link>
 		</p>
 		<span class="footer__copyright">
-			<p>Copyright © {{ config.public.siteOwnerName }}・{{ new Date().getFullYear() }}</p>
+			<p>Copyright © Designed & developed by <span id="name">{{ config.public.siteOwnerName }}</span>・{{ new Date().getFullYear() }}</p>
 		</span>
 	</footer>
 </template>
@@ -22,7 +21,10 @@ a, p {
 	@media (width <= $display-width-2xs) {
 		font-size: var(--step--2);
 	}
-	
+	text-align: center;	
+}
+#name {
+	white-space: nowrap;
 }
 footer {
 	display: flex;
