@@ -18,12 +18,12 @@ const props = defineProps({
 <template>
 	<div>
 		<h1 v-if="title">{{ title }}</h1>
-		<span
-			><p v-if="text">
-				<i><SayHi v-if="isOn" /></i>{{ text }}
+		<span>
+			<p v-if="text">
+				<i v-if="isOn"><SayHi /></i>{{ text }}
 			</p>
-			<p v-if="text2" id="last">{{ text2 }}</p></span
-		>
+			<p v-if="text2" id="last">{{ text2 }}</p>
+		</span>
 	</div>
 </template>
 <style scoped>
