@@ -22,8 +22,8 @@ useSeoMeta({
 	<main>
 		<IntroText :is-on="true"
 			title="World Wide Ape"
-			text=" 👋 I'm Yonatan; a friend, a family man, a designer, a developer, an illustrator, a maker, a mismatched persona and an alright dude"
-			text2="So welcome to my site 🔥"
+			text=" 👋 I'm Yonatan: a friend, a family man, a designer, a developer, an illustrator, a maker, a mismatched persona and an alright dude"
+			text2="So happy you're here! Welcome to my site 🔥"
 			/>
 			<!-- text2="This site is under contraction 🚧 expect much more design articles and a few blog posts soon" -->
 	</main>
