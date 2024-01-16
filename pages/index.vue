@@ -20,7 +20,7 @@ useSeoMeta({
 </script>
 <template>
 	<main>
-		<IntroText is-on="true"
+		<IntroText :is-on="true"
 			title="World Wide Ape"
 			text=" 👋 I'm Yonatan; a friend, a family man, a designer, a developer, an illustrator, a maker, a mismatched persona and an alright dude"
 			text2="So welcome to my site 🔥"
