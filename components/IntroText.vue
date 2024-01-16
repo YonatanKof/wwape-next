@@ -37,7 +37,4 @@ p {
 div {
 	margin-block-end: var(--space-m);
 }
-i {
-	font-weight: 500;
-}
 </style>
