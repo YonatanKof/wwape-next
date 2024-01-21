@@ -1,17 +1,15 @@
 ---
-title: Shortcuts for macOS
-author_name: Yonatan Ben Knaan
-urlname: shortcuts-for-macos
-date: 2020-09-20
-updated: 2020-11-19
-published: true
-tags: ['macOS', 'Shortcuts', 'Sketch', 'Productivity']
+title: 'Shortcuts for macOS'
+author_name: 'Yonatan Ben Knaan'
+date: '2020-09-20'
+updated: ''
 cover_image: '/posts/shortcuts-for-macos/shortcuts-for-macos.svg'
-social_image: '/posts/shortcuts-for-macos/social-cover-shortcuts-for-macos.jpg'
-cover_caption: Screen shot of Mac keyboard shortcuts page on Apple support
-description: How to create, edit or remove shortcuts for a macOS
-canonical_url: false
-series: false
+cover_image_height: ''
+cover_image_thumbhash: ''
+social_image: ''
+image_alt: 'Screen shot of Mac keyboard shortcuts page on Apple support'
+description: 'How to create, edit or remove shortcuts for a macOS'
+tags: ['macOS', 'Shortcuts', 'Sketch', 'Productivity']
 ---
 
 The macOS and the apps installed comes pack with sweet shortcuts but not all is perfect. You can easily find yourself doing the same task over and over again by navigating and clicking items in menus unfitting to [Fitts’s Law](https://www.notion.so/yonatankof/Fitts-law-062770ad1eff4310aff2a6814467647c). Or even worse — you didn't click that command because you where too lazy to navigate them damn menus — hindering your workflow — which is already quite crippled. Such a shame.
