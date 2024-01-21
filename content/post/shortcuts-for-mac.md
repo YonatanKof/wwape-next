@@ -28,6 +28,8 @@ We'll solve these problem by presenting two examples of custom commands that wil
 
 1. **Merge All Windows** - This command is relevant for **all** apps that are multi window: Let's say you find yourself with 7 open *Sketch* files and 6 *Finder* windows, and you're clicking like crazy trying to find the window you're looking for. What an hassle. The `Merge all window` command is the best cleaner upper you'll get. It will merge all of your open windows into one window to be shown as tabs [^fig-merge-windows].
 
+[^fig-merge-windows]: Scattered finder windows (top left) merged into one ![An example of scattered finder windows](/posts/shortcuts-for-macos//Merge_All_Windows.png)
+
 2. **Collapse All Groups** - This command is specific for *Sketch* and it deals with the issue when reviewing the *Layers* or *Components* panel on a big file. Of course you can scroll, it's nice, but sometimes you'd like the get an overview at a glance. That's where this command comes in handy 🤲 Unfortunately it has no shortcut 😢
 
 
@@ -126,10 +128,7 @@ Well, that's all for today. See you in the next post when we'll deal with the Sk
 ---
 
 ## This blogs images 
-
-[^fig-merge-windows]: Scattered finder windows (top left) merged into one ![An example of scattered finder windows](/posts/shortcuts-for-macos//Merge_All_Windows.png)
  
-
 [^fig-spot]: macOS Spotlight Search ![macOS Spotlight Search](/posts/shortcuts-for-macos//Extra-Spotlight_Search.png)
  
 
