@@ -38,7 +38,7 @@
 	@media (prefers-reduced-motion: no-preference) {
 		:has(:target) {
 			scroll-behavior: smooth;
-			scroll-padding-top: 3rem;
+			scroll-padding-block-start: 3rem;
 		}
 	}
 }
