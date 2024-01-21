@@ -4,9 +4,9 @@ author_name: 'Yonatan Ben Knaan'
 date: '2020-09-20'
 updated: ''
 cover_image: '/posts/shortcuts-for-macos/shortcuts-for-macos.svg'
-cover_image_height: ''
-cover_image_thumbhash: ''
-social_image: ''
+cover_image_height: '400'
+cover_image_thumbhash: 'dAkGHILeuKiLd3ePhniQhapUBw'
+social_image: '/posts/shortcuts-for-macos/cover-shortcuts-for-macos-social.jpg'
 image_alt: 'Screen shot of Mac keyboard shortcuts page on Apple support'
 description: 'How to create, edit or remove shortcuts for a macOS'
 tags: ['macOS', 'Shortcuts', 'Sketch', 'Productivity']
@@ -93,18 +93,20 @@ Once you've clicked Add you can get back to sketch and use this short cut to mak
 
 ## Wildcard Shortcuts
 
-#### With the Help Menu
+There are shitloads of commands we use and obviously you won't set them all up as shortcuts, and there are still better ways to look them up then going through the menus. So here are some handy wildcard shortcuts you can use instead.
+
+### Using the Help Menu
 
 Most apps on the macOS has a wildcard shortcut that allows to fussy search for you command just by typing it and return to it. It's the [Help Menu](https:/support.apple.com/guide/mac-help/get-help-on-your-mac-hlpvw003/mac) available at the... wait for it... at the help menu. Just click `shift` + `control` + `\` and the search will be waiting for your quick action which ever the app you're at 🏃
 
-#### With Sketch Runner
+### Using Sketch Runner
 
-You can also locate and run commands (and much more) in *Sketch* using a plugin called [SketchRunner](https:/sketchrunner.com/). That's a good one and it does a lot; it *Inserts* symbols, *Goes to* pages, artboards or symbols, *Creates* symbols or styles, *Applies* styles and *Installs* plugins — but for the sake of this article — it runs commands (just like the *Help Menu*) but with a nicer UI **and** while showing your latest actions.
+You can also locate and run commands (and much more) in *Sketch* using a plugin called [SketchRunner](https:/sketchrunner.com/). That's a good one and it does a lot; it *Inserts* symbols, *Goes to* pages, **artboards** or symbols, *Creates* symbols or styles, *Applies* styles and *Installs* plugins — but for the sake of this article — it runs commands (just like the *Help Menu*) but with a nicer UI **and** while showing your latest actions.
 
 ![This is the Sketch Runner modal window to Run commands](/posts/shortcuts-for-macos/SketchRunner.png)
 *This is the Sketch Runner modal window to Run commands*
 
-## Identical Commands
+## Resolving Identical Commands Conflicts
 
 Shortcuts in mac need to be unique. Let's take for example the *Bottom* command in *Sketch*, if you'll ever create a shortcut for it as explain above, it won't work. The reason is, this command ain't unique. You can find it both under `Text` and under `Arrange`. The app won't know which *Bottom* you're referring to, so it will make a decision for you and it might not be the one you wanted 😒 
 
@@ -155,42 +157,3 @@ The app is called [Karabiner-Elements](https:/karabiner-elements.pqrs.org) and i
 That's it, you have it! Now you can add a command using all for 4 keys but clicking just the one key. So now, if you'd like to have the *Collapse All Groups* with `Caps lock` + `c`. Try it, it's nice.
 
 Well, that's all for today. See you in the next post when we'll deal with the Sketch plugin short cuts
-
----
-
-<!-- ## This blogs images 
-
-[^fig-merge-windows]: 
- 
-[^fig-spot]: 
-
-[^fig-apple_menu]: 
-
-
-[^fig-keyOS]: 
-
-
-[^fig-prompt]:
-
-
-[^fig-filled-prompt]: 
-
-
-[^fig-pick-app]:
-
-
-[^fig-unique]: An example of a unique command using a the command’s path ![An example of a unique command using a the command’s path](/posts/shortcuts-for-macos/MasOS-Shortcut_Manager_Full.png)
-
-
-[^fig-comma]: 
-
-
-[^fig-Menu_left]: 
-
-
-[^fig-Karabiner]: 
-
-[^fig-Karabiner_prompt]: 
-
-
-[^fig-runner]:  -->
