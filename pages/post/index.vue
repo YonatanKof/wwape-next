@@ -21,7 +21,7 @@ useSeoMeta({
 	twitterSite: '@yonatankof',
 });
 const { data } = await useAsyncData('equal', () => {
-	return queryContent('post').where({}).find();
+	return queryContent('post').sort({ date: -1 }).where({}).find();
 });
 </script>
 <template>
