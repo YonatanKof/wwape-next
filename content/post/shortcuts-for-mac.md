@@ -12,42 +12,51 @@ description: 'How to create, edit or remove shortcuts for a macOS'
 tags: ['macOS', 'Shortcuts', 'Sketch', 'Productivity']
 ---
 
-The macOS and the apps installed comes pack with sweet shortcuts but not all is perfect. You can easily find yourself doing the same task over and over again by navigating and clicking items in menus unfitting to [Fitts’s Law](https:/www.notion.so/yonatankof/Fitts-law-062770ad1eff4310aff2a6814467647c). Or even worse — you didn't click that command because you where too lazy to navigate them damn menus — hindering your workflow — which is already quite crippled. Such a shame.
+The macOS and the apps installed comes pack with sweet shortcuts but not all is perfect. You can easily find yourself doing the same task over and over again by navigating and clicking items in menus unfitting to [Fitts’s Law](https:/www.notion.so/yonatankof/Fitts-law-062770ad1eff4310aff2a6814467647c). 
 
-*So what's the problem?* I guess that if you don't know how to create shortcuts for mac then you have two of them:
+Even worse, you didn't click that command because you where too damn lazy navigating them menus. Thus hindering your workflow — which is already quite crippled. Such a shame.
 
-1. How to set up a shortcut on *macOS*? 
+## This article will help you!
 
-2. How to create a shortcut specifically for *Sketch*, or for any other app?
+If you don't know how to create shortcuts for mac, this article will help you by learning:
+
+1. How to set up a shortcut on *macOS*
+2. How to create a shortcut for a specific app
+3. How to override exciting shortcuts
+4. Some advance shortcut methods 
  
-## Some jobs to be done
+## Jobs to be done
 
-We'll solve these problem by presenting two examples of custom commands that will improve your workflow:
+Here are two use cases where custom shortcuts will improve your workflow:
 
-1. **Merge All Windows** - This command is relevant for **all** apps that are multi window: Let's say you find yourself with 7 open *Sketch* files and 6 *Finder* windows, and you're clicking like crazy trying to find the window you're looking for. What an hassle. The `Merge all window` command is the best cleaner upper you'll get. It will merge all of your open windows into one window to be shown as tabs.
+1. **Merge All Windows** - This command is relevant for **all** apps that are multi window: Let's say you find yourself with 7 open *Sketch* files and 6 *Finder* windows, and you're clicking like crazy trying to find the window you're looking for. What an hassle. 
+
+   The `Merge all window` command is a great cleaner upper – It will merge all of your open windows into one window to be shown as tabs.
    
-   ![macOS Spotlight Search](/posts/shortcuts-for-macos/Extra-Spotlight_Search.png)
-   *macOS Spotlight Search*
+   ![Image of the Merge All Windows command in action](/posts/shortcuts-for-macos/Merge_All_Windows.webp)
+   *The Merge All Windows command in action ☝️*
 
-1. **Collapse All Groups** - This command is specific for *Sketch* and it deals with the issue when reviewing the *Layers* or *Components* panel on a big file. Of course you can scroll, it's nice, but sometimes you'd like the get an overview at a glance. That's where this command comes in handy 🤲 Unfortunately it has no shortcut 😢
+2. **Collapse All Groups** - This command is app specific, this case *Sketch App*, and it deals with the issue when reviewing the *Layers* or *Components* panel on a big file. Of course you can scroll or close groups and layers manually, but sometimes you'd like the get an overview at a glance. That's where this command comes in handy 🤲
 
+   ![Image of the Collapse All Groups command in action](/posts/shortcuts-for-macos/Collapse_All_Groups.webp)
+   *The Collapse All Groups command in action ☝️*
 
-Than let's learn how solve these problems and have a better workflow 🎉
+Now let's learn how **solve these problems** and have a better workflow 🎉
 
-# Custom macOS shortcut 
+## Custom macOS shortcut 
 
 We'll start with the *Merge All Windows* command.
 
-1. Open the *Keyboard* Preferences
+1. Open the *Keyboard* preferences in the *System Settings*
    
-   You can use the *Spotlight Search* with the `control` + `spacebar`, which is a great shortcut by *itself*, and start typing what your looking for. We're looking for the *Keyboard* Preferences, so I'll start typing `ke`, then I'll see it as an option, click it! 
+   You can use the macOS *Spotlight* search with the `control` + `spacebar`, which is a great shortcut by itself, and start typing what your looking for. We're looking for the *Keyboard* preferences found in the *System Settings*, so I'll start typing `key`, then I'll see it as an option, click it! BTW, I'm using [Raycast](https://www.raycast.com/) instead of the default *Spotlight* search.
 
-   ![macOS Spotlight Search](/posts/shortcuts-for-macos/Extra-Spotlight_Search.png)
-   *macOS Spotlight Search*
+   ![Raycast search in action](/posts/shortcuts-for-macos/Extra-Spotlight_Search.webp)
+   *Raycast search in action ☝️*
    
    You can also just look for it in the `System Preferences`, found in the Apple menu.
 
-   ![The Apple menu - You can fine the preferences menu here](/posts/shortcuts-for-macos/Extra-Apple_Menu.png){style="max-width: 28ch;"}
+   ![The Apple menu - You can fine the preferences menu here](/posts/shortcuts-for-macos/Extra-Apple_Menu.webp){style="max-width: 28ch;"}
    *The Apple menu - You can fine the preferences menu here*
 
 2. Select the *Shortcut* tab and click the *App Shortcut* on left panel
