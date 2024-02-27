@@ -2,7 +2,7 @@
 title: 'Shortcuts on macOS'
 author_name: 'Yonatan Ben Knaan'
 date: '2020-09-20'
-updated: ''
+updated: '2024-02-27'
 cover_image: '/posts/shortcuts-on-macos/shortcuts-for-macos.svg'
 cover_image_height: '400'
 cover_image_thumbhash: 'dAkGHILeuKiLd3ePhniQhapUBw'
