@@ -16,16 +16,20 @@ SVGs are **nice**
 Inline SVGs are **nicer**  
 SVG as components are the **nicest**
 
+Check out the video or read the post? Why not both!
+::YouTubePlayer{videoId="003KVFXNmIw" title="Simple SVG Icon System with Vue & Nuxt | Hebrew"}
+::
+
 ## The need
 
 This is what I need from my SVGs:
 
-- Inline so I can use on CSS them
-- To use CSS vars and SCSS
-- As a component for a cleaner file
-- With `props` for control
+- To have them inline so I can use `CSS`
+- To use `CSS vars` and `SCSS`
+- Have them as components for a cleaner file
+- To control them with `props` 
 - Reduce boilerplate needed for "good" SVGs
-- Reduce the chance of variation, I.e opinionated
+- Reduce the chance of variation, i.e. opinionated
 
 ## The response – icon system
 
@@ -35,12 +39,10 @@ You can approach an icon system in two ways for **design** or for **development*
 
 In terms of graphic design an *icon system* is a collection of icons that work together as one group with consistency and harmony. Therefor there's a lot of similarly between the icons, like **size**, **color**, **behavior** and **themes**.
 
-You can see a nice example for an icon system I created in the embedded Sketch document below. It's used by [Pepperi](https://www.pepperi.com/), and it utilizes a color token and is hooked up to Pepperi's theme editor. 
+You can see [in this link a nice example of an icon system](https://www.sketch.com/s/84463519-df2a-475d-b8d2-bd250755763d)  I created for [Pepperi](https://www.pepperi.com/) B2B commerce company – it utilizes color tokens and is hooked up to Pepperi's theme editor. You can also [checkout its **Storybook** in this link](https://60ae3e9eff8e4c003b2f90d4-rocitoujqz.chromatic.com/?path=/docs/components-icon--base).
 
-Checkout the [icons on Storybook](https://60ae3e9eff8e4c003b2f90d4-rocitoujqz.chromatic.com/?path=/docs/components-icon--base) too.
-
-::SketchEmbed{src="84463519-df2a-475d-b8d2-bd250755763d/p/3195B629-1FA9-4D9B-9AB6-BEA52F6DC7A8/canvas" height="var(--space-7xl)"}
-::
+![Some of Pepperi icons](/posts/simple-icon-system/Pepp-Icons.webp)
+*Some of Pepperi icons ☝️*
 
 ### Icon system for development
 
