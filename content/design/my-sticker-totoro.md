@@ -32,8 +32,6 @@ tags: ['Creative']
     </video>
 </div>
 
-
 ## Link to sticker pack!
-
 
 Add to *iMessage* or *WhatsApp* via the *Top Stickers* app [by clicking this link](https://link.topstickers.app/?p=pQB6no6E6gX), or on *Telegram* [by clicking this link](https://t.me/addstickers/MyNeighborTotoroKof).
