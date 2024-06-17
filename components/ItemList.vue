@@ -27,7 +27,7 @@ const { $formatDate } = useNuxtApp();
 <template>
 	<masonry-wall
 		:items="designData"
-		:ssr-columns="1"
+		:ssr-columns="2"
 		:column-width="masonryColumnWidth"
 		:gap="masonryGap"
 		:max-columns="masonryMaxColumns"
