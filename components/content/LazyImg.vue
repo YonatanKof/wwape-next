@@ -1,6 +1,6 @@
 <template>
 	<UnLazyImage :thumbhash="thumbhash" :src="refinedSrc" :alt="alt" :width="width" :height="height" auto-sizes />
-	<em>{{ desc }}</em>
+	<em v-if="desc">{{ desc }}</em>
 </template>
 
 <script setup lang="ts">
