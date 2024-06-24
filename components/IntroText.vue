@@ -19,20 +19,20 @@ const props = defineProps({
 	<div>
 		<h1 v-if="title">{{ title }}</h1>
 		<span>
-			<p v-if="text">
-				<i v-if="isOn"><SayHi /></i>{{ text }}
-			</p>
+			<p v-if="isOn"><SayHi /></p>
+			<p v-if="text">{{ text }}</p>
 			<p v-if="text2" id="last">{{ text2 }}</p>
 		</span>
 	</div>
 </template>
-<style scoped>
+<style lang="scss" scoped>
 p {
 	font-size: var(--step-2);
 	max-width: 55ch;
-}
-#last {
-	margin-block-start: var(--space-2xs);
+	margin-block-end: var(--space-2xs);
+	&:last-child {
+		margin-block-end: 0;
+	}
 }
 div {
 	margin-block-end: var(--space-m);
