@@ -37,7 +37,7 @@ const { $formatDate } = useNuxtApp();
 				<div class="item-content">
 					<h3 id="title">{{ item.title }}</h3>
 					<p id="mata-data">{{ $formatDate(item.date) }}</p>
-					<p v-if="item.description">{{ item.description }}</p>
+					<p v-if="item.description" v-html="item.description"></p>
 				</div>
 				<UnLazyImage
 					:thumbhash="item.cover_image_thumbhash"
