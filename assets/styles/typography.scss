@@ -1,33 +1,20 @@
-// @font-face {
-// 	font-family: 'RecMonoCasual';
-// 	src: url('~/assets/fonts/Recursive_VF_1.085--subset-GF_latin_basic.woff2');
-// }
 @font-face {
 	font-family: 'RecVar';
-	// font-style: oblique 0deg 15deg;
-	font-weight: 300 1000;
-	font-display: swap;
-	font-variation-settings: 'CASL' 1, 'slnt' -15, 'MONO' 1, 'CRSV' 1;
+	font-variation-settings: "CRSV" 0;
 	src: url('~/assets/fonts/Recursive_VF_1.085--subset_range_english_basic.woff2') format('woff2');
 	unicode-range: U+0020-007F, U+00A9, U+2190-2193, U+2018, U+2019, U+201C, U+201D, U+2022;
 }
 @font-face {
-	font-family: 'LoremipsumLight';
-	font-display: swap;
-	src: url('~/assets/fonts/LoremipsumLight.woff2'), url('~/assets/fonts/LoremipsumLight.woff');
-	font-weight: 200;
-}
-@font-face {
-	font-family: 'LoremipsumRegular';
-	font-display: swap;
-	src: url('~/assets/fonts/LoremipsumRegular.woff2'), url('~/assets/fonts/LoremipsumRegular.woff');
+	font-family: 'ShantellSans';
+	font-style: normal;
 	font-weight: 400;
+	font-variation-settings: 'INFM' 50, 'wght' 500;
+	src: url('~/assets/fonts/ShantellSans[BNCE,INFM,SPAC,ital,wght].woff2') format('woff2');
 }
 :root {
-	--font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
-		'Segoe UI Emoji', 'Segoe UI Symbol';
+	--font-body: system-ui, sans-serif; 
 	--font-mono: RecVar, monospace;
-	--font-hand: LoremipsumLight, cursive;
+	--font-hand: ShantellSans, cursive;
 }
 body,
 html {
@@ -42,6 +29,7 @@ h4,
 h5,
 h6,
 em,
+i,
 label,
 input,
 textarea,
@@ -60,10 +48,15 @@ h5,
 h6 {
 	line-height: 1.125;
 	font-family: var(--font-hand);
+	font-variation-settings: 'INFM' 100, 'wght' 500, 'BNCE' 25, 'ital' 1;
 	text-wrap: balance;
+	transition: font-variation-settings 0.25s ease-in-out 0s;
+	&:hover {
+		font-variation-settings: 'INFM' 75, 'wght' 525, 'BNCE' 30, 'ital' 1;
+	}
 }
 ul,
-ol{
+ol {
 	padding-inline-start: var(--space-l);
 }
 p,
@@ -81,11 +74,6 @@ blockquote p {
 	padding-inline-start: var(--space-xs);
 
 }
-// blockquote:before, blockquote:after,
-// 	q:before, q:after {
-// 		content: '';
-// 		content: none;
-// 	}
 .content-renderer {
 	ul {
 		margin: unset;
@@ -111,7 +99,10 @@ blockquote p {
 i,
 em {
 	font-style: italic;
-	letter-spacing: 0.05em;
+	font-family: var(--font-hand);
+	font-variation-settings: 'wght' 350;
+	font-size: inherit;
+	line-height: 1;
 }
 strong {
 	font-weight: bold;
@@ -119,7 +110,12 @@ strong {
 h1 {
 	font-size: var(--step-5);
 	margin-block-end: var(--space-s);
-	font-family: LoremipsumRegular, cursive;
+	font-variation-settings: 'INFM' 100, 'wght' 600, 'BNCE' 25, 'ital' 1;
+	text-wrap: balance;
+	transition: font-variation-settings 0.25s ease-in-out 0s;
+	&:hover {
+		font-variation-settings: 'INFM' 75, 'wght' 625, 'BNCE' 30, 'ital' 1;
+	}
 }
 h2 {
 	font-size: var(--step-4);
@@ -160,13 +156,14 @@ sup {
 		border-bottom: $none-ul;
 	}
 	font-family: var(--font-mono);
-	font-weight: 360;
-	font-variation-settings: 'slnt' -15;
+	font-variation-settings: 'slnt' -15, 'wght' 400;
+	font-style: italic;
 	transition: font-variation-settings 0.25s ease-in-out, border-color 0.25s ease-in-out;
 	color: var(--color-link-slight);
 	text-decoration: none;
+	letter-spacing: 0.01em;
 	&:hover {
-		font-variation-settings: 'slnt' 0;
+		font-variation-settings: 'slnt' -7, 'wght' 600;
 		border-color: var(--color-link-slight);
 	}
 }

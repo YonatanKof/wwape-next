@@ -62,7 +62,7 @@ div {
 </style>
 <style lang="scss">
 .vfm--overlay {
-	background: var(--color-sys-slight);
+	background: var(--overlay);
 }
 .confirm-modal {
 	display: flex;

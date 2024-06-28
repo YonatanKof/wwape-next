@@ -99,8 +99,11 @@ a {
 	inset: 0;
 	display: block;
 	font-weight: 400;
+	font-style: normal;
+	font-variation-settings: 'wght' 400, 'ital' 0;
 	&:hover {
-		font-weight: 400;
+		font-style: normal;
+		font-variation-settings: 'wght' 400, 'ital' 0;
 	}
 	text-decoration: none;
 }

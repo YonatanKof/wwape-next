@@ -8,4 +8,8 @@ import symbolData from '~/assets/data/FlowchartSymbols.json';
 	</div>
 </template>
 
-<style scoped></style>
+<style scoped>
+div {
+	margin-block-start: var(--space-m);
+}
+</style>
