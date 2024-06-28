@@ -20,7 +20,5 @@ With these symbols you can create flowcharts to represents any workflow or proce
  <!-- Whimsical are using just a part of the flowcharts symbols and are mixing some other shapes too. -->
 ## The shape goes as follow: 
 
----
-
 ::FlowchartSymbols
 ::
