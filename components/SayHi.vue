@@ -4,6 +4,6 @@ import VueTypewriterEffect from "vue-typewriter-effect";
 
 <template>
 	<span>
-		<vue-typewriter-effect :strings="['Hello', 'שלום', 'Привіт', 'Hola', 'こんにちは', 'Hey', 'Bonjour', 'Salut', '你好', 'Привет']" />  👋 
+		<vue-typewriter-effect :strings="['Hello', 'שלום', 'Привіт', 'مرحبًا', 'Hola', 'こんにちは', 'Hey', 'Bonjour', 'Salut', '你好', 'Привет']" />  👋 
 	</span>
 </template>
