@@ -9,12 +9,13 @@
 	--color-sys-dim: hsla(0, 0%, 10%, 0.35);
 	--color-sys-dis: hsla(0, 0%, 10%, 0.1);
 	--color-sys-none: hsla(0, 0%, 10%, 0);
+	--color-sys-dark-dark: hsla(0, 0%, 10%, 0.1);
 
 	--color-sys-invert: antiquewhite;
 	--color-sys-invert-highlight: white;
 	
-	--color-link-main: hsl(290, 100%, 25%);
-	--color-link-slight: hsl(290, 100%, 35%);
+	--color-link-main: hsl(280, 100%, 25%);
+	--color-link-slight: hsl(280, 100%, 35%);
 	
 	--color-focus-main: hsl(200, 100%, 30%);
 	--color-focus-slight: hsl(200, 100%, 50%);
@@ -25,19 +26,20 @@
 	--bg-pre: none;
 
 	--shadow-sm: 
-		0 0.1rem 0.1rem var(--color-sys-dis), 
-		0 0.2rem 0.2rem var(--color-sys-dis),
-		0 0.3rem 0.3rem var(--color-sys-dis);
+		0 0.1rem 0.1rem var(--color-sys-dark-dark), 
+		0 0.2rem 0.2rem var(--color-sys-dark-dark),
+		0 0.3rem 0.3rem var(--color-sys-dark-dark);
 	--shadow-md: 
-		0 0.2rem 0.2rem var(--color-sys-dis), 
-		0 0.4rem 0.4rem var(--color-sys-dis),
-		0 0.8rem 0.8rem var(--color-sys-dis);
+		0 0.2rem 0.2rem var(--color-sys-dark-dark), 
+		0 0.4rem 0.4rem var(--color-sys-dark-dark),
+		0 0.8rem 0.8rem var(--color-sys-dark-dark);
 	--shadow-lg: 
-		0 0.3rem 0.3rem var(--color-sys-dis), 
-		0 0.6rem 0.6rem var(--color-sys-dis),
-		0 1.2rem 1.2rem var(--color-sys-dis);
+		0 0.25rem 0.5rem var(--color-sys-dark-dark), 
+		0 0.75rem 1.5rem var(--color-sys-dark-dark),
+		0 1rem 2rem var(--color-sys-dark-dark);
 	--font-wight--bolder: bolder;
 	--font-size-2xl: 2em;
+	--overlay: var(--color-sys-slight);
 }
 
 body {
@@ -96,9 +98,12 @@ hr {
 	--color-sys-invert: hsl(34, 8%, 16%);
 	--color-sys-invert-highlight: hsl(34, 8%, 10%);
 
-	--color-link-main: hsl(290, 100%, 90%);
-	--color-link-slight: hsl(290, 100%, 80%);
+	--color-link-main: hsl(280, 100%, 90%);
+	--color-link-slight: hsl(280, 100%, 80%);
 
 	--color-focus-main: hsl(200, 100%, 40%);
 	--color-focus-slight: hsl(200, 100%, 60%);
+
+	--color-sys-dark-dark: hsla(0, 0%, 10%, 0.75);
+	--overlay: var(--color-sys-dark-dark);
 }
