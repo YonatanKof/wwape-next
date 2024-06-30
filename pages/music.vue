@@ -1,9 +1,32 @@
+<script setup>
+const config = useRuntimeConfig();
+const pageDesc = `Amazing Playlists and Mixes by ${config.public.siteOwnerName}`;
+const pageImg = '/images/music-social.jpg';
+const pageAlt = 'Social cover for this site posts page';
+useHead({
+	title: 'Playlists and Mixes',
+});
+useSeoMeta({
+	ogType: 'website',
+	description: () => pageDesc,
+	ogDescription: () => pageDesc,
+	twitterDescription: () => pageDesc,
+	image: pageImg,
+	ogImage: pageImg,
+	twitterImage: pageImg,
+	imageAlt: pageAlt,
+	ogImageAlt: pageAlt,
+	twitterImageAlt: pageAlt,
+	twitterCard: 'summary_large_image',
+	twitterSite: '@yonatankof',
+});
+</script>
+
 <template>
 	<main>
 		<IntroText
 			title="Playlists and Mixes"
-			text="Yess! You are now on my music page, where I've carefully curated each playlist and mixtape to share the music I love. Whether you're working, relaxing, celebrating, feeling high or down, I you can find a mix that suits your mood."
-			text2="Enjoy the music and let it add a little something special to your day or night."
+			text="Yess! You are now on my music page, where I've carefully curated each playlist and mix to by the desire to share the music I love. Whether you're working, relaxing, celebrating, feeling up or down, dexter or sinister – I'm sure you can find something that suits your mood."
 		/>
 		<section>
 			<div>
