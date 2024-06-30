@@ -98,7 +98,7 @@ blockquote p {
 }
 i,
 em {
-	font-style: italic;
+	font-style: normal;
 	font-family: var(--font-hand);
 	font-variation-settings: 'wght' 350;
 	font-size: inherit;
@@ -156,14 +156,14 @@ sup {
 		border-bottom: $none-ul;
 	}
 	font-family: var(--font-mono);
-	font-variation-settings: 'slnt' -15, 'wght' 400;
-	font-style: italic;
+	font-variation-settings: 'slnt' -15, 'wght' 400, "CRSV" 0;
+	font-style: normal;
 	transition: font-variation-settings 0.25s ease-in-out, border-color 0.25s ease-in-out;
 	color: var(--color-link-slight);
 	text-decoration: none;
 	letter-spacing: 0.01em;
 	&:hover {
-		font-variation-settings: 'slnt' -7, 'wght' 600;
+		font-variation-settings: 'slnt' -7, 'wght' 600, "CRSV" 0;
 		border-color: var(--color-link-slight);
 	}
 }
