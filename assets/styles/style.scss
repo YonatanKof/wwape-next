@@ -1,8 +1,9 @@
 // Vars
 :root {
 	--header-height: var(--space-4xl);
-	--border-radius-regular: var(--space-3xs);
-	--border-radius-medium: var(--space-2xs);
+	--border-radius-md: var(--space-xs);
+	--border-radius-sm: var(--space-2xs);
+	--border-radius-xs: var(--space-3xs);
 
 	--color-sys-main: hsl(180, 25%, 15%);
 	--color-sys-slight: hsla(0, 0%, 10%, 0.75);
@@ -50,7 +51,7 @@ body {
 img {
 	width: 100%;
 	height: auto;
-	border-radius: var(--border-radius-regular);
+	border-radius: var(--border-radius-xs);
 	display: flow-root;
 }
 button {
@@ -62,7 +63,7 @@ button {
 	// padding: var(--space-2xs) var(--space-xs);
 	padding: 0.8em 1em;
 	font-size: var(--step--1);
-	border-radius: var(--border-radius-regular);
+	border-radius: var(--border-radius-xs);
 	font-family: var(--font-mono);
 	cursor: pointer;
 	transition: transform 0.35s ease-in-out, box-shadow 0.25s ease-in-out;

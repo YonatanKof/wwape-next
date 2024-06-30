@@ -131,7 +131,7 @@ section {
 	grid-row: 1 / span 2;
 	padding: calc(var(--space-s) + var(--space-3xs));
 	z-index: 10;
-	border-radius: var(--border-radius-medium);
+	border-radius: var(--border-radius-sm);
 	height: min-content;
 	@media (width <= $display-width-sm) {
 		padding: var(--space-s);

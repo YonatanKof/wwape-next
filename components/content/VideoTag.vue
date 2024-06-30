@@ -37,7 +37,7 @@ video {
 	margin-block: var(--space-xs);
 	max-width: 100%;
 	aspect-ratio: v-bind(aspectRatio);
-	border-radius: var(--border-radius-regular);
+	border-radius: var(--border-radius-xs);
 	overflow: hidden;
 }
 </style>
