@@ -1,8 +1,9 @@
 @font-face {
 	font-family: 'RecVar';
-	font-variation-settings: "CRSV" 0;
+	font-variation-settings: 'CRSV' 0;
 	src: url('~/assets/fonts/Recursive_VF_1.085--subset_range_english_basic.woff2') format('woff2');
 	unicode-range: U+0020-007F, U+00A9, U+2190-2193, U+2018, U+2019, U+201C, U+201D, U+2022;
+	font-display: swap;
 }
 @font-face {
 	font-family: 'ShantellSans';
@@ -10,11 +11,12 @@
 	font-weight: 400;
 	font-variation-settings: 'INFM' 50, 'wght' 500;
 	src: url('~/assets/fonts/ShantellSans[BNCE,INFM,SPAC,ital,wght].woff2') format('woff2');
+	font-display: swap;
 }
 :root {
-	--font-body: system-ui, sans-serif; 
+	--font-body: system-ui, sans-serif;
 	--font-mono: RecVar, monospace;
-	--font-hand: ShantellSans, cursive;
+	--font-hand: ShantellSans, serif;
 }
 body,
 html {
@@ -72,7 +74,6 @@ blockquote p {
 	color: var(--color-sys-slight);
 	border-inline-start: var(--space-3xs) solid var(--color-sys-dim);
 	padding-inline-start: var(--space-xs);
-
 }
 .content-renderer {
 	ul {
@@ -156,14 +157,14 @@ sup {
 		border-bottom: $none-ul;
 	}
 	font-family: var(--font-mono);
-	font-variation-settings: 'slnt' -15, 'wght' 400, "CRSV" 0;
+	font-variation-settings: 'slnt' -15, 'wght' 400, 'CRSV' 0;
 	font-style: normal;
 	transition: font-variation-settings 0.25s ease-in-out, border-color 0.25s ease-in-out;
 	color: var(--color-link-slight);
 	text-decoration: none;
 	letter-spacing: 0.01em;
 	&:hover {
-		font-variation-settings: 'slnt' -7, 'wght' 600, "CRSV" 0;
+		font-variation-settings: 'slnt' -7, 'wght' 600, 'CRSV' 0;
 		border-color: var(--color-link-slight);
 	}
 }
