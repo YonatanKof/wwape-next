@@ -50,9 +50,9 @@ h6 {
 	font-family: var(--font-hand);
 	font-variation-settings: 'INFM' 100, 'wght' 500, 'BNCE' 25, 'ital' 1;
 	text-wrap: balance;
-	transition: font-variation-settings 0.25s ease-in-out 0s;
+	transition: font-variation-settings 0.5s ease-in-out 0s;
 	&:hover {
-		font-variation-settings: 'INFM' 75, 'wght' 525, 'BNCE' 30, 'ital' 1;
+		font-variation-settings: 'INFM' 50, 'wght' 500, 'BNCE' 25, 'ital' 1;
 	}
 }
 ul,
@@ -105,16 +105,16 @@ em {
 	line-height: 1;
 }
 strong {
-	font-weight: bold;
+	font-weight: 600;
 }
 h1 {
 	font-size: var(--step-5);
 	margin-block-end: var(--space-s);
 	font-variation-settings: 'INFM' 100, 'wght' 600, 'BNCE' 25, 'ital' 1;
 	text-wrap: balance;
-	transition: font-variation-settings 0.25s ease-in-out 0s;
+	transition: font-variation-settings 0.5s ease-in-out 0s;
 	&:hover {
-		font-variation-settings: 'INFM' 75, 'wght' 625, 'BNCE' 30, 'ital' 1;
+		font-variation-settings: 'INFM' 50, 'wght' 600, 'BNCE' 25, 'ital' 1;
 	}
 }
 h2 {
