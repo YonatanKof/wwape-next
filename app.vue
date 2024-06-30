@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const config = useRuntimeConfig();
-const siteTitle = config.public.siteName;
+const siteTitle = config.public.siteOwnerName + ' of the ' + config.public.siteName;
 useHead({
 	titleTemplate: (titleChunk) => {
 		return titleChunk ? `${titleChunk} - ` + siteTitle : siteTitle;
