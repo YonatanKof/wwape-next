@@ -74,7 +74,7 @@ div {
 	display: flex;
 	flex-direction: column;
 	background-color: var(--color-sys-invert);
-	border-radius: var(--border-radius-regular);
+	border-radius: var(--border-radius-xs);
 	box-shadow: var(--shadow-lg);
 	max-width: calc(var(--space-8xl) * 3);
 	overflow: hidden;

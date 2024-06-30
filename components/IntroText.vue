@@ -27,7 +27,6 @@ const props = defineProps({
 </template>
 <style lang="scss" scoped>
 p {
-	// font-size: var(--step-2);
 	max-width: 55ch;
 	margin-block-end: var(--space-2xs);
 	&:last-child {

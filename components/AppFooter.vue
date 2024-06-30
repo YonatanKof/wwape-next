@@ -39,7 +39,6 @@ footer {
 	gap: var(--space-s);
 	@media (width <= $display-width-2xs) {
 		gap: var(--space-2xs);
-
 	}
 }
 </style>

@@ -74,7 +74,7 @@ const iconStrokeWidth = ref(0.1125);
 section {
 	padding: var(--space-m);
 	background-color: var(--color-sys-dis);
-	border-radius: var(--border-radius-medium);
+	border-radius: var(--border-radius-sm);
 	margin-block: var(--space-2xs);
 }
 em {

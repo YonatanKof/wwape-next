@@ -29,7 +29,7 @@ changeIt();
 .base {
 	width: 100%;
 	height: calc(v-bind(height) * 4);
-	border-radius: var(--border-radius-regular);
+	border-radius: var(--border-radius-xs);
 }
 .frame {
 	position: relative;
