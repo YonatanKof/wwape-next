@@ -15,6 +15,7 @@ watchEffect(() => (mode.value = state.value as any));
 		<div>
 			<nav>
 				<nuxt-link :to="{ name: 'index' }">Home</nuxt-link>
+				<nuxt-link :to="{name: 'music'}">Music</nuxt-link>
 				<nuxt-link :to="{ name: 'design' }">Designs</nuxt-link>
 				<nuxt-link :to="{name: 'post'}">Posts</nuxt-link>
 			</nav>
