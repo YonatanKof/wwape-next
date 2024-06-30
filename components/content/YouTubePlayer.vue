@@ -38,21 +38,8 @@ defineProps({
 
 <style lang="scss">
 .youtube-player {
-	// margin-block-end: var(--spacem-sm);
+	aspect-ratio: 16/9;
 	overflow: auto;
-	border-radius: var(--space-3xs);
-	position: relative;
-	// padding-bottom: 66.667%; // 3x2
-	// padding-bottom: 75%; // 4x3
-	padding-bottom: 56.5%; // 16x9
-	height: 0;
-	margin-block-end: var(--space-2xs);
-	&__item {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-	}
+	border-radius: var(--border-radius-sm);
 }
 </style>
