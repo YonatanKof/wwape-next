@@ -5,7 +5,10 @@ useHead({
 	titleTemplate: (titleChunk) => {
 		return titleChunk ? `${titleChunk} - ` + siteTitle : siteTitle;
 	},
-	meta: [{ property: 'author', content: config.public.siteOwnerName }],
+	meta: [
+		{ property: 'author', content: config.public.siteOwnerName },
+		{ name: 'google-site-verification', content: 'BT5cxk7V5QYzpwQdodAb49ZrNuxGDvD4lii_fgV-uZE' }
+	],
 });
 </script>
 
