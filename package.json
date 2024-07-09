@@ -11,8 +11,10 @@
   "devDependencies": {
     "@nuxt/content": "npm:@nuxt/content-edge@latest",
     "@nuxt/devtools": "latest",
+    "@nuxt/image": "^1.7.0",
+    "@nuxtjs/seo": "^2.0.0-rc.11",
     "@unlazy/nuxt": "^0.10.1",
-    "nuxt": "^3.7.2",
+    "nuxt": "^3.12.3",
     "nuxt-clarity-analytics": "^0.0.6",
     "sass": "^1.66.1"
   },
