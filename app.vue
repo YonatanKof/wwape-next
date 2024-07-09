@@ -1,10 +1,10 @@
 <script setup lang="ts">
 const config = useRuntimeConfig();
-const siteTitle = config.public.siteOwnerName + ' of the ' + config.public.siteName;
+// const siteTitle = config.public.siteOwnerName + ' of the ' + config.public.siteName;
 useHead({
-	titleTemplate: (titleChunk) => {
-		return titleChunk ? `${titleChunk} - ` + siteTitle : siteTitle;
-	},
+	// titleTemplate: (titleChunk) => {
+	// 	return titleChunk ? `${titleChunk} - ` + siteTitle : siteTitle;
+	// },
 	meta: [
 		{ property: 'author', content: config.public.siteOwnerName },
 		{ name: 'google-site-verification', content: 'BT5cxk7V5QYzpwQdodAb49ZrNuxGDvD4lii_fgV-uZE' }
