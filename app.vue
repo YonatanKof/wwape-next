@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { ModalsContainer } from 'vue-final-modal'
 const config = useRuntimeConfig();
 // const siteTitle = config.public.siteOwnerName + ' of the ' + config.public.siteName;
 useHead({
@@ -7,19 +8,27 @@ useHead({
 	// },
 	meta: [
 		{ property: 'author', content: config.public.siteOwnerName },
-		{ name: 'google-site-verification', content: 'BT5cxk7V5QYzpwQdodAb49ZrNuxGDvD4lii_fgV-uZE' }
+		{ name: 'google-site-verification', content: 'BT5cxk7V5QYzpwQdodAb49ZrNuxGDvD4lii_fgV-uZE' },
+		{ name: 'msvalidate.01', content: '3557D72FD47371EEA2248ADDA0463742' },
 	],
 });
 </script>
 
 <template>
-	<div>
-		<NuxtLayout>
-			<NuxtPage />
-		</NuxtLayout>
-	</div>
+	<main class="main-app">
+		<AppHeader />
+		<NuxtPage />
+		<ModalsContainer />
+		<AppFooter />
+	</main>
 </template>
-<style>
+<style lang="scss">
+.main-app {
+	height: 100dvh;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	@include display-width;
+}
 .page-enter-active,
 .page-leave-active,
 .layout-enter-active,
