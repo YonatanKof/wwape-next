@@ -15,6 +15,10 @@ export default defineNuxtConfig({
 	content: {
 		// Used for Nuxt SEO sitemap module
 		documentDriven: true,
+		toc: {
+			depth: 4,
+			searchDepth: 4,
+		},
 		highlight: {
 			// Theme used in all color schemes.
 			// theme: 'github-light'
