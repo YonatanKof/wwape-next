@@ -118,13 +118,16 @@ section {
 	@media (width <= $display-width-xs) {
 		grid-template-columns: var(--space-2xl) 1fr var(--space-2xl);
 		grid-template-rows: var(--space-6xl) auto 1fr;
-		// background-color: goldenrod;
 	}
 	@media (width <= $display-width-2xs) {
 		grid-template-columns: var(--space-s) 1fr var(--space-s);
-		// background-color: palegreen;
 	}
 }
+// span {
+// 	display: block;
+// 	max-width: var(--display-width-sm);
+// 	margin-inline: auto;
+// }
 #article-info {
 	background-color: var(--color-sys-invert-highlight);
 	grid-column: 1 / span 2;
@@ -145,9 +148,11 @@ section {
 	font-size: var(--step-4);
 }
 #sub-title {
-	font-family: var(--font-system);
+	font-family: var(--font-body);
 	font-size: var(--step-0);
 	margin-block-start: var(--space-s);
+	font-variation-settings: unset;
+	line-height: 1.5;
 	@media (width <= $display-width-2xs) {
 		font-size: var(--step--1);
 	}
