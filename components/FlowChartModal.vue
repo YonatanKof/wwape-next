@@ -68,7 +68,6 @@ div {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	// @include flex-center();
 }
 .confirm-modal-content {
 	display: flex;
@@ -86,7 +85,6 @@ div {
 		bottom: 0;
 		width: 100%;
 		border-radius: unset;
-		// background-color: goldenrod;
 	}
 }
 .modal-btn {
