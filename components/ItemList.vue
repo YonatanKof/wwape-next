@@ -76,10 +76,6 @@ p {
 }
 .item {
 	@include content-item();
-	// @include focus();
-	// &:hover {
-	// 	transform: translateY(calc(var(--space-3xs) * -1));
-	// }
 }
 img {
 	border-radius: unset;

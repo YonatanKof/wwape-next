@@ -48,6 +48,9 @@ defineProps({
 	aspect-ratio: 16/9;
 	overflow: hidden;
 	border-radius: var(--border-radius-sm);
+	&__item {
+		aspect-ratio: 560/315;
+	}
 }
 em {
 	@include desc-text-under();
