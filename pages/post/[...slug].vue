@@ -100,7 +100,7 @@ const goPost = () => clearError({ redirect: '/post' });
 					</section>
 					<hr />
 					<!-- <pre>{{ toc }}</pre> -->
-					<ul v-if="toc && toc.links">
+					<!-- <ul v-if="toc && toc.links">
 						<li v-for="link in toc.links" :key="link.text">
 							<a :href="`#${link.id}`">
 								{{ link.text }}
@@ -113,7 +113,7 @@ const goPost = () => clearError({ redirect: '/post' });
 								</li>
 							</ul>
 						</li>
-					</ul>
+					</ul> -->
 					<span class="content-renderer"><ContentRenderer :value="doc" /></span>
 				</article>
 				<!-- <SeeMore :prev="prev" :next="next" /> -->
