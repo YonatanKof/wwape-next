@@ -38,8 +38,10 @@ defineProps({
 
 <style lang="scss">
 .youtube-player {
-	aspect-ratio: 16/9;
 	overflow: auto;
 	border-radius: var(--border-radius-sm);
+	&__item {
+		aspect-ratio: 560/315;
+	}
 }
 </style>
