@@ -1,5 +1,6 @@
 <!-- This is a single post -->
 <script setup>
+const { toc } = useContent();
 const { path } = useRoute();
 const cleanPath = path.replace(/\/+$/, '');
 // For the previous & next items
@@ -88,9 +89,31 @@ const goPost = () => clearError({ redirect: '/post' });
 							<hr />
 							<h3 id="sub-title">{{ doc.description }}</h3>
 						</div>
-						<UnLazyImage id="article-image" :thumbhash="doc.cover_image_thumbhash" :src="doc.cover_image" :alt="doc.image_alt" :height="doc.cover_image_height" auto-sizes />
+						<UnLazyImage
+							id="article-image"
+							:thumbhash="doc.cover_image_thumbhash"
+							:src="doc.cover_image"
+							:alt="doc.image_alt"
+							:height="doc.cover_image_height"
+							auto-sizes
+						/>
 					</section>
 					<hr />
+					<!-- <pre>{{ toc }}</pre> -->
+					<!-- <ul v-if="toc && toc.links">
+						<li v-for="link in toc.links" :key="link.text">
+							<a :href="`#${link.id}`">
+								{{ link.text }}
+							</a>
+							<ul v-if="link.children">
+								<li v-for="child in link.children" :key="child.id">
+									<a :href="`#${child.id}`">
+										{{ child.text }}
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul> -->
 					<span class="content-renderer"><ContentRenderer :value="doc" /></span>
 				</article>
 				<!-- <SeeMore :prev="prev" :next="next" /> -->
@@ -100,6 +123,12 @@ const goPost = () => clearError({ redirect: '/post' });
 </template>
 
 <style lang="scss" scoped>
+main {
+	// display: block;
+	max-width: var(--display-width-sm);
+	margin-inline: auto;
+}
+
 section {
 	display: grid;
 	grid-template-columns: 4fr 1fr 6fr;
@@ -183,5 +212,8 @@ main {
 #error,
 #link-buttons {
 	@include flex-center($flex-direction: column, $justify-content: center, $gap: var(--space-2xs));
+}
+hr:last-of-type {
+	margin-block-end: var(--space-s);
 }
 </style>
