@@ -1,7 +1,18 @@
 <script setup>
+// Initial color value
+const color = ref('');
 
-const color = ref('hsl(180, 25%, 15%)'); // Initial color value
+// Assign value to `color` depending on dark mode
+const isDarkModeActive = () => {
+	if (document.documentElement.classList.contains('dark')) {
+		color = 'hsl(34, 78%, 91%)';
+	} else {
+		color = 'hsl(180, 25%, 15%)';
+	}
+	return color;
+};
 
+// Assign `newColor` to `color`
 const updateColorVariable = (newColor) => {
 	document.documentElement.style.setProperty('--color-sys-main', newColor);
 };
