@@ -131,7 +131,7 @@ A great example of a product addressing multiple target audiences is [Monday.com
 
 By tailoring their marketing messages, [Monday.com](http://monday.com/) can effectively engage and convert different audience segments.
 
-::gridBlock{colNum=3}
+::gridBlock{colNum="3"}
     :::YouTubePlayer{videoId="AlQs-A0z_1g" title="What is monday.com?" desc="This one is for product managers"}
     :::
     :::YouTubePlayer{videoId="MoAGqV7cvqY" title="What using monday.com feels like?" desc="This one is amid for developers"}
