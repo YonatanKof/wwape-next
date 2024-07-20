@@ -73,8 +73,9 @@ const iconStrokeWidth = ref(0.1125);
 <style lang="scss" scoped>
 section {
 	padding: var(--space-m);
-	background-color: var(--color-sys-dis);
+	background-color: var(--color-sys-invert-highlight);
 	border-radius: var(--border-radius-sm);
+	box-shadow: var(--shadow-md);
 	margin-block: var(--space-2xs);
 }
 em {
