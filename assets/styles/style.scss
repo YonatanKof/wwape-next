@@ -6,32 +6,38 @@
 	--border-radius-xs: var(--space-3xs);
 
 	--color-sys-main: hsl(180, 25%, 15%);
-	--color-sys-slight: hsla(0, 0%, 10%, 0.75);
-	--color-sys-dim: hsla(0, 0%, 10%, 0.35);
-	--color-sys-dis: hsla(0, 0%, 10%, 0.1);
-	--color-sys-none: hsla(0, 0%, 10%, 0);
-	--color-sys-dark-dark: hsla(0, 0%, 10%, 0.1);
+	--color-sys-slight: color-mix(in hsl, var(--color-sys-main) 75%, transparent);
+	--color-sys-dim: color-mix(in hsl, var(--color-sys-main) 35%, transparent);
+	--color-sys-dis: color-mix(in hsl, var(--color-sys-main) 10%, transparent);
+	--color-sys-none: color-mix(in hsl, var(--color-sys-main) 0%, transparent);
 
 	--color-sys-invert: antiquewhite;
-	--color-sys-invert-highlight: white;
+	--color-sys-invert-highlight: color-mix(in hsl, var(--color-sys-invert) 5%, white);
 
-	--color-link-main: hsl(280, 100%, 25%);
-	--color-link-slight: hsl(280, 100%, 35%);
-
+	--color-link-main: hsl(280, 100%, 35%);
+	--color-link-slight: color-mix(in hsl, var(--color-link-main) 75%, transparent);
+	--color-link-dim: color-mix(in hsl, var(--color-link-main) 35%, transparent);
+	--color-link-dis: color-mix(in hsl, var(--color-link-main) 10%, transparent);
+	--color-link-none: color-mix(in hsl, var(--color-link-main) 0%, transparent);
+	
 	--color-focus-main: hsl(200, 100%, 30%);
-	--color-focus-slight: hsl(200, 100%, 50%);
+	// --color-focus-slight: hsl(200, 100%, 50%);
+	--color-focus-slight: color-mix(in hsl, var(--color-focus-main) 75%, transparent);
+	--color-focus-dim: color-mix(in hsl, var(--color-focus-main) 35%, transparent);
+	--color-focus-dis: color-mix(in hsl, var(--color-focus-main) 10%, transparent);
+	--color-focus-none: color-mix(in hsl, var(--color-focus-main) 0%, transparent);
 
 	--bg-primary: var(--color-sys-invert);
 	--content-space: 1rem;
 	--space-md: 1rem;
 	--bg-pre: none;
 
-	--shadow-sm: 0 0.1rem 0.1rem var(--color-sys-dark-dark), 0 0.2rem 0.2rem var(--color-sys-dark-dark),
-		0 0.3rem 0.3rem var(--color-sys-dark-dark);
-	--shadow-md: 0 0.2rem 0.2rem var(--color-sys-dark-dark), 0 0.4rem 0.4rem var(--color-sys-dark-dark),
-		0 0.8rem 0.8rem var(--color-sys-dark-dark);
-	--shadow-lg: 0 0.25rem 0.5rem var(--color-sys-dark-dark), 0 0.75rem 1.5rem var(--color-sys-dark-dark),
-		0 1rem 2rem var(--color-sys-dark-dark);
+	--shadow-sm: 0 0.1rem 0.1rem var(--color-sys-dis), 0 0.2rem 0.2rem var(--color-sys-dis),
+		0 0.3rem 0.3rem var(--color-sys-dis);
+	--shadow-md: 0 0.2rem 0.2rem var(--color-sys-dis), 0 0.4rem 0.4rem var(--color-sys-dis),
+		0 0.8rem 0.8rem var(--color-sys-dis);
+	--shadow-lg: 0 0.25rem 0.5rem var(--color-sys-dis), 0 0.75rem 1.5rem var(--color-sys-dis),
+		0 1rem 2rem var(--color-sys-dis);
 	--font-wight--bolder: bolder;
 	--font-size-2xl: 2em;
 	--overlay: var(--color-sys-slight);
@@ -76,22 +82,25 @@ img ~ em {
 hr {
 	border: none;
 	border-bottom: solid 1px var(--color-sys-dim);
+	width: 100%;
 }
+// .content-renderer {
+// 	span > img {
+// 		margin-block-end: var(--space-s);
+// 	}
+// }
 .dark {
 	--color-sys-main: hsl(34, 78%, 91%);
-	--color-sys-slight: hsla(34, 78%, 91%, 0.75);
-	--color-sys-dim: hsla(34, 78%, 91%, 0.25);
-	--color-sys-dis: hsla(34, 78%, 91%, 0.1);
 
-	--color-sys-invert: hsl(34, 8%, 16%);
-	--color-sys-invert-highlight: hsl(34, 8%, 10%);
+	--color-sys-invert: hsl(34, 25%, 15%);
+	--color-sys-invert-highlight: color-mix(in hsl, var(--color-sys-invert) 75%, black);
 
 	--color-link-main: hsl(280, 100%, 90%);
-	--color-link-slight: hsl(280, 100%, 80%);
+	// --color-link-slight: hsl(280, 100%, 80%);
 
 	--color-focus-main: hsl(200, 100%, 40%);
 	--color-focus-slight: hsl(200, 100%, 60%);
 
-	--color-sys-dark-dark: hsla(0, 0%, 10%, 0.75);
-	--overlay: var(--color-sys-dark-dark);
+	// Overlay isn't used in the dark theme
+	--overlay: hsla(0, 0%, 10%, 0.75);
 }
