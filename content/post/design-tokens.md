@@ -14,19 +14,65 @@ tags: ['Creative']
 
 Design tokens are standardized, reusable variables that define the visual properties of a design system, such as colors, typography, spacing, and other style-related elements, ensuring consistency and scalability across different platforms and products.
 
-## This site tokens
+## Why Design Tokens?
 
-### Colors
+### Consistency 
 
-#### Update the main system color
+One can easily and write `1em` instead of `1rem`, this mistake can be slight or harsh, but regardless of its final result, it will eventually hurt the the design's consistency.
 
-In this example you can update one color and see its effect over the different color style.
+Another example that comes to mind is `border: red 1px solid;`. Wouldn't it be nicer to have `border: red 1px solid;`
+### Change proof
 
-And they are all bound to `--color-sys-main`, changing it will effect them all + the dark mode as well. Will it look good? Probably not, but that's a mater of design. 
 
-::gridBlock{colNum=2}
+## This site's tokens
+
+This site is quite small so there's not a lot of tokens, but let's review the ones that I do have.
+
+- Colors [↘︎](#color){target="_self"}
+- Sizes [↘︎](#sizes){target="_self"}
+  - General sizing (using [Utopia](https://utopia.fyi/))
+  - Specifics (header, content, etc'.)
+  - Breakpoints 
+- Typography [↘︎](#typography){target="_self"} (using [Utopia](https://utopia.fyi/))
+- Border Radius [↘︎](#radius){target="_self"}
+- Box Shadow [↘︎](#shadow){target="_self"}
+- Link [↘︎](#section1){target="_self"}
+
+
+## [Color Tokens]{id="color"}
+
+Here we've got what I call, ***system*** color – its used for *text* color and most *UI elements*. It have 5 states; `main`, `slight`, `dim`, `dis` and `none`. You can see in the code block below how I structure it, or see it in action [here](#section-1)
+
+The power or working like this, is that if one day you choose to change the system color, you'll just have to change it in place (or two if you have dark mode)
+```css
+:root {
+	/* This is the main color */
+	--color-sys-main: hsl(180, 25%, 15%);
+	
+	/* These colors are interpolated using color-mix() */
+	--color-sys-slight: color-mix(in hsl, var(--color-sys-main) 75%, transparent);
+	--color-sys-dim: color-mix(in hsl, var(--color-sys-main) 35%, transparent);
+	--color-sys-dis: color-mix(in hsl, var(--color-sys-main) 10%, transparent);
+	--color-sys-none: color-mix(in hsl, var(--color-sys-main) 0%, transparent);
+}
+
+/* This is the dark mode override */
+.dark {
+	--color-sys-main: hsl(34, 78%, 91%);
+}
+```
+
+### 1st Live Example!
+
+> **Update the main system color**
+
+In this example you can update `--color-sys-main` and see its effect over the different color style. Since of the CSS setup shown above, all the colors are bound to it, so changing it will effect them all + the dark mode as well. 
+
+Will it look good? Probably not – Will it be accessible? No guarantees – Is it a good example? For sure! 😎
+
+::gridBlock{colNum="2" gap="var(--space-m);"}
 :::grid-unit
-In this site I have 5 system colors:
+So here we have 5 variant of the system color, and you can click on the color picker to see it in action.
 - `--color-sys-main`
 - `--color-sys-slight`
 - `--color-sys-dim`
@@ -35,6 +81,26 @@ In this site I have 5 system colors:
 :::
 :::token-color
 :::
+::
+
+::gridBlock{colNum="2" gap="var(--space-m);"}
+:::grid-unit
+So here we have 5 variant of the system color, and you can click on the color picker to see it in action.
+- `--color-sys-main`
+- `--color-sys-slight`
+- `--color-sys-dim`
+- `--color-sys-dis`
+- `--color-sys-none`
+:::
+:::token-color{colorNorDark="antiquewhite" colorDark="hsl(180, 25%, 15%)" colorName="--color-sys-invert"}
+:::
+::
+
+### 2nd Live Example!
+
+> **Update SVG size, border thickness & colors**
+
+::IconExample
 ::
 
 ### Screen Size
