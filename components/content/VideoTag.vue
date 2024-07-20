@@ -24,20 +24,42 @@ defineProps({
 		type: Boolean,
 		default: true,
 	},
+	showMesh: {
+		type: Boolean,
+		default: false,
+	},
 });
 </script>
 <template>
-	<video :controls="controls" :autoplay="autoplay" :muted="muted" :loop="loop">
-		<source :src="src" type="video/webm" />
-		<p>Your browser does not support <code>video</code> tag</p>
-	</video>
+	<div>
+		<span v-if="showMesh"></span>
+		<video :controls="controls" :autoplay="autoplay" :muted="muted" :loop="loop">
+			<source :src="src" type="video/webm" />
+			<p>Your browser does not support <code>video</code> tag</p>
+		</video>
+	</div>
 </template>
 <style scoped>
-video {
+div {
 	margin-block: var(--space-xs);
+	display: block;
+	width: 100%;
+	height: min-content;
+	position: relative;
+}
+span {
+	border-radius: var(--border-radius-xs);
+	position: absolute;
+	clear: both;
+	background-image: radial-gradient(transparent 1px, var(--color-link-dim) 1px);
+	background-size: 2px 2px;
+	inset: 0;
+}
+video {
 	max-width: 100%;
 	aspect-ratio: v-bind(aspectRatio);
 	border-radius: var(--border-radius-xs);
 	overflow: hidden;
+	display: flow-root;
 }
 </style>
