@@ -1,12 +1,16 @@
 <script setup>
 defineProps({
 	colNum: {
-		type: Number,
-		default: 1,
+		type: String,
+		default: "1",
 	},
 	rowNum: {
-		type: Number,
-		default: 1,
+		type: String,
+		default: "1",
+	},
+	gap: {
+		type: String,
+		default: 'var(--space-xs)',
 	},
 });
 </script>
@@ -20,8 +24,8 @@ div {
 	display: grid;
 	grid-template-columns: repeat(v-bind(colNum), 1fr);
 	grid-template-rows: repeat(v-bind(rowNum), 1fr);
-	margin-block: var(--space-s);
-	gap: var(--space-xs);
+	// margin-block: var(--space-s);
+	gap: v-bind(gap);
 	height: 100%;
 	width: 100%;
 	@media (width <= $display-width-xs) {
