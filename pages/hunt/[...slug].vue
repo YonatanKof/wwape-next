@@ -63,7 +63,7 @@ useHead({
 });
 const goHome = () => clearError({ redirect: '/' });
 const goDesign = () => clearError({ redirect: '/design' });
-const goPost = () => clearError({ redirect: '/post' });
+const goPost = () => clearError({ redirect: '/hunt' });
 </script>
 
 <template>
