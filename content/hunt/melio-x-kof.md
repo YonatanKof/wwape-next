@@ -3,12 +3,12 @@ title: 'Melio next DS Lead'
 author_name: 'Yonatan Ben Knaan'
 date: '2024-07-21'
 updated: ''
-cover_image: '/hunt/melio.webp'
-cover_image_height: ''
-cover_image_thumbhash: ''
-social_image: '/hunt/melio-social.jpg'
+cover_image: '/misc/melio.webp'
+cover_image_height: '400'
+cover_image_thumbhash: 'OQgGDYCpp3eIeHh/hYV3gqd3b4YH'
+social_image: '/misc/melio-social.jpg'
 image_alt: ''
-description: "A few words as about why Yonatan Ben Knaan should be the Melio's next Design Systems Lead"
+description: "Some reasons why it's a great idea"
 tags: ['Creative']
 ---
 Hi Guy,  
@@ -16,11 +16,14 @@ A few words of what I'll bring as a DS lead at Melio:
 
 - Working knowledge of complex design systems
 - A proven ability to lead teams without authority 
-- A designer who code, this site for example but much more
+- A designer who code, this site for example but but ask to see more
+- Writing guides and PRDs 
+- Best practices in Collaboration and Sharing 
+- Best practices in Backlog management 
 - Working lean and effective 
-- Absolute control over tools
+- Total control over tools
 - Recommendations form managers and other leading figures 
-- Shifting the DS form a hard *challenge* to a *non-problem* to a *success*
+- Shifting the DS form a hard *challenge* to a *success*
 
 
 ## Design System
@@ -41,7 +44,7 @@ This is the basic Storybook being used by the Product and development teams. It 
   > In this Storybook I've written the MDX dcos myself. 
 :::
 :::grid-unit
-::::video-tag{src="/hunt/DesignSystem-1.webm" showMesh=true}
+::::video-tag{src="/misc/DesignSystem-1.webm" showMesh=true}
 ::::
 :::
 ::
@@ -58,12 +61,16 @@ This is the basic Storybook being used by the Product and development teams. It 
   > Duo to code ar architecture we had to separate the two projects – In a perfect world they would have been presented in the same project.
 :::
 :::grid-unit
-::::video-tag{src="/hunt/DesignSystem-2.webm" showMesh=true}
+::::video-tag{src="/misc/DesignSystem-2.webm" showMesh=true}
 ::::
 :::
 ::
 
+---
+
 Now let's review the Brand Design System
+
+---
 
 ### PDS, Brand Guide
 
@@ -74,10 +81,26 @@ Now let's review the Brand Design System
 
   [→ Click here to review the Brand Guide](https://brand.pepperi.com/)
 
-  > This site is using [VuePress](https://vuepress.vuejs.org/) and was developed by me 
+  > This brand guide is using [VuePress](https://vuepress.vuejs.org/) and was developed by me 
 :::
 :::grid-unit
-::::video-tag{src="/hunt/brand.webm" showMesh=true}
+::::video-tag{src="/misc/brand.webm" showMesh=true}
 ::::
 :::
 ::
+
+## Related Articles  
+
+A short articles I've written about Design Tokens.
+
+[→ Click here to read it](/post/design-tokens){target="_self"}
+
+A short articles I've written about creating a simple SVG Icon System.
+
+[→ Click here to read it](/post/simple-icon-system){target="_self"}
+
+## My CV
+
+My professional life in a nutshell
+
+[→ Click here to read it](/misc/my-cv){target="_self"}
