@@ -20,6 +20,9 @@ body,
 html {
 	font-family: var(--font-body);
 	font-size: var(--step-0);
+	@media print {
+		font-size: var(--step--2);
+	}
 }
 p,
 h1,
@@ -39,6 +42,9 @@ li {
 	line-height: 1.5;
 	color: var(--color-sys-main);
 	text-wrap: pretty;
+	@media print {
+		font-size: var(--step--3);
+	}
 }
 
 h1,
@@ -70,7 +76,7 @@ blockquote {
 		margin-block: var(--space-3xs) !important;
 	}
 	margin-block: var(--space-xs);
-	display: inline-block;
+	display: block;
 	padding-inline-start: var(--space-s);
 	position: relative;
 	&::before {
@@ -115,6 +121,43 @@ blockquote {
 		margin-block-start: 0.125em;
 	}
 }
+.cv {
+	ul {
+		margin: unset;
+	}
+	p {
+		margin-block-end: 0.5em;
+	}
+	li {
+		margin-block-end: 0.25em;
+	}
+	p,
+	ol,
+	ul,
+	li {
+		font-size: var(--step-0);
+	}
+	p,
+	ol,
+	ul,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin-block-start: 1em;
+		margin-block-end: 0.125em;
+	}
+	p {
+		text-wrap: pretty;
+		margin-block-start: 0.5em;
+	}
+	li > ul,
+	ol {
+		margin-block-start: 0.125em;
+	}
+}
 i,
 em {
 	font-style: normal;
@@ -135,21 +178,39 @@ h1 {
 	&:hover {
 		font-variation-settings: 'INFM' 50, 'wght' 600, 'BNCE' 25, 'ital' 1;
 	}
+	@media print {
+		font-size: var(--step-3);
+	}
 }
 h2 {
 	font-size: var(--step-4);
+	@media print {
+		font-size: var(--step-2);
+	}
 }
 h3 {
 	font-size: var(--step-3);
+	@media print {
+		font-size: var(--step-1);
+	}
 }
 h4 {
 	font-size: var(--step-2);
+	@media print {
+		font-size: var(--step-0);
+	}
 }
 h5 {
 	font-size: var(--step-1);
+	@media print {
+		font-size: var(--step--1);
+	}
 }
 h6 {
 	font-size: var(--step-0);
+	@media print {
+		font-size: var(--step--2);
+	}
 }
 sup {
 	font-size: 0.75em;
@@ -195,7 +256,8 @@ sup {
 		box-shadow: 0 0 0 var(--space-3xs) var(--color-focus-slight);
 	}
 }
-a, .link {
+a,
+.link {
 	@include link();
 }
 .router-link-active {

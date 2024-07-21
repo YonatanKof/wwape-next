@@ -1,12 +1,12 @@
 <script setup>
 defineProps({
-	colNum: {
+	frOne: {
 		type: String,
-		default: "1",
+		default: "1fr",
 	},
-	rowNum: {
+	frTwo: {
 		type: String,
-		default: "1",
+		default: "1fr",
 	},
 	gap: {
 		type: String,
@@ -22,8 +22,8 @@ defineProps({
 <style lang="scss" scoped>
 div {
 	display: grid;
-	grid-template-columns: repeat(v-bind(colNum), 1fr);
-	grid-template-rows: repeat(v-bind(rowNum), 1fr);
+	grid-template-columns: v-bind(frOne) v-bind(frTwo);
+	// grid-template-rows: repeat(v-bind(rowNum), 1fr);
 	gap: v-bind(gap);
 	height: 100%;
 	width: 100%;

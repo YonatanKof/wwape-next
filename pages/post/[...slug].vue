@@ -124,7 +124,6 @@ const goPost = () => clearError({ redirect: '/post' });
 
 <style lang="scss" scoped>
 main {
-	// display: block;
 	max-width: var(--display-width-sm);
 	margin-inline: auto;
 }
@@ -137,12 +136,10 @@ section {
 	margin-block-end: var(--space-m);
 	@media (width <= $display-width-md) {
 		grid-template-columns: 5fr 1fr 6fr;
-		// background-color: teal;
 	}
 	@media (width <= $display-width-sm) {
 		grid-template-columns: var(--space-5xl) 1fr var(--space-5xl);
 		grid-template-rows: var(--space-5xl) auto 1fr;
-		// background-color: red;
 	}
 	@media (width <= $display-width-xs) {
 		grid-template-columns: var(--space-2xl) 1fr var(--space-2xl);
@@ -152,11 +149,6 @@ section {
 		grid-template-columns: var(--space-s) 1fr var(--space-s);
 	}
 }
-// span {
-// 	display: block;
-// 	max-width: var(--display-width-sm);
-// 	margin-inline: auto;
-// }
 #article-info {
 	background-color: var(--color-sys-invert-highlight);
 	grid-column: 1 / span 2;
