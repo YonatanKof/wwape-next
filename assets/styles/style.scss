@@ -34,12 +34,19 @@
 	--space-md: 1rem;
 	--bg-pre: none;
 
-	--shadow-sm: 0 0.1rem 0.1rem var(--color-sys-dark-dark), 0 0.2rem 0.2rem var(--color-sys-dark-dark),
-		0 0.3rem 0.3rem var(--color-sys-dark-dark);
-	--shadow-md: 0 0.2rem 0.2rem var(--color-sys-dark-dark), 0 0.4rem 0.4rem var(--color-sys-dark-dark),
-		0 0.8rem 0.8rem var(--color-sys-dark-dark);
-	--shadow-lg: 0 0.25rem 0.5rem var(--color-sys-dark-dark), 0 0.75rem 1.5rem var(--color-sys-dark-dark),
-		0 1rem 2rem var(--color-sys-dark-dark);
+	--shadow-sm: 
+		0 0.1rem 0.1rem var(--color-sys-dis), 
+		0 0.2rem 0.2rem var(--color-sys-dis),
+		0 0.3rem 0.3rem var(--color-sys-dis);
+	--shadow-md: 
+		0 0.2rem 0.2rem var(--color-sys-dis), 
+		0 0.4rem 0.4rem var(--color-sys-dis),
+		0 0.8rem 0.8rem var(--color-sys-dis);
+	--shadow-lg: 
+		0 0.25rem 0.5rem var(--color-sys-dis), 
+		0 0.75rem 1.5rem var(--color-sys-dis),
+		0 1rem 2rem var(--color-sys-dis);
+
 	--font-wight--bolder: bolder;
 	--font-size-2xl: 2em;
 	--overlay: var(--color-sys-slight);
