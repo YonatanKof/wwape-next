@@ -99,22 +99,18 @@ img ~ em {
 hr {
 	border: none;
 	border-bottom: solid 1px var(--color-sys-dim);
+	width: 100%;
 }
 .dark {
 	--color-sys-main: hsl(34, 78%, 91%);
-	--color-sys-slight: hsla(34, 78%, 91%, 0.75);
-	--color-sys-dim: hsla(34, 78%, 91%, 0.25);
-	--color-sys-dis: hsla(34, 78%, 91%, 0.1);
 
-	--color-sys-invert: hsl(34, 8%, 16%);
-	--color-sys-invert-highlight: hsl(34, 8%, 10%);
+	--color-sys-invert-highlight: color-mix(in hsl, var(--color-sys-invert-main) 75%, black);
+	--color-sys-invert-main: hsl(34, 25%, 15%);
 
 	--color-link-main: hsl(280, 100%, 90%);
-	--color-link-slight: hsl(280, 100%, 80%);
 
 	--color-focus-main: hsl(200, 100%, 40%);
-	--color-focus-slight: hsl(200, 100%, 60%);
 
-	--color-sys-dark-dark: hsla(0, 0%, 10%, 0.75);
-	--overlay: var(--color-sys-dark-dark);
+	// Overlay isn't used in the dark theme
+	--overlay: hsla(0, 0%, 10%, 0.75);
 }
