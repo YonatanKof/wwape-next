@@ -76,9 +76,18 @@ button {
 	cursor: pointer;
 	transition: transform 0.35s ease-in-out, box-shadow 0.25s ease-in-out;
 	transform: translateY(calc(var(--space-4xs) * -1));
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: var(--space-3xs);
 	&:hover {
 		transform: translateY(0);
 		box-shadow: 0 0 var(--color-link-main), inset 0 0 0 1px var(--color-link-main);
+	}
+	p {
+		display: inline-block;
+		font-size: var(--step--1) !important;
 	}
 }
 .icon-btn {
