@@ -12,7 +12,6 @@ defineProps({
 		<slot />
 	</div>
 </template>
-
 <style scoped>
 div {
 	margin-block: v-bind(marginBlock);

@@ -20,6 +20,7 @@ export default defineNuxtConfig({
 			searchDepth: 4,
 		},
 		highlight: {
+			langs: ['json', 'js', 'ts', 'html', 'css', 'scss', 'vue', 'shell', 'mdc', 'md', 'yaml'],
 			// Theme used in all color schemes.
 			// theme: 'github-light'
 			// OR
@@ -53,6 +54,7 @@ export default defineNuxtConfig({
 						@use '~/assets/styles/vars' as *; 
 						@use '~/assets/styles/mixins' as *; 
 						@use '~/assets/styles/utopia' as *; 
+						@use '~/assets/styles/table' as *;
 						@use '~/assets/styles/typography' as *;`,
 				},
 			},

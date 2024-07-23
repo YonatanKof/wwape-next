@@ -28,6 +28,10 @@ defineProps({
 		type: Boolean,
 		default: false,
 	},
+	desc: {
+		type: String,
+		default: '',
+	},
 });
 </script>
 <template>
@@ -37,9 +41,10 @@ defineProps({
 			<source :src="src" type="video/webm" />
 			<p>Your browser does not support <code>video</code> tag</p>
 		</video>
+		<em v-if="desc">{{ desc }}</em>
 	</div>
 </template>
-<style scoped>
+<style lang="scss" scoped>
 div {
 	margin-block: var(--space-xs);
 	display: block;
@@ -61,5 +66,8 @@ video {
 	border-radius: var(--border-radius-xs);
 	overflow: hidden;
 	display: flow-root;
+}
+em {
+	@include desc-text-under();
 }
 </style>

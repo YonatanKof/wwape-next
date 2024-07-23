@@ -44,7 +44,11 @@ This is the basic Storybook being used by the Product and development teams. It 
   > In this Storybook I've written the MDX dcos myself. 
 :::
 :::grid-unit
-::::video-tag{src="/misc/DesignSystem-1.webm" showMesh=true}
+::::video-tag
+---
+src: /misc/DesignSystem-1.webm
+showMesh: true
+---
 ::::
 :::
 ::

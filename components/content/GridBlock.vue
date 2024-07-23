@@ -27,6 +27,7 @@ div {
 	gap: v-bind(gap);
 	height: 100%;
 	width: 100%;
+	margin-block: var(--space-xs);
 	@media (width <= $display-width-xs) {
 		grid-template-columns: 1fr;
 	}

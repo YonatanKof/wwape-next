@@ -1,7 +1,4 @@
 <script setup>
-// const iconList = require.context('~/components/icon', true, /\.vue$/i, 'lazy');
-// const iconList = ref(fetch(`~/components/icon`).then((r) => r.json()));
-
 const iconSize = ref(4);
 const iconFillColor = ref('var(--color-focus-slight)');
 const iconStrokeColor = ref('var(--color-sys-main)');
@@ -109,7 +106,7 @@ fieldset div {
 }
 @media (width <= $display-width-xs) {
 	fieldset {
-	flex-direction: column;
-}
+		flex-direction: column;
+	}
 }
 </style>
