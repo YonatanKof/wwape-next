@@ -1,7 +1,4 @@
 <script setup>
-// const iconList = require.context('~/components/icon', true, /\.vue$/i, 'lazy');
-// const iconList = ref(fetch(`~/components/icon`).then((r) => r.json()));
-
 const iconSize = ref(4);
 const iconFillColor = ref('var(--color-focus-slight)');
 const iconStrokeColor = ref('var(--color-sys-main)');
@@ -73,8 +70,9 @@ const iconStrokeWidth = ref(0.1125);
 <style lang="scss" scoped>
 section {
 	padding: var(--space-m);
-	background-color: var(--color-sys-dis);
+	background-color: var(--color-sys-invert-highlight);
 	border-radius: var(--border-radius-sm);
+	box-shadow: var(--shadow-md);
 	margin-block: var(--space-2xs);
 }
 em {
@@ -108,7 +106,7 @@ fieldset div {
 }
 @media (width <= $display-width-xs) {
 	fieldset {
-	flex-direction: column;
-}
+		flex-direction: column;
+	}
 }
 </style>
