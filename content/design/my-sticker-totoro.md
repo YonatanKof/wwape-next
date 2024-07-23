@@ -23,10 +23,25 @@ Installation guide: add the sticker pack to *iMessage* or *WhatsApp* via the *To
 ::
 
 ::block-hor
-    :::video-tag{src="/designs/my-sticker-totoro/WhatsApp.webm" aspect-ratio="131/284" }
-    :::
-    :::video-tag{src="/designs/my-sticker-totoro/iMessage.webm" aspect-ratio="131/284" }
-    :::
-    :::video-tag{src="/designs/my-sticker-totoro/Telegram.webm" aspect-ratio="131/284" }
-    :::
+:::video-tag
+---
+src: /designs/my-sticker-totoro/WhatsApp.webm
+aspect-ratio: 131/284
+desc: Sticker on WhatsApp
+---
+:::
+:::video-tag
+---
+src: /designs/my-sticker-totoro/iMessage.webm
+aspect-ratio: 131/284
+desc: Sticker on iMessage
+---
+:::
+:::video-tag
+---
+src: /designs/my-sticker-totoro/Telegram.webm
+aspect-ratio: 131/284
+desc: Sticker on Telegram
+---
+:::
 ::
