@@ -24,7 +24,7 @@ Another example that comes to mind is `border: red 1px solid;`. Wouldn't it be n
 
 ### Change Proof
 
-At the [1st example below](#1st-example){target="_self"} you can see the token change, no, actually change it yourself, in action. This is super nice because, if built right I'm using `color-mix()`, you can update one color and it will populate the other color variants, as well for the dark mode. 
+At the [1st example below](#1st-example){target="_self"} you can see the token change, no, actually change it yourself, in action. This is super nice because, if built right I'm using `color-mix()`, you can update one color and it will populate the other color variants, as well for the dark mode.
 
 > See the CSS below ↓
 
@@ -46,9 +46,9 @@ At the [1st example below](#1st-example){target="_self"} you can see the token c
 }
 ```
 
-### [Semantic Meaning]{id="semantic-meaning"} 
+### [Semantic Meaning]{id="semantic-meaning"}
 
-In [consistency](#consistency){target="_self"} is gave an example of `$border-red`. But is a bad example of a token, because a proper token should bare a semantic meaning, that is, it shouldn't bare the color name but its meaning. 
+In [consistency](#consistency){target="_self"} is gave an example of `$border-red`. But is a bad example of a token, because a proper token should bare a semantic meaning, that is, it shouldn't bare the color name but its meaning.
 
 For example:
 
@@ -62,20 +62,20 @@ For example:
 | hotpink | Brand color, primary | `--color-brand` |
 
 Of course...
-1. You'll need to do variants os shown above, take care of the dark mode, and it can be more complex, like: `--color-header`, `--color-border` or if you more then one brand color then `--color-brand-primary` and `--color-brand-secondary`.  
-2. This are just color tokens – but you'll need sizes, typography and such. The pool is quite deep. 
+1. You'll need to do variants os shown above, take care of the dark mode, and it can be more complex, like: `--color-header`, `--color-border` or if you more then one brand color then `--color-brand-primary` and `--color-brand-secondary`.
+2. This are just color tokens – but you'll need sizes, typography and such. The pool is quite deep.
 3. The bigger, the product, the more tokens you'll need.
 
-### Theme Editing 
+### Theme Editing
 
 Some products, like [Pepperi](https://www.pepperi.com/), my workplace (2024), have a white label offering. That is for the users to set their own design. It's just like the [1st example below](#1st-example){target="_self"} but with a function that sets it into the style sheets.
 
-In the attached video below, like I'd mentioned before, you can see the color tokens, typography and their assignment over the different UI elements in action. 
+In the attached video below, like I'd mentioned before, you can see the color tokens, typography and their assignment over the different UI elements in action.
 
 ::video-tag
 ---
 src: /posts/design-tokens/theme-editing.webm
-controls: true 
+controls: true
 desc: Pepperi theme editor in action
 ---
 ::
@@ -85,14 +85,12 @@ There are two reuse use cases:
 
 #### 1st use case: DRY
 
-Just like using components, you wouldn't write the same code twice (or more for that matter). AKA ***DRY***: ***D**on't **R**epeat **Y**ourself*. 
+Just like using components, you wouldn't write the same code twice (or more for that matter). AKA ***DRY***: ***D**on't **R**epeat **Y**ourself*.
 
-If we'll go back to our border example from before, well that's an easy example and one might say that writing `border: red 1px solid;` isn't that much of a difference than `border: $border-red` – and they might be right. 
+If we'll go back to our border example from before, well that's an easy example and one might say that writing `border: red 1px solid;` isn't that much of a difference than `border: $border-red` – and they might be right.
 
 But what about this CSS declaration?
 
-::gridBlock{colNum="2" gap="var(--space-m);"}
-:::GridUnit
 ```scss
 @mixin desc-text-under() {
 	color: var(--color-sys-slight);
@@ -115,8 +113,7 @@ But what about this CSS declaration?
 	}
 }
 ```
-:::
-:::GridUnit
+
 This declaration is just for this silly description text under the `img` or `video` tag.
 ![Description text under the "img" or "video" tag](/posts/design-tokens/slily.webp)
 *Description text under the `img` & `video` tags*
@@ -128,13 +125,11 @@ Wouldn't be nicer to include it with just one line? Like so:
 ```
 
 Nicer for sure 👌
-:::
-::
 
-#### 2nd use case: Multiplatform 
+#### 2nd use case: Multiplatform
 
 This is also happening at Pepperi... But if your doing just more then one platform like web and Android or iOS, where the syntax is different from one another, then using design tokens is the only way to have the same design Multiplatform.
- 
+
 ## This site's tokens
 
 This site is quite small so there's not a lot of tokens, but let's review the ones that I do have.
@@ -143,7 +138,7 @@ This site is quite small so there's not a lot of tokens, but let's review the on
 - Sizes [↘︎](#sizes){target="_self"}
   - General sizing (using [Utopia](https://utopia.fyi/))
   - Specifics (header, content, etc'.)
-  - Breakpoints 
+  - Breakpoints
 - Typography [↘︎](#typography){target="_self"} (using [Utopia](https://utopia.fyi/))
 - Border Radius [↘︎](#radius){target="_self"}
 - Box Shadow [↘︎](#shadow){target="_self"}
@@ -161,13 +156,14 @@ The power or working like this, is that if one day you choose to change the syst
 
 > **Update Token Colors**
 
-In this example you can update `--color-sys-main` and see its effect over the different color style. Since of the CSS setup shown above, all the colors are bound to it, so changing it will effect them all + the dark mode as well. 
+In this example you can update `--color-sys-main` and see its effect over the different color style. Since of the CSS setup shown above, all the colors are bound to it, so changing it will effect them all + the dark mode as well.
 
 Will it look good? Probably not – Will it be accessible? No guarantees – Is it a good example? For sure! 😎
 
 ::gridBlock{colNum="2" gap="var(--space-m);"}
 :::grid-unit
-So here we have 5 variant of the system color, and you can click on the color picker to see it in action.
+#### System Color
+So here we have 5 variant of the ***system*** color, and you can click on the color picker to see it in action.
 - `--color-sys-main`
 - `--color-sys-slight`
 - `--color-sys-dim`
@@ -180,20 +176,50 @@ So here we have 5 variant of the system color, and you can click on the color pi
 
 ::gridBlock{colNum="2" gap="var(--space-m);"}
 :::grid-unit
-So here we have 5 variant of the system color, and you can click on the color picker to see it in action.
-- `--color-sys-main`
-- `--color-sys-slight`
-- `--color-sys-dim`
-- `--color-sys-dis`
-- `--color-sys-none`
+#### System Invert Color
+And here we have 5 variant of the ***system-invert*** color – Change it too!
+- `--color-sys-invert-main`
+- `--color-sys-invert-slight`
+- `--color-sys-invert-dim`
+- `--color-sys-invert-dis`
+- `--color-sys-invert-none`
 :::
-:::token-color{colorNorDark="antiquewhite" colorDark="hsl(180, 25%, 15%)" colorName="--color-sys-invert"}
+:::token-color{colorName="sys-invert"}
 :::
 ::
 
-### 2nd Live Example!
+::gridBlock{colNum="2" gap="var(--space-m);"}
+:::grid-unit
+#### Link Color
+5 variant of the ***link*** color. the icons and buttons are using this one too – Go ahead, see it in action!
 
-> **Update SVG size, border thickness & colors**
+- `--color-link-main`
+- `--color-link-slight`
+- `--color-link-dim`
+- `--color-link-dis`
+- `--color-link-none`
+:::
+:::token-color{colorName="link"}
+:::
+::
+
+::gridBlock{colNum="2" gap="var(--space-m);"}
+:::grid-unit
+#### Focus Color
+And lastly 5 variant of the ***focus*** color – you know the drill.
+- `--color-focus-main`
+- `--color-focus-slight`
+- `--color-focus-dim`
+- `--color-focus-dis`
+- `--color-focus-none`
+:::
+:::token-color{colorName="focus"}
+:::
+::
+
+### 2nd Live Example! Update SVG Tokens
+
+Following the article I've written about [Simple Icon System](/post/simple-icon-system/){target="_self"}, here you can see how you can easily **update SVG size, border thickness & colors**.
 
 ::IconExample
 ::
@@ -204,8 +230,8 @@ So here we have 5 variant of the system color, and you can click on the color pi
 $screen-max-size-2xs: 460px;
 $screen-max-size-xs: 599px;
 $screen-max-size-sm: 959px;
-$screen-max-size-md: 1279px; 
-$screen-max-size-lg: 1919px; 
+$screen-max-size-md: 1279px;
+$screen-max-size-lg: 1919px;
 $screen-max-size-xl: 5000px;
 ```
 
@@ -262,7 +288,7 @@ $border-radius-lg
 
 ### Typography
 
-### Font Family 
+### Font Family
 
 ```css
 --font-body
@@ -350,7 +376,7 @@ functions.get-pep-color($color-map, $color-name)
 
 ### Explanation
 
-Call the color function: 
+Call the color function:
 
 `functions`: this is SCSS `use` referring to the file location
 
