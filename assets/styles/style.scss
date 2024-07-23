@@ -6,22 +6,30 @@
 	--border-radius-xs: var(--space-3xs);
 
 	--color-sys-main: hsl(180, 25%, 15%);
-	--color-sys-slight: hsla(0, 0%, 10%, 0.75);
-	--color-sys-dim: hsla(0, 0%, 10%, 0.35);
-	--color-sys-dis: hsla(0, 0%, 10%, 0.1);
-	--color-sys-none: hsla(0, 0%, 10%, 0);
-	--color-sys-dark-dark: hsla(0, 0%, 10%, 0.1);
+	--color-sys-slight: color-mix(in hsl, var(--color-sys-main) 75%, transparent);
+	--color-sys-dim: color-mix(in hsl, var(--color-sys-main) 35%, transparent);
+	--color-sys-dis: color-mix(in hsl, var(--color-sys-main) 5%, transparent);
+	--color-sys-none: color-mix(in hsl, var(--color-sys-main) 0%, transparent);
 
-	--color-sys-invert: antiquewhite;
-	--color-sys-invert-highlight: white;
+	--color-sys-invert-highlight: color-mix(in hsl, var(--color-sys-invert-main) 5%, white);
+	--color-sys-invert-main: antiquewhite;
+	--color-sys-invert-slight: color-mix(in hsl, var(--color-sys-invert-main) 75%, transparent);
+	--color-sys-invert-dim: color-mix(in hsl, var(--color-sys-invert-main) 35%, transparent);
+	--color-sys-invert-dis: color-mix(in hsl, var(--color-sys-invert-main) 5%, transparent);
+	--color-sys-invert-none: color-mix(in hsl, var(--color-sys-invert-main) 0%, transparent);
 
-	--color-link-main: hsl(280, 100%, 25%);
-	--color-link-slight: hsl(280, 100%, 35%);
+	--color-link-main: hsl(280, 100%, 35%);
+	--color-link-slight: color-mix(in hsl, var(--color-link-main) 75%, transparent);
+	--color-link-dim: color-mix(in hsl, var(--color-link-main) 35%, transparent);
+	--color-link-dis: color-mix(in hsl, var(--color-link-main) 5%, transparent);
+	--color-link-none: color-mix(in hsl, var(--color-link-main) 0%, transparent);
 
 	--color-focus-main: hsl(200, 100%, 30%);
-	--color-focus-slight: hsl(200, 100%, 50%);
+	--color-focus-slight: color-mix(in hsl, var(--color-focus-main) 75%, transparent);
+	--color-focus-dim: color-mix(in hsl, var(--color-focus-main) 35%, transparent);
+	--color-focus-dis: color-mix(in hsl, var(--color-focus-main) 5%, transparent);
+	--color-focus-none: color-mix(in hsl, var(--color-focus-main) 0%, transparent);
 
-	--bg-primary: var(--color-sys-invert);
 	--content-space: 1rem;
 	--space-md: 1rem;
 	--bg-pre: none;
@@ -38,7 +46,7 @@
 }
 
 body {
-	background-color: var(--color-sys-invert);
+	background-color: var(--color-sys-invert-main);
 	color: var(--color-sys-main);
 }
 
