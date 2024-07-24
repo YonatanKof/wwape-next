@@ -9,15 +9,12 @@
 </template>
 <style lang="scss">
 .simple-warp {
-	display: flex;
-	justify-content: center; /* Horizontal */
-	align-items: center; /* Vertical */
 	min-height: 100vh;
 	background: radial-gradient(ellipse at bottom right, var(--color-link-dim), transparent 50%);
 }
 .simple-app {
-	max-width: var(--display-width-lg);
-	margin-inline: var(--space-m);
 	min-height: 100dvh;
+	@include display-width;
+	padding-block-end: var(--space-xl);
 }
 </style>
