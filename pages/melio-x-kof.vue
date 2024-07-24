@@ -2,17 +2,6 @@
 definePageMeta({
 	layout: 'simple',
 });
-import { useDraggable } from '@vueuse/core';
-const xPos = ref('calc(50% - 10rem);');
-const yPos = ref('calc(100% - 12rem);');
-const el = ref(null);
-const elll = ref(null);
-const { x, y, style } = useDraggable(el, {
-	initialValue: { x: xPos.value, y: yPos.value },
-});
-// const { x, y, style } = useDraggable(elll, {
-// 	initialValue: { x: xPos.value, y: yPos.value },
-// });
 const show = ref(false);
 </script>
 <template>
