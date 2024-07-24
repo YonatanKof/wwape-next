@@ -8,13 +8,28 @@ const show = ref(false);
 	<section>
 		<h1>Design Systems</h1>
 		<main>
-			<div class="box b1">
+			<div class="box" id="intro">
 				<p>
 					At Pepperi I’ve wear several hats, one of them was to create
 					<i><strong>PDS</strong> (Pepperi Design System)</i>, for both <i>Product</i> and <i>Brand</i>.
 				</p>
 			</div>
-			<div class="box b3">
+			<div class="box" id="article">
+				<h4>Design Tokens</h4>
+				<p>
+					I've written a an article about design tokens and how to use them in a design system + super cool example!
+				</p>
+				<p>Be sure to check it out!</p>
+				<NuxtLink
+					class="button"
+					style="border-radius: var(--space-l)"
+					href="/post/design-tokens/"
+				>
+					Read the article!
+				</NuxtLink>
+				<!-- <VideoTag class="box-image" marginBlock="unset" src="/misc/design-tokens.webm" show-mesh="true"></VideoTag> -->
+			</div>
+			<div class="box" id="product-storybook">
 				<h3>PSD, Product Storybook</h3>
 				<div class="box-flex">
 					<span class="box-content">
@@ -36,6 +51,46 @@ const show = ref(false);
 					<VideoTag class="box-image" marginBlock="unset" src="/misc/DesignSystem-1.webm" show-mesh="true"></VideoTag>
 				</div>
 			</div>
+			<div class="box" id="composite-storybook">
+				<h4>PDS, Composite Storybook</h4>
+				<div class="box-flex">
+					<span class="box-content">
+						<p>
+							This composite Storybook contains the <i>Organisms</i> (selectors, pickers, etc'.),
+							<i>Templates</i> (lists, forms, layouts, editors, etc'.) and <i>Pages</i> which are now a WIP.
+						</p>
+						<NuxtLink
+							class="button"
+							style="border-radius: var(--space-l)"
+							target="_blanc"
+							href="https://626ab62298ef5a004ac8cdea-fsmhdxxugw.chromatic.com/?path=/docs/pepperi-extended-level-composition--page"
+						>
+							Visit the Composite Library
+						</NuxtLink>
+					</span>
+					<VideoTag class="box-image" marginBlock="unset" src="/misc/DesignSystem-2.webm" show-mesh="true"></VideoTag>
+				</div>
+			</div>
+			<div class="box" id="brand">
+				<h3>PDS, Brand Guide</h3>
+				<div class="box-flex">
+					<span class="box-content">
+						<p>
+							I've also guided management to strengthen Pepperi brand. In this design initiative we've set brand values,
+							mission statement, tone and voice and brand book.
+						</p>
+						<NuxtLink
+							class="button"
+							style="border-radius: var(--space-l)"
+							target="_blanc"
+							href="https://brand.pepperi.com/"
+						>
+							Visit the Brand Guide
+						</NuxtLink>
+					</span>
+					<VideoTag class="box-image" marginBlock="unset" src="/misc/brand.webm" show-mesh="true"></VideoTag>
+				</div>
+			</div>
 		</main>
 		<DragIt class="box-drag">
 			<span class="corners">
@@ -52,16 +107,16 @@ const show = ref(false);
 		<DragIt v-show="show" class="box-drag" yPos="2rem;">
 			<div class="corners">
 				<ul>
-					<li>Working knowledge of complex design systems</li>
-					<li>A proven ability to lead teams without authority</li>
+					<li>Working knowledge of complex DS</li>
+					<li>A proven ability to lead teams w/o authority</li>
 					<li>A designer who code, this site and more</li>
 					<li>Writing guides and PRDs</li>
-					<li>Best practices in collaboration and sharing</li>
-					<li>Best practices in Backlog management</li>
+					<li>Best practices in collab and sharing</li>
+					<li>Best practices in backlog management</li>
 					<li>Working lean and effective</li>
 					<li>Total control over tools</li>
 					<li>Smoking hot recommendations</li>
-					<li>Turn the DS to none-issue and then to a success</li>
+					<li>Turn DS to none-issue and success</li>
 				</ul>
 			</div>
 		</DragIt>
@@ -81,7 +136,9 @@ const show = ref(false);
 main {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(4, auto);
 	gap: var(--space-m);
+	margin-block: var(--space-m);
 }
 ol,
 ul {
@@ -182,24 +239,65 @@ p {
 	gap: var(--space-xs);
 	margin-block-end: var(--space-m);
 }
-.b1 {
+// intro text
+#intro {
 	grid-column: 1 / span 4;
-	grid-row: 1 / auto;
+	grid-row: 1;
 	@media (width < $display-width-sm) {
-		grid-row: 2 / span 4;
+		grid-column: 1 / span 4;
+		grid-row: 2;
+	}
+	@media (width < $display-width-xs) {
+		grid-column: 1 / span 12;
+		grid-row: 2;
 	}
 }
-.b2 {
-	grid-column: 5 / span 8;
-	grid-row: 2 / auto;
+#article {
+	grid-column: 1 / span 4;
+	grid-row: 4;
+	@media (width < $display-width-sm) {
+		grid-column: 1 / span 4;
+		grid-row: 2;
+	}
+	@media (width < $display-width-xs) {
+		grid-column: 1 / span 12;
+		grid-row: 2;
+	}
 }
-.b3 {
+// main storybook
+#product-storybook {
 	grid-column: 5 / span 8;
-	grid-row: 1 / auto;
+	grid-row: 1 / span 2;
 	container-type: inline-size;
 	container-name: box-item;
 	@media (width < $display-width-sm) {
 		grid-column: 1 / span 12;
+		grid-row: 1;
+	}
+}
+#composite-storybook {
+	grid-column: 1 / span 4;
+	grid-row: 2 / span 2;
+	container-type: inline-size;
+	container-name: box-item;
+	@media (width < $display-width-sm) {
+		grid-column: 1 / span 12;
+		grid-row: 3;
+	}
+}
+// Brand guide
+#brand {
+	grid-column: 5 / span 8;
+	grid-row: 3 / span 2;
+	container-type: inline-size;
+	container-name: box-item;
+	@media (width < $display-width-sm) {
+		grid-column: 5 / span 8;
+		grid-row: 2;
+	}
+	@media (width < $display-width-xs) {
+		grid-column: 1 / span 12;
+		grid-row: 3;
 	}
 }
 @container box-item (width < 480px) {
