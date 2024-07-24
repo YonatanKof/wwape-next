@@ -32,6 +32,10 @@ defineProps({
 		type: String,
 		default: '',
 	},
+	marginBlock: {
+		type: String,
+		default: 'var(--space-xs)',
+	},
 });
 </script>
 <template>
@@ -46,7 +50,7 @@ defineProps({
 </template>
 <style lang="scss" scoped>
 div {
-	margin-block: var(--space-xs);
+	margin-block: v-bind(marginBlock);
 	display: block;
 	width: 100%;
 	height: min-content;
