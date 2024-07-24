@@ -3,7 +3,7 @@ title: 'Melio next DS Lead'
 author_name: 'Yonatan Ben Knaan'
 date: '2024-07-21'
 updated: ''
-cover_image: '/misc/melio.webp'
+cover_image: '/misc/melio-x-kof.svg'
 cover_image_height: '400'
 cover_image_thumbhash: 'OQgGDYCpp3eIeHh/hYV3gqd3b4YH'
 social_image: '/misc/melio-social.jpg'
@@ -53,7 +53,7 @@ showMesh: true
 :::
 ::
 
-### PDS, Product Composite Storybook 
+<!-- ### PDS, Product Composite Storybook 
 
 ::gridBlock{colNum="2" gap="var(--space-m);"}
 :::grid-unit
@@ -68,7 +68,7 @@ showMesh: true
 ::::video-tag{src="/misc/DesignSystem-2.webm" showMesh=true}
 ::::
 :::
-::
+:: -->
 
 ---
 
