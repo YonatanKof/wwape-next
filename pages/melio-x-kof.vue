@@ -2,33 +2,28 @@
 definePageMeta({
 	layout: 'simple',
 });
+import { useDraggable } from '@vueuse/core';
+const xPos = ref('calc(50% - 10rem);');
+const yPos = ref('calc(100% - 12rem);');
+const el = ref(null);
+const elll = ref(null);
+const { x, y, style } = useDraggable(el, {
+	initialValue: { x: xPos.value, y: yPos.value },
+});
+// const { x, y, style } = useDraggable(elll, {
+// 	initialValue: { x: xPos.value, y: yPos.value },
+// });
+const show = ref(false);
 </script>
 <template>
 	<section>
 		<h1>Design Systems</h1>
 		<main>
 			<div class="box b1">
-				<h5>Hi Guy, A few words of what I'll bring as a DS lead at Melio:</h5>
-				<ul>
-					<li>Working knowledge of complex design systems</li>
-					<li>A proven ability to lead teams without authority</li>
-					<li>A designer who code, this site for example but but ask to see more</li>
-					<li>Writing guides and PRDs</li>
-					<li>Best practices in Collaboration and Sharing</li>
-					<li>Best practices in Backlog management</li>
-					<li>Working lean and effective</li>
-					<li>Total control over tools</li>
-					<li>Recommendations form managers and other leading figures</li>
-					<li>Shifting the DS form a hard *challenge* to a success</li>
-				</ul>
-			</div>
-			<div class="box b2">
 				<p>
-					At Pepperi I’ve wear several hats, one of them was to create Pepperi Design System (hereinafter ***PDS***),
-					for both the *Product* and *Brand* teams.
+					At Pepperi I’ve wear several hats, one of them was to create
+					<i><strong>PDS</strong> (Pepperi Design System)</i>, for both <i>Product</i> and <i>Brand</i>.
 				</p>
-
-				<p>Let's review the products Design System</p>
 			</div>
 			<div class="box b3">
 				<h3>PSD, Product Storybook</h3>
@@ -53,12 +48,40 @@ definePageMeta({
 				</div>
 			</div>
 		</main>
+		<DragIt class="box-drag">
+			<span class="corners">
+				<h4 class="drag-title">Hi Guy 👋</h4>
+				<div class="box-drag-span">
+					<p>Yonatan as DS lead at Melio?</p>
+					<button @click="show = !show">
+						<span v-if="show">I've seen enough</span>
+						<span v-else>Show me why!</span>
+					</button>
+				</div>
+			</span>
+		</DragIt>
+		<DragIt v-show="show" class="box-drag" yPos="2rem;">
+			<div class="corners">
+				<ul>
+					<li>Working knowledge of complex design systems</li>
+					<li>A proven ability to lead teams without authority</li>
+					<li>A designer who code, this site and more</li>
+					<li>Writing guides and PRDs</li>
+					<li>Best practices in collaboration and sharing</li>
+					<li>Best practices in Backlog management</li>
+					<li>Working lean and effective</li>
+					<li>Total control over tools</li>
+					<li>Smoking hot recommendations</li>
+					<li>Turn the DS to none-issue and then to a success</li>
+				</ul>
+			</div>
+		</DragIt>
 	</section>
 </template>
 <style lang="scss" scoped>
 @mixin box-corner() {
 	background-color: #fff;
-	border: 0.5px solid #f26725;
+	border: 0.5px solid var(--color-link-main);
 	box-shadow: 0 1px 2px #0003;
 	content: '';
 	display: block;
@@ -73,29 +96,49 @@ main {
 }
 ol,
 ul {
-	padding-inline-start: var(--space-s);
+	margin: 0;
+	padding-inline-start: 0;
+	list-style: none;
 }
-li::marker {
-	color: var(--color-focus-dim);
+li:nth-child(odd) {
+	background-color: var(--color-sys-dis);
+}
+li {
+	padding: var(--space-xs) var(--space-s);
+	font-size: var(--step--1);
 }
 
-li,
 p {
 	font-size: var(--step-0);
 }
 .button {
 	width: max-content;
 }
-.box {
-	padding: var(--space-m);
+.box-drag {
+	user-select: none;
+	.drag-title {
+		animation: wobble 1s ease-in-out alternate infinite;
+		margin-block-start: var(--space-s);
+		padding-inline: var(--space-s);
+	}
+	cursor: move;
+	position: fixed;
 	background-color: var(--color-sys-invert-highlight);
-	// border-radius: var(--border-radius-md);
-	display: flex;
-	flex-direction: column;
-	gap: var(--space-xs);
-	// background-image: radial-gradient(var(--color-link-dim) 1px, transparent 1px);
-	background-size: 8px 8px;
-	border: 0.5px solid #f26725;
+	z-index: 100;
+	border: 0.5px solid var(--color-link-main);
+	width: 20rem;
+	box-shadow: var(--shadow-sm);
+	button {
+		min-width: 10rem;
+		height: var(--space-xl);
+	}
+	.box-drag-span {
+		display: flex;
+		align-items: center;
+		gap: var(--space-s);
+		padding: var(--space-s);
+		padding-block-start: var(--space-xs);
+	}
 	&::after {
 		@include box-corner();
 		left: -0.25rem;
@@ -106,6 +149,30 @@ p {
 		right: -0.25rem;
 		top: -0.25rem;
 	}
+}
+.corners {
+	// position: relative;
+	&::after {
+		@include box-corner();
+		bottom: -0.25rem;
+		left: -0.25rem;
+	}
+	&::before {
+		@include box-corner();
+		bottom: -0.25rem;
+		right: -0.25rem;
+	}
+}
+.box {
+	padding: var(--space-m);
+	background-color: var(--color-sys-invert-highlight);
+	border-radius: var(--border-radius-md);
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-xs);
+	background-image: radial-gradient(var(--color-link-dis) 1px, transparent 1px);
+	background-size: 8px 8px;
+	overflow: hidden;
 }
 .box-flex {
 	display: flex;
@@ -128,7 +195,7 @@ p {
 }
 .b1 {
 	grid-column: 1 / span 4;
-	grid-row: 1 / span 4;
+	grid-row: 1 / auto;
 	@media (width < $display-width-sm) {
 		grid-row: 2 / span 4;
 	}
