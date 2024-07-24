@@ -159,13 +159,4 @@ input[type='color']::-webkit-color-swatch-wrapper {
 input[type='color']::-webkit-color-swatch {
 	border: unset;
 }
-@keyframes wobble {
-	from {
-		font-variation-settings: 'wght' 500, 'BNCE' 100, 'INFM' 0;
-	}
-
-	to {
-		font-variation-settings: 'wght' 700, 'BNCE' -50, 'INFM' 100;
-	}
-}
 </style>
