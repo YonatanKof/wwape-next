@@ -8,89 +8,65 @@ const show = ref(false);
 	<section>
 		<h1>Design Systems</h1>
 		<main>
-			<div class="box" id="intro">
+			<ArticleGrid id="intro">
 				<p>
 					At Pepperi I’ve wear several hats, one of them was to create
 					<i><strong>PDS</strong> (Pepperi Design System)</i>, for both <i>Product</i> and <i>Brand</i>.
 				</p>
-			</div>
-			<div class="box" id="article">
-				<h4>Design Tokens</h4>
+			</ArticleGrid>
+
+			<ArticleGrid
+				id="article"
+				title="Design Tokens"
+				btnText="Read the article!"
+				linkTo="/post/design-tokens/"
+				imgSrc="/misc/design-tokens.webm"
+			>
 				<p>
 					I've written a an article about design tokens and how to use them in a design system + super cool example!
 				</p>
 				<p>Be sure to check it out!</p>
-				<NuxtLink
-					class="button"
-					style="border-radius: var(--space-l)"
-					href="/post/design-tokens/"
-				>
-					Read the article!
-				</NuxtLink>
-				<!-- <VideoTag class="box-image" marginBlock="unset" src="/misc/design-tokens.webm" show-mesh="true"></VideoTag> -->
-			</div>
-			<div class="box" id="product-storybook">
-				<h3>PSD, Product Storybook</h3>
-				<div class="box-flex">
-					<span class="box-content">
-						<p>The basic Storybook used by the Product and development teams.</p>
-						<p>
-							It contains the <i>Atoms</i> (typography, color, spacing etc'.) and <i>Molecules</i> (buttons, inputs,
-							links, etc'.).
-						</p>
-						<NuxtLink
-							class="button"
-							style="border-radius: var(--space-l)"
-							target="_blanc"
-							href="https://60ae3e9eff8e4c003b2f90d4-orunuhbrch.chromatic.com/?path=/docs/pepperi-design-system--page"
-						>
-							Visit Storybook
-						</NuxtLink>
-						<!-- <button>See it here</button> -->
-					</span>
-					<VideoTag class="box-image" marginBlock="unset" src="/misc/DesignSystem-1.webm" show-mesh="true"></VideoTag>
-				</div>
-			</div>
-			<div class="box" id="composite-storybook">
-				<h4>PDS, Composite Storybook</h4>
-				<div class="box-flex">
-					<span class="box-content">
-						<p>
-							This composite Storybook contains the <i>Organisms</i> (selectors, pickers, etc'.),
-							<i>Templates</i> (lists, forms, layouts, editors, etc'.) and <i>Pages</i> which are now a WIP.
-						</p>
-						<NuxtLink
-							class="button"
-							style="border-radius: var(--space-l)"
-							target="_blanc"
-							href="https://626ab62298ef5a004ac8cdea-fsmhdxxugw.chromatic.com/?path=/docs/pepperi-extended-level-composition--page"
-						>
-							Visit the Composite Library
-						</NuxtLink>
-					</span>
-					<VideoTag class="box-image" marginBlock="unset" src="/misc/DesignSystem-2.webm" show-mesh="true"></VideoTag>
-				</div>
-			</div>
-			<div class="box" id="brand">
-				<h3>PDS, Brand Guide</h3>
-				<div class="box-flex">
-					<span class="box-content">
-						<p>
-							I've also guided management to strengthen Pepperi brand. In this design initiative we've set brand values,
-							mission statement, tone and voice and brand book.
-						</p>
-						<NuxtLink
-							class="button"
-							style="border-radius: var(--space-l)"
-							target="_blanc"
-							href="https://brand.pepperi.com/"
-						>
-							Visit the Brand Guide
-						</NuxtLink>
-					</span>
-					<VideoTag class="box-image" marginBlock="unset" src="/misc/brand.webm" show-mesh="true"></VideoTag>
-				</div>
-			</div>
+			</ArticleGrid>
+
+			<ArticleGrid
+				id="product-storybook"
+				title="PSD, Product Storybook"
+				btnText="Visit Storybook"
+				linkTo="https://60ae3e9eff8e4c003b2f90d4-orunuhbrch.chromatic.com/?path=/docs/pepperi-design-system--page"
+				imgSrc="/misc/DesignSystem-1.webm"
+			>
+				<p>The basic Storybook used by the Product and development teams.</p>
+				<p>
+					It contains the <i>Atoms</i> (typography, color, spacing etc'.) and <i>Molecules</i> (buttons, inputs, links,
+					etc'.).
+				</p>
+			</ArticleGrid>
+
+			<ArticleGrid
+				id="composite-storybook"
+				title="PDS, Composite Storybook"
+				btnText="Visit Storybook"
+				linkTo="https://626ab62298ef5a004ac8cdea-fsmhdxxugw.chromatic.com/?path=/docs/pepperi-extended-level-composition--page"
+				imgSrc="/misc/DesignSystem-2.webm"
+			>
+				<p>
+					This composite Storybook contains the <i>Organisms</i> (selectors, pickers, etc'.), <i>Templates</i> (lists,
+					forms, layouts, editors, etc'.) and <i>Pages</i> which are now a WIP.
+				</p>
+			</ArticleGrid>
+
+			<ArticleGrid
+				id="brand"
+				title="Pepperi, Brand Guide"
+				btnText="Visit Storybook"
+				linkTo="https://brand.pepperi.com/"
+				imgSrc="/misc/brand.webm"
+			>
+				<p>
+					I've also guided management to strengthen Pepperi brand. In this design initiative we've set brand values,
+					mission statement, tone and voice and brand book.
+				</p>
+			</ArticleGrid>
 		</main>
 		<DragIt class="box-drag">
 			<span class="corners">
@@ -209,36 +185,6 @@ p {
 		right: -0.25rem;
 	}
 }
-.box {
-	padding: var(--space-m);
-	background-color: var(--color-sys-invert-highlight);
-	border-radius: var(--border-radius-md);
-	display: flex;
-	flex-direction: column;
-	gap: var(--space-xs);
-	background-image: radial-gradient(var(--color-link-dis) 1px, transparent 1px);
-	background-size: 8px 8px;
-	overflow: hidden;
-}
-.box-flex {
-	display: flex;
-	flex-direction: row;
-	gap: var(--space-s);
-	margin-inline-end: calc(var(--space-m) * -1);
-	margin-block-end: calc(var(--space-m) * -1);
-	overflow: hidden;
-}
-.box-image {
-	min-width: clamp(20rem, 50%, 30rem);
-	margin-block-end: calc(var(--space-m) * -1);
-	margin-inline-end: calc(var(--space-m) * -1);
-}
-.box-content {
-	display: flex;
-	flex-direction: column;
-	gap: var(--space-xs);
-	margin-block-end: var(--space-m);
-}
 // intro text
 #intro {
 	grid-column: 1 / span 4;
@@ -268,8 +214,6 @@ p {
 #product-storybook {
 	grid-column: 5 / span 8;
 	grid-row: 1 / span 2;
-	container-type: inline-size;
-	container-name: box-item;
 	@media (width < $display-width-sm) {
 		grid-column: 1 / span 12;
 		grid-row: 1;
@@ -278,8 +222,6 @@ p {
 #composite-storybook {
 	grid-column: 1 / span 4;
 	grid-row: 2 / span 2;
-	container-type: inline-size;
-	container-name: box-item;
 	@media (width < $display-width-sm) {
 		grid-column: 1 / span 12;
 		grid-row: 3;
@@ -289,8 +231,6 @@ p {
 #brand {
 	grid-column: 5 / span 8;
 	grid-row: 3 / span 2;
-	container-type: inline-size;
-	container-name: box-item;
 	@media (width < $display-width-sm) {
 		grid-column: 5 / span 8;
 		grid-row: 2;
@@ -298,18 +238,6 @@ p {
 	@media (width < $display-width-xs) {
 		grid-column: 1 / span 12;
 		grid-row: 3;
-	}
-}
-@container box-item (width < 480px) {
-	.box-flex {
-		flex-direction: column;
-	}
-	.box-content {
-		padding-inline-end: var(--space-m);
-		margin-block-end: unset;
-	}
-	.box-image {
-		margin-block-end: calc(var(--space-m) * -6);
 	}
 }
 </style>
