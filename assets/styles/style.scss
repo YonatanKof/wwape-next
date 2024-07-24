@@ -63,12 +63,14 @@ img {
 	border-radius: var(--border-radius-sm);
 	display: flow-root;
 }
-button {
+button, .button {
 	@include focus();
+	text-decoration: none;
+	text-align: center;
 	color: var(--color-link-main);
 	background-color: var(--color-sys-invert-highlight);
 	box-shadow: 0 var(--space-4xs) var(--color-link-main), inset 0 0 0 1px var(--color-link-slight);
-	border: none;
+	border: unset !important;
 	padding: 0.8em 1em;
 	font-size: var(--step--1);
 	border-radius: var(--border-radius-xs);
@@ -81,6 +83,7 @@ button {
 	align-items: center;
 	justify-content: center;
 	gap: var(--space-3xs);
+	height: max-content;
 	&:hover {
 		transform: translateY(0);
 		box-shadow: 0 0 var(--color-link-main), inset 0 0 0 1px var(--color-link-main);
