@@ -72,7 +72,7 @@ div {
 .confirm-modal-content {
 	display: flex;
 	flex-direction: column;
-	background-color: var(--color-sys-invert);
+	background-color: var(--color-sys-invert-main);
 	border-radius: var(--border-radius-xs);
 	box-shadow: var(--shadow-lg);
 	max-width: calc(var(--space-8xl) * 3);
