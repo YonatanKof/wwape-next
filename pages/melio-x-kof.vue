@@ -146,11 +146,11 @@ ul {
 	padding-inline-start: 0;
 	list-style: none;
 }
-li:nth-child(odd) {
+li:nth-child(even) {
 	background-color: var(--color-sys-dis);
 }
 li {
-	padding: var(--space-xs) var(--space-s);
+	padding: var(--space-2xs) var(--space-xs);
 	font-size: var(--step--1);
 }
 
