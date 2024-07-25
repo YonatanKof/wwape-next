@@ -207,7 +207,6 @@ p {
 	}
 }
 .corners {
-	// position: relative;
 	&::after {
 		@include box-corner();
 		bottom: -0.3rem;
@@ -219,7 +218,6 @@ p {
 		right: -0.3rem;
 	}
 }
-// intro text
 #intro {
 	span {
 		display: block;
@@ -251,7 +249,6 @@ p {
 		grid-row: 4;
 	}
 }
-// main storybook
 #product-storybook {
 	grid-column: 5 / span 8;
 	grid-row: 1;
@@ -276,7 +273,6 @@ p {
 		grid-row: 5;
 	}
 }
-// Brand guide
 #article {
 	grid-column: 1 / span 4;
 	grid-row: 1 / span 2;
