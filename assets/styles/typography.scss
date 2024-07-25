@@ -120,6 +120,9 @@ blockquote {
 	ol {
 		margin-block-start: 0.125em;
 	}
+	img {
+		margin-block-start: var(--space-m);
+	}
 }
 .cv {
 	ul {
@@ -297,7 +300,7 @@ code {
 	margin-block-end: var(--space-s);
 	font-size: 80%;
 	width: max-content;
-	white-space: nowrap;
+	// white-space: nowrap;
 }
 pre {
 	position: relative;
