@@ -1,26 +1,31 @@
 <script setup>
 const config = useRuntimeConfig();
+const pageDesc = `An amazing site by ${config.public.siteOwnerName}`;
+const pageImg = '/images/index-social.jpg';
+const pageAlt = 'Social cover for this site main page';
 useSeoMeta({
 	ogType: 'website',
-	description: () => `An amazing site by ${config.public.siteOwnerName}`,
-	ogDescription: () => `An amazing site by ${config.public.siteOwnerName}`,
-	twitterDescription: () => `An amazing site by ${config.public.siteOwnerName}`,
-	image: '/images/main.png',
-	ogImage: '/images/main.png',
-	twitterImage: '/images/main.png',
-	imageAlt: 'Social cover for this site main page',
-	ogImageAlt: 'Social cover for this site main page',
-	twitterImageAlt: 'Social cover for this site main page',
+	description: () => pageDesc,
+	ogDescription: () => pageDesc,
+	twitterDescription: () => pageDesc,
+	image: pageImg,
+	ogImage: pageImg,
+	twitterImage: pageImg,
+	imageAlt: pageAlt,
+	ogImageAlt: pageAlt,
+	twitterImageAlt: pageAlt,
 	twitterCard: 'summary_large_image',
 	twitterSite: '@yonatankof',
 });
 </script>
 <template>
 	<main>
-		<IntroText
+		<IntroText :is-on="true"
 			title="World Wide Ape"
-			text="Hi, I'm Yonatan; a friend, a family man, a designer, a developer, an illustrator, a maker, a mismatched persona and an alright dude – Welcome to my site 👋"
-			text2="This site is under contraction 🚧 expect much more design articles and a few blog posts soon"
-		/>
+			text="I'm Yonatan, a mismatched persona, friend, lover, family man and an alright dude form Tel Aviv, the culture capital of the land of the killer Jews."
+			text2="If life is a RPG and you're an NPC, so I'm a multiclass; graphic/brand/product designer, illustrator, developer, photographer and maker."
+			/>
+			<!-- text2="So happy you're here! Please enjoy my site 🔥" -->
+			<!-- text2="This site is under contraction 🚧 expect much more design articles and a few blog posts soon" -->
 	</main>
 </template>

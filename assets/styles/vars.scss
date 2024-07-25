@@ -1,6 +1,10 @@
-$display-width-normal: 960px;
-$display-width-narrow: 544px;
+$display-width-md: 880px;
+$display-width-sm: 720px;
+$display-width-xs: 544px;
+$display-width-2xs: 426px;
 :root{
-    --display-width-normal: 960px;
-    --display-width-narrow: 544px;
+    --display-width-md: 880px;
+    --display-width-sm: 720px;
+    --display-width-xs: 544px;
+    --display-width-2xs: 426px;
 }

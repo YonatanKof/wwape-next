@@ -27,26 +27,36 @@ const { $formatDate } = useNuxtApp();
 <template>
 	<masonry-wall
 		:items="designData"
-		:ssr-columns="1"
+		:ssr-columns="2"
 		:column-width="masonryColumnWidth"
 		:gap="masonryGap"
 		:max-columns="masonryMaxColumns"
 	>
-		<template #default="{ item, index }">
-			<NuxtLink class="item" :to="item._path + '/'">
+		<template #default="{ item, index }" :key="index">
+			<NuxtLink class="item" v-if="item._path" :to="item._path + '/'">
 				<div class="item-content">
 					<h3 id="title">{{ item.title }}</h3>
-					<p>{{ $formatDate(item.date) }}</p>
-					<p v-if="item.description">{{ item.description }}</p>
+					<p id="mata-data">{{ $formatDate(item.date) }}</p>
+					<p v-if="item.description" v-html="item.description"></p>
 				</div>
 				<UnLazyImage
 					:thumbhash="item.cover_image_thumbhash"
 					:src="item.cover_image"
 					:alt="item.image_alt"
 					width="1000"
-  					:height="item.cover_image_height"
+					:height="item.cover_image_height"
 				/>
 			</NuxtLink>
+
+			<div v-else >
+				<FlowChartItem
+					:modalTitle="item.name"
+					:modalDescription="item.description"
+					:modalShape="item.shape"
+					:modalImage="item.image"
+					:modalBigImage="item.bigImage"
+				/>
+			</div>
 		</template>
 	</masonry-wall>
 </template>
@@ -56,7 +66,7 @@ p {
 	font-size: var(--step--1);
 	margin-block-end: unset;
 }
-p:first-of-type {
+#mata-data {
 	font-size: var(--step--2);
 	color: var(--color-sys-slight);
 	margin-block-end: var(--space-3xs);
@@ -75,6 +85,7 @@ img {
 	display: block;
 }
 #title {
+	margin-block-start: unset;
 	margin-block-end: var(--space-4xs);
 }
 a {
@@ -84,8 +95,11 @@ a {
 	inset: 0;
 	display: block;
 	font-weight: 400;
+	font-style: normal;
+	font-variation-settings: 'wght' 400, 'ital' 0;
 	&:hover {
-		font-weight: 400;
+		font-style: normal;
+		font-variation-settings: 'wght' 400, 'ital' 0;
 	}
 	text-decoration: none;
 }

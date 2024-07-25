@@ -16,43 +16,43 @@ defineProps({
 		type: String,
 		default: '',
 	},
+	desc: {
+		type: String,
+		default: undefined,
+	},
 });
 </script>
 
 <template>
-	<div class="youtube-player">
-		<iframe
-			class="youtube-player__item"
-			:width="width"
-			:height="height"
-			:videoId="videoId"
-			v-bind:src="'https://www.youtube.com/embed/' + videoId"
-			:title="title"
-			frameborder="0"
-			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-			allowfullscreen
-			loading="lazy"
-		></iframe>
+	<div>
+		<div class="youtube-player">
+			<iframe
+				class="youtube-player__item"
+				:width="width"
+				:height="height"
+				:videoId="videoId"
+				v-bind:src="'https://www.youtube.com/embed/' + videoId"
+				:title="title"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen
+				loading="lazy"
+			></iframe>
+		</div>
+		<em v-if="desc">{{ desc }}</em>
 	</div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .youtube-player {
-	// margin-block-end: var(--spacem-sm);
-	overflow: auto;
-	border-radius: var(--space-3xs);
-	position: relative;
-	// padding-bottom: 66.667%; // 3x2
-	// padding-bottom: 75%; // 4x3
-	padding-bottom: 56.5%; // 16x9
-	height: 0;
-	margin-block-end: var(--space-2xs);
+	aspect-ratio: 16/9;
+	overflow: hidden;
+	border-radius: var(--border-radius-sm);
 	&__item {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
+		aspect-ratio: 560/315;
 	}
+}
+em {
+	@include desc-text-under();
 }
 </style>

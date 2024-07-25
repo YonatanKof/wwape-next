@@ -1,63 +1,13 @@
-# Nuxt 3 Minimal Starter
+# World Wide Ape
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A website by Yonatan Ben Knaan – Visit the site [by clicking this link](https://wwape.com/)
 
-## Setup
+> This site is under contraction 🚧 expect more design articles and a few blog posts soon
 
-Make sure to install the dependencies:
+## Tech stack
 
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- [Nuxt 3](https://nuxt.com/docs/getting-started/introduction)
+- [Nuxt Content](https://content.nuxt.com/)
+- [Thumbhash](https://evanw.github.io/thumbhash/)
+- [Netlify](https://www.netlify.com/)
+- [Clarity](https://clarity.microsoft.com)

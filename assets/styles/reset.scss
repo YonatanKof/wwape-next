@@ -35,4 +35,10 @@
 		border-collapse: collapse;
 		border-spacing: 0;
 	}
+	@media (prefers-reduced-motion: no-preference) {
+		:has(:target) {
+			scroll-behavior: smooth;
+			scroll-padding-block-start: 3rem;
+		}
+	}
 }

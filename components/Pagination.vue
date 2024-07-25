@@ -93,7 +93,7 @@ a {
 	align-items: center;
 	width: var(--space-l);
 	height: var(--space-l);
-	border-radius: var(--border-radius-regular);
+	border-radius: var(--border-radius-xs);
 	background-color: var(--color-sys-dis);
 }
 .pagination-item.active {
@@ -114,6 +114,7 @@ a {
 .pagination-icon {
 	width: var(--space-xs);
 	height: var(--space-xs);
+	fill: var(--color-link-slight);
 }
 .flip {
 	transform: rotateY(180deg);

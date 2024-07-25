@@ -140,7 +140,7 @@ $color-l-shape: hsl(35, 85%, 55%);
 	height: 40rem;
 	background-color: var(--bg-primary);
 	overflow: hidden;
-	border-radius: var(--border-radius-regular);
+	border-radius: var(--border-radius-xs);
 	display: flex;
 	// @include mQ-max($display-size-sm) {
 	@media screen and (max-width: 720px) {
@@ -309,7 +309,7 @@ $color-l-shape: hsl(35, 85%, 55%);
 	flex-direction: column;
 	background-color: var(--color-sys-invert);
 	box-shadow: var(--shadow-md);
-	border-radius: var(--border-radius-regular);
+	border-radius: var(--border-radius-xs);
 	&__label {
 		font-size: inherit;
 		padding: 0;

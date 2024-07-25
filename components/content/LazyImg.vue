@@ -1,8 +1,3 @@
-<template>
-	<UnLazyImage :thumbhash="thumbhash" :src="refinedSrc" :alt="alt" :width="width" :height="height" auto-sizes />
-	<em>{{ desc }}</em>
-</template>
-
 <script setup lang="ts">
 import { withTrailingSlash, withLeadingSlash, joinURL } from 'ufo';
 import { useRuntimeConfig, computed } from '#imports';
@@ -32,6 +27,10 @@ const props = defineProps({
 		type: String,
 		default: undefined,
 	},
+	hideOnMobile: {
+		type: String,
+		default: undefined,
+	},
 });
 
 const refinedSrc = computed(() => {
@@ -44,3 +43,20 @@ const refinedSrc = computed(() => {
 	return props.src;
 });
 </script>
+<template>
+	<span class="lazy-img">
+		<UnLazyImage :thumbhash="thumbhash" :src="refinedSrc" :alt="alt" :width="width" :height="height" auto-sizes />
+		<em v-if="desc">{{ desc }}</em>
+	</span>
+</template>
+
+<style lang="scss" scoped>
+span {
+	@media (width <= $display-width-xs) {
+		display: v-bind(hideOnMobile);
+	}
+}
+em {
+	margin-block-end: 1.5em;
+}
+</style>

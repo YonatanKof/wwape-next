@@ -17,12 +17,12 @@ const { data, error } = await useAsyncData(cleanPath, async () => {
 });
 
 const config = useRuntimeConfig();
-const siteTitle = `A design by ${config.public.siteOwnerName}`;
+const siteTitle = `A design by ${config.public.siteOwnerName} form the ${config.public.siteName}`;
 
 // Set the meta
 const dynamicUrl = config.public.baseUrl;
 const canonicalPath = dynamicUrl + (path + '/').replace(/\/+$/, '/');
-const image = dynamicUrl + data.value?.article?.social_image || '/images/main.png';
+const image = dynamicUrl + data.value?.article?.social_image || '/images/index-social.jpg';
 
 const { $formatDate } = useNuxtApp();
 
@@ -30,7 +30,6 @@ useHead({
 	titleTemplate: (titleChunk) => {
 		return titleChunk ? `${titleChunk} - ` + siteTitle : siteTitle;
 	},
-	// title: data.value?.article?.title,
 	meta: [
 		{ name: 'description', content: data.value?.article?.description },
 		{
@@ -68,6 +67,7 @@ useHead({
 });
 const goHome = () => clearError({ redirect: '/' });
 const goDesign = () => clearError({ redirect: '/design' });
+const goPost = () => clearError({ redirect: '/post' });
 </script>
 
 <template>
@@ -83,7 +83,7 @@ const goDesign = () => clearError({ redirect: '/design' });
 						<p v-if="doc.updated">Updated {{ $formatDate(doc.updated) }}</p>
 					</span>
 					<hr />
-					<ContentRenderer :value="doc" />
+					<span class="content-renderer"><ContentRenderer :value="doc" /></span>
 				</article>
 				<SeeMore :prev="prev" :next="next" />
 			</template>
@@ -95,6 +95,7 @@ const goDesign = () => clearError({ redirect: '/design' });
 					<div id="link-buttons">
 						<button @click="goHome">Back to home page</button>
 						<button @click="goDesign">See some nice designs</button>
+						<button @click="goPost">Read some nice articles</button>
 					</div>
 				</section>
 			</template>
@@ -118,9 +119,7 @@ main {
 	color: var(--color-sys-slight);
 	font-size: var(--step--1);
 	margin-block-end: unset;
-}
-@media (width <= $display-width-narrow) {
-	.dates > p {
+	@media (width <= $display-width-xs) {
 		font-size: var(--step--3);
 	}
 }
