@@ -14,7 +14,7 @@
 }
 .simple-app {
 	min-height: 100dvh;
-	@include display-width;
+	@include display-width($display-width-xl);
 	padding-block-end: var(--space-xl);
 }
 </style>
