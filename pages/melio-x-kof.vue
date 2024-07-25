@@ -3,6 +3,27 @@ definePageMeta({
 	layout: 'simple',
 });
 const show = ref(false);
+const config = useRuntimeConfig();
+const pageDesc = `Reaching out to Melio about DS Lead– ${config.public.siteOwnerName}`;
+const pageImg = '/misc/melio-social.jpg';
+const pageAlt = 'Cover image for Melio × Kof';
+useHead({
+	title: 'Melio × Kof',
+});
+useSeoMeta({
+	ogType: 'website',
+	description: () => pageDesc,
+	ogDescription: () => pageDesc,
+	twitterDescription: () => pageDesc,
+	image: pageImg,
+	ogImage: pageImg,
+	twitterImage: pageImg,
+	imageAlt: pageAlt,
+	ogImageAlt: pageAlt,
+	twitterImageAlt: pageAlt,
+	twitterCard: 'summary_large_image',
+	twitterSite: '@yonatankof',
+});
 </script>
 <template>
 	<section>
