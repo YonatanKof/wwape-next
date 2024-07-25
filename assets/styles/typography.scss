@@ -36,6 +36,7 @@ i,
 label,
 input,
 textarea,
+blockquote,
 li {
 	font-family: var(--font-body);
 	font-size: var(--step-1);
@@ -118,10 +119,6 @@ blockquote {
 	p {
 		text-wrap: pretty;
 		margin-block-start: 0.5em;
-	}
-	li > ul,
-	ol {
-		margin-block-start: 0.125em;
 	}
 	img {
 		margin-block-start: var(--space-m);
