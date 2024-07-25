@@ -39,13 +39,14 @@ const props = defineProps({
 				class="image-box"
 				marginBlock="unset"
 				:src="imgSrc"
-				show-mesh="true"
+				:show-mesh="false"
 				:target="target"
+				min-width="408px"
 			></VideoTag>
 		</span>
 	</div>
 </template>
-<style scoped>
+<style lang="scss" scoped>
 .button {
 	border-radius: var(--space-l);
 	width: max-content;
@@ -74,7 +75,11 @@ h4 {
 	--offset: 50px;
 	width: calc(100% + var(--offset));
 	margin-inline-end: calc(var(--offset) * -1);
+	margin-block-start: var(--space-s);
 	height: 100%;
+	border-radius: var(--border-radius-sm);
+	box-shadow: var(--shadow-md-even);
+	overflow: hidden;
 }
 .content {
 	display: flex;
@@ -90,7 +95,9 @@ h4 {
 		flex-direction: column;
 	}
 	.image-box {
-		--offset: 50px;
+		--offset: 100px;
+		margin-block-start: unset;
+		margin-inline-start: var(--space-s);
 	}
 	.content {
 		max-width: unset;
