@@ -10,9 +10,10 @@ const show = ref(false);
 		<main>
 			<ArticleGrid id="intro">
 				<p>
-					At Pepperi I’ve wear several hats, one of them was to create
-					<i><strong>PDS</strong> (Pepperi Design System)</i>, for both <i>Product</i> and <i>Brand</i>.
+					At Pepperi I’ve wear several hats, one of them was the creation of
+					<i><strong>Pepperi Design System</strong> (PDS)</i>, for both <i>product</i> and <i>devs</i> to enjoy. 
 				</p>
+				<p>Check out the content around and see what's what 👌</p>
 			</ArticleGrid>
 
 			<ArticleGrid
@@ -30,15 +31,14 @@ const show = ref(false);
 
 			<ArticleGrid
 				id="product-storybook"
-				title="PSD, Product Storybook"
+				title="Pepperi DS, Product Storybook"
 				btnText="Visit Storybook"
 				linkTo="https://60ae3e9eff8e4c003b2f90d4-orunuhbrch.chromatic.com/?path=/docs/pepperi-design-system--page"
 				imgSrc="/misc/DesignSystem-1.webm"
 			>
-				<p>The basic Storybook used by the Product and development teams.</p>
 				<p>
-					It contains the <i>Atoms</i> (typography, color, spacing etc'.) and <i>Molecules</i> (buttons, inputs, links,
-					etc'.).
+					This library used by the <i>Product</i> and <i>Dev</i> teams to <strong>streamline development</strong>. It
+					showcases the <i>atomic</i> and <i>molecular</i> elements that makes Pepperi DS.
 				</p>
 			</ArticleGrid>
 
@@ -57,7 +57,7 @@ const show = ref(false);
 
 			<ArticleGrid
 				id="brand"
-				title="Pepperi, Brand Guide"
+				title="Pepperi Brand Guide"
 				btnText="Visit Storybook"
 				linkTo="https://brand.pepperi.com/"
 				imgSrc="/misc/brand.webm"
@@ -112,8 +112,8 @@ const show = ref(false);
 main {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: repeat(4, auto);
-	gap: var(--space-m);
+	grid-template-rows: repeat(3, 20rem);
+	gap: var(--space-s);
 	margin-block: var(--space-m);
 }
 ol,
@@ -187,8 +187,8 @@ p {
 }
 // intro text
 #intro {
-	grid-column: 1 / span 4;
-	grid-row: 1;
+	grid-column: 5 / span 4;
+	grid-row: 2;
 	@media (width < $display-width-sm) {
 		grid-column: 1 / span 4;
 		grid-row: 2;
@@ -198,9 +198,9 @@ p {
 		grid-row: 2;
 	}
 }
-#article {
-	grid-column: 1 / span 4;
-	grid-row: 4;
+#brand {
+	grid-column: 9 / span 4;
+	grid-row: 2 / span 2;
 	@media (width < $display-width-sm) {
 		grid-column: 1 / span 4;
 		grid-row: 2;
@@ -213,24 +213,24 @@ p {
 // main storybook
 #product-storybook {
 	grid-column: 5 / span 8;
-	grid-row: 1 / span 2;
+	grid-row: 1;
 	@media (width < $display-width-sm) {
 		grid-column: 1 / span 12;
 		grid-row: 1;
 	}
 }
 #composite-storybook {
-	grid-column: 1 / span 4;
-	grid-row: 2 / span 2;
+	grid-column: 1 / span 8;
+	grid-row: 3;
 	@media (width < $display-width-sm) {
 		grid-column: 1 / span 12;
 		grid-row: 3;
 	}
 }
 // Brand guide
-#brand {
-	grid-column: 5 / span 8;
-	grid-row: 3 / span 2;
+#article {
+	grid-column: 1 / span 4;
+	grid-row: 1 / span 2;
 	@media (width < $display-width-sm) {
 		grid-column: 5 / span 8;
 		grid-row: 2;
