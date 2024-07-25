@@ -36,6 +36,10 @@ defineProps({
 		type: String,
 		default: 'var(--space-xs)',
 	},
+	minWidth: {
+		type: String,
+		default: undefined,
+	},
 });
 </script>
 <template>
@@ -70,6 +74,7 @@ video {
 	border-radius: var(--border-radius-xs);
 	overflow: hidden;
 	display: flow-root;
+	min-width: v-bind(minWidth);
 }
 em {
 	@include desc-text-under();
