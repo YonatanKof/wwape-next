@@ -77,6 +77,7 @@ In the attached video below, like I'd mentioned before, you can see the color to
 src: /posts/design-tokens/theme-editing.webm
 controls: true
 desc: Pepperi theme editor in action
+aspectRatio: 720/435
 ---
 ::
 
