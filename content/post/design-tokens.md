@@ -115,8 +115,9 @@ But what about this CSS declaration?
 }
 ```
 
-This declaration is just for this silly description text under the `img` or `video` tag.
-![Description text under the "img" or "video" tag](/posts/design-tokens/slily.webp)
+This bog declaration above is just styling for the silly description text under the `img` or `video` tag.
+
+![Description text under the "img" or "video" tag](/posts/design-tokens/slily.webp){style="max-width: 320px;"}
 *Description text under the `img` & `video` tags*
 
 Wouldn't be nicer to include it with just one line? Like so:
@@ -127,9 +128,21 @@ Wouldn't be nicer to include it with just one line? Like so:
 
 Nicer for sure 👌
 
+So should think of the type of styling as a token too because it abstracts the mechanics of design into a a human readable context like `desc-text-under`.
+
 #### 2nd use case: Multiplatform
 
-This is also happening at Pepperi... But if your doing just more then one platform like web and Android or iOS, where the syntax is different from one another, then using design tokens is the only way to have the same design Multiplatform.
+This is also happening at Pepperi – The case is like so; if your doing just more then one platform – web, Android or iOS, where the syntax is different from one another, then using design tokens is the only way to have the same design Multiplatform.
+
+So let's asy that if the Token is `--color-caution-dim` which is 50% opacity red, it will look like this:
+
+| CSS hsla | Android (XML) | iOS (Swift) |
+| ----- | ----- | ----- |
+| hsla(0, 100%, 50%, 0.5) | #80FF0000  | UIColor(red: 1.0, green: 0.0, blue: 0.0, alpha: 0.5) |
+
+So every platform will manage it's own syntax but the name and its meaning is consistent product wide.
+
+
 
 ## This site's tokens
 
