@@ -8,7 +8,7 @@ cover_image_height: '836'
 cover_image_thumbhash: ''
 social_image: '/posts/'
 image_alt: ''
-description: 'A visualisation of my design tokens'
+description: 'A brief intro and visualisation of design tokens'
 tags: ['Creative']
 ---
 
@@ -16,7 +16,7 @@ Design tokens are standardized, reusable variables that define the visual proper
 
 ## Why Design Tokens?
 
-### [Consistency]{id="consistency"}
+### Consistency
 
 One can easily and write `1em` instead of `1rem`. This type of mistake can be slight or harsh, but regardless of its final result, it will eventually hurt the the design's consistency.
 
@@ -138,12 +138,13 @@ So let's asy that if the Token is `--color-caution-dim` which is 50% opacity red
 
 | CSS hsla | Android (XML) | iOS (Swift) |
 | ----- | ----- | ----- |
-| hsla(0, 100%, 50%, 0.5) | #80FF0000  | UIColor(red: 1.0, green: 0.0, blue: 0.0, alpha: 0.5) |
+| `hsla(0, 100%, 50%, 0.5)` | `#80FF0000 ` | `UIColor(red: 1.0, green: 0.0, blue: 0.0, alpha: 0.5)` |
 
 So every platform will manage it's own syntax but the name and its meaning is consistent product wide.
 
 
 
+<!-- 
 ## This site's tokens
 
 This site is quite small so there's not a lot of tokens, but let's review the ones that I do have.
@@ -156,19 +157,28 @@ This site is quite small so there's not a lot of tokens, but let's review the on
 - Typography [↘︎](#typography){target="_self"} (using [Utopia](https://utopia.fyi/))
 - Border Radius [↘︎](#radius){target="_self"}
 - Box Shadow [↘︎](#shadow){target="_self"}
-- Link [↘︎](#section1){target="_self"}
+- Link [↘︎](#section1){target="_self"} 
+-->
 
 
-## [Color Tokens]{id="color"}
+## This site's tokens
+This site is quite small so there's not a lot of tokens, but I'm using them for - *Colors*, *Sizes*, *Breakpoints*, *Typography* and *Shadows*. I might touch on it in a later article. For the sake of this article though I'll address just the color tokens.
 
-Here we've got what I call, ***system*** color – its used for *text* color and most *UI elements*. It have 5 states; `main`, `slight`, `dim`, `dis` and `none`. You can see in the code block below how I structure it, or see it in action [here](#section-1)
+### [Color Tokens]{id="color"}
 
-The power or working like this, is that if one day you choose to change the system color, you'll just have to change it in place (or two if you have dark mode)
+Giving colors semantic meaning is important, so here's my naming convention:
+
+1. ***System Color*** – Its used for *text* color and most *UI elements*. 
+2. ***System Invert Color*** – Its mostly used for *backgrounds*. 
+3. ***Brand Color*** – You guessed it. Here I'm using it a my link color too
+4. ***Focus Color*** – Used to focus aon elements.
+
+Each of them have 5 states; `main`, `slight`, `dim`, `dis` and `none`. You can see in the code block below how I structure it, or see it in action in the [1st Live Example](#1st-example){target="_self"} below.
+
+The power or working like this, is that if one day you choose to change the system color, you'll just have to change it in one place, or two if you have dark mode.
 
 
-### [1st Live Example!]{id="1st-example"}
-
-> **Update Token Colors**
+### [1st Live Example; Updating Color Tokens!!]{id="1st-example"}
 
 In this example you can update `--color-sys-main` and see its effect over the different color style. Since of the CSS setup shown above, all the colors are bound to it, so changing it will effect them all + the dark mode as well.
 
@@ -204,16 +214,18 @@ And here we have 5 variant of the ***system-invert*** color – Change it too!
 
 ::gridBlock{colNum="2" gap="var(--space-m);"}
 :::grid-unit
-#### Link Color
-5 variant of the ***link*** color. the icons and buttons are using this one too – Go ahead, see it in action!
+#### Brand Color
+5 variant of the ***brand*** color. Being used by links, icons and buttons.
 
-- `--color-link-main`
-- `--color-link-slight`
-- `--color-link-dim`
-- `--color-link-dis`
-- `--color-link-none`
+Go ahead, see it in action!
+
+- `--color-brand-main`
+- `--color-brand-slight`
+- `--color-brand-dim`
+- `--color-brand-dis`
+- `--color-brand-none`
 :::
-:::token-color{colorName="link"}
+:::token-color{colorName="brand"}
 :::
 ::
 
@@ -231,13 +243,13 @@ And lastly 5 variant of the ***focus*** color – you know the drill.
 :::
 ::
 
-### 2nd Live Example! Update SVG Tokens
+### 2nd Live Example; Updating SVG Tokens!
 
 Following the article I've written about [Simple Icon System](/post/simple-icon-system/){target="_self"}, here you can see how you can easily **update SVG size, border thickness & colors**.
 
 ::IconExample
 ::
-
+<!-- 
 ### Screen Size
 
 ```scss
@@ -502,3 +514,5 @@ $z-index-medium: 100;
 $z-index-low: 50;
 $z-index-lowest: 1;
 ```
+
+ -->
