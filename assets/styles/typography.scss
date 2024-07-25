@@ -167,7 +167,6 @@ em {
 	line-height: 1;
 }
 strong {
-	font-weight: 600;
 	font-variation-settings: 'wght' 600;
 }
 h1 {
@@ -268,7 +267,6 @@ a,
 	color: inherit;
 	text-decoration: inherit;
 	font-family: inherit;
-	font-weight: inherit;
 	border: unset;
 	font-variation-settings: 'INFM' 50, 'wght' 500, 'BNCE' 0;
 	&:before {
@@ -288,7 +286,6 @@ a,
 		opacity: 1;
 	}
 	&:hover {
-		font-weight: unset;
 		font-variation-settings: 'INFM' 100, 'wght' 700, 'BNCE' 50;
 		border: unset;
 	}
