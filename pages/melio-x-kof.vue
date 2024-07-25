@@ -6,15 +6,21 @@ const show = ref(false);
 </script>
 <template>
 	<section>
-		<h1>Design Systems</h1>
+		<h1>Melio × Kof</h1>
+		<p>Hi Guy, we know each other form back in the days, when I owned <i><strong>Matnas Interactive</strong></i> with Oded Babayoff.</p>
+		<p>Anyways, I would sure like to Join Melio and to help you win at what you do – Let's talk!</p>
 		<main>
-			<ArticleGrid id="intro">
-				<p>
-					At Pepperi I’ve wear several hats, one of them was the creation of
-					<i><strong>Pepperi Design System</strong> (PDS)</i>, for both <i>product</i> and <i>devs</i> to enjoy. 
-				</p>
-				<p>Check out the content around and see what's what 👌</p>
-			</ArticleGrid>
+			<div id="intro">
+				<span>
+					<p>
+						As a multi-class player, at Pepperi I’ve wear several hats, one of them was the creation of
+						<i><strong>Pepperi Design System</strong> (PDS)</i>, for both <i>product</i> and <i>devs</i> to enjoy and to
+						improve velocity.
+					</p>
+					<p>Check out the content around and visit the links see it all in action 👀</p>
+				</span>
+				<VideoTag style="max-width: 16rem" src="/misc/ninja01.webm"></VideoTag>
+			</div>
 
 			<ArticleGrid
 				id="article"
@@ -24,7 +30,7 @@ const show = ref(false);
 				imgSrc="/misc/design-tokens.webm"
 			>
 				<p>
-					I've written a an article about design tokens and how to use them in a design system + super cool example!
+					A short article I've written about <i><strong>design tokens</strong></i> and how to use them in a design system + super cool example!
 				</p>
 				<p>Be sure to check it out!</p>
 			</ArticleGrid>
@@ -115,6 +121,13 @@ main {
 	grid-template-rows: repeat(3, 20rem);
 	gap: var(--space-s);
 	margin-block: var(--space-m);
+	@media (width <= $display-width-md) {
+		grid-template-rows: repeat(3, 24rem);
+	}
+	@media (width <= $display-width-sm) {
+		grid-template-columns: 1fr;
+		grid-template-rows: 28rem 20rem 28rem 28rem 28rem;
+	}
 }
 ol,
 ul {
@@ -149,7 +162,7 @@ p {
 	z-index: 100;
 	border: 0.5px solid var(--color-link-main);
 	width: 20rem;
-	box-shadow: var(--shadow-sm);
+	box-shadow: var(--shadow-md-even);
 	button {
 		min-width: 10rem;
 		height: var(--space-xl);
@@ -163,80 +176,95 @@ p {
 	}
 	&::after {
 		@include box-corner();
-		left: -0.25rem;
-		top: -0.25rem;
+		left: -0.3rem;
+		top: -0.3rem;
 	}
 	&::before {
 		@include box-corner();
-		right: -0.25rem;
-		top: -0.25rem;
+		right: -0.3rem;
+		top: -0.3rem;
 	}
 }
 .corners {
 	// position: relative;
 	&::after {
 		@include box-corner();
-		bottom: -0.25rem;
-		left: -0.25rem;
+		bottom: -0.3rem;
+		left: -0.3rem;
 	}
 	&::before {
 		@include box-corner();
-		bottom: -0.25rem;
-		right: -0.25rem;
+		bottom: -0.3rem;
+		right: -0.3rem;
 	}
 }
 // intro text
 #intro {
+	span {
+		display: block;
+		padding-inline: var(--space-2xs);
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-2xs);
+	}
 	grid-column: 5 / span 4;
 	grid-row: 2;
-	@media (width < $display-width-sm) {
+	@media (width < $display-width-md) {
 		grid-column: 1 / span 4;
-		grid-row: 2;
+		grid-row: 1;
 	}
-	@media (width < $display-width-xs) {
-		grid-column: 1 / span 12;
+	@media (width < $display-width-sm) {
+		grid-column: 1;
 		grid-row: 2;
 	}
 }
 #brand {
 	grid-column: 9 / span 4;
 	grid-row: 2 / span 2;
-	@media (width < $display-width-sm) {
-		grid-column: 1 / span 4;
-		grid-row: 2;
+	@media (width < $display-width-md) {
+		grid-column: 9 / span 4;
+		grid-row: 2 / span 2;
 	}
-	@media (width < $display-width-xs) {
-		grid-column: 1 / span 12;
-		grid-row: 2;
+	@media (width < $display-width-sm) {
+		grid-column: 1;
+		grid-row: 4;
 	}
 }
 // main storybook
 #product-storybook {
 	grid-column: 5 / span 8;
 	grid-row: 1;
+	@media (width < $display-width-md) {
+		grid-column: 5 / span 8;
+		grid-row: 1;
+	}
 	@media (width < $display-width-sm) {
-		grid-column: 1 / span 12;
+		grid-column: 1;
 		grid-row: 1;
 	}
 }
 #composite-storybook {
 	grid-column: 1 / span 8;
 	grid-row: 3;
-	@media (width < $display-width-sm) {
-		grid-column: 1 / span 12;
+	@media (width < $display-width-md) {
+		grid-column: 1 / span 8;
 		grid-row: 3;
+	}
+	@media (width < $display-width-sm) {
+		grid-column: 1;
+		grid-row: 5;
 	}
 }
 // Brand guide
 #article {
 	grid-column: 1 / span 4;
 	grid-row: 1 / span 2;
-	@media (width < $display-width-sm) {
-		grid-column: 5 / span 8;
+	@media (width < $display-width-md) {
+		grid-column: 1 / span 8;
 		grid-row: 2;
 	}
-	@media (width < $display-width-xs) {
-		grid-column: 1 / span 12;
+	@media (width < $display-width-sm) {
+		grid-column: 1;
 		grid-row: 3;
 	}
 }
