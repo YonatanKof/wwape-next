@@ -13,24 +13,23 @@ defineProps({
 
 <template>
 	<section>
-		<h2 id="title">See More</h2>
+		<h3 id="title">See More</h3>
 		<hr />
 		<nav class="more">
 			<nuxt-link class="item" v-if="prev" :to="prev?._path">
-				<h4 id="" class="item-content">Go back → {{ prev.title }}</h4>
+				<h6 id="" class="item-content"><span>Back:</span> {{ prev.title }}</h6>
 				<img :src="prev?.social_image" :alt="prev?.image_alt" />
 			</nuxt-link>
 			<nuxt-link v-else class="item">
-				<h4 id="" class="item-content">No previous items</h4>
+				<h6 id="" class="item-content">No previous items</h6>
 				<img src="/no-prev-next.webp" alt="An image for no previous items" />
 			</nuxt-link>
-			<!-- <span v-else>The 1st item</span> -->
 			<nuxt-link class="item" v-if="next" :to="next?._path">
-				<h4 id="" class="item-content">Go next → {{ next.title }}</h4>
+				<h6 id="" class="item-content"><span>Next:</span> {{ next.title }}</h6>
 				<img :src="next?.social_image" :alt="next?.image_alt" />
 			</nuxt-link>
 			<nuxt-link v-else class="item">
-				<h4 id="" class="item-content">No next items</h4>
+				<h6 id="" class="item-content">No next items</h6>
 				<img src="/no-prev-next.webp" alt="An image for no next items" />
 			</nuxt-link>
 		</nav>
@@ -64,10 +63,11 @@ a {
 	@include focus();
 	inset: 0;
 	display: block;
-	font-weight: 400;
-	&:hover {
-		font-weight: 400;
-	}
 	text-decoration: none;
+}
+span {
+	color: var(--color-sys-slight);
+	font-variation-settings: 'wght' 300;
+
 }
 </style>
