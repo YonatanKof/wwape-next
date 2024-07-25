@@ -36,7 +36,7 @@ const props = defineProps({
 			</span>
 			<VideoTag
 				v-if="imgSrc"
-				class="box-image"
+				class="image-box"
 				marginBlock="unset"
 				:src="imgSrc"
 				show-mesh="true"
@@ -52,7 +52,7 @@ const props = defineProps({
 }
 .box {
 	background-color: var(--color-sys-invert-highlight);
-	border-radius: var(--border-radius-md);
+	border-radius: var(--border-radius-sm);
 	background-image: radial-gradient(var(--color-link-dis) 1px, transparent 1px);
 	background-size: 8px 8px;
 	overflow: hidden;
@@ -60,30 +60,40 @@ const props = defineProps({
 	container-type: inline-size;
 }
 h4 {
-	margin: var(--space-s);
+	margin-inline: var(--space-s);
+	margin-block-start: var(--space-s);
 }
 
 .flip {
 	display: flex;
 	flex-direction: row;
-	gap: var(--space-s);
+	height: 100%;
 }
 
-.box-image {
-	/* min-width: clamp(20rem, 50%, 30rem); */
-	margin-block-end: calc(var(--space-m) * -1);
-	margin-inline-end: calc(var(--space-m) * -1);
+.image-box {
+	--offset: 50px;
+	width: calc(100% + var(--offset));
+	margin-inline-end: calc(var(--offset) * -1);
+	height: 100%;
 }
 .content {
 	display: flex;
 	flex-direction: column;
 	gap: var(--space-xs);
-	margin-block-end: var(--space-m);
+	margin-block: var(--space-s);
+	margin-inline: var(--space-s);
+	max-width: calc(var(--space-6xl) * 2);
 }
 
 @container flipped (width < 480px) {
 	.flip {
 		flex-direction: column;
+	}
+	.image-box {
+		--offset: 50px;
+	}
+	.content {
+		max-width: unset;
 	}
 }
 </style>
