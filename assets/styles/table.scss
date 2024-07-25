@@ -18,10 +18,6 @@ th,
 td {
     padding: var(--space-s);
 }
-th:nth-child(even),
 tr:nth-child(even) {
-    background-color: var(--color-link-dis);
-}
-td:nth-child(even) {
     background-color: var(--color-link-dis);
 }
