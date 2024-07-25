@@ -45,6 +45,9 @@ li {
 	@media print {
 		font-size: var(--step--3);
 	}
+	&::selection {
+		background-color: var(--color-brand-dim);
+	}
 }
 
 h1,
@@ -241,12 +244,12 @@ sup {
 	font-variation-settings: 'slnt' -15, 'wght' 400, 'CRSV' 0;
 	font-style: normal;
 	transition: font-variation-settings 0.25s ease-in-out, border-color 0.25s ease-in-out;
-	color: var(--color-link-main);
+	color: var(--color-brand-main);
 	text-decoration: none;
 	letter-spacing: 0.01em;
 	&:hover {
 		font-variation-settings: 'slnt' -7, 'wght' 600, 'CRSV' 0;
-		border-color: var(--color-link-slight);
+		border-color: var(--color-brand-slight);
 	}
 }
 

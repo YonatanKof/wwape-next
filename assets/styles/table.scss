@@ -9,7 +9,7 @@ table {
 
 }
 thead {
-    background-color: var(--color-link-dis);
+    background-color: var(--color-brand-dis);
     font-family: var(--font-hand);
     font-variation-settings: 'wght' 600, 'ital' 1;
 
@@ -19,5 +19,5 @@ td {
     padding: var(--space-s);
 }
 tr:nth-child(even) {
-    background-color: var(--color-link-dis);
+    background-color: var(--color-brand-dis);
 }

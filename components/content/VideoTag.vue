@@ -64,7 +64,7 @@ span {
 	border-radius: var(--border-radius-xs);
 	position: absolute;
 	clear: both;
-	background-image: radial-gradient(transparent 1px, var(--color-link-dim) 1px);
+	background-image: radial-gradient(transparent 1px, var(--color-brand-dim) 1px);
 	background-size: 2px 2px;
 	inset: 0;
 }

@@ -18,11 +18,11 @@
 	--color-sys-invert-dis: color-mix(in hsl, var(--color-sys-invert-main) 10%, transparent);
 	--color-sys-invert-none: color-mix(in hsl, var(--color-sys-invert-main) 0%, transparent);
 
-	--color-link-main: hsl(280, 100%, 35%);
-	--color-link-slight: color-mix(in hsl, var(--color-link-main) 75%, transparent);
-	--color-link-dim: color-mix(in hsl, var(--color-link-main) 35%, transparent);
-	--color-link-dis: color-mix(in hsl, var(--color-link-main) 10%, transparent);
-	--color-link-none: color-mix(in hsl, var(--color-link-main) 0%, transparent);
+	--color-brand-main: hsl(280, 100%, 35%);
+	--color-brand-slight: color-mix(in hsl, var(--color-brand-main) 75%, transparent);
+	--color-brand-dim: color-mix(in hsl, var(--color-brand-main) 35%, transparent);
+	--color-brand-dis: color-mix(in hsl, var(--color-brand-main) 10%, transparent);
+	--color-brand-none: color-mix(in hsl, var(--color-brand-main) 0%, transparent);
 
 	--color-focus-main: hsl(200, 100%, 30%);
 	--color-focus-slight: color-mix(in hsl, var(--color-focus-main) 75%, transparent);
@@ -78,9 +78,9 @@ button, .button {
 	@include focus();
 	text-decoration: none;
 	text-align: center;
-	color: var(--color-link-main);
+	color: var(--color-brand-main);
 	background-color: var(--color-sys-invert-highlight);
-	box-shadow: 0 var(--space-4xs) var(--color-link-main), inset 0 0 0 1px var(--color-link-slight);
+	box-shadow: 0 var(--space-4xs) var(--color-brand-main), inset 0 0 0 1px var(--color-brand-slight);
 	border: unset !important;
 	padding: 0.8em 1em;
 	font-size: var(--step--1);
@@ -97,7 +97,7 @@ button, .button {
 	height: max-content;
 	&:hover {
 		transform: translateY(0);
-		box-shadow: 0 0 var(--color-link-main), inset 0 0 0 1px var(--color-link-main);
+		box-shadow: 0 0 var(--color-brand-main), inset 0 0 0 1px var(--color-brand-main);
 	}
 	p {
 		display: inline-block;
@@ -121,7 +121,7 @@ hr {
 	--color-sys-invert-highlight: color-mix(in hsl, var(--color-sys-invert-main) 75%, black);
 	--color-sys-invert-main: hsl(34, 25%, 15%);
 
-	--color-link-main: hsl(280, 100%, 90%);
+	--color-brand-main: hsl(280, 100%, 90%);
 
 	--color-focus-main: hsl(200, 100%, 40%);
 

@@ -114,7 +114,7 @@ a {
 .pagination-icon {
 	width: var(--space-xs);
 	height: var(--space-xs);
-	fill: var(--color-link-slight);
+	fill: var(--color-brand-slight);
 }
 .flip {
 	transform: rotateY(180deg);

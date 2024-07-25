@@ -128,7 +128,7 @@ useSeoMeta({
 <style lang="scss" scoped>
 @mixin box-corner() {
 	background-color: #fff;
-	border: 0.5px solid var(--color-link-main);
+	border: 0.5px solid var(--color-brand-main);
 	box-shadow: 0 1px 2px #0003;
 	content: '';
 	display: block;
@@ -181,7 +181,7 @@ p {
 	position: fixed;
 	background-color: var(--color-sys-invert-highlight);
 	z-index: 100;
-	border: 0.5px solid var(--color-link-main);
+	border: 0.5px solid var(--color-brand-main);
 	width: 20rem;
 	box-shadow: var(--shadow-md-even);
 	button {

@@ -10,7 +10,7 @@
 <style lang="scss">
 .simple-warp {
 	min-height: 100vh;
-	background: radial-gradient(ellipse at bottom right, var(--color-link-dim), transparent 50%);
+	background: radial-gradient(ellipse at bottom right, var(--color-brand-dim), transparent 50%);
 }
 .simple-app {
 	min-height: 100dvh;
