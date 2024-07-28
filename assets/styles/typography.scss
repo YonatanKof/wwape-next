@@ -174,12 +174,12 @@ strong {
 }
 h1 {
 	font-size: var(--step-5);
-	margin-block-end: var(--space-s);
-	font-variation-settings: 'INFM' 100, 'wght' 600, 'BNCE' 25, 'ital' 1;
-	transition: font-variation-settings 0.5s ease-in-out 0s;
-	&:hover {
-		font-variation-settings: 'INFM' 50, 'wght' 600, 'BNCE' 25, 'ital' 1;
-	}
+	// margin-block-end: var(--space-s);
+	// font-variation-settings: 'INFM' 100, 'wght' 600, 'BNCE' 25, 'ital' 1;
+	// transition: font-variation-settings 0.5s ease-in-out 0s;
+	// &:hover {
+	// 	font-variation-settings: 'INFM' 50, 'wght' 600, 'BNCE' 25, 'ital' 1;
+	// }
 	@media print {
 		font-size: var(--step-3);
 	}
@@ -329,4 +329,8 @@ pre code {
 	background-color: unset;
 	padding: unset;
 	border-radius: unset;
+}
+
+.dimmed {
+	color: var(--color-sys-dim);
 }
