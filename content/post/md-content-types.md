@@ -3,63 +3,66 @@ title: MD Content Types
 author_name: Yonatan Ben Knaan
 date: '2020-11-12'
 updated: ''
-cover_image: '/posts/md-content-types/social-cover-md-content-types.jpg'
-cover_image_height: ''
-cover_image_thumbhash: ''
-social_image: Two identical text groups, the first as plain text with Markdown syntax, the second formatted and styled
-image_alt: 'false'
-description: ''
+cover_image: '/posts/md-content-types/md-content-types.webp'
+cover_image_height: '450'
+cover_image_thumbhash: 'rUcCDYTnaWZ3iHePYol4cxd4cH74'
+social_image: /posts/md-content-types/md-content-types.webp
+image_alt: 'Logo of the Markdown syntax'
+description: 'Just a friendly goto place for me to review all the MD types I use in this website'
 tags: ['yo']
 ---
-<!-- import LShape from '~/components/forPosts/LShape.vue'    
-import YouTubePlayer from '~/components/YouTubePlayer.vue' -->
 
 Hi all 👋  
-Let's see what we have here
+
+Just a boring page to review all the *Markdown* styles for this *Nuxt* website.
+
+> Markdown is a lightweight markup language that uses plain text formatting syntax, making it easy to write and read formatted documents.
+
+## Titles 
+
+How to write titles.
+
+> `id`s are auto generated so ***Boring H1 Title***, will be `id="boring-h1-title"`
 
 # Boring H1 Title
-## Boring H2 Title
-### Boring H3 Title
-#### Boring H4 Title
-##### Boring H5 Title
-###### Boring H6 Title
-
-::LShape
-::
-
-This post ain't interesting at all 🤷 It's just to showcase all of the *Markdown* styles for this *Nuxt* website.
-
-> BTW, I'm using [vue-remark](https://www.npmjs.com/package/@gridsome/vue-remark) to transform MD  
-
-![A Cool Image](md-content-types-cover.png)
+`# Boring H1 Title`
 ## Humdrum H2 Title
-
-I'm using my own **design system**, it's a great way to manage design and theming, and doing it with SCSS is easy and fun – relative to a tool like Sketch – which is awesome but tedious. 
-
-Please keep an eye over [Kof Design System](https://share.goabstract.com/03c7ec17-6183-4b14-9528-59e90014e79e)
-
+`## Humdrum H2 Title`
 ### Dull H3 Title
-
-Because of vue-remark I can add Vue components into my markdown. Like this 3D viewer/controller from an article about Perspective I'm writing:
-
-
+`### Dull H3 Title`
 #### Monotonous H4 Title
-
+`#### Monotonous H4 Title`
 ##### Stale H5 Title
-
+`##### Stale H5 Title`
 ###### Tiresome H6 Title
+`###### Tiresome H6 Title`
 
-This text is **Strong Text**
+## Basic formatting  
 
-This text is *Emphasized Text*
+[Input →]{.dimmed} \**This is Strong Text**  
+[Output →]{.dimmed} **This is Strong Text**  
 
-This text is ~~Strikethrough *Text* Text **Text**~~
+[Input →]{.dimmed} \*This is Emphasized Text*  
+[Output →]{.dimmed} *This is Emphasized Text*  
+
+[Input →]{.dimmed} \~~This is Strikethrough~~  
+[Output →]{.dimmed} ~~This is Strikethrough~~  
+
+[Input →]{.dimmed} \`This is code\`  
+[Output →]{.dimmed} `This is code`  
+
+[Input →]{.dimmed} \*\*\`This\`\*\* \~~is \*\*combo\*\*\~\~ \*\*\*formatting***   
+[Output →]{.dimmed} **`This`** ~~`is` **combo**~~ ***formatting***  
+
 
 ## Blockquotes 
 
 ### Regular stuff
 
 > This is *Blockquote*. Write `>` to use
+
+`> This is *Blockquote*. Write > to use`
+
 > 
 > With multi paragraph
 > 
