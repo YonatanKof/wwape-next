@@ -45,6 +45,7 @@ defineProps({
 
 <style lang="scss" scoped>
 .youtube-player {
+	margin-block-start: var(--space-m);
 	aspect-ratio: 16/9;
 	overflow: hidden;
 	border-radius: var(--border-radius-sm);

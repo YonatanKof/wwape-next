@@ -32,6 +32,14 @@ defineProps({
 		type: String,
 		default: '',
 	},
+	marginBlock: {
+		type: String,
+		default: 'var(--space-xs)',
+	},
+	minWidth: {
+		type: String,
+		default: undefined,
+	},
 });
 </script>
 <template>
@@ -46,7 +54,7 @@ defineProps({
 </template>
 <style lang="scss" scoped>
 div {
-	margin-block: var(--space-xs);
+	margin-block: v-bind(marginBlock);
 	display: block;
 	width: 100%;
 	height: min-content;
@@ -56,7 +64,7 @@ span {
 	border-radius: var(--border-radius-xs);
 	position: absolute;
 	clear: both;
-	background-image: radial-gradient(transparent 1px, var(--color-link-dim) 1px);
+	background-image: radial-gradient(transparent 1px, var(--color-brand-dim) 1px);
 	background-size: 2px 2px;
 	inset: 0;
 }
@@ -66,6 +74,7 @@ video {
 	border-radius: var(--border-radius-xs);
 	overflow: hidden;
 	display: flow-root;
+	min-width: v-bind(minWidth);
 }
 em {
 	@include desc-text-under();

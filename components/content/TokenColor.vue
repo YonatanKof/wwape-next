@@ -71,8 +71,8 @@ onMounted(() => {
 		<hr />
 		<p style="font-size: var(--step--1)">Sample text, <a>sample link</a>, <code>sample code tag</code></p>
 		<button class="icon-btn">
-			<p>And a sample button w/ icon</p>
-			<SvgIconBase stroke-color="var(--color-link-main)">
+			<p>Sample button w/ icon</p>
+			<SvgIconBase stroke-color="var(--color-brand-main)">
 				<IconAuto />
 			</SvgIconBase>
 		</button>
@@ -158,14 +158,5 @@ input[type='color']::-webkit-color-swatch-wrapper {
 }
 input[type='color']::-webkit-color-swatch {
 	border: unset;
-}
-@keyframes wobble {
-	from {
-		font-variation-settings: 'wght' 500, 'BNCE' 100, 'INFM' 0;
-	}
-
-	to {
-		font-variation-settings: 'wght' 700, 'BNCE' -50, 'INFM' 100;
-	}
 }
 </style>

@@ -4,7 +4,7 @@ const SiteNameHere = 'WWApe';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-	modules: ['@nuxt/content', '@unlazy/nuxt', 'nuxt-clarity-analytics', '@nuxt/image', '@nuxtjs/seo'],
+	modules: ['@nuxt/content', '@vueuse/nuxt', '@unlazy/nuxt', 'nuxt-clarity-analytics', '@nuxt/image', '@nuxtjs/seo'],
 	// Used for Nuxt SEO
 	site: {
 		url: baseUrlHere,
