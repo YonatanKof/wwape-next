@@ -34,25 +34,31 @@
 	--space-md: 1rem;
 	--bg-pre: none;
 
+	/* prettier-ignore */
 	--shadow-sm-even: 
 		0 0 0.1rem var(--color-sys-dis), 
 		0 0 0.2rem var(--color-sys-dis),
 		0 0 0.3rem var(--color-sys-dis);
+	/* prettier-ignore */
 	--shadow-sm: 
 		0 0.1rem 0.1rem var(--color-sys-dis), 
 		0 0.2rem 0.2rem var(--color-sys-dis),
 		0 0.3rem 0.3rem var(--color-sys-dis);
+	/* prettier-ignore */
 	--shadow-md-even: 
 		0 0 0.2rem var(--color-sys-dis), 
 		0 0 0.4rem var(--color-sys-dis);
+	/* prettier-ignore */
 	--shadow-md: 
 		0 0.2rem 0.2rem var(--color-sys-dis), 
 		0 0.4rem 0.4rem var(--color-sys-dis),
 		0 0.8rem 0.8rem var(--color-sys-dis);
+	/* prettier-ignore */
 	--shadow-lg-even: 
 		0 0 0.5rem var(--color-sys-dis), 
 		0 0 1.5rem var(--color-sys-dis),
 		0 0 2rem var(--color-sys-dis);
+	/* prettier-ignore */
 	--shadow-lg: 
 		0 0.25rem 0.5rem var(--color-sys-dis), 
 		0 0.75rem 1.5rem var(--color-sys-dis),
@@ -74,7 +80,8 @@ img {
 	border-radius: var(--border-radius-sm);
 	display: flow-root;
 }
-button, .button {
+button,
+.button {
 	@include focus();
 	text-decoration: none;
 	text-align: center;
