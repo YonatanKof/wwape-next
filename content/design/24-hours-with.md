@@ -18,7 +18,7 @@ tags: ['Creative']
 ::lazy-img{src="/designs/24-hours-with/24-hours-with.webp" thumbhash="5QcGDQJZmJCGSIcXmIdpZwd5coAY" alt="A digital painting of a snake's face, with multiple large teeth and it's tongue sticking out"}
 ::
 
-::YouTubePlayer{videoId="P0o7zgTo320" title="King of Snake, official music video by Tomato"}
+::YouTubePlayer{videoId="P0o7zgTo320" title="King of Snake, official music video by Tomato" desc="Dogman and the king of snake "}
 ::
 
 The snake's expressive face, with its menacing teeth, suggests a level of intelligence and cunning that goes beyond its reptilian existence. Attributing human emotions and characteristics to a snake risks imposing our own subjective interpretations onto the animal. The snake, in its silent mystique, its true essence concealed beneath the veil of our anthropomorphic projections – reflects of our human tendency to love and hate the *other*, and to seek understanding in the unfamiliar.

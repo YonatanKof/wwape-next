@@ -142,7 +142,6 @@ $color-l-shape: hsl(35, 85%, 55%);
 	overflow: hidden;
 	border-radius: var(--border-radius-xs);
 	display: flex;
-	// @include mQ-max($display-size-sm) {
 	@media screen and (max-width: 720px) {
 		margin-inline-start: calc(var(--content-space) * -1);
 		margin-inline-end: calc(var(--content-space) * -1);

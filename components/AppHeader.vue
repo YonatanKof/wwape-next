@@ -21,17 +21,17 @@ watchEffect(() => (mode.value = state.value as any));
 			</nav>
 			<button class="icon-btn" @click="next()" :title="`Theme is: ` + state.charAt(0).toUpperCase() + state.slice(1)">
 				<i v-if="state === 'auto'">
-					<SvgIconBase stroke-color="var(--color-link-main)">
+					<SvgIconBase stroke-color="var(--color-brand-main)">
 						<IconAuto />
 					</SvgIconBase>
 				</i>
 				<i v-if="state === 'dark'">
-					<SvgIconBase stroke-color="var(--color-link-main)">
+					<SvgIconBase stroke-color="var(--color-brand-main)">
 						<IconDark />
 					</SvgIconBase>
 				</i>
 				<i v-if="state === 'light'">
-					<SvgIconBase stroke-color="var(--color-link-main)">
+					<SvgIconBase stroke-color="var(--color-brand-main)">
 						<IconLight />
 					</SvgIconBase>
 				</i>

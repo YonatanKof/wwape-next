@@ -1,5 +1,8 @@
 <!-- This is a single post -->
 <script setup>
+definePageMeta({
+	layout: 'simple',
+});
 const { path } = useRoute();
 const cleanPath = path.replace(/\/+$/, '');
 // Data for the meta tags ↓
@@ -74,25 +77,17 @@ const goPost = () => clearError({ redirect: '/hunt' });
 					<section id="article-header">
 						<div id="article-info">
 							<h1 id="title">{{ doc.title }}</h1>
-							<hr />
-							<span class="dates">
-								<p>Posted {{ $formatDate(doc.date) }}</p>
-								<p v-if="doc.updated">•</p>
-								<p v-if="doc.updated">Updated {{ $formatDate(doc.updated) }}</p>
-							</span>
-							<hr />
-							<h3 id="sub-title">{{ doc.description }}</h3>
 						</div>
-						<UnLazyImage
+						<!-- <UnLazyImage
 							id="article-image"
 							:thumbhash="doc.cover_image_thumbhash"
 							:src="doc.cover_image"
 							:alt="doc.image_alt"
 							:height="doc.cover_image_height"
 							auto-sizes
-						/>
+						/> -->
 					</section>
-					<hr />
+					<!-- <hr /> -->
 					<span class="content-renderer"><ContentRenderer :value="doc" /></span>
 				</article>
 			</template>
@@ -102,17 +97,8 @@ const goPost = () => clearError({ redirect: '/hunt' });
 
 <style lang="scss" scoped>
 
-main {
-	max-width: var(--display-width-sm);
-	margin-inline: auto;
-}
 section {
-	display: grid;
-	grid-template-columns: 4fr 1fr 6fr;
-	grid-template-rows: var(--space-2xl) auto var(--space-2xl);
-	height: min-content;
-	margin-block-end: var(--space-m);
-	max-width: var(--display-width-sm);
+
 	@media (width <= $display-width-xs) {
 		grid-template-columns: var(--space-2xl) 1fr var(--space-2xl);
 		grid-template-rows: var(--space-6xl) auto 1fr;
@@ -121,21 +107,8 @@ section {
 		grid-template-columns: var(--space-s) 1fr var(--space-s);
 	}
 }
-#article-info {
-	background-color: var(--color-sys-invert-highlight);
-	grid-column: 1 / span 2;
-	grid-row: 1 / span 2;
-	padding: calc(var(--space-s) + var(--space-3xs));
-	z-index: 10;
-	border-radius: var(--border-radius-sm);
-	height: min-content;
-	@media (width <= $display-width-sm) {
-		padding: var(--space-s);
-	}
-}
 #article-image {
-	grid-column: 2 / span 2;
-	grid-row: 2 / span 2;
+	max-width: 20rem;
 }
 #title {
 	font-size: var(--step-4);
