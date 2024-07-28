@@ -4,9 +4,9 @@ author_name: 'Yonatan Ben Knaan'
 date: '2030-01-01'
 updated: ''
 cover_image: '/posts/design-tokens/design-tokens.webp'
-cover_image_height: '836'
-cover_image_thumbhash: ''
-social_image: '/posts/'
+cover_image_height: '400'
+cover_image_thumbhash: '8OcFFYQGe4ZkqmiHeKdoiAZ1d3Bn'
+social_image: '/posts/design-tokens/design-tokens-social.jpg'
 image_alt: ''
 description: 'A brief intro and visualisation of design tokens'
 tags: ['Creative']
@@ -164,7 +164,7 @@ This site is quite small so there's not a lot of tokens, but let's review the on
 ## This site's tokens
 This site is quite small so there's not a lot of tokens, but I'm using them for - *Colors*, *Sizes*, *Breakpoints*, *Typography* and *Shadows*. I might touch on it in a later article. For the sake of this article though I'll address just the color tokens.
 
-### [Color Tokens]{id="color"}
+### [Color Tokens Breakdown]{id="color"}
 
 Giving colors semantic meaning is important, so here's my naming convention:
 
