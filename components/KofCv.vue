@@ -1,28 +1,50 @@
+<script setup>
+// import { ref } from 'vue';
+let t = ref(0);
+let width = ref(595);
+let height = ref(842);
+
+const props = defineProps({
+	type: {
+		type: String,
+		required: true,
+		default: 'canvas',
+	},
+});
+</script>
+
 <template>
-	<div class="canvasParentContainer">
-		<pdfFrame id="canvasBasicContainer" type="canvas" @on-ready="onInstanceReady" @on-resize="onInstanceResize">
-			<i-linearGradient
-				id="grad3"
-				:x1="0"
-				:y1="0"
-				:x2="100"
-				:y2="100"
-				:colorStops="[
-					{
-						color: '#023c73',
-						offset: 0,
-					},
-					{
-						color: '#5f0b9c',
-						offset: 50,
-					},
-					{
-						color: '#b814c4',
-						offset: 100,
-					},
-				]"
-			/>
-			<i-rect :x="0" :y="0" :width="width" :height="height" rx="50" ry="50" :style="{ fillStyle: 'grad(grad3)' }" />
+	<pdfFrame
+		id="canvasBasicContainer"
+		type="pdf"
+		@on-ready="onInstanceReady"
+		@on-resize="onInstanceResize"
+		:width="width"
+		:height="height"
+	>
+		<i-linearGradient
+			id="grad3"
+			:x1="0"
+			:y1="0"
+			:x2="100"
+			:y2="100"
+			:colorStops="[
+				{
+					color: '#023c73',
+					offset: 0,
+				},
+				{
+					color: '#5f0b9c',
+					offset: 50,
+				},
+				{
+					color: '#b814c4',
+					offset: 100,
+				},
+			]"
+		/>
+		<i-rect :x="0" :y="0" :width="width" :height="height" rx="20" ry="20" :style="{ fillStyle: 'grad(grad3)' }" />
+		<i-g>
 			<i-linearGradient
 				id="grad4"
 				:x1="0"
@@ -50,7 +72,7 @@
 				}"
 			>
 				<i-rect
-					v-for="n in 120"
+					v-for="n in 80"
 					v-bind:key="n"
 					:x="Math.sin((n * 0.5 + 7.5 * (n % 2)) * 0.4 + t) * 50"
 					:y="n * 0.5 * 11"
@@ -81,35 +103,6 @@
 					:style="{ fillStyle: '#ffffff', align: 'justify', font: '18px Courier' }"
 				/>
 			</i-g>
-		</pdfFrame>
-	</div>
+		</i-g>
+	</pdfFrame>
 </template>
-
-<script setup>
-import { ref, watch, onMounted } from 'vue';
-let t = ref(0);
-let loopCount = 2000;
-let runningCount = 0;
-
-let width = ref(0);
-let height = ref(0);
-
-function onInstanceResize(data) {
-	width.value = data.width;
-	height.value = data.height;
-}
-
-function onInstanceReady(layer) {
-	width.value = layer.width;
-	height.value = layer.height;
-	window.requestAnimationFrame(step);
-}
-
-function step() {
-	t.value = t.value + 0.01;
-	var elementExists = document.getElementById('canvasBasicContainer');
-	if (elementExists) {
-		window.requestAnimationFrame(step);
-	}
-}
-</script>
