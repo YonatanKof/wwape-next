@@ -32,7 +32,7 @@ const props = defineProps({
 		<span class="flip">
 			<span class="content">
 				<slot />
-				<NuxtLink v-if="linkTo" class="button" :href="linkTo"> {{ btnText }} </NuxtLink>
+				<NuxtLink v-if="linkTo" class="button" :href="linkTo" :target="target"> {{ btnText }} </NuxtLink>
 			</span>
 			<VideoTag
 				v-if="imgSrc"
@@ -40,7 +40,6 @@ const props = defineProps({
 				marginBlock="unset"
 				:src="imgSrc"
 				:show-mesh="false"
-				:target="target"
 				min-width="408px"
 			></VideoTag>
 		</span>

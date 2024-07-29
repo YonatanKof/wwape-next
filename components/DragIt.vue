@@ -6,7 +6,7 @@ const props = defineProps({
 	},
 	yPos: {
 		type: String,
-		default: 'calc(100% - 12rem);',
+		default: 'calc(100% - 10rem);',
 	},
 	element: {
 		type: String,

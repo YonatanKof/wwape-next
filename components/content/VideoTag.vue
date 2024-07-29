@@ -45,7 +45,7 @@ defineProps({
 <template>
 	<div>
 		<span v-if="showMesh"></span>
-		<video :controls="controls" :autoplay="autoplay" :muted="muted" :loop="loop">
+		<video :controls="controls" :autoplay="autoplay" :muted="muted" :loop="loop" poster="/misc/wucius-wong-tribute.webp">
 			<source :src="src" type="video/webm" />
 			<p>Your browser does not support <code>video</code> tag</p>
 		</video>
