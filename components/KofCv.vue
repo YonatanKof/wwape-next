@@ -24,6 +24,7 @@ const infoObj = {
 };
 
 let textColor = 'hsl(180, 25%, 15%)';
+let brandColor = 'hsl(280, 100%, 35%)';
 let pdfConfig = {
 	fontRegister: {
 		ShantellSans: '/misc/ShantellSans-MediumItalic.ttf',
@@ -89,15 +90,16 @@ let h3Text = '8.25px ShantellSans';
 				:width="firstColWidth"
 				:style="{ fill: textColor, font: bodyText, align: 'left' }"
 			/>
-			<i-text
-				v-for="bullet in dataCv.experience.bullets"
-				:key="bullet"
-				:x="firstCol"
+			<i-group v-for="bullet in dataCv.experience.bullets" :key="bullet">
+				<i-text
+				:x="firstCol + 10"
 				:y="(expPepperiY += bullet.number)"
+				:width="firstColWidth - 10"
 				:text="bullet.text"
-				:width="firstColWidth"
 				:style="{ fill: textColor, font: bodyText, align: 'left' }"
-			/>
+				/>
+				<i-circle :cx="firstCol+4" :cy="expPepperiY + 4" :r="1.8" :style="{ fillStyle: brandColor }" />
+			</i-group>
 			<i-text
 				:x="firstCol"
 				:y="expPepperiY + 20"
@@ -105,7 +107,7 @@ let h3Text = '8.25px ShantellSans';
 				:width="firstColWidth"
 				:style="{ fill: textColor, font: h3Text }"
 			/>
-			<i-text
+			<!-- <i-text
 				v-for="achievement in dataCv.experience.achievements"
 				:key="achievement"
 				:x="firstCol"
@@ -113,7 +115,17 @@ let h3Text = '8.25px ShantellSans';
 				:text="achievement.text"
 				:width="firstColWidth"
 				:style="{ fill: textColor, font: bodyText, align: 'left' }"
-			/>
+			/> -->
+			<i-group v-for="achievement in dataCv.experience.achievements" :key="achievement">
+				<i-text
+				:x="firstCol + 10"
+				:y="(expPepperiY += achievement.number)"
+				:width="firstColWidth - 10"
+				:text="achievement.text"
+				:style="{ fill: textColor, font: bodyText, align: 'left' }"
+				/>
+				<i-circle :cx="firstCol+4" :cy="expPepperiY + 4" :r="1.8" :style="{ fillStyle: brandColor }" />
+			</i-group>
 		</i-group>
 	</pdfFrame>
 </template>
