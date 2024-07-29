@@ -27,7 +27,7 @@ useSeoMeta({
 <template>
 	<main>
 		<h1>CV</h1>
-		<KofCv class="cv" />
+		<KofCv class="cv" type="pdf" />
 	</main>
 </template>
 <style scoped>
