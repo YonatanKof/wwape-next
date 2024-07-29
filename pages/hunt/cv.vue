@@ -2,7 +2,6 @@
 definePageMeta({
 	layout: 'simple',
 });
-const show = ref(false);
 const config = useRuntimeConfig();
 const pageDesc = `CV, ${config.public.siteOwnerName}`;
 const pageImg = '/misc/cv-social.jpg';
@@ -26,7 +25,19 @@ useSeoMeta({
 });
 </script>
 <template>
-	<section>
+	<main>
 		<h1>CV</h1>
-	</section>
+		<KofCv class="cv" />
+	</main>
 </template>
+<style scoped>
+main {
+	height: calc(100vh - var(--header-height));
+	gap: var(--space-s);
+	display: grid;
+	grid-template-rows: auto 1fr;
+}
+.cv {
+	max-height: calc(100% - var(--space-s));
+}
+</style>
