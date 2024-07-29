@@ -1,6 +1,6 @@
 {
     "textIntro": "A product designer with 15+ years of experience in leading design initiatives across agencies, startups, and corporations. Specializing in Design Vision, Design Management, UX Research, Design Systems and Agile Methods. Passionate about creating user-centric digital products.",
-    "experience": {
+    "Pepperi": {
         "name": "Pepperi",
         "role": "Head of Design",
         "date": "2018 - Present",
@@ -12,27 +12,27 @@
             },
             "b2": {
                 "text": "Conduct user research and develop design strategies to streamline new product development and increase efficiency.",
-                "number": 24
+                "number": 23
             },
             "b3": {
                 "text": "Manage backlogs, coordinate with teams, clarifying goals and tracking KPIs.",
-                "number": 24
+                "number": 23
             },
             "b4": {
                 "text": "Develop a design system that increases development speed and ensures UI consistency, supporting key product features.",
-                "number": 14
+                "number": 13
             },
             "b5": {
                 "text": "Improve marketing site design, increasing user retention and lead conversions.",
-                "number": 24
+                "number": 23
             },
             "b6": {
                 "text": "Create a brand guide, strengthening brand awareness and sales efforts.",
-                "number": 14
+                "number": 13
             },
             "b7": {
                 "text": "Support for Professional Services and Native Apps Teams.",
-                "number": 14
+                "number": 13
             }
         },
         "achievements": {
@@ -42,15 +42,55 @@
             },
             "a2": {
                 "text": "Streamline design processes for efficiency and goal achievement.",
-                "number": 14
+                "number": 13
             },
             "a3": {
                 "text": "Enhance marketing site design, improving retention and conversions.",
-                "number": 14
+                "number": 13
             },
             "b4": {
                 "text": "Strengthen brand awareness, aiding sales and credibility.",
-                "number": 14
+                "number": 13
+            }
+        }
+    },
+    "Bit": {
+        "name": "bit.dev",
+        "role": "Head of Design",
+        "date": "2015 - 2018",
+        "intro": "Led Brand and Product Design for Bit, a B2D code management SaaS, helping developers build UI faster by reusing code components.",
+        "bullets": {
+            "b1": {
+                "text": "Conducted user research and collaborated with product and engineering teams, creating a UX adopted by thousands globally.",
+                "number": 42
+            },
+            "b2": {
+                "text": "Transformed the product from CoCycles to Marvin, and finally to Bit, significantly enhancing its functionality and increasing user adoption.",
+                "number": 23
+            },
+            "b3": {
+                "text": "Delivered a UX that supports thousands of developers globally, streamlining their workflows.",
+                "number": 23
+            }
+        }
+    },
+    "MTNS": {
+        "name": "Matnas Interactive",
+        "role": "Partner & Manager",
+        "date": "2009 - 2015",
+        "intro": "Led a team of designers, provided mentorship, and ensured high-quality outputs. Strategized for growth, sought new business opportunities, and maintained supplier relationships. Supervised daily operations and managed numerous design projects simultaneously, achieving excellent results and high client satisfaction.",
+        "bullets": {
+            "b1": {
+                "text": "Led and mentored a team, fostering a creative and productive environment; many team members are now leading designers.",
+                "number": 66
+            },
+            "b2": {
+                "text": "Managed 100K+ accounts, overseeing business operations; preparing and issuing quotes, and maintaining detailed budgeting processes.",
+                "number": 23
+            },
+            "b3": {
+                "text": "Implemented quality control and stayed updated with industry trends, enhancing team performance and project success.",
+                "number": 23
             }
         }
     }
