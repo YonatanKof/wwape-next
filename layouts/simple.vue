@@ -1,20 +1,25 @@
 <script setup lang="ts"></script>
 <template>
-	<main class="simple-warp">
-		<main class="simple-app">
-			<AppHeader :showLinkMusic="false" />
-			<NuxtPage />
-		</main>
+	<main class="simple-app">
+		<AppHeader :showLinkMusic="false" />
+		<NuxtPage />
 	</main>
 </template>
-<style lang="scss">
-.simple-warp {
-	min-height: 100vh;
-	background: radial-gradient(ellipse at bottom right, var(--color-brand-dim), transparent 50%);
-}
+<style lang="scss" scoped>
+
 .simple-app {
 	min-height: 100dvh;
+	display: grid;
+	grid-template-rows: auto 1fr;
 	@include display-width($display-width-xl);
-	padding-block-end: var(--space-xl);
+	position: relative;
+	&::before {
+		z-index: -10;
+		content: '';
+		position: absolute;
+		inset: 0;
+		top: var(--header-height);
+		background: radial-gradient(ellipse at bottom right, var(--color-brand-dim), transparent 50%);
+	}
 }
 </style>
