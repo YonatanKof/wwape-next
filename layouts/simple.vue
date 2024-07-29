@@ -2,7 +2,7 @@
 <template>
 	<main class="simple-warp">
 		<main class="simple-app">
-			<AppHeader />
+			<AppHeader :showLinkMusic="false" />
 			<NuxtPage />
 		</main>
 	</main>
