@@ -85,7 +85,7 @@ useSeoMeta({
 			<ArticleGrid
 				id="brand"
 				title="Pepperi Brand Guide"
-				btnText="Visit Storybook"
+				btnText="Visit the Brand Guide"
 				linkTo="https://brand.pepperi.com/"
 				imgSrc="/misc/brand.webm"
 			>
@@ -107,7 +107,7 @@ useSeoMeta({
 				</div>
 			</span>
 		</DragIt>
-		<DragIt v-show="show" class="box-drag" yPos="2rem;">
+		<DragIt v-show="show" class="box-drag" yPos="1rem;">
 			<div class="corners">
 				<ul>
 					<li>Working knowledge of complex DS</li>
