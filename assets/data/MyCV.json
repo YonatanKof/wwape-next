@@ -1,0 +1,57 @@
+{
+    "textIntro": "A product designer with 15+ years of experience in leading design initiatives across agencies, startups, and corporations. Specializing in Design Vision, Design Management, UX Research, Design Systems and Agile Methods. Passionate about creating user-centric digital products.",
+    "experience": {
+        "name": "Pepperi",
+        "role": "Head of Design",
+        "date": "2018 - Present",
+        "intro": "At Pepperi, I combine both leadership and execution of product and brand design.",
+        "bullets": {
+            "b1": {
+                "text": "Enhance UX and design to meet B2C standards, boosting Buyer role adoption and initiating our B2B eCommerce offering.",
+                "number": 32
+            },
+            "b2": {
+                "text": "Conduct user research and develop design strategies to streamline new product development and increase efficiency.",
+                "number": 24
+            },
+            "b3": {
+                "text": "Manage backlogs, coordinate with teams, clarifying goals and tracking KPIs.",
+                "number": 24
+            },
+            "b4": {
+                "text": "Develop a design system that increases development speed and ensures UI consistency, supporting key product features.",
+                "number": 14
+            },
+            "b5": {
+                "text": "Improve marketing site design, increasing user retention and lead conversions.",
+                "number": 24
+            },
+            "b6": {
+                "text": "Create a brand guide, strengthening brand awareness and sales efforts.",
+                "number": 14
+            },
+            "b7": {
+                "text": "Support for Professional Services and Native Apps Teams.",
+                "number": 14
+            }
+        },
+        "achievements": {
+            "a1": {
+                "text": "Boost Buyer role adoption, driving B2B eCommerce growth.",
+                "number": 36
+            },
+            "a2": {
+                "text": "Streamline design processes for efficiency and goal achievement.",
+                "number": 14
+            },
+            "a3": {
+                "text": "Enhance marketing site design, improving retention and conversions.",
+                "number": 14
+            },
+            "b4": {
+                "text": "Strengthen brand awareness, aiding sales and credibility.",
+                "number": 14
+            }
+        }
+    }
+}
