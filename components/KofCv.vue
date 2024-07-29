@@ -1,5 +1,6 @@
 <script setup>
-// import { ref } from 'vue';
+const config = useRuntimeConfig();
+
 let t = ref(0);
 let width = ref(595);
 let height = ref(842);
@@ -11,16 +12,25 @@ const props = defineProps({
 		default: 'canvas',
 	},
 });
+
+const infoObj = {
+	title: `CV – ${config.public.siteOwnerName}`,
+	author: config.public.siteOwnerName,
+	subject: `CV of ${config.public.siteOwnerName} of the ${config.public.siteName}`,
+	keywords: `CV, Product Design, UX, UI, Design Systems, ${config.public.siteOwnerName}`,
+	creationDate: new Date(),
+};
 </script>
 
 <template>
 	<pdfFrame
 		id="canvasBasicContainer"
-		type="pdf"
+		:type="type"
 		@on-ready="onInstanceReady"
 		@on-resize="onInstanceResize"
 		:width="width"
 		:height="height"
+		:info="infoObj"
 	>
 		<i-linearGradient
 			id="grad3"
