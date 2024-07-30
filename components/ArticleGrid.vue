@@ -39,6 +39,7 @@ const props = defineProps({
 				class="image-box"
 				marginBlock="unset"
 				:src="imgSrc"
+				:srcMp4="srcMp4"
 				:show-mesh="false"
 				min-width="408px"
 			></VideoTag>
