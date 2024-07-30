@@ -40,7 +40,7 @@ useSeoMeta({
 					</p>
 					<p>Check out the content around and visit the links see it all in action 👀</p>
 				</span>
-				<VideoTag style="max-width: 16rem" src="/misc/ninja01.webm"></VideoTag>
+				<!-- <VideoTag style="max-width: 16rem" src="/misc/ninja01.webm"></VideoTag> -->
 			</div>
 
 			<ArticleGrid
@@ -49,6 +49,7 @@ useSeoMeta({
 				btnText="Read the article!"
 				linkTo="/post/design-tokens/"
 				imgSrc="/misc/design-tokens.webm"
+				srcMp4="/misc/design-tokens.mp4"
 			>
 				<p>
 					A short article I've written about <i><strong>design tokens</strong></i> and how to use them in a design system + super cool example!
@@ -62,6 +63,7 @@ useSeoMeta({
 				btnText="Visit Storybook"
 				linkTo="https://60ae3e9eff8e4c003b2f90d4-orunuhbrch.chromatic.com/?path=/docs/pepperi-design-system--page"
 				imgSrc="/misc/DesignSystem-1.webm"
+				srcMp4="/misc/DesignSystem-1.mp4"
 			>
 				<p>
 					This library used by the <i>Product</i> and <i>Dev</i> teams to <strong>streamline development</strong>. It
@@ -75,6 +77,7 @@ useSeoMeta({
 				btnText="Visit Storybook"
 				linkTo="https://626ab62298ef5a004ac8cdea-fsmhdxxugw.chromatic.com/?path=/docs/pepperi-extended-level-composition--page"
 				imgSrc="/misc/DesignSystem-2.webm"
+				srcMp4="/misc/DesignSystem-2.mp4"
 			>
 				<p>
 					This composite Storybook contains the <i>Organisms</i> (selectors, pickers, etc'.), <i>Templates</i> (lists,
@@ -88,6 +91,7 @@ useSeoMeta({
 				btnText="Visit the Brand Guide"
 				linkTo="https://brand.pepperi.com/"
 				imgSrc="/misc/brand.webm"
+				srcMp4="/misc/brand.mp4"
 			>
 				<p>
 					I've also guided management to strengthen Pepperi brand. In this design initiative we've set brand values,
