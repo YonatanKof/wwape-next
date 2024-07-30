@@ -73,7 +73,8 @@ section {
 	background-color: var(--color-sys-invert-highlight);
 	border-radius: var(--border-radius-sm);
 	box-shadow: var(--shadow-md);
-	margin-block: var(--space-2xs);
+	margin-block-start: var(--space-s);
+	margin-block-end: var(--space-m);
 }
 em {
 	display: contents;
