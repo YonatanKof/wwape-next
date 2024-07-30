@@ -2,6 +2,9 @@
 definePageMeta({
 	layout: 'simple',
 });
+import { ModalsContainer, useModal } from 'vue-final-modal';
+import Modal from '~/components/ModalMelio.vue';
+
 const show = ref(false);
 const config = useRuntimeConfig();
 const pageDesc = `Reaching out to Melio about DS Lead– ${config.public.siteOwnerName}`;
@@ -24,9 +27,19 @@ useSeoMeta({
 	twitterCard: 'summary_large_image',
 	twitterSite: '@yonatankof',
 });
+
+const { open, close } = useModal({
+	component: Modal,
+	attrs: {
+		onConfirm() {
+			close();
+		},
+	},
+});
 </script>
 <template>
 	<section>
+		<ModalsContainer />
 		<h1>Melio × Kof</h1>
 		<p>Hi Guy, we know each other form back in the days, when I owned <i><strong>Matnas Interactive</strong></i> with Oded Babayoff.</p>
 		<p>Anyways, I would sure like to Join Melio and to help you win at what you do – Let's talk!</p>
