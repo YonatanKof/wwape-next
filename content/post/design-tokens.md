@@ -171,7 +171,7 @@ Giving colors semantic meaning is important, so here's my naming convention:
 1. ***System Color*** – Its used for *text* color and most *UI elements*. 
 2. ***System Invert Color*** – Its mostly used for *backgrounds*. 
 3. ***Brand Color*** – You guessed it. Here I'm using it a my link color too
-4. ***Focus Color*** – Used to focus aon elements.
+<!-- 4. ***Focus Color*** – Used to focus aon elements. -->
 
 Each of them have 5 states; `main`, `slight`, `dim`, `dis` and `none`. You can see in the code block below how I structure it, or see it in action in the [1st Live Example](#1st-example){target="_self"} below.
 
@@ -229,7 +229,7 @@ Go ahead, see it in action!
 :::
 ::
 
-::gridBlock{colNum="2" gap="var(--space-m);"}
+<!-- ::gridBlock{colNum="2" gap="var(--space-m);"}
 :::grid-unit
 #### Focus Color
 And lastly 5 variant of the ***focus*** color – you know the drill.
@@ -241,7 +241,7 @@ And lastly 5 variant of the ***focus*** color – you know the drill.
 :::
 :::token-color{colorName="focus"}
 :::
-::
+:: -->
 
 ### 2nd Live Example; Updating SVG Tokens!
 
@@ -249,6 +249,14 @@ Following the article I've written about [Simple Icon System](/post/simple-icon-
 
 ::IconExample
 ::
+
+---
+
+#### Well, that's the gist of it.
+
+See ya'll in the nest post 👋
+
+
 <!-- 
 ### Screen Size
 
