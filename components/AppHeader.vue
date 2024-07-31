@@ -1,8 +1,9 @@
 <script setup lang="ts">
 defineProps({
-	showLinkMusic: { 
-		type: Boolean, 
-		default: true },
+	isSimple: {
+		type: Boolean,
+		default: false,
+	},
 });
 import { useColorMode, useCycleList } from '@vueuse/core';
 
@@ -18,9 +19,12 @@ watchEffect(() => (mode.value = state.value as any));
 	<header>
 		<h2>Yonatan <span>Ben Knaan</span></h2>
 		<div>
-			<nav>
+			<nav v-show="isSimple">
+				<nuxt-link :to="{ name: 'index' }">WWape</nuxt-link>
+			</nav>
+			<nav v-show="!isSimple">
 				<nuxt-link :to="{ name: 'index' }">Home</nuxt-link>
-				<nuxt-link v-show="showLinkMusic" :to="{ name: 'music' }">Music</nuxt-link>
+				<nuxt-link :to="{ name: 'music' }">Music</nuxt-link>
 				<nuxt-link :to="{ name: 'design' }">Designs</nuxt-link>
 				<nuxt-link :to="{ name: 'post' }">Posts</nuxt-link>
 			</nav>
