@@ -1,6 +1,6 @@
 <!-- This is a single post -->
 <script setup>
-const { toc } = useContent();
+// const { toc } = useContent();
 const { path } = useRoute();
 const cleanPath = path.replace(/\/+$/, '');
 // For the previous & next items

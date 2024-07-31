@@ -14,11 +14,12 @@ export default defineNuxtConfig({
 	},
 	content: {
 		// Used for Nuxt SEO sitemap module
-		documentDriven: true,
-		toc: {
-			depth: 4,
-			searchDepth: 4,
-		},
+		// Now I've disabled it for better error messages
+		// documentDriven: true,
+		// toc: {
+		// 	depth: 4,
+		// 	searchDepth: 4,
+		// },
 		highlight: {
 			langs: ['json', 'js', 'ts', 'html', 'css', 'scss', 'vue', 'shell', 'mdc', 'md', 'yaml'],
 			// Theme used in all color schemes.
