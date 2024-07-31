@@ -2,8 +2,9 @@
 <template>
 	<main class="simple-warp">
 		<main class="simple-app">
-			<AppHeader :showLinkMusic="false" />
+			<AppHeader :isSimple="true" />
 			<NuxtPage />
+			<AppFooter />
 		</main>
 	</main>
 </template>
@@ -15,6 +16,6 @@
 .simple-app {
 	min-height: 100dvh;
 	@include display-width($display-width-xl);
-	padding-block-end: var(--space-xl);
+	grid-template-rows: auto 1fr auto;
 }
 </style>

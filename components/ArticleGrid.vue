@@ -55,7 +55,7 @@ const props = defineProps({
 	background-color: var(--color-sys-invert-highlight);
 	border-radius: var(--border-radius-sm);
 	background-image: radial-gradient(var(--color-brand-dis) 1px, transparent 1px);
-	background-size: 8px 8px;
+	background-size: 6px 6px;
 	overflow: hidden;
 	container-name: flipped;
 	container-type: inline-size;

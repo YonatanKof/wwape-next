@@ -2,6 +2,9 @@
 definePageMeta({
 	layout: 'simple',
 });
+import { ModalsContainer, useModal } from 'vue-final-modal';
+import Modal from '~/components/ModalMelio.vue';
+
 const show = ref(false);
 const config = useRuntimeConfig();
 const pageDesc = `Reaching out to Melio about DS Lead– ${config.public.siteOwnerName}`;
@@ -24,23 +27,40 @@ useSeoMeta({
 	twitterCard: 'summary_large_image',
 	twitterSite: '@yonatankof',
 });
+
+const { open, close } = useModal({
+	component: Modal,
+	attrs: {
+		onConfirm() {
+			close();
+		},
+	},
+});
 </script>
 <template>
 	<section>
+		<ModalsContainer />
 		<h1>Melio × Kof</h1>
-		<p>Hi Guy, we know each other form back in the days, when I owned <i><strong>Matnas Interactive</strong></i> with Oded Babayoff.</p>
-		<p>Anyways, I would sure like to Join Melio and to help you win at what you do – Let's talk!</p>
+		<p>
+			<i>Hi Guy</i> 👋 we know each other from back in the days when I owned <i><strong>Matnas Interactive</strong></i
+			>. The DS lead role sounds like a dream job, and I would love to join and help you win. To give you a glimpse of
+			my abilities, I’ve put together this page with some examples of my work from the past few years. Let’s talk!
+		</p>
 		<main>
 			<div id="intro">
 				<span>
 					<p>
-						As a multi-class player, at Pepperi I’ve wear several hats, one of them was the creation of
-						<i><strong>Pepperi Design System</strong> (PDS)</i>, for both <i>product</i> and <i>devs</i> to enjoy and to
-						improve velocity.
+						As a multi-class player I wear several hats, one of them was creating
+						<i><strong>Pepperi Design System</strong></i
+						>, for both the <i>product</i> and <i>devs</i> teams to improve velocity.
 					</p>
-					<p>Check out the content around and visit the links see it all in action 👀</p>
+					<p>Visit the links around and see it all in action 👀</p>
+					<p>
+						Plus! See why I'm a good fit by clicking
+						<i class="drag-title">the button</i>
+					</p>
+					<button @click="open" @keyup.enter="open">Good Fit + CV</button>
 				</span>
-				<!-- <VideoTag style="max-width: 16rem" src="/misc/ninja01.webm"></VideoTag> -->
 			</div>
 
 			<ArticleGrid
@@ -52,7 +72,8 @@ useSeoMeta({
 				srcMp4="/misc/design-tokens.mp4"
 			>
 				<p>
-					A short article I've written about <i><strong>design tokens</strong></i> and how to use them in a design system + super cool example!
+					A short article I've written about <i><strong>design tokens</strong></i> and how to use them in a design
+					system + super cool example!
 				</p>
 				<p>Be sure to check it out!</p>
 			</ArticleGrid>
@@ -95,51 +116,13 @@ useSeoMeta({
 			>
 				<p>
 					I've also guided management to strengthen Pepperi brand. In this design initiative we've set brand values,
-					mission statement, tone and voice and brand book.
+					mission statement, target audience, users persona and the visual brand book itself.
 				</p>
 			</ArticleGrid>
 		</main>
-		<DragIt class="box-drag">
-			<span class="corners">
-				<h4 class="drag-title">Hi Guy 👋</h4>
-				<div class="box-drag-span">
-					<p>Yonatan as DS lead at Melio?</p>
-					<button @click="show = !show">
-						<span v-if="show">I've seen enough</span>
-						<span v-else>Show me why!</span>
-					</button>
-				</div>
-			</span>
-		</DragIt>
-		<DragIt v-show="show" class="box-drag" yPos="1rem;">
-			<div class="corners">
-				<ul>
-					<li>Working knowledge of complex DS</li>
-					<li>A proven ability to lead teams w/o authority</li>
-					<li>A designer who code, this site and more</li>
-					<li>Writing guides and PRDs</li>
-					<li>Best practices in collab and sharing</li>
-					<li>Best practices in backlog management</li>
-					<li>Working lean and effective</li>
-					<li>Total control over tools</li>
-					<li>Smoking hot recommendations</li>
-					<li>Turn DS to none-issue and success</li>
-				</ul>
-			</div>
-		</DragIt>
 	</section>
 </template>
 <style lang="scss" scoped>
-@mixin box-corner() {
-	background-color: #fff;
-	border: 0.5px solid var(--color-brand-main);
-	box-shadow: 0 1px 2px #0003;
-	content: '';
-	display: block;
-	height: 0.5rem;
-	position: absolute;
-	width: 0.5rem;
-}
 main {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
@@ -151,92 +134,39 @@ main {
 	}
 	@media (width <= $display-width-sm) {
 		grid-template-columns: 1fr;
-		grid-template-rows: 28rem 20rem 28rem 28rem 28rem;
+		grid-template-rows: 28rem auto 28rem 28rem 28rem;
 	}
 }
-ol,
-ul {
-	margin: 0;
-	padding-inline-start: 0;
-	list-style: none;
+h1 {
+	margin-block-end: var(--space-2xs);
 }
-li:nth-child(even) {
-	background-color: var(--color-sys-dis);
-}
-li {
-	padding: var(--space-2xs) var(--space-xs);
-	font-size: var(--step--1);
-}
-
 p {
 	font-size: var(--step-0);
+	max-width: 65ch;
 }
 .button {
 	width: max-content;
 }
-.box-drag {
-	user-select: none;
-	.drag-title {
-		animation: wobble 1s ease-in-out alternate infinite;
-		margin-block-start: var(--space-s);
-		padding-inline: var(--space-s);
-	}
-	cursor: move;
-	position: fixed;
-	background-color: var(--color-sys-invert-highlight);
-	z-index: 100;
-	border: 0.5px solid var(--color-brand-main);
-	width: 20rem;
-	box-shadow: var(--shadow-md-even);
-	button {
-		min-width: 10rem;
-		height: var(--space-xl);
-	}
-	.box-drag-span {
-		display: flex;
-		align-items: center;
-		gap: var(--space-s);
-		padding: var(--space-s);
-		padding-block-start: var(--space-xs);
-	}
-	&::after {
-		@include box-corner();
-		left: -0.3rem;
-		top: -0.3rem;
-	}
-	&::before {
-		@include box-corner();
-		right: -0.3rem;
-		top: -0.3rem;
-	}
-}
-.corners {
-	&::after {
-		@include box-corner();
-		bottom: -0.3rem;
-		left: -0.3rem;
-	}
-	&::before {
-		@include box-corner();
-		bottom: -0.3rem;
-		right: -0.3rem;
-	}
-}
 #intro {
+	padding-inline: var(--space-xs);
 	span {
 		display: block;
-		padding-inline: var(--space-2xs);
 		display: flex;
 		flex-direction: column;
 		gap: var(--space-2xs);
 	}
+	button {
+		width: max-content;
+	}
 	grid-column: 5 / span 4;
 	grid-row: 2;
 	@media (width < $display-width-md) {
+		padding-inline: unset;
 		grid-column: 1 / span 4;
 		grid-row: 1;
 	}
 	@media (width < $display-width-sm) {
+		padding-inline: var(--space-s);
 		grid-column: 1;
 		grid-row: 2;
 	}
@@ -288,5 +218,11 @@ p {
 		grid-column: 1;
 		grid-row: 3;
 	}
+}
+.drag-title {
+	animation: wobble 1s ease-in-out alternate infinite;
+	white-space: nowrap;
+	// margin-block-start: var(--space-s);
+	// padding-inline: var(--space-s);
 }
 </style>

@@ -5,6 +5,14 @@
 	--border-radius-sm: var(--space-2xs);
 	--border-radius-xs: var(--space-3xs);
 
+
+	--color-black-main: hsl(180, 25%, 5%);
+	--color-black-slight: color-mix(in hsl, var(--color-black-main) 75%, transparent);
+	--color-black-dim: color-mix(in hsl, var(--color-black-main) 35%, transparent);
+	--color-black-dis: color-mix(in hsl, var(--color-black-main) 10%, transparent);
+	--color-black-hardly: color-mix(in hsl, var(--color-black-main) 3%, transparent);
+	--color-black-none: color-mix(in hsl, var(--color-black-main) 0%, transparent);
+	
 	--color-sys-main: hsl(180, 25%, 15%);
 	--color-sys-slight: color-mix(in hsl, var(--color-sys-main) 75%, transparent);
 	--color-sys-dim: color-mix(in hsl, var(--color-sys-main) 35%, transparent);
@@ -12,6 +20,7 @@
 	--color-sys-none: color-mix(in hsl, var(--color-sys-main) 0%, transparent);
 
 	--color-sys-invert-highlight: color-mix(in hsl, var(--color-sys-invert-main) 5%, white);
+	--color-sys-invert-highlight-slight: color-mix(in hsl, var(--color-sys-invert-highlight) 65%, transparent);
 	--color-sys-invert-main: antiquewhite;
 	--color-sys-invert-slight: color-mix(in hsl, var(--color-sys-invert-main) 75%, transparent);
 	--color-sys-invert-dim: color-mix(in hsl, var(--color-sys-invert-main) 35%, transparent);
@@ -34,39 +43,42 @@
 	--space-md: 1rem;
 	--bg-pre: none;
 
+	--color-shadow: var(--color-black-hardly);
+	--color-overlay: var(--color-black-slight);
+
 	/* prettier-ignore */
 	--shadow-sm-even: 
-		0 0 0.1rem var(--color-sys-dis), 
-		0 0 0.2rem var(--color-sys-dis),
-		0 0 0.3rem var(--color-sys-dis);
+		0 0 0.1rem var(--color-shadow), 
+		0 0 0.2rem var(--color-shadow),
+		0 0 0.3rem var(--color-shadow);
 	/* prettier-ignore */
 	--shadow-sm: 
-		0 0.1rem 0.1rem var(--color-sys-dis), 
-		0 0.2rem 0.2rem var(--color-sys-dis),
-		0 0.3rem 0.3rem var(--color-sys-dis);
+		0 0.1rem 0.1rem var(--color-shadow), 
+		0 0.2rem 0.2rem var(--color-shadow),
+		0 0.3rem 0.3rem var(--color-shadow);
 	/* prettier-ignore */
 	--shadow-md-even: 
-		0 0 0.2rem var(--color-sys-dis), 
-		0 0 0.4rem var(--color-sys-dis);
+		0 0 0.2rem var(--color-shadow), 
+		0 0 0.4rem var(--color-shadow),
+		0 0 0.8rem var(--color-shadow);
 	/* prettier-ignore */
 	--shadow-md: 
-		0 0.2rem 0.2rem var(--color-sys-dis), 
-		0 0.4rem 0.4rem var(--color-sys-dis),
-		0 0.8rem 0.8rem var(--color-sys-dis);
+		0 0.2rem 0.2rem var(--color-shadow), 
+		0 0.4rem 0.4rem var(--color-shadow),
+		0 0.8rem 0.8rem var(--color-shadow);
 	/* prettier-ignore */
 	--shadow-lg-even: 
-		0 0 0.5rem var(--color-sys-dis), 
-		0 0 1.5rem var(--color-sys-dis),
-		0 0 2rem var(--color-sys-dis);
+		0 0 0.5rem var(--color-shadow), 
+		0 0 1.5rem var(--color-shadow),
+		0 0 2rem var(--color-shadow);
 	/* prettier-ignore */
 	--shadow-lg: 
-		0 0.25rem 0.5rem var(--color-sys-dis), 
-		0 0.75rem 1.5rem var(--color-sys-dis),
-		0 1rem 2rem var(--color-sys-dis);
+		0 0.25rem 0.5rem var(--color-shadow), 
+		0 0.75rem 1.5rem var(--color-shadow),
+		0 1rem 2rem var(--color-shadow);
 
 	--font-wight--bolder: bolder;
 	--font-size-2xl: 2em;
-	--overlay: var(--color-sys-slight);
 }
 
 body {
@@ -122,6 +134,10 @@ hr {
 	border-bottom: solid 1px var(--color-sys-dim);
 	width: 100%;
 }
+.vfm--overlay {
+	background: var(--color-overlay) !important;
+}
+
 .dark {
 	--color-sys-main: hsl(34, 78%, 91%);
 
@@ -132,6 +148,5 @@ hr {
 
 	--color-focus-main: hsl(200, 100%, 40%);
 
-	// Overlay isn't used in the dark theme
-	--overlay: hsla(0, 0%, 10%, 0.75);
+	--color-shadow: var(--color-black-dim);
 }

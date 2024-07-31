@@ -194,7 +194,7 @@ So here we have 5 variant of the ***system*** color, and you can click on the co
 - `--color-sys-dis`
 - `--color-sys-none`
 :::
-:::token-color
+:::color-token-edit
 :::
 ::
 
@@ -208,7 +208,7 @@ And here we have 5 variant of the ***system-invert*** color – Change it too!
 - `--color-sys-invert-dis`
 - `--color-sys-invert-none`
 :::
-:::token-color{colorName="sys-invert"}
+:::color-token-edit{colorName="sys-invert"}
 :::
 ::
 
@@ -225,7 +225,7 @@ Go ahead, see it in action!
 - `--color-brand-dis`
 - `--color-brand-none`
 :::
-:::token-color{colorName="brand"}
+:::color-token-edit{colorName="brand"}
 :::
 ::
 
@@ -239,7 +239,7 @@ And lastly 5 variant of the ***focus*** color – you know the drill.
 - `--color-focus-dis`
 - `--color-focus-none`
 :::
-:::token-color{colorName="focus"}
+:::color-token-edit{colorName="focus"}
 :::
 :: -->
 
