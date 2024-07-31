@@ -20,7 +20,7 @@ watchEffect(() => (mode.value = state.value as any));
 		<h2>Yonatan <span>Ben Knaan</span></h2>
 		<div>
 			<nav v-show="isSimple">
-				<nuxt-link :to="{ name: 'index' }">WWape</nuxt-link>
+				<nuxt-link :to="{ name: 'index' }">Visit WWape</nuxt-link>
 			</nav>
 			<nav v-show="!isSimple">
 				<nuxt-link :to="{ name: 'index' }">Home</nuxt-link>
