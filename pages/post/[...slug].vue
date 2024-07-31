@@ -130,8 +130,8 @@ main {
 	max-width: var(--display-width-sm);
 	margin-inline: auto;
 }
-h1{
-	 margin-block-end: var(--space-s);
+h1 {
+	margin-block-end: var(--space-s);
 }
 section {
 	display: grid;
