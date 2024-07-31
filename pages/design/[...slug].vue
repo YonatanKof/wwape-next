@@ -104,6 +104,9 @@ const goPost = () => clearError({ redirect: '/post' });
 </template>
 
 <style lang="scss" scoped>
+h1 {
+	margin-block-end: var(--space-s);
+}
 article {
 	margin-block-end: var(--space-s);
 }
