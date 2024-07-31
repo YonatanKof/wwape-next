@@ -42,9 +42,9 @@ const { open, close } = useModal({
 		<ModalsContainer />
 		<h1>Melio × Kof</h1>
 		<p>
-			Hi Guy, We know each other from back in the days when I owned <i><strong>Matnas Interactive</strong></i> with Oded
-			Babayoff. I would love to join Melio and help you succeed. So I’ve put together a page with some examples of my
-			work from the past few years to give you a glimpse of my abilities. Let’s talk!
+			<i>Hi Guy</i> 👋 we know each other from back in the days when I owned <i><strong>Matnas Interactive</strong></i
+			>. The DS lead role sounds like a dream job, and I would love to join and help you win. To give you a glimpse of
+			my abilities, I’ve put together this page with some examples of my work from the past few years. Let’s talk!
 		</p>
 		<main>
 			<div id="intro">
@@ -56,10 +56,10 @@ const { open, close } = useModal({
 					</p>
 					<p>Visit the links around and see it all in action 👀</p>
 					<p>
-						See why I'm a good fit by clicking on
+						Plus! See why I'm a good fit by clicking
 						<i class="drag-title">the button</i>
 					</p>
-					<button @click="open" @keyup.enter="open">Click to see + CV</button>
+					<button @click="open" @keyup.enter="open">Good Fit + CV</button>
 				</span>
 			</div>
 
@@ -137,7 +137,9 @@ main {
 		grid-template-rows: 28rem auto 28rem 28rem 28rem;
 	}
 }
-
+h1 {
+	margin-block-end: var(--space-2xs);
+}
 p {
 	font-size: var(--step-0);
 	max-width: 65ch;
@@ -146,9 +148,9 @@ p {
 	width: max-content;
 }
 #intro {
+	padding-inline: var(--space-xs);
 	span {
 		display: block;
-		padding-inline: var(--space-2xs);
 		display: flex;
 		flex-direction: column;
 		gap: var(--space-2xs);
@@ -159,10 +161,12 @@ p {
 	grid-column: 5 / span 4;
 	grid-row: 2;
 	@media (width < $display-width-md) {
+		padding-inline: unset;
 		grid-column: 1 / span 4;
 		grid-row: 1;
 	}
 	@media (width < $display-width-sm) {
+		padding-inline: var(--space-s);
 		grid-column: 1;
 		grid-row: 2;
 	}

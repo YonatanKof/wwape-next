@@ -22,6 +22,7 @@ const emit = defineEmits<{
 			<li>A proven ability to lead teams without authority</li>
 			<li>A designer who code, this site and more</li>
 			<li>Proficient in writing guides and PRDs</li>
+			<li>Parametric design running in my veins</li>
 			<li>Best practices in collaboration and sharing</li>
 			<li>Best practices in backlog management</li>
 			<li>Working lean and effective</li>
@@ -33,7 +34,7 @@ const emit = defineEmits<{
 		</ul>
 		<span>
 			<div><a href="/misc/CV-YonatanBenKnaan-2024.pdf" download>Download CV</a></div>
-			<button class="modal-btn" @click="emit('confirm')">Got it</button>
+			<button class="this-modal-btn" @click="emit('confirm')">Got it</button>
 		</span>
 	</VueFinalModal>
 </template>
@@ -62,7 +63,7 @@ const emit = defineEmits<{
 		border-radius: unset;
 	}
 }
-.modal-btn {
+.this-modal-btn {
 	font-size: var(--step--1);
 	margin: unset;
 }

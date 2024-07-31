@@ -105,6 +105,10 @@ fieldset div {
 	flex-direction: column;
 	gap: var(--space-m);
 }
+input[type='range'] {
+	width: 100%;
+}
+
 @media (width <= $display-width-xs) {
 	fieldset {
 		flex-direction: column;
