@@ -118,6 +118,9 @@ const goPost = () => clearError({ redirect: '/post' });
 				</article>
 				<!-- <SeeMore :prev="prev" :next="next" /> -->
 			</template>
+			<template #not-found>
+				<ErrorMsg />
+			</template>
 		</ContentDoc>
 	</main>
 </template>
