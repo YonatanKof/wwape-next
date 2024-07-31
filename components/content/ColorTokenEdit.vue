@@ -22,18 +22,18 @@ onMounted(() => {
 });
 </script>
 <template>
-	<section>
+	<div class="color-edit">
 		<form>
 			<label for="color-input">
-				<em
-					>Click to update <code>{{ colorName }}</code> color</em
-				>
+				<em>Click to update color</em>
 			</label>
-			<input type="color" id="this-color-input" name="color-input" v-model="color" />
+			<div>
+				<code>--color-{{ colorName }}-main</code>
+				<input type="color" id="this-color-input" name="color-input" v-model="color" />
+			</div>
 		</form>
 		<hr />
 		<div class="all-colors">
-			<p><em>Result</em></p>
 			<div class="colors">
 				<span>
 					<code class="name">main</code>
@@ -76,12 +76,12 @@ onMounted(() => {
 				<IconAuto />
 			</SvgIconBase>
 		</button>
-	</section>
+	</div>
 </template>
 <style lang="scss" scoped>
-section {
+.color-edit {
 	display: flex;
-	gap: var(--space-s);
+	gap: var(--space-xs);
 	padding: var(--space-md);
 	flex-direction: column;
 	margin-block: var(--space-xs);
@@ -91,20 +91,25 @@ section {
 }
 em {
 	display: inline-block;
-	font-size: var(--step-0);
-	transform: rotateZ(-3deg) translateX(0.1em);
+	font-size: var(--step-1);
+	transform: rotateZ(-3deg) translateX(-0.3em);
 	font-variation-settings: 'wght' 500, 'BNCE' 100, 'INFM' 0;
 	animation: wobble 1s ease-in-out alternate infinite;
 	pointer-events: none;
-}
-p > em {
-	font-size: var(--step-2);
-	animation-delay: 0.5s;
 }
 form {
 	display: flex;
 	flex-direction: column;
 	gap: var(--space-2xs);
+	code {
+		margin: unset;
+	}
+	div {
+		display: flex;
+		flex-direction: row;
+		gap: var(--space-2xs);
+		align-items: center;
+	}
 }
 p {
 	margin-block: unset !important;
@@ -132,31 +137,5 @@ span > code {
 	aspect-ratio: 1 / 1;
 	border-radius: var(--border-radius-sm);
 	box-shadow: inset 0 0 0 var(--space-4xs) var(--color-focus-dim);
-}
-
-input[type='color'] {
-	/* Basic styling */
-	width: 100%;
-	height: var(--space-xl);
-	border: var(--space-3xs) solid var(--color-focus-main); /* Custom border */
-	padding: unset; /* Inner padding */
-	cursor: pointer; /* Cursor style when hovering */
-
-	/* Custom background and color */
-	background-color: none; /* Background color */
-	color: none; /* Text color */
-
-	/* Remove default styling */
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-}
-
-/* To target the color well specifically in WebKit browsers */
-input[type='color']::-webkit-color-swatch-wrapper {
-	padding: unset;
-}
-input[type='color']::-webkit-color-swatch {
-	border: unset;
 }
 </style>
