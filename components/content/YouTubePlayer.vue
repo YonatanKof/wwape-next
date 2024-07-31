@@ -20,6 +20,10 @@ defineProps({
 		type: String,
 		default: undefined,
 	},
+	marginTop: {
+		type: String,
+		default: "var(--space-m)",
+	},
 });
 </script>
 
@@ -45,7 +49,7 @@ defineProps({
 
 <style lang="scss" scoped>
 .youtube-player {
-	margin-block-start: var(--space-m);
+	margin-block-start: v-bind(marginTop);
 	aspect-ratio: 16/9;
 	overflow: hidden;
 	border-radius: var(--border-radius-sm);
