@@ -12,7 +12,7 @@ const goPost = () => clearError({ redirect: '/post' });
 	<main>
 		<section>
 			<h2>Oh My!</h2>
-			<h1>It's a {{ error.statusCode }} Error Page</h1>
+			<h1>It's a {{ error.statusCode }}<br>Error Page</h1>
 			<hr />
 			<p>You can now...</p>
 			<div>
