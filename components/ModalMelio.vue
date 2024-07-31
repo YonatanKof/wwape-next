@@ -96,6 +96,8 @@ span {
 	justify-items: center;
 	align-items: center;
 	text-align: center;
+	max-height: var(--space-xl);
+	margin-block-end: env(safe-area-inset-bottom, var(--space-s));
 	div {
         background-color: var(--color-brand-dis);
 		width: 100%;
