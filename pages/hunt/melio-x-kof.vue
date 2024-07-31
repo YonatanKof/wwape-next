@@ -5,7 +5,6 @@ definePageMeta({
 import { ModalsContainer, useModal } from 'vue-final-modal';
 import Modal from '~/components/ModalMelio.vue';
 
-const show = ref(false);
 const config = useRuntimeConfig();
 const pageDesc = `Reaching out to Melio about DS Lead– ${config.public.siteOwnerName}`;
 const pageImg = '/misc/melio-social.jpg';
@@ -41,24 +40,27 @@ const { open, close } = useModal({
 	<section>
 		<ModalsContainer />
 		<h1>Melio × Kof</h1>
+		<p><i>Hi Guy</i> 👋 we know each other from back in the <em>Matnas Interactive</em> days.</p>
 		<p>
-			<i>Hi Guy</i> 👋 we know each other from back in the days when I owned <i><strong>Matnas Interactive</strong></i
-			>. The DS lead role sounds like a dream job, and I would love to join and help you win. To give you a glimpse of
-			my abilities, I’ve put together this page with some examples of my work from the past few years. Let’s talk!
+			I wanted to let you know that the <i>DS lead</i> sounds like a dream job, and I would love to join and help you
+			win. To give you a glimpse of my abilities, I've pulled together this page with some examples of my work from the
+			past few years. So please enjoy and let's talk soon 🙏
 		</p>
+
 		<main>
 			<div id="intro">
 				<span>
-					<p>
-						As a multi-class player I wear several hats, one of them was creating
-						<i><strong>Pepperi Design System</strong></i
-						>, for both the <i>product</i> and <i>devs</i> teams to improve velocity.
-					</p>
-					<p>Visit the links around and see it all in action 👀</p>
-					<p>
-						Plus! See why I'm a good fit by clicking
-						<i class="drag-title">the button</i>
-					</p>
+					<span>
+						<p>
+							As a multi-class player I wear several hats, one of them was creating
+							<em>Pepperi Design System</em>, for both the <i>product</i> and <i>devs</i> teams to improve velocity.
+						</p>
+						<p>Visit the links around and see it all in action 👀</p>
+						<p>
+							Plus! See why I'm a good fit by clicking
+							<i class="drag-title">the button</i>
+						</p>
+					</span>
 					<button @click="open" @keyup.enter="open">Good Fit + CV</button>
 				</span>
 			</div>
@@ -66,43 +68,46 @@ const { open, close } = useModal({
 			<ArticleGrid
 				id="article"
 				title="Design Tokens"
-				btnText="Read the article!"
+				btnText="Read the Article!"
 				linkTo="/post/design-tokens/"
 				imgSrc="/misc/design-tokens.webm"
 				srcMp4="/misc/design-tokens.mp4"
 			>
-				<p>
-					A short article I've written about <i><strong>design tokens</strong></i> and how to use them in a design
-					system + super cool example!
-				</p>
-				<p>Be sure to check it out!</p>
+				<span>
+					<p>
+						A short article I've written about <em>design tokens</em> and how to use them in a design system plus an
+						example of it in action 💪
+					</p>
+					<p>Be sure to check it out!</p>
+				</span>
 			</ArticleGrid>
 
 			<ArticleGrid
 				id="product-storybook"
-				title="Pepperi DS, Product Storybook"
+				title="Pepperi DS, Storybook"
 				btnText="Visit Storybook"
 				linkTo="https://60ae3e9eff8e4c003b2f90d4-orunuhbrch.chromatic.com/?path=/docs/pepperi-design-system--page"
 				imgSrc="/misc/DesignSystem-1.webm"
 				srcMp4="/misc/DesignSystem-1.mp4"
 			>
 				<p>
-					This library used by the <i>Product</i> and <i>Dev</i> teams to <strong>streamline development</strong>. It
-					showcases the <i>atomic</i> and <i>molecular</i> elements that makes Pepperi DS.
+					Used by the <i>Product</i> and <i>Dev</i> teams to <strong>streamline development</strong>. Showcasing the
+					<i>atomic</i> and <i>molecular</i> elements that makes Pepperi DS and the engine that drive Pepperi
+					<em>theme editor</em>.
 				</p>
 			</ArticleGrid>
 
 			<ArticleGrid
 				id="composite-storybook"
 				title="PDS, Composite Storybook"
-				btnText="Visit Storybook"
+				btnText="Visit Composite Lib."
 				linkTo="https://626ab62298ef5a004ac8cdea-fsmhdxxugw.chromatic.com/?path=/docs/pepperi-extended-level-composition--page"
 				imgSrc="/misc/DesignSystem-2.webm"
 				srcMp4="/misc/DesignSystem-2.mp4"
 			>
 				<p>
-					This composite Storybook contains the <i>Organisms</i> (selectors, pickers, etc'.), <i>Templates</i> (lists,
-					forms, layouts, editors, etc'.) and <i>Pages</i> which are now a WIP.
+					This library contains the <i>Organisms</i>, <i>Templates</i> and <i>Pages</i> (WIP) that makes up Pepperi's webapp
+					and drives the <em>page builder</em> engine.
 				</p>
 			</ArticleGrid>
 
@@ -115,8 +120,8 @@ const { open, close } = useModal({
 				srcMp4="/misc/brand.mp4"
 			>
 				<p>
-					I've also guided management to strengthen Pepperi brand. In this design initiative we've set brand values,
-					mission statement, target audience, users persona and the visual brand book itself.
+					With this design initiative I've guided management to strengthen Pepperi brand. Here you can find Pepperi's brand values,
+					mission statement, target audience, users persona, visual and design assets.
 				</p>
 			</ArticleGrid>
 		</main>
@@ -142,19 +147,17 @@ h1 {
 }
 p {
 	font-size: var(--step-0);
+	margin-block-end: var(--space-3xs);
 	max-width: 65ch;
+	&:last-child {
+		margin-block-end: unset;
+	}
 }
 .button {
 	width: max-content;
 }
 #intro {
 	padding-inline: var(--space-xs);
-	span {
-		display: block;
-		display: flex;
-		flex-direction: column;
-		gap: var(--space-2xs);
-	}
 	button {
 		width: max-content;
 	}
@@ -170,6 +173,12 @@ p {
 		grid-column: 1;
 		grid-row: 2;
 	}
+}
+#intro > span {
+	display: block;
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-2xs);
 }
 #brand {
 	grid-column: 9 / span 4;
@@ -222,7 +231,5 @@ p {
 .drag-title {
 	animation: wobble 1s ease-in-out alternate infinite;
 	white-space: nowrap;
-	// margin-block-start: var(--space-s);
-	// padding-inline: var(--space-s);
 }
 </style>
