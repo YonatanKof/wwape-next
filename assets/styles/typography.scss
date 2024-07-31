@@ -165,12 +165,15 @@ i,
 em {
 	font-style: normal;
 	font-family: var(--font-hand);
-	font-variation-settings: 'wght' 350;
 	font-size: inherit;
+	font-variation-settings: 'wght' 400;
 	line-height: 1;
 }
+em {
+	font-variation-settings: 'wght' 525;
+}
 strong {
-	font-variation-settings: 'wght' 600;
+	font-variation-settings: 'wght' 555;
 }
 h1 {
 	font-size: var(--step-5);
