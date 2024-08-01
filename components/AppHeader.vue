@@ -7,11 +7,14 @@ defineProps({
 });
 import { useColorMode, useCycleList } from '@vueuse/core';
 
+// This will add `auto` mode as the default
 const mode = useColorMode({
 	emitAuto: true,
 });
 
-const { state, next } = useCycleList(['dark', 'light', 'auto'], { initialValue: mode });
+// If you'd like the `auto` to appear as an option add it to the 'useCycleList' array
+const { state, next } = useCycleList(['dark', 'light'], { initialValue: mode });
+
 
 watchEffect(() => (mode.value = state.value as any));
 </script>
@@ -29,6 +32,7 @@ watchEffect(() => (mode.value = state.value as any));
 				<nuxt-link :to="{ name: 'post' }">Posts</nuxt-link>
 			</nav>
 			<button class="icon-btn" @click="next()" :title="`Theme is: ` + state.charAt(0).toUpperCase() + state.slice(1)">
+				<!-- This icon will appear if 'auto' is in the 'useCycleList' array -->
 				<i v-if="state === 'auto'">
 					<SvgIconBase stroke-color="var(--color-brand-main)">
 						<IconAuto />
@@ -44,7 +48,6 @@ watchEffect(() => (mode.value = state.value as any));
 						<IconLight />
 					</SvgIconBase>
 				</i>
-				<!-- <span>{{ (state).charAt(0).toUpperCase() + (state).slice(1) }}</span> -->
 			</button>
 		</div>
 	</header>
