@@ -20,13 +20,13 @@ const emit = defineEmits<{
 				Working knowledge of complex <em>DS</em>
 			</li>
 			<li>Proven ability to lead teams without authority</li>
-			<li>A designer who code, this site and more</li>
+			<li>A designer that codes, this site and more</li>
 			<li>Proficient in writing guides and PRDs</li>
 			<li>In love with parametric design</li>
 			<li>Best practices in collaboration and sharing</li>
 			<li>Best practices in backlog management</li>
 			<li>Working lean and effective</li>
-			<li>Total control over tools</li>
+			<li>Total control over tools of the trade</li>
 			<li>Smoking hot recommendations</li>
 			<li>
 				Turning the <em>DS</em> form an issue to a success
