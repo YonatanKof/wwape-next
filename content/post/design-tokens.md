@@ -12,19 +12,21 @@ description: 'A brief intro and visualisation of design tokens'
 tags: ['Creative']
 ---
 
-Design tokens are standardized, reusable variables that define the visual properties of a design system, such as colors, typography, spacing, and other style-related elements, ensuring consistency and scalability across different platforms and products.
+Design tokens are standardized, reusable variables that define the visual properties of a design system components: colors, typography, spacing, and style-related elements. 
+
+Working with design tokens ensure consistency and scalability across various platforms and products.
 
 ## Why Design Tokens?
 
 ### Consistency
 
-One can easily and write `1em` instead of `1rem`. This type of mistake can be slight or harsh, but regardless of its final result, it will eventually hurt the the design's consistency.
+One can easily and write `1em` instead of `1rem`. This type of mistake can be minor or critical, but regardless of the final result, it will eventually hurt the consistency.
 
-Another example that comes to mind is `border: red 1px solid;`. Wouldn't it be nicer to have `border: $border-red`? It will be even nicer with once we add some [semantic meaning](#semantic-meaning){target="_self"} to it.
+Another example that comes to mind is `border: red 1px solid;`. Wouldn't it be nicer to have `border: $border-red`? It will be even nicer with once we add a semantic meaning [(↓)](#semantic-meaning){target="_self" .sup} to it.
 
 ### Change Proof
 
-At the [1st example below](#1st-example){target="_self"} you can see the token change, no, actually change it yourself, in action. This is super nice because, if built right I'm using `color-mix()`, you can update one color and it will populate the other color variants, as well for the dark mode.
+At the 1st example below [(↓)](#1st-example){target="_self" .sup} you can see the token change, no, actually change it yourself! This is super nice because, if built right (I'm using `color-mix()`), you can update one color and it will populate the other color variants, as well for the dark mode.
 
 > See the CSS below ↓
 
@@ -48,29 +50,30 @@ At the [1st example below](#1st-example){target="_self"} you can see the token c
 
 ### [Semantic Meaning]{id="semantic-meaning"}
 
-In [consistency](#consistency){target="_self"} is gave an example of `$border-red`. But is a bad example of a token, because a proper token should bare a semantic meaning, that is, it shouldn't bare the color name but its meaning.
+For consistency [(↓)](#consistency){target="_self" .sup} we have the pervious example of `$border-red` – which is a **bad example** of a token, as a proper token should bear a *semantic meaning*, i.e.: it shouldn't include the color’s name - but it should include the designation.
 
 For example:
 
-| Color | Meaning | Token |
-| ----- | ----- | ----- |
-| black | Text & general UI elements  | `--color-system` |
-| white | Background & general UI elements  | `--color-system-invert` |
-| red | Caution, distractive operations | `--color-caution` |
-| green | Successful operations | `--color-success` |
-| blue | Links & element focus | `--color-link` |
-| hotpink | Brand color, primary | `--color-brand` |
+| Color   | Meaning                          | Token                   |
+| ------- | -------------------------------- | ----------------------- |
+| black   | Text & general UI elements       | `--color-system`        |
+| white   | Background & general UI elements | `--color-system-invert` |
+| red     | Caution, distractive operations  | `--color-caution`       |
+| green   | Successful operations            | `--color-success`       |
+| blue    | Links & element focus            | `--color-link`          |
+| hotpink | Brand color, primary             | `--color-brand`         |
 
-Of course...
-1. You'll need to do variants os shown above, take care of the dark mode, and it can be more complex, like: `--color-header`, `--color-border` or if you more then one brand color then `--color-brand-primary` and `--color-brand-secondary`.
-2. This are just color tokens – but you'll need sizes, typography and such. The pool is quite deep.
-3. The bigger, the product, the more tokens you'll need.
+Of course, keep in mind the following:
+
+1. You'll need to create variants not only as shown above – You'll need to take care of the dark mode, and other complexities that are unique to your use-case, for example: `--color-header`, `--color-border` or if more than one brand color then `--color-brand-primary` and `--color-brand-secondary`.
+2. These are just color tokens – but you'll need sizes, typography and such. 
+3. As a rule of thumb, the bigger the product, the more tokens you'll need.
 
 ### Theme Editing
 
-Some products, like [Pepperi](https://www.pepperi.com/), my workplace (2024), have a white label offering. That is for the users to set their own design. It's just like the [1st example below](#1st-example){target="_self"} but with a function that sets it into the style sheets.
+Some products, like [Pepperi](https://www.pepperi.com/), my workplace [(2024)]{style="color: var(--color-sys-slight);"}, have a white label offering for the users to set their own design. It's just like the 1st example below [(↓)](#1st-example){target="_self" .sup}, but with a function that sets it into the style sheets.
 
-In the attached video below, like I'd mentioned before, you can see the color tokens, typography and their assignment over the different UI elements in action.
+In the attached video below, as mentioned before, you can see the color tokens, typography and their assignment over the different UI elements in action.
 
 ::video-tag
 ---
@@ -86,9 +89,9 @@ There are two reuse use cases:
 
 #### 1st use case: DRY
 
-Just like using components, you wouldn't write the same code twice (or more for that matter). AKA ***DRY***: ***D**on't **R**epeat **Y**ourself*.
+Just like using components, you wouldn't write the same code twice (or more for that matter). This concept is known as *DRY*: *D*on't *R*epeat *Y*ourself.
 
-If we'll go back to our border example from before, well that's an easy example and one might say that writing `border: red 1px solid;` isn't that much of a difference than `border: $border-red` – and they might be right.
+If we'll go back to our border example from before, well that's an easy example and one might say that writing `border: red 1px solid;` isn't that much of a different than `border: $border-red` – and they could be right.
 
 But what about this CSS declaration?
 
@@ -115,54 +118,55 @@ But what about this CSS declaration?
 }
 ```
 
-This bog declaration above is just styling for the silly description text under the `img` or `video` tag.
+This big declaration above is just styling for the silly description text under the `img` or `video` tag.
 
 ![Description text under the "img" or "video" tag](/posts/design-tokens/slily.webp){style="max-width: 320px;"}
 *Description text under the `img` & `video` tags*
 
-Wouldn't be nicer to include it with just one line? Like so:
+Wouldn't be nicer to include it with just one line? For example:
 
 ```scss
 @include desc-text-under();
 ```
 
-Nicer for sure 👌
+Much Nicer 👌
 
-So should think of the type of styling as a token too because it abstracts the mechanics of design into a a human readable context like `desc-text-under`.
+So we should think of **styling types as tokens too!** As it abstracts the mechanics of design into a a human readable context such as: `desc-text-under`.
 
 #### 2nd use case: Multiplatform
 
-This is also happening at Pepperi – The case is like so; if your doing just more then one platform – web, Android or iOS, where the syntax is different from one another, then using design tokens is the only way to have the same design Multiplatform.
+This is also happening at Pepperi – if you’re creating a design system for more than one platform – web, Android or iOS. All of them with a different syntax – so you're forced to write things more then once. In this case, using design tokens is the only reasonable way to have a cohesive and manageable design over the different platforms.
 
-So let's asy that if the Token is `--color-caution-dim` which is 50% opacity red, it will look like this:
+So let's say that if the Token is `--color-caution-dim` which is 50% opacity red, it will look like this:
 
-| CSS hsla | Android (XML) | iOS (Swift) |
-| ----- | ----- | ----- |
-| `hsla(0, 100%, 50%, 0.5)` | `#80FF0000 ` | `UIColor(red: 1.0, green: 0.0, blue: 0.0, alpha: 0.5)` |
+| CSS (hsla)                | Android (XML) | iOS (Swift)                                            |
+| ------------------------- | ------------- | ------------------------------------------------------ |
+| `hsla(0, 100%, 50%, 0.5)` | `#80FF0000 `  | `UIColor(red: 1.0, green: 0.0, blue: 0.0, alpha: 0.5)` |
 
-So every platform will manage it's own syntax but the name and its meaning is consistent product wide.
-
+So every platform will manage its own syntax, but the name and its meaning is consistent across the products.
 
 
 <!-- 
 ## This site's tokens
 
-This site is quite small so there's not a lot of tokens, but let's review the ones that I do have.
+This site is quite small so there are not many tokens, but I'm using them for - Colors, Sizes, Breakpoints, Typography and Shadows. I might refer to it in a later article. 
 
-- Colors [↘︎](#color){target="_self"}
-- Sizes [↘︎](#sizes){target="_self"}
+- Colors [(↓)](#color){target="_self" .sup}
+- Sizes [(↓)](#sizes){target="_self" .sup}
   - General sizing (using [Utopia](https://utopia.fyi/))
   - Specifics (header, content, etc'.)
   - Breakpoints
-- Typography [↘︎](#typography){target="_self"} (using [Utopia](https://utopia.fyi/))
-- Border Radius [↘︎](#radius){target="_self"}
-- Box Shadow [↘︎](#shadow){target="_self"}
-- Link [↘︎](#section1){target="_self"} 
+- Typography [(↓)](#typography){target="_self" .sup} (using [Utopia](https://utopia.fyi/))
+- Border Radius [(↓)](#radius){target="_self" .sup}
+- Box Shadow [(↓)](#shadow){target="_self" .sup}
+- Link [(↓)](#section1){target="_self" .sup} 
 -->
 
 
 ## This site's tokens
-This site is quite small so there's not a lot of tokens, but I'm using them for - *Colors*, *Sizes*, *Breakpoints*, *Typography* and *Shadows*. I might touch on it in a later article. For the sake of this article though I'll address just the color tokens.
+This site is quite small so there are not many tokens, but I'm using them for - *Colors*, *Sizes*, *Breakpoints*, *Typography* and *Shadows*. I might refer to it in a later article. 
+
+For the sake of this article though I'll address just the color tokens.
 
 ### [Color Tokens Breakdown]{id="color"}
 
@@ -173,21 +177,24 @@ Giving colors semantic meaning is important, so here's my naming convention:
 3. ***Brand Color*** – You guessed it. Here I'm using it a my link color too
 <!-- 4. ***Focus Color*** – Used to focus aon elements. -->
 
-Each of them have 5 states; `main`, `slight`, `dim`, `dis` and `none`. You can see in the code block below how I structure it, or see it in action in the [1st Live Example](#1st-example){target="_self"} below.
+Each of them have 5 states; `main`, `slight`, `dim`, `dis` and `none`. You can see in the code block below how I structure it, or see it in action in the 1st Live Example below [(↓)](#1st-example){target="_self" .sup}.
 
 The power or working like this, is that if one day you choose to change the system color, you'll just have to change it in one place, or two if you have dark mode.
 
 
 ### [1st Live Example; Updating Color Tokens!!]{id="1st-example"}
 
-In this example you can update `--color-sys-main` and see its effect over the different color style. Since of the CSS setup shown above, all the colors are bound to it, so changing it will effect them all + the dark mode as well.
+In this example you can update `--color-sys-main` and see its effect over the different color style. Since of the CSS setup shown above, all the colors are bound to it, so changing it will affect them all + the dark mode as well.
 
 Will it look good? Probably not – Will it be accessible? No guarantees – Is it a good example? For sure! 😎
 
 ::gridBlock{colNum="2" gap="var(--space-m);"}
 :::grid-unit
 #### System Color
-So here we have 5 variant of the ***system*** color, and you can click on the color picker to see it in action.
+So here we have 5 variants of the ***system*** color.
+
+Click on the color picker to see it in action.
+
 - `--color-sys-main`
 - `--color-sys-slight`
 - `--color-sys-dim`
@@ -201,7 +208,10 @@ So here we have 5 variant of the ***system*** color, and you can click on the co
 ::gridBlock{colNum="2" gap="var(--space-m);"}
 :::grid-unit
 #### System Invert Color
-And here we have 5 variant of the ***system-invert*** color – Change it too!
+And here we have 5 variants of the ***system-invert*** color.
+
+Change it too!
+
 - `--color-sys-invert-main`
 - `--color-sys-invert-slight`
 - `--color-sys-invert-dim`
@@ -215,7 +225,8 @@ And here we have 5 variant of the ***system-invert*** color – Change it too!
 ::gridBlock{colNum="2" gap="var(--space-m);"}
 :::grid-unit
 #### Brand Color
-5 variant of the ***brand*** color. Being used by links, icons and buttons.
+
+5 variants of the ***brand*** color. Being used by links, icons and buttons.
 
 Go ahead, see it in action!
 
@@ -254,7 +265,7 @@ Following the article I've written about [Simple Icon System](/post/simple-icon-
 
 #### Well, that's the gist of it.
 
-See ya'll in the nest post 👋
+See ya'll in the next post 👋
 
 
 <!-- 
