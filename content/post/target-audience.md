@@ -24,64 +24,56 @@ tags: ['Creative']
 
 ## Premiss
 
-If you aim to get somewhere, and do it by NOT walking long enough – having a target is crucial and Target Audience can really help. 
+If you aim to get somewhere, and do it by walking *short* enough – having a target is crucial.
 
 ## Why Target Audience?
 
-Image a conference for doctors – What would you try to sell there? An app for managing patients **or** a new tool for scarless stitches?
+Imagine a medical doctors conference – From the following two products, what would you try to sell there? An app for managing patients **or** a new tool for scarless stitches?
 
-What if I say the conference if for *Surgeons*?
+"Why not both?" you might say.
 
-What if I say the conference deals with *Health Administration*?
+But what it's a conference for *Surgeons*? Or what if I say the conference deals with *Health Administration*?
 
-I guess knowing for which kind of doctor the conference if for, will make your answers much clearer than, right?
+I guess knowing for which kind of doctor the conference if for, will make your answers much clearer, right?
 
-Knowing your Target Audience is basic knowledge for any service or product – without it you just might waste your time.
+Knowing your *Target Audience* is basic knowledge for any service or product – without it you just might waste your time. Simply put:
 
-> Simply put – a Target Audience is who you focus your marketing and product efforts on.
+> *Target Audience* is who you focus your marketing and product efforts on.
 > 
 
 ### The benefits of using a Target Audience
 
-Target Audience can help you product endeavours and your marketing campaigns by being more focused – and everything that help you and the org be more focused in your work is blessing. 
+*Target Audience* can help your product endeavours and your marketing campaigns by being more focused – and everything that help you and the org be more focused in your work is blessing. 
 
-- ***Effective Marketing***
+#### Better Messaging
     
-    Develop more effective marketing messages and campaigns by tailoring communication to resonate with you audience specific needs, interests, and pain points.
+Develop more effective marketing messages and campaigns by tailoring communication to resonate with your audience specific needs, interests, and pain points.
     
-    Allocate resources efficiently by spending marketing budget on channels and activities that are most likely to reach their target audience.
+#### Effective Marketing Resource
+  
+Allocate resources efficiently by spending marketing budget on channels and activities that are most likely to reach their target audience.
     
-- ***Helps Define the Product or Service***
+#### Helps Define the Product or Service
     
-    By knowing your audience you can create products and services that truly meet their needs. Increase you understanding of what features and benefits are most important to your target customers and focus on delivering them.
+By knowing your audience you can create products and services that truly meet their needs. Increase your understanding of what features and benefits are most important to your target customers and focus on delivering them.
     
-- ***Important step in a brand guide***
+#### Build a stronger brand
     
-    Unfortunately quite a lot of managers don’t really want to know what they are aiming for, liking the fog of war – not willing to commit to their company values, tone and voice and other initiatives that define strong & reliable brands. 
-    
-    Setting the Target Audience is great starting point to make things clearer and demystify conceptions. Moreover it causes the least resistance for thickheaded managers in setting a brand guide and is an awesome gateway for this brand initiative.  
-    
-- ***Build a stronger brand***
-    
-    Once you know the audience you’re reaching, it will be easier to communicate and interact in a more personalized and meaningful manner thus creating a better experience. 
-    
-    This knowledge will provide the basis for building [Personas](https://www.notion.so/Personas-987287bb414d4d938ecf98488384b176?pvs=21), which in turn with the company [Vision & Mission](https://www.notion.so/Vision-Mission-8e974928e43e48e1af8df8905fb4f27e?pvs=21), 
-    
+Setting *Target Audience* is great starting point to make things clearer and demystify conceptions about your brand. The Target Audience will provide a basis for you to set the *user persona* document, which is a higher level of specification. 
 
 ## What is Target Audience?
 
-A **target audience** is a focused group of people – an ideal go-to customers – that a brand identifies as **most likely to be interested in their products or services** and aims to reach directly with their advertising efforts.
+A *target audience* is a focused group of people – an ideal go-to customers – that a brand identifies as **most likely to be interested in their products or services** and aims to reach directly with their advertising efforts.
 
-**Target audience** shares similar attributes – such as interests, context or needs – an it addresses goals, jobs to be done, or unmeet needs.
+*Target audience* shares similar attributes – such as interests, context or needs – an it addresses goals, jobs to be done, or unmeet needs.
 
 This group shares certain characteristics, such as:
 
-- **Demographics:** Age, gender, income, location, education, family status, etc.
-- **Psychographics:** Values, interests, hobbies, lifestyle, personality traits, etc.
-- **Behavioral factors:** Purchasing habits, media consumption, online activity, etc.
+- *Demographics:* Age, gender, income, location, education, family status, etc.
+- *Psychographics:* Values, interests, hobbies, lifestyle, personality traits, etc.
+- *Behavioral factors:* Purchasing habits, media consumption, online activity, etc.
 
 > A Target Audience is a group of people who share similar attributes or needs and can relate to, consume, or take part in an idea, service or product.
-> 
 
 ### Groups in Target Audience
 
@@ -89,21 +81,30 @@ It’s important to recognize that there is more than one target audience. Usual
 
 The audience is comprised of many people sharing similar attributes or needs, which can be wide or narrow. Let’s take for example heavy metal music – are all its listeners the same? No, we have sub-genres like: Thrash, Death, Black, Power, Doom, Gothic, Symphonic, Progressive, Folk, Nu, Industrial, Metalcore, Deathcore, Sludge, Stoner, Groove, Avant-garde and Alternative Metal – each attracting different audiences – some don’t overlap at all, some really despise other sub-genres.
 
-In the heavy metal music, we can take our group segmentation even further; why just Listeners? What about Musicians or Apparel. That is, if you promote music, or sell music gear, or sell fashion – your audience might be different, with different needs and different sub-groups.
+In the heavy metal music, we can take our group segmentation even further; why just Listeners? What about Musicians or Apparel. That is, if you promote music, or sell fashion – your audience might be different, with different needs and different sub-groups.
 
-We usually divide our audience into two or three groups.
+::gridBlock{colNum="2" gap="var(--space-m);"}
+:::grid-unit
+We usually divide our audience into two or **three groups**.
 
-Dividing into **more than three** groups can lead to **distraction** and **dispersal**:
+The **overlap** between these audiences forms your *Target Audience*.
+:::
+:::grid-unit
+![The three groups of a typical Target Audience](/posts/target-audience/target-audience-diagrm.webp){style="max-width: 35ch;"}
+*The three groups of a typical Target Audience*
+:::
+::
 
-- **Distraction**: Addressing too wide an audience can spread your efforts too thin and lead to inefficiency.
-- **Dispersal**: Spreading your marketing message too wide makes it loose and unfocused, leading to a lack of trust from prospects.
+
+Dividing into **more than three** groups can lead to distraction and dispersal:
+
+- *Distraction*: Addressing too wide an audience can spread your efforts too thin and lead to inefficiency.
+- *Dispersal*: Spreading your marketing message too wide makes it loose and unfocused, leading to a lack of trust from prospects.
 
 Dividing into **less than two** groups can limit diversity and adaptability:
 
-- **Diversity**: Overspecialization can breed weakness. It’s best to see your product or service from multiple perspectives.
-- **Adaptability**: Your product or service will likely be used in unexpected ways. Embracing this reality makes you more resilient.
-
-The **overlap** between these audiences forms your **Target Audience**.
+- *Diversity*: Overspecialization can breed weakness. It’s best to see your product or service from multiple perspectives.
+- *Adaptability*: Your product or service will likely be used in unexpected ways. Embracing this reality makes you more resilient.
 
 ### Example: Addressing different audiences, Figma & Sketch
 
