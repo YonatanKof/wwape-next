@@ -73,6 +73,16 @@ ol {
 li > ul,
 ol {
 	margin-block-start: 0.125em;
+	
+}
+li {
+	padding-inline-start: var(--space-3xs);
+}
+li::marker{
+	color: var(--color-sys-slight);
+	font-family: var(--font-hand);
+	font-variation-settings: 'INFM' 0, 'wght' 333, 'ital' 1;
+	// font-size: 95%;
 }
 blockquote {
 	p {
@@ -174,6 +184,10 @@ em {
 }
 strong {
 	font-variation-settings: 'wght' 555;
+}
+.sup {
+	font-size: 60%;
+	vertical-align: super;
 }
 h1 {
 	font-size: var(--step-5);
