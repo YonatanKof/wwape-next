@@ -43,8 +43,8 @@ const { open, close } = useModal({
 		<p><i>Hi Guy</i> 👋 we know each other from back in the <em>Matnas Interactive</em> days.</p>
 		<p>
 			I wanted to let you know that the <i>DS lead</i> sounds like a dream job, and I would love to join and help you
-			win. To give you a glimpse of my abilities, I've pulled together this page with some examples of my work from the
-			past few years. So please enjoy and let's talk soon 🙏
+			win. To give you a glimpse of my <i>DS</i> abilities, I've pulled together this page with some examples of my work
+			from the past few years. So please review and let's talk soon 🙏
 		</p>
 
 		<main>
@@ -52,16 +52,17 @@ const { open, close } = useModal({
 				<span>
 					<span>
 						<p>
-							As a multi-class player I wear several hats, one of them was creating
-							<em>Pepperi Design System</em>, for both the <i>product</i> and <i>devs</i> teams to enhance velocity.
+							As a full-stack designer I wear several hats, one of them was creating
+							<em>Pepperi Design System</em> to improve velocity. This comes with an intimate understanding of how
+							complex systems work. Not only the product, but the people and the org running it.
 						</p>
-						<p>Visit the links around and see it all in action 👀</p>
+						<!-- <p>Visit the links around and see it all in action 👀</p> -->
 						<p>
 							Plus! See why I'm a good fit by clicking
 							<i class="drag-title">the button</i>
 						</p>
 					</span>
-					<button @click="open" @keyup.enter="open">Good Fit + CV</button>
+					<button @click="open" @keyup.enter="open">More reasons why + CV</button>
 				</span>
 			</div>
 
@@ -75,8 +76,8 @@ const { open, close } = useModal({
 			>
 				<span>
 					<p>
-						A short article I wrote about <em>design tokens</em> and how to use them in a design system plus an
-						example of it in action 💪
+						A short article I wrote about <em>design tokens</em> and how to use them in a design system plus an example
+						of it in action 💪
 					</p>
 					<p>Be sure to check it out!</p>
 				</span>
@@ -106,8 +107,8 @@ const { open, close } = useModal({
 				srcMp4="/misc/DesignSystem-2.mp4"
 			>
 				<p>
-					This library contains the <i>Organisms</i>, <i>Templates</i> and <i>Pages</i> (WIP) that makes up Pepperi's webapp
-					and drives the <em>page builder</em> engine.
+					This library contains the <i>Organisms</i>, <i>Templates</i> and <i>Pages</i> (WIP) that makes up Pepperi's
+					webapp and drives the <em>page builder</em> engine.
 				</p>
 			</ArticleGrid>
 
@@ -120,8 +121,8 @@ const { open, close } = useModal({
 				srcMp4="/misc/brand.mp4"
 			>
 				<p>
-					With this design initiative, I've guided management to strengthen Pepperi brand. Here you can find Pepperi's brand values,
-					mission statement, visual and design assets, target audience and users persona.
+					With this design initiative, I've guided management to strengthen Pepperi brand. Here you can find Pepperi's
+					brand values, mission statement, visual and design assets, target audience and users persona.
 				</p>
 			</ArticleGrid>
 		</main>
@@ -148,7 +149,7 @@ h1 {
 p {
 	font-size: var(--step-0);
 	margin-block-end: var(--space-3xs);
-	max-width: 65ch;
+	max-width: 67ch;
 	&:last-child {
 		margin-block-end: unset;
 	}
