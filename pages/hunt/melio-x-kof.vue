@@ -6,11 +6,11 @@ import { ModalsContainer, useModal } from 'vue-final-modal';
 import Modal from '~/components/ModalMelio.vue';
 
 const config = useRuntimeConfig();
-const pageDesc = `Reaching out to Melio about DS Lead– ${config.public.siteOwnerName}`;
+const pageDesc = `Reaching out to Melio about DS Lead – ${config.public.siteOwnerName}`;
 const pageImg = '/misc/melio-social.jpg';
 const pageAlt = 'Cover image for Melio × Kof';
 useHead({
-	title: 'Melio × Kof',
+	title: 'Melio × Yonatan Kof',
 });
 useSeoMeta({
 	ogType: 'website',
@@ -53,7 +53,7 @@ const { open, close } = useModal({
 					<span>
 						<p>
 							As a multi-class player I wear several hats, one of them was creating
-							<em>Pepperi Design System</em>, for both the <i>product</i> and <i>devs</i> teams to improve velocity.
+							<em>Pepperi Design System</em>, for both the <i>product</i> and <i>devs</i> teams to enhance velocity.
 						</p>
 						<p>Visit the links around and see it all in action 👀</p>
 						<p>
@@ -75,7 +75,7 @@ const { open, close } = useModal({
 			>
 				<span>
 					<p>
-						A short article I've written about <em>design tokens</em> and how to use them in a design system plus an
+						A short article I wrote about <em>design tokens</em> and how to use them in a design system plus an
 						example of it in action 💪
 					</p>
 					<p>Be sure to check it out!</p>
@@ -92,7 +92,7 @@ const { open, close } = useModal({
 			>
 				<p>
 					Used by the <i>Product</i> and <i>Dev</i> teams to <strong>streamline development</strong>. Showcasing the
-					<i>atomic</i> and <i>molecular</i> elements that makes Pepperi DS and the engine that drive Pepperi
+					<i>atomic</i> and <i>molecular</i> elements that makes Pepperi DS and the engine that drives Pepperi
 					<em>theme editor</em>.
 				</p>
 			</ArticleGrid>
@@ -120,8 +120,8 @@ const { open, close } = useModal({
 				srcMp4="/misc/brand.mp4"
 			>
 				<p>
-					With this design initiative I've guided management to strengthen Pepperi brand. Here you can find Pepperi's brand values,
-					mission statement, target audience, users persona, visual and design assets.
+					With this design initiative, I've guided management to strengthen Pepperi brand. Here you can find Pepperi's brand values,
+					mission statement, visual and design assets, target audience and users persona.
 				</p>
 			</ArticleGrid>
 		</main>

@@ -17,19 +17,19 @@ const emit = defineEmits<{
 		<h4 class="drag-title">More reasons way!</h4>
 		<ul>
 			<li>
-				Working knowledge of complex <i><strong>DS</strong></i>
+				Working knowledge of complex <em>DS</em>
 			</li>
-			<li>A proven ability to lead teams without authority</li>
+			<li>Proven ability to lead teams without authority</li>
 			<li>A designer who code, this site and more</li>
 			<li>Proficient in writing guides and PRDs</li>
-			<li>Parametric design running in my veins</li>
+			<li>In love with parametric design</li>
 			<li>Best practices in collaboration and sharing</li>
 			<li>Best practices in backlog management</li>
 			<li>Working lean and effective</li>
 			<li>Total control over tools</li>
 			<li>Smoking hot recommendations</li>
 			<li>
-				Turn the <i><strong>DS</strong></i> form an issue to a success
+				Turning the <em>DS</em> form an issue to a success
 			</li>
 		</ul>
 		<span>
@@ -70,7 +70,6 @@ const emit = defineEmits<{
 </style>
 <style lang="scss" scoped>
 .drag-title {
-	// animation: wobble 1s ease-in-out alternate infinite;
 	margin-block: var(--space-s);
 	padding-inline: var(--space-xs);
 }
