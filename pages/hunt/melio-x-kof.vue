@@ -42,24 +42,21 @@ const { open, close } = useModal({
 		<h1>Melio × Kof</h1>
 		<p><i>Hi Guy</i> 👋 we know each other from back in the <em>Matnas Interactive</em> days.</p>
 		<p>
-			I wanted to let you know that the <i>DS lead</i> sounds like a dream job, and I would love to join and help you
-			win. To give you a glimpse of my <i>DS</i> abilities, I've pulled together this page with some examples of my work
-			from the past few years. So please review and let's talk soon 🙏
+			The <em>design system lead</em> sounds like a dream job, and I’d love to join and help you guys win. Check out
+			this page for <em>DS</em> related examples of my work. Let’s talk soon 🙏
 		</p>
-
 		<main>
 			<div id="intro">
 				<span>
 					<span>
 						<p>
-							As a full-stack designer I wear several hats, one of them was creating
-							<em>Pepperi Design System</em> to improve velocity. This comes with an intimate understanding of how
-							complex systems work. Not only the product, but the people and the org running it.
+							As a <i>full-stack designer</i> I did several things, creating <em>Pepperi Design System</em> was one of them.
+							This was made possible through an intimate understanding of complex systems, the people who use them, and
+							the businesses that operate them.
 						</p>
-						<!-- <p>Visit the links around and see it all in action 👀</p> -->
 						<p>
-							Plus! See why I'm a good fit by clicking
-							<i class="drag-title">the button</i>
+							More reasons why I'm a good fit?
+							<i class="drag-title">Push the button to see!</i>
 						</p>
 					</span>
 					<button @click="open" @keyup.enter="open">More reasons why + CV</button>
@@ -76,8 +73,8 @@ const { open, close } = useModal({
 			>
 				<span>
 					<p>
-						A short article I wrote about <em>design tokens</em> and how to use them in a design system plus an example
-						of it in action 💪
+						A short article I wrote about <em>design tokens</em> and how to use them in a design system, including an
+						example of them in action. 💪
 					</p>
 					<p>Be sure to check it out!</p>
 				</span>
@@ -92,8 +89,8 @@ const { open, close } = useModal({
 				srcMp4="/misc/DesignSystem-1.mp4"
 			>
 				<p>
-					Used by the <i>Product</i> and <i>Dev</i> teams to <strong>streamline development</strong>. Showcasing the
-					<i>atomic</i> and <i>molecular</i> elements that makes Pepperi DS and the engine that drives Pepperi
+					Used by the <i>Product</i> and <i>Dev</i> teams to <strong>improve velocity</strong>, this library showcases
+					the <i>atomic</i> and <i>molecular</i> elements that makes up Pepperi DS and the engine that drives Pepperi
 					<em>theme editor</em>.
 				</p>
 			</ArticleGrid>
@@ -121,8 +118,8 @@ const { open, close } = useModal({
 				srcMp4="/misc/brand.mp4"
 			>
 				<p>
-					With this design initiative, I've guided management to strengthen Pepperi brand. Here you can find Pepperi's
-					brand values, mission statement, visual and design assets, target audience and users persona.
+					With this design initiative, I've guided management in strengthening the Pepperi brand. Here, you can find
+					Pepperi’s brand values, mission statement, visual and design assets, target audience, and user personas.
 				</p>
 			</ArticleGrid>
 		</main>
