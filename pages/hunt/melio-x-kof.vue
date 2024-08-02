@@ -42,8 +42,8 @@ const { open, close } = useModal({
 		<h1>Melio × Kof</h1>
 		<p><i>Hi Guy</i> 👋 we know each other from back in the <em>Matnas Interactive</em> days.</p>
 		<p>
-			The <em>design system lead</em> sounds like a dream job, and I’d love to join and help you guys win. Check out
-			this page for <em>DS</em> related examples of my work. Let’s talk soon 🙏
+			The <em>design system lead</em> sounds like a dream job, I’d love to join and help you win. Check out
+			this page for <em>DS</em> related works. Let’s talk soon 🙏
 		</p>
 		<main>
 			<div id="intro">
