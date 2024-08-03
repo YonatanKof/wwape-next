@@ -73,7 +73,8 @@ section {
 	background-color: var(--color-sys-invert-highlight);
 	border-radius: var(--border-radius-sm);
 	box-shadow: var(--shadow-md);
-	margin-block: var(--space-2xs);
+	margin-block-start: var(--space-s);
+	margin-block-end: var(--space-m);
 }
 em {
 	display: contents;
@@ -104,6 +105,10 @@ fieldset div {
 	flex-direction: column;
 	gap: var(--space-m);
 }
+input[type='range'] {
+	width: 100%;
+}
+
 @media (width <= $display-width-xs) {
 	fieldset {
 		flex-direction: column;

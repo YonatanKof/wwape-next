@@ -88,22 +88,16 @@ const goPost = () => clearError({ redirect: '/post' });
 				<SeeMore :prev="prev" :next="next" />
 			</template>
 			<template #not-found>
-				<section id="error">
-					<h1>
-						Oh my! <span>Can't find this page</span>
-					</h1>
-					<div id="link-buttons">
-						<button @click="goHome">Back to home page</button>
-						<button @click="goDesign">See some nice designs</button>
-						<button @click="goPost">Read some nice articles</button>
-					</div>
-				</section>
+				<ErrorMsg />
 			</template>
 		</ContentDoc>
 	</main>
 </template>
 
 <style lang="scss" scoped>
+h1 {
+	margin-block-end: var(--space-s);
+}
 article {
 	margin-block-end: var(--space-s);
 }

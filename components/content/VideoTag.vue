@@ -4,6 +4,10 @@ defineProps({
 		type: String,
 		default: undefined,
 	},
+	srcMp4: {
+		type: String,
+		default: undefined,
+	},
 	aspectRatio: {
 		type: String,
 		default: '1/1',
@@ -45,8 +49,9 @@ defineProps({
 <template>
 	<div>
 		<span v-if="showMesh"></span>
-		<video :controls="controls" :autoplay="autoplay" :muted="muted" :loop="loop">
+		<video :controls="controls" :autoplay="autoplay" :muted="muted" :loop="loop" playsinline poster="/misc/bg-dots.webp">
 			<source :src="src" type="video/webm" />
+			<source :src="srcMp4" type="video/mp4" />
 			<p>Your browser does not support <code>video</code> tag</p>
 		</video>
 		<em v-if="desc">{{ desc }}</em>

@@ -40,7 +40,7 @@ useSeoMeta({
 			</div>
 			<div>
 				<h2 class="title">Mixes</h2>
-				<YouTubePlayer videoId="SOLT46Qn0aU" title="Even Though This Body Will Disappear Mix" />
+				<YouTubePlayer videoId="SOLT46Qn0aU" title="Even Though This Body Will Disappear Mix" marginTop="unset"/>
 				<MixcloudMix src="kof-mix-jan-2019-hudna" />
 				<MixcloudMix src="kof-mix-jul-2018" />
 				<MixcloudMix src="kof-mix-october-2017-uganda-tlv" />

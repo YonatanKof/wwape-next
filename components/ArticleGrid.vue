@@ -32,15 +32,15 @@ const props = defineProps({
 		<span class="flip">
 			<span class="content">
 				<slot />
-				<NuxtLink v-if="linkTo" class="button" :href="linkTo"> {{ btnText }} </NuxtLink>
+				<NuxtLink v-if="linkTo" class="button" :href="linkTo" :target="target"> {{ btnText }} </NuxtLink>
 			</span>
 			<VideoTag
 				v-if="imgSrc"
 				class="image-box"
 				marginBlock="unset"
 				:src="imgSrc"
+				:srcMp4="srcMp4"
 				:show-mesh="false"
-				:target="target"
 				min-width="408px"
 			></VideoTag>
 		</span>
@@ -55,7 +55,7 @@ const props = defineProps({
 	background-color: var(--color-sys-invert-highlight);
 	border-radius: var(--border-radius-sm);
 	background-image: radial-gradient(var(--color-brand-dis) 1px, transparent 1px);
-	background-size: 8px 8px;
+	background-size: 4px 4px;
 	overflow: hidden;
 	container-name: flipped;
 	container-type: inline-size;

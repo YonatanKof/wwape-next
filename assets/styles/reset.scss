@@ -19,13 +19,6 @@
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
-		&:focus {
-			border-radius: var(--border-radius-sm); ;
-			padding: 6px;
-			margin: -6px;
-			box-shadow: inset 0 0 0 4px var(--color-focus-slight);
-			outline: none;
-		}
 	}
 	ol, ul {
 		// list-style: none;

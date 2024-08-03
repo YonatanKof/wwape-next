@@ -1,6 +1,6 @@
 <!-- This is a single post -->
 <script setup>
-const { toc } = useContent();
+// const { toc } = useContent();
 const { path } = useRoute();
 const cleanPath = path.replace(/\/+$/, '');
 // For the previous & next items
@@ -118,6 +118,9 @@ const goPost = () => clearError({ redirect: '/post' });
 				</article>
 				<!-- <SeeMore :prev="prev" :next="next" /> -->
 			</template>
+			<template #not-found>
+				<ErrorMsg />
+			</template>
 		</ContentDoc>
 	</main>
 </template>
@@ -127,7 +130,9 @@ main {
 	max-width: var(--display-width-sm);
 	margin-inline: auto;
 }
-
+h1 {
+	margin-block-end: var(--space-s);
+}
 section {
 	display: grid;
 	grid-template-columns: 4fr 1fr 6fr;
@@ -150,7 +155,10 @@ section {
 	}
 }
 #article-info {
-	background-color: var(--color-sys-invert-highlight);
+	background-color: var(--color-sys-invert-highlight-slight);
+	backdrop-filter: blur(7px);
+	background-image: radial-gradient(var(--color-sys-invert-highlight) 1px, transparent 1px);
+	background-size: 3px 3px;
 	grid-column: 1 / span 2;
 	grid-row: 1 / span 2;
 	padding: calc(var(--space-s) + var(--space-3xs));

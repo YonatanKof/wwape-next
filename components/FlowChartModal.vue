@@ -61,9 +61,6 @@ div {
 }
 </style>
 <style lang="scss">
-.vfm--overlay {
-	background: var(--overlay);
-}
 .confirm-modal {
 	display: flex;
 	justify-content: center;
