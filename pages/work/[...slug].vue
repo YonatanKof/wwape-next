@@ -3,16 +3,17 @@
 definePageMeta({
 	layout: 'simple',
 });
+// const pageDesc = `Pepperi Page Builder, by ${config.public.siteOwnerName}`;
+// const pageImg = '/misc/melio-social.jpg';
+// const pageAlt = 'Cover image Pepperi Page Builder';
+// useHead({
+// 	title: 'Pepperi Page Builder',
+// });
+
 const { path } = useRoute();
-const cleanPath = path.replace(/\/+$/, '');
-// Data for the meta tags ↓
-const { data, error } = await useAsyncData(cleanPath, async () => {
-	// Remove a trailing slash in case the browser adds it, it might break the routing
-	// fetch document where the document path matches with the current route
-	let article = queryContent('/hunt').where({ _path: cleanPath }).findOne();
-	return {
-		article: await article,
-	};
+
+const { data } = await useAsyncData('equal', () => {
+	return queryContent('work').where({}).find();
 });
 
 const config = useRuntimeConfig();
@@ -64,9 +65,6 @@ useHead({
 		},
 	],
 });
-const goHome = () => clearError({ redirect: '/' });
-const goDesign = () => clearError({ redirect: '/design' });
-const goPost = () => clearError({ redirect: '/hunt' });
 </script>
 
 <template>
@@ -77,28 +75,59 @@ const goPost = () => clearError({ redirect: '/hunt' });
 					<section id="article-header">
 						<div id="article-info">
 							<h1 id="title">{{ doc.title }}</h1>
+							<hr />
+							<span class="dates">
+								<p>Posted {{ $formatDate(doc.date) }}</p>
+								<p v-if="doc.updated">•</p>
+								<p v-if="doc.updated">Updated {{ $formatDate(doc.updated) }}</p>
+							</span>
+							<hr />
+							<h3 id="sub-title">{{ doc.description }}</h3>
 						</div>
-						<!-- <UnLazyImage
+						<UnLazyImage
 							id="article-image"
 							:thumbhash="doc.cover_image_thumbhash"
 							:src="doc.cover_image"
 							:alt="doc.image_alt"
 							:height="doc.cover_image_height"
 							auto-sizes
-						/> -->
+						/>
 					</section>
-					<!-- <hr /> -->
+					<hr />
 					<span class="content-renderer"><ContentRenderer :value="doc" /></span>
 				</article>
+			</template>
+			<template #not-found>
+				<ErrorMsg />
 			</template>
 		</ContentDoc>
 	</main>
 </template>
 
 <style lang="scss" scoped>
-
+// main {
+// 	max-width: var(--display-width-lg);
+// 	margin-inline: auto;
+// }
+h1 {
+	margin-block-end: var(--space-s);
+}
 section {
-
+	display: grid;
+	grid-template-columns: 2fr 1fr 6fr;
+	grid-template-rows: var(--space-2xl) auto var(--space-2xl);
+	height: min-content;
+	margin-block-end: var(--space-m);
+	@media (width <= $display-width-lg) {
+		grid-template-columns: 4fr 1fr 6fr;
+	}
+	@media (width <= $display-width-md) {
+		grid-template-columns: 5fr 1fr 6fr;
+	}
+	@media (width <= $display-width-sm) {
+		grid-template-columns: var(--space-5xl) 1fr var(--space-5xl);
+		grid-template-rows: var(--space-5xl) auto 1fr;
+	}
 	@media (width <= $display-width-xs) {
 		grid-template-columns: var(--space-2xl) 1fr var(--space-2xl);
 		grid-template-rows: var(--space-6xl) auto 1fr;
@@ -107,8 +136,24 @@ section {
 		grid-template-columns: var(--space-s) 1fr var(--space-s);
 	}
 }
+#article-info {
+	background-color: var(--color-sys-invert-highlight-slight);
+	backdrop-filter: blur(7px);
+	background-image: radial-gradient(var(--color-sys-invert-highlight) 1px, transparent 1px);
+	background-size: 3px 3px;
+	grid-column: 1 / span 2;
+	grid-row: 1 / span 2;
+	padding: calc(var(--space-s) + var(--space-3xs));
+	z-index: 10;
+	border-radius: var(--border-radius-sm);
+	height: min-content;
+	@media (width <= $display-width-sm) {
+		padding: var(--space-s);
+	}
+}
 #article-image {
-	max-width: 20rem;
+	grid-column: 2 / span 2;
+	grid-row: 2 / span 2;
 }
 #title {
 	font-size: var(--step-4);
@@ -152,11 +197,5 @@ main {
 }
 hr:last-of-type {
 	margin-block-end: var(--space-s);
-}
-@media print {
-	#article-image,
-	#toc {
-		display: none !important;
-	}
 }
 </style>
