@@ -105,10 +105,10 @@ useHead({
 </template>
 
 <style lang="scss" scoped>
-// main {
-// 	max-width: var(--display-width-lg);
-// 	margin-inline: auto;
-// }
+main {
+	max-width: var(--display-width-lg);
+	margin-inline: auto;
+}
 h1 {
 	margin-block-end: var(--space-s);
 }
