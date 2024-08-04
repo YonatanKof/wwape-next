@@ -32,7 +32,7 @@ Custom web pages were built with custom code by developers form our Professional
     - Pepperi header builder
     - Native app integration
     - Version updates
-- Can’t be build or maintained by the clients
+- Can’t be built or maintained by the clients
 - Can be used only by FS team causing dependency and scalability issues
 
 ::TiltImage
@@ -40,5 +40,7 @@ Custom web pages were built with custom code by developers form our Professional
 img1: /work/pepperi-page-builder/Old-Blackcrows.webp
 img2: /work/pepperi-page-builder/Old-Dermalogica.webp
 img3: /work/pepperi-page-builder/Old-Chanel.webp
+desc: Some examples of our custom built homepages
 ---
 ::
+
