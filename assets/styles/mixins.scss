@@ -34,6 +34,7 @@
 	line-height: 1.25;
 	margin-block: var(--space-xs);
 	position: relative;
+	font-variation-settings: 'wght' 400, 'ital' 1;
 	&::before {
 		content: '';
 		display: inline-block;
