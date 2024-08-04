@@ -73,12 +73,11 @@ ol {
 li > ul,
 ol {
 	margin-block-start: 0.125em;
-	
 }
 li {
 	padding-inline-start: var(--space-3xs);
 }
-li::marker{
+li::marker {
 	color: var(--color-sys-slight);
 	font-family: var(--font-hand);
 	font-variation-settings: 'INFM' 0, 'wght' 333, 'ital' 1;
@@ -105,18 +104,18 @@ blockquote {
 	}
 }
 .content-renderer {
-	ul {
-		margin: unset;
-	}
+	// ul {
+	// 	margin: unset;
+	// }
+	ol,
+	ul,
 	p {
-		margin-block-end: 0.5em;
+		margin-block: 0.75em;
 	}
 	li {
 		margin-block-end: 0.25em;
 	}
-	p,
-	ol,
-	ul,
+
 	h1,
 	h2,
 	h3,
@@ -126,49 +125,9 @@ blockquote {
 		margin-block-start: 1em;
 		margin-block-end: 0.125em;
 	}
-	p {
-		text-wrap: pretty;
-		margin-block-start: 0.5em;
-	}
+
 	img {
 		margin-block-start: var(--space-m);
-	}
-}
-.cv {
-	ul {
-		margin: unset;
-	}
-	p {
-		margin-block-end: 0.5em;
-	}
-	li {
-		margin-block-end: 0.25em;
-	}
-	p,
-	ol,
-	ul,
-	li {
-		font-size: var(--step-0);
-	}
-	p,
-	ol,
-	ul,
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6 {
-		margin-block-start: 1em;
-		margin-block-end: 0.125em;
-	}
-	p {
-		text-wrap: pretty;
-		margin-block-start: 0.5em;
-	}
-	li > ul,
-	ol {
-		margin-block-start: 0.125em;
 	}
 }
 i,
