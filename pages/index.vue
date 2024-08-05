@@ -22,10 +22,8 @@ useSeoMeta({
 	<main>
 		<IntroText :is-on="true"
 			title="World Wide Ape"
-			text="I'm Yonatan, a mismatched persona, friend, lover, family man and an alright dude form Tel Aviv, the culture capital of the land of the killer Jews."
-			text2="If life is a RPG and you're an NPC, so I'm a multiclass; graphic/brand/product designer, illustrator, developer, photographer and maker."
+			text="I'm Yonatan, a mismatched persona, friend, lover, family man and an alright dude from Tel Aviv, the culture capital of the flaming Middle East."
+			text2="If life is a RPG and you're an NPC, then I'm a multiclass; pro product designer and an amateur illustrator, developer, photographer and bedroom DJ."
 			/>
-			<!-- text2="So happy you're here! Please enjoy my site 🔥" -->
-			<!-- text2="This site is under contraction 🚧 expect much more design articles and a few blog posts soon" -->
 	</main>
 </template>

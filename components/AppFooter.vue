@@ -5,13 +5,16 @@ const config = useRuntimeConfig();
 	<footer class="footer">
 		<p class="links">
 			<nuxt-link href="//github.com/yonatankof" target="_blank" rel="nofollow noopener noreferrer">GitHub</nuxt-link>
-			<nuxt-link href="//linkedin.com/in/yonatankof/" target="_blank" rel="nofollow noopener noreferrer"
+			<nuxt-link href="//linkedin.com/in/yonatankof" target="_blank" rel="nofollow noopener noreferrer"
 				>Linkedin</nuxt-link
 			>
 			<nuxt-link href="//dribbble.com/yonatan_kof" target="_blank" rel="nofollow noopener noreferrer"
 				>Dribbble</nuxt-link
 			>
-			<nuxt-link href="//twitter.com/yonatankof" target="_blank" rel="nofollow noopener noreferrer">Twitter</nuxt-link>
+			<nuxt-link href="//instagram.com/yonatan_kof/" target="_blank" rel="nofollow noopener noreferrer"
+				>Instagram</nuxt-link
+			>
+			<nuxt-link to="/music">Mixed Music</nuxt-link>
 		</p>
 		<span class="footer__copyright">
 			<p>
@@ -25,8 +28,9 @@ const config = useRuntimeConfig();
 a,
 p {
 	font-size: var(--step--1);
-	margin-block-end: var(--space-3xs);
-	@media (width <= $display-width-2xs) {
+	margin: unset;
+	// margin-block-end: var(--space-3xs);
+	@media (width <= $display-width-sm) {
 		font-size: var(--step--2);
 	}
 	text-align: center;
@@ -38,7 +42,8 @@ footer {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-block-end: var(--space-s);
+	padding-block-end: var(--space-m);
+	gap: var(--space-2xs);
 	@media print {
 		display: none !important;
 	}
@@ -48,6 +53,13 @@ footer {
 	flex-direction: row;
 	justify-content: center;
 	gap: var(--space-s);
+	flex-wrap: wrap;
+	span {
+		white-space: nowrap;
+	}
+	@media (width <= $display-width-xs) {
+		gap: var(--space-xs);
+	}
 	@media (width <= $display-width-2xs) {
 		gap: var(--space-2xs);
 	}

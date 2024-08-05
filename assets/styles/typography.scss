@@ -280,8 +280,11 @@ a,
 	@include link();
 }
 .router-link-active {
-	border-color: var(--color-sys-dim);
-	font-variation-settings: 'slnt' -15, 'wght' 800, 'CRSV' 0;
+	border-color: var(--color-brand-dim);
+	font-variation-settings: 'slnt' -15, 'wght' 725, 'CRSV' 0;
+	&:hover {
+		font-variation-settings: 'slnt' 0, 'wght' 800, 'CRSV' 0;
+	}
 }
 :is(h1, h2, h3, h4, h5, h6, code) a {
 	color: inherit;
