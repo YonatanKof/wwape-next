@@ -14,14 +14,7 @@ tags: ['Creative']
 
 <!-- This is part of a series [Crafting a Brand, a Designer's Take](https://www.notion.so/Crafting-a-Brand-a-Designers-take-d02ec6f0108e43b8a9d23c5a498c19d8?pvs=21) – **TBD** -->
 
-> *Alice:* Would you tell me, please, which way I ought to go from here?  
-> *The Cheshire Cat:* That depends a good deal on where you want to get to.  
-> *Alice:* I don't much care where.  
-> *The Cheshire Cat*: Then it doesn't much matter which way you go.  
-> *Alice:* ...So long as I get somewhere.  
-> *The Cheshire Cat:* Oh, you're sure to do that, if only you walk long enough.
-
-If you aim to get somewhere and do it by walking *short* enough – **having a target is crucial**.
+If, unlike Alice, you aim to get somewhere if only you walk *short* enough – **having a target is crucial**.
 
 ## Premise
 
