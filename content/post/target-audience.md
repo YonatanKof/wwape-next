@@ -14,25 +14,31 @@ tags: ['Creative']
 
 <!-- This is part of a series [Crafting a Brand, a Designer's Take](https://www.notion.so/Crafting-a-Brand-a-Designers-take-d02ec6f0108e43b8a9d23c5a498c19d8?pvs=21) – **TBD** -->
 
-If, unlike Alice, you aim to get somewhere if only you walk *short* enough – **having a target is crucial**.
+> If you aim to go somewhere, and unlike Alice, you only want to walk *short* enough – having a **target** is **crucial**.
 
-## Premise
+## Context Matters
 
-Imagine a medical doctors' conference – from the following two products, what would you try to sell there? An app for managing patients **or** a new tool for scarless stitches?
+Imagine you’re at a medical doctors’ conference.
 
-"Why not both?" you might say.
+Which of the following two products do you think would sell the most?
 
-But what if it's a conference for *Surgeons*? Or what if I say the conference deals with *Health Administration*?
+An app for managing patients **or** a new tool for scarless stitches?
 
-I guess knowing which kind of doctor the conference is for will make your answers much clearer, right?
+*“Why not both?”* you might ask.
+
+But what if you knew it was a conference for *Surgeons*?
+
+Or what if I told you it was a conference for *Health Administration*?
+
+Knowing which type of doctor the conference is for would likely change your answer, right?
 
 ## Why Target Audience?
 
-Knowing your *Target Audience* is basic knowledge for any service or product – without it, you might just waste your time. Simply put:
+Knowing your *target audience* is basic knowledge for any service or product – without it, you might just waste your time. Simply put:
 
-> *Target Audience* is who you focus your marketing and product efforts on.
+> *Target audience* is who you focus your marketing and product efforts on.
 
-The benefits of identifying a *Target Audience* are that it helps your product endeavors and your marketing campaigns by being more focused – everything that makes you and your organization more focused is a blessing.
+The benefits of identifying a *target audience* are that it helps your product endeavors and your marketing campaigns by being more focused – everything that makes you and your organization more focused is a blessing.
 
 Some of the benefits are:
 
@@ -42,7 +48,7 @@ Some of the benefits are:
 
 - ***Effective Marketing Resource Allocation:***
 
-    Allocate resources efficiently by spending your marketing budget on channels and activities that are most likely to reach your target audience.
+    Allocate resources efficiently by spending your marketing budget on channels and activities that are most likely to reach your *target audience*.
 
 - ***Helps Define the Product or Service:***
 
@@ -50,33 +56,44 @@ Some of the benefits are:
 
 - ***A Stronger Brand:***
 
-    Setting a *Target Audience* is a great starting point to make things clearer and demystify conceptions about your brand. The Target Audience will provide a basis for you to set the *user persona* document, which is a higher level of specification.
+    Setting a *target audience* is a great starting point to make things clearer and demystify conceptions about your brand. The *target audience* will provide a basis for you to set the *user persona* document, which is a higher level of specification.
 
 ## What is Target Audience?
 
 A *target audience* is a focused group of people – an ideal group of go-to customers – that a brand identifies as **most likely to be interested in their products or services** and aims to reach directly with their advertising efforts.
 
-A *target audience* shares similar attributes – such as interests, context, or needs – and it addresses goals, jobs to be done, or unmet needs.
+*Target audiences* shares similar attributes – such as interests, context, or needs – and it addresses goals, jobs to be done, or unmet needs.
 
-This group shares certain characteristics, such as:
+This group shares certain characteristics, to name a few:
 
 - ***Demographics:***
 
-    Age, gender, income, location, education, family status, etc.
+    Age, gender, income, location, education, or family status
 
 - ***Psychographics:***
 
-    Values, interests, hobbies, lifestyle, personality traits, etc.
+    Values, interests, hobbies, lifestyle, or personality traits
 
 - ***Behavioral factors:***
 
-    Purchasing habits, media consumption, online activity, etc.
+    Purchasing habits, media consumption, or online activity
 
-> A Target Audience is a group of people who share similar attributes or needs and can relate to, consume, or take part in an idea, service, or product.
+- ***Professional factors:***
+
+    Role, position, industry, job responsibilities, or purchase decisions
+
+- ***Technographic factors:***
+
+    Preferred devices, software usage, tech-savviness, or adoption
+
+- ***Cultural factors:***
+
+    Language, ethnicity, cultural values, traditions, or social norms
+
 
 ### Groups in Target Audience
 
-It’s important to recognize that there is more than one target audience. Usually, ideas or products don’t address only one group of people.
+It’s important to recognize that there is more than one *target audience*. Usually, ideas or products don’t address only one group of people.
 
 The audience is comprised of many people sharing similar attributes or needs, which can be wide or narrow.
 
@@ -93,34 +110,34 @@ Although Harald Nævdal from *Immortal* and James Hetfield from *Metallica* shar
 
 ### Primary, Secondary & Tertiary Groups
 
-::gridBlockTwo{frOne="3fr" frTwo="2fr" gap="var(--space-m)"}
+::gridBlock{colNum=2}
 :::grid-unit
 We usually divide our audience into two or **three groups**.
 
-The **overlap** between these audiences forms your *Target Audience*.
+The **overlap** between these audiences forms your *target audience*.
 
-Below I've written down some examples of the three groups of a typical Target Audience for you to better understand.
+Below I've written down some examples of the three groups of a typical *target audience* for you to better understand.
 
 :::
 :::grid-unit
-![The three groups of a typical Target Audience](/posts/target-audience/target-audience-diagrm.webp){style="max-width: 35ch;"}
-*Groups of a typical Target Audience*
+![The three groups of a typical target audience](/posts/target-audience/target-audience-diagrm.webp){style="max-width: 35ch;"}
+*Groups of a typical target audience*
 :::
 ::
 
 ### **Example:** Managing Patients App
 
-If we think about the app for managing patients from before, then executive doctors' roles like *Chief Medical Officers*, *Medical Directors*, or *Physician Executives* are the most relevant group and will act as our **Primary** target audience.
+If we think about the app for managing patients from before, then executive doctors' roles like *Chief Medical Officers*, *Medical Directors*, or *Physician Executives* are the most relevant group and will act as our **Primary** *target audience*.
 
-Financial roles within the healthcare industry like *CFOs*, *Directors of Finance*, and *Treasurers* are relevant to purchasing, and they will act as our **Secondary** target audience.
+Financial roles within the healthcare industry like *CFOs*, *Directors of Finance*, and *Treasurers* are relevant to purchasing, and they will act as our **Secondary** *target audience*.
 
-Lastly, roles that focus on service design and patient experience, like *Chief Experience Officers*, *Patient Experience Managers*, and *Service Designers*, should be relevant because these apps will impact the patient experience. They will be our **Tertiary** target audience.
+Lastly, roles that focus on service design and patient experience, like *Chief Experience Officers*, *Patient Experience Managers*, and *Service Designers*, should be relevant because these apps will impact the patient experience. They will be our **Tertiary** *target audience*.
 
 Three groups!
 
 ### **Example:** Addressing Different Audiences, Figma & Sketch
 
-Let’s look at Figma – they say the product is used by three different teams, or roles: Design, Engineering, and Product. We can clearly see them as different target audiences, and though it’s plain to see that Designers are the **Primary** target audience, they haven’t skipped the other groups.
+Let’s look at Figma – they say the product is used by three different teams, or roles: Design, Engineering, and Product. We can clearly see them as different *target audiences*, and though it’s plain to see that Designers are the **Primary** *target audience*, they haven’t skipped the other groups.
 
 ![Roles in Figma](/posts/target-audience/figma-roles.webp)
 *Roles in Figma*
@@ -133,14 +150,14 @@ And again, the aim is to:
 
 And we can go even deeper still and break each audience into its own groups.
 
-Let's take Sketch, for example. Like Figma, they support additional groups other than designers. But we can see that within the designers' **Primary** target audience, they show specific use cases like Websites, Prototyping, Icons, Feedback, Apps, Symbols, Illustrations & Design Systems. So if you're a magazine layout designer, this isn't your cup of tea.
+Let's take Sketch, for example. Like Figma, they support additional groups other than designers. But we can see that within the designers' **Primary** *target audience*, they show specific use cases like Websites, Prototyping, Icons, Feedback, Apps, Symbols, Illustrations & Design Systems. So if you're a magazine layout designer, this isn't your cup of tea.
 
 ![Sketch target audience in design](/posts/target-audience/sketch-target-audience-in-design.webp)
 *Sketch target audience in design*
 
 ### **Example:** Targeting Different Audiences, Monday.com
 
-A great example of a product addressing multiple target audiences is [monday.com](http://monday.com/)'s campaign from 2018. This project management tool tailors its marketing to different user types, demonstrating how one product can cater to various needs and preferences.
+A great example of a product addressing multiple *target audience*s is [monday.com](http://monday.com/)'s campaign from 2018. This project management tool tailors its marketing to different user types, demonstrating how one product can cater to various needs and preferences.
 
 By tailoring their marketing messages, *monday.com* can effectively engage and convert different audience segments.
 
@@ -172,9 +189,9 @@ desc: And this one is for project managers
 
 ### Review Customer Base
 
-Though this one is relevant only to a working business, and it’s quite obvious. An easy way to see the target audience current situation is just review who drives your sales, which group uses the product the most, or who are the ones who sign the contracts. It could be just as you expected, or you could be surprised. Either way, it's a low-hanging fruit.
+Though this one is relevant only to a working business, and it’s quite obvious. An easy way to see the *target audience* current situation is just review who drives your sales, which group uses the product the most, or who are the ones who sign the contracts. It could be just as you expected, or you could be surprised. Either way, it's a low-hanging fruit.
 
-### Talk with Stakeholders <br > and People of Interest
+### Talk with Stakeholders and People of Interest
 
 If you’re in a working business, go and talk with stakeholders. If you’re not, go and talk with people of interest from this field – especially from sales. They can give you insight into who drives your sales or which group uses the product the most. This is the easiest way to see the current situation.
 
@@ -189,46 +206,63 @@ Three groups is the magic number 👌
 
 Dividing into **more than three** groups can lead to distraction and dispersal:
 
-- ***Distraction:*** Addressing too wide an audience can spread your efforts too thin and lead to inefficiency.
-- ***Dispersal:*** Spreading your marketing message too wide makes it loose and unfocused, leading to a lack of trust from prospects.
+- ***Distraction:*** 
+    
+    Addressing too wide an audience can spread your efforts too thin and lead to inefficiency.
+
+- ***Dispersal:*** 
+    
+    Spreading your marketing message too wide makes it loose and unfocused, leading to a lack of trust from prospects.
 
 Dividing into **less than two** groups can limit diversity and adaptability:
 
-- ***Diversity:*** As *Motoko Kusanagi* said; "overspecialize, and you breed in weakness". It’s best to see your product or service from multiple perspectives.
-- ***Adaptability:*** Your product or service will likely be used in unexpected ways. Embracing this reality makes you more resilient.
+- ***Diversity:*** 
+  
+    As *Motoko Kusanagi* said; "overspecialize, and you breed in weakness". It’s best to see your product or service from multiple perspectives.
 
-### Different Audiences <br > in the Same Organization
+- ***Adaptability:*** 
+  
+    Your product or service will likely be used in unexpected ways. Embracing this reality makes you more resilient.
+    
+### Different Audiences in the Same Organization
 
-Even within the same company, different groups might have different Target Audiences depending on their objectives. It could be counterintuitive, but the Target Audience can differ by need or group in the organization.
+Even within the same company, different groups might have different *target audience*s depending on their objectives. It could be counterintuitive, but the *target audience* can differ by need or group in the organization.
 
 Here’s an example I experienced personally:
 
-Right now (2024), I’m leading the product design at [Pepperi](https://www.pepperi.com/), and in the last year, I’ve also been helping management to fine-tune and explore Pepperi's brand. This led to a realization which is both surprising and obvious once it set in: the Target Audience for the **Product** team is different from the Target Audience of the **Marketing** and **Sales** teams.
+Right now (2024), I’m leading the product design at [Pepperi](https://www.pepperi.com/), and in the last year, I’ve also been helping management to fine-tune and explore Pepperi's brand. This led to a realization which is both surprising and obvious once it set in: the *target audience* for the **Product** team is different from the *target audience* of the **Marketing** and **Sales** teams.
 
-The **Marketing** and **Sales** Target Audience are decision-makers or managers who will probably never use the product itself. Meanwhile, the **Product**’s Target Audience comprises people who actually uses Pepperi platform day in and day out. For the most part, they have no overlap, not in terms of messaging, motivations nor features.
+The **Marketing** and **Sales** *target audience* are decision-makers or managers who will probably never use the product itself. Meanwhile, the **Product**’s *target audience* comprises people who actually uses Pepperi platform day in and day out. For the most part, they have no overlap, not in terms of messaging, motivations nor features.
 
 ### It's Not Just About Demographics
 
-While demographics are important, they only paint part of the picture. Psychographics and behavioral factors can be just as important in defining your Target Audience.
+While demographics are important, they only paint part of the picture. Psychographics and behavioral factors can be just as important in defining your *target audience*.
 
 ### Target Audience Evolves Over Time
 
-As your brand grows and changes, your Target Audience may need to be re-evaluated and refined.
+As your brand grows and changes, your *target audience* may need to be re-evaluated and refined.
 
 ### The Reverse Funnel
 
-As a rule of thumb, when a product or service starts, it usually addresses a narrow Target Audience with specific groups. As the brand grows, usually the Target Audience becomes wider and the groups more common.
+As a rule of thumb, when a product or service starts, it usually addresses a narrow *target audience* with specific groups. As the brand grows, usually the *target audience* becomes wider and the groups more common.
 
 We can actually see it in brands logos – how they start unique and, over time, consolidate into something more homogeneous to address a wider audiences. This is just a visual aspect, but it happens company-wide.
 
-![Logo evolution, turning more homogeneous to address a wider Target Audience](/posts/target-audience/logo-evolution.webp)
-*Logo evolution, turning more homogeneous to address a wider Target Audience*
+![Logo evolution, turning more homogeneous to address a wider target audience](/posts/target-audience/logo-evolution.webp)
+*Logo evolution, turning more homogeneous to address a wider target audience*
+
+## Summary
+
+Understanding and defining your *target audience* is crucial for creating effective marketing strategies and product designs. By focusing on specific demographic, geographic, psychographic, and behavioral factors, you can tailor your business offerings to meet the needs and preferences for your ideal customer. 
+
+This targeted approach not only enhances communication but also improves overall engagement and conversion rates. Whether you’re launching a new product or refining your marketing efforts, a well-defined *target audience* is the key to success. 
 
 ## Next Steps 
 
 ### Crafting a Brand, a Designer's Take
 
-This doc is part of a larger series called ***Crafting a Brand, a Designer's Take***, where I write about other topics in brand design like: a brand's *Vision*, *Values*, *Mission*, *Promise* & *Personality*. How to write *User Persona* and how to create a *Brand Book* – Expect updates soon!
+This doc is part of a larger series called ***Crafting a Brand: A Designer’s Take***, where I explore various topics in brand design, including how to define brand *vision*, *values*, *mission*, and *promise*, set a *brand personality*, insights on *brand naming*, how to write *user personas*, and how to create a *brand book*. Stay tuned for updates!
+
 
 ### Work in Progress 
 
