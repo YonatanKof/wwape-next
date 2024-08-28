@@ -66,7 +66,7 @@ How to write titles.
 > This is a *Blockquote*. Write `>` to use it
 
 
-::gridBlock{colNum="2" gap="var(--space-m);"}
+::gridBlock{colNum="2" gap="var(--space-m)"}
 :::grid-unit
 ###### [Input ↓]{.dimmed}
 ```md

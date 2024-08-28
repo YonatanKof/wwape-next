@@ -188,7 +188,7 @@ In this example you can update `--color-sys-main` and see its effect over the di
 
 Will it look good? Probably not – Will it be accessible? No guarantees – Is it a good example? For sure! 😎
 
-::gridBlock{colNum="2" gap="var(--space-m);"}
+::gridBlock{colNum="2" gap="var(--space-m)"}
 :::grid-unit
 #### System Color
 So here we have 5 variants of the ***system*** color.
@@ -205,7 +205,7 @@ Click on the color picker to see it in action.
 :::
 ::
 
-::gridBlock{colNum="2" gap="var(--space-m);"}
+::gridBlock{colNum="2" gap="var(--space-m)"}
 :::grid-unit
 #### System Invert Color
 And here we have 5 variants of the ***system-invert*** color.
@@ -222,7 +222,7 @@ Change it too!
 :::
 ::
 
-::gridBlock{colNum="2" gap="var(--space-m);"}
+::gridBlock{colNum="2" gap="var(--space-m)"}
 :::grid-unit
 #### Brand Color
 
@@ -240,7 +240,7 @@ Go ahead, see it in action!
 :::
 ::
 
-<!-- ::gridBlock{colNum="2" gap="var(--space-m);"}
+<!-- ::gridBlock{colNum="2" gap="var(--space-m)"}
 :::grid-unit
 #### Focus Color
 And lastly 5 variant of the ***focus*** color – you know the drill.
