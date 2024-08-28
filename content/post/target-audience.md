@@ -1,11 +1,11 @@
 ---
-title: 'Target Audience for Designers'
+title: "Target Audience, a Designer's Take"
 author_name: 'Yonatan Ben Knaan'
 date: '2024-07-16'
 updated: ''
 cover_image: '/posts/target-audience/target-audience-tn.webp'
 cover_image_height: '752'
-cover_image_thumbhash: '+wcCBoD2uFibR6aKZ3d3qWd1eXFg6vg'
+cover_image_thumbhash: '+wcGBoD2uFibR6aKd3ZnqWd1V4Bw+Oc'
 social_image: '/posts/target-audience/target-audience-social.jpg'
 image_alt: 'This diagram shows a triangle labeled “Target Audience” at the center, surrounded by three overlapping circles labeled “Primary,” “Secondary,” and “Tertiary.”'
 description: 'Why do we need to know our target audience? What is exactly? How is it used? And how do we define it?'
@@ -235,7 +235,7 @@ We can actually see it in brands logos – how they start unique and, over time,
 
 ### Crafting a Brand, a Designer's Take
 
-This doc is part of a larger series called ***Crafting a Brand, a Designer's Take***, where I write about other topics in brand design like: Brand *Vision*, *Values*, *Mission*, *Promise* & *Personality*. How to write *User Persona* and how to create a *Brand Book* – Expect updates soon!
+This doc is part of a larger series called ***Crafting a Brand, a Designer's Take***, where I write about other topics in brand design like: a brand's *Vision*, *Values*, *Mission*, *Promise* & *Personality*. How to write *User Persona* and how to create a *Brand Book* – Expect updates soon!
 
 ### Work in Progress 
 
