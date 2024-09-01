@@ -73,12 +73,11 @@ ol {
 li > ul,
 ol {
 	margin-block-start: 0.125em;
-	
 }
 li {
 	padding-inline-start: var(--space-3xs);
 }
-li::marker{
+li::marker {
 	color: var(--color-sys-slight);
 	font-family: var(--font-hand);
 	font-variation-settings: 'INFM' 0, 'wght' 333, 'ital' 1;
@@ -176,14 +175,12 @@ em {
 	font-style: normal;
 	font-family: var(--font-hand);
 	font-size: inherit;
-	font-variation-settings: 'wght' 400;
+	font-variation-settings: 'wght' 410, 'ital' 1;
 	line-height: 1;
 }
-em {
-	font-variation-settings: 'wght' 525;
-}
+
 strong {
-	font-variation-settings: 'wght' 555;
+	font-variation-settings: 'wght' 600;
 }
 .sup {
 	font-size: 60%;
@@ -191,12 +188,6 @@ strong {
 }
 h1 {
 	font-size: var(--step-5);
-	// margin-block-end: var(--space-s);
-	// font-variation-settings: 'INFM' 100, 'wght' 600, 'BNCE' 25, 'ital' 1;
-	// transition: font-variation-settings 0.5s ease-in-out 0s;
-	// &:hover {
-	// 	font-variation-settings: 'INFM' 50, 'wght' 600, 'BNCE' 25, 'ital' 1;
-	// }
 	@media print {
 		font-size: var(--step-3);
 	}

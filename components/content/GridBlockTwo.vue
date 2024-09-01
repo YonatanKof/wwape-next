@@ -23,7 +23,6 @@ defineProps({
 div {
 	display: grid;
 	grid-template-columns: v-bind(frOne) v-bind(frTwo);
-	// grid-template-rows: repeat(v-bind(rowNum), 1fr);
 	gap: v-bind(gap);
 	height: 100%;
 	width: 100%;
