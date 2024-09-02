@@ -4,18 +4,8 @@ const SiteNameHere = 'WWApe';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-	modules: ['@nuxt/content', '@vueuse/nuxt', '@unlazy/nuxt', 'nuxt-clarity-analytics', '@nuxt/image', '@nuxtjs/seo'],
-	// Used for Nuxt SEO
-	site: {
-		url: baseUrlHere,
-		name: SiteNameHere,
-		description: siteOwnerNameHere + ' of the ' + SiteNameHere,
-		defaultLocale: 'en',
-	},
+	modules: ['@nuxt/content', '@vueuse/nuxt', '@unlazy/nuxt', 'nuxt-clarity-analytics', '@nuxt/image'],
 	content: {
-		// Used for Nuxt SEO sitemap module
-		// Now I've disabled it for better error messages
-		// documentDriven: true,
 		// toc: {
 		// 	depth: 4,
 		// 	searchDepth: 4,
@@ -43,9 +33,6 @@ export default defineNuxtConfig({
 
 	devtools: { enabled: true },
 	css: ['~/assets/styles/style.scss', 'vue-final-modal/style.css'],
-	ogImage: {
-		enabled: false,
-	},
 	vite: {
 		css: {
 			preprocessorOptions: {

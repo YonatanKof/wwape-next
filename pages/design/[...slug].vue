@@ -17,7 +17,7 @@ const { data, error } = await useAsyncData(cleanPath, async () => {
 });
 
 const config = useRuntimeConfig();
-const siteTitle = `A design by ${config.public.siteOwnerName} form the ${config.public.siteName}`;
+const siteTitle = `A design by ${config.public.siteOwnerName} from the ${config.public.siteName}`;
 
 // Set the meta
 const dynamicUrl = config.public.baseUrl;
@@ -26,12 +26,16 @@ const image = dynamicUrl + data.value?.article?.social_image || '/images/index-s
 
 const { $formatDate } = useNuxtApp();
 
+// Clean the description from HTML tags
+const cleanDescription = data.value?.article?.description.replace(/<[^>]*>/g, '');
+
+
 useHead({
 	titleTemplate: (titleChunk) => {
 		return titleChunk ? `${titleChunk} - ` + siteTitle : siteTitle;
 	},
 	meta: [
-		{ name: 'description', content: data.value?.article?.description },
+		{ name: 'description', content: cleanDescription },
 		{
 			property: 'article:published_time',
 			content: data.value?.article?.updated.split('T')[0] || data.value?.article?.date.split('T')[0],
@@ -39,7 +43,7 @@ useHead({
 		// OG
 		{ hid: 'og:title', property: 'og:title', content: data.value?.article?.title + ` - ` + siteTitle},
 		{ hid: 'og:url', property: 'og:url', content: canonicalPath },
-		{ hid: 'og:description', property: 'og:description', content: data.value?.article?.description },
+		{ hid: 'og:description', property: 'og:description', content: cleanDescription },
 		{ hid: 'og:image', name: 'image', property: 'og:image', content: image },
 		{ hid: 'og:type', property: 'og:type', content: 'article' },
 		{ hid: 'og:image:type', property: 'og:image:type', content: `image/jpeg` },
@@ -50,7 +54,7 @@ useHead({
 		{ hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
 		{ hid: 'twitter:creator', name: 'twitter:creator', content: '@yonatankof' },
 		{ hid: 'twitter:title', name: 'twitter:title', content: data.value?.article?.title + ` - ` + siteTitle },
-		{ hid: 'twitter:description', name: 'twitter:description', content: data.value?.article?.description },
+		{ hid: 'twitter:description', name: 'twitter:description', content: cleanDescription },
 		{ hid: 'twitter:url', name: 'twitter:url', content: canonicalPath },
 		{ hid: 'twitter:image', name: 'twitter:image', content: image },
 		{ hid: 'twitter:image:width', name: 'twitter:image:width', content: 1200 },
