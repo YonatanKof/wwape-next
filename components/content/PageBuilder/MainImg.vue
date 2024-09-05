@@ -10,12 +10,18 @@ const props = defineProps({
 	<div>
 		<NuxtImg class="sections-hover" src="/work/pepperi-page-builder/build/sections-hover.webp" />
 		<NuxtImg class="sections" src="/work/pepperi-page-builder/build/sections.webp" />
-		<NuxtImg class="img Title" src="/work/pepperi-page-builder/build/editor-Title.webp" />
-		<NuxtImg class="img Image" src="/work/pepperi-page-builder/build/editor-Image.webp" />
-		<NuxtImg class="img Padding" src="/work/pepperi-page-builder/build/editor-Padding.webp" />
-		<NuxtImg class="img Arrows" src="/work/pepperi-page-builder/build/editor-Arrows.webp" />
-		<NuxtImg class="img Controllers" src="/work/pepperi-page-builder/build/editor-Controllers.webp" />
-		<NuxtImg class="img Layout" src="/work/pepperi-page-builder/build/editor-Layout.webp" />
+		<NuxtImg class="img title" src="/work/pepperi-page-builder/build/editor-title.webp" />
+		<NuxtImg class="img arrow-title" src="/misc/arrow-1.png" />
+		<NuxtImg class="img image" src="/work/pepperi-page-builder/build/editor-image.webp" />
+		<NuxtImg class="img arrow-image" src="/misc/arrow-2.png" />
+		<NuxtImg class="img padding" src="/work/pepperi-page-builder/build/editor-padding.webp" />
+		<NuxtImg class="img arrow-padding" src="/misc/arrow-1.png" />
+		<NuxtImg class="img arrows" src="/work/pepperi-page-builder/build/editor-arrows.webp" />
+		<NuxtImg class="img arrow-arrows" src="/misc/arrow-1.png" />
+		<NuxtImg class="img controllers" src="/work/pepperi-page-builder/build/editor-controllers.webp" />
+		<NuxtImg class="img arrow-controllers" src="/misc/arrow-3.png" />
+		<NuxtImg class="img layout" src="/work/pepperi-page-builder/build/editor-layout.webp" />
+		<NuxtImg class="img arrow-layout" src="/misc/arrow-2.png" />
 		<NuxtImg class="img Blocks" src="/work/pepperi-page-builder/build/editor-Blocks.webp" />
 		<NuxtImg class="img darg-block" src="/work/pepperi-page-builder/build/darg-block.webp" />
 	</div>
@@ -34,11 +40,19 @@ const props = defineProps({
 	from {
 		opacity: 0;
 	}
-	25% {
+	40% {
 		opacity: 0;
 	}
-	75% {
+	60% {
 		opacity: 1;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes shake {
+	from {
+		opacity: 0;
 	}
 	to {
 		opacity: 1;
@@ -96,35 +110,65 @@ img {
 	z-index: 1;
 	animation: sections-hover 3s cubic-bezier(0.77, 0, 0.18, 1) alternate infinite;
 }
-.Title {
+.title {
 	grid-column: 1 / span 1;
 	grid-row: 1 / span 1;
 	transform: translate3d(2em, 3em, 5em);
 }
-.Image {
+.arrow-title {
+	grid-column: 1 / span 1;
+	grid-row: 1 / span 1;
+	transform: translate3d(4.5em, 9em, 4em) rotateZ(170deg) scale(0.3) scaleY(-1);
+}
+.image {
 	grid-column: 3 / span 1;
 	grid-row: 1 / span 1;
-	transform: translate3d(-1em, 4em, 3em);
+	transform: translate3d(-1.5em, 4em, 4.5em);
 }
-.Padding {
+.arrow-image {
+	grid-column: 3 / span 1;
+	grid-row: 1 / span 1;
+	transform: translate3d(4em, 11.25em, 3.5em) rotateZ(70deg) scale(-0.8);
+}
+.padding {
 	grid-column: 5 / span 1;
 	grid-row: 1 / span 1;
-	transform: translate3d(-6em, 8em, 2em);
+	transform: translate3d(-7em, 7em, 3em);
 }
-.Arrows {
+.arrow-padding {
+	grid-column: 5 / span 1;
+	grid-row: 1 / span 1;
+	transform: translate3d(-1.5em, 6.25em, 1.5em) rotateZ(100deg) scale(-0.25);
+}
+.arrows {
 	grid-column: 6 / span 1;
 	grid-row: 1 / span 1;
-	transform: translate3d(-3em, 6em, 4em);
+	transform: translate3d(-3em, 5em, 4em);
 }
-.Controllers {
+.arrow-arrows {
+	grid-column: 6 / span 1;
+	grid-row: 1 / span 1;
+	transform: translate3d(-4.5em, 10.25em, 1.5em) rotateZ(190deg) scale(-0.3);
+}
+.controllers {
 	grid-column: 6 / span 1;
 	grid-row: 3 / span 1;
 	transform: translate3d(-4em, -8em, 7em);
 }
-.Layout {
+.arrow-controllers {
+	grid-column: 6 / span 1;
+	grid-row: 3 / span 1;
+	transform: translate3d(-13.5em, -9.5em, 1.5em) rotateZ(405deg) scale(1.7);
+}
+.layout {
 	grid-column: 3 / span 1;
 	grid-row: 3 / span 1;
 	transform: translate3d(-1em, -3em, 5em);
+}
+.arrow-layout {
+	grid-column: 3 / span 1;
+	grid-row: 3 / span 1;
+	transform: translate3d(5.5em, -4.5em, 2.5em) rotateZ(105deg) scaleY(-1) scale(0.7);
 }
 .Blocks {
 	grid-column: 1 / span 1;
@@ -132,7 +176,7 @@ img {
 	transform: translate3d(1.5em, -7em, 5em);
 }
 .darg-block {
-	animation: darg-block 3s cubic-bezier(0.77, 0, 0.18, 1) alternate infinite;
+	animation: darg-block 3s cubic-bezier(1, 0, 0.1, 1) alternate infinite;
 	grid-column: 1 / span 1;
 	grid-row: 3 / span 1;
 }
