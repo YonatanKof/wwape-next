@@ -30,7 +30,7 @@ const props = defineProps({
 <style lang="scss" scoped>
 @keyframes darg-block {
 	from {
-		transform: translate3d(1.5em, -2.9em, 5em);
+		transform: translate3d(1.5em, -2.75em, 5em);
 	}
 	to {
 		transform: translate3d(9em, -6em, 5em);
@@ -50,12 +50,21 @@ const props = defineProps({
 		opacity: 1;
 	}
 }
-@keyframes shake {
-	from {
-		opacity: 0;
+@keyframes shake-y {
+	0% {
+		translate: 0 0;
 	}
-	to {
-		opacity: 1;
+	100% {
+		translate: 0 0.25em;
+	}
+}
+
+@keyframes shake-x {
+	0% {
+		translate: 0 0;
+	}
+	100% {
+		translate: 0.25em 0;
 	}
 }
 
@@ -114,6 +123,7 @@ img {
 	grid-column: 1 / span 1;
 	grid-row: 1 / span 1;
 	transform: translate3d(2em, 3em, 5em);
+	animation: 1.75s shake-y ease-in-out alternate infinite;
 }
 .arrow-title {
 	grid-column: 1 / span 1;
@@ -124,6 +134,7 @@ img {
 	grid-column: 3 / span 1;
 	grid-row: 1 / span 1;
 	transform: translate3d(-1.5em, 4em, 4.5em);
+	animation: 2s shake-y 1s ease-in-out alternate infinite;
 }
 .arrow-image {
 	grid-column: 3 / span 1;
@@ -134,36 +145,40 @@ img {
 	grid-column: 5 / span 1;
 	grid-row: 1 / span 1;
 	transform: translate3d(-7em, 7em, 3em);
+	animation: 3s shake-y 1.5s ease-in-out alternate infinite;
 }
 .arrow-padding {
 	grid-column: 5 / span 1;
 	grid-row: 1 / span 1;
-	transform: translate3d(-1.5em, 6.25em, 1.5em) rotateZ(100deg) scale(-0.25);
+	transform: translate3d(-2em, 5.75em, 1.5em) rotateZ(100deg) scale(-0.25);
 }
 .arrows {
 	grid-column: 6 / span 1;
 	grid-row: 1 / span 1;
-	transform: translate3d(-3em, 5em, 4em);
+	transform: translate3d(-3em, 4.75em, 4em);
+	animation: 3s shake-y 2s ease-in-out alternate infinite;
 }
 .arrow-arrows {
 	grid-column: 6 / span 1;
 	grid-row: 1 / span 1;
-	transform: translate3d(-4.5em, 10.25em, 1.5em) rotateZ(190deg) scale(-0.3);
+	transform: translate3d(-4.5em, 9.75em, 1.5em) rotateZ(190deg) scale(-0.3);
 }
 .controllers {
 	grid-column: 6 / span 1;
 	grid-row: 3 / span 1;
 	transform: translate3d(-4em, -8em, 7em);
+	animation: 2.5s shake-y 1.2s ease-in-out alternate infinite;
 }
 .arrow-controllers {
 	grid-column: 6 / span 1;
 	grid-row: 3 / span 1;
-	transform: translate3d(-13.5em, -9.5em, 1.5em) rotateZ(405deg) scale(1.7);
+	transform: translate3d(-13em, -9em, 1.5em) rotateZ(405deg) scale(1.7);
 }
 .layout {
 	grid-column: 3 / span 1;
 	grid-row: 3 / span 1;
 	transform: translate3d(-1em, -3em, 5em);
+	animation: 2.75s shake-y 0.2s ease-in-out alternate infinite;
 }
 .arrow-layout {
 	grid-column: 3 / span 1;
@@ -174,9 +189,10 @@ img {
 	grid-column: 1 / span 1;
 	grid-row: 3 / span 1;
 	transform: translate3d(1.5em, -7em, 5em);
+	animation: 2.25s shake-y ease-in-out alternate infinite;
 }
 .darg-block {
-	animation: darg-block 3s cubic-bezier(1, 0, 0.1, 1) alternate infinite;
+	animation: 3s darg-block cubic-bezier(1, 0, 0.1, 1) alternate infinite, 2.25s shake-y ease-in-out alternate infinite;
 	grid-column: 1 / span 1;
 	grid-row: 3 / span 1;
 }
