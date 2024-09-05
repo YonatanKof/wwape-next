@@ -60,13 +60,11 @@ img {
 	filter: drop-shadow(0 var(--space-s) var(--space-s) var(--color-black-dim));
 }
 .img1 {
-	animation: perspective 5s ease-in-out alternate infinite;
 	grid-column: 1 / span 7;
 	grid-row: 1 / span 4;
 	transform: translateZ(-1rem);
 }
 .img2 {
-	animation: perspective 3s ease-in-out alternate infinite;
 	transition-delay: 125ms;
 	grid-column: 6 / span 7;
 	grid-row: 2 / span 4;
@@ -74,7 +72,6 @@ img {
 	transform: translateZ(2rem);
 }
 .img3 {
-	animation: perspective 4s ease-in-out alternate infinite;
 	transition-delay: 250ms;
 	grid-column: 3 / span 7;
 	grid-row: 4 / span 4;

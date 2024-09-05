@@ -7,15 +7,6 @@ import PepperiImages from '~/assets/data/PepperiImages.json';
 	</div>
 </template>
 <style scoped>
-@keyframes perspective {
-	from {
-		transform: translate(1px, 1px);
-	}
-
-	to {
-		transform: translate(-2px, -2px);
-	}
-}
 div {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
