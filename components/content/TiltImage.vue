@@ -36,7 +36,7 @@ em {
 }
 span {
 	display: block;
-	background-color: var(--color-sys-dis);
+	background-color: var(--color-brand-dis);
 	border-radius: var(--border-radius-sm);
 	padding: var(--space-l);
 }
