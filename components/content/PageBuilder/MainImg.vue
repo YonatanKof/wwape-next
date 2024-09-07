@@ -8,11 +8,16 @@ const props = defineProps({
 </script>
 <template>
 	<div>
-		<NuxtImg class="sections-hover" src="/work/pepperi-page-builder/build/sections-hover.webp" />
+		<NuxtImg class="sections sections-hover" src="/work/pepperi-page-builder/build/sections-hover.webp" />
 		<NuxtImg class="sections" src="/work/pepperi-page-builder/build/sections.webp" />
+		<NuxtImg class="sections g4" src="/work/pepperi-page-builder/build/section-gallery-4.webp" />
+		<NuxtImg class="sections g6" src="/work/pepperi-page-builder/build/section-gallery-6.webp" />
+		<NuxtImg class="sections ss-i1" src="/work/pepperi-page-builder/build/ss-i1.webp" />
+		<NuxtImg class="sections ss-i2" src="/work/pepperi-page-builder/build/ss-i2.webp" />
 		<NuxtImg class="img title" src="/work/pepperi-page-builder/build/editor-title.webp" />
 		<NuxtImg class="img arrow-title" src="/misc/arrow-1.png" />
 		<NuxtImg class="img image" src="/work/pepperi-page-builder/build/editor-image.webp" />
+		<NuxtImg class="img image image-hover" src="/work/pepperi-page-builder/build/editor-image-hover.webp" />
 		<NuxtImg class="img arrow-image" src="/misc/arrow-2.png" />
 		<NuxtImg class="img padding" src="/work/pepperi-page-builder/build/editor-padding.webp" />
 		<NuxtImg class="img arrow-padding" src="/misc/arrow-1.png" />
@@ -21,11 +26,12 @@ const props = defineProps({
 		<NuxtImg class="img controllers" src="/work/pepperi-page-builder/build/editor-controllers.webp" />
 		<NuxtImg class="img arrow-controllers" src="/misc/arrow-3.png" />
 		<NuxtImg class="img layout" src="/work/pepperi-page-builder/build/editor-layout.webp" />
+		<NuxtImg class="img layout l3" src="/work/pepperi-page-builder/build/editor-layout-3.webp" />
 		<NuxtImg class="img arrow-layout" src="/misc/arrow-2.png" />
 		<NuxtImg class="img Blocks" src="/work/pepperi-page-builder/build/editor-Blocks.webp" />
 		<NuxtImg class="img darg-block" src="/work/pepperi-page-builder/build/darg-block.webp" />
 	</div>
-	<em v-if="desc">{{ desc }}</em>
+	<!-- <em v-if="desc">{{ desc }}</em> -->
 </template>
 <style lang="scss" scoped>
 @keyframes darg-block {
@@ -67,27 +73,27 @@ const props = defineProps({
 		translate: 0.25em 0;
 	}
 }
-
-em {
-	@include desc-text-under();
-	margin-block-start: var(--space-2xl);
-	margin-block-end: unset;
-}
-span {
-	display: block;
-	background-color: var(--color-sys-dis);
-	border-radius: var(--border-radius-sm);
-	padding: var(--space-l);
+@keyframes gallery {
+	from {
+		opacity: 0;
+	}
+	45% {
+		opacity: 0;
+	}
+	55% {
+		opacity: 1;
+	}
+	to {
+		opacity: 1;
+	}
 }
 div {
 	font-size: clamp(5px, 1.5vw + 2px, 20px) !important;
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
-	grid-template-rows: auto 1fr 2.5em;
+	grid-template-rows: auto 1fr 6.5em;
 	transform: rotate3d(4, 3, -2, 24deg);
-	// max-width: var(--display-width-sm);
 	width: 100%;
-	// width: max-content;
 	margin-inline: auto;
 	transition: transform 0.5s ease-in-out;
 	transform-style: preserve-3d;
@@ -112,29 +118,45 @@ img {
 	filter: drop-shadow(0 var(--space-xs) var(--space-xs) var(--color-black-dim));
 }
 .sections-hover {
-	grid-column: 2 / span 4;
-	grid-row: 2 / span 1;
-	transform: scale3d(1.1, 1.1, 1.1);
-	transform: translate3d(0em, 0em, 0em);
+	filter: unset;
 	z-index: 1;
-	animation: sections-hover 3s cubic-bezier(0.77, 0, 0.18, 1) alternate infinite;
+	animation: 3s sections-hover cubic-bezier(0.77, 0, 0.18, 1) alternate infinite;
+}
+.g4 {
+	filter: unset;
+	animation: 3s gallery ease-in-out alternate infinite;
+}
+.g6 {
+	filter: unset;
+	animation: 3s gallery 3s ease-in-out alternate infinite;
+}
+.ss-i1 {
+	filter: unset;
+	animation: 2.5s gallery ease-in-out alternate infinite;
+}
+.ss-i2 {
+	filter: unset;
+	animation: 2.5s gallery 2.5s ease-in-out alternate infinite;
 }
 .title {
 	grid-column: 1 / span 1;
 	grid-row: 1 / span 1;
-	transform: translate3d(2em, 3em, 5em);
+	transform: translate3d(2.5em, 3.5em, 4em);
 	animation: 1.75s shake-y ease-in-out alternate infinite;
 }
 .arrow-title {
 	grid-column: 1 / span 1;
 	grid-row: 1 / span 1;
-	transform: translate3d(4.5em, 9em, 4em) rotateZ(170deg) scale(0.3) scaleY(-1);
+	transform: translate3d(6em, 8em, 2em) rotateZ(170deg) scale(0.3) scaleY(-1);
 }
 .image {
 	grid-column: 3 / span 1;
 	grid-row: 1 / span 1;
-	transform: translate3d(-1.5em, 4em, 4.5em);
+	transform: translate3d(-1.5em, 5em, 5em);
 	animation: 2s shake-y 1s ease-in-out alternate infinite;
+}
+.image-hover {
+	animation: 2s shake-y 1s ease-in-out alternate infinite, 2.5s gallery 2.5s ease-in-out alternate infinite;
 }
 .arrow-image {
 	grid-column: 3 / span 1;
@@ -150,7 +172,7 @@ img {
 .arrow-padding {
 	grid-column: 5 / span 1;
 	grid-row: 1 / span 1;
-	transform: translate3d(-2em, 5.75em, 1.5em) rotateZ(100deg) scale(-0.25);
+	transform: translate3d(-2em, 6.5em, 1.5em) rotateZ(100deg) scale(-0.25);
 }
 .arrows {
 	grid-column: 6 / span 1;
@@ -161,24 +183,28 @@ img {
 .arrow-arrows {
 	grid-column: 6 / span 1;
 	grid-row: 1 / span 1;
-	transform: translate3d(-4.5em, 9.75em, 1.5em) rotateZ(190deg) scale(-0.3);
+	transform: translate3d(-4.5em, 10.75em, 1.5em) rotateZ(190deg) scale(-0.3);
 }
 .controllers {
 	grid-column: 6 / span 1;
 	grid-row: 3 / span 1;
-	transform: translate3d(-4em, -8em, 7em);
+	transform: translate3d(-6em, -7.5em, 7em);
 	animation: 2.5s shake-y 1.2s ease-in-out alternate infinite;
 }
 .arrow-controllers {
 	grid-column: 6 / span 1;
 	grid-row: 3 / span 1;
-	transform: translate3d(-13em, -9em, 1.5em) rotateZ(405deg) scale(1.7);
+	transform: translate3d(-14.5em, -10.25em, 1.5em) rotateZ(405deg) scale(1.7);
 }
 .layout {
 	grid-column: 3 / span 1;
 	grid-row: 3 / span 1;
-	transform: translate3d(-1em, -3em, 5em);
+	transform: translate3d(-1em, -2em, 5em);
 	animation: 2.75s shake-y 0.2s ease-in-out alternate infinite;
+}
+.l3 {
+	filter: unset;
+	animation: 3s gallery 3s ease-in-out alternate infinite, 2.75s shake-y 0.2s ease-in-out alternate infinite;
 }
 .arrow-layout {
 	grid-column: 3 / span 1;
