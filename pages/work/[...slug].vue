@@ -71,31 +71,23 @@ useHead({
 	<main>
 		<ContentDoc>
 			<template v-slot="{ doc }">
-				<article>
+				<main>
 					<section id="article-header">
 						<div id="article-info">
 							<h1 id="title">{{ doc.title }}</h1>
-							<hr />
+							<h3 id="sub-title">{{ doc.description }}</h3>
+							<!-- <hr /> -->
 							<span class="dates">
 								<p>Posted {{ $formatDate(doc.date) }}</p>
 								<p v-if="doc.updated">•</p>
 								<p v-if="doc.updated">Updated {{ $formatDate(doc.updated) }}</p>
 							</span>
-							<hr />
-							<h3 id="sub-title">{{ doc.description }}</h3>
+							<!-- <hr /> -->
 						</div>
-						<UnLazyImage
-							id="article-image"
-							:thumbhash="doc.cover_image_thumbhash"
-							:src="doc.cover_image"
-							:alt="doc.image_alt"
-							:height="doc.cover_image_height"
-							auto-sizes
-						/>
 					</section>
-					<hr />
+					<!-- <hr /> -->
 					<span class="content-renderer"><ContentRenderer :value="doc" /></span>
-				</article>
+				</main>
 			</template>
 			<template #not-found>
 				<ErrorMsg />
@@ -114,59 +106,20 @@ h1 {
 }
 section {
 	display: grid;
-	grid-template-columns: 2fr 1fr 6fr;
-	grid-template-rows: var(--space-2xl) auto var(--space-2xl);
 	height: min-content;
-	margin-block-end: var(--space-m);
-	@media (width <= $display-width-lg) {
-		grid-template-columns: 4fr 1fr 6fr;
-	}
-	@media (width <= $display-width-md) {
-		grid-template-columns: 5fr 1fr 6fr;
-	}
-	@media (width <= $display-width-sm) {
-		grid-template-columns: var(--space-5xl) 1fr var(--space-5xl);
-		grid-template-rows: var(--space-5xl) auto 1fr;
-	}
-	@media (width <= $display-width-xs) {
-		grid-template-columns: var(--space-2xl) 1fr var(--space-2xl);
-		grid-template-rows: var(--space-6xl) auto 1fr;
-	}
-	@media (width <= $display-width-2xs) {
-		grid-template-columns: var(--space-s) 1fr var(--space-s);
-	}
-}
-#article-info {
-	background-color: var(--color-sys-invert-highlight-slight);
-	backdrop-filter: blur(7px);
-	background-image: radial-gradient(var(--color-sys-invert-highlight) 1px, transparent 1px);
-	background-size: 3px 3px;
-	grid-column: 1 / span 2;
-	grid-row: 1 / span 2;
-	padding: calc(var(--space-s) + var(--space-3xs));
-	z-index: 10;
-	border-radius: var(--border-radius-sm);
-	height: min-content;
-	@media (width <= $display-width-sm) {
-		padding: var(--space-s);
-	}
-}
-#article-image {
-	grid-column: 2 / span 2;
-	grid-row: 2 / span 2;
-}
-#title {
-	font-size: var(--step-4);
+	//margin-block-end: var(--space-m);
 }
 #sub-title {
 	font-family: var(--font-body);
-	font-size: var(--step-0);
-	margin-block-start: var(--space-s);
+	font-size: var(--step-2);
+	// margin-block-start: var(--space-s);
 	font-variation-settings: unset;
 	line-height: 1.5;
-	@media (width <= $display-width-2xs) {
-		font-size: var(--step--1);
-	}
+	max-width: 50ch;
+	margin-block-end: var(--space-2xs);
+	// @media (width <= $display-width-2xs) {
+	// 	font-size: var(--step--1);
+	// }
 }
 
 article {
