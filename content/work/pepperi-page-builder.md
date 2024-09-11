@@ -8,7 +8,7 @@ cover_image_height: '782'
 cover_image_thumbhash: 'KQiOA4Ap+WZ3iH1wpARBGzlIeWeAeik'
 social_image: '/work/pepperi-page-builder/pepperi-page-builder-social.jpg'
 image_alt: ''
-description: 'A tool to manage, build, design and edit custom webpage with a no-code interface'
+description: 'An occasional design tool to manage, build, and edit custom webpages with a no-code interface aimed at non-designers'
 tags: ['Creative']
 ---
 
@@ -29,12 +29,30 @@ Moreover, they want to do it on brand, with full design control. They want to ed
 
 Understanding that our clients wanted this feature was easy because they not only asked for it, but also built it. Some of our clients actually worked with the FS team, who built and maintained a custom webpage for a while. And in my first few years at Pepperi, I worked with the PS team to design and build these custom homepages.
 
+::TiltImage
+---
+img1: /work/pepperi-page-builder/Old-Blackcrows.webp
+img2: /work/pepperi-page-builder/Old-Dermalogica.webp
+img3: /work/pepperi-page-builder/Old-Chanel.webp
+desc: Some custom built homepages – Great for our clients, bad for our business 
+---
+::
+
+::GridBlockTwo{frOne="2fr" frTwo="3fr" gap="var(--space-m)"}
+:::GridUnit
 ## The problem
+Though custom web pages can offer our clients maximum flexibility in design and functionality they had multiple issues when it comes to business goals and product. 
+:::
+:::GridUnit
+<!-- As mentioned, custom web pages were built with native web code by our Professional Services devs – this lead to the following Issues:  -->
 
-Though custom web pages can offer our clients maximum flexibility in terms of design and functionality they had multiple issues in terms of business and product. As mentioned, custom web pages were built with native web code by our Professional Services devs – this lead to the following Issues: 
+#### List of issues 
+Issues associated with custom web pages:
 
-- The pages aren’t consistent in design and not aligned with Pepperi DS
-- Not playing along with other Pepperi products and features like:
+- The pages aren’t consistent in design 
+- Not aligned with *Pepperi DS*
+- Wast of *Professional Services* team time
+- Out of sync with other Pepperi products & features like:
     - Pepperi theme editor
     - Pepperi header builder
     - Native app integration
@@ -42,19 +60,18 @@ Though custom web pages can offer our clients maximum flexibility in terms of de
 - Can’t be build or maintained by the clients
 - Can be used only by FS team causing dependency and scalability issues
 
-::TiltImage
----
-img1: /work/pepperi-page-builder/Old-Blackcrows.webp
-img2: /work/pepperi-page-builder/Old-Dermalogica.webp
-img3: /work/pepperi-page-builder/Old-Chanel.webp
-desc: Some examples of our custom built homepages
----
+:::
+::
+
+## Validating Assumptions 
+
+Reviwing the idea  with out 
+::QuoteBig
+So after years of anticipation we decided to lunch the **Page Builder** project
 ::
 
 
-![Some examples of our custom built homepages](/work/pepperi-page-builder/Some_examples_of_our_custom_built_homepages.webp)
-
-Some examples of our custom built homepages
+<!-- ![Some examples of our custom built homepages](/work/pepperi-page-builder/Some_examples_of_our_custom_built_homepages.webp) -->
 
 ## Research
 
