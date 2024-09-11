@@ -68,7 +68,7 @@ h6 {
 }
 ul,
 ol {
-	padding-inline-start: var(--space-l);
+	padding-inline-start: var(--space-m);
 }
 li > ul,
 ol {
@@ -104,18 +104,17 @@ blockquote {
 	}
 }
 .content-renderer {
-	// ul {
-	// 	margin: unset;
-	// }
 	ol,
 	ul,
 	p {
-		margin-block: 0.75em;
+		margin-block: 0.5em;
 	}
 	li {
 		margin-block-end: 0.25em;
 	}
-
+	li > ul {
+		margin-block: 0.25em 0.5em;
+	}
 	h1,
 	h2,
 	h3,
@@ -150,12 +149,6 @@ strong {
 }
 h1 {
 	font-size: var(--step-5);
-	// margin-block-end: var(--space-s);
-	// font-variation-settings: 'INFM' 100, 'wght' 600, 'BNCE' 25, 'ital' 1;
-	// transition: font-variation-settings 0.5s ease-in-out 0s;
-	// &:hover {
-	// 	font-variation-settings: 'INFM' 50, 'wght' 600, 'BNCE' 25, 'ital' 1;
-	// }
 	@media print {
 		font-size: var(--step-3);
 	}
@@ -268,7 +261,7 @@ a,
 		opacity: 1;
 	}
 	&:hover {
-		font-variation-settings: 'INFM' 100, 'wght' 700, 'BNCE' 50;
+		font-variation-settings: 'INFM' 100, 'wght' 600, 'BNCE' 50;
 		border: unset;
 	}
 }
@@ -312,4 +305,33 @@ pre code {
 
 .dimmed {
 	color: var(--color-sys-dim);
+}
+@keyframes pop-it {
+	from {
+		transform: scale(1);
+	}
+
+	to {
+		transform: scale(1.1) ;
+	}
+}
+.make-it-pop{
+	width: 100%;
+	&::before {
+		transform: rotateY(0.5turn);
+		transform-origin: bottom center;
+		background-color: blueviolet;
+		animation: pop-it 1s ease-in-out alternate infinite;
+		content: url('/misc/quotes.svg'); /* Path to your SVG file */
+		display: inline-block;
+		max-width: 1em; /* Set the width */
+		max-height: 1em; /* Set the height */
+	}
+	&::after {
+		animation: pop-it 1s ease-in-out alternate infinite;
+		content: url('/misc/quotes.svg'); /* Path to your SVG file */
+		display: inline-block;
+		max-width: 0.125em; /* Set the width */
+		max-height: 0.125em; /* Set the height */
+	}
 }
