@@ -8,12 +8,15 @@ defineProps({
 </script>
 
 <template>
-	<div>
+	<div class="grid-unit">
 		<slot />
 	</div>
 </template>
-<style scoped>
-div {
+<style lang="scss">
+.grid-unit {
 	margin-block: v-bind(marginBlock);
+	& > :first-child {
+		margin-block-start: unset;
+	}
 }
 </style>
