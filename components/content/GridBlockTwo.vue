@@ -29,7 +29,7 @@ div {
 	margin-block: var(--space-s);
 	@media (width <= $display-width-sm) {
 		grid-template-columns: 1fr;
-		gap: 0;
+		gap: var(--space-xs);
 	}
 }
 </style>

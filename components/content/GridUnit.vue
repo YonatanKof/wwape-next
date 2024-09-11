@@ -1,6 +1,6 @@
 <script setup>
 defineProps({
-	marginBlock: {
+	marginBlockStart: {
 		type: String,
 		default: undefined,
 	},
@@ -14,7 +14,10 @@ defineProps({
 </template>
 <style lang="scss">
 .grid-unit {
-	margin-block: v-bind(marginBlock);
+	margin-block-start: v-bind(marginBlockStart);
+	@media (width <= $display-width-sm) {
+		margin-block-start: unset;
+	}
 	& > :first-child {
 		margin-block-start: unset;
 	}
