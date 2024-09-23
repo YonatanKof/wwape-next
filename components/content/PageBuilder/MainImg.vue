@@ -34,9 +34,23 @@ const props = defineProps({
 	<!-- <em v-if="desc">{{ desc }}</em> -->
 </template>
 <style lang="scss" scoped>
+@keyframes main-tilt {
+	from {
+		transform: rotate3d(4, 3, -2, 20deg);
+	}
+	10% {
+		transform: rotate3d(4, 3, -2, 20deg);
+	}
+	90% {
+		transform: rotate3d(4, 3, -2, 0deg);
+	}
+	to {
+		transform: rotate3d(4, 3, -2, 0deg);
+	}
+}
 @keyframes darg-block {
 	from {
-		transform: translate3d(1.5em, -2.75em, 5em);
+		transform: translate3d(1.5em, -2.4em, 5em);
 	}
 	to {
 		transform: translate3d(9em, -6em, 5em);
@@ -88,16 +102,17 @@ const props = defineProps({
 	}
 }
 div {
-	font-size: clamp(5px, 1.5vw + 2px, 20px) !important;
+	font-size: clamp(0.375rem, -0.023rem + 2.121vw, 1.25rem) !important;
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
 	grid-template-rows: auto 1fr 6.5em;
-	transform: rotate3d(4, 3, -2, 24deg);
 	width: 100%;
 	margin-inline: auto;
 	transition: transform 0.5s ease-in-out;
 	transform-style: preserve-3d;
 	position: relative;
+	// animation: 8s main-tilt ease-in-out alternate infinite;
+	transform: rotate3d(4, 3, -2, 24deg);
 	&:hover {
 		transform: rotate3d(4, 3, -2, 0deg) translateZ(0);
 	}
@@ -147,7 +162,7 @@ img {
 .arrow-title {
 	grid-column: 1 / span 1;
 	grid-row: 1 / span 1;
-	transform: translate3d(6em, 8em, 2em) rotateZ(170deg) scale(0.3) scaleY(-1);
+	transform: translate3d(5.25em, 7.5em, 2em) rotateZ(170deg) scale(0.3) scaleY(-1);
 }
 .image {
 	grid-column: 3 / span 1;
