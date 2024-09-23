@@ -18,7 +18,7 @@ desc: Some examples of our custom built homepages
 ---
 ::
 
-With *Pepperi Page Builder*, clients of our B2B plan can build, edit and design of their webpages. Now they can prompt, present and sale with total **workflow** control, utilizing **buyer profiles**, at their own time, with a no-code interface.
+With *Pepperi Page Builder*, B2B clients can easily build, edit, and design their web pages. This tool empowers them to promote, present, and sell with full *workflow* control, leveraging *buyer profiles* while using a no-code interface, all at their own convenience.
 
 
 ## The motivation for the project
@@ -38,12 +38,31 @@ desc: Some custom built homepages – Great for our clients, bad for our busines
 ---
 ::
 
+
+::GridBlockTwo{frOne="1fr" frTwo="3fr" gap="var(--space-m)"}
+:::GridUnit
+#### Pages Manager
+Some text here
+:::
+:::GridUnit
+
+::::TiltImage
+---
+img1: /work/pepperi-page-builder/builder/0-PagesManager-3-Populated.webp
+img3: /work/pepperi-page-builder/builder/0-PagesManager-2-Templates.webp
+img2: /work/pepperi-page-builder/builder/0-PagesManager-1-Empty.webp
+desc: Pages Manager flow; From empty state to the templates for the populated list
+---
+::::
+:::
+::
+
 ::GridBlockTwo{frOne="2fr" frTwo="3fr" gap="var(--space-m)"}
 :::GridUnit
 ## The problem
 Though custom web pages can offer our clients maximum flexibility in design and functionality they had multiple issues when it comes to business goals and product. 
 :::
-:::GridUnit
+:::GridUnit{marginBlockStart="var(--space-xs)"}
 <!-- As mentioned, custom web pages were built with native web code by our Professional Services devs – this lead to the following Issues:  -->
 
 #### List of issues 
