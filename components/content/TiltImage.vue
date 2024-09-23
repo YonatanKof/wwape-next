@@ -31,7 +31,7 @@ const props = defineProps({
 <style lang="scss" scoped>
 em {
 	@include desc-text-under();
-	margin-block-start: var(--space-2xl);
+	margin-block-start: var(--space-m);
 	margin-block-end: unset;
 }
 span {
@@ -55,7 +55,7 @@ div {
 	}
 }
 img {
-	margin: unset;
+	margin: unset !important;
 	border-radius: var(--border-radius-xs);
 	filter: drop-shadow(0 var(--space-s) var(--space-s) var(--color-black-dim));
 }
