@@ -1,109 +1,165 @@
-<svg viewBox="0 0 111 128" xmlns="http://www.w3.org/2000/svg" xml:space="preserve">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
     <style>
         svg {
             --color: hsla(35, 34%, 50%, .5);
+            --color-x: hsla(35, 34%, 50%, 1);
         }
 
         .shape-line {
             stroke-width: .5px;
-            stroke: hsla(35, 34%, 50%, 1);
+            stroke: var(--color-x);
             stroke-linecap: round;
             stroke-linejoin: round;
             stroke-miterlimit: 1.5;
             fill: none;
+            mix-blend-mode: multiply;
         }
 
         .shape-fill {
             mix-blend-mode: multiply;
             fill: var(--color);
+            transition: fill 0.5s;
             fill-rule: evenodd;
             clip-rule: evenodd;
-
         }
-    </style>
-    <path style="fill:white" d="M0 0h110.85v128H0z" />
-    <g id="line-1">
-        <path d="m55.425 32 27.713 16-27.713 16-27.713-16 27.713-16Z" class="shape-line" />
-        <path d="M55.425 40 76.21 52 55.425 64 34.64 52l20.785-12Z" class="shape-line" />
-        <path d="m55.425 46 15.588 9-15.588 9-15.588-9 15.588-9Z" class="shape-line" />
-        <path d="m55.425 50.5 11.691 6.75L55.425 64l-11.691-6.75 11.691-6.75Z" class="shape-line" />
-        <path d="m55.425 53.875 8.769 5.063L55.425 64l-8.769-5.062 8.769-5.063Z" class="shape-line" />
-        <path d="m55.425 56.406 6.576 3.797L55.425 64l-6.576-3.797 6.576-3.797Z" class="shape-line" />
-        <path d="m55.425 58.305 4.932 2.847L55.425 64l-4.932-2.848 4.932-2.847Z" class="shape-line" />
-        <path d="m55.425 59.729 3.699 2.135L55.425 64l-3.699-2.136 3.699-2.135Z" class="shape-line" />
-        <path d="m55.425 60.796 2.774 1.602L55.425 64l-2.774-1.602 2.774-1.602Z" class="shape-line" />
-        <path d="m55.425 61.597 2.081 1.202L55.425 64l-2.081-1.201 2.081-1.202Z" class="shape-line" />
-    </g>
-    <g id="line-2">
-        <path d="m55.425 63.24.658.38-.658.38-.658-.38.658-.38ZM83.138 80V48L55.425 64v32l27.713-16Z"
-            class="shape-line" />
-        <path d="M76.21 76V52L55.425 64v24L76.21 76Z" class="shape-line" />
-        <path d="M71.013 73V55l-15.588 9v18l15.588-9Z" class="shape-line" />
-        <path d="M67.116 70.75v-13.5L55.425 64v13.5l11.691-6.75Z" class="shape-line" />
-        <path d="M64.194 69.063V58.938L55.425 64v10.125l8.769-5.062Z" class="shape-line" />
-        <path d="M62.001 67.797v-7.594L55.425 64v7.594l6.576-3.797Z" class="shape-line" />
-        <path d="M60.357 66.848v-5.696L55.425 64v5.695l4.932-2.847Z" class="shape-line" />
-        <path d="M59.124 66.136v-4.272L55.425 64v4.271l3.699-2.135Z" class="shape-line" />
-        <path d="M58.199 65.602v-3.204L55.425 64v3.204l2.774-1.602Z" class="shape-line" />
-        <path d="M57.506 65.201v-2.402L55.425 64v2.403l2.081-1.202Z" class="shape-line" />
-        <path d="M56.986 64.901v-1.802L55.425 64v1.802l1.561-.901Z" class="shape-line" />
-    </g>
-    <g id="line-3">
-        <path d="M27.713 80V48l27.713 16v32L27.713 80Z" class="shape-line" />
-        <path d="M34.641 76V52l20.785 12v24L34.641 76Z" class="shape-line" />
-        <path d="M39.837 73V55l15.589 9v18l-15.589-9Z" class="shape-line" />
-        <path d="M43.734 70.75v-13.5L55.426 64v13.5l-11.692-6.75Z" class="shape-line" />
-        <path d="M46.657 69.063V58.938L55.426 64v10.125l-8.769-5.062Z" class="shape-line" />
-        <path d="M48.849 67.797v-7.594L55.426 64v7.594l-6.577-3.797Z" class="shape-line" />
-        <path d="M50.493 66.848v-5.696L55.426 64v5.695l-4.933-2.847Z" class="shape-line" />
-        <path d="M51.726 66.136v-4.272l3.7 2.136v4.271l-3.7-2.135Z" class="shape-line" />
-        <path d="M52.651 65.602v-3.204L55.426 64v3.204l-2.775-1.602Z" class="shape-line" />
-        <path d="M53.345 65.201v-2.402L55.426 64v2.403l-2.081-1.202Z" class="shape-line" />
-        <path d="M53.865 64.901v-1.802l1.561.901v1.802l-1.561-.901Z" class="shape-line" />
-    </g>
-    <g id="fill-1">
-        <path d="m55.425 32 27.713 16-27.713 16-27.713-16 27.713-16Z" class="shape-fill" />
-        <path d="M55.425 40 76.21 52 55.425 64 34.64 52l20.785-12Z" class="shape-fill" />
-        <path d="m55.425 46 15.588 9-15.588 9-15.588-9 15.588-9Z" class="shape-fill" />
-        <path d="m55.425 50.5 11.691 6.75L55.425 64l-11.691-6.75 11.691-6.75Z" class="shape-fill" />
-        <path d="m55.425 53.875 8.769 5.063L55.425 64l-8.769-5.062 8.769-5.063Z" class="shape-fill" />
-        <path d="m55.425 56.406 6.576 3.797L55.425 64l-6.576-3.797 6.576-3.797Z" class="shape-fill" />
-        <path d="m55.425 58.305 4.932 2.847L55.425 64l-4.932-2.848 4.932-2.847Z" class="shape-fill" />
-        <path d="m55.425 59.729 3.699 2.135L55.425 64l-3.699-2.136 3.699-2.135Z" class="shape-fill" />
-        <path d="m55.425 60.796 2.774 1.602L55.425 64l-2.774-1.602 2.774-1.602Z" class="shape-fill" />
-        <path d="m55.425 61.597 2.081 1.202L55.425 64l-2.081-1.201 2.081-1.202Z" class="shape-fill" />
-    </g>
-    <g id="fill-2">
-        <path d="m55.425 63.24.658.38-.658.38-.658-.38.658-.38ZM83.138 80V48L55.425 64v32l27.713-16Z"
-            class="shape-fill" />
-        <path d="m55.425 63.24.658.38-.658.38-.658-.38.658-.38ZM83.138 80V48L55.425 64v32l27.713-16Z"
-            class="shape-fill" />
-        <path d="M76.21 76V52L55.425 64v24L76.21 76Z" class="shape-fill" />
-        <path d="M71.013 73V55l-15.588 9v18l15.588-9Z" class="shape-fill" />
-        <path d="M67.116 70.75v-13.5L55.425 64v13.5l11.691-6.75Z" class="shape-fill" />
-        <path d="M64.194 69.063V58.938L55.425 64v10.125l8.769-5.062Z" class="shape-fill" />
-        <path d="M62.001 67.797v-7.594L55.425 64v7.594l6.576-3.797Z" class="shape-fill" />
-        <path d="M60.357 66.848v-5.696L55.425 64v5.695l4.932-2.847Z" class="shape-fill" />
-        <path d="M59.124 66.136v-4.272L55.425 64v4.271l3.699-2.135Z" class="shape-fill" />
-        <path d="M58.199 65.602v-3.204L55.425 64v3.204l2.774-1.602Z" class="shape-fill" />
-        <path d="M57.506 65.201v-2.402L55.425 64v2.403l2.081-1.202Z" class="shape-fill" />
-        <path d="M56.986 64.901v-1.802L55.425 64v1.802l1.561-.901Z" class="shape-fill" />
-    </g>
-    <g id="fill-3">
-        <path d="M27.713 80V48l27.713 16v32L27.713 80Z" class="shape-fill" />
-        <path d="M27.713 80V48l27.713 16v32L27.713 80Z" class="shape-fill" />
-        <path d="M27.713 80V48l27.713 16v32L27.713 80Z" class="shape-fill" />
-        <path d="M27.713 80V48l27.713 16v32L27.713 80Z" class="shape-fill" />
-        <path d="M34.641 76V52l20.785 12v24L34.641 76Z" class="shape-fill" />
-        <path d="M39.837 73V55l15.589 9v18l-15.589-9Z" class="shape-fill" />
-        <path d="M43.734 70.75v-13.5L55.426 64v13.5l-11.692-6.75Z" class="shape-fill" />
-        <path d="M46.657 69.063V58.938L55.426 64v10.125l-8.769-5.062Z" class="shape-fill" />
-        <path d="M48.849 67.797v-7.594L55.426 64v7.594l-6.577-3.797Z" class="shape-fill" />
-        <path d="M50.493 66.848v-5.696L55.426 64v5.695l-4.933-2.847Z" class="shape-fill" />
-        <path d="M51.726 66.136v-4.272l3.7 2.136v4.271l-3.7-2.135Z" class="shape-fill" />
-        <path d="M52.651 65.602v-3.204L55.426 64v3.204l-2.775-1.602Z" class="shape-fill" />
-        <path d="M53.345 65.201v-2.402L55.426 64v2.403l-2.081-1.202Z" class="shape-fill" />
-        <path d="M53.865 64.901v-1.802l1.561.901v1.802l-1.561-.901Z" class="shape-fill" />
-    </g>
 
+        .shape-fill:hover {
+            --color: hsla(150, 80%, 40%, 0.75);
+        }
+
+        /* #iso-cube {
+            transform-origin: 55px 64px;
+            transition: fill 0.5s;
+        } */
+
+        /* #iso-cube:hover {} */
+    </style>
+    <defs>
+        <clipPath id="cut-off-bottom">
+            <rect style="fill:white" width="300" height="200" />
+        </clipPath>
+
+        <g id="iso-cube">
+            <g id="fill-1">
+                <path d="m55.425 32 27.713 16-27.713 16-27.713-16 27.713-16Z" style="fill:white" />
+                <path d="m55.425 32 27.713 16-27.713 16-27.713-16 27.713-16Z" class="shape-fill" />
+                <path d="M55.425 40 76.21 52 55.425 64 34.64 52l20.785-12Z" class="shape-fill" />
+                <path d="m55.425 46 15.588 9-15.588 9-15.588-9 15.588-9Z" class="shape-fill" />
+                <path d="m55.425 50.5 11.691 6.75L55.425 64l-11.691-6.75 11.691-6.75Z" class="shape-fill" />
+                <path d="m55.425 53.875 8.769 5.063L55.425 64l-8.769-5.062 8.769-5.063Z" class="shape-fill" />
+                <path d="m55.425 56.406 6.576 3.797L55.425 64l-6.576-3.797 6.576-3.797Z" class="shape-fill" />
+                <path d="m55.425 58.305 4.932 2.847L55.425 64l-4.932-2.848 4.932-2.847Z" class="shape-fill" />
+                <path d="m55.425 59.729 3.699 2.135L55.425 64l-3.699-2.136 3.699-2.135Z" class="shape-fill" />
+                <path d="m55.425 60.796 2.774 1.602L55.425 64l-2.774-1.602 2.774-1.602Z" class="shape-fill" />
+                <path d="m55.425 61.597 2.081 1.202L55.425 64l-2.081-1.201 2.081-1.202Z" class="shape-fill" />
+            </g>
+            <g id="fill-2">
+                <path d="m55.425 63.24.658.38-.658.38-.658-.38.658-.38ZM83.138 80V48L55.425 64v32l27.713-16Z"
+                    style="fill:white" />
+                <path d="m55.425 63.24.658.38-.658.38-.658-.38.658-.38ZM83.138 80V48L55.425 64v32l27.713-16Z"
+                    class="shape-fill" />
+                <path d="m55.425 63.24.658.38-.658.38-.658-.38.658-.38ZM83.138 80V48L55.425 64v32l27.713-16Z"
+                    class="shape-fill" />
+                <path d="M76.21 76V52L55.425 64v24L76.21 76Z" class="shape-fill" />
+                <path d="M71.013 73V55l-15.588 9v18l15.588-9Z" class="shape-fill" />
+                <path d="M67.116 70.75v-13.5L55.425 64v13.5l11.691-6.75Z" class="shape-fill" />
+                <path d="M64.194 69.063V58.938L55.425 64v10.125l8.769-5.062Z" class="shape-fill" />
+                <path d="M62.001 67.797v-7.594L55.425 64v7.594l6.576-3.797Z" class="shape-fill" />
+                <path d="M60.357 66.848v-5.696L55.425 64v5.695l4.932-2.847Z" class="shape-fill" />
+                <path d="M59.124 66.136v-4.272L55.425 64v4.271l3.699-2.135Z" class="shape-fill" />
+                <path d="M58.199 65.602v-3.204L55.425 64v3.204l2.774-1.602Z" class="shape-fill" />
+                <path d="M57.506 65.201v-2.402L55.425 64v2.403l2.081-1.202Z" class="shape-fill" />
+                <path d="M56.986 64.901v-1.802L55.425 64v1.802l1.561-.901Z" class="shape-fill" />
+            </g>
+            <g id="fill-3">
+                <path d="M27.713 80V48l27.713 16v32L27.713 80Z" style="fill:white" />
+                <path d="M27.713 80V48l27.713 16v32L27.713 80Z" class="shape-fill" />
+                <path d="M27.713 80V48l27.713 16v32L27.713 80Z" class="shape-fill" />
+                <path d="M27.713 80V48l27.713 16v32L27.713 80Z" class="shape-fill" />
+                <path d="M27.713 80V48l27.713 16v32L27.713 80Z" class="shape-fill" />
+                <path d="M34.641 76V52l20.785 12v24L34.641 76Z" class="shape-fill" />
+                <path d="M39.837 73V55l15.589 9v18l-15.589-9Z" class="shape-fill" />
+                <path d="M43.734 70.75v-13.5L55.426 64v13.5l-11.692-6.75Z" class="shape-fill" />
+                <path d="M46.657 69.063V58.938L55.426 64v10.125l-8.769-5.062Z" class="shape-fill" />
+                <path d="M48.849 67.797v-7.594L55.426 64v7.594l-6.577-3.797Z" class="shape-fill" />
+                <path d="M50.493 66.848v-5.696L55.426 64v5.695l-4.933-2.847Z" class="shape-fill" />
+                <path d="M51.726 66.136v-4.272l3.7 2.136v4.271l-3.7-2.135Z" class="shape-fill" />
+                <path d="M52.651 65.602v-3.204L55.426 64v3.204l-2.775-1.602Z" class="shape-fill" />
+                <path d="M53.345 65.201v-2.402L55.426 64v2.403l-2.081-1.202Z" class="shape-fill" />
+                <path d="M53.865 64.901v-1.802l1.561.901v1.802l-1.561-.901Z" class="shape-fill" />
+            </g>
+            <g id="line-1">
+                <path d="m55.425 32 27.713 16-27.713 16-27.713-16 27.713-16Z" class="shape-line" />
+                <path d="M55.425 40 76.21 52 55.425 64 34.64 52l20.785-12Z" class="shape-line" />
+                <path d="m55.425 46 15.588 9-15.588 9-15.588-9 15.588-9Z" class="shape-line" />
+                <path d="m55.425 50.5 11.691 6.75L55.425 64l-11.691-6.75 11.691-6.75Z" class="shape-line" />
+                <path d="m55.425 53.875 8.769 5.063L55.425 64l-8.769-5.062 8.769-5.063Z" class="shape-line" />
+                <path d="m55.425 56.406 6.576 3.797L55.425 64l-6.576-3.797 6.576-3.797Z" class="shape-line" />
+                <path d="m55.425 58.305 4.932 2.847L55.425 64l-4.932-2.848 4.932-2.847Z" class="shape-line" />
+                <path d="m55.425 59.729 3.699 2.135L55.425 64l-3.699-2.136 3.699-2.135Z" class="shape-line" />
+                <path d="m55.425 60.796 2.774 1.602L55.425 64l-2.774-1.602 2.774-1.602Z" class="shape-line" />
+                <path d="m55.425 61.597 2.081 1.202L55.425 64l-2.081-1.201 2.081-1.202Z" class="shape-line" />
+            </g>
+            <g id="line-2">
+                <path d="m55.425 63.24.658.38-.658.38-.658-.38.658-.38ZM83.138 80V48L55.425 64v32l27.713-16Z"
+                    class="shape-line" />
+                <path d="M76.21 76V52L55.425 64v24L76.21 76Z" class="shape-line" />
+                <path d="M71.013 73V55l-15.588 9v18l15.588-9Z" class="shape-line" />
+                <path d="M67.116 70.75v-13.5L55.425 64v13.5l11.691-6.75Z" class="shape-line" />
+                <path d="M64.194 69.063V58.938L55.425 64v10.125l8.769-5.062Z" class="shape-line" />
+                <path d="M62.001 67.797v-7.594L55.425 64v7.594l6.576-3.797Z" class="shape-line" />
+                <path d="M60.357 66.848v-5.696L55.425 64v5.695l4.932-2.847Z" class="shape-line" />
+                <path d="M59.124 66.136v-4.272L55.425 64v4.271l3.699-2.135Z" class="shape-line" />
+                <path d="M58.199 65.602v-3.204L55.425 64v3.204l2.774-1.602Z" class="shape-line" />
+                <path d="M57.506 65.201v-2.402L55.425 64v2.403l2.081-1.202Z" class="shape-line" />
+                <path d="M56.986 64.901v-1.802L55.425 64v1.802l1.561-.901Z" class="shape-line" />
+            </g>
+            <g id="line-3">
+                <path d="M27.713 80V48l27.713 16v32L27.713 80Z" class="shape-line" />
+                <path d="M34.641 76V52l20.785 12v24L34.641 76Z" class="shape-line" />
+                <path d="M39.837 73V55l15.589 9v18l-15.589-9Z" class="shape-line" />
+                <path d="M43.734 70.75v-13.5L55.426 64v13.5l-11.692-6.75Z" class="shape-line" />
+                <path d="M46.657 69.063V58.938L55.426 64v10.125l-8.769-5.062Z" class="shape-line" />
+                <path d="M48.849 67.797v-7.594L55.426 64v7.594l-6.577-3.797Z" class="shape-line" />
+                <path d="M50.493 66.848v-5.696L55.426 64v5.695l-4.933-2.847Z" class="shape-line" />
+                <path d="M51.726 66.136v-4.272l3.7 2.136v4.271l-3.7-2.135Z" class="shape-line" />
+                <path d="M52.651 65.602v-3.204L55.426 64v3.204l-2.775-1.602Z" class="shape-line" />
+                <path d="M53.345 65.201v-2.402L55.426 64v2.403l-2.081-1.202Z" class="shape-line" />
+                <path d="M53.865 64.901v-1.802l1.561.901v1.802l-1.561-.901Z" class="shape-line" />
+            </g>
+            <!-- <circle cx="55.5" cy="63.5" r="1" style="fill:red" /> -->
+        </g>
+    </defs>
+    <g clip-path="url(#cut-off-bottom)">
+        <use href="#iso-cube" x="-27.5" y="-48" />
+        <use href="#iso-cube" x="27.5" y="-48" />
+        <use href="#iso-cube" x="82.5" y="-48" />
+        <use href="#iso-cube" x="137.4" y="-48" />
+        <use href="#iso-cube" x="192.5" y="-48" />
+        <use href="#iso-cube" x="247.5" y="-48" />
+        <use href="#iso-cube" x="-55" y="0" />
+        <use href="#iso-cube" x="0" y="0" />
+        <use href="#iso-cube" x="55" y="0" />
+        <use href="#iso-cube" x="110" y="0" />
+        <use href="#iso-cube" x="165" y="0" />
+        <use href="#iso-cube" x="220" y="0" />
+        <use href="#iso-cube" x="-27.5" y="48" />
+        <use href="#iso-cube" x="27.5" y="48" />
+        <use href="#iso-cube" x="82.5" y="48" />
+        <use href="#iso-cube" x="137.4" y="48" />
+        <use href="#iso-cube" x="192.5" y="48" />
+        <use href="#iso-cube" x="247.5" y="48" />
+        <use href="#iso-cube" x="-55" y="96" />
+        <use href="#iso-cube" x="0" y="96" />
+        <use href="#iso-cube" x="55" y="96" />
+        <use href="#iso-cube" x="110" y="96" />
+        <use href="#iso-cube" x="165" y="96" />
+        <use href="#iso-cube" x="220" y="96" />
+        <use href="#iso-cube" x="-27.5" y="144" />
+        <use href="#iso-cube" x="27.5" y="144" />
+        <use href="#iso-cube" x="82.5" y="144" />
+        <use href="#iso-cube" x="137.4" y="144" />
+        <use href="#iso-cube" x="192.5" y="144" />
+        <use href="#iso-cube" x="247.5" y="144" />
+    </g>
 </svg>
