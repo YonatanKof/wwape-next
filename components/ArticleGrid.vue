@@ -32,7 +32,9 @@ const props = defineProps({
 		<span class="flip">
 			<span class="content">
 				<slot />
-				<NuxtLink v-if="linkTo" class="button" :href="linkTo" :target="target"> {{ btnText }} </NuxtLink>
+				<button>
+					<NuxtLink v-if="linkTo" :href="linkTo" :target="target"> {{ btnText }} </NuxtLink>
+				</button>
 			</span>
 			<VideoTag
 				v-if="imgSrc"
@@ -47,9 +49,10 @@ const props = defineProps({
 	</div>
 </template>
 <style lang="scss" scoped>
-.button {
+button {
 	border-radius: var(--space-l);
 	width: max-content;
+	padding: 0.8em 1.4em 0.65em 1.4em;
 }
 .box {
 	background-color: var(--color-sys-invert-highlight);
