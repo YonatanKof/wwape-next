@@ -22,15 +22,15 @@ const emit = defineEmits<{
 			<li>Proven ability to lead teams without authority</li>
 			<li>A designer that codes, this site and more</li>
 			<li>Proficient in writing guides and PRDs</li>
-			<li>In love with parametric design</li>
+			<!-- <li>In love with parametric design</li> -->
 			<li>Best practices in collaboration and sharing</li>
 			<li>Best practices in backlog management</li>
-			<li>Working lean and effective</li>
-			<li>Total control over tools of the trade</li>
-			<li>Smoking hot recommendations</li>
+			<li>Total control over design and <em>DS</em> tools</li>
+			<li>Hot recommendations – Please ask</li>
 			<li>
 				Turning the <em>DS</em> form an issue to a success
 			</li>
+			<!-- <li>Working lean and effective</li> -->
 		</ul>
 		<span>
 			<div><a href="/misc/CV-YonatanBenKnaan-2024.pdf" download>Download CV</a></div>
