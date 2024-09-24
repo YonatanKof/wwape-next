@@ -20,8 +20,8 @@ const props = defineProps({
 		<h1 v-if="title">{{ title }}</h1>
 		<span>
 			<p v-if="isOn"><SayHi /></p>
-			<p v-if="text">{{ text }}</p>
-			<p v-if="text2" id="last">{{ text2 }}</p>
+			<p v-if="text" v-html="text"></p>
+			<p v-if="text2" v-html="text2" id="last"></p>
 		</span>
 	</div>
 </template>
