@@ -4,7 +4,7 @@ const pageDesc = `Amazing Playlists and Mixes by ${config.public.siteOwnerName}`
 const pageImg = '/images/music-social.jpg';
 const pageAlt = 'Social cover for this site posts page';
 useHead({
-	title: 'Playlists and Mixes',
+	title: `Playlists and Mixes by ${config.public.siteOwnerName} of the ${config.public.siteName}`,
 });
 useSeoMeta({
 	ogType: 'website',
