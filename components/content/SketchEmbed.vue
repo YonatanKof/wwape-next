@@ -37,9 +37,9 @@ changeIt();
 	background-color: var(--color-sys-dis);
 }
 .iframe {
-	top: 0;
+	inset-block-start: 0;
 	display: v-bind(displayIt);
-	left: 0;
+	inset-inline-start: 0;
 	width: 100%;
 	height: 100%;
 	position: absolute;

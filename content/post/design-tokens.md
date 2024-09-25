@@ -111,7 +111,7 @@ But what about this CSS declaration?
 		height: 100%;
 		background-color: var(--color-sys-dim);
 		position: absolute;
-		left: calc(var(--space-xs) * -1);
+		inset-inline-start: calc(var(--space-xs) * -1);
 		border-radius: var(--border-radius-xs);
 
 	}

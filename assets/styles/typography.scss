@@ -99,7 +99,7 @@ blockquote {
 		height: 100%;
 		background-color: var(--color-sys-dim);
 		position: absolute;
-		left: calc(calc(var(--space-3xs) * -1) + var(--space-3xs));
+		inset-inline-start: calc(calc(var(--space-3xs) * -1) + var(--space-3xs));
 		border-radius: var(--border-radius-xs);
 	}
 }
@@ -225,7 +225,7 @@ h6 {
 sup {
 	font-size: 0.75em;
 	position: relative;
-	bottom: var(--space-3xs);
+	inset-inline-end: var(--space-3xs);
 	&::before {
 		padding-inline-end: var(--space-4xs);
 		color: var(--color-sys-dim);
@@ -288,7 +288,7 @@ a,
 		color: var(--color-sys-slight);
 		content: '#';
 		display: inline-block;
-		margin-left: -1.25em;
+		margin-inline-start: -1.25em;
 		text-decoration: none;
 		opacity: 0;
 		width: 1.25em;
