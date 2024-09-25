@@ -5,6 +5,9 @@ const SiteNameHere = 'WWApe';
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
 	modules: ['@nuxt/content', '@vueuse/nuxt', '@unlazy/nuxt', 'nuxt-clarity-analytics', '@nuxt/image'],
+	routeRules: {
+		'/hunt/**': { redirect: '/work/**' },
+	},
 	content: {
 		// toc: {
 		// 	depth: 4,
