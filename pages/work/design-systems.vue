@@ -10,7 +10,7 @@ const pageDesc = `Discover how I create design systems that unify product, devel
 const pageImg = '/misc/design-systems-social.jpg';
 const pageAlt = `Cover image for Design Systems page by ${config.public.siteOwnerName}`;
 useHead({
-	title: 'Design Systems: Unifying Product, Dev, and Brand Teams with Technology and Design Thinking',
+	title: 'Design Systems: Unifying Product, Dev, and Brand Teams with Tech and Design Thinking',
 });
 useSeoMeta({
 	ogType: 'website',
@@ -39,11 +39,12 @@ const { open, close } = useModal({
 <template>
 	<section>
 		<ModalsContainer />
-		<h1>Design Systems: Unifying product, dev & brand teams with tech & design-thinking</h1>
+		<h1>Design Systems</h1>
+		<blockquote>Unifying Product, Dev, and Brand teams with tech & Design-Thinking</blockquote>
 		<p>
-			I create design systems that bridge product teams, brand identity, developers, and business needs – ensuring
-			design consistency, cohesive experiences, scalable solutions, and improved work velocity through cross-functional
-			collaboration.
+			I envision, create, lead, manage, and govern design systems that connect product teams, brand identity,
+			developers, and business needs. Design systems that people adopt and use ensure design consistency, cohesive
+			experiences, scalable solutions, and improve velocity and better cross-functional collaboration.
 		</p>
 		<main>
 			<div id="intro">
@@ -55,7 +56,7 @@ const { open, close } = useModal({
 							them, and the businesses that operate them.
 						</p>
 						<p>
-							<span style="display: block;">More reasons why I'm a good fit?</span>
+							<span style="display: block">More reasons why I'm a good fit?</span>
 							<i class="drag-title">Push the button to see!</i>
 						</p>
 					</span>
@@ -119,8 +120,8 @@ const { open, close } = useModal({
 			>
 				<p>
 					With this design initiative, I've guided management in a journey to strengthen and solidify Pepperi brand.
-					Here, you can find our brand values, mission statement, visual and design assets, target audience, and
-					user personas.
+					Here, you can find our brand values, mission statement, visual and design assets, target audience, and user
+					personas.
 				</p>
 			</ArticleGrid>
 		</main>
@@ -146,6 +147,15 @@ h1 {
 	font-size: var(--step-3);
 	text-wrap: balance;
 	max-width: 34ch;
+	margin-block-end: var(--space-xs);
+}
+h3 {
+	text-wrap: balance;
+	margin-block-end: var(--space-3xs);
+	font-variation-settings: 'wght' 400;
+	font-family: var(--font-body);
+	font-size: var(--step-1);
+	line-height: 1.4;
 }
 p {
 	font-size: var(--step-0);
