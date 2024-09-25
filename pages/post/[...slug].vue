@@ -19,7 +19,7 @@ const { data, error } = await useAsyncData(cleanPath, async () => {
 });
 
 const config = useRuntimeConfig();
-const siteTitle = `A post by ${config.public.siteOwnerName} from the ${config.public.siteName}`;
+const siteTitle = `A post by ${config.public.siteOwnerName} of the ${config.public.siteName}`;
 
 // Set the meta
 const dynamicUrl = config.public.baseUrl;

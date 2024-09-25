@@ -1,8 +1,13 @@
 <script setup>
 const config = useRuntimeConfig();
-const pageDesc = `An amazing site by ${config.public.siteOwnerName}`;
+const pageDesc = `An amazing site to be WOWed!`;
 const pageImg = '/images/index-social.jpg';
 const pageAlt = 'Social cover for this site main page';
+
+useHead({
+	title: `A site by ${config.public.siteOwnerName} of the ${config.public.siteName}`,
+
+});
 useSeoMeta({
 	ogType: 'website',
 	description: () => pageDesc,
@@ -20,10 +25,11 @@ useSeoMeta({
 </script>
 <template>
 	<main>
-		<IntroText :is-on="true"
+		<IntroText
+			:is-on="true"
 			title="World Wide Ape"
 			text="I’m Yonatan, a mismatched persona, friend, lover, family man, and an alright dude from <i>Tel Aviv</i>, the cultural capital of the flaming <i>Middle East</i>."
 			text2="If life is an <i>RPG</i> and you’re an <i>NPC</i>, then I’m a multiclass player: a professional product designer and an amateur illustrator, developer, photographer, tinkerer, and bedroom DJ."
-			/>
+		/>
 	</main>
 </template>

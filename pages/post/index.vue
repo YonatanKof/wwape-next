@@ -1,10 +1,10 @@
 <script setup>
 const config = useRuntimeConfig();
-const pageDesc = `Amazing posts by ${config.public.siteOwnerName} from the ${config.public.siteName}`;
+const pageDesc = `Amazing posts by ${config.public.siteOwnerName} of the ${config.public.siteName}`;
 const pageImg = '/images/posts-social.jpg';
 const pageAlt = 'Social cover for this site posts page';
 useHead({
-	title: `Posts by ${config.public.siteOwnerName}`,
+	title: `Posts by ${config.public.siteOwnerName} of the ${config.public.siteName}`,
 });
 useSeoMeta({
 	ogType: 'website',
