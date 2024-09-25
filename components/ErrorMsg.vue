@@ -1,6 +1,7 @@
 <script setup lang="ts">
+import type { NuxtError } from '#app';
 const props = defineProps({
-	error: Object,
+	error: Object as () => NuxtError,
 });
 
 const goHome = () => clearError({ redirect: '/' });
@@ -12,7 +13,7 @@ const goPost = () => clearError({ redirect: '/post' });
 	<main>
 		<section>
 			<h2>Oh My!</h2>
-			<h1>It's a {{ error.statusCode }}<br>Error Page</h1>
+			<h1>It's a {{ error?.statusCode ?? 'Unknown' }}<br />Error Page</h1>
 			<hr />
 			<p>You can now...</p>
 			<div>
@@ -27,7 +28,7 @@ const goPost = () => clearError({ redirect: '/post' });
 
 <style lang="scss" scoped>
 main {
-    text-align: center;
+	text-align: center;
 	height: 100vh;
 	display: grid;
 	grid-template-rows: 1fr auto;
