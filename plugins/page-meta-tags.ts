@@ -43,6 +43,7 @@ export default defineNuxtPlugin(() => {
 			titleTemplate: (titleChunk) => {
 				return titleChunk ? `${titleChunk} - ` + metaTitle : metaTitle;
 			},
+			htmlAttrs: { lang: 'en' },
 			link: [
 				{
 					hid: 'canonical',
@@ -62,7 +63,7 @@ export default defineNuxtPlugin(() => {
 			articlePublishedTime: metaPublishedTime,
 			articleModifiedTime: metaModifiedTime,
 
-			ogTitle: () =>  metaTitleData ? metaTitleData + ` - ` + metaTitle : metaTitle,
+			ogTitle: () => (metaTitleData ? metaTitleData + ` - ` + metaTitle : metaTitle),
 			ogSiteName: metaSiteName,
 			ogDescription: () => metaDesc,
 			ogType: metaOgType,
@@ -72,7 +73,7 @@ export default defineNuxtPlugin(() => {
 			ogImageHeight: metaImageHeight,
 			ogImageType: metaImageType,
 
-			twitterTitle: () =>  metaTitleData ? metaTitleData + ` - ` + metaTitle : metaTitle,
+			twitterTitle: () => (metaTitleData ? metaTitleData + ` - ` + metaTitle : metaTitle),
 			twitterDescription: () => metaDesc,
 			twitterCard: metaTwitterCard,
 			twitterSite: metaTwitterSite,
