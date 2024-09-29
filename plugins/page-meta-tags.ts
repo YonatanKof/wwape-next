@@ -6,11 +6,10 @@ export default defineNuxtPlugin(() => {
 	const canonicalPath = dynamicUrl + cleanPath;
 
 	// This is my abstraction for setting meta tags
-	// const usePageHeadTag = () => {
-	// 	console.log('This is another function being used in the plugin.');
-	// };
 	const usePageMetaTags = ({
 		metaTitle = `A site by ${config.public.siteOwnerName} of the ${config.public.siteName}`,
+		metaAuthor = config.public.siteOwnerName,
+		metaArticleAuthor = undefined,
 		metaTitleData = undefined,
 		metaDesc = `Explore creative graphic design, illustration, and UX/UI projects. Dive into blog articles on branding, design systems, and design, or enjoy curated DJ mixes and playlists`,
 		metaImg = '/images/index-social.jpg',
@@ -57,6 +56,8 @@ export default defineNuxtPlugin(() => {
 		// For example `description: () => metaDesc`
 		useSeoMeta({
 			description: () => metaDesc,
+			author: metaAuthor,
+			articleAuthor: metaArticleAuthor,
 			articlePublishedTime: metaPublishedTime,
 			articleModifiedTime: metaModifiedTime,
 			ogDescription: () => metaDesc,
