@@ -10,7 +10,7 @@ export default defineNuxtPlugin(() => {
 		metaTitle = `A site by ${config.public.siteOwnerName} of the ${config.public.siteName}`,
 		metaAuthor = config.public.siteOwnerName,
 		metaSiteName = config.public.siteName,
-		metaArticleAuthor = undefined,
+		// metaArticleAuthor = undefined,
 		metaTitleData = undefined,
 		metaDesc = `Explore creative graphic design, illustration, and UX/UI projects. Dive into blog articles on branding, design systems, and design, or enjoy curated DJ mixes and playlists`,
 		metaImg = '/images/index-social.jpg',
@@ -58,7 +58,7 @@ export default defineNuxtPlugin(() => {
 		useSeoMeta({
 			author: metaAuthor,
 			description: () => metaDesc,
-			articleAuthor: metaArticleAuthor,
+			// articleAuthor: metaArticleAuthor,
 			articlePublishedTime: metaPublishedTime,
 			articleModifiedTime: metaModifiedTime,
 
