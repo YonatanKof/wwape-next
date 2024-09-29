@@ -6,7 +6,6 @@ nuxtApp.$pageMetaTags({
 	metaDesc: 'Listen to eclectic DJ mixes and curated playlists featuring a blend of electronic, indie, and ambient sounds. Perfect for work or play',
 	metaImg: '/images/music-social.jpg',
 	metaImgAlt: 'Social cover for this site posts page',
-	metaPublishedTime: data.value?.article?.updated.split('T')[0] || data.value?.article?.date.split('T')[0],
 });
 </script>
 
