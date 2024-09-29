@@ -56,22 +56,24 @@ export default defineNuxtPlugin(() => {
 		// For reactive tags, use computed getter syntax: `key: () => value,`
 		// For example `description: () => metaDesc`
 		useSeoMeta({
-			description: () => metaDesc,
 			author: metaAuthor,
+			description: () => metaDesc,
 			articleAuthor: metaArticleAuthor,
 			articlePublishedTime: metaPublishedTime,
 			articleModifiedTime: metaModifiedTime,
-			ogDescription: () => metaDesc,
-			twitterDescription: () => metaDesc,
-			ogTitle: metaTitleData ? metaTitleData + ` - ` + metaTitle : metaTitle,
+
+			ogTitle: () =>  metaTitleData ? metaTitleData + ` - ` + metaTitle : metaTitle,
 			ogSiteName: metaSiteName,
+			ogDescription: () => metaDesc,
 			ogType: metaOgType,
 			ogImage: metaImg,
 			ogImageAlt: metaImgAlt,
 			ogImageWidth: metaImageWidth,
 			ogImageHeight: metaImageHeight,
 			ogImageType: metaImageType,
-			twitterTitle: metaTitleData ? metaTitleData + ` - ` + metaTitle : metaTitle,
+
+			twitterTitle: () =>  metaTitleData ? metaTitleData + ` - ` + metaTitle : metaTitle,
+			twitterDescription: () => metaDesc,
 			twitterCard: metaTwitterCard,
 			twitterSite: metaTwitterSite,
 			twitterImage: metaImg,
