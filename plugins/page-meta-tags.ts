@@ -9,6 +9,7 @@ export default defineNuxtPlugin(() => {
 	const usePageMetaTags = ({
 		metaTitle = `A site by ${config.public.siteOwnerName} of the ${config.public.siteName}`,
 		metaAuthor = config.public.siteOwnerName,
+		metaSiteName = config.public.siteName,
 		metaArticleAuthor = undefined,
 		metaTitleData = undefined,
 		metaDesc = `Explore creative graphic design, illustration, and UX/UI projects. Dive into blog articles on branding, design systems, and design, or enjoy curated DJ mixes and playlists`,
@@ -63,6 +64,7 @@ export default defineNuxtPlugin(() => {
 			ogDescription: () => metaDesc,
 			twitterDescription: () => metaDesc,
 			ogTitle: metaTitleData ? metaTitleData + ` - ` + metaTitle : metaTitle,
+			ogSiteName: metaSiteName,
 			ogType: metaOgType,
 			ogImage: metaImg,
 			ogImageAlt: metaImgAlt,
