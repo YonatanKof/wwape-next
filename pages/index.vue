@@ -1,27 +1,6 @@
 <script setup>
-const config = useRuntimeConfig();
-const pageDesc = `An amazing site to be WOWed!`;
-const pageImg = '/images/index-social.jpg';
-const pageAlt = 'Social cover for this site main page';
-
-useHead({
-	title: `A site by ${config.public.siteOwnerName} of the ${config.public.siteName}`,
-
-});
-useSeoMeta({
-	ogType: 'website',
-	description: () => pageDesc,
-	ogDescription: () => pageDesc,
-	twitterDescription: () => pageDesc,
-	image: pageImg,
-	ogImage: pageImg,
-	twitterImage: pageImg,
-	imageAlt: pageAlt,
-	ogImageAlt: pageAlt,
-	twitterImageAlt: pageAlt,
-	twitterCard: 'summary_large_image',
-	twitterSite: '@yonatankof',
-});
+const nuxtApp = useNuxtApp();
+nuxtApp.$pageMetaTags();
 </script>
 <template>
 	<main>

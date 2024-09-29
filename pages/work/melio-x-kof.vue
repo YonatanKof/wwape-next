@@ -6,25 +6,12 @@ import { ModalsContainer, useModal } from 'vue-final-modal';
 import Modal from '~/components/ModalMelio.vue';
 
 const config = useRuntimeConfig();
-const pageDesc = `Reaching out to Melio about DS Lead – ${config.public.siteOwnerName}`;
-const pageImg = '/misc/melio-social.jpg';
-const pageAlt = 'Cover image for Melio × Kof';
-useHead({
-	title: 'Melio × Yonatan Kof',
-});
-useSeoMeta({
-	ogType: 'website',
-	description: () => pageDesc,
-	ogDescription: () => pageDesc,
-	twitterDescription: () => pageDesc,
-	image: pageImg,
-	ogImage: pageImg,
-	twitterImage: pageImg,
-	imageAlt: pageAlt,
-	ogImageAlt: pageAlt,
-	twitterImageAlt: pageAlt,
-	twitterCard: 'summary_large_image',
-	twitterSite: '@yonatankof',
+const nuxtApp = useNuxtApp();
+nuxtApp.$pageMetaTags({
+	metaTitle: 'Melio × Yonatan Kof',
+	metaDesc: `Reaching out to Melio about DS Lead – ${config.public.siteOwnerName}`,
+	metaImg: '/misc/melio-social.jpg',
+	metaImgAlt: 'Cover image for Melio × Kof',
 });
 
 const { open, close } = useModal({
@@ -42,17 +29,17 @@ const { open, close } = useModal({
 		<h1>Melio × Kof</h1>
 		<p><i>Hi Guy</i> 👋 we know each other from back in the <em>Matnas Interactive</em> days.</p>
 		<p>
-			The <em>design system lead</em> sounds like a dream job, I’d love to join and help you win. Check out
-			this page for <em>DS</em> related works. Let’s talk soon 🙏
+			The <em>design system lead</em> sounds like a dream job, I’d love to join and help you win. Check out this page
+			for <em>DS</em> related works. Let’s talk soon 🙏
 		</p>
 		<main>
 			<div id="intro">
 				<span>
 					<span>
 						<p>
-							As a <i>full-stack designer</i> I did several things, creating <em>Pepperi Design System</em> was one of them.
-							This was made possible through an intimate understanding of complex systems, the people who use them, and
-							the businesses that operate them.
+							As a <i>full-stack designer</i> I did several things, creating <em>Pepperi Design System</em> was one of
+							them. This was made possible through an intimate understanding of complex systems, the people who use
+							them, and the businesses that operate them.
 						</p>
 						<p>
 							More reasons why I'm a good fit?
