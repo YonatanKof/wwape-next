@@ -2,7 +2,6 @@
 const config = useRuntimeConfig();
 useHead({
 	meta: [
-		{ property: 'author', content: config.public.siteOwnerName },
 		{ name: 'google-site-verification', content: 'BT5cxk7V5QYzpwQdodAb49ZrNuxGDvD4lii_fgV-uZE' },
 		{ name: 'msvalidate.01', content: '3557D72FD47371EEA2248ADDA0463742' },
 	],

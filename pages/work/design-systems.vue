@@ -6,25 +6,12 @@ import { ModalsContainer, useModal } from 'vue-final-modal';
 import Modal from '~/components/ModalMelio.vue';
 
 const config = useRuntimeConfig();
-const pageDesc = `Discover how I create design systems that unify product, development, and brand teams using technology and design thinking—ensuring consistency, scalable solutions, and improved work velocity through cross-functional collaboration – ${config.public.siteOwnerName}`;
-const pageImg = '/misc/design-systems-social.jpg';
-const pageAlt = `Cover image for Design Systems page by ${config.public.siteOwnerName}`;
-useHead({
-	title: 'Design Systems: Unifying Product, Dev, and Brand Teams with Tech and Design Thinking',
-});
-useSeoMeta({
-	ogType: 'website',
-	description: () => pageDesc,
-	ogDescription: () => pageDesc,
-	twitterDescription: () => pageDesc,
-	image: pageImg,
-	ogImage: pageImg,
-	twitterImage: pageImg,
-	imageAlt: pageAlt,
-	ogImageAlt: pageAlt,
-	twitterImageAlt: pageAlt,
-	twitterCard: 'summary_large_image',
-	twitterSite: '@yonatankof',
+const nuxtApp = useNuxtApp();
+nuxtApp.$pageMetaTags({
+	metaTitle: 'Design Systems: Unifying Product, Dev, and Brand Teams with Tech and Design Thinking',
+	metaDesc: `Discover how I create design systems that unify product, development, and brand teams using technology and design thinking—ensuring consistency, scalable solutions, and improved work velocity through cross-functional collaboration – ${config.public.siteOwnerName}`,
+	metaImg: '/misc/melio-social.jpg',
+	metaImgAlt: 'Cover image for Design Systems page',
 });
 
 const { open, close } = useModal({

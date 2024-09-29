@@ -1,14 +1,14 @@
 ---
 title: 'Design Tokens'
 author_name: 'Yonatan Ben Knaan'
-date: '2030-01-01'
+date: '2024-08-15'
 updated: ''
 cover_image: '/posts/design-tokens/design-tokens.webp'
 cover_image_height: '400'
 cover_image_thumbhash: '8OcFFYQGe4ZkqmiHeKdoiAZ1d3Bn'
 social_image: '/posts/design-tokens/design-tokens-social.jpg'
 image_alt: ''
-description: 'A brief intro and visualisation of design tokens'
+description: 'A brief intro and visualisation of <em>design tokens</em>'
 tags: ['Creative']
 ---
 
