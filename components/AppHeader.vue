@@ -30,7 +30,7 @@ watchEffect(() => (mode.value = state.value as any));
 			<nav v-show="!isSimple">
 				<!-- <nuxt-link :to="{ name: 'index' }">Home</nuxt-link> -->
 				<!-- <nuxt-link :to="{ name: 'work' }">UX</nuxt-link> -->
-				<nuxt-link :to="{ name: 'design' }">Designs</nuxt-link>
+				<nuxt-link :to="{ name: 'design' }">Graphics</nuxt-link>
 				<nuxt-link :to="{ name: 'post' }">Posts</nuxt-link>
 				<!-- <nuxt-link :to="{ name: 'music' }">Mixed Music</nuxt-link> -->
 			</nav>
