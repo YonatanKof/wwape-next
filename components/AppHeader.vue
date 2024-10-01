@@ -58,18 +58,15 @@ watchEffect(() => (mode.value = state.value as any));
 <style lang="scss" scoped>
 .home-link{
 	border: none;
-	transition: transform 0.25s ease-in-out;
-	&:hover {
-		transform: scale(1.05) rotate(0.01turn) translate(0.1em, 0.1em);
-	}
 }
 .kof-logo {
 	width: var(--space-2xl);
 	height: var(--space-2xl);
 	margin-inline-end: var(--space-2xs);
-	transition: filter 0.35s ease-in-out;
+	transition: filter 0.35s ease-in-out, transform 0.25s ease-in-out;
 	filter: drop-shadow(0.075em 0.075em 0.2em var(--color-black-dim));
 	&:hover {
+		transform: scale(1.05) rotate(0.01turn) translate(0.1em, 0.1em);
 		filter: drop-shadow(0.05em 0.05em 0.25em var(--color-black-dim));
 	}
 }
@@ -86,13 +83,6 @@ header {
 #header-start {
 	display: flex;
 	align-items: center;
-}
-.dot {
-	width: var(--space-3xs);
-	height: var(--space-3xs);
-	border-radius: 50%;
-	background-color: var(--color-brand-main);
-	margin-inline-end: var(--space-xs);
 }
 div,
 nav {
