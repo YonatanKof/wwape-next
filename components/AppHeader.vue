@@ -20,7 +20,7 @@ watchEffect(() => (mode.value = state.value as any));
 <template>
 	<header>
 		<!-- <img class="kof-logo" src="/kof-script-24-3d.svg" alt="">	 -->
-		<nuxt-link class="home-link" to="/">
+		<nuxt-link class="home-link" :to="{ name: 'index' }" title="Go to Homepage" aria-label="Go to Homepage">
 			<ScriptKofLogo class="kof-logo" />
 		</nuxt-link>
 		<div>
@@ -30,9 +30,8 @@ watchEffect(() => (mode.value = state.value as any));
 			<nav v-show="!isSimple">
 				<!-- <nuxt-link :to="{ name: 'index' }">Home</nuxt-link> -->
 				<!-- <nuxt-link :to="{ name: 'work' }">UX</nuxt-link> -->
-				<nuxt-link :to="{ name: 'design' }">Graphics</nuxt-link>
-				<nuxt-link :to="{ name: 'post' }">Posts</nuxt-link>
-				<!-- <nuxt-link :to="{ name: 'music' }">Mixed Music</nuxt-link> -->
+				<nuxt-link :to="{ name: 'design' }" aria-label="Go to Graphic Arts & Design page">Graphics</nuxt-link>
+				<nuxt-link :to="{ name: 'post' }" aria-label="Go to Post page">Posts</nuxt-link>
 			</nav>
 			<button class="icon-btn" @click="next()" :title="`Theme is: ` + state.charAt(0).toUpperCase() + state.slice(1)">
 				<!-- This icon will appear if 'auto' is in the 'useCycleList' array -->
