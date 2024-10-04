@@ -1,24 +1,12 @@
 <script setup>
 const config = useRuntimeConfig();
-const pageDesc = `Amazing posts by ${config.public.siteOwnerName} of the ${config.public.siteName}`;
-const pageImg = '/images/posts-social.jpg';
-const pageAlt = 'Social cover for this site posts page';
-useHead({
-	title: `Posts by ${config.public.siteOwnerName} of the ${config.public.siteName}`,
-});
-useSeoMeta({
-	ogType: 'website',
-	description: () => pageDesc,
-	ogDescription: () => pageDesc,
-	twitterDescription: () => pageDesc,
-	image: pageImg,
-	ogImage: pageImg,
-	twitterImage: pageImg,
-	imageAlt: pageAlt,
-	ogImageAlt: pageAlt,
-	twitterImageAlt: pageAlt,
-	twitterCard: 'summary_large_image',
-	twitterSite: '@yonatankof',
+
+const nuxtApp = useNuxtApp();
+nuxtApp.$pageMetaTags({
+	metaTitle: `Amazing posts by ${config.public.siteOwnerName} of the ${config.public.siteName}`,
+	metaDesc: 'Browse a collection of personal design projects and illustrations that explore creativity in everyday life. Simple, expressive, and visually engaging pieces that reflect a unique artistic style',
+	metaImg: '/images/posts-social.jpg',
+	metaImgAlt: 'Social cover for this site posts page',
 });
 const { data } = await useAsyncData('equal', () => {
 	return queryContent('post').sort({ date: -1 }).where({}).find();

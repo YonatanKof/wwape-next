@@ -1,3 +1,41 @@
+
+<script setup>
+// Fetching data
+const { path, params } = useRoute();
+const designCountLimit = 20;
+
+const getPageLimit = (totalPosts) => {
+    return Math.ceil(totalPosts / designCountLimit);
+};
+
+const getPageNumber = () => {
+    return Number(params.number);
+};
+
+// Attempt to get the number
+const router = useRouter();
+let pageNo;
+try {
+    pageNo = getPageNumber();
+    if (isNaN(pageNo) || pageNo <= 0) {
+        router.replace('/design/');
+    }
+} catch (err) {
+    console.error(err);
+    router.replace('/design/');
+}
+
+const config = useRuntimeConfig();
+
+const nuxtApp = useNuxtApp();
+nuxtApp.$pageMetaTags({
+	metaTitle: `Amazing design work and illustrations by ${config.public.siteOwnerName} of the ${config.public.siteName}`,
+	metaDesc: 'Browse a collection of personal design projects and illustrations that explore creativity in everyday life. Simple, expressive, and visually engaging pieces that reflect a unique artistic style',
+	metaImg: '/images/designs-social.jpg',
+	metaImgAlt: 'Social cover for this site design page',
+});
+</script> 
+
 <template>
     <main>
         <IntroText title="Art & Design" text="Please explore some of my artwork, design projects, illustrations, motion graphics, and collages, created over the years"/>
@@ -45,52 +83,3 @@
         </ContentQuery>
     </main>
 </template>
-
-<script setup>
-// Fetching data
-const { path, params } = useRoute();
-const designCountLimit = 20;
-
-const getPageLimit = (totalPosts) => {
-    return Math.ceil(totalPosts / designCountLimit);
-};
-
-const getPageNumber = () => {
-    return Number(params.number);
-};
-
-// Attempt to get the number
-const router = useRouter();
-let pageNo;
-try {
-    pageNo = getPageNumber();
-    if (isNaN(pageNo) || pageNo <= 0) {
-        router.replace('/design/');
-    }
-} catch (err) {
-    console.error(err);
-    router.replace('/design/');
-}
-
-const config = useRuntimeConfig();
-const pageDesc = `Amazing designs by ${config.public.siteOwnerName}`;
-const pageImg = '/images/designs-social.jpg';
-const pageAlt = 'Social cover for this site designs page';
-useHead({
-	title: 'Designs',
-});
-useSeoMeta({
-	ogType: 'website',
-	description: () => pageDesc,
-	ogDescription: () => pageDesc,
-	twitterDescription: () => pageDesc,
-	image: pageImg,
-	ogImage: pageImg,
-	twitterImage: pageImg,
-	imageAlt: pageAlt,
-	ogImageAlt: pageAlt,
-	twitterImageAlt: pageAlt,
-	twitterCard: 'summary_large_image',
-	twitterSite: '@yonatankof',
-});
-</script> 

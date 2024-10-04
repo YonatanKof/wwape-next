@@ -1,35 +1,14 @@
 <script setup>
-const config = useRuntimeConfig();
-const pageDesc = `An amazing site to be WOWed!`;
-const pageImg = '/images/index-social.jpg';
-const pageAlt = 'Social cover for this site main page';
-
-useHead({
-	title: `A site by ${config.public.siteOwnerName} of the ${config.public.siteName}`,
-
-});
-useSeoMeta({
-	ogType: 'website',
-	description: () => pageDesc,
-	ogDescription: () => pageDesc,
-	twitterDescription: () => pageDesc,
-	image: pageImg,
-	ogImage: pageImg,
-	twitterImage: pageImg,
-	imageAlt: pageAlt,
-	ogImageAlt: pageAlt,
-	twitterImageAlt: pageAlt,
-	twitterCard: 'summary_large_image',
-	twitterSite: '@yonatankof',
-});
+const nuxtApp = useNuxtApp();
+nuxtApp.$pageMetaTags();
 </script>
 <template>
 	<main>
 		<IntroText
 			:is-on="true"
 			title="World Wide Ape"
-			text="I’m Yonatan, a mismatched persona, friend, lover, family man, and an alright dude from <i>Tel Aviv</i>, the cultural capital of the flaming <i>Middle East</i>."
-			text2="If life is an <i>RPG</i> and you’re an <i>NPC</i>, then I’m a multiclass player: a professional product designer and an amateur illustrator, developer, photographer, tinkerer, and bedroom DJ."
+			text="I’m <strong>Yonatan Ben Knaan</strong>, a graphic designer, friend, lover, family man, upright simian, an alright dude, and a mismatched persona from <i>Tel Aviv</i>, the cultural capital of the flaming <i>Middle East</i>."
+			text2="If life is an <i>RPG</i> and you’re an <i>NPC</i>, then I’m a multiclass: professional <strong>full-stack product designer</strong> and an amateur illustrator, developer, photographer, tinkerer, and bedroom DJ."
 		/>
 	</main>
 </template>

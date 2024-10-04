@@ -1,25 +1,12 @@
 <script setup>
 const config = useRuntimeConfig();
-const pageDesc = `Amazing designs by ${config.public.siteOwnerName} of the ${config.public.siteName}`;
-const pageImg = '/images/designs-social.jpg';
-const pageAlt = 'Social cover for this site designs page';
 
-useHead({
-	title: `Designs by ${config.public.siteOwnerName}  of the ${config.public.siteName}`,
-});
-useSeoMeta({
-	ogType: 'website',
-	description: () => pageDesc,
-	ogDescription: () => pageDesc,
-	twitterDescription: () => pageDesc,
-	image: pageImg,
-	ogImage: pageImg,
-	twitterImage: pageImg,
-	imageAlt: pageAlt,
-	ogImageAlt: pageAlt,
-	twitterImageAlt: pageAlt,
-	twitterCard: 'summary_large_image',
-	twitterSite: '@yonatankof',
+const nuxtApp = useNuxtApp();
+nuxtApp.$pageMetaTags({
+	metaTitle: `Amazing design work and illustrations by ${config.public.siteOwnerName} of the ${config.public.siteName}`,
+	metaDesc: 'Browse a collection of personal design projects and illustrations that explore creativity in everyday life. Simple, expressive, and visually engaging pieces that reflect a unique artistic style',
+	metaImg: '/images/designs-social.jpg',
+	metaImgAlt: 'Social cover for this site design page',
 });
 // Find the number of blogs present
 const designCountLimit = 20;
@@ -30,7 +17,7 @@ const { data } = await useAsyncData(`content-/design`, async () => {
 </script>
 <template>
 	<main>
-		<IntroText title="Art & Design" text="Please explore some of my artwork, design projects, illustrations, motion graphics, and collages, I created over the years"/>
+		<IntroText title="Graphic Arts & Design" text="Please explore some of my artwork, design projects, illustrations, motion graphics, and collages, I created over the years"/>
 		<section id="main">
 			<ContentQuery
 				path="/design"

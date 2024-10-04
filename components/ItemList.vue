@@ -48,7 +48,7 @@ const { $formatDate } = useNuxtApp();
 				/>
 			</NuxtLink>
 
-			<div v-else >
+			<div v-else>
 				<FlowChartItem
 					:modalTitle="item.name"
 					:modalDescription="item.description"
@@ -62,23 +62,11 @@ const { $formatDate } = useNuxtApp();
 </template>
 
 <style lang="scss" scoped>
-p {
-	font-size: var(--step--1);
-	margin-block-end: unset;
-}
-#mata-data {
-	font-size: var(--step--2);
-	color: var(--color-sys-slight);
-	margin-block-end: var(--space-3xs);
-}
 .masonry-wall {
 	margin-block-end: var(--space-s);
 }
 .item {
 	@include content-item();
-}
-img {
-	border-radius: unset;
 }
 .item-content {
 	margin: var(--space-s);
@@ -88,6 +76,19 @@ img {
 	margin-block-start: unset;
 	margin-block-end: var(--space-4xs);
 }
+#mata-data {
+	font-size: var(--step--2);
+	color: var(--color-sys-slight);
+	margin-block-end: var(--space-3xs);
+}
+p {
+	font-size: var(--step--1);
+	margin-block-end: unset;
+	font-variation-settings: 'slnt' 0, 'wght' 400, 'CRSV' 0;
+}
+img {
+	border-radius: unset;
+}
 a {
 	@include link(none);
 	@include focus();
@@ -95,11 +96,10 @@ a {
 	inset: 0;
 	display: block;
 	font-style: normal;
-	font-variation-settings: 'wght' 400, 'ital' 0;
-	&:hover {
-		font-style: normal;
-		font-variation-settings: 'wght' 400, 'ital' 0;
-	}
+	font-variation-settings: 'slnt' 0, 'wght' 400, 'CRSV' 0;
 	text-decoration: none;
+	&:hover {
+		font-variation-settings: 'slnt' 0, 'wght' 400, 'CRSV' 0;
+	}
 }
 </style>
