@@ -8,7 +8,6 @@ defineProps({
 </script>
 <template>
 	<header>
-		<!-- <img class="kof-logo" src="/kof-script-24-3d.svg" alt="">	 -->
 		<nuxt-link class="home-link" :to="{ name: 'index' }" title="Go to Homepage" aria-label="Go to Homepage">
 			<ScriptKofLogo class="kof-logo" />
 		</nuxt-link>
@@ -17,7 +16,6 @@ defineProps({
 				<nuxt-link :to="{ name: 'index' }">Visit WWape</nuxt-link>
 			</nav>
 			<nav v-show="!isSimple">
-				<!-- <nuxt-link :to="{ name: 'index' }">Home</nuxt-link> -->
 				<!-- <nuxt-link :to="{ name: 'work' }">UX</nuxt-link> -->
 				<nuxt-link :to="{ name: 'design' }" aria-label="Go to Graphic Arts & Design page">Graphics</nuxt-link>
 				<nuxt-link :to="{ name: 'post' }" aria-label="Go to Post page">Posts</nuxt-link>
@@ -27,7 +25,7 @@ defineProps({
 	</header>
 </template>
 <style lang="scss" scoped>
-.home-link{
+.home-link {
 	border: none;
 }
 .kof-logo {
