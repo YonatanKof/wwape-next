@@ -6,7 +6,7 @@ const onClick = () =>
 
 <template>
 	<button aria-label="Color Mode" @click="onClick">
-		<ColorScheme placeholder="...">
+		<ColorScheme placeholder="..." id="placeholder">
 			<template v-if="colorMode.value === 'dark'">
 				<SvgIconBase stroke-color="var(--color-brand-main)">
 					<IconDark />
@@ -20,3 +20,12 @@ const onClick = () =>
 		</ColorScheme>
 	</button>
 </template>
+<style scoped>
+button {
+	padding: 0.5em;
+}
+#placeholder {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+</style>
