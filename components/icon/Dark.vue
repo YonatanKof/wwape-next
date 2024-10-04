@@ -1,5 +1,5 @@
 <template>
-	<title id="title">Moon icon</title>
+	<!-- <title id="title">Moon icon</title> -->
 	<desc id="description">Icon for theme dark mood</desc>
 	<path
 		stroke-linecap="round"
