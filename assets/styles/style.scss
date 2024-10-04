@@ -138,7 +138,7 @@ hr {
 	background: var(--color-overlay) !important;
 }
 
-.dark {
+.dark-mode {
 	--color-sys-main: hsl(34, 78%, 91%);
 
 	--color-sys-invert-highlight: color-mix(in hsl, var(--color-sys-invert-main) 55%, black);
