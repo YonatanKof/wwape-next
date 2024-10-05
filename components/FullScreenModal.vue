@@ -12,13 +12,17 @@ const emit = defineEmits<{
 		<slot @click="emit('close')" />
 	</VueFinalModal>
 </template>
-<style>
+<style lang="scss">
 .fullscreen-modal {
 	position: relative;
-	max-width: calc(100vw - var(--space-l));
-	max-height: calc(100vh - var(--space-l));
+	max-width: calc(100dvw - var(--space-l));
+	max-height: calc(100dvh - var(--space-l));
 	overflow-y: scroll;
 	border-radius: var(--border-radius-sm);
+	@media (width <= $display-width-xs) {
+		max-width: calc(100dvw - var(--space-m));
+		max-height: calc(100dvh - var(--space-m));
+	}
 }
 .fullscreen-modal-btn {
 	position: fixed;
