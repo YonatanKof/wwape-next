@@ -14,13 +14,9 @@ tags: ['Creative']
 
 {{ $doc.description }}
 
-::lazy-img{src="/designs/boxed/boxed-dark.webp" thumbhash="0wcSBwAnSIhphpiAelmYd4iYdj+2CJwE" alt="" desc="A black and white woodblock with a surrounding pattern of circles – Dark version"}
+
+::lazy-img{src="/designs/boxed/boxed-dark.webp" thumbhash="0wcSBwAnSIhphpiAelmYd4iYdj+2CJwE" alt="A black and white woodblock with a surrounding pattern of circles" desc="Dark version"}
 ::
 
-::lazy-img{src="/designs/boxed/boxed.webp" thumbhash="9wcKBwD3eYeLdWiMdSi42Ehnhl35FmwA" alt="" desc="A black and white woodblock with a surrounding pattern of circles – Bright version"}
+::lazy-img{src="/designs/boxed/boxed.webp" thumbhash="9wcKBwD3eYeLdWiMdSi42Ehnhl35FmwA" alt="A black and white woodblock with a surrounding pattern of circles" desc="Bright version"}
 ::
-
-<!-- ![...](/designs/.../...) -->
-
-<!-- ::YouTubePlayer{videoId="" title=""}
-:: -->
