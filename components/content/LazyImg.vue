@@ -2,7 +2,7 @@
 import { withTrailingSlash, withLeadingSlash, joinURL } from 'ufo';
 import { useRuntimeConfig, computed } from '#imports';
 import { ModalsContainer, useModal } from 'vue-final-modal';
-import ModalFullscreen from '../../components/ModalFullScreen.vue';
+import ModalFullscreen from '~/components/ModalFullScreen.vue';
 
 const props = defineProps({
 	src: {
@@ -47,13 +47,11 @@ const refinedSrc = computed(() => {
 const { open, close } = useModal({
 	component: ModalFullscreen,
 	attrs: {
-		// title: 'Hello World!',
 		onClose() {
 			close();
 		},
 	},
 	slots: {
-		// default: `<UnLazyImage :thumbhash="${props.thumbhash}" :src="${props.src}" :alt="${props.alt}" width="100%" :height="auto" auto-sizes />`,
 		default: `<img src="${refinedSrc.value}" alt="${props.alt}" />`,
 	},
 });
