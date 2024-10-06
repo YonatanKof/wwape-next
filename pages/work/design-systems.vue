@@ -10,7 +10,7 @@ const nuxtApp = useNuxtApp();
 nuxtApp.$pageMetaTags({
 	metaTitle: 'Design Systems: Unifying Product, Dev, and Brand Teams with Tech and Design Thinking',
 	metaDesc: `Discover how I create design systems that unify product, development, and brand teams using technology and design thinking—ensuring consistency, scalable solutions, and improved work velocity through cross-functional collaboration – ${config.public.siteOwnerName}`,
-	metaImg: '/misc/melio-social.jpg',
+	metaImg: '/misc/design-systems-social.jpg',
 	metaImgAlt: 'Cover image for Design Systems page',
 });
 
