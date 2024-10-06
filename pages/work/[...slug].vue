@@ -1,14 +1,5 @@
 <!-- This is a single post -->
 <script setup>
-definePageMeta({
-	layout: 'simple',
-});
-// const pageDesc = `Pepperi Page Builder, by ${config.public.siteOwnerName}`;
-// const pageImg = '/misc/melio-social.jpg';
-// const pageAlt = 'Cover image Pepperi Page Builder';
-// useHead({
-// 	title: 'Pepperi Page Builder',
-// });
 
 const { path } = useRoute();
 

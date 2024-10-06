@@ -1,8 +1,4 @@
 <script setup>
-definePageMeta({
-	layout: 'simple',
-});
-
 const config = useRuntimeConfig();
 const pageDesc = `Amazing posts by ${config.public.siteOwnerName}`;
 const pageImg = '/images/posts-social.jpg';
