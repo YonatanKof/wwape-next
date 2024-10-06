@@ -12,15 +12,16 @@ description: 'A tribute to <em>My Neighbor Totoro</em> featuring animals from th
 tags: ['Creative']
 ---
 
-<!-- {{ $doc.description }}  -->
-
 My son really loves the movie *My Neighbor Totoro*, so I get to see it a lot lately. In the opening titles there are some cute bugs and animals that I like, so I've created a little tribute in the form of a sticker pack on your favorite messaging app.
 
-Installation guide: add the sticker pack to *iMessage* or *WhatsApp* via the *Top Stickers* app [by clicking this link](https://link.topstickers.app/?p=pQB6no6E6gX), or use it on *Telegram* [by clicking this link](https://t.me/addstickers/MyNeighborTotoroKof).
 
 
 ::lazy-img{src="/designs/my-sticker-totoro/my-sticker-totoro.webp" thumbhash="sxgGBYDn2vhVh6xdl4qlqQZrhqBY" alt="A collection of whimsical, cartoonish creatures including a bat, lizard, centipede, butterfly, spider, beetle, frog, and several playful black cat faces with yellow eyes and wide grins."}
 ::
+
+### Installation guide
+
+Add the sticker pack to *iMessage* or *WhatsApp* via the *Top Stickers* app [by clicking this link](https://link.topstickers.app/?p=pQB6no6E6gX), or use it on *Telegram* [by clicking this link](https://t.me/addstickers/MyNeighborTotoroKof).
 
 ::block-hor
 :::video-tag
