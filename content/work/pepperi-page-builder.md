@@ -3,9 +3,9 @@ title: 'Pepperi Page Builder'
 author_name: 'Yonatan Ben Knaan'
 date: '2030-01-01'
 updated: ''
-cover_image: '/work/pepperi-page-builder/pepperi-page-builder.webp'
-cover_image_height: '782'
-cover_image_thumbhash: 'KQiOA4Ap+WZ3iH1wpARBGzlIeWeAeik'
+cover_image: '/work/pepperi-page-builder/pepperi-page-builder-tn.webp'
+cover_image_height: '395'
+cover_image_thumbhash: 'MAgOBYD4dmh3l2h/k4eIdlCjNFAJ'
 social_image: '/work/pepperi-page-builder/pepperi-page-builder-social.jpg'
 image_alt: ''
 description: 'An design tool for none designers to manage, build, and edit custom webpages with a no-code interface'
@@ -126,15 +126,29 @@ So, we came to this initiative with a lot of information from the get go that ea
 
 ### Card sorting
 
-In order to manage the information, we conducted a few card sorting sessions with several stakeholders from different teams (development, product, PS, pre-sales, partners, and a few clients) to conveniently form the data into an organized and manageable structure.
+::GridBlockTwo
+:::GridUnit
+In order to manage the information, we conducted a few card sorting sessions with several stakeholders from different teams (development, product, PS, pre-sales, partners, and a few clients). This cost-effective research method helps us conveniently form the data into an organized and manageable structure.
 
-::lazy-img
+#### It helped us:
+
+1. Understand the mental models and information organization.
+2. Structure the information architecture and navigation design.
+3. Gather user-centric terminology and the language the users prefer.
+5. Versatile application: Useful for various digital products, from websites to complex software interfaces.
+6. Inform content strategy: Helps prioritize content and identify gaps or redundancies.
+:::
+:::GridUnit
+
+::::lazy-img
 ---
 src: /work/pepperi-page-builder/card-sort.webp
 thumbhash: +AcGFIKqgqpthoZvqqavNz0FSA
 alt: Card sorting session output
 desc: Card sorting session output
 ---
+::::
+:::
 ::
 
 ### Users interviews
