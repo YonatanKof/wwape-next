@@ -15,8 +15,7 @@ const { data } = await useAsyncData('equal', () => {
 <template>
 	<div>
 		<IntroText
-			:is-on="true"
-			title="Work"
+			title="Product Design + UX/UI"
 			text="Welcome to my <i><strong>Work</strong></i> page!"
 			text2="Once ready you will be able to browse a collection of professional design projects, including <i>UX/UI</i>, <i>Design Systems</i>, <i>Branding</i>, and more."
 		/>
