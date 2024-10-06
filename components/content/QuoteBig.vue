@@ -21,7 +21,7 @@
 	display: block;
 	padding-inline-start: var(--space-s);
 	padding: var(--space-s);
-    border-radius: var(--border-radius-xs);
+    border-radius: var(--border-radius-sm);
 	position: relative;
 	&::before {
 		content: '';
