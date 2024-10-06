@@ -1,5 +1,5 @@
 <template>
-	<title id="title">Auto icon</title>
+	<!-- <title id="title">Auto icon</title> -->
 	<desc id="description">Icon for theme auto mood</desc>
 	<g fill-rule="evenodd">
 		<circle fill="none" cx="16" cy="16" r="12"></circle>

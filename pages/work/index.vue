@@ -1,24 +1,12 @@
 <script setup>
 const config = useRuntimeConfig();
-const pageDesc = `Amazing posts by ${config.public.siteOwnerName}`;
-const pageImg = '/images/posts-social.jpg';
-const pageAlt = 'Social cover for this site posts page';
-useHead({
-	title: 'Posts',
-});
-useSeoMeta({
-	ogType: 'website',
-	description: () => pageDesc,
-	ogDescription: () => pageDesc,
-	twitterDescription: () => pageDesc,
-	image: pageImg,
-	ogImage: pageImg,
-	twitterImage: pageImg,
-	imageAlt: pageAlt,
-	ogImageAlt: pageAlt,
-	twitterImageAlt: pageAlt,
-	twitterCard: 'summary_large_image',
-	twitterSite: '@yonatankof',
+
+const nuxtApp = useNuxtApp();
+nuxtApp.$pageMetaTags({
+	metaTitle: `Amazing product works by ${config.public.siteOwnerName} of the ${config.public.siteName}`,
+	metaDesc: 'Browse a collection of professional design projects ...',
+	metaImg: '/images/posts-social.jpg',
+	metaImgAlt: 'Social cover for this site work page',
 });
 const { data } = await useAsyncData('equal', () => {
 	return queryContent('work').sort({ date: -1 }).where({}).find();
@@ -26,7 +14,12 @@ const { data } = await useAsyncData('equal', () => {
 </script>
 <template>
 	<div>
-		<IntroText title="Work" text="Please enjoy some content I've written throughout the years"/>
+		<IntroText
+			:is-on="true"
+			title="Work"
+			text="Welcome to my <i><strong>Work</strong></i> page!"
+			text2="Once ready you will be able to browse a collection of professional design projects, including <i>UX/UI</i>, <i>Design Systems</i>, <i>Branding</i>, and more."
+		/>
 		<ItemList :design-data="data" />
 	</div>
 </template>

@@ -21,7 +21,7 @@ Just the start wretched series – Of addict blood, known like a head
 ![Dill Mask – The prints](/designs/dill-mask/dill-mask-prints.webp)
 *{{ $doc.description }}*
 
-![Dill Mask – In motion](/designs/dill-mask/dill-mask-move.webp)
+<!-- ![Dill Mask – In motion](/designs/dill-mask/dill-mask-move.webp) -->
 
 ![Dill Mask – Bug](/designs/dill-mask/dill-mask-Bug.webp)
 

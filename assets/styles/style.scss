@@ -19,7 +19,7 @@
 	--color-sys-dis: color-mix(in hsl, var(--color-sys-main) 10%, transparent);
 	--color-sys-none: color-mix(in hsl, var(--color-sys-main) 0%, transparent);
 
-	--color-sys-invert-highlight: color-mix(in hsl, var(--color-sys-invert-main) 5%, white);
+	--color-sys-invert-highlight: color-mix(in hsl, var(--color-sys-invert-main) 0%, white);
 	--color-sys-invert-highlight-slight: color-mix(in hsl, var(--color-sys-invert-highlight) 65%, transparent);
 	--color-sys-invert-main: antiquewhite;
 	--color-sys-invert-slight: color-mix(in hsl, var(--color-sys-invert-main) 75%, transparent);
@@ -138,13 +138,13 @@ hr {
 	background: var(--color-overlay) !important;
 }
 
-.dark {
+.dark-mode {
 	--color-sys-main: hsl(34, 78%, 91%);
 
-	--color-sys-invert-highlight: color-mix(in hsl, var(--color-sys-invert-main) 75%, black);
+	--color-sys-invert-highlight: color-mix(in hsl, var(--color-sys-invert-main) 55%, black);
 	--color-sys-invert-main: hsl(34, 25%, 15%);
 
-	--color-brand-main: hsl(280, 100%, 90%);
+	--color-brand-main: hsl(280, 100%, 75%);
 
 	--color-focus-main: hsl(200, 100%, 40%);
 

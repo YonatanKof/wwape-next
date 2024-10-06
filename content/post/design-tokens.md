@@ -1,14 +1,14 @@
 ---
 title: 'Design Tokens'
 author_name: 'Yonatan Ben Knaan'
-date: '2030-01-01'
+date: '2024-08-15'
 updated: ''
 cover_image: '/posts/design-tokens/design-tokens.webp'
 cover_image_height: '400'
 cover_image_thumbhash: '8OcFFYQGe4ZkqmiHeKdoiAZ1d3Bn'
 social_image: '/posts/design-tokens/design-tokens-social.jpg'
 image_alt: ''
-description: 'A brief intro and visualisation of design tokens'
+description: 'A brief intro and visualisation of <em>design tokens</em>'
 tags: ['Creative']
 ---
 
@@ -111,7 +111,7 @@ But what about this CSS declaration?
 		height: 100%;
 		background-color: var(--color-sys-dim);
 		position: absolute;
-		left: calc(var(--space-xs) * -1);
+		inset-inline-start: calc(var(--space-xs) * -1);
 		border-radius: var(--border-radius-xs);
 
 	}
@@ -188,7 +188,7 @@ In this example you can update `--color-sys-main` and see its effect over the di
 
 Will it look good? Probably not – Will it be accessible? No guarantees – Is it a good example? For sure! 😎
 
-::gridBlock{colNum="2" gap="var(--space-m);"}
+::gridBlock{colNum="2" gap="var(--space-m)"}
 :::grid-unit
 #### System Color
 So here we have 5 variants of the ***system*** color.
@@ -205,7 +205,7 @@ Click on the color picker to see it in action.
 :::
 ::
 
-::gridBlock{colNum="2" gap="var(--space-m);"}
+::gridBlock{colNum="2" gap="var(--space-m)"}
 :::grid-unit
 #### System Invert Color
 And here we have 5 variants of the ***system-invert*** color.
@@ -222,7 +222,7 @@ Change it too!
 :::
 ::
 
-::gridBlock{colNum="2" gap="var(--space-m);"}
+::gridBlock{colNum="2" gap="var(--space-m)"}
 :::grid-unit
 #### Brand Color
 
@@ -240,7 +240,7 @@ Go ahead, see it in action!
 :::
 ::
 
-<!-- ::gridBlock{colNum="2" gap="var(--space-m);"}
+<!-- ::gridBlock{colNum="2" gap="var(--space-m)"}
 :::grid-unit
 #### Focus Color
 And lastly 5 variant of the ***focus*** color – you know the drill.

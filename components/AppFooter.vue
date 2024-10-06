@@ -14,7 +14,7 @@ const config = useRuntimeConfig();
 			<nuxt-link href="//instagram.com/yonatan_kof/" target="_blank" rel="nofollow noopener noreferrer"
 				>Instagram</nuxt-link
 			>
-			<nuxt-link to="/music">Mixed Music</nuxt-link>
+			<nuxt-link :to="{ name: 'music' }" aria-label="Goto Playlists and Mixes page">Mixed Music</nuxt-link>
 		</p>
 		<span class="footer__copyright">
 			<p>

@@ -1,24 +1,11 @@
 <script setup>
 const config = useRuntimeConfig();
-const pageDesc = `Amazing Playlists and Mixes by ${config.public.siteOwnerName}`;
-const pageImg = '/images/music-social.jpg';
-const pageAlt = 'Social cover for this site posts page';
-useHead({
-	title: 'Playlists and Mixes',
-});
-useSeoMeta({
-	ogType: 'website',
-	description: () => pageDesc,
-	ogDescription: () => pageDesc,
-	twitterDescription: () => pageDesc,
-	image: pageImg,
-	ogImage: pageImg,
-	twitterImage: pageImg,
-	imageAlt: pageAlt,
-	ogImageAlt: pageAlt,
-	twitterImageAlt: pageAlt,
-	twitterCard: 'summary_large_image',
-	twitterSite: '@yonatankof',
+const nuxtApp = useNuxtApp();
+nuxtApp.$pageMetaTags({
+	metaTitle: `Playlists and Mixes by ${config.public.siteOwnerName} of the ${config.public.siteName}`,
+	metaDesc: 'Listen to eclectic DJ mixes and curated playlists featuring a blend of electronic, indie, and ambient sounds. Perfect for work or play',
+	metaImg: '/images/music-social.jpg',
+	metaImgAlt: 'Social cover for this site posts page',
 });
 </script>
 

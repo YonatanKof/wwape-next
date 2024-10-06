@@ -1,5 +1,5 @@
 <template>
-	<title id="title">Sun icon</title>
+	<!-- <title id="title">Sun icon</title> -->
 	<desc id="description">Icon for theme light mood</desc>
 	<g stroke-linecap="round">
 		<path

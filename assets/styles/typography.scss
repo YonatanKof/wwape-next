@@ -14,7 +14,7 @@
 :root {
 	--font-body: system-ui, sans-serif;
 	--font-mono: RecVar, monospace;
-	--font-hand: ShantellSans, serif;
+	--font-hand: ShantellSans, system-ui, sans-serif;
 }
 body,
 html {
@@ -81,9 +81,10 @@ li::marker {
 	color: var(--color-sys-slight);
 	font-family: var(--font-hand);
 	font-variation-settings: 'INFM' 0, 'wght' 333, 'ital' 1;
-	// font-size: 95%;
 }
 blockquote {
+	text-wrap: balance;
+	line-height: 1.3;
 	p {
 		line-height: 1.5;
 		margin-block: var(--space-3xs) !important;
@@ -99,7 +100,7 @@ blockquote {
 		height: 100%;
 		background-color: var(--color-sys-dim);
 		position: absolute;
-		left: calc(calc(var(--space-3xs) * -1) + var(--space-3xs));
+		inset-inline-start: calc(calc(var(--space-3xs) * -1) + var(--space-3xs));
 		border-radius: var(--border-radius-xs);
 	}
 }
@@ -135,14 +136,12 @@ em {
 	font-style: normal;
 	font-family: var(--font-hand);
 	font-size: inherit;
-	font-variation-settings: 'wght' 400;
+	font-variation-settings: 'wght' 410, 'ital' 1;
 	line-height: 1;
 }
-em {
-	font-variation-settings: 'wght' 525;
-}
+
 strong {
-	font-variation-settings: 'wght' 555;
+	font-variation-settings: 'wght' 600;
 }
 .sup {
 	font-size: 60%;
@@ -187,7 +186,7 @@ h6 {
 sup {
 	font-size: 0.75em;
 	position: relative;
-	bottom: var(--space-3xs);
+	inset-inline-end: var(--space-3xs);
 	&::before {
 		padding-inline-end: var(--space-4xs);
 		color: var(--color-sys-dim);
@@ -250,7 +249,7 @@ a,
 		color: var(--color-sys-slight);
 		content: '#';
 		display: inline-block;
-		margin-left: -1.25em;
+		margin-inline-start: -1.25em;
 		text-decoration: none;
 		opacity: 0;
 		width: 1.25em;
