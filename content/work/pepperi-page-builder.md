@@ -8,7 +8,7 @@ cover_image_height: '782'
 cover_image_thumbhash: 'KQiOA4Ap+WZ3iH1wpARBGzlIeWeAeik'
 social_image: '/work/pepperi-page-builder/pepperi-page-builder-social.jpg'
 image_alt: ''
-description: 'An occasional design tool to manage, build, and edit custom webpages with a no-code interface aimed at non-designers'
+description: 'An design tool for none designers to manage, build, and edit custom webpages with a no-code interface'
 tags: ['Creative']
 ---
 
@@ -18,28 +18,17 @@ desc: Some examples of our custom built homepages
 ---
 ::
 
-With *Pepperi Page Builder*, B2B clients can easily build, edit, and design their web pages. This tool empowers them to promote, present, and sell with full *workflow* control, leveraging *buyer profiles* while using a no-code interface, all at their own convenience.
+With *Pepperi Page Builder*, B2B clients can easily build, edit, and design web pages. This tool enables clients to promote, present, and sell with full *workflow* control, leveraging *buyer profiles* while using a no-code interface, all at their own convenience.
 
 
 ## The motivation for the project
 
 Pepperi clients want to show Buyers (our clients’ clients) custom homepages. Where they can communicate promotions, sales, credit lines, new products, product categories, and all things related to B2B eCommerce.
 
-Moreover, they want to do it on brand, with full design control. They want to edit the content themselves and do it on their own time. We believe that a custom page builder, which enables our clients to easily create these features, is the way to go.
-
-Understanding that our clients wanted this feature was easy because they not only asked for it, but also built it. Some of our clients actually worked with the FS team, who built and maintained a custom webpage for a while. And in my first few years at Pepperi, I worked with the PS team to design and build these custom homepages.
-
-::TiltImage
----
-img1: /work/pepperi-page-builder/Old-Blackcrows.webp
-img2: /work/pepperi-page-builder/Old-Dermalogica.webp
-img3: /work/pepperi-page-builder/Old-Chanel.webp
-desc: Some custom built homepages – Great for our clients, bad for our business 
----
-::
+Moreover, they want to do it on brand, with full design control. They want to edit the content themselves and do it on their own time. 
 
 
-::GridBlockTwo{frOne="1fr" frTwo="3fr" gap="var(--space-m)"}
+<!-- ::GridBlockTwo{frOne="1fr" frTwo="3fr" gap="var(--space-m)"}
 :::GridUnit
 #### Pages Manager
 Some text here
@@ -55,18 +44,19 @@ desc: Pages Manager flow; From empty state to the templates for the populated li
 ---
 ::::
 :::
-::
+:: -->
+
+## The problem
 
 ::GridBlockTwo{frOne="2fr" frTwo="3fr" gap="var(--space-m)"}
 :::GridUnit
-## The problem
 Though custom web pages can offer our clients maximum flexibility in design and functionality they had multiple issues when it comes to business goals and product. 
 :::
-:::GridUnit{marginBlockStart="var(--space-xs)"}
+:::GridUnit
 <!-- As mentioned, custom web pages were built with native web code by our Professional Services devs – this lead to the following Issues:  -->
 
-#### List of issues 
-Issues associated with custom web pages:
+<!-- #### List of issues  -->
+<!-- Issues associated with custom web pages: -->
 
 - The pages aren’t consistent in design 
 - Not aligned with *Pepperi DS*
@@ -84,7 +74,37 @@ Issues associated with custom web pages:
 
 ## Validating Assumptions 
 
-Reviwing the idea  with out 
+::GridBlockTwo{gap="var(--space-m)"}
+:::GridUnit
+Understanding that our clients wanted this feature was easy:
+
+- Some of our clients actually built and maintained a custom webpage.
+- I worked with the PS team to design and build custom homepages.
+
+*[See attached image]{style="color: var(--color-brand-slight);"}*
+
+**Moreover**
+- We reviewed the idea with leading clients.
+- We presented it in our roadmap and received warm feedback.
+- This idea was reviewed by our sales team to make sure it makes finical sense.
+- The marketing team built and promoted a landing page to see its traction. 
+
+:::
+:::GridUnit
+::::TiltImage
+---
+img1: /work/pepperi-page-builder/Old-Blackcrows.webp
+img2: /work/pepperi-page-builder/Old-Dermalogica.webp
+img3: /work/pepperi-page-builder/Old-Chanel.webp
+desc: Some custom built homepages – Great for our clients, bad for our business 
+---
+::::
+:::
+::
+
+This is why we believe that a custom page builder, which enables our clients to easily create these features, is the way to go.
+
+
 ::QuoteBig
 So after years of anticipation we decided to lunch the **Page Builder** project
 ::
@@ -96,15 +116,26 @@ So after years of anticipation we decided to lunch the **Page Builder** project
 
 ### Understating the current state
 
-As mentioned, we had a few clients with custom homepages. Reviewing their pages, we can easily see patterns arise. This is nice for two reasons: firstly, these pages underwent a proper process where a PRD and a UX flow were carried out following inquiries with the client. Secondly, these pages were a few years/months old with sufficient time to grow and show their true usage and intent.
+As mentioned, we had a few clients with custom homepages. Reviewing their pages, we can easily see the usage patterns and users needs.
 
-So, we came to this initiative with a lot of information from the start.
+This is nice for two reasons: 
+1. The custom homepages pages underwent a proper process where a PRD and a UX flow were carried out following inquiries with the client.
+2. These pages were mature with sufficient time to grow and show their true usage and intent.
+
+So, we came to this initiative with a lot of information from the get go that easily helped us with creating the initial requirements.
 
 ### Card sorting
 
 In order to manage the information, we conducted a few card sorting sessions with several stakeholders from different teams (development, product, PS, pre-sales, partners, and a few clients) to conveniently form the data into an organized and manageable structure.
 
-![card-sort.webp](/work/pepperi-page-builder/card-sort.webp)
+::lazy-img
+---
+src: /work/pepperi-page-builder/card-sort.webp
+thumbhash: +AcGFIKqgqpthoZvqqavNz0FSA
+alt: Card sorting session output
+desc: Card sorting session output
+---
+::
 
 ### Users interviews
 
