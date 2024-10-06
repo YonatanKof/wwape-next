@@ -18,7 +18,12 @@ For the wise eyes is apparent that the man is both divine and demonic
 
 ### Six Hundred Threescore & Six
 
-This design is an Hebrew take of *Aphrodite's Child*'s 1972 album cover, aptly named **666**, and was loosely inspired by Doron Fishler's podcast *The Answer*, episode 74 -> [What's wrong with 666](https://www.osimhistoria.com/theanswer/ep74-666). If you don't know the album, you should! [So please have a listen using this link](https://youtube.com/playlist?list=PL9EAiJXXtc-bdbxNvRZCRs402jnbC_bxw&si=gADgSht99uJQFS69)
+This design is an Hebrew take of *Aphrodite's Child*'s 1972 album cover, aptly named **666**, and was loosely inspired by Doron Fishler's podcast *The Answer*, episode 74 → [What's wrong with 666](https://www.osimhistoria.com/theanswer/ep74-666). 
 
-![An Hebrew take of Aphrodite's Child's 666 album cover, depicting the Beast of Revelation in chapter 13, verse 18 of Book of Revelation](/designs/to-buy-and-sell/to-buy-and-sell.webp)
-*For it is the number of a man; and his number is Six hundred threescore and six.*
+::lazy-img{src="/designs/to-buy-and-sell/to-buy-and-sell.webp" thumbhash="" alt="An Hebrew take of Aphrodite's Child's 666 album cover, depicting the Beast of Revelation in chapter 13, verse 18 of Book of Revelation" desc="For it is the number of a man; and his number is Six hundred threescore and six"}
+::
+
+If you don't know the album, you should! [So please have a listen using this link](https://youtube.com/playlist?list=PL9EAiJXXtc-bdbxNvRZCRs402jnbC_bxw&si=gADgSht99uJQFS69)
+
+::YouTubePlayer{videoId="bLhmj1lgoG0?si=nUuCf-r5FE6-acaS" title=""}
+::

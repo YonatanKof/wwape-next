@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { withTrailingSlash, withLeadingSlash, joinURL } from 'ufo';
 import { useRuntimeConfig, computed } from '#imports';
+import { ModalsContainer, useModal } from 'vue-final-modal';
+import Modal from '~/components/FullScreenModal.vue';
 
 const props = defineProps({
 	src: {
@@ -42,9 +44,21 @@ const refinedSrc = computed(() => {
 	}
 	return props.src;
 });
+const { open, close } = useModal({
+	component: Modal,
+	attrs: {
+		onClose() {
+			close();
+		},
+	},
+	slots: {
+		default: `<img src="${refinedSrc.value}" alt="${props.alt}" />`,
+	},
+});
 </script>
 <template>
-	<span class="lazy-img">
+	<ModalsContainer />
+	<span class="lazy-img" @click="open" @keyup.enter="open">
 		<UnLazyImage :thumbhash="thumbhash" :src="refinedSrc" :alt="alt" :width="width" :height="height" auto-sizes />
 		<em v-if="desc">{{ desc }}</em>
 	</span>
