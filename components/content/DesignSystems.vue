@@ -113,7 +113,7 @@ main {
 	gap: var(--space-s);
 	margin-block: var(--space-m);
 	@media (width <= $display-width-md) {
-		grid-template-rows: repeat(3, 24rem);
+		grid-template-rows: repeat(3, 28rem);
 	}
 	@media (width <= $display-width-sm) {
 		grid-template-columns: 1fr;
