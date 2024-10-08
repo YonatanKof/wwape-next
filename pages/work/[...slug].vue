@@ -1,60 +1,36 @@
 <!-- This is a single post -->
 <script setup>
-
 const { path } = useRoute();
+const cleanPath = path.replace(/\/+$/, '');
 
-const { data } = await useAsyncData('equal', () => {
-	return queryContent('work').where({}).find();
+const { data, error } = await useAsyncData(cleanPath, async () => {
+	// Remove a trailing slash in case the browser adds it, it might break the routing
+	// fetch document where the document path matches with the current route
+	let article = queryContent('/design').where({ _path: cleanPath }).findOne();
+	return {
+		article: await article,
+	};
 });
 
 const config = useRuntimeConfig();
-const siteTitle = `A post by ${config.public.siteOwnerName} form the ${config.public.siteName}`;
 
 // Set the meta
 const dynamicUrl = config.public.baseUrl;
-const canonicalPath = dynamicUrl + (path + '/').replace(/\/+$/, '/');
 const image = dynamicUrl + data.value?.article?.social_image || '/images/index-social.jpg';
+const cleanDescription = data.value?.article?.description.replace(/<[^>]*>/g, '');
 
 const { $formatDate } = useNuxtApp();
 
-useHead({
-	titleTemplate: (titleChunk) => {
-		return titleChunk ? `${titleChunk} - ` + siteTitle : siteTitle;
-	},
-	meta: [
-		{ name: 'description', content: data.value?.article?.description },
-		{
-			property: 'article:published_time',
-			content: data.value?.article?.updated.split('T')[0] || data.value?.article?.date.split('T')[0],
-		},
-		// OG
-		{ hid: 'og:title', property: 'og:title', content: data.value?.article?.title + ` - ` + siteTitle },
-		{ hid: 'og:url', property: 'og:url', content: canonicalPath },
-		{ hid: 'og:description', property: 'og:description', content: data.value?.article?.description },
-		{ hid: 'og:image', name: 'image', property: 'og:image', content: image },
-		{ hid: 'og:type', property: 'og:type', content: 'article' },
-		{ hid: 'og:image:type', property: 'og:image:type', content: `image/jpeg` },
-		{ hid: 'og:image:width', property: 'og:image:width', content: 1200 },
-		{ hid: 'og:image:height', property: 'og:image:height', content: 630 },
-		{ hid: 'og:image:alt', property: 'og:image:alt', content: data.value?.article?.image_alt },
-		// Twitter
-		{ hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
-		{ hid: 'twitter:creator', name: 'twitter:creator', content: '@yonatankof' },
-		{ hid: 'twitter:title', name: 'twitter:title', content: data.value?.article?.title + ` - ` + siteTitle },
-		{ hid: 'twitter:description', name: 'twitter:description', content: data.value?.article?.description },
-		{ hid: 'twitter:url', name: 'twitter:url', content: canonicalPath },
-		{ hid: 'twitter:image', name: 'twitter:image', content: image },
-		{ hid: 'twitter:image:width', name: 'twitter:image:width', content: 1200 },
-		{ hid: 'twitter:image:height', name: 'twitter:image:height', content: 630 },
-		{ hid: 'twitter:image:alt', name: 'twitter:image:alt', content: data.value?.article?.image_alt },
-	],
-	link: [
-		{
-			hid: 'canonical',
-			rel: 'canonical',
-			href: canonicalPath,
-		},
-	],
+const nuxtApp = useNuxtApp();
+nuxtApp.$pageMetaTags({
+	metaTitle: `A post by ${config.public.siteOwnerName} of the ${config.public.siteName}`,
+	metaTitleData: data.value?.article?.title,
+	metaDesc: cleanDescription,
+	metaImg: image,
+	metaImgAlt: data.value?.article?.image_alt,
+	metaOgType: 'article',
+	metaPublishedTime: data.value?.article?.date.split('T')[0],
+	metaModifiedTime: data.value?.article?.updated.split('T')[0],
 });
 </script>
 
@@ -67,16 +43,13 @@ useHead({
 						<div id="article-info">
 							<h1 id="title">{{ doc.title }}</h1>
 							<h3 id="sub-title">{{ doc.description }}</h3>
-							<!-- <hr /> -->
 							<span class="dates">
 								<p>Posted {{ $formatDate(doc.date) }}</p>
 								<p v-if="doc.updated">•</p>
 								<p v-if="doc.updated">Updated {{ $formatDate(doc.updated) }}</p>
 							</span>
-							<!-- <hr /> -->
 						</div>
 					</section>
-					<!-- <hr /> -->
 					<span class="content-renderer"><ContentRenderer :value="doc" /></span>
 				</main>
 			</template>
