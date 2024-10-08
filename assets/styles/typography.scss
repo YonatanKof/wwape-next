@@ -42,6 +42,7 @@ li {
 	font-size: var(--step-1);
 	line-height: 1.5;
 	color: var(--color-sys-main);
+	text-wrap: balance;
 	text-wrap: pretty;
 	@media print {
 		font-size: var(--step--3);
