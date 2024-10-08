@@ -2,7 +2,7 @@
 defineProps({
 	colNum: {
 		type: String,
-		default: "1",
+		default: "2",
 	},
 	rowNum: {
 		type: String,
@@ -10,7 +10,7 @@ defineProps({
 	},
 	gap: {
 		type: String,
-		default: 'var(--space-xs)',
+		default: 'var(--space-s)',
 	},
 });
 </script>
