@@ -38,20 +38,20 @@ span {
 	display: block;
 	background-color: var(--color-brand-dis);
 	border-radius: var(--border-radius-sm);
-	padding: var(--space-l);
+	padding: var(--space-xs);
 }
 div {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: repeat(7, 1fr);
-	transform: rotate3d(4, 3, -2, 24deg);
+	transform: rotate3d(4, 3, -2, 24deg) scale(0.9);
 	max-width: var(--display-width-sm);
 	width: 100%;
 	margin-inline: auto;
 	transition: transform 0.5s ease-in-out;
 	transform-style: preserve-3d;
 	&:hover {
-		transform: rotate3d(4, 3, -2, 0deg) translateZ(0);
+		transform: rotate3d(4, 3, -2, 0deg) scale(1) translateZ(0);
 	}
 }
 img {
