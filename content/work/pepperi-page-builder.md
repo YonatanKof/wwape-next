@@ -8,7 +8,7 @@ cover_image_height: '395'
 cover_image_thumbhash: 'MAgOBYD4dmh3l2h/k4eIdlCjNFAJ'
 social_image: '/work/pepperi-page-builder/pepperi-page-builder-social.jpg'
 image_alt: ''
-description: 'An design tool for none designers to manage, build, and edit custom webpages with a no-code interface'
+description: 'A design tool for non-designers to manage, build, and edit custom webpages with a no-code interface'
 tags: ['Creative']
 ---
 
@@ -21,11 +21,23 @@ desc: Some examples of our custom built homepages
 With *Pepperi Page Builder*, B2B clients can easily build, edit, and design web pages. This tool enables clients to promote, present, and sell with full *workflow* control, leveraging *buyer profiles* while using a no-code interface, all at their own convenience.
 
 
-## The motivation for the project
+## Project motivation
+Pepperi clients need custom homepages for their Buyers (end-users) to showcase:
+- Promotions and sales
+- Credit lines
+- New products
+- Product categories
+- Other B2B eCommerce features
 
-Pepperi clients want to show Buyers (our clients’ clients) custom homepages. Where they can communicate promotions, sales, credit lines, new products, product categories, and all things related to B2B eCommerce.
+They also require:
+- On-brand design
+- Full design control
+- Ability to edit content independently
+- Flexibility to make changes on their own schedule
 
-Moreover, they want to do it on brand, with full design control. They want to edit the content themselves and do it on their own time. 
+<!-- Pepperi clients want to show Buyers (our clients’ clients) custom homepages. Where they can communicate promotions, sales, credit lines, new products, product categories, and all things related to B2B eCommerce.
+ -->
+<!-- Moreover, they want to do it on brand, with full design control. They want to edit the content themselves and do it on their own time.  -->
 
 
 <!-- ::GridBlockTwo{frOne="1fr" frTwo="3fr" gap="var(--space-m)"}
@@ -50,44 +62,39 @@ desc: Pages Manager flow; From empty state to the templates for the populated li
 
 ::GridBlockTwo{frOne="2fr" frTwo="3fr" gap="var(--space-m)"}
 :::GridUnit
-Though custom web pages can offer our clients maximum flexibility in design and functionality they had multiple issues when it comes to business goals and product. 
+Though custom web pages can offer our clients maximum flexibility in design and functionality, they had multiple issues when it comes to business goals and product.
 :::
 :::GridUnit
-<!-- As mentioned, custom web pages were built with native web code by our Professional Services devs – this lead to the following Issues:  -->
-
-<!-- #### List of issues  -->
-<!-- Issues associated with custom web pages: -->
-
-- The pages aren’t consistent in design 
+- The pages aren't consistent in design
 - Not aligned with *Pepperi DS*
-- Wast of *Professional Services* team time
-- Out of sync with other Pepperi products & features like:
-    - Pepperi theme editor
-    - Pepperi header builder
-    - Native app integration
-    - Version updates
-- Can’t be build or maintained by the clients
+- Waste of *Professional Services* team time
+- Un-synced with other Pepperi products & features like:
+  - Pepperi theme editor
+  - Pepperi header builder
+  - Native app integration
+  - Version updates
+- Can't be built or maintained by the clients
 - Can be used only by FS team causing dependency and scalability issues
-
 :::
 ::
 
-## Validating Assumptions 
+## Validating Assumptions
+
+Before embarking on any major initiative, it's crucial to validate assumptions. This process helps to reduce risks, align with user needs, ensure resource efficiency and build stakeholder confidence.
 
 ::GridBlockTwo{gap="var(--space-m)"}
 :::GridUnit
-Understanding that our clients wanted this feature was easy:
+We confirmed client demand for this feature through:
 
-- Some of our clients actually built and maintained a custom webpage.
-- I worked with the PS team to design and build custom homepages.
+1. Existing client behavior:
+   - Some clients built and maintained custom webpages
+   - PS team involvement in designing custom homepages – *[See attached image]{style="color: var(--color-brand-slight);"}*
 
-*[See attached image]{style="color: var(--color-brand-slight);"}*
-
-**Moreover**
-- We reviewed the idea with leading clients.
-- We presented it in our roadmap and received warm feedback.
-- This idea was reviewed by our sales team to make sure it makes finical sense.
-- The marketing team built and promoted a landing page to see its traction. 
+2. Stakeholder feedback:
+   - Positive response from leading clients
+   - Warm reception to roadmap presentation
+   - Sales team confirmation of financial viability
+   - Marketing team's landing page traction
 
 :::
 :::GridUnit
@@ -102,11 +109,13 @@ desc: Some custom built homepages – Great for our clients, bad for our busines
 :::
 ::
 
-This is why we believe that a custom page builder, which enables our clients to easily create these features, is the way to go.
-
+These findings support our decision to develop a custom page builder, empowering clients to easily create desired features.
 
 ::QuoteBig
-So after years of anticipation we decided to lunch the **Page Builder** project
+---
+title: So after years of anticipation we decided to launch the <strong>Page Builder</strong> project
+desc: hi yo
+---
 ::
 
 
@@ -114,48 +123,183 @@ So after years of anticipation we decided to lunch the **Page Builder** project
 
 ## Research
 
-### Understating the current state
+We uses several research techniques that I'll review shortly. And although I wrote the as an ordered list, in actuality they were a cyclic proceed were one output effected another input. I'll used methods of *discovery*, *exploring* and *testing* (for the meanwhile I'll leave out methods of optimisations).
 
-As mentioned, we had a few clients with custom homepages. Reviewing their pages, we can easily see the usage patterns and users needs.
-
+### 1. Field studies
+This is great in order to understand the current state.
+As mentioned, we had a few clients with custom homepages. Reviewing their pages, we can easily see the usage patterns and users' needs.
 This is nice for two reasons: 
-1. The custom homepages pages underwent a proper process where a PRD and a UX flow were carried out following inquiries with the client.
+1. The custom homepage pages underwent a proper process where a PRD and a UX flow were carried out following inquiries with the client.
 2. These pages were mature with sufficient time to grow and show their true usage and intent.
+So, we came to this initiative with a lot of information from the get-go that easily helped us with creating the initial requirements.
 
-So, we came to this initiative with a lot of information from the get go that easily helped us with creating the initial requirements.
+### 2. Users & stakeholder interviews
+We formed a diverse *steering committee* including:
+- Development team
+- Product team
+- Professional Services
+- Pre-sales
+- Partners
+- Selected clients
 
-### Card sorting
+Research process:
+1. Presented comparative research findings [(↓)](#comparative-research){target="_self" .sup}
+2. Tested popular page builders:
+   - Wix
+   - Squarespace
+   - Elementor
+   - Tilda
 
-::GridBlockTwo
+Evaluation methods:
+1. Observed *steering committee* reactions
+2. Conducted discussions on likes, dislikes, and rationales
+
+This approach provided valuable insights into user preferences and potential feature priorities.
+
+### 3. Card sorting
+::GridBlockTwo{frOne="3fr" frTwo="4fr" gap="var(--space-l)"}
 :::GridUnit
-In order to manage the information, we conducted a few card sorting sessions with several stakeholders from different teams (development, product, PS, pre-sales, partners, and a few clients). This cost-effective research method helps us conveniently form the data into an organized and manageable structure.
-
-#### It helped us:
-
-1. Understand the mental models and information organization.
-2. Structure the information architecture and navigation design.
-3. Gather user-centric terminology and the language the users prefer.
-5. Versatile application: Useful for various digital products, from websites to complex software interfaces.
-6. Inform content strategy: Helps prioritize content and identify gaps or redundancies.
+In order to manage the information, we conducted a few card sorting sessions with our *steering committee*. This cost-effective research method helps us conveniently form the data into an organized and manageable structure.
 :::
 :::GridUnit
-
-::::lazy-img
+Card sorting helped us by:
+1. Understanding mental models and organizing entities.
+2. Structuring information and navigation architecture.
+3. Gathering user-centric terminology and language.
+4. Informing content strategy: Helps prioritize content and identify gaps or redundancies.
+:::
+::
+::lazy-img
 ---
 src: /work/pepperi-page-builder/card-sort.webp
 thumbhash: +AcGFIKqgqpthoZvqqavNz0FSA
 alt: Card sorting session output
 desc: Card sorting session output
 ---
-::::
-:::
 ::
-
-### Users interviews
 
 Show this page [Research](https://www.notion.so/Research-664a427a29f6458081434a92cbc4ffc7?pvs=21) and this page [Page & Layout Builders](https://www.notion.so/Page-Layout-Builders-b4eb3bc4012c43f29a3f4101560c0c84?pvs=21) 
 
-### Comparative research
+### 4.Competitive analysis
+
+::GridBlockTwo
+:::GridUnit
+In my UX research process, I always make sure to conduct a UX competitive analysis. I find it's an opportunity for me to identify what works well, learn from others' mistakes, and spot potential gaps that could give our product a competitive edge.
+
+One of the aspects I enjoy, is how it enhances my understanding of our users. By examining our competitors' products from our customers' perspective, I'm able to develop a deeper sense of empathy. This helps me uncover what truly our users and pinpoint their pain points more accurately.
+
+:::
+:::GridUnit
+
+#### Takeaways:
+
+- Understand ways in which competitors in our problem space solved similar issues. 
+- Understand possible solution 
+- Expand our product vocabulary.
+- Identify different product entities like target audience, what are the core features and unique selling points, types of **responsive** design support, what are the content blocks, different approaches to he user interface, customization level, pricing tiers, value for money, and popularity of each product.
+
+:::
+::
+
+
+### 5.User testing
+::GridBlockTwo
+:::GridUnit
+Our user testing process followed a progressive approach to refine our design:
+
+1. Low-fidelity mockups:
+   - Created wireframes for initial review
+   - Presented to steering committee members
+   - Gathered preliminary feedback
+
+2. Direction setting:
+   - Incorporated insights from previous research phases
+   - Established general design direction
+
+3. High-fidelity prototypes:
+   - Developed interactive mockups
+   - Allowed steering committee to engage with the design
+
+4. Design refinement:
+   - Fine-tuned based on interactive testing feedback
+   - Ensured alignment with user needs and expectations
+:::
+:::GridUnit
+This iterative process allowed us to:
+- Validate design concepts early
+- Incorporate stakeholder feedback efficiently
+- Identify and address usability issues
+- Ensure the final design met user requirements
+
+*[High-fidelity prototypes]{style="color: var(--color-brand-slight);"}*
+::lazy-img{src="/work/pepperi-page-builder/user-testing.webp" thumbhash="+QcKBIJmd4iAiIeAh3E2oJP19w" width="750" height="1200" alt="" desc=""}
+::
+:::
+::
+
+## High-fidelity Designs
+
+Our high-fidelity designs provide a comprehensive overview of the Page Builder's core functionalities and user interface. Below, we showcase key components of both page-level elements and specific page blocks.
+
+
+::GridBlockTwo
+:::GridUnit
+#### Page-level Elements
+1. Pages Manager
+   - Overview of all pages
+   - Create, edit, and delete pages
+
+2. Page Layout
+   - Layout structure and customization options
+   - Drag-and-drop interface
+
+3. Page Preview
+   - Real-time preview of page changes
+   - Desktop and mobile views
+
+4. Page Sections
+   - Section types and arrangements
+   - Section-specific settings
+:::
+:::GridUnit
+#### Page Blocks
+
+1. Slideshow
+   - Image selection and arrangement
+   - Transition options
+
+2. Gallery
+   - Image grid layout options
+   - Lightbox functionality
+
+3. Banner
+   - Custom imagery and text overlay
+   - Call-to-action button integration
+
+4. Buttons
+   - Style customization
+   - Action linking
+
+5. Charts
+   - Data input and visualization options
+   - Chart type selection
+
+6. Chat
+   - Chat interface customization
+   - Integration with existing systems
+
+7. Filter block
+   - Product filtering options
+   - User-friendly interface
+
+8. Rich text
+   - Text formatting tools
+   - Media embedding options
+:::
+::
+
+These high-fidelity designs represent the culmination of our research, user testing, and iterative design process. They showcase the intuitive and powerful features of the Page Builder, enabling users to create sophisticated, custom pages with ease.
+
 
 ## Measuring success
 
@@ -213,4 +357,3 @@ Block example – Buttons
 ![Preview mode](/work/pepperi-page-builder/Page_Builder-7-Preview.webp)
 
 Preview mode
-
