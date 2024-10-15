@@ -7,35 +7,35 @@
 
 
 	--color-black-main: hsl(180, 25%, 5%);
-	--color-black-slight: color-mix(in hsl, var(--color-black-main) 75%, transparent);
-	--color-black-dim: color-mix(in hsl, var(--color-black-main) 35%, transparent);
+	--color-black-slight: color-mix(in hsl, var(--color-black-main) 80%, transparent);
+	--color-black-dim: color-mix(in hsl, var(--color-black-main) 40%, transparent);
 	--color-black-dis: color-mix(in hsl, var(--color-black-main) 10%, transparent);
 	--color-black-hardly: color-mix(in hsl, var(--color-black-main) 3%, transparent);
 	--color-black-none: color-mix(in hsl, var(--color-black-main) 0%, transparent);
 	
 	--color-sys-main: hsl(180, 25%, 15%);
-	--color-sys-slight: color-mix(in hsl, var(--color-sys-main) 75%, transparent);
-	--color-sys-dim: color-mix(in hsl, var(--color-sys-main) 35%, transparent);
+	--color-sys-slight: color-mix(in hsl, var(--color-sys-main) 80%, transparent);
+	--color-sys-dim: color-mix(in hsl, var(--color-sys-main) 40%, transparent);
 	--color-sys-dis: color-mix(in hsl, var(--color-sys-main) 10%, transparent);
 	--color-sys-none: color-mix(in hsl, var(--color-sys-main) 0%, transparent);
 
 	--color-sys-invert-highlight: color-mix(in hsl, var(--color-sys-invert-main) 0%, white);
 	--color-sys-invert-highlight-slight: color-mix(in hsl, var(--color-sys-invert-highlight) 65%, transparent);
 	--color-sys-invert-main: antiquewhite;
-	--color-sys-invert-slight: color-mix(in hsl, var(--color-sys-invert-main) 75%, transparent);
-	--color-sys-invert-dim: color-mix(in hsl, var(--color-sys-invert-main) 35%, transparent);
+	--color-sys-invert-slight: color-mix(in hsl, var(--color-sys-invert-main) 80%, transparent);
+	--color-sys-invert-dim: color-mix(in hsl, var(--color-sys-invert-main) 40%, transparent);
 	--color-sys-invert-dis: color-mix(in hsl, var(--color-sys-invert-main) 10%, transparent);
 	--color-sys-invert-none: color-mix(in hsl, var(--color-sys-invert-main) 0%, transparent);
 
-	--color-brand-main: hsl(280, 100%, 35%);
-	--color-brand-slight: color-mix(in hsl, var(--color-brand-main) 75%, transparent);
-	--color-brand-dim: color-mix(in hsl, var(--color-brand-main) 35%, transparent);
+	--color-brand-main: hsl(280, 100%, 40%);
+	--color-brand-slight: color-mix(in hsl, var(--color-brand-main) 80%, transparent);
+	--color-brand-dim: color-mix(in hsl, var(--color-brand-main) 40%, transparent);
 	--color-brand-dis: color-mix(in hsl, var(--color-brand-main) 10%, transparent);
 	--color-brand-none: color-mix(in hsl, var(--color-brand-main) 0%, transparent);
 
 	--color-focus-main: hsl(200, 100%, 30%);
-	--color-focus-slight: color-mix(in hsl, var(--color-focus-main) 75%, transparent);
-	--color-focus-dim: color-mix(in hsl, var(--color-focus-main) 35%, transparent);
+	--color-focus-slight: color-mix(in hsl, var(--color-focus-main) 80%, transparent);
+	--color-focus-dim: color-mix(in hsl, var(--color-focus-main) 40%, transparent);
 	--color-focus-dis: color-mix(in hsl, var(--color-focus-main) 10%, transparent);
 	--color-focus-none: color-mix(in hsl, var(--color-focus-main) 0%, transparent);
 
@@ -144,7 +144,7 @@ hr {
 	--color-sys-invert-highlight: color-mix(in hsl, var(--color-sys-invert-main) 55%, black);
 	--color-sys-invert-main: hsl(34, 25%, 15%);
 
-	--color-brand-main: hsl(280, 100%, 75%);
+	--color-brand-main: hsl(280, 100%, 80%);
 
 	--color-focus-main: hsl(200, 100%, 40%);
 
