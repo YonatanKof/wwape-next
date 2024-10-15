@@ -114,7 +114,6 @@ These findings support our decision to develop a custom page builder, empowering
 ::QuoteBig
 ---
 title: So after years of anticipation we decided to launch the <strong>Page Builder</strong> project
-desc: hi yo
 ---
 ::
 
@@ -242,26 +241,85 @@ This iterative process allowed us to:
 Our high-fidelity designs provide a comprehensive overview of the Page Builder's core functionalities and user interface. Below, we showcase key components of both page-level elements and specific page blocks.
 
 
-::GridBlockTwo
-:::GridUnit
-#### Page-level Elements
-1. Pages Manager
-   - Overview of all pages
-   - Create, edit, and delete pages
+### Page-level Elements
 
-2. Page Layout
-   - Layout structure and customization options
-   - Drag-and-drop interface
-
-3. Page Preview
-   - Real-time preview of page changes
-   - Desktop and mobile views
-
-4. Page Sections
-   - Section types and arrangements
-   - Section-specific settings
+::GridBlockTwo{frOne="2fr" frTwo="3fr" gap="var(--space-m)"}
+:::GridUnit 
+#### Pages Manager
+- Overview of all pages
+- Create, edit, and delete pages
 :::
 :::GridUnit
+::::TiltImage
+---
+img1: /work/pepperi-page-builder/builder/1.1-PagesManager-Empty.webp
+img2: /work/pepperi-page-builder/builder/1.2-PagesManager-Templates.webp
+img3: /work/pepperi-page-builder/builder/1.3-PagesManager-Populated.webp
+desc: <strong>Pages Manager:</strong> Central hub for page overview, creation, editing, and deletion
+---
+::::
+:::
+::
+
+::GridBlockTwo{frOne="2fr" frTwo="3fr" gap="var(--space-m)"}
+:::GridUnit 
+#### Page Layout
+- Layout structure and customization options
+- Drag-and-drop sections and block components 
+- Set padding, gaps and page width
+- Set page info and logic by lifecycle hooks
+:::
+:::GridUnit
+::::TiltImage
+---
+img1: /work/pepperi-page-builder/builder/2.1-PageLayout-Design.webp
+img2: /work/pepperi-page-builder/builder/2.2-PageLayout-AddGalleryBlock.webp
+img3: /work/pepperi-page-builder/builder/2.3-PageLayout-AddBanner.webp
+desc: <strong>Page Layout:</strong> Customizable structure with a drag-and-drop interface
+---
+::::
+:::
+::
+
+::GridBlockTwo{frOne="2fr" frTwo="3fr" gap="var(--space-m)"}
+:::GridUnit 
+#### Hide Sections & Page Preview 
+- Real-time preview of page changes
+- For all responsive views
+- Hide sections per view for grater layout control 
+:::
+:::GridUnit
+::::TiltImage
+---
+img1: /work/pepperi-page-builder/builder/3.2-Preview-Mobile.webp
+img2: /work/pepperi-page-builder/builder/3.1-HideSection.webp
+img3: /work/pepperi-page-builder/builder/3.3-Preview-Desktop.webp
+desc: <strong>Hide Sections & Page Preview:</strong> Real-time, responsive preview with section visibility control across views.
+---
+::::
+:::
+::
+
+::GridBlockTwo{frOne="2fr" frTwo="3fr" gap="var(--space-m)"}
+:::GridUnit 
+#### Page Sections
+- Section types and arrangements
+- Set sub-sections and spilt types 
+- Edit gaps and padding
+- Set responsive break points and dynamic height
+:::
+:::GridUnit
+::::TiltImage
+---
+img3: /work/pepperi-page-builder/builder/4.1-EditSection.webp
+img1: /work/pepperi-page-builder/builder/4.2-SectionPadding.webp
+img2: /work/pepperi-page-builder/builder/4.3-SubSection.webp
+desc: <strong>Page Sections:</strong> Customizable layouts with adjustable sub-sections, spacing, and responsive settings.
+---
+::::
+:::
+::
+
 #### Page Blocks
 
 1. Slideshow
@@ -295,8 +353,6 @@ Our high-fidelity designs provide a comprehensive overview of the Page Builder's
 8. Rich text
    - Text formatting tools
    - Media embedding options
-:::
-::
 
 These high-fidelity designs represent the culmination of our research, user testing, and iterative design process. They showcase the intuitive and powerful features of the Page Builder, enabling users to create sophisticated, custom pages with ease.
 
@@ -308,7 +364,7 @@ These high-fidelity designs represent the culmination of our research, user test
 - Dogfooding
 - Adoption
 
-### Quantitive
+### Quantitative
 
 - **Sales**
     - We’ve effectively opened a new sales category and we have seen a steady increase in demand.
@@ -333,7 +389,7 @@ One of our clients top priorities is to communicate their brand and business nee
 The *Page Builder* addresses this issue by enabling our clients to modify, add, and design content on the flay. Furthermore, we can now tailor pages based on roles and business requirements.
 
 The *Page Builder* provides users with control over the page layout, and content is edited using *content blocks*. These blocks include Slideshows, Galleries, Charts, Forms, Rich Text, Banners, Buttons, Filters, Search, with future additions like Chat, Categories, Stack layout, and HTML block.
-
+<!-- 
 ![Create and manage pages](/work/pepperi-page-builder/Page_Builder-1-New_Page.webp)
 
 Create and manage pages
@@ -356,4 +412,4 @@ Block example – Buttons
 
 ![Preview mode](/work/pepperi-page-builder/Page_Builder-7-Preview.webp)
 
-Preview mode
+Preview mode -->
