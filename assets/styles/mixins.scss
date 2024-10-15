@@ -29,7 +29,7 @@
 @mixin desc-text-under() {
 	color: var(--color-sys-slight);
 	font-size: var(--step--1);
-	margin-inline-start: var(--space-xs);
+	margin-inline-start: calc(var(--space-2xs) * 1.5);
 	display: inline-block;
 	line-height: 1.25;
 	margin-block: var(--space-xs);
@@ -38,7 +38,7 @@
 	&::before {
 		content: '';
 		display: inline-block;
-		width: var(--space-4xs);
+		width: calc(var(--space-4xs) * 0.75);
 		height: 100%;
 		background-color: var(--color-sys-dim);
 		position: absolute;
