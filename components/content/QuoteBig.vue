@@ -35,19 +35,19 @@ defineProps({
 	background-color: var(--color-brand-dis);
 	margin-block: var(--space-xs);
 	display: block;
-	padding-inline-start: var(--space-s);
 	padding: var(--space-s);
+	padding-inline-start: var(--space-xs);
 	border-radius: var(--border-radius-sm);
 	position: relative;
 	&::before {
 		content: '';
 		display: inline-block;
-		width: calc(var(--space-2xs) * .75);
+		width: calc(var(--space-2xs) * .5);
 		height: calc(100% - calc(var(--space-s) * 2));
 		background-color: var(--color-brand-main);
 		position: absolute;
 		inset-inline-start: var(--space-s);
-		border-radius: var(--border-radius-xs);
+		border-radius: calc(var(--space-2xs) * .5);
 	}
 }
 </style>
