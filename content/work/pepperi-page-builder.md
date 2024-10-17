@@ -256,6 +256,7 @@ img1: /work/pepperi-page-builder/builder/1.1-PagesManager-Empty.webp
 img2: /work/pepperi-page-builder/builder/1.2-PagesManager-Templates.webp
 img3: /work/pepperi-page-builder/builder/1.3-PagesManager-Populated.webp
 desc: <strong>Pages Manager:</strong> Central hub for page overview, creation, editing, and deletion
+alt: Pages Manager high-fidelity design
 ---
 ::::
 :::
@@ -276,6 +277,7 @@ img1: /work/pepperi-page-builder/builder/2.1-PageLayout-Design.webp
 img2: /work/pepperi-page-builder/builder/2.2-PageLayout-AddGalleryBlock.webp
 img3: /work/pepperi-page-builder/builder/2.3-PageLayout-AddBanner.webp
 desc: <strong>Page Layout:</strong> Customizable structure with a drag-and-drop interface
+alt: Page Layout high-fidelity design
 ---
 ::::
 :::
@@ -295,6 +297,7 @@ img1: /work/pepperi-page-builder/builder/3.2-Preview-Mobile.webp
 img2: /work/pepperi-page-builder/builder/3.1-HideSection.webp
 img3: /work/pepperi-page-builder/builder/3.3-Preview-Desktop.webp
 desc: <strong>Hide Sections & Page Preview:</strong> Real-time, responsive preview with section visibility control across views.
+alt: Hide Sections & Page Preview high-fidelity design
 ---
 ::::
 :::
@@ -311,46 +314,162 @@ desc: <strong>Hide Sections & Page Preview:</strong> Real-time, responsive previ
 :::GridUnit
 ::::TiltImage
 ---
-img3: /work/pepperi-page-builder/builder/4.1-EditSection.webp
 img1: /work/pepperi-page-builder/builder/4.2-SectionPadding.webp
 img2: /work/pepperi-page-builder/builder/4.3-SubSection.webp
+img3: /work/pepperi-page-builder/builder/4.1-EditSection.webp
 desc: <strong>Page Sections:</strong> Customizable layouts with adjustable sub-sections, spacing, and responsive settings.
+alt: Page Sections high-fidelity design
 ---
 ::::
 :::
 ::
 
-#### Page Blocks
+### Page Blocks
 
-1. Slideshow
-   - Image selection and arrangement
-   - Transition options
+#### Slideshow
 
-2. Gallery
-   - Image grid layout options
-   - Lightbox functionality
+::GridBlockTwo{gap="var(--space-m)"}
+:::GridUnit 
 
-3. Banner
-   - Custom imagery and text overlay
-   - Call-to-action button integration
+ - Set Slide content like titles and text, image, buttons size and type
+ - Set Slide design like overlay & text color, image & text position & size 
+ - Set Slideshow design attributes like height, transition, controllers 
+ - Set logic and flows by role
 
-4. Buttons
+---
+
+::::BaseImage
+---
+src: /work/pepperi-page-builder/builder/Slideshow.webp
+width: 1366
+height: 768
+alt: 
+desc: Slideshow in Page Builder
+---
+::::
+
+:::
+
+:::GridUnit
+
+::::BaseImage
+---
+src: /work/pepperi-page-builder/builder/Slideshow-Editor.webp
+width: 928
+height: 1991
+alt: 
+desc: Slideshow editors, <strong>Design</strong> and <strong>Content</strong> tabs
+borderRadius: var(--border-radius-xs)
+---
+::::
+:::
+::
+
+#### Gallery
+
+::GridBlockTwo{gap="var(--space-m)"}
+:::GridUnit 
+- Grid layout and design options
+- Edit content and logic
+
+---
+
+::::BaseImage
+---
+src: /work/pepperi-page-builder/builder/Gallery.webp
+width: 1440
+height: 900
+alt: Galley block in use
+desc: Galley block in use
+---
+::::
+::::BaseImage
+---
+src: /work/pepperi-page-builder/builder/Gallery-Examples.webp
+width: 1987
+height: 1348
+alt: The different combinations possible for a Galley item
+desc: The different combinations possible for a Galley item
+---
+::::
+
+:::
+
+:::GridUnit
+
+::::BaseImage
+---
+src: /work/pepperi-page-builder/builder/Gallery-Editor.webp
+width: 928
+height: 1145
+alt: 
+desc: Gallery editors, <strong>Design</strong> and <strong>Content</strong> tabs
+borderRadius: var(--border-radius-xs)
+---
+::::
+:::
+::
+
+#### Banners
+
+::GridBlockTwo{gap="var(--space-m)"}
+:::GridUnit 
+
+- Custom imagery and text overlay
+- Call-to-action button integration
+
+---
+
+::::BaseImage
+---
+src: /work/pepperi-page-builder/builder/Banner.webp
+width: 1287
+height: 1048
+alt: Galley block in use
+desc: Galley block in use
+---
+::::
+::::BaseImage
+---
+src: /work/pepperi-page-builder/builder/Banner-Example.webp
+width: 928
+height: 946
+alt: Different combinations of a Banner item
+desc: Different combinations of a Banner item
+---
+::::
+:::
+:::GridUnit
+::::BaseImage
+---
+src: /work/pepperi-page-builder/builder/Gallery-Editor.webp
+width: 928
+height: 1145
+alt: Banner editors, Design and Content tabs
+desc: Banner editors, <strong>Design</strong> and <strong>Content</strong> tabs
+borderRadius: var(--border-radius-xs)
+---
+::::
+:::
+::
+
+1. Buttons
    - Style customization
    - Action linking
 
-5. Charts
+2. Charts
    - Data input and visualization options
    - Chart type selection
 
-6. Chat
+3. Chat
    - Chat interface customization
    - Integration with existing systems
 
-7. Filter block
+4. Filter block
    - Product filtering options
    - User-friendly interface
 
-8. Rich text
+5. Rich text
    - Text formatting tools
    - Media embedding options
 
