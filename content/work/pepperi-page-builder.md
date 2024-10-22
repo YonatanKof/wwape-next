@@ -179,7 +179,7 @@ desc: Card sorting session output
 
 Show this page [Research](https://www.notion.so/Research-664a427a29f6458081434a92cbc4ffc7?pvs=21) and this page [Page & Layout Builders](https://www.notion.so/Page-Layout-Builders-b4eb3bc4012c43f29a3f4101560c0c84?pvs=21) 
 
-### 4.Competitive analysis
+### 4. Competitive analysis
 
 ::GridBlockTwo
 :::GridUnit
@@ -201,7 +201,7 @@ One of the aspects I enjoy, is how it enhances my understanding of our users. By
 ::
 
 
-### 5.User testing
+### 5. User testing
 ::GridBlockTwo
 :::GridUnit
 Our user testing process followed a progressive approach to refine our design:
@@ -367,12 +367,27 @@ borderRadius: var(--border-radius-xs)
 
 #### Gallery
 
-::GridBlockTwo{gap="var(--space-m)"}
+::GridBlockTwo{frOne="2fr" frTwo="3fr" gap="var(--space-m)"}
 :::GridUnit 
 - Grid layout and design options
 - Edit content and logic
 
 ---
+
+::::BaseImage
+---
+src: /work/pepperi-page-builder/builder/Gallery-Editor.webp
+width: 928
+height: 1145
+alt: 
+desc: Gallery editors, <strong>Design</strong> and <strong>Content</strong> tabs
+borderRadius: var(--border-radius-xs)
+---
+::::
+
+:::
+
+:::GridUnit
 
 ::::BaseImage
 ---
@@ -394,25 +409,11 @@ desc: The different combinations possible for a Galley item
 ::::
 
 :::
-
-:::GridUnit
-
-::::BaseImage
----
-src: /work/pepperi-page-builder/builder/Gallery-Editor.webp
-width: 928
-height: 1145
-alt: 
-desc: Gallery editors, <strong>Design</strong> and <strong>Content</strong> tabs
-borderRadius: var(--border-radius-xs)
----
-::::
-:::
 ::
 
 #### Banners
 
-::GridBlockTwo{gap="var(--space-m)"}
+::GridBlockTwo{frOne="2fr" frTwo="3fr" gap="var(--space-m)"}
 :::GridUnit 
 
 - Custom imagery and text overlay
@@ -420,6 +421,19 @@ borderRadius: var(--border-radius-xs)
 
 ---
 
+::::BaseImage
+---
+src: /work/pepperi-page-builder/builder/Gallery-Editor.webp
+width: 928
+height: 1145
+alt: Banner editors, Design and Content tabs
+desc: Banner editors, <strong>Design</strong> and <strong>Content</strong> tabs
+borderRadius: var(--border-radius-xs)
+---
+::::
+
+:::
+:::GridUnit
 ::::BaseImage
 ---
 src: /work/pepperi-page-builder/builder/Banner.webp
@@ -439,39 +453,128 @@ desc: Different combinations of a Banner item
 ---
 ::::
 :::
+::
+
+#### Buttons
+
+::GridBlockTwo{frOne="2fr" frTwo="3fr" gap="var(--space-m)"}
+:::GridUnit 
+
+- Style customization: alignment, size and positioning 
+- Set button type:
+  - Solid – For CTA and to draw focus
+  - Subtle – General purpose
+  - Outline – Used to suggest secondary action.
+- Action linking:
+  - Add events
+  - Add counter chip
+
+:::
 :::GridUnit
 ::::BaseImage
 ---
-src: /work/pepperi-page-builder/builder/Gallery-Editor.webp
-width: 928
-height: 1145
-alt: Banner editors, Design and Content tabs
-desc: Banner editors, <strong>Design</strong> and <strong>Content</strong> tabs
+src: /work/pepperi-page-builder/builder/Buttons.webp
+width: 1440
+height: 900
+alt: Buttons
+desc: Buttons
 borderRadius: var(--border-radius-xs)
 ---
 ::::
 :::
 ::
 
-1. Buttons
-   - Style customization
-   - Action linking
+#### Charts
 
-2. Charts
-   - Data input and visualization options
-   - Chart type selection
+::GridBlockTwo{frOne="2fr" frTwo="3fr" gap="var(--space-m)"}
+:::GridUnit 
 
-3. Chat
-   - Chat interface customization
-   - Integration with existing systems
+- Data input and visualization options
+- Chart type selection
 
-4. Filter block
-   - Product filtering options
-   - User-friendly interface
+:::
+:::GridUnit
+::::BaseImage
+---
+src: /work/pepperi-page-builder/builder/Charts.webp
+width: 1440
+height: 900
+alt: Charts
+desc: Charts
+borderRadius: var(--border-radius-xs)
+---
+::::
+:::
+::
 
-5. Rich text
-   - Text formatting tools
-   - Media embedding options
+#### Chat
+
+::GridBlockTwo{frOne="2fr" frTwo="3fr" gap="var(--space-m)"}
+:::GridUnit 
+
+- Chat interface customization
+- Integration with existing systems
+
+:::
+:::GridUnit
+::::BaseImage
+---
+src: /work/pepperi-page-builder/builder/Chat.webp
+width: 1440
+height: 900
+alt: Chat
+desc: Chat
+borderRadius: var(--border-radius-xs)
+---
+::::
+:::
+::
+
+#### Filter
+
+::GridBlockTwo{frOne="2fr" frTwo="3fr" gap="var(--space-m)"}
+:::GridUnit 
+
+- Product filtering options
+- User-friendly interface
+
+:::
+:::GridUnit
+::::BaseImage
+---
+src: /work/pepperi-page-builder/builder/Filter.webp
+width: 1440
+height: 900
+alt: Filter
+desc: Filter
+borderRadius: var(--border-radius-xs)
+---
+::::
+:::
+::
+
+#### Rich text
+
+::GridBlockTwo{frOne="2fr" frTwo="3fr" gap="var(--space-m)"}
+:::GridUnit 
+
+- Text formatting tools
+- Media embedding options
+
+:::
+:::GridUnit
+::::BaseImage
+---
+src: /work/pepperi-page-builder/builder/RichText.webp
+width: 1440
+height: 900
+alt: Rich text
+desc: Rich text
+borderRadius: var(--border-radius-xs)
+---
+::::
+:::
+::
 
 These high-fidelity designs represent the culmination of our research, user testing, and iterative design process. They showcase the intuitive and powerful features of the Page Builder, enabling users to create sophisticated, custom pages with ease.
 
