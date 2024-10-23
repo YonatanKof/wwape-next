@@ -377,6 +377,8 @@ alt: Page Sections high-fidelity design
 
 > Essential for showcasing promotions and new products, allowing B2B clients to create engaging, time-sensitive content for their buyers.
 
+##### Slideshow features
+
  - Edit slide content like titles and text, image, buttons size and type
  - Set slide design like overlay & text color, image & text position & size 
  - Control slideshow design attributes like height, transition, controllers 
@@ -424,6 +426,10 @@ marginBlockStart: var(--space-xs)
 ::
 
 #### Gallery block
+
+Optimal for showcasing product or brands. With customizable layouts and design features, this helps B2B sellers display their catalog in visually appealing grids and collections.
+
+##### Gallery features
 - Grid layout and design options
 - Edit content and logic
 
@@ -469,8 +475,12 @@ marginBlockStart: var(--space-xs)
 ::
 
 #### Banner block
-- Custom imagery and text overlay
-- Call-to-action button integration
+
+Used for highlighting key messages, seasonal offers, and category promotions, the Banner blocks are is an optimal way for B2B sellers to communicate with buyers.
+
+##### Banner features
+- Custom icons and text types
+- Call-to-action logic integration
 
 ::GridBlockTwo{frOne="4fr" frTwo="3fr" gap="var(--space-m)"}
 :::GridUnit
@@ -512,12 +522,12 @@ marginBlockStart: var(--space-xs)
 :::
 ::
 
-#### Buttons Block
+#### Buttons block
+Drive buyer action with clear calls-to-action, linking to catalogs, promotions, external sources or specific product categories, essential for B2B navigation and conversion.
 
-::GridBlockTwo{frOne="2fr" frTwo="3fr" gap="var(--space-m)"}
-:::GridUnit 
+##### Buttons features 
 
-- Style customization: alignment, size and positioning 
+- Style customization: alignment, size, colors, icons and positioning 
 - Set button type:
   - Solid – For CTA and to draw focus
   - Subtle – General purpose
@@ -526,112 +536,120 @@ marginBlockStart: var(--space-xs)
   - Add events
   - Add counter chip
 
-:::
-:::GridUnit
+::GridBlockTwo{frOne="4fr" frTwo="3fr" gap="var(--space-m)"}
+:::GridUnit 
 ::::BaseImage
 ---
 src: /work/pepperi-page-builder/builder/Buttons.webp
 width: 1440
 height: 900
-alt: Buttons
-desc: Buttons
+alt: The Buttons block in use
+desc: The Buttons block in use
 borderRadius: var(--border-radius-xs)
 ---
 ::::
-:::
-::
+::::BaseImage
+---
+src: /work/pepperi-page-builder/builder/Buttons-Combination.webp
+width: 1440
+height: 804
+alt: Different combinations possible with the Buttons block
+desc: Different combinations possible with the Buttons block
+borderRadius: var(--border-radius-xs)
+---
+::::
 
-#### Chart Block
-
-::GridBlockTwo{frOne="2fr" frTwo="3fr" gap="var(--space-m)"}
-:::GridUnit 
-
-- Data input and visualization options
-- Chart type selection
 
 :::
 :::GridUnit
 ::::BaseImage
 ---
-src: /work/pepperi-page-builder/builder/Charts.webp
-width: 1440
-height: 900
-alt: Charts
-desc: Charts
+src: /work/pepperi-page-builder/builder/Buttons-Editor.webp
+width: 928
+height: 1320
+alt: The Buttons block editors
+desc: The Buttons block editors
 borderRadius: var(--border-radius-xs)
 ---
 ::::
 :::
 ::
 
-#### Chat Block
+#### Additional blocks
 
-::GridBlockTwo{frOne="2fr" frTwo="3fr" gap="var(--space-m)"}
+::GridBlockTwo{gap="var(--space-m)"}
 :::GridUnit 
 
-- Chat interface customization
-- Integration with existing systems
-
-:::
-:::GridUnit
-::::BaseImage
----
-src: /work/pepperi-page-builder/builder/Chat.webp
-width: 1440
-height: 900
-alt: Chat
-desc: Chat
-borderRadius: var(--border-radius-xs)
----
-::::
-:::
-::
-
-#### Filters Block
-
-::GridBlockTwo{frOne="2fr" frTwo="3fr" gap="var(--space-m)"}
-:::GridUnit 
-
-- Product filtering options
-- User-friendly interface
-
-:::
-:::GridUnit
-::::BaseImage
----
-src: /work/pepperi-page-builder/builder/Filter.webp
-width: 1440
-height: 900
-alt: Filter
-desc: Filter
-borderRadius: var(--border-radius-xs)
----
-::::
-:::
-::
-
-#### Rich Text Block
-
-::GridBlockTwo{frOne="2fr" frTwo="3fr" gap="var(--space-m)"}
-:::GridUnit 
+##### Rich text block
+Ideal for detailed product descriptions, announcements, and unstructured content, the Rich text block allows clients to communicates crucial B2B information.
 
 - Text formatting tools
 - Media embedding options
 
-:::
-:::GridUnit
 ::::BaseImage
 ---
 src: /work/pepperi-page-builder/builder/RichText.webp
 width: 1440
 height: 900
-alt: Rich text
-desc: Rich text
+alt: Rich text block in use
+desc: Rich text block in use
+borderRadius: var(--border-radius-xs)
+---
+::::
+
+##### Chart block
+A tool to help buyers make data-driven purchasing decisions by visualizing sales data, order history, and inventory trends. 
+
+- Using data-viz from Pepperi Dashboards
+- Chart type selection
+
+::::BaseImage
+---
+src: /work/pepperi-page-builder/builder/Charts.webp
+width: 1440
+height: 900
+alt: Charts blocks in use
+desc: Charts blocks in use
+borderRadius: var(--border-radius-xs)
+---
+::::
+:::
+:::GridUnit
+##### Filters block
+Streamlines product discovery with quick-access filters, allowing buyers to jump directly to relevant categories, promotions, or frequently ordered items from the homepage.
+
+- Product filtering options
+- User-friendly interface
+
+::::BaseImage
+---
+src: /work/pepperi-page-builder/builder/Filter.webp
+width: 1440
+height: 900
+alt: Filter block in use
+desc: Filter block in use
+borderRadius: var(--border-radius-xs)
+---
+::::
+##### Live chat integration block
+Enables direct communication between buyers and Pepperi clients, providing real-time support for order inquiries and product questions.
+
+- Chat interface customization
+- Integration with existing systems
+
+::::BaseImage
+---
+src: /work/pepperi-page-builder/builder/Chat.webp
+width: 1440
+height: 900
+alt: Chat block in use
+desc: Chat block in use
 borderRadius: var(--border-radius-xs)
 ---
 ::::
 :::
 ::
+
 
 These high-fidelity designs represent the culmination of our research, user testing, and iterative design process. They showcase the intuitive and powerful features of the Page Builder, enabling users to create sophisticated, custom pages with ease.
 
