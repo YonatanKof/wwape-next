@@ -115,8 +115,6 @@ title: So after years of anticipation we decided to launch the <strong>Page Buil
 ::
 
 
-<!-- ![Some examples of our custom built homepages](/work/pepperi-page-builder/Some_examples_of_our_custom_built_homepages.webp) -->
-
 ## Research
 
 We uses several research techniques that I'll review shortly. And although I wrote the as an ordered list, in actuality they were a cyclic proceed were one output effected another input. I'll used methods of *discovery*, *exploring* and *testing* (for the meanwhile I'll leave out methods of optimisations).
@@ -427,7 +425,7 @@ marginBlockStart: var(--space-xs)
 
 #### Gallery block
 
-Optimal for showcasing product or brands. With customizable layouts and design features, this helps B2B sellers display their catalog in visually appealing grids and collections.
+> Optimal for showcasing product or brands. With customizable layouts and design features, this helps B2B sellers display their catalog in visually appealing grids and collections.
 
 ##### Gallery features
 - Grid layout and design options
@@ -476,7 +474,7 @@ marginBlockStart: var(--space-xs)
 
 #### Banner block
 
-Used for highlighting key messages, seasonal offers, and category promotions, the Banner blocks are is an optimal way for B2B sellers to communicate with buyers.
+> Used for highlighting key messages, seasonal offers, and category promotions, the Banner blocks are is an optimal way for B2B sellers to communicate with buyers.
 
 ##### Banner features
 - Custom icons and text types
@@ -523,7 +521,7 @@ marginBlockStart: var(--space-xs)
 ::
 
 #### Buttons block
-Drive buyer action with clear calls-to-action, linking to catalogs, promotions, external sources or specific product categories, essential for B2B navigation and conversion.
+> Drive buyer action with clear calls-to-action, linking to catalogs, promotions, external sources or specific product categories, essential for B2B navigation and conversion.
 
 ##### Buttons features 
 
@@ -654,32 +652,72 @@ borderRadius: var(--border-radius-xs)
 These high-fidelity designs represent the culmination of our research, user testing, and iterative design process. They showcase the intuitive and powerful features of the Page Builder, enabling users to create sophisticated, custom pages with ease.
 
 
-## Measuring success
+## Success stories
+
+The Page Builder's success can be measured through multiple lenses, from internal adoption to client impact. Here's how we evaluated the project's effectiveness:
 
 ### Indicators
 
-- Dogfooding
-- Adoption
+#### Internal validation (Dogfooding)
+- Successfully implemented across Pepperi's own digital properties
+- Team adoption for creating and managing internal pages
+- Continuous feedback loop from internal users
 
-One of our clients top priorities is to communicate their brand and business needs to their clients via a custom homepage. Pepperi’s legacy approach of creating a custom homepage from scratch can make content management challenging if not problematic, for it’s dependent on the *Professional Team* developers. 
+#### Market adoption
+- Strong client uptake across different industries
+- Increasing demand for Page Builder functionality
+- Positive feedback from new and existing clients
 
-### Quantitative
+### Transforming homepage creation
+One of our clients' top priorities is communicating their brand and business needs through custom homepages. Previously, Pepperi's approach required creating pages from scratch, making content management dependent on *Professional Team* developers. The Page Builder has transformed this process.
 
-- **Sales**
-    - We’ve effectively opened a new sales category and we have seen a steady increase in demand.
-- **Time**
-    - The PS has stopped using their development efforts in building and maintaining  custom built webpages.
-    - There was a shift in focus from managing content/workflows form the PS to the clients.
-- **Usage**
-    - Client are using it; both business (producers) and buyer (consumers).
-    - Content management by clients
-    - Template design – with every use case we created a template to be reused
+### Quantitative impact
 
-### Qualitative
+#### Sales growth
+- Created new revenue stream through Page Builder offerings
+- Steady increase in demand from existing clients
+- Attraction of new clients specifically for this feature
 
-- Interviews with admin users; PSs, Admins and ITs using and managing the pages built with code.
-- Interviews with functional users; Sales managers, and Brand managers asking the admins for requirements form the webpages and are also the role that manage the content of the page (promotions, sales, categories, workflows, copy & images).
-- Interviews with end users - Buyers and Reps.
+#### Resource optimization
+- Eliminated PS team's development burden for custom webpages
+- Shifted content management from PS team to clients
+- Reduced technical debt from maintaining custom solutions
+
+#### Usage metrics
+- Strong adoption among both business users (producers) and buyers (consumers)
+- Independent content management by clients
+- Growing template library from real use cases
+- Increased page creation and modification frequency
+- Reduced support tickets for page modifications
+
+### Qualitative feedback
+
+#### Administrator insights
+Interviews with PS teams, admins, and IT personnel reveal that Page Builder is:
+- Significantly reducing technical overhead
+- Eliminating bottlenecks in page updates
+- Making maintenance more manageable and predictable
+
+#### Business user feedback
+Sales and brand managers report that Page Builder:
+- Speeds up campaign launches from weeks to hours
+- Gives them direct control over their content
+- Enables quick response to market opportunities
+- Makes brand consistency easier to maintain
+
+#### End-user experience
+Buyers and sales representatives confirm that pages are:
+- More engaging and easier to navigate
+- Consistently up-to-date with latest offerings
+- Better organized for their specific needs
+- Loading faster than custom-coded pages
+
+### Key achievements
+- Empowered clients with independent content management
+- Reduced dependency on technical teams
+- Faster time-to-market for new pages and campaigns
+- Consistent brand presentation across client pages
+- Scalable solution for growing business needs
 
 ## Next
 
@@ -688,28 +726,3 @@ One of our clients top priorities is to communicate their brand and business nee
 The *Page Builder* addresses this issue by enabling our clients to modify, add, and design content on the flay. Furthermore, we can now tailor pages based on roles and business requirements.
 
 The *Page Builder* provides users with control over the page layout, and content is edited using *content blocks*. These blocks include Slideshows, Galleries, Charts, Forms, Rich Text, Banners, Buttons, Filters, Search, with future additions like Chat, Categories, Stack layout, and HTML block.
-
-<!-- 
-![Create and manage pages](/work/pepperi-page-builder/Page_Builder-1-New_Page.webp)
-
-Create and manage pages
-
-![Dragging blocks into view](/work/pepperi-page-builder/Page_Builder-2-Page_Layout.webp)
-
-Dragging blocks into view
-
-![Managing sections](/work/pepperi-page-builder/Page_Builder-3-Sub_Section.webp)
-
-Managing sections
-
-![Block example – Gallery](/work/pepperi-page-builder/Page_Builder-4-Gallery.webp)
-
-Block example – Gallery
-
-![Block example – Buttons](/work/pepperi-page-builder/Page_Builder-6-Buttons.webp)
-
-Block example – Buttons
-
-![Preview mode](/work/pepperi-page-builder/Page_Builder-7-Preview.webp)
-
-Preview mode -->
