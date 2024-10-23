@@ -98,5 +98,7 @@ em {
 	margin-block-end: 1.5em;
 	color: var(--color-sys-slight);
 	font-size: var(--step--1);
+	line-height: 1.35;
+	font-variation-settings: "wght" 300, "ital" 0.75, "SPAC" 10;
 }
 </style>
