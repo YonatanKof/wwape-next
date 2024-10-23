@@ -22,6 +22,7 @@ With *Pepperi Page Builder*, B2B clients can easily build, edit, and design web 
 
 
 ## Project motivation
+
 Pepperi clients need custom homepages for their Buyers (end-users) to showcase:
 - Promotions and sales
 - Credit lines
@@ -60,11 +61,8 @@ desc: Pages Manager flow; From empty state to the templates for the populated li
 
 ## The problem
 
-::GridBlockTwo{frOne="2fr" frTwo="3fr" gap="var(--space-m)"}
-:::GridUnit
 Though custom web pages can offer our clients maximum flexibility in design and functionality, they had multiple issues when it comes to business goals and product.
-:::
-:::GridUnit
+
 - The pages aren't consistent in design
 - Not aligned with *Pepperi DS*
 - Waste of *Professional Services* team time
@@ -75,8 +73,6 @@ Though custom web pages can offer our clients maximum flexibility in design and 
   - Version updates
 - Can't be built or maintained by the clients
 - Can be used only by FS team causing dependency and scalability issues
-:::
-::
 
 ## Validating Assumptions
 
@@ -109,6 +105,7 @@ desc: Some custom built homepages – Great for our clients, bad for our busines
 :::
 ::
 
+
 These findings support our decision to develop a custom page builder, empowering clients to easily create desired features.
 
 ::QuoteBig
@@ -125,14 +122,33 @@ title: So after years of anticipation we decided to launch the <strong>Page Buil
 We uses several research techniques that I'll review shortly. And although I wrote the as an ordered list, in actuality they were a cyclic proceed were one output effected another input. I'll used methods of *discovery*, *exploring* and *testing* (for the meanwhile I'll leave out methods of optimisations).
 
 ### 1. Field studies
-This is great in order to understand the current state.
+
+Before diving into new solutions, we examined existing implementations in the field. This hands-on approach provided insights from real-world usage of custom homepages among our clients, offering authentic examples of how businesses were already solving their needs.
+
+::GridBlockTwo{frOne="3fr" frTwo="4fr" gap="var(--space-l)"}
+:::GridUnit
+#### Premise
+
+Field studies are great in order to understand the current state.
 As mentioned, we had a few clients with custom homepages. Reviewing their pages, we can easily see the usage patterns and users' needs.
 This is nice for two reasons: 
+:::
+:::GridUnit
+#### Takeaways
+
 1. The custom homepage pages underwent a proper process where a PRD and a UX flow were carried out following inquiries with the client.
 2. These pages were mature with sufficient time to grow and show their true usage and intent.
 So, we came to this initiative with a lot of information from the get-go that easily helped us with creating the initial requirements.
+:::
+::
 
 ### 2. Users & stakeholder interviews
+
+Understanding diverse perspectives was crucial for this project's success. We needed insights from those who would build, sell, customize, and ultimately use the Page Builder. This led us to create an interview process that brought together key stakeholders from across our ecosystem.
+
+::GridBlockTwo{frOne="3fr" frTwo="4fr" gap="var(--space-l)"}
+:::GridUnit
+#### Undertaking
 We formed a diverse *steering committee* including:
 - Development team
 - Product team
@@ -140,27 +156,34 @@ We formed a diverse *steering committee* including:
 - Pre-sales
 - Partners
 - Selected clients
+:::
+:::GridUnit
 
-Research process:
+#### Research process
 1. Presented comparative research findings [(↓)](#comparative-research){target="_self" .sup}
-2. Tested popular page builders:
-   - Wix
-   - Squarespace
-   - Elementor
-   - Tilda
+2. Tested popular page builders services like *Wix*, *Squarespace*, *Elementor* and *Tilda*.
 
-Evaluation methods:
+#### Evaluation methods
 1. Observed *steering committee* reactions
 2. Conducted discussions on likes, dislikes, and rationales
+:::
+::
 
 This approach provided valuable insights into user preferences and potential feature priorities.
 
 ### 3. Card sorting
+
+After gathering data from field studies and interviews, we needed to organize this information effectively. Card sorting is an ideal method to structure our findings and validate our understanding with stakeholders. This approach helped bridge the gap between raw data and actionable insights.
+
 ::GridBlockTwo{frOne="3fr" frTwo="4fr" gap="var(--space-l)"}
 :::GridUnit
+#### Process
+
 In order to manage the information, we conducted a few card sorting sessions with our *steering committee*. This cost-effective research method helps us conveniently form the data into an organized and manageable structure.
 :::
 :::GridUnit
+#### Takeaways
+
 Card sorting helped us by:
 1. Understanding mental models and organizing entities.
 2. Structuring information and navigation architecture.
@@ -181,8 +204,13 @@ Show this page [Research](https://www.notion.so/Research-664a427a29f6458081434a9
 
 ### 4. Competitive analysis
 
+Page builders are not new to the market - many successful products already exist in this space. By analyzing these solutions, we aimed to learn from established players while identifying opportunities to better serve our specific B2B audience's needs.
+
 ::GridBlockTwo
 :::GridUnit
+
+#### Process
+
 In my UX research process, I always make sure to conduct a UX competitive analysis. I find it's an opportunity for me to identify what works well, learn from others' mistakes, and spot potential gaps that could give our product a competitive edge.
 
 One of the aspects I enjoy, is how it enhances my understanding of our users. By examining our competitors' products from our customers' perspective, I'm able to develop a deeper sense of empathy. This helps me uncover what truly our users and pinpoint their pain points more accurately.
@@ -190,7 +218,7 @@ One of the aspects I enjoy, is how it enhances my understanding of our users. By
 :::
 :::GridUnit
 
-#### Takeaways:
+#### Takeaways
 
 - Understand ways in which competitors in our problem space solved similar issues. 
 - Understand possible solution 
@@ -202,8 +230,13 @@ One of the aspects I enjoy, is how it enhances my understanding of our users. By
 
 
 ### 5. User testing
+
+Having gathered insights from research, we moved to validate our design concepts through hands-on testing. We adopted an iterative approach, starting with basic wireframes and progressively moving to more refined designs. This method enabled us to validate assumptions and gather feedback at every stage of development.
+
 ::GridBlockTwo
 :::GridUnit
+#### Process
+
 Our user testing process followed a progressive approach to refine our design:
 
 1. Low-fidelity mockups:
@@ -224,15 +257,24 @@ Our user testing process followed a progressive approach to refine our design:
    - Ensured alignment with user needs and expectations
 :::
 :::GridUnit
+#### Takeaways
+
 This iterative process allowed us to:
 - Validate design concepts early
 - Incorporate stakeholder feedback efficiently
 - Identify and address usability issues
 - Ensure the final design met user requirements
 
-*[High-fidelity prototypes]{style="color: var(--color-brand-slight);"}*
-::lazy-img{src="/work/pepperi-page-builder/user-testing.webp" thumbhash="+QcKBIJmd4iAiIeAh3E2oJP19w" width="750" height="1200" alt="" desc=""}
-::
+::::lazy-img
+---
+src: /work/pepperi-page-builder/user-testing.webp
+thumbhash: +QcKBIJmd4iAiIeAh3E2oJP19w
+width: 750
+height: 1200
+alt:
+desc: High-fidelity prototypes in use
+---
+::::
 :::
 ::
 
@@ -240,12 +282,12 @@ This iterative process allowed us to:
 
 Our high-fidelity designs provide a comprehensive overview of the Page Builder's core functionalities and user interface. Below, we showcase key components of both page-level elements and specific page blocks.
 
-
 ### Page-level Elements
 
+#### Pages Manager
+A central hub to overview for pages: create from scratch or from a template, edit, and delete.
 ::GridBlockTwo{frOne="2fr" frTwo="3fr" gap="var(--space-m)"}
 :::GridUnit 
-#### Pages Manager
 - Overview of all pages
 - Create, edit, and delete pages
 :::
@@ -262,9 +304,11 @@ alt: Pages Manager high-fidelity design
 :::
 ::
 
+#### Page Layout
+Customize the page structure with a drag-and-drop interface and set design with, sections, sub-section, and design properties you can edit in the page editor.
+
 ::GridBlockTwo{frOne="2fr" frTwo="3fr" gap="var(--space-m)"}
 :::GridUnit 
-#### Page Layout
 - Layout structure and customization options
 - Drag-and-drop sections and block components 
 - Set padding, gaps and page width
@@ -283,9 +327,10 @@ alt: Page Layout high-fidelity design
 :::
 ::
 
+#### Hide Sections & Page Preview 
+Sometimes, what works in a desktop view doesn't look as sharp on a mobile device or the other way around. The Hide Sections & Page Preview will let you remedy and examine it in no-time. 
 ::GridBlockTwo{frOne="2fr" frTwo="3fr" gap="var(--space-m)"}
 :::GridUnit 
-#### Hide Sections & Page Preview 
 - Real-time preview of page changes
 - For all responsive views
 - Hide sections per view for grater layout control 
@@ -303,9 +348,11 @@ alt: Hide Sections & Page Preview high-fidelity design
 :::
 ::
 
+#### Page Sections
+FVor fine grain design control the page sections enables customizable layouts with adjustable sub-sections, spacing, and responsive settings.
+
 ::GridBlockTwo{frOne="2fr" frTwo="3fr" gap="var(--space-m)"}
 :::GridUnit 
-#### Page Sections
 - Section types and arrangements
 - Set sub-sections and spilt types 
 - Edit gaps and padding
@@ -326,18 +373,18 @@ alt: Page Sections high-fidelity design
 
 ### Page Blocks
 
-#### Slideshow
+#### Slideshow block
 
-::GridBlockTwo{gap="var(--space-m)"}
-:::GridUnit 
+> Essential for showcasing promotions and new products, allowing B2B clients to create engaging, time-sensitive content for their buyers.
 
- - Set Slide content like titles and text, image, buttons size and type
- - Set Slide design like overlay & text color, image & text position & size 
- - Set Slideshow design attributes like height, transition, controllers 
+ - Edit slide content like titles and text, image, buttons size and type
+ - Set slide design like overlay & text color, image & text position & size 
+ - Control slideshow design attributes like height, transition, controllers 
  - Set logic and flows by role
 
----
-
+::GridBlockTwo{frOne="4fr" frTwo="3fr" gap="var(--space-m)"}
+:::GridUnit 
+##### Slideshow in use
 ::::BaseImage
 ---
 src: /work/pepperi-page-builder/builder/Slideshow.webp
@@ -345,12 +392,22 @@ width: 1366
 height: 768
 alt: 
 desc: Slideshow in Page Builder
+marginBlockStart: var(--space-xs)
 ---
 ::::
 
+::::BaseImage
+---
+src: /work/pepperi-page-builder/builder/Slideshow-ArrowsControllersOrientations.webp
+width: 1600
+height: 931
+alt: 
+desc: Slideshow with different Arrows & Controllers styles, Orientations use of Overlays, gradients and images.
+---
+::::
 :::
-
-:::GridUnit
+:::GridUnit 
+##### Slideshow editors
 
 ::::BaseImage
 ---
@@ -360,35 +417,19 @@ height: 1991
 alt: 
 desc: Slideshow editors, <strong>Design</strong> and <strong>Content</strong> tabs
 borderRadius: var(--border-radius-xs)
+marginBlockStart: var(--space-xs)
 ---
 ::::
 :::
 ::
 
-#### Gallery
-
-::GridBlockTwo{frOne="2fr" frTwo="3fr" gap="var(--space-m)"}
-:::GridUnit 
+#### Gallery block
 - Grid layout and design options
 - Edit content and logic
 
----
-
-::::BaseImage
----
-src: /work/pepperi-page-builder/builder/Gallery-Editor.webp
-width: 928
-height: 1145
-alt: 
-desc: Gallery editors, <strong>Design</strong> and <strong>Content</strong> tabs
-borderRadius: var(--border-radius-xs)
----
-::::
-
-:::
-
+::GridBlockTwo{frOne="4fr" frTwo="3fr" gap="var(--space-m)"}
 :::GridUnit
-
+##### Gallery in use
 ::::BaseImage
 ---
 src: /work/pepperi-page-builder/builder/Gallery.webp
@@ -396,6 +437,8 @@ width: 1440
 height: 900
 alt: Galley block in use
 desc: Galley block in use
+marginBlockStart: var(--space-xs)
+
 ---
 ::::
 ::::BaseImage
@@ -407,33 +450,31 @@ alt: The different combinations possible for a Galley item
 desc: The different combinations possible for a Galley item
 ---
 ::::
-
 :::
-::
-
-#### Banners
-
-::GridBlockTwo{frOne="2fr" frTwo="3fr" gap="var(--space-m)"}
 :::GridUnit 
-
-- Custom imagery and text overlay
-- Call-to-action button integration
-
----
-
+##### Gallery editors
 ::::BaseImage
 ---
 src: /work/pepperi-page-builder/builder/Gallery-Editor.webp
 width: 928
 height: 1145
-alt: Banner editors, Design and Content tabs
-desc: Banner editors, <strong>Design</strong> and <strong>Content</strong> tabs
+alt: 
+desc: Gallery editors, <strong>Design</strong> and <strong>Content</strong> tabs
 borderRadius: var(--border-radius-xs)
+marginBlockStart: var(--space-xs)
 ---
 ::::
 
 :::
+::
+
+#### Banner block
+- Custom imagery and text overlay
+- Call-to-action button integration
+
+::GridBlockTwo{frOne="4fr" frTwo="3fr" gap="var(--space-m)"}
 :::GridUnit
+##### Banner in use
 ::::BaseImage
 ---
 src: /work/pepperi-page-builder/builder/Banner.webp
@@ -441,6 +482,7 @@ width: 1287
 height: 1048
 alt: Galley block in use
 desc: Galley block in use
+marginBlockStart: var(--space-xs)
 ---
 ::::
 ::::BaseImage
@@ -453,9 +495,24 @@ desc: Different combinations of a Banner item
 ---
 ::::
 :::
+:::GridUnit 
+##### Banner editors
+::::BaseImage
+---
+src: /work/pepperi-page-builder/builder/Gallery-Editor.webp
+width: 928
+height: 1145
+alt: Banner editors, Design and Content tabs
+desc: Banner editors, <strong>Design</strong> and <strong>Content</strong> tabs
+borderRadius: var(--border-radius-xs)
+marginBlockStart: var(--space-xs)
+---
+::::
+
+:::
 ::
 
-#### Buttons
+#### Buttons Block
 
 ::GridBlockTwo{frOne="2fr" frTwo="3fr" gap="var(--space-m)"}
 :::GridUnit 
@@ -484,7 +541,7 @@ borderRadius: var(--border-radius-xs)
 :::
 ::
 
-#### Charts
+#### Chart Block
 
 ::GridBlockTwo{frOne="2fr" frTwo="3fr" gap="var(--space-m)"}
 :::GridUnit 
@@ -507,7 +564,7 @@ borderRadius: var(--border-radius-xs)
 :::
 ::
 
-#### Chat
+#### Chat Block
 
 ::GridBlockTwo{frOne="2fr" frTwo="3fr" gap="var(--space-m)"}
 :::GridUnit 
@@ -530,7 +587,7 @@ borderRadius: var(--border-radius-xs)
 :::
 ::
 
-#### Filter
+#### Filters Block
 
 ::GridBlockTwo{frOne="2fr" frTwo="3fr" gap="var(--space-m)"}
 :::GridUnit 
@@ -553,7 +610,7 @@ borderRadius: var(--border-radius-xs)
 :::
 ::
 
-#### Rich text
+#### Rich Text Block
 
 ::GridBlockTwo{frOne="2fr" frTwo="3fr" gap="var(--space-m)"}
 :::GridUnit 
@@ -586,6 +643,8 @@ These high-fidelity designs represent the culmination of our research, user test
 - Dogfooding
 - Adoption
 
+One of our clients top priorities is to communicate their brand and business needs to their clients via a custom homepage. Pepperi’s legacy approach of creating a custom homepage from scratch can make content management challenging if not problematic, for it’s dependent on the *Professional Team* developers. 
+
 ### Quantitative
 
 - **Sales**
@@ -596,7 +655,7 @@ These high-fidelity designs represent the culmination of our research, user test
 - **Usage**
     - Client are using it; both business (producers) and buyer (consumers).
     - Content management by clients
-    - Template design – with every use case we created a templet to be reused
+    - Template design – with every use case we created a template to be reused
 
 ### Qualitative
 
@@ -611,6 +670,7 @@ One of our clients top priorities is to communicate their brand and business nee
 The *Page Builder* addresses this issue by enabling our clients to modify, add, and design content on the flay. Furthermore, we can now tailor pages based on roles and business requirements.
 
 The *Page Builder* provides users with control over the page layout, and content is edited using *content blocks*. These blocks include Slideshows, Galleries, Charts, Forms, Rich Text, Banners, Buttons, Filters, Search, with future additions like Chat, Categories, Stack layout, and HTML block.
+
 <!-- 
 ![Create and manage pages](/work/pepperi-page-builder/Page_Builder-1-New_Page.webp)
 
