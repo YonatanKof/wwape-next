@@ -32,6 +32,23 @@ const props = defineProps({
 		type: String,
 		default: 'var(--border-radius-xs)',
 	},
+	marginBlockStart: {
+		type: String,
+		default: undefined,
+	},
+	marginBlockEnd: {
+		type: String,
+		default: undefined,
+	},
+	marginInlineStart: {
+		type: String,
+		default: undefined,
+	},
+	marginInlineEnd: {
+		type: String,
+		default: undefined,
+	},
+
 });
 
 const { open, close } = useModal({
@@ -67,6 +84,10 @@ const { open, close } = useModal({
 img {
 	border-radius: v-bind(borderRadius);
 	filter: drop-shadow(0 var(--space-2xs) var(--space-2xs) var(--color-black-dis));
+	margin-inline-start: v-bind(marginInlineStart);
+	margin-inline-end: v-bind(marginInlineEnd);
+	margin-block-start: v-bind(marginBlockStart);
+	margin-block-end: v-bind(marginBlockEnd);
 }
 span {
 	@media (width <= $display-width-xs) {
