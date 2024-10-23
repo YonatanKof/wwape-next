@@ -6,7 +6,7 @@ const cleanPath = path.replace(/\/+$/, '');
 const { data, error } = await useAsyncData(cleanPath, async () => {
 	// Remove a trailing slash in case the browser adds it, it might break the routing
 	// fetch document where the document path matches with the current route
-	let article = queryContent('/design').where({ _path: cleanPath }).findOne();
+	let article = queryContent('/work').where({ _path: cleanPath }).findOne();
 	return {
 		article: await article,
 	};
