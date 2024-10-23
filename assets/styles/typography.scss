@@ -86,20 +86,20 @@ li::marker {
 blockquote {
 	text-wrap: balance;
 	line-height: 1.3;
-	p {
-		line-height: 1.5;
-		margin-block: var(--space-3xs) !important;
-	}
 	margin-block: var(--space-xs);
 	display: block;
 	padding-inline-start: var(--space-s);
 	position: relative;
+	p {
+		color: var(--color-sys-slight);
+		letter-spacing: 0.05em;
+	}
 	&::before {
 		content: '';
 		display: inline-block;
 		width: var(--space-3xs);
 		height: 100%;
-		background-color: var(--color-sys-dim);
+		background-color: var(--color-brand-slight);
 		position: absolute;
 		inset-inline-start: calc(calc(var(--space-3xs) * -1) + var(--space-3xs));
 		border-radius: var(--border-radius-xs);
