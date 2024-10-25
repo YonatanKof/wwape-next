@@ -198,8 +198,6 @@ desc: Card sorting session output
 ---
 ::
 
-Show this page [Research](https://www.notion.so/Research-664a427a29f6458081434a92cbc4ffc7?pvs=21) and this page [Page & Layout Builders](https://www.notion.so/Page-Layout-Builders-b4eb3bc4012c43f29a3f4101560c0c84?pvs=21) 
-
 ### 4. Competitive analysis
 
 Page builders are not new to the market - many successful products already exist in this space. By analyzing these solutions, we aimed to learn from established players while identifying opportunities to better serve our specific B2B audience's needs.
@@ -223,6 +221,34 @@ One of the aspects I enjoy, is how it enhances my understanding of our users. By
 - Expand our product vocabulary.
 - Identify different product entities like target audience, what are the core features and unique selling points, types of **responsive** design support, what are the content blocks, different approaches to he user interface, customization level, pricing tiers, value for money, and popularity of each product.
 
+:::
+::
+
+#### Additional info
+In my competitive analysis research I've constructed these two documents, be sure to check them out.
+
+::GridBlockTwo
+:::GridUnit
+::::PrettyLink
+---
+title: 'Research: Competitive analysis'
+desc: Visit the Notion page by clicking here 
+url: https://www.notion.so/Research-664a427a29f6458081434a92cbc4ffc7
+icon: 🕵️
+
+---
+::::
+:::
+
+:::GridUnit
+::::PrettyLink
+---
+title: 'Research: Other layouts + Libraries'
+desc: Visit the Notion page by clicking here
+url: https://www.notion.so/Page-Layout-Builders-b4eb3bc4012c43f29a3f4101560c0c84
+icon: 📐
+---
+::::
 :::
 ::
 
