@@ -29,7 +29,7 @@ defineProps({
 		<span v-if="icon">
 			<p>{{ icon }}</p>
 		</span>
-		<span :title="title">
+		<span :title="`Visit the '${title}' page`">
 			<h6 v-html="title"></h6>
 			<p v-if="desc" v-html="desc"></p>
 		</span>
