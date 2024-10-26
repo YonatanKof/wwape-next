@@ -8,7 +8,7 @@ cover_image_height: '395'
 cover_image_thumbhash: 'MAgOBYD4dmh3l2h/k4eIdlCjNFAJ'
 social_image: '/work/pepperi-page-builder/pepperi-page-builder-social.jpg'
 image_alt: ''
-description: 'A design tool for non-designers to manage, build, and edit custom webpages with a no-code interface'
+description: 'A no-code web-page builder for occasional non-designers to manage, design, and edit custom webpages'
 tags: ['Creative']
 ---
 
@@ -158,7 +158,7 @@ We formed a diverse *steering committee* including:
 :::GridUnit
 
 #### Research process
-1. Presented comparative research findings [(↓)](#comparative-research){target="_self" .sup}
+1. Presented comparative research findings [(↓)](#_4-competitive-analysis){target="_self" .sup}
 2. Tested popular page builders services like *Wix*, *Squarespace*, *Elementor* and *Tilda*.
 
 #### Evaluation methods
@@ -191,7 +191,7 @@ Card sorting helped us by:
 ::
 ::lazy-img
 ---
-src: /work/pepperi-page-builder/card-sort.webp
+src: /work/pepperi-page-builder/PageBuilder-UX-Card-sorting.webp
 thumbhash: +AcGFIKqgqpthoZvqqavNz0FSA
 alt: Card sorting session output
 desc: Card sorting session output
@@ -224,8 +224,8 @@ One of the aspects I enjoy, is how it enhances my understanding of our users. By
 :::
 ::
 
-#### Additional info
-In my competitive analysis research I've constructed these two documents, be sure to check them out.
+#### The competitive analysis process
+Deep dive into the competitive analysis research I've conducted by checking out these two documents.
 
 ::GridBlockTwo
 :::GridUnit
@@ -253,13 +253,11 @@ icon: 📐
 ::
 
 
-### 5. User testing
+### 5. Wireframes and user testing
 
 Having gathered insights from research, we moved to validate our design concepts through hands-on testing. We adopted an iterative approach, starting with basic wireframes and progressively moving to more refined designs. This method enabled us to validate assumptions and gather feedback at every stage of development.
 
-::GridBlockTwo
-:::GridUnit
-#### Process
+<!-- #### The process we took
 
 Our user testing process followed a progressive approach to refine our design:
 
@@ -279,28 +277,129 @@ Our user testing process followed a progressive approach to refine our design:
 4. Design refinement:
    - Fine-tuned based on interactive testing feedback
    - Ensured alignment with user needs and expectations
-:::
-:::GridUnit
-#### Takeaways
 
 This iterative process allowed us to:
 - Validate design concepts early
 - Incorporate stakeholder feedback efficiently
 - Identify and address usability issues
-- Ensure the final design met user requirements
+- Ensure the final design met user requirements -->
 
-::::lazy-img
+
+#### High level wireframes options 
+In this Low-fidelity mockups phase we took the following steps
+
+- Created wireframes for initial review
+- Presented to steering committee members
+- Gathered preliminary feedback
+- Incorporated insights from previous research phases
+- Established general design direction
+
+To create the initial wireframes and after examining several competitors we recognize two popular design patterns for building webpages:
+
+::GridBlockTwo{frOne="3fr" frTwo="2fr" gap="var(--space-l)"}
+:::GridUnit
+1. ***In-place editing***
+   - With this patterns, found on *Wix*, *Squarespace* and *Tilda*, the edit panel opens as a hover dialog adjacent to the edited content. 
+   - This pattern is good it terms of space efficiency and the edit/edited proximity improves the user understating of cause and effect. 
+   - This pattern is linked to *tech savvy* or *long term* user that feel comfortable with shifting layouts and lots of moving parts. 
+:::
+:::GridUnit
+::::BaseImage
 ---
-src: /work/pepperi-page-builder/user-testing.webp
-thumbhash: +QcKBIJmd4iAiIeAh3E2oJP19w
-width: 750
-height: 1200
-alt:
-desc: High-fidelity prototypes in use
+src: /work/pepperi-page-builder/PageBuilder-UX-In-place.webp
+width: 1600
+height: 1070
+alt: Wireframe of the In-place editing option 
+desc: Wireframe of the In-place editing option
 ---
 ::::
 :::
 ::
+
+::GridBlockTwo{frOne="3fr" frTwo="2fr" gap="var(--space-l)"}
+:::GridUnit
+2. ***Side panel editing*** 
+   - With this patterns, found on *Elementor*, the edit panel opens as a side panel at a fix position.
+   - This pattern is good it terms of predictability and consistency which reduces *Cognitive Load*.
+   - This pattern is linked to technologically challenged or novice user that feel comfortable with fixed, predictable and consistent layouts. 
+:::
+:::GridUnit
+::::BaseImage
+---
+src: /work/pepperi-page-builder/PageBuilder-UX-Side-panel.webp
+width: 1600
+height: 1070
+alt: Wireframe of the Side-pane Drill-in editing option 
+desc: Wireframe of the Side-pane Drill-in editing option
+---
+::::
+:::
+::
+
+::QuoteBig
+---
+title: We decides to go with the <strong>Side panel editing</strong>
+icon: think
+---
+::
+
+Reasons why we decides to go with the *Side panel editing*
+
+1. ***Development time*** – The engineering team raised a concern that the in-place solution in harder to implement, but even more concerning is that is more prone to UX bugs and will take unneeded focus. 
+2. ***Predictive UX*** – In-place editing will inherently move from one place to another making the learning curve for occasional non-designers steeper and less intuitive and isn't inline with our designated users. 
+
+#### Low level wireframes options 
+
+After deciding on the high-level direction of the side panel editing, we hade two UX premises we wanted to explore. Here we also took the same iterative process of *reviewing*, *presenting*, *gathering feedback* and adding research *insights* to *establish design direction*.
+
+::GridBlockTwo{frOne="3fr" frTwo="2fr" gap="var(--space-l)"}
+:::GridUnit
+1. ***One panel: interchanging***
+   - [Space efficient]{style="color: var(--color-success-main);"}
+   - [Requires extra clicks]{style="color: var(--color-caution-main);"}
+   - [Challenging orientation in terms of navigation]{style="color: var(--color-caution-main);"}
+:::
+:::GridUnit
+::::BaseImage
+---
+src: /work/pepperi-page-builder/PageBuilder-UX-Side-panel-drill-in.webp
+width: 1600
+height: 1070
+alt: Wireframe of the In-place editing option 
+desc: Wireframe of the In-place editing option
+---
+::::
+:::
+::
+
+::GridBlockTwo{frOne="3fr" frTwo="2fr" gap="var(--space-l)"}
+:::GridUnit
+2. ***Two panels: fixed and interchanging***
+   - [Faster to edit]{style="color: var(--color-success-main);"}
+   - [Space inefficient]{style="color: var(--color-caution-main);"}
+   - [Adds Cognitive Load]{style="color: var(--color-caution-main);"}
+:::
+:::GridUnit
+::::BaseImage
+---
+src: /work/pepperi-page-builder/PageBuilder-UX-Side-panel-expanded.webp
+width: 1600
+height: 1070
+alt: Wireframe of the Side-panel Drill-in editing option 
+desc: Wireframe of the Side-panel Drill-in editing option
+---
+::::
+:::
+::
+
+::QuoteBig
+---
+title: We decides to go with the <strong>Drill-in editing</strong>
+desc: What shifted the balance towards <i>Drill-in editing</i> is space inefficiency, which is crucial when building webpages  
+icon: think
+---
+::
+
 
 ## High-fidelity Designs
 
@@ -373,7 +472,7 @@ alt: Hide Sections & Page Preview high-fidelity design
 ::
 
 #### Page Sections
-FVor fine grain design control the page sections enables customizable layouts with adjustable sub-sections, spacing, and responsive settings.
+For fine grain design control the page sections enables customizable layouts with adjustable sub-sections, spacing, and responsive settings.
 
 ::GridBlockTwo{frOne="2fr" frTwo="3fr" gap="var(--space-m)"}
 :::GridUnit 
@@ -433,6 +532,7 @@ desc: Slideshow with different Arrows & Controllers styles, Orientations use of 
 ::::
 :::
 :::GridUnit 
+
 ##### Slideshow editors
 
 ::::BaseImage
@@ -752,3 +852,4 @@ One of our clients top priorities is to communicate their brand and business nee
 The *Page Builder* addresses this issue by enabling our clients to modify, add, and design content on the flay. Furthermore, we can now tailor pages based on roles and business requirements.
 
 The *Page Builder* provides users with control over the page layout, and content is edited using *content blocks*. These blocks include Slideshows, Galleries, Charts, Forms, Rich Text, Banners, Buttons, Filters, Search, with future additions like Chat, Categories, Stack layout, and HTML block.
+
