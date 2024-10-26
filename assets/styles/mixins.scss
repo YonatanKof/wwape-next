@@ -31,10 +31,11 @@
 	font-size: var(--step--1);
 	margin-inline-start: calc(var(--space-2xs) * 1.5);
 	display: inline-block;
-	line-height: 1.25;
 	margin-block: var(--space-xs);
 	position: relative;
-	font-variation-settings: 'wght' 400, 'ital' 1;
+	margin-block-end: 1.5em;
+	line-height: 1.35;
+	font-variation-settings: "wght" 300, "ital" 1, "SPAC" 5;
 	&::before {
 		content: '';
 		display: inline-block;
