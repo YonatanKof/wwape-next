@@ -804,6 +804,14 @@ One of our clients' top priorities is communicating their brand and business nee
 - Steady increase in demand from existing clients
 - Attraction of new clients specifically for this feature
 
+##### B2B Page Builder revenues throwout the years
+
+::ChartSales
+::
+
+[I've blurred the numbers, but I can say there'r in millions]{style="color: var(--color-sys-slight); font-size: var(--step--1); text-align: center; display: block; width: 100%;"}
+
+
 #### Resource optimization
 - Eliminated PS team's development burden for custom webpages
 - Shifted content management from PS team to clients
@@ -845,11 +853,11 @@ Buyers and sales representatives confirm that pages are:
 - Consistent brand presentation across client pages
 - Scalable solution for growing business needs
 
-## Next
+<!-- ## Next
 
 One of our clients top priorities is to communicate their brand and business needs to their clients via a custom homepage. Pepperi’s legacy approach of creating a custom homepage from scratch can make content management challenging if not problematic, for it’s dependent on the *Professional Team* developers. 
 
-The *Page Builder* addresses this issue by enabling our clients to modify, add, and design content on the flay. Furthermore, we can now tailor pages based on roles and business requirements.
+The *Page Builder* addresses this issue by enabling our clients to modify, add, and design content on the flay. Furthermore, we can now tailor pages based on roles and business requirements. -->
 
-The *Page Builder* provides users with control over the page layout, and content is edited using *content blocks*. These blocks include Slideshows, Galleries, Charts, Forms, Rich Text, Banners, Buttons, Filters, Search, with future additions like Chat, Categories, Stack layout, and HTML block.
+<!-- The *Page Builder* provides users with control over the page layout, and content is edited using *content blocks*. These blocks include Slideshows, Galleries, Charts, Forms, Rich Text, Banners, Buttons, Filters, Search, with future additions like Chat, Categories, Stack layout, and HTML block. -->
 
