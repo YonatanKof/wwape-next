@@ -24,20 +24,24 @@ defineProps({
 		<IconLightBulb v-if="icon === 'think'" class="icon" />
 		<span>
 			<h2 class="fancy-header" unwrap="p" v-html="title"></h2>
-			<p v-if="desc" unwrap="p" v-html="desc"></p>
+			<p v-if="desc" v-html="desc"></p>
 		</span>
 	</blockquote>
 </template>
 <style lang="scss">
 .quote-big {
 	.icon {
-		width: var(--space-2xl);
+		min-width: var(--space-2xl);
 		height: var(--space-2xl);
 		margin-inline-start: var(--space-2xs);
 	}
 	p,
 	.fancy-header {
 		margin-inline-start: var(--space-m);
+	}
+	p {
+		font-size: var(--step-0);
+		letter-spacing: unset;
 	}
 	.fancy-header {
 		line-height: 1.5;
