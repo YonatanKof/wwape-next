@@ -1,7 +1,7 @@
 ---
 title: 'Pepperi Page Builder'
 author_name: 'Yonatan Ben Knaan'
-date: '2030-01-01'
+date: '2024-10-28'
 updated: ''
 cover_image: '/work/pepperi-page-builder/pepperi-page-builder-tn.webp'
 cover_image_height: '395'
@@ -12,7 +12,7 @@ description: 'A no-code web-page builder for occasional non-designers to manage,
 tags: ['Creative']
 ---
 
-::MainImg
+::PeppMainImg
 ---
 desc: Some examples of our custom built homepages
 ---
@@ -806,7 +806,7 @@ One of our clients' top priorities is communicating their brand and business nee
 
 ##### B2B Page Builder revenues throwout the years
 
-::ChartSales
+::PeppChartSales
 ::
 
 [I've blurred the numbers, but I can say there'r in millions]{style="color: var(--color-sys-slight); font-size: var(--step--1); text-align: center; display: block; width: 100%;"}
