@@ -10,6 +10,7 @@ social_image: '/work/pepperi-page-builder/pepperi-page-builder-social.jpg'
 image_alt: ''
 description: 'A no-code web-page builder for occasional non-designers to manage, design, and edit custom webpages'
 tags: ['Creative']
+role: ['Head of design', 'IC']
 ---
 
 ::PeppMainImg
@@ -23,23 +24,18 @@ With *Pepperi Page Builder*, B2B clients can easily build, edit, and design web 
 
 ## Project motivation
 
-Pepperi clients need custom homepages for their Buyers (end-users) to showcase:
+Pepperi clients are in constant need of custom webpages. They need it to showcase to their Buyers (the end-users, our clients' clients) the following:
 - Promotions and sales
 - Credit lines
 - New products
 - Product categories
 - Other B2B eCommerce features
 
-They also require:
+They also need from these custom webpages to be:
 - On-brand design
 - Full design control
 - Ability to edit content independently
 - Flexibility to make changes on their own schedule
-
-<!-- Pepperi clients want to show Buyers (our clients’ clients) custom homepages. Where they can communicate promotions, sales, credit lines, new products, product categories, and all things related to B2B eCommerce.
- -->
-<!-- Moreover, they want to do it on brand, with full design control. They want to edit the content themselves and do it on their own time.  -->
-
 
 <!-- ::GridBlockTwo{frOne="1fr" frTwo="3fr" gap="var(--space-m)"}
 :::GridUnit
@@ -117,7 +113,7 @@ title: So after years of anticipation we decided to launch the <strong>Page Buil
 
 ## Research
 
-We uses several research techniques that I'll review shortly. And although I wrote the as an ordered list, in actuality they were a cyclic proceed were one output effected another input. I'll used methods of *discovery*, *exploring* and *testing* (for the meanwhile I'll leave out methods of optimisations).
+We used several research techniques that I'll review shortly. And although I wrote them as an ordered list, in actuality they were a cyclic process where one output affected another input. I'll used methods of *discovery*, *exploring* and *testing* (for the meanwhile I'll leave out methods of optimizations).
 
 ### 1. Field studies
 
@@ -257,34 +253,6 @@ icon: 📐
 
 Having gathered insights from research, we moved to validate our design concepts through hands-on testing. We adopted an iterative approach, starting with basic wireframes and progressively moving to more refined designs. This method enabled us to validate assumptions and gather feedback at every stage of development.
 
-<!-- #### The process we took
-
-Our user testing process followed a progressive approach to refine our design:
-
-1. Low-fidelity mockups:
-   - Created wireframes for initial review
-   - Presented to steering committee members
-   - Gathered preliminary feedback
-
-2. Direction setting:
-   - Incorporated insights from previous research phases
-   - Established general design direction
-
-3. High-fidelity prototypes:
-   - Developed interactive mockups
-   - Allowed steering committee to engage with the design
-
-4. Design refinement:
-   - Fine-tuned based on interactive testing feedback
-   - Ensured alignment with user needs and expectations
-
-This iterative process allowed us to:
-- Validate design concepts early
-- Incorporate stakeholder feedback efficiently
-- Identify and address usability issues
-- Ensure the final design met user requirements -->
-
-
 #### High level wireframes options 
 In this Low-fidelity mockups phase we took the following steps
 
@@ -294,13 +262,13 @@ In this Low-fidelity mockups phase we took the following steps
 - Incorporated insights from previous research phases
 - Established general design direction
 
-To create the initial wireframes and after examining several competitors we recognize two popular design patterns for building webpages:
+To create the initial wireframes and after examining several competitors we recognized two popular design patterns for building webpages:
 
 ::GridBlockTwo{frOne="3fr" frTwo="2fr" gap="var(--space-l)"}
 :::GridUnit
 1. ***In-place editing***
-   - With this patterns, found on *Wix*, *Squarespace* and *Tilda*, the edit panel opens as a hover dialog adjacent to the edited content. 
-   - This pattern is good it terms of space efficiency and the edit/edited proximity improves the user understating of cause and effect. 
+   - With this pattern, found on *Wix*, *Squarespace* and *Tilda*, the edit panel opens as a hover dialog adjacent to the edited content. 
+   - This pattern is good it terms of space efficiency and the edit/edited proximity improves the user understanding of cause and effect. 
    - This pattern is linked to *tech savvy* or *long term* user that feel comfortable with shifting layouts and lots of moving parts. 
 :::
 :::GridUnit
@@ -319,7 +287,7 @@ desc: Wireframe of the In-place editing option
 ::GridBlockTwo{frOne="3fr" frTwo="2fr" gap="var(--space-l)"}
 :::GridUnit
 2. ***Side panel editing*** 
-   - With this patterns, found on *Elementor*, the edit panel opens as a side panel at a fix position.
+   - With this patterns, found on *Elementor*, the edit panel opens as a side panel at a fixed position.
    - This pattern is good it terms of predictability and consistency which reduces *Cognitive Load*.
    - This pattern is linked to technologically challenged or novice user that feel comfortable with fixed, predictable and consistent layouts. 
 :::
@@ -338,19 +306,19 @@ desc: Wireframe of the Side-pane Drill-in editing option
 
 ::QuoteBig
 ---
-title: We decides to go with the <strong>Side panel editing</strong>
+title: We decided to go with the <strong>Side panel editing</strong>
 icon: think
 ---
 ::
 
-Reasons why we decides to go with the *Side panel editing*
+Reasons why we decided to go with the *Side panel editing*
 
-1. ***Development time*** – The engineering team raised a concern that the in-place solution in harder to implement, but even more concerning is that is more prone to UX bugs and will take unneeded focus. 
-2. ***Predictive UX*** – In-place editing will inherently move from one place to another making the learning curve for occasional non-designers steeper and less intuitive and isn't inline with our designated users. 
+1. ***Development time*** – The engineering team raised a concern that the in-place solution is harder to implement, but even more concerning is that is more prone to UX bugs and will take unneeded focus. 
+2. ***Predictive UX*** – In-place editing will inherently move from one place to another making the learning curve steeper  and less intuitive for occasional non-designers and. That isn't inline with our designated users. 
 
 #### Low level wireframes options 
 
-After deciding on the high-level direction of the side panel editing, we hade two UX premises we wanted to explore. Here we also took the same iterative process of *reviewing*, *presenting*, *gathering feedback* and adding research *insights* to *establish design direction*.
+After deciding on the high-level direction of the side panel editing, we had two UX premises we wanted to explore. Here we also took the same iterative process of *reviewing*, *presenting*, *gathering feedback* and adding research *insights* to *establish design direction*.
 
 ::GridBlockTwo{frOne="3fr" frTwo="2fr" gap="var(--space-l)"}
 :::GridUnit
@@ -400,15 +368,27 @@ icon: think
 ---
 ::
 
+#### Phase takeaways
+- Develop interactive mockups
+- Allow steering committee to engage with the design
+- Design refinement based on interactive testing feedback
+- Ensure alignment with user needs and expectationss
+
+This iterative process allowed us to:
+- Validate design concepts early
+- Incorporate stakeholder feedback efficiently
+- Identify and address usability issues
+- Ensure the final design met user requirements
 
 ## High-fidelity Designs
 
 Our high-fidelity designs provide a comprehensive overview of the Page Builder's core functionalities and user interface. Below, we showcase key components of both page-level elements and specific page blocks.
 
+
 ### Page-level Elements
 
 #### Pages Manager
-A central hub to overview for pages: create from scratch or from a template, edit, and delete.
+A central hub to overview of pages: create from scratch or from a template, edit, and delete.
 ::GridBlockTwo{frOne="2fr" frTwo="3fr" gap="var(--space-m)"}
 :::GridUnit 
 - Overview of all pages
@@ -428,14 +408,14 @@ alt: Pages Manager high-fidelity design
 ::
 
 #### Page Layout
-Customize the page structure with a drag-and-drop interface and set design with, sections, sub-section, and design properties you can edit in the page editor.
+Customize the page structure with a drag-and-drop interface and set design with sections, sub-sections, and design properties you can edit in the page editor.
 
 ::GridBlockTwo{frOne="2fr" frTwo="3fr" gap="var(--space-m)"}
 :::GridUnit 
 - Layout structure and customization options
 - Drag-and-drop sections and block components 
 - Set padding, gaps and page width
-- Set page info and logic by lifecycle hooks
+- Set page info and logic using lifecycle hooks
 :::
 :::GridUnit
 ::::TiltImage
@@ -451,12 +431,12 @@ alt: Page Layout high-fidelity design
 ::
 
 #### Hide Sections & Page Preview 
-Sometimes, what works in a desktop view doesn't look as sharp on a mobile device or the other way around. The Hide Sections & Page Preview will let you remedy and examine it in no-time. 
+Sometimes, what works in a desktop view doesn't look as sharp on a mobile device or the other way around. The Hide Sections & Page Preview will let you remedy and examine it in no time. 
 ::GridBlockTwo{frOne="2fr" frTwo="3fr" gap="var(--space-m)"}
 :::GridUnit 
 - Real-time preview of page changes
 - For all responsive views
-- Hide sections per view for grater layout control 
+- Hide sections per view for greater layout control 
 :::
 :::GridUnit
 ::::TiltImage
@@ -472,12 +452,12 @@ alt: Hide Sections & Page Preview high-fidelity design
 ::
 
 #### Page Sections
-For fine grain design control the page sections enables customizable layouts with adjustable sub-sections, spacing, and responsive settings.
+For fine-grained design control the page sections enables customizable layouts with adjustable sub-sections, spacing, and responsive settings.
 
 ::GridBlockTwo{frOne="2fr" frTwo="3fr" gap="var(--space-m)"}
 :::GridUnit 
 - Section types and arrangements
-- Set sub-sections and spilt types 
+- Set sub-sections and split types 
 - Edit gaps and padding
 - Set responsive break points and dynamic height
 :::
@@ -551,7 +531,7 @@ marginBlockStart: var(--space-xs)
 
 #### Gallery block
 
-> Optimal for showcasing product or brands. With customizable layouts and design features, this helps B2B sellers display their catalog in visually appealing grids and collections.
+> Optimal for showcasing products or brands. With customizable layouts and design features, this helps B2B sellers display their catalog in visually appealing grids and collections.
 
 ##### Gallery features
 - Grid layout and design options
@@ -565,8 +545,8 @@ marginBlockStart: var(--space-xs)
 src: /work/pepperi-page-builder/builder/Gallery.webp
 width: 1440
 height: 900
-alt: Galley block in use
-desc: Galley block in use
+alt: Gallery block in use
+desc: Gallery block in use
 marginBlockStart: var(--space-xs)
 
 ---
@@ -576,8 +556,8 @@ marginBlockStart: var(--space-xs)
 src: /work/pepperi-page-builder/builder/Gallery-Examples.webp
 width: 1987
 height: 1348
-alt: The different combinations possible for a Galley item
-desc: The different combinations possible for a Galley item
+alt: The different combinations possible for a Gallery item
+desc: The different combinations possible for a Gallery item
 ---
 ::::
 :::
@@ -600,7 +580,7 @@ marginBlockStart: var(--space-xs)
 
 #### Banner block
 
-> Used for highlighting key messages, seasonal offers, and category promotions, the Banner blocks are is an optimal way for B2B sellers to communicate with buyers.
+> Used for highlighting key messages, seasonal offers, and category promotions, the Banner blocks is an optimal way for B2B sellers to communicate with buyers.
 
 ##### Banner features
 - Custom icons and text types
@@ -614,8 +594,8 @@ marginBlockStart: var(--space-xs)
 src: /work/pepperi-page-builder/builder/Banner.webp
 width: 1287
 height: 1048
-alt: Galley block in use
-desc: Galley block in use
+alt: Gallery block in use
+desc: Gallery block in use
 marginBlockStart: var(--space-xs)
 ---
 ::::
@@ -705,7 +685,7 @@ borderRadius: var(--border-radius-xs)
 :::GridUnit 
 
 ##### Rich text block
-Ideal for detailed product descriptions, announcements, and unstructured content, the Rich text block allows clients to communicates crucial B2B information.
+Ideal for detailed product descriptions, announcements, and unstructured content, the Rich text block allows clients to communicate crucial B2B information.
 
 - Text formatting tools
 - Media embedding options
@@ -804,12 +784,12 @@ One of our clients' top priorities is communicating their brand and business nee
 - Steady increase in demand from existing clients
 - Attraction of new clients specifically for this feature
 
-##### B2B Page Builder revenues throwout the years
+##### B2B Page Builder revenues throughout the years
 
 ::PeppChartSales
 ::
 
-[I've blurred the numbers, but I can say there'r in millions]{style="color: var(--color-sys-slight); font-size: var(--step--1); text-align: center; display: block; width: 100%;"}
+[I've blurred the numbers, but I can say they're in millions]{style="color: var(--color-sys-slight); font-size: var(--step--1); text-align: center; display: block; width: 100%;"}
 
 
 #### Resource optimization
@@ -855,9 +835,9 @@ Buyers and sales representatives confirm that pages are:
 
 <!-- ## Next
 
-One of our clients top priorities is to communicate their brand and business needs to their clients via a custom homepage. Pepperi’s legacy approach of creating a custom homepage from scratch can make content management challenging if not problematic, for it’s dependent on the *Professional Team* developers. 
+One of our clients top priorities is to communicate their brand and business needs with their clients via a custom homepage. Pepperi’s legacy approach of creating a custom homepage from scratch can make content management challenging if not problematic, for it’s dependent on the *Professional Team* developers. 
 
-The *Page Builder* addresses this issue by enabling our clients to modify, add, and design content on the flay. Furthermore, we can now tailor pages based on roles and business requirements. -->
+The *Page Builder* addresses this issue by enabling our clients to modify, add, and design content on the fly. Furthermore, we can now tailor pages based on roles and business requirements. -->
 
 <!-- The *Page Builder* provides users with control over the page layout, and content is edited using *content blocks*. These blocks include Slideshows, Galleries, Charts, Forms, Rich Text, Banners, Buttons, Filters, Search, with future additions like Chat, Categories, Stack layout, and HTML block. -->
 
