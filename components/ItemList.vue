@@ -20,6 +20,10 @@ const props = defineProps({
 		type: Number,
 		default: 2,
 	},
+	showDate: {
+		type: Boolean,
+		default: true,
+	},
 });
 const { $formatDate } = useNuxtApp();
 </script>
@@ -36,7 +40,7 @@ const { $formatDate } = useNuxtApp();
 			<NuxtLink class="item" v-if="item._path" :to="item._path + '/'">
 				<div class="item-content">
 					<h3 id="title">{{ item.title }}</h3>
-					<p id="mata-data">{{ $formatDate(item.date) }}</p>
+					<p v-if="showDate" id="mata-data">{{ $formatDate(item.date) }}</p>
 					<p v-if="item.description" v-html="item.description"></p>
 				</div>
 				<UnLazyImage
@@ -70,7 +74,9 @@ const { $formatDate } = useNuxtApp();
 }
 .item-content {
 	margin: var(--space-s);
-	display: block;
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-3xs);
 }
 #title {
 	margin-block-start: unset;
@@ -79,7 +85,6 @@ const { $formatDate } = useNuxtApp();
 #mata-data {
 	font-size: var(--step--2);
 	color: var(--color-sys-slight);
-	margin-block-end: var(--space-3xs);
 }
 p {
 	font-size: var(--step--1);
