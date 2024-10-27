@@ -43,10 +43,20 @@ nuxtApp.$pageMetaTags({
 						<div id="article-info">
 							<h1 id="title">{{ doc.title }}</h1>
 							<h3 id="sub-title">{{ doc.description }}</h3>
-							<span class="dates">
+							<span class="meta-data">
 								<p>Posted {{ $formatDate(doc.date) }}</p>
 								<p v-if="doc.updated">•</p>
 								<p v-if="doc.updated">Updated {{ $formatDate(doc.updated) }}</p>
+								<span class="path" v-if="doc.role"></span>
+								<div v-if="doc.role" class="role">
+									<p>Role</p>
+									<i>・</i>
+									<!-- <i v-for="role in doc.role" id="role">{{ role }}</i> -->
+									<template v-for="(role, index) in doc.role" :key="index">
+										<i>{{ role }}</i>
+										<i v-if="index < doc.role.length - 1">・</i>
+									</template>
+								</div>
 							</span>
 						</div>
 					</section>
@@ -71,19 +81,14 @@ h1 {
 section {
 	display: grid;
 	height: min-content;
-	//margin-block-end: var(--space-m);
 }
 #sub-title {
 	font-family: var(--font-body);
 	font-size: var(--step-2);
-	// margin-block-start: var(--space-s);
 	font-variation-settings: unset;
 	line-height: 1.5;
 	max-width: 50ch;
 	margin-block-end: var(--space-2xs);
-	// @media (width <= $display-width-2xs) {
-	// 	font-size: var(--step--1);
-	// }
 }
 
 article {
@@ -92,18 +97,27 @@ article {
 main {
 	margin-block-end: var(--space-l);
 }
-.dates {
+.meta-data {
 	display: flex;
 	flex-direction: row;
-	gap: var(--space-2xs);
+	gap: var(--space-xs);
+	align-items: center;
 }
-.dates > p {
+
+.meta-data > p,
+.role > p,
+.role > i {
 	color: var(--color-sys-slight);
-	font-size: var(--step--1);
-	margin-block-end: unset;
-	@media (width <= $display-width-sm) {
-		font-size: var(--step--3);
-	}
+	font-size: var(--step--2);
+	margin: 0;
+}
+.role > i {
+	color: var(--color-success-main);
+}
+.path {
+	width: 1px;
+	height: var(--space-s);
+	background-color: var(--color-sys-dim);
 }
 #error {
 	height: 100%;
@@ -114,5 +128,15 @@ main {
 }
 hr:last-of-type {
 	margin-block-end: var(--space-s);
+}
+.role {
+	code {
+		margin: unset;
+	}
+	display: flex;
+	flex-direction: row;
+	gap: var(--space-4xs);
+	align-items: center;
+	margin: unset;
 }
 </style>
