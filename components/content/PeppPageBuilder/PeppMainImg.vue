@@ -5,33 +5,165 @@ const props = defineProps({
 		default: undefined,
 	},
 });
+const sizes = '10vw xs:200px sm:400px md:800px';
 </script>
 <template>
 	<div>
-		<NuxtImg class="sections sections-hover" src="/work/pepperi-page-builder/build/sections-hover.webp" />
-		<NuxtImg class="sections" src="/work/pepperi-page-builder/build/sections.webp" />
-		<NuxtImg class="sections g4" src="/work/pepperi-page-builder/build/section-gallery-4.webp" />
-		<NuxtImg class="sections g6" src="/work/pepperi-page-builder/build/section-gallery-6.webp" />
-		<NuxtImg class="sections ss-i1" src="/work/pepperi-page-builder/build/ss-i1.webp" />
-		<NuxtImg class="sections ss-i2" src="/work/pepperi-page-builder/build/ss-i2.webp" />
-		<NuxtImg class="img title" src="/work/pepperi-page-builder/build/editor-title.webp" />
-		<NuxtImg class="img arrow-title" src="/misc/arrow-1.png" />
-		<NuxtImg class="img image" src="/work/pepperi-page-builder/build/editor-image.webp" />
-		<NuxtImg class="img image image-hover" src="/work/pepperi-page-builder/build/editor-image-hover.webp" />
-		<NuxtImg class="img arrow-image" src="/misc/arrow-2.png" />
-		<NuxtImg class="img padding" src="/work/pepperi-page-builder/build/editor-padding.webp" />
-		<NuxtImg class="img arrow-padding" src="/misc/arrow-1.png" />
-		<NuxtImg class="img arrows" src="/work/pepperi-page-builder/build/editor-arrows.webp" />
-		<NuxtImg class="img arrow-arrows" src="/misc/arrow-1.png" />
-		<NuxtImg class="img controllers" src="/work/pepperi-page-builder/build/editor-controllers.webp" />
-		<NuxtImg class="img arrow-controllers" src="/misc/arrow-3.png" />
-		<NuxtImg class="img layout" src="/work/pepperi-page-builder/build/editor-layout.webp" />
-		<NuxtImg class="img layout l3" src="/work/pepperi-page-builder/build/editor-layout-3.webp" />
-		<NuxtImg class="img arrow-layout" src="/misc/arrow-2.png" />
-		<NuxtImg class="img Blocks" src="/work/pepperi-page-builder/build/editor-Blocks.webp" />
-		<NuxtImg class="img darg-block" src="/work/pepperi-page-builder/build/darg-block.webp" />
+		<NuxtImg
+			loading="lazy"
+			:sizes="sizes"
+			class="sections sections-hover"
+			src="/work/pepperi-page-builder/build/sections-hover.webp"
+			:placeholder="[116, 65, 50, 5]"
+		/>
+		<NuxtImg
+			loading="lazy"
+			:sizes="sizes"
+			class="sections"
+			src="/work/pepperi-page-builder/build/sections.webp"
+			:placeholder="[116, 65, 50, 5]"
+		/>
+		<NuxtImg
+			loading="lazy"
+			:sizes="sizes"
+			class="sections g4"
+			src="/work/pepperi-page-builder/build/section-gallery-4.webp"
+			:placeholder="[116, 65, 50, 5]"
+		/>
+		<NuxtImg
+			loading="lazy"
+			:sizes="sizes"
+			class="sections g6"
+			src="/work/pepperi-page-builder/build/section-gallery-6.webp"
+			:placeholder="[116, 65, 50, 5]"
+		/>
+		<NuxtImg
+			loading="lazy"
+			:sizes="sizes"
+			class="sections ss-i1"
+			src="/work/pepperi-page-builder/build/ss-i1.webp"
+			:placeholder="[116, 65, 50, 5]"
+		/>
+		<NuxtImg
+			loading="lazy"
+			:sizes="sizes"
+			class="sections ss-i2"
+			src="/work/pepperi-page-builder/build/ss-i2.webp"
+			:placeholder="[116, 65, 50, 5]"
+		/>
+		<NuxtImg
+			loading="lazy"
+			:sizes="sizes"
+			class="img title"
+			src="/work/pepperi-page-builder/build/editor-Title.webp"
+			:placeholder="[27, 31, 50, 5]"
+		/>
+		<NuxtImg
+			loading="lazy"
+			:sizes="sizes"
+			class="img arrow-title"
+			src="/misc/arrow-1.webp"
+			:placeholder="[14, 21, 50, 1]"
+		/>
+		<NuxtImg
+			loading="lazy"
+			:sizes="sizes"
+			class="img image"
+			src="/work/pepperi-page-builder/build/editor-Image.webp"
+			:placeholder="[28, 35, 50, 5]"
+		/>
+		<NuxtImg
+			loading="lazy"
+			:sizes="sizes"
+			class="img image image-hover"
+			src="/work/pepperi-page-builder/build/editor-image-hover.webp"
+			:placeholder="[28, 35, 50, 5]"
+		/>
+		<NuxtImg
+			loading="lazy"
+			:sizes="sizes"
+			class="img arrow-image"
+			src="/misc/arrow-2.webp"
+			:placeholder="[36, 30, 50, 1]"
+		/>
+		<NuxtImg
+			loading="lazy"
+			:sizes="sizes"
+			class="img padding"
+			src="/work/pepperi-page-builder/build/editor-Padding.webp"
+			:placeholder="[28, 19, 50, 5]"
+		/>
+		<NuxtImg
+			loading="lazy"
+			:sizes="sizes"
+			class="img arrow-padding"
+			src="/misc/arrow-1.webp"
+			:placeholder="[14, 21, 50, 1]"
+		/>
+		<NuxtImg
+			loading="lazy"
+			:sizes="sizes"
+			class="img arrows"
+			src="/work/pepperi-page-builder/build/editor-Arrows.webp"
+			:placeholder="[28, 39, 50, 5]"
+		/>
+		<NuxtImg
+			loading="lazy"
+			:sizes="sizes"
+			class="img arrow-arrows"
+			src="/misc/arrow-1.webp"
+			:placeholder="[14, 21, 50, 1]"
+		/>
+		<NuxtImg
+			loading="lazy"
+			:sizes="sizes"
+			class="img controllers"
+			src="/work/pepperi-page-builder/build/editor-Controllers.webp"
+			:placeholder="[28, 40, 50, 5]"
+		/>
+		<NuxtImg
+			loading="lazy"
+			:sizes="sizes"
+			class="img arrow-controllers"
+			src="/misc/arrow-3.webp"
+			:placeholder="[72, 36, 50, 1]"
+		/>
+		<NuxtImg
+			loading="lazy"
+			:sizes="sizes"
+			class="img layout"
+			src="/work/pepperi-page-builder/build/editor-Layout.webp"
+			:placeholder="[28, 21, 50, 5]"
+		/>
+		<NuxtImg
+			loading="lazy"
+			:sizes="sizes"
+			class="img layout l3"
+			src="/work/pepperi-page-builder/build/editor-layout-3.webp"
+			:placeholder="[28, 21, 50, 5]"
+		/>
+		<NuxtImg
+			loading="lazy"
+			:sizes="sizes"
+			class="img arrow-layout"
+			src="/misc/arrow-2.webp"
+			:placeholder="[36, 30, 50, 1]"
+		/>
+		<NuxtImg
+			loading="lazy"
+			:sizes="sizes"
+			class="img Blocks"
+			src="/work/pepperi-page-builder/build/editor-Blocks.webp"
+			:placeholder="[28, 42, 50, 5]"
+		/>
+		<NuxtImg
+			loading="lazy"
+			:sizes="sizes"
+			class="img darg-block"
+			src="/work/pepperi-page-builder/build/darg-block.webp"
+			:placeholder="[28, 6, 50, 5]"
+		/>
 	</div>
-	<!-- <em v-if="desc">{{ desc }}</em> -->
 </template>
 <style lang="scss" scoped>
 @keyframes main-tilt {
@@ -128,7 +260,7 @@ img {
 .sections {
 	grid-column: 2 / span 4;
 	grid-row: 2 / span 1;
-	transform: scale3d(1.1, 1.1, 1.1);
+	transform: scale3d(1, 1, 1.1);
 	transform: translate3d(0em, 0em, 0em);
 	filter: drop-shadow(0 var(--space-xs) var(--space-xs) var(--color-black-dim));
 }
@@ -233,7 +365,7 @@ img {
 	animation: 2.25s shake-y ease-in-out alternate infinite;
 }
 .darg-block {
-	animation: 3s darg-block cubic-bezier(1, 0, 0.1, 1) alternate infinite, 2.25s shake-y ease-in-out alternate infinite;
+	animation: 3s darg-block cubic-bezier(1, 0, 0, 1) alternate infinite, 2.25s shake-y ease-in-out alternate infinite;
 	grid-column: 1 / span 1;
 	grid-row: 3 / span 1;
 }
