@@ -152,15 +152,15 @@ const sizes = '10vw xs:200px sm:400px md:800px';
 		<NuxtImg
 			loading="lazy"
 			:sizes="sizes"
-			class="img Blocks"
+			class="img blocks"
 			src="/work/pepperi-page-builder/build/editor-Blocks.webp"
 			:placeholder="[28, 42, 50, 5]"
 		/>
 		<NuxtImg
 			loading="lazy"
 			:sizes="sizes"
-			class="img darg-block"
-			src="/work/pepperi-page-builder/build/darg-block.webp"
+			class="img drag-block"
+			src="/work/pepperi-page-builder/build/drag-block.webp"
 			:placeholder="[28, 6, 50, 5]"
 		/>
 	</div>
@@ -180,12 +180,12 @@ const sizes = '10vw xs:200px sm:400px md:800px';
 		transform: rotate3d(4, 3, -2, 0deg);
 	}
 }
-@keyframes darg-block {
+@keyframes drag-block {
 	from {
-		transform: translate3d(1.5em, -2.4em, 5em);
+		transform: translate3d(10%, 98%, 30px) scale(1.1);
 	}
 	to {
-		transform: translate3d(9em, -6em, 5em);
+		transform: translate3d(110%, -250%, 30px) scale(1.1);
 	}
 }
 @keyframes sections-hover {
@@ -207,7 +207,7 @@ const sizes = '10vw xs:200px sm:400px md:800px';
 		translate: 0 0;
 	}
 	100% {
-		translate: 0 0.25em;
+		translate: 0 3%;
 	}
 }
 
@@ -216,7 +216,7 @@ const sizes = '10vw xs:200px sm:400px md:800px';
 		translate: 0 0;
 	}
 	100% {
-		translate: 0.25em 0;
+		translate: 3% 0;
 	}
 }
 @keyframes gallery {
@@ -234,19 +234,18 @@ const sizes = '10vw xs:200px sm:400px md:800px';
 	}
 }
 div {
-	font-size: clamp(0.375rem, -0.023rem + 2.121vw, 1.25rem) !important;
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
-	grid-template-rows: auto 1fr 6.5em;
+	grid-template-rows: 30% 50% 20%;
 	width: 100%;
 	margin-inline: auto;
+	margin-block: var(--space-2xs);
 	transition: transform 0.5s ease-in-out;
 	transform-style: preserve-3d;
 	position: relative;
-	// animation: 8s main-tilt ease-in-out alternate infinite;
-	transform: rotate3d(4, 3, -2, 24deg);
+	transform: rotate3d(4, 3, -2, 24deg) scale(0.92);
 	&:hover {
-		transform: rotate3d(4, 3, -2, 0deg) translateZ(0);
+		transform: rotate3d(4, 3, -2, 0deg) translateZ(0)  scale(1);
 	}
 }
 img {
@@ -261,7 +260,7 @@ img {
 	grid-column: 2 / span 4;
 	grid-row: 2 / span 1;
 	transform: scale3d(1, 1, 1.1);
-	transform: translate3d(0em, 0em, 0em);
+	transform: translate3d(0%, 2%, 0px) scale(1.1);
 	filter: drop-shadow(0 var(--space-xs) var(--space-xs) var(--color-black-dim));
 }
 .sections-hover {
@@ -288,18 +287,18 @@ img {
 .title {
 	grid-column: 1 / span 1;
 	grid-row: 1 / span 1;
-	transform: translate3d(2.5em, 3.5em, 4em);
+	transform: translate3d(15%, 10%, 40px) scale(1.1);
 	animation: 1.75s shake-y ease-in-out alternate infinite;
 }
 .arrow-title {
 	grid-column: 1 / span 1;
 	grid-row: 1 / span 1;
-	transform: translate3d(5.25em, 7.5em, 2em) rotateZ(170deg) scale(0.3) scaleY(-1);
+	transform: translate3d(45%, 49%, 20px) rotateZ(170deg) scale(0.4, 0.45) scaleY(-1);
 }
 .image {
 	grid-column: 3 / span 1;
 	grid-row: 1 / span 1;
-	transform: translate3d(-1.5em, 5em, 5em);
+	transform: translate3d(-15%, 20%, 50px) scale(1.1);
 	animation: 2s shake-y 1s ease-in-out alternate infinite;
 }
 .image-hover {
@@ -308,45 +307,45 @@ img {
 .arrow-image {
 	grid-column: 3 / span 1;
 	grid-row: 1 / span 1;
-	transform: translate3d(4em, 11.25em, 3.5em) rotateZ(70deg) scale(-0.8);
+	transform: translate3d(40%, 135%, 35px) rotateZ(70deg) scale(-0.8);
 }
 .padding {
 	grid-column: 5 / span 1;
 	grid-row: 1 / span 1;
-	transform: translate3d(-7em, 7em, 3em);
+	transform: translate3d(-65%, 90%, 30px) scale(1.1);
 	animation: 3s shake-y 1.5s ease-in-out alternate infinite;
 }
 .arrow-padding {
 	grid-column: 5 / span 1;
 	grid-row: 1 / span 1;
-	transform: translate3d(-2em, 6.5em, 1.5em) rotateZ(100deg) scale(-0.25);
+	transform: translate3d(-18%, 42%, 15px) rotateZ(110deg) scale(-0.25);
 }
 .arrows {
 	grid-column: 6 / span 1;
 	grid-row: 1 / span 1;
-	transform: translate3d(-3em, 4.75em, 4em);
+	transform: translate3d(-10%, 32%, 40px) scale(1.1);
 	animation: 3s shake-y 2s ease-in-out alternate infinite;
 }
 .arrow-arrows {
 	grid-column: 6 / span 1;
 	grid-row: 1 / span 1;
-	transform: translate3d(-4.5em, 10.75em, 1.5em) rotateZ(190deg) scale(-0.3);
+	transform: translate3d(-30%, 75%, 20px) rotateZ(190deg) scale(-0.3);
 }
 .controllers {
 	grid-column: 6 / span 1;
 	grid-row: 3 / span 1;
-	transform: translate3d(-6em, -7.5em, 7em);
+	transform: translate3d(-30%, -20%, 70px) scale(1.1);
 	animation: 2.5s shake-y 1.2s ease-in-out alternate infinite;
 }
 .arrow-controllers {
 	grid-column: 6 / span 1;
 	grid-row: 3 / span 1;
-	transform: translate3d(-14.5em, -10.25em, 1.5em) rotateZ(405deg) scale(1.7);
+	transform: translate3d(-150%, -170%, 10px) rotateZ(410deg) scale(2.2, 1.7);
 }
 .layout {
 	grid-column: 3 / span 1;
 	grid-row: 3 / span 1;
-	transform: translate3d(-1em, -2em, 5em);
+	transform: translate3d(5%, 15%, 50px) scale(1.1);
 	animation: 2.75s shake-y 0.2s ease-in-out alternate infinite;
 }
 .l3 {
@@ -356,16 +355,16 @@ img {
 .arrow-layout {
 	grid-column: 3 / span 1;
 	grid-row: 3 / span 1;
-	transform: translate3d(5.5em, -4.5em, 2.5em) rotateZ(105deg) scaleY(-1) scale(0.7);
+	transform: translate3d(60%, -40%, 20px) rotateZ(125deg) scaleY(-1);
 }
-.Blocks {
+.blocks {
 	grid-column: 1 / span 1;
 	grid-row: 3 / span 1;
-	transform: translate3d(1.5em, -7em, 5em);
+	transform: translate3d(10%, -20%, 20px) scale(1.1);
 	animation: 2.25s shake-y ease-in-out alternate infinite;
 }
-.darg-block {
-	animation: 3s darg-block cubic-bezier(1, 0, 0, 1) alternate infinite, 2.25s shake-y ease-in-out alternate infinite;
+.drag-block {
+	animation: 3s drag-block cubic-bezier(1, 0, 0, 1) alternate infinite, 2.25s shake-y ease-in-out alternate infinite;
 	grid-column: 1 / span 1;
 	grid-row: 3 / span 1;
 }
