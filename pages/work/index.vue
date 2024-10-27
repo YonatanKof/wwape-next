@@ -19,6 +19,6 @@ const { data } = await useAsyncData('equal', () => {
 			text="Welcome to my <i><strong>Work</strong></i> page!"
 			text2="Once ready you will be able to browse a collection of professional design projects, including <i>UX/UI</i>, <i>Design Systems</i>, <i>Branding</i>, and more."
 		/>
-		<ItemList :design-data="data" />
+		<ItemList :design-data="data" :show-date="false"/>
 	</div>
 </template>
