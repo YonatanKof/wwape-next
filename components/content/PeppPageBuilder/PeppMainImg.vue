@@ -11,6 +11,8 @@ const sizes = '10vw xs:200px sm:400px md:800px';
 	<div>
 		<NuxtImg
 			loading="lazy"
+			width="1165"
+			height="651"
 			:sizes="sizes"
 			class="sections sections-hover"
 			src="/work/pepperi-page-builder/build/sections-hover.webp"
@@ -18,6 +20,8 @@ const sizes = '10vw xs:200px sm:400px md:800px';
 		/>
 		<NuxtImg
 			loading="lazy"
+			width="1165"
+			height="651"
 			:sizes="sizes"
 			class="sections"
 			src="/work/pepperi-page-builder/build/sections.webp"
@@ -25,6 +29,8 @@ const sizes = '10vw xs:200px sm:400px md:800px';
 		/>
 		<NuxtImg
 			loading="lazy"
+			width="1165"
+			height="651"
 			:sizes="sizes"
 			class="sections g4"
 			src="/work/pepperi-page-builder/build/section-gallery-4.webp"
@@ -32,6 +38,8 @@ const sizes = '10vw xs:200px sm:400px md:800px';
 		/>
 		<NuxtImg
 			loading="lazy"
+			width="1165"
+			height="651"
 			:sizes="sizes"
 			class="sections g6"
 			src="/work/pepperi-page-builder/build/section-gallery-6.webp"
@@ -39,6 +47,8 @@ const sizes = '10vw xs:200px sm:400px md:800px';
 		/>
 		<NuxtImg
 			loading="lazy"
+			width="1165"
+			height="651"
 			:sizes="sizes"
 			class="sections ss-i1"
 			src="/work/pepperi-page-builder/build/ss-i1.webp"
@@ -46,6 +56,8 @@ const sizes = '10vw xs:200px sm:400px md:800px';
 		/>
 		<NuxtImg
 			loading="lazy"
+			width="1165"
+			height="651"
 			:sizes="sizes"
 			class="sections ss-i2"
 			src="/work/pepperi-page-builder/build/ss-i2.webp"
@@ -53,13 +65,17 @@ const sizes = '10vw xs:200px sm:400px md:800px';
 		/>
 		<NuxtImg
 			loading="lazy"
+			width="272"
+			height="318"
 			:sizes="sizes"
 			class="img title"
-			src="/work/pepperi-page-builder/build/editor-Title.webp"
+			src="/work/pepperi-page-builder/build/editor-title.webp"
 			:placeholder="[27, 31, 50, 5]"
 		/>
 		<NuxtImg
 			loading="lazy"
+			width="136"
+			height="214"
 			:sizes="sizes"
 			class="img arrow-title"
 			src="/misc/arrow-1.webp"
@@ -67,13 +83,17 @@ const sizes = '10vw xs:200px sm:400px md:800px';
 		/>
 		<NuxtImg
 			loading="lazy"
+			width="288"
+			height="352"
 			:sizes="sizes"
 			class="img image"
-			src="/work/pepperi-page-builder/build/editor-Image.webp"
+			src="/work/pepperi-page-builder/build/editor-image.webp"
 			:placeholder="[28, 35, 50, 5]"
 		/>
 		<NuxtImg
 			loading="lazy"
+			width="288"
+			height="352"
 			:sizes="sizes"
 			class="img image image-hover"
 			src="/work/pepperi-page-builder/build/editor-image-hover.webp"
@@ -81,6 +101,8 @@ const sizes = '10vw xs:200px sm:400px md:800px';
 		/>
 		<NuxtImg
 			loading="lazy"
+			width="364"
+			height="302"
 			:sizes="sizes"
 			class="img arrow-image"
 			src="/misc/arrow-2.webp"
@@ -88,13 +110,17 @@ const sizes = '10vw xs:200px sm:400px md:800px';
 		/>
 		<NuxtImg
 			loading="lazy"
+			width="288"
+			height="194"
 			:sizes="sizes"
 			class="img padding"
-			src="/work/pepperi-page-builder/build/editor-Padding.webp"
+			src="/work/pepperi-page-builder/build/editor-padding.webp"
 			:placeholder="[28, 19, 50, 5]"
 		/>
 		<NuxtImg
 			loading="lazy"
+			width="136"
+			height="214"
 			:sizes="sizes"
 			class="img arrow-padding"
 			src="/misc/arrow-1.webp"
@@ -102,13 +128,17 @@ const sizes = '10vw xs:200px sm:400px md:800px';
 		/>
 		<NuxtImg
 			loading="lazy"
+			width="288"
+			height="392"
 			:sizes="sizes"
 			class="img arrows"
-			src="/work/pepperi-page-builder/build/editor-Arrows.webp"
+			src="/work/pepperi-page-builder/build/editor-arrows.webp"
 			:placeholder="[28, 39, 50, 5]"
 		/>
 		<NuxtImg
 			loading="lazy"
+			width="136"
+			height="214"
 			:sizes="sizes"
 			class="img arrow-arrows"
 			src="/misc/arrow-1.webp"
@@ -116,13 +146,17 @@ const sizes = '10vw xs:200px sm:400px md:800px';
 		/>
 		<NuxtImg
 			loading="lazy"
+			width="288"
+			height="400"
 			:sizes="sizes"
 			class="img controllers"
-			src="/work/pepperi-page-builder/build/editor-Controllers.webp"
+			src="/work/pepperi-page-builder/build/editor-controllers.webp"
 			:placeholder="[28, 40, 50, 5]"
 		/>
 		<NuxtImg
 			loading="lazy"
+			width="716"
+			height="356"
 			:sizes="sizes"
 			class="img arrow-controllers"
 			src="/misc/arrow-3.webp"
@@ -130,20 +164,26 @@ const sizes = '10vw xs:200px sm:400px md:800px';
 		/>
 		<NuxtImg
 			loading="lazy"
+			width="288"
+			height="218"
 			:sizes="sizes"
 			class="img layout"
-			src="/work/pepperi-page-builder/build/editor-Layout.webp"
+			src="/work/pepperi-page-builder/build/editor-layout.webp"
 			:placeholder="[28, 21, 50, 5]"
 		/>
 		<NuxtImg
 			loading="lazy"
+			width="288"
+			height="218"
 			:sizes="sizes"
 			class="img layout l3"
-			src="/work/pepperi-page-builder/build/editor-layout-3.webp"
+			src="/work/pepperi-page-builder/build/editor-layout-slide.webp"
 			:placeholder="[28, 21, 50, 5]"
 		/>
 		<NuxtImg
 			loading="lazy"
+			width="364"
+			height="302"
 			:sizes="sizes"
 			class="img arrow-layout"
 			src="/misc/arrow-2.webp"
@@ -151,13 +191,17 @@ const sizes = '10vw xs:200px sm:400px md:800px';
 		/>
 		<NuxtImg
 			loading="lazy"
+			width="288"
+			height="422"
 			:sizes="sizes"
 			class="img blocks"
-			src="/work/pepperi-page-builder/build/editor-Blocks.webp"
+			src="/work/pepperi-page-builder/build/editor-blocks.webp"
 			:placeholder="[28, 42, 50, 5]"
 		/>
 		<NuxtImg
 			loading="lazy"
+			width="288"
+			height="64"
 			:sizes="sizes"
 			class="img drag-block"
 			src="/work/pepperi-page-builder/build/drag-block.webp"
@@ -236,7 +280,6 @@ const sizes = '10vw xs:200px sm:400px md:800px';
 div {
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
-	grid-template-rows: 30% 50% 20%;
 	width: 100%;
 	margin-inline: auto;
 	margin-block: var(--space-2xs);
@@ -259,7 +302,6 @@ img {
 .sections {
 	grid-column: 2 / span 4;
 	grid-row: 2 / span 1;
-	transform: scale3d(1, 1, 1.1);
 	transform: translate3d(0%, 2%, 0px) scale(1.1);
 	filter: drop-shadow(0 var(--space-xs) var(--space-xs) var(--color-black-dim));
 }
