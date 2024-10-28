@@ -23,7 +23,7 @@ const { $formatDate } = useNuxtApp();
 
 const nuxtApp = useNuxtApp();
 nuxtApp.$pageMetaTags({
-	metaTitle: `A post by ${config.public.siteOwnerName} of the ${config.public.siteName}`,
+	metaTitle: `A design work by ${config.public.siteOwnerName} of the ${config.public.siteName}`,
 	metaTitleData: data.value?.article?.title,
 	metaDesc: cleanDescription,
 	metaImg: image,
