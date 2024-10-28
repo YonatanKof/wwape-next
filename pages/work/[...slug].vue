@@ -23,7 +23,7 @@ const { $formatDate } = useNuxtApp();
 
 const nuxtApp = useNuxtApp();
 nuxtApp.$pageMetaTags({
-	metaTitle: `A design work by ${config.public.siteOwnerName} of the ${config.public.siteName}`,
+	metaTitle: `Product design by ${config.public.siteOwnerName} of the ${config.public.siteName}`,
 	metaTitleData: data.value?.article?.title,
 	metaDesc: cleanDescription,
 	metaImg: image,
@@ -49,12 +49,10 @@ nuxtApp.$pageMetaTags({
 								<p v-if="doc.updated">Updated {{ $formatDate(doc.updated) }}</p>
 								<span class="path" v-if="doc.role"></span>
 								<div v-if="doc.role" class="role">
-									<p>Role</p>
-									<i>・</i>
-									<!-- <i v-for="role in doc.role" id="role">{{ role }}</i> -->
+									<p>Role:</p>
 									<template v-for="(role, index) in doc.role" :key="index">
 										<i>{{ role }}</i>
-										<i v-if="index < doc.role.length - 1">・</i>
+										<p v-if="index < doc.role.length - 1">•</p>
 									</template>
 								</div>
 							</span>
@@ -135,7 +133,7 @@ hr:last-of-type {
 	}
 	display: flex;
 	flex-direction: row;
-	gap: var(--space-4xs);
+	gap: var(--space-3xs);
 	align-items: center;
 	margin: unset;
 }
