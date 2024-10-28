@@ -23,41 +23,17 @@ defineProps({
 		<IconBolt v-if="icon === 'know'" class="icon" />
 		<IconLightBulb v-if="icon === 'think'" class="icon" />
 		<span>
-			<h2 class="fancy-header" unwrap="p" v-html="title"></h2>
+			<p class="fancy-title" v-html="title"></p>
 			<p v-if="desc" v-html="desc"></p>
 		</span>
 	</blockquote>
 </template>
 <style lang="scss">
 .quote-big {
-	.icon {
-		min-width: var(--space-2xl);
-		height: var(--space-2xl);
-		margin-inline-start: var(--space-2xs);
-	}
-	p,
-	.fancy-header {
-		margin-inline-start: var(--space-m);
-	}
-	p {
-		font-size: var(--step-0);
-		letter-spacing: unset;
-	}
-	.fancy-header {
-		line-height: 1.5;
-		margin-block: var(--space-3xs) !important;
-		margin-inline-start: var(--space-m);
-		font-family: var(--font-hand);
-		font-size: var(--step-2);
-		text-wrap: balance;
-		font-variation-settings: 'wght' 400;
-	}
 	display: flex;
 	align-items: center;
 	flex-direction: row;
 	background-color: var(--color-brand-dis);
-	margin-block: var(--space-xs);
-	// display: block;
 	padding: var(--space-s);
 	padding-inline-start: var(--space-xs);
 	border-radius: var(--border-radius-sm);
@@ -71,6 +47,29 @@ defineProps({
 		position: absolute;
 		inset-inline-start: var(--space-s);
 		border-radius: calc(var(--space-2xs) * 0.5);
+	}
+	.icon {
+		min-width: var(--space-xl);
+		height: var(--space-xl);
+		margin-inline-start: var(--space-2xs);
+	}
+	p,
+	.fancy-title {
+		margin-inline-start: var(--space-m);
+		color: var(--color-sys-main);
+	}
+	p {
+		font-size: var(--step-0);
+		letter-spacing: unset;
+	}
+	.fancy-title {
+		line-height: 1.5;
+		margin-block: unset;
+		margin-inline-start: var(--space-m);
+		font-family: var(--font-hand);
+		font-size: var(--step-1);
+		text-wrap: balance;
+		font-variation-settings: 'wght' 400;
 	}
 }
 </style>
