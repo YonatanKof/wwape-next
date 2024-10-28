@@ -42,6 +42,7 @@ li {
 	font-size: var(--step-1);
 	line-height: 1.5;
 	color: var(--color-sys-main);
+	text-wrap: balance;
 	text-wrap: pretty;
 	@media print {
 		font-size: var(--step--3);
@@ -70,53 +71,54 @@ ul,
 ol {
 	padding-inline-start: var(--space-l);
 }
-li > ul,
-ol {
-	margin-block-start: 0.125em;
-}
+
 li {
-	padding-inline-start: var(--space-3xs);
+	margin-block-start: 0.125em;
+	padding-inline-start: var(--space-4xs);
 }
 li::marker {
 	color: var(--color-sys-slight);
 	font-family: var(--font-hand);
-	font-variation-settings: 'INFM' 0, 'wght' 333, 'ital' 1;
+	font-variation-settings: 'INFM' 100, 'wght' 444, 'ital' 1;
+}
+ul > li::marker {
+	content: '• ';
 }
 blockquote {
 	text-wrap: balance;
 	line-height: 1.3;
-	p {
-		line-height: 1.5;
-		margin-block: var(--space-3xs) !important;
-	}
 	margin-block: var(--space-xs);
 	display: block;
 	padding-inline-start: var(--space-s);
 	position: relative;
+	p {
+		color: var(--color-sys-slight);
+		letter-spacing: 0.05em;
+	}
 	&::before {
 		content: '';
 		display: inline-block;
 		width: var(--space-3xs);
 		height: 100%;
-		background-color: var(--color-sys-dim);
+		background-color: var(--color-brand-slight);
 		position: absolute;
 		inset-inline-start: calc(calc(var(--space-3xs) * -1) + var(--space-3xs));
 		border-radius: var(--border-radius-xs);
 	}
 }
 .content-renderer {
-	ul {
-		margin: unset;
-	}
+	ol,
+	ul,
 	p {
-		margin-block-end: 0.5em;
+		margin-block: 0.5em;
 	}
 	li {
 		margin-block-end: 0.25em;
+		max-width: 52ch;
 	}
-	p,
-	ol,
-	ul,
+	li > ul {
+		margin-block: 0.25em 0.5em;
+	}
 	h1,
 	h2,
 	h3,
@@ -126,50 +128,10 @@ blockquote {
 		margin-block-start: 1em;
 		margin-block-end: 0.125em;
 	}
-	p {
-		text-wrap: pretty;
-		margin-block-start: 0.5em;
-	}
-	img {
-		margin-block-start: var(--space-m);
-	}
-}
-.cv {
-	ul {
-		margin: unset;
-	}
-	p {
-		margin-block-end: 0.5em;
-	}
-	li {
-		margin-block-end: 0.25em;
-	}
-	p,
-	ol,
-	ul,
-	li {
-		font-size: var(--step-0);
-	}
-	p,
-	ol,
-	ul,
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6 {
-		margin-block-start: 1em;
-		margin-block-end: 0.125em;
-	}
-	p {
-		text-wrap: pretty;
-		margin-block-start: 0.5em;
-	}
-	li > ul,
-	ol {
-		margin-block-start: 0.125em;
-	}
+
+	// img {
+	// 	margin-block-start: var(--space-m);
+	// }
 }
 i,
 em {
@@ -301,7 +263,7 @@ a,
 		opacity: 1;
 	}
 	&:hover {
-		font-variation-settings: 'INFM' 100, 'wght' 700, 'BNCE' 50;
+		font-variation-settings: 'INFM' 100, 'wght' 600, 'BNCE' 50;
 		border: unset;
 	}
 }
@@ -345,4 +307,33 @@ pre code {
 
 .dimmed {
 	color: var(--color-sys-dim);
+}
+@keyframes pop-it {
+	from {
+		transform: scale(1);
+	}
+
+	to {
+		transform: scale(1.1);
+	}
+}
+.make-it-pop {
+	width: 100%;
+	&::before {
+		transform: rotateY(0.5turn);
+		transform-origin: bottom center;
+		background-color: blueviolet;
+		animation: pop-it 1s ease-in-out alternate infinite;
+		content: url('/misc/quotes.svg'); /* Path to your SVG file */
+		display: inline-block;
+		max-width: 1em; /* Set the width */
+		max-height: 1em; /* Set the height */
+	}
+	&::after {
+		animation: pop-it 1s ease-in-out alternate infinite;
+		content: url('/misc/quotes.svg'); /* Path to your SVG file */
+		display: inline-block;
+		max-width: 0.125em; /* Set the width */
+		max-height: 0.125em; /* Set the height */
+	}
 }

@@ -13,15 +13,22 @@ const emit = defineEmits<{
 		content-transition="vfm-fade"
 	>
 		<button class="fullscreen-modal-btn" @click="emit('close')">Close</button>
-		<slot />
+		<div class="fullscreen-slot">
+			<slot />
+		</div>
 	</VueFinalModal>
 </template>
 <style lang="scss">
+.fullscreen-slot {
+	img {
+		border-radius: 0;
+	}
+}
 .fullscreen-modal {
 	max-width: calc(100dvw - var(--space-l));
 	max-height: calc(100dvh - var(--space-l));
 	overflow-y: scroll;
-	border-radius: var(--border-radius-sm);
+	border-radius: var(--border-radius-xs);
 	@media (width <= $display-width-sm) {
 		max-width: calc(100dvw - var(--space-m));
 		max-height: calc(100dvh - var(--space-m));

@@ -14,7 +14,7 @@ const emit = defineEmits<{
 		content-transition="vfm-fade"
 		swipe-to-close="down"
 	>
-		<h6 class="drag-title">More reasons why I'm a good fit</h6>
+		<h6 class="drag-title">Reasons why DS role fits a glove</h6>
 		<ul>
 			<li>
 				Working knowledge of complex <em>DS</em>

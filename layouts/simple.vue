@@ -15,7 +15,7 @@
 }
 .simple-app {
 	min-height: 100dvh;
-	@include display-width($display-width-xl);
+	@include display-width($display-width-lg);
 	grid-template-rows: auto 1fr auto;
 }
 </style>

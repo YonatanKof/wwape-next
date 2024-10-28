@@ -16,7 +16,7 @@ defineProps({
 				<nuxt-link :to="{ name: 'index' }">Visit WWape</nuxt-link>
 			</nav>
 			<nav v-show="!isSimple">
-				<!-- <nuxt-link :to="{ name: 'work' }">UX</nuxt-link> -->
+				<nuxt-link :to="{ name: 'work' }">Work</nuxt-link>
 				<nuxt-link :to="{ name: 'design' }" aria-label="Go to Graphic Arts & Design page">Graphics</nuxt-link>
 				<nuxt-link :to="{ name: 'post' }" aria-label="Go to Post page">Posts</nuxt-link>
 			</nav>

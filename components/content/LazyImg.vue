@@ -7,11 +7,11 @@ import Modal from '~/components/FullScreenModal.vue';
 const props = defineProps({
 	src: {
 		type: String,
-		default: '',
+		default: undefined,
 	},
 	alt: {
 		type: String,
-		default: '',
+		default: undefined,
 	},
 	width: {
 		type: [String, Number],
@@ -71,6 +71,6 @@ span {
 	}
 }
 em {
-	margin-block-end: 1.5em;
+	@include desc-text-under();
 }
 </style>

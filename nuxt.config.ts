@@ -1,5 +1,5 @@
 const siteOwnerNameHere = 'Yonatan Ben Knaan';
-const baseUrlHere = process.env.BASE_URL;
+const baseUrlHere = process.env.DEPLOY_PRIME_URL;
 const SiteNameHere = 'WWApe';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config

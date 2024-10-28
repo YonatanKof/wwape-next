@@ -49,6 +49,9 @@ const props = defineProps({
 	</div>
 </template>
 <style lang="scss" scoped>
+p {
+	text-wrap: balance;
+}
 button {
 	border-radius: var(--space-l);
 	width: max-content;
@@ -90,7 +93,7 @@ h4 {
 	gap: var(--space-xs);
 	margin-block: var(--space-s);
 	margin-inline: var(--space-s);
-	max-width: calc(var(--space-6xl) * 2);
+	max-width: calc(var(--space-7xl) * 3);
 }
 
 @container flipped (width < 480px) {
