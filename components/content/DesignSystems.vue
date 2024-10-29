@@ -17,12 +17,13 @@ const { open, close } = useModal({
 <template>
 	<section>
 		<ModalsContainer />
-		<!-- <h1>Design Systems</h1>
-		<blockquote>Unifying Product, Dev, and Brand teams with tech & Design-Thinking</blockquote> -->
 		<p>
-			I envision, create, lead, manage, and govern design systems that connect product teams, brand identity,
-			developers, and business needs. Design systems that people adopt and use ensure design consistency, cohesive
-			experiences, scalable solutions, and improve velocity and better cross-functional collaboration.
+			At Pepperi I created, lead, managed, and governed a <i>design systems</i> & and <i>brand guide</i> that connect
+			the product team, brand identity, developers, and the business needs.
+		</p>
+		<p>
+			A design systems that people adopt and use ensure design consistency, cohesive experiences, scalable solutions,
+			improve velocity and better cross-functional collaboration.
 		</p>
 		<main>
 			<div id="intro">
@@ -30,8 +31,8 @@ const { open, close } = useModal({
 					<span>
 						<p>As a <i>full-stack designer</i>, creating <em>Pepperi Design System</em> was a joy!</p>
 						<p>
-							It was made possible through an intimate knowledge of complex systems, the people who use them, and
-							the businesses that operate them.
+							It was made possible through an intimate knowledge of complex systems, the people who use them, and the
+							businesses that operate them.
 						</p>
 						<p>
 							<span style="display: block">Reasons why I love DS role?</span>
