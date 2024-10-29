@@ -1,5 +1,5 @@
 ---
-title: 'Design Systems'
+title: 'Pepperi Design System'
 author_name: 'Yonatan Ben Knaan'
 date: '2024-08-01'
 updated: ''
