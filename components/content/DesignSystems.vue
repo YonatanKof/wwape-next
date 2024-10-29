@@ -48,8 +48,8 @@ const { open, close } = useModal({
 				title="Design Tokens"
 				btnText="Read the Article!"
 				linkTo="/post/design-tokens/"
-				imgSrc="/misc/design-tokens.webm"
-				srcMp4="/misc/design-tokens.mp4"
+				imgSrc="/work/pepperi-design-system/design-tokens.webm"
+				srcMp4="/work/pepperi-design-system/design-tokens.mp4"
 			>
 				<span>
 					<p>
@@ -65,8 +65,8 @@ const { open, close } = useModal({
 				title="Pepperi DS, Storybook"
 				btnText="Visit Storybook"
 				linkTo="https://60ae3e9eff8e4c003b2f90d4-orunuhbrch.chromatic.com/?path=/docs/pepperi-design-system--page"
-				imgSrc="/misc/DesignSystem-1.webm"
-				srcMp4="/misc/DesignSystem-1.mp4"
+				imgSrc="/work/pepperi-design-system/DesignSystem-1.webm"
+				srcMp4="/work/pepperi-design-system/DesignSystem-1.mp4"
 			>
 				<p>
 					Used by the <i>Product</i> and <i>Dev</i> teams to <strong>improve velocity</strong>, this library showcases
@@ -80,8 +80,8 @@ const { open, close } = useModal({
 				title="PDS, Composite Storybook"
 				btnText="Visit Composite Lib."
 				linkTo="https://626ab62298ef5a004ac8cdea-fsmhdxxugw.chromatic.com/?path=/docs/pepperi-extended-level-composition--page"
-				imgSrc="/misc/DesignSystem-2.webm"
-				srcMp4="/misc/DesignSystem-2.mp4"
+				imgSrc="/work/pepperi-design-system/DesignSystem-2.webm"
+				srcMp4="/work/pepperi-design-system/DesignSystem-2.mp4"
 			>
 				<p>
 					This library contains the <i>Organisms</i>, <i>Templates</i> and <i>Pages</i> (WIP) that makes up Pepperi's
@@ -94,8 +94,8 @@ const { open, close } = useModal({
 				title="Pepperi Brand Guide"
 				btnText="Visit the Brand Guide"
 				linkTo="https://brand.pepperi.com/"
-				imgSrc="/misc/brand.webm"
-				srcMp4="/misc/brand.mp4"
+				imgSrc="/work/pepperi-design-system/brand.webm"
+				srcMp4="/work/pepperi-design-system/brand.mp4"
 			>
 				<p>
 					With this design initiative, I've guided management in a journey to strengthen and solidify Pepperi brand.
