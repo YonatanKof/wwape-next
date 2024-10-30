@@ -5,7 +5,7 @@ const props = defineProps({
 		default: undefined,
 	},
 });
-const sizes = '10vw xs:200px sm:400px md:800px';
+const sizes = 'xs:400px sm:800px';
 </script>
 <template>
 	<div>

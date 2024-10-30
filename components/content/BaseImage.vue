@@ -70,9 +70,8 @@ const { open, close } = useModal({
 			@keyup.enter="open"
 			:alt="alt"
 			:src="src"
-			sizes="10vw xs:300px sm:600px md:900px lg:1200px xl:1600px"
+			sizes="xs:300px sm:600px md:900px"
 			:placeholder="[Math.round(width / 10), Math.round(height / 10), 50, 5]"
-			densities="x1 x2"
 			loading="lazy"
 		/>
 		<em v-if="desc" v-html="desc"></em>
