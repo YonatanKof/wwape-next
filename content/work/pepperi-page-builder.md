@@ -140,7 +140,7 @@ Talk about a head start.
 
 ### 2. Getting Everyone's Two Cents
 
-We needed to hear from everyone who'd touch this thing - from the folks building it to the people actually using it. So we assembled what we called our "steering committee" (fancy name for "people who know their stuff"):
+We needed to hear from everyone who'd touch this thing - from the folks building it to the people actually using it. So we assembled what we called our *steering committee* (fancy name for *people who know their stuff*):
 
 - Dev team (the builders)
 - Product team (the planners)
@@ -365,7 +365,7 @@ Before jumping into full-blown development, we needed to make sure our wireframe
 
 ### Interactive Mockups in Action
 
-We built clickable prototypes of our designs and let our steering committee loose on them. Nothing beats watching real people try to use your stuff.
+We built clickable prototypes of our designs and let our *steering committee* loose on them. Nothing beats watching real people try to use your stuff.
 
 ::GridBlockTwo{frOne="2fr" frTwo="3fr" gap="var(--space-m)"}
 :::GridUnit
