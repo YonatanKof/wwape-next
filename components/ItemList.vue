@@ -10,7 +10,7 @@ const props = defineProps({
 	},
 	masonryColumnWidth: {
 		type: Number,
-		default: 200,
+		default: 160,
 	},
 	masonryGap: {
 		type: Number,
@@ -23,6 +23,10 @@ const props = defineProps({
 	showDate: {
 		type: Boolean,
 		default: true,
+	},
+	titleSize: {
+		type: String,
+		default: 'var(--step-2)',
 	},
 });
 const { $formatDate } = useNuxtApp();
@@ -81,15 +85,25 @@ const { $formatDate } = useNuxtApp();
 #title {
 	margin-block-start: unset;
 	margin-block-end: var(--space-4xs);
+	font-size: v-bind(titleSize);
+	@media (width <= $display-width-xs) {
+		font-size: var(--step-1);
+	}
 }
 #mata-data {
 	font-size: var(--step--2);
 	color: var(--color-sys-slight);
+	@media (width <= $display-width-xs) {
+		font-size: var(--step--4);
+	}
 }
 p {
 	font-size: var(--step--1);
 	margin-block-end: unset;
 	font-variation-settings: 'slnt' 0, 'wght' 400, 'CRSV' 0;
+	@media (width < $display-width-xs) {
+		font-size: var(--step--2);
+	}
 }
 img {
 	border-radius: unset;
