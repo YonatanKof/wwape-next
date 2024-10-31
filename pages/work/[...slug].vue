@@ -44,7 +44,7 @@ function confirm() {
 	<main>
 		<ContentDoc>
 			<template v-slot="{ doc }">
-				<button @click="show = true">Open Modal</button>
+				<button v-if="doc.showToc === true" @click="show = true">Table of content</button>
 				<TableOfContent v-model="show" @confirm="() => confirm()" :tocData="toc" />
 				<main>
 					<section id="article-header">
@@ -148,9 +148,10 @@ hr:last-of-type {
 
 button {
 	position: fixed;
-	inset-block-end: calc(var(--space-s) + var(--space-2xs));
-	inset-inline-end: calc(var(--space-s) + var(--space-2xs));
-	max-width: calc(var(--space-5xl) * 2 - var(--space-2xs) * 2);
+	inset-block-end: var(--space-l);
+	inset-inline-end: calc(var(--space-s) * 2);
+	max-width: calc(var(--space-5xl) * 2 - var(--space-2xs) * 4);
+	max-width: max-content;
 	z-index: 100;
 	width: 100%;
 }
