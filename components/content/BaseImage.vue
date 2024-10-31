@@ -1,5 +1,5 @@
 <script setup>
-import { ModalsContainer, useModal } from 'vue-final-modal';
+import { useModal } from 'vue-final-modal';
 import Modal from '~/components/FullScreenModal.vue';
 
 const props = defineProps({
@@ -63,7 +63,6 @@ const { open, close } = useModal({
 });
 </script>
 <template>
-	<ModalsContainer />
 	<span class="lazy-img" @click="open" @keyup.enter="open">
 		<NuxtImg
 			@click="open"

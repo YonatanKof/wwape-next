@@ -16,7 +16,6 @@ const { open, close } = useModal({
 </script>
 <template>
 	<section>
-		<ModalsContainer />
 		<p>
 			At Pepperi I created, lead, managed, and governed a <i>design systems</i> & and <i>brand guide</i> that connect
 			the product team, brand identity, developers, and the business needs.
