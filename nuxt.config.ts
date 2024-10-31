@@ -4,15 +4,20 @@ const SiteNameHere = 'WWApe';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-	modules: ['@nuxt/content', '@vueuse/nuxt', '@unlazy/nuxt', 'nuxt-clarity-analytics', '@nuxt/image', '@nuxtjs/color-mode'],
+	modules: [
+		'@nuxt/content',
+		'@vueuse/nuxt',
+		'@unlazy/nuxt',
+		'nuxt-clarity-analytics',
+		'@nuxt/image',
+		`@nuxtjs/color-mode`,
+	],
 	routeRules: {
 		'/hunt/**': { redirect: '/work/**' },
 	},
 	content: {
-		// toc: {
-		// 	depth: 4,
-		// 	searchDepth: 4,
-		// },
+		documentDriven: true,
+		toc: true,
 		highlight: {
 			langs: ['json', 'js', 'ts', 'html', 'css', 'scss', 'vue', 'shell', 'mdc', 'md', 'yaml'],
 			// Theme used in all color schemes.
