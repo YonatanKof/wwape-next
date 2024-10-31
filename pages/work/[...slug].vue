@@ -33,12 +33,19 @@ nuxtApp.$pageMetaTags({
 	metaPublishedTime: data.value?.article?.date.split('T')[0],
 	metaModifiedTime: data.value?.article?.updated.split('T')[0],
 });
+const show = ref(false);
+
+function confirm() {
+	show.value = false;
+}
 </script>
 
 <template>
 	<main>
 		<ContentDoc>
 			<template v-slot="{ doc }">
+				<button @click="show = true">Open Modal</button>
+				<TableOfContent v-model="show" @confirm="() => confirm()" :tocData="toc" />
 				<main>
 					<section id="article-header">
 						<div id="article-info">
@@ -59,7 +66,6 @@ nuxtApp.$pageMetaTags({
 							</span>
 						</div>
 					</section>
-					<TableOfContent :tocData="toc"/>
 					<span class="content-renderer"><ContentRenderer :value="doc" /></span>
 				</main>
 			</template>
@@ -138,5 +144,14 @@ hr:last-of-type {
 	gap: var(--space-3xs);
 	align-items: center;
 	margin: unset;
+}
+
+button {
+	position: fixed;
+	inset-block-end: calc(var(--space-s) + var(--space-2xs));
+	inset-inline-end: calc(var(--space-s) + var(--space-2xs));
+	max-width: calc(var(--space-5xl) * 2 - var(--space-2xs) * 2);
+	z-index: 100;
+	width: 100%;
 }
 </style>
