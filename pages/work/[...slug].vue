@@ -1,6 +1,7 @@
 <!-- This is a single post -->
 <script setup>
 const { path } = useRoute();
+const { toc } = useContent();
 const cleanPath = path.replace(/\/+$/, '');
 
 const { data, error } = await useAsyncData(cleanPath, async () => {
@@ -58,6 +59,7 @@ nuxtApp.$pageMetaTags({
 							</span>
 						</div>
 					</section>
+					<TableOfContent :tocData="toc"/>
 					<span class="content-renderer"><ContentRenderer :value="doc" /></span>
 				</main>
 			</template>
