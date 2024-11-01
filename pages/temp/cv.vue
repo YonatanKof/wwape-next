@@ -1,7 +1,4 @@
 <script setup>
-definePageMeta({
-	layout: 'simple',
-});
 const config = useRuntimeConfig();
 
 const nuxtApp = useNuxtApp();

@@ -9,11 +9,20 @@ useHead({
 </script>
 
 <template>
-	<NuxtLayout>
+	<main class="main-app">
+		<AppHeader />
 		<NuxtPage />
-	</NuxtLayout>
+		<ModalsContainer />
+		<AppFooter />
+	</main>
 </template>
 <style lang="scss">
+.main-app {
+	height: 100dvh;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	@include display-width;
+}
 .page-enter-active,
 .page-leave-active,
 .layout-enter-active,

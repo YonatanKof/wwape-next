@@ -1,7 +1,4 @@
 <script setup>
-definePageMeta({
-	layout: 'simple',
-});
 import { ModalsContainer, useModal } from 'vue-final-modal';
 import Modal from '~/components/ModalMelio.vue';
 
