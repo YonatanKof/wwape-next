@@ -38,28 +38,26 @@ nuxtApp.$pageMetaTags({
 	<main>
 		<ContentDoc>
 			<template v-slot="{ doc }">
-				<main>
-					<section id="article-header">
-						<div id="article-info">
-							<h1 id="title">{{ doc.title }}</h1>
-							<h3 id="sub-title">{{ doc.description }}</h3>
-							<span class="meta-data">
-								<p>Posted {{ $formatDate(doc.date) }}</p>
-								<p v-if="doc.updated">•</p>
-								<p v-if="doc.updated">Updated {{ $formatDate(doc.updated) }}</p>
-								<span class="path" v-if="doc.role"></span>
-								<div v-if="doc.role" class="role">
-									<p>Role:</p>
-									<template v-for="(role, index) in doc.role" :key="index">
-										<i>{{ role }}</i>
-										<p v-if="index < doc.role.length - 1">•</p>
-									</template>
-								</div>
-							</span>
-						</div>
-					</section>
-					<span class="content-renderer"><ContentRenderer :value="doc" /></span>
-				</main>
+				<section id="article-header">
+					<div id="article-info">
+						<h1 id="title">{{ doc.title }}</h1>
+						<h3 id="sub-title">{{ doc.description }}</h3>
+						<span class="meta-data">
+							<p>Posted {{ $formatDate(doc.date) }}</p>
+							<p v-if="doc.updated">•</p>
+							<p v-if="doc.updated">Updated {{ $formatDate(doc.updated) }}</p>
+							<span class="path" v-if="doc.role"></span>
+							<div v-if="doc.role" class="role">
+								<p>Role:</p>
+								<template v-for="(role, index) in doc.role" :key="index">
+									<i>{{ role }}</i>
+									<p v-if="index < doc.role.length - 1">•</p>
+								</template>
+							</div>
+						</span>
+					</div>
+				</section>
+				<span class="content-renderer"><ContentRenderer :value="doc" /></span>
 			</template>
 			<template #not-found>
 				<ErrorMsg />

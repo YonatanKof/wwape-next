@@ -37,7 +37,6 @@ nuxtApp.$pageMetaTags({
 	metaPublishedTime: data.value?.article?.date.split('T')[0],
 	metaModifiedTime: data.value?.article?.updated.split('T')[0],
 });
-
 </script>
 
 <template>
@@ -88,10 +87,11 @@ article {
 		font-size: var(--step--3);
 	}
 }
-#error{
+#error {
 	height: 100%;
 }
-#error, #link-buttons {
+#error,
+#link-buttons {
 	@include flex-center($flex-direction: column, $justify-content: center, $gap: var(--space-2xs));
 }
 </style>

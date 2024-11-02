@@ -4,7 +4,8 @@ const config = useRuntimeConfig();
 const nuxtApp = useNuxtApp();
 nuxtApp.$pageMetaTags({
 	metaTitle: `Amazing posts by ${config.public.siteOwnerName} of the ${config.public.siteName}`,
-	metaDesc: 'Browse a collection of personal design projects and illustrations that explore creativity in everyday life. Simple, expressive, and visually engaging pieces that reflect a unique artistic style',
+	metaDesc:
+		'Browse a collection of personal design projects and illustrations that explore creativity in everyday life. Simple, expressive, and visually engaging pieces that reflect a unique artistic style',
 	metaImg: '/images/posts-social.jpg',
 	metaImgAlt: 'Social cover for this site posts page',
 });

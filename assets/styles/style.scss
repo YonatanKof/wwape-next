@@ -10,7 +10,7 @@
 	--border-radius-xs: var(--space-3xs);
 	--border-radius-none: unset;
 
-
+	// Colors
 	--color-black-main: hsl(180, 25%, 5%);
 	--color-black-slight: color-mix(in hsl, var(--color-black-main) 80%, transparent);
 	--color-black-dim: color-mix(in hsl, var(--color-black-main) 40%, transparent);
@@ -43,7 +43,7 @@
 	--color-focus-dim: color-mix(in hsl, var(--color-focus-main) 40%, transparent);
 	--color-focus-dis: color-mix(in hsl, var(--color-focus-main) 10%, transparent);
 	--color-focus-none: color-mix(in hsl, var(--color-focus-main) 0%, transparent);
-	
+
 	--color-caution-main: hsl(0, 100%, 40%);
 	--color-success-main: hsl(126, 100%, 25%);
 
@@ -134,9 +134,7 @@ button,
 .icon-btn {
 	padding: var(--space-2xs);
 }
-// img ~ em {
-// 	@include desc-text-under();
-// }
+
 hr {
 	border: none;
 	border-bottom: solid 1px var(--color-sys-dim);

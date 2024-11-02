@@ -41,7 +41,7 @@
 	position: relative;
 	margin-block-end: 1.5em;
 	line-height: 1.35;
-	font-variation-settings: "wght" 300, "ital" 1, "SPAC" 5;
+	font-variation-settings: 'wght' 300, 'ital' 1, 'SPAC' 5;
 	&::before {
 		content: '';
 		display: inline-block;
@@ -51,6 +51,5 @@
 		position: absolute;
 		inset-inline-start: calc(var(--space-xs) * -1);
 		border-radius: var(--border-radius-xs);
-
 	}
 }
