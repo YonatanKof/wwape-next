@@ -3,7 +3,7 @@ const nuxtApp = useNuxtApp();
 nuxtApp.$pageMetaTags();
 </script>
 <template>
-	<main>
+	<main class="main-index">
 		<IntroText
 			:is-on="true"
 			title="World Wide Ape"

@@ -13,8 +13,11 @@ const { data } = await useAsyncData('equal', () => {
 });
 </script>
 <template>
-	<div>
-		<IntroText title="Posts" text="Welcome to my posts page, where I share insights and stories from my creative journey – design tips, personal projects, dev stuff, and more"/>
+	<div class="main-index">
+		<IntroText
+			title="Posts"
+			text="Welcome to my posts page, where I share insights and stories from my creative journey – design tips, personal projects, dev stuff, and more"
+		/>
 		<ItemList :design-data="data" />
 	</div>
 </template>

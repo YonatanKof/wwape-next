@@ -1,6 +1,10 @@
 // Vars
 :root {
-	--header-height: var(--space-4xl);
+	// Sizes
+	--header-height: var(--space-3xl);
+	--header-plus-height: calc(var(--header-height) + var(--space-m));
+
+	// Borders
 	--border-radius-md: var(--space-xs);
 	--border-radius-sm: var(--space-2xs);
 	--border-radius-xs: var(--space-3xs);
@@ -142,6 +146,10 @@ hr {
 	background: var(--color-overlay) !important;
 }
 
+.main-index {
+	@include display-width();
+	margin-block-start: var(--header-plus-height);
+}
 .dark-mode {
 	--color-sys-main: hsl(34, 78%, 91%);
 

@@ -13,7 +13,7 @@ const { data } = await useAsyncData('equal', () => {
 });
 </script>
 <template>
-	<div>
+	<div class="main-index">
 		<IntroText 
 			title="UX, Product & Brand Design"
 			text="Crafting digital products, design systems & brands that get the job done for 15+ years. From design thinking to design ops – I always focus on valuable, efficient solutions."

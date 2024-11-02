@@ -70,8 +70,10 @@ nuxtApp.$pageMetaTags({
 
 <style lang="scss" scoped>
 main {
-	max-width: var(--display-width-lg);
-	margin-inline: auto;
+	margin-block-start: var(--header-plus-height);
+}
+#article-header {
+	@include display-width($width: $display-width-lg);
 }
 h1 {
 	margin-block-end: var(--space-s);
@@ -91,9 +93,6 @@ section {
 
 article {
 	margin-block-end: var(--space-s);
-}
-main {
-	margin-block-end: var(--space-l);
 }
 .meta-data {
 	display: flex;

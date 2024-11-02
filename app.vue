@@ -1,5 +1,4 @@
 <script setup lang="ts">
-const config = useRuntimeConfig();
 useHead({
 	meta: [
 		{ name: 'google-site-verification', content: 'BT5cxk7V5QYzpwQdodAb49ZrNuxGDvD4lii_fgV-uZE' },
@@ -11,17 +10,21 @@ useHead({
 <template>
 	<main class="main-app">
 		<AppHeader />
-		<NuxtPage />
 		<ModalsContainer />
-		<AppFooter />
+		<div class="main-content">
+			<NuxtPage />
+			<AppFooter />
+		</div>
 	</main>
 </template>
 <style lang="scss">
 .main-app {
 	height: 100dvh;
+}
+.main-content{
 	display: grid;
-	grid-template-rows: auto 1fr auto;
-	@include display-width;
+	height: 100%;
+	grid-template-rows: 1fr auto;
 }
 .page-enter-active,
 .page-leave-active,

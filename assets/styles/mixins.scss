@@ -7,7 +7,7 @@
 }
 @mixin display-width($width: var(--display-width-md)) {
 	max-width: $width;
-	margin: 0 auto;
+	margin-inline: auto;
 	padding-inline-start: calc(max(var(--space-xs-l), env(safe-area-inset-left)));
 	padding-inline-end: calc(max(var(--space-xs-l), env(safe-area-inset-right)));
 }

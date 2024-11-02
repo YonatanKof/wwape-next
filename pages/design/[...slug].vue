@@ -65,14 +65,15 @@ nuxtApp.$pageMetaTags({
 </template>
 
 <style lang="scss" scoped>
+main {
+	@include display-width;
+	margin-block-start: var(--header-plus-height);
+}
 h1 {
 	margin-block-end: var(--space-s);
 }
 article {
 	margin-block-end: var(--space-s);
-}
-main {
-	margin-block-end: var(--space-l);
 }
 .dates {
 	display: flex;

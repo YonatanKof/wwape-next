@@ -93,14 +93,12 @@ nuxtApp.$pageMetaTags({
 </template>
 
 <style lang="scss" scoped>
-main {
-	max-width: var(--display-width-md);
-	margin-inline: auto;
-}
+
 h1 {
 	margin-block-end: var(--space-s);
 }
 section {
+	@include display-width;
 	display: grid;
 	grid-template-columns: 4fr 1fr 6fr;
 	grid-template-rows: var(--space-2xl) auto var(--space-2xl);
@@ -182,5 +180,8 @@ main {
 }
 hr:last-of-type {
 	margin-block-end: var(--space-s);
+}
+.separator {
+	@include display-width;
 }
 </style>
