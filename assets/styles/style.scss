@@ -17,8 +17,8 @@
 	--color-black-dis: color-mix(in hsl, var(--color-black-main) 10%, transparent);
 	--color-black-hardly: color-mix(in hsl, var(--color-black-main) 3%, transparent);
 	--color-black-none: color-mix(in hsl, var(--color-black-main) 0%, transparent);
-	
-	--color-sys-main: hsl(180, 25%, 15%);
+
+	--color-sys-main: hsl(180, 0%, 10%);
 	--color-sys-slight: color-mix(in hsl, var(--color-sys-main) 80%, transparent);
 	--color-sys-dim: color-mix(in hsl, var(--color-sys-main) 40%, transparent);
 	--color-sys-dis: color-mix(in hsl, var(--color-sys-main) 10%, transparent);
@@ -26,13 +26,13 @@
 
 	--color-sys-invert-highlight: color-mix(in hsl, var(--color-sys-invert-main) 0%, white);
 	--color-sys-invert-highlight-slight: color-mix(in hsl, var(--color-sys-invert-highlight) 65%, transparent);
-	--color-sys-invert-main: antiquewhite;
+	--color-sys-invert-main: hsl(0, 0%, 90%);
 	--color-sys-invert-slight: color-mix(in hsl, var(--color-sys-invert-main) 80%, transparent);
 	--color-sys-invert-dim: color-mix(in hsl, var(--color-sys-invert-main) 40%, transparent);
 	--color-sys-invert-dis: color-mix(in hsl, var(--color-sys-invert-main) 10%, transparent);
 	--color-sys-invert-none: color-mix(in hsl, var(--color-sys-invert-main) 0%, transparent);
 
-	--color-brand-main: hsl(280, 100%, 40%);
+	--color-brand-main: hsl(50, 0%, 0%);
 	--color-brand-slight: color-mix(in hsl, var(--color-brand-main) 80%, transparent);
 	--color-brand-dim: color-mix(in hsl, var(--color-brand-main) 40%, transparent);
 	--color-brand-dis: color-mix(in hsl, var(--color-brand-main) 10%, transparent);
@@ -151,12 +151,12 @@ hr {
 	margin-block-start: var(--header-plus-height);
 }
 .dark-mode {
-	--color-sys-main: hsl(34, 78%, 91%);
+	--color-sys-main: hsl(34, 0%, 91%);
 
 	--color-sys-invert-highlight: color-mix(in hsl, var(--color-sys-invert-main) 55%, black);
-	--color-sys-invert-main: hsl(34, 25%, 15%);
+	--color-sys-invert-main: hsl(34, 0%, 15%);
 
-	--color-brand-main: hsl(280, 100%, 80%);
+	--color-brand-main: hsl(280, 0%, 80%);
 	--color-focus-main: hsl(200, 100%, 40%);
 	--color-caution-main: hsl(0, 100%, 60%);
 	--color-success-main: hsl(126, 100%, 65%);
