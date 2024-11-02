@@ -15,6 +15,12 @@
 @mixin linear-gradient($deg, $clr, $int, $end) {
 	background: linear-gradient($deg, rgba($clr, $int) 0%, rgba($clr, 0) $end);
 }
+@mixin cool-doted-bg() {
+	background-color: var(--color-sys-invert-highlight-slight);
+	backdrop-filter: blur(4px);
+	background-image: radial-gradient(var(--color-sys-invert-highlight) 1px, transparent 1px);
+	background-size: 3px 3px;
+}
 @mixin content-item() {
 	height: fit-content;
 	background-color: var(--color-sys-invert-highlight);
