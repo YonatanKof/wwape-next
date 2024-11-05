@@ -50,7 +50,7 @@ const props = defineProps({
 </template>
 <style lang="scss" scoped>
 p {
-	text-wrap: balance;
+	// text-wrap: balance;
 }
 button {
 	border-radius: var(--space-l);

@@ -121,12 +121,12 @@ main {
 h1 {
 	margin-block-end: var(--space-2xs);
 	font-size: var(--step-3);
-	text-wrap: balance;
+	// text-wrap: balance;
 	max-width: 34ch;
 	margin-block-end: var(--space-xs);
 }
 h3 {
-	text-wrap: balance;
+	// text-wrap: balance;
 	margin-block-end: var(--space-3xs);
 	font-variation-settings: 'wght' 400;
 	font-family: var(--font-body);
