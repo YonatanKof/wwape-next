@@ -25,6 +25,7 @@ useHead({
 	display: grid;
 	height: 100%;
 	grid-template-rows: 1fr auto;
+	gap: var(--space-l);
 }
 .page-enter-active,
 .page-leave-active,
