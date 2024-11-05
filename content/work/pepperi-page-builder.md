@@ -11,6 +11,7 @@ image_alt: ''
 description: 'B2B Web Magic: How we turned the headache of custom web pages into a no-code playground for B2B clients'
 tags: ['Creative']
 role: ['Head of design', 'IC']
+responsibilities: ['UX Research & Analysis', 'Stakeholder Management', 'UX Architecture', 'Design']
 ---
 
 ::PeppMainImg
@@ -18,6 +19,8 @@ role: ['Head of design', 'IC']
 desc: Custom homepages built with our Page Builder - yeah, they look pretty sweet
 ---
 ::
+
+::GridSection
 
 Look, we get it - B2B clients need web pages that don't suck. That's why we built *Pepperi Page Builder*. It's a no-BS tool that lets businesses create, edit, and design their pages without writing a single line of code. Want to showcase promotions? Set up buyer profiles? Control your workflow? Done, done, and done.
 
@@ -55,48 +58,26 @@ Custom web pages sound great in theory, but man, they were causing headaches lef
 
 Before we dove in headfirst, we needed to make sure we weren't building a solution looking for a problem. Here's how we validated our assumptions:
 
-We watched what our clients were already doing:
+::
 
-::GridBlockTwo{frOne="3fr" frTwo="2fr" gap="var(--space-l)"}
+
+::GridBlock{title="How we Validated" colTemplate="2fr 3fr"}
 :::GridUnit
+
+
+#### Current state 
+
+We initially checked out what our clients were already doing:
 
 1. Starting 2017 some brave souls were building their own custom pages with devs and FS members
 2. Our PS team was getting swamped with homepage design requests
 3. At 2019 we built a plugin that allowed clients to edit content themselves, even if it meant wrestling with JSON files
 4. Leading clients were nodding enthusiastically at the idea
-5. Sales team confirmed people would pay for this
-6. Our marketing team's landing pages were getting traction
 
-:::
-:::GridUnit
-::::TiltImage
----
-img1: /work/pepperi-page-builder/Old-Blackcrows.webp
-img2: /work/pepperi-page-builder/Old-Dermalogica.webp
-img3: /work/pepperi-page-builder/Old-Chanel.webp
-desc: Custom pages our clients built - cool for them, nightmare for us
----
-::::
-:::
-::
+#### External confirmations:    
 
-That JSON plugin? It wasn't pretty, but it proved something crucial: clients would rather edit a JSON file than wait for a developer to change their content. If they were willing to do that, imagine how they'd feel about a proper visual editor.
-
-<!-- 
-
-The results speak for themselves. We turned a constant source of frustration into a revenue-generating machine that makes everyone's life easier. Our clients are building pages faster than ever, our PS team isn't pulling their hair out anymore, and the pages actually look good. Not bad for a no-code tool, right?
-## Reality Check
-
-Before we dove in headfirst, we needed to make sure we weren't building a solution looking for a problem. Here's how we validated our assumptions:
-
-::GridBlockTwo{gap="var(--space-m)"}
-:::GridUnit
-We watched what our clients were already doing:
-1. Some brave souls were building their own custom pages
-2. Our PS team was getting swamped with homepage design requests
-3. Leading clients were nodding enthusiastically at the idea
-4. Sales team confirmed people would pay for this
-5. Our marketing team's landing pages were getting traction
+1. Sales team confirmed people would pay for this
+2. Our marketing team's landing pages were getting traction
 
 :::
 :::GridUnit
@@ -112,7 +93,19 @@ desc: Custom pages our clients built - cool for them, nightmare for us
 ::
 
 
- -->
+::GridSection
+
+
+:::QuoteBig
+---
+title: What did we learn?
+desc: That JSON plugin? It wasn't pretty, but it proved something crucial clients would rather edit a JSON file than wait for a developer to change their content. If they were willing to do that, imagine how they'd feel about a proper visual editor.
+icon: think
+---
+::: 
+
+> 
+
 ## Getting Real: Research Phase
 
 Look, we're not the type to just wing it. We did our homework - and then some. Here's how we figured out what actually needed building:
@@ -128,7 +121,6 @@ Let's break it down.
 
 Before we started cooking up new solutions, we took a good hard look at what was already out there. Smart move, right?
 
-#### What We Had Going For Us
 
 Here's the beautiful part - we weren't starting from scratch. Some of our clients had already cobbled together custom homepages. That meant we got to:
 
@@ -159,7 +151,10 @@ We didn't just sit around and chat. We:
 
 After collecting all this info, we needed to organize it somehow. Enter card sorting - our way of turning a mess of ideas into something that makes sense.
 
-#### What We Got Out of It
+::
+
+::GridBlock{title="What We Got Out of It" colTemplate="2fr 3fr"}
+:::GridUnit
 
 Card sorting helped us:
 1. Figure out how people think about web pages
@@ -167,14 +162,22 @@ Card sorting helped us:
 3. Use words that actually mean something to users
 4. Sort out what's important and what's just noise
 
-::lazy-img
+:::
+:::GridUnit
+
+
+::::lazy-img{isDropShadow=true}
 ---
 src: /work/pepperi-page-builder/PageBuilder-UX-Card-sorting.webp
 thumbhash: +AcGFIKqgqpthoZvqqavNz0FSA
 alt: Our card sorting session - organized chaos at its finest
 desc: Our card sorting session in action - looks messy, worked great
 ---
+::::
+:::
 ::
+
+::GridSection
 
 ### 4. Checking Out the Competition
 
@@ -198,9 +201,10 @@ We looked at:
 - Customization options
 - Pricing (because yeah, that matters)
 
-Want to geek out over the full competitive analysis? Check these out:
 
-::GridBlockTwo
+:: 
+
+::GridBlock{title="Link to full competitive analysis" maxWidth="var(--display-width-sm)"}
 :::GridUnit
 ::::PrettyLink
 ---
@@ -224,96 +228,111 @@ icon: 📐
 :::
 ::
 
+::GridSection
 ## Wireframes: Testing Our Ideas
 
 Time to put our research to work. We started rough and refined as we went, testing everything with real users along the way. No point building something pretty if it doesn't work, right?
 
-### The Big Decision: How to Edit
+:::QuoteBig
+---
+title: "What is the best UX for editing?"
+desc: After looking at a bunch of page builders, we spotted <strong>two</strong> ways to handle editing. So the big decision was <i>which of the two is preferable?</i>
+icon: think
+---
+::: 
 
-After looking at a bunch of page builders, we spotted two main ways to handle editing:
+::
 
-#### Option 1: Edit Right Where You See It
-::GridBlockTwo{gap="var(--space-l)"}
+::GridBlock{title="1st UX option"}
 :::GridUnit
+#### In-place Editor
 The *Wix* and *Squarespace* approach: editing panels pop up right next to what you're working on.
 
-[**The Good**]{style="color: var(--color-success-main);"}
+***[Pros:]{style="color: var(--color-success-main);"}***
 - Everything's right where you need it
 - Clear connection between what you're editing and what changes
 - Space-efficient
 
-[**The Bad**]{style="color: var(--color-caution-main);"}
+***[Cons:]{style="color: var(--color-caution-main);"}***
 - Better for tech-savvy folks
 - Can get messy with lots of floating panels
-:::
-:::GridUnit
+
 ::::BaseImage
 ---
 src: /work/pepperi-page-builder/PageBuilder-UX-In-place.webp
 width: 1600
 height: 1070
 alt: In-place editing wireframe
-desc: 'Option 1: Edit where you see it'
+desc: 'In-place Editor'
 ---
-::::
-:::
-::
 
-#### Option 2: Sidebar Editor
-::GridBlockTwo{gap="var(--space-l)"}
+:::
+
 :::GridUnit
+
+#### Sidebar Editor
 The *Elementor* way: everything you need to edit lives in a sidebar.
 
-[**The Good**]{style="color: var(--color-success-main);"}
+***[Pros:]{style="color: var(--color-success-main);"}***
 - You always know where to find things
 - Less jumping around the screen
 - Perfect for occasional users
 
-[**The Bad**]{style="color: var(--color-caution-main);"}
+***[Cons:]{style="color: var(--color-caution-main);"}***
 - Takes up more screen space
 - Editing feels less direct
-:::
-:::GridUnit
+
 ::::BaseImage
 ---
 src: /work/pepperi-page-builder/PageBuilder-UX-Side-panel.webp
 width: 1600
 height: 1070
 alt: Side panel editing wireframe
-desc: 'Option 2: Everything in a sidebar'
+desc: 'Sidebar Editor'
 ---
 ::::
 :::
 ::
 
-::QuoteBig
+
+
+::GridSection
+
+:::QuoteBig
 ---
-title: We went with the <strong>sidebar editor</strong> - here's why
+title: We went with the <i><strong>Sidebar Editor</strong></i> - here's why
 icon: think
 ---
+- ***Development Reality:*** 
+   
+   Our dev team pointed out that floating panels are a pain to build right. Why make their lives harder?
+- ***User Reality:*** 
+   
+   Most of our users aren't web designers - they just want to get stuff done without learning a whole new system.
+:::
+
+
+
+So after picking the side panel approach, we had two ways to handle the editing experience. Time for more decisions!
+
 ::
 
-1. ***Development Reality*:** Our dev team pointed out that floating panels are a pain to build right. Why make their lives harder?
-2. ***User Reality*:** Most of our users aren't web designers - they just want to get stuff done without learning a whole new system.
-
-
-### Low Level Wireframes: The Devil's in the Details
-
-After picking the side panel approach, we had two ways to handle the editing experience. Time for more decisions!
-
-#### Option 1: One Panel to Rule Them All
    
-::GridBlockTwo{gap="var(--space-l)"}
+::GridBlock{title="2nd UX option"}
+
 :::GridUnit
-[**The Good**]{style="color: var(--color-success-main);"}
+#### One Panel to Rule Them All
+
+A minimalist approach using a single, interchangeable panel for all editing functions. While this design keeps the interface clean and maximizes content viewing space, it requires users to navigate through multiple levels of menus.
+
+***[Pros:]{style="color: var(--color-success-main);"}***
 - Keeps things tidy
 - Less screen clutter
 
-[**The Bad**]{style="color: var(--color-caution-main);"}
+***[Cons:]{style="color: var(--color-caution-main);"}***
 - More clicking around
 - Easy to get lost in the navigation
-:::
-:::GridUnit
+
 ::::BaseImage
 ---
 src: /work/pepperi-page-builder/PageBuilder-UX-Side-panel-drill-in.webp
@@ -324,21 +343,20 @@ desc: One panel, lots of drilling down
 ---
 ::::
 :::
-::
 
-#### Option 2: The Dynamic Duo (Fixed + Changing Panel)
-::GridBlockTwo{gap="var(--space-l)"}
 :::GridUnit
+#### The Dynamic Duo: Fixed + Changing Panel
 
-[**The Good**]{style="color: var(--color-success-main);"}
+A two-panel solution that combines a persistent navigation panel with a dynamic editing area. This approach prioritizes quick access and editing efficiency, though it demands more screen space from users.
+
+***[Pros:]{style="color: var(--color-success-main);"}***
 - Faster editing
 - Less back-and-forth
 
-[**The Bad**]{style="color: var(--color-caution-main);"}
+***[Cons:]{style="color: var(--color-caution-main);"}***
 - Takes up more precious screen real estate
 - More stuff to keep track of
-:::
-:::GridUnit
+
 ::::BaseImage
 ---
 src: /work/pepperi-page-builder/PageBuilder-UX-Side-panel-expanded.webp
@@ -350,6 +368,8 @@ desc: 'Two panels: one fixed, one flexible'
 ::::
 :::
 ::
+
+::GridSection
 
 ::QuoteBig
 ---
@@ -367,9 +387,13 @@ Before jumping into full-blown development, we needed to make sure our wireframe
 
 We built clickable prototypes of our designs and let our steering committee loose on them. Nothing beats watching real people try to use your stuff.
 
-::GridBlockTwo{frOne="2fr" frTwo="3fr" gap="var(--space-m)"}
+::
+
+::GridBlock{title="What We Tested"}
 :::GridUnit
-What we tested:
+
+By letting the steering committee members play around with the prototype, this is what we were trying to test:
+
 - Navigation flows
 - Content editing workflows
 - Block placement and management
@@ -379,7 +403,7 @@ What we tested:
 The good part about catching issues here? Way cheaper to fix than after writing actual code.
 :::
 :::GridUnit
-::::lazy-img
+::::lazy-img{isDropShadow=true}
 ---
 src: /work/pepperi-page-builder/user-testing.webp
 thumbhash: +AcOBIB3d3iAiIeBiIKrkIvwRw
@@ -389,6 +413,8 @@ desc: Our steering committee putting the prototype through its paces
 ::::
 :::
 ::
+
+::GridSection
 
 ### What We Learned
 
@@ -425,17 +451,20 @@ desc: With validation from actual users, we were ready to move into high-fidelit
 ::
 
 
-## The Final Design: Where the Magic Happens
+## The Final Design
 
-Alright, let's get into the good stuff - the actual product. Here's where all that research and wireframing turned into something real. We'll break it down into two parts: the basic building blocks and the fancy features that make pages pop.
+Alright, let's get into the good stuff and where the magic happens - the actual product. Here's where all that research and wireframing turned into something real. We'll break it down into two parts: the basic building blocks and the fancy features that make pages pop.
 
-### The Basics: Page-Level Tools
+The layout is made of Page elements and Block elements, let's see what they all about.
 
-#### Pages Manager: Mission Control
+## Page-Level Elements 
+
+::
+
+::GridBlock{title="Pages Manager" colTemplate="2fr 3fr"}
+:::GridUnit 
 Think of this as your command center. Create pages from scratch, grab a template, or manage what you've already built.
 
-::GridBlockTwo{frOne="2fr" frTwo="3fr" gap="var(--space-m)"}
-:::GridUnit 
 What you can do:
 - See all your pages at a glance
 - Spin up new ones
@@ -455,11 +484,10 @@ alt: Pages Manager in action
 :::
 ::
 
-#### Page Layout: The Foundation
+::GridBlock{title="Page Layout" colTemplate="2fr 3fr"}
+:::GridUnit 
 This is where you build your page's skeleton. Drag, drop, and make it your own.
 
-::GridBlockTwo{frOne="2fr" frTwo="3fr" gap="var(--space-m)"}
-:::GridUnit 
 The power tools:
 - Drag-and-drop everything
 - Set up sections your way
@@ -479,16 +507,15 @@ alt: Page Layout interface
 :::
 ::
 
-#### Mobile Magic: Hide & Preview
-Because let's face it - what looks awesome on desktop might look wonky on mobile. We've got you covered.
-
-::GridBlockTwo{frOne="2fr" frTwo="3fr" gap="var(--space-m)"}
+::GridBlock{title="Preview & Mobile Magic" colTemplate="2fr 3fr"}
 :::GridUnit 
+
+Because let's face it - what looks awesome on desktop might look wonky on mobile. We've got you covered.
 The cool stuff:
 - See changes in real-time
 - Preview on any device
 - Hide sections that don't work on mobile
-- No more "it looked good on my computer" moments
+- No more *it looked good on my computer* moments
 :::
 :::GridUnit
 ::::TiltImage
@@ -503,20 +530,23 @@ alt: Mobile preview and section hiding features
 :::
 ::
 
-### The Cool Stuff: Content Blocks
+::GridSection
 
-#### Slideshow Block: The Showstopper
-Perfect for making your promotions pop. This isn't your grandma's slideshow.
+## Content Blocks Elements 
 
-##### What You Get
+Essential building blocks that enable users to create engaging pages without coding. Each block serves a specific purpose, from showcasing products with Galleries to driving action with Buttons, all designed to meet B2B commerce needs.
+
+::
+
+::GridBlock{title="Slideshow Block" desc="Perfect for making your promotions pop. This isn't your grandma's slideshow."}
+:::GridUnit 
+
+#### What You Get
 - Full control over slides (text, images, buttons - the works)
 - Design options that actually make sense
 - Smooth transitions that don't make people dizzy
 - Smart logic based on user roles
-
-::GridBlockTwo{frOne="4fr" frTwo="3fr" gap="var(--space-m)"}
-:::GridUnit 
-##### In Action
+<!-- #### In Action -->
 ::::BaseImage
 ---
 src: /work/pepperi-page-builder/builder/Slideshow.webp
@@ -540,7 +570,9 @@ desc: Mix and match controls, overlays, and layouts
 :::
 :::GridUnit 
 
-##### Behind the Scenes
+#### The Editor
+An in-depth, behind the scenes look of the block editor
+
 ::::BaseImage
 ---
 src: /work/pepperi-page-builder/builder/Slideshow-Editor.webp
@@ -555,12 +587,11 @@ marginBlockStart: var(--space-xs)
 :::
 ::
 
-#### Gallery Block: The Grid Master
-Show off your products in style. Think Instagram grid meets B2B sensibility.
 
-::GridBlockTwo{frOne="4fr" frTwo="3fr" gap="var(--space-m)"}
+::GridBlock{title="Gallery Block" desc="Show off your products in style. Think Instagram grid meets B2B sensibility."}
+
 :::GridUnit
-##### See It Working
+#### See It Working
 ::::BaseImage
 ---
 src: /work/pepperi-page-builder/builder/Gallery.webp
@@ -583,7 +614,7 @@ desc: Mix it up with different layouts
 ::::
 :::
 :::GridUnit 
-##### Make It Yours
+#### Make It Yours
 ::::BaseImage
 ---
 src: /work/pepperi-page-builder/builder/Gallery-Editor.webp
@@ -598,12 +629,10 @@ marginBlockStart: var(--space-xs)
 :::
 ::
 
-#### Banner Block: The Attention-Grabber
-When you need to make an announcement that can't be ignored.
+::GridBlock{title="Banner Block" desc="The Attention-Grabber: When you need to make an announcement that can't be ignored."}
 
-::GridBlockTwo{frOne="4fr" frTwo="3fr" gap="var(--space-m)"}
 :::GridUnit
-##### Real-World Examples
+#### Real-World Examples
 ::::BaseImage
 ---
 src: /work/pepperi-page-builder/builder/Banner.webp
@@ -625,7 +654,7 @@ desc: Different styles for different messages
 ::::
 :::
 :::GridUnit 
-##### Design Central
+#### Design Central
 ::::BaseImage
 ---
 src: /work/pepperi-page-builder/builder/Gallery-Editor.webp
@@ -640,12 +669,9 @@ marginBlockStart: var(--space-xs)
 :::
 ::
 
-#### Buttons Block: Call-to-Action Central
-Because sometimes you just need people to click stuff.
-
-::GridBlockTwo{frOne="4fr" frTwo="3fr" gap="var(--space-m)"}
+::GridBlock{title="Buttons Block" desc="Call-to-Action Central: Because sometimes you just need people to click stuff."}
 :::GridUnit 
-##### Button Styles for Days
+#### Button Styles for Days
 - Solid buttons when you mean business
 - Subtle ones for the gentle nudge
 - Outline style for that "hey, over here" vibe
@@ -673,7 +699,7 @@ borderRadius: var(--border-radius-xs)
 ::::
 :::
 :::GridUnit
-##### Control Center
+#### Control Center
 ::::BaseImage
 ---
 src: /work/pepperi-page-builder/builder/Buttons-Editor.webp
@@ -687,14 +713,18 @@ borderRadius: var(--border-radius-xs)
 :::
 ::
 
-#### The Supporting Cast
+::GridSection
+# Additional blocks
 
 We've got more blocks than a LEGO store. Here's what else you can throw in:
+::
 
-::GridBlockTwo{gap="var(--space-m)"}
+::GridBlock
 :::GridUnit 
-##### Rich Text Block
+
+### Rich Text Block
 For when you need to write more than three words.
+
 - Format text like a pro
 - Drop in images and videos
 - Make it look good
@@ -710,7 +740,7 @@ borderRadius: var(--border-radius-xs)
 ---
 ::::
 
-##### Chart Block
+### Chart Block
 Because sometimes you need to show off those numbers.
 - Pull in data from your dashboard
 - Pick your chart style
@@ -728,7 +758,7 @@ borderRadius: var(--border-radius-xs)
 ::::
 :::
 :::GridUnit
-##### Filter Block
+### Filter Block
 Help people find stuff faster.
 - Smart filtering options
 - User-friendly design
@@ -745,7 +775,7 @@ borderRadius: var(--border-radius-xs)
 ---
 ::::
 
-##### Live Chat Block
+### Live Chat Block
 Because sometimes people just need to talk.
 - Real-time chat support
 - Works with your existing chat tools
@@ -764,46 +794,46 @@ borderRadius: var(--border-radius-xs)
 :::
 ::
 
-## The Results: Did It Actually Work?
+::GridSection
+
+# The Results: Did It Actually Work?
 
 Look, features are cool and all, but let's talk about what really matters: did this actually solve problems and make money? Spoiler alert: yeah, it did.
 
-### How Do We Know It Works?
+You might what to know how do we know it works?
 
-#### Eating Our Own Dog Food
+## Dogfooding
 First off, we put our money where our mouth is:
 - Started using it for Pepperi's own pages (if we won't use it, why should anyone else?)
 - Got our team hooked on it for internal stuff
 - Used feedback from our own people to make it better
 
-#### Market Love
+## Market Love
 But the real test? Other people actually wanted to use it:
 - Clients from different industries jumped on board
 - People started asking for it before we even pitched it
 - The "when can we get this?" emails started rolling in
 
-### The Homepage Revolution
+## Homepage Revolution
 Remember how creating custom homepages used to be this whole big thing? Had to get developers involved, took forever, cost a bunch? Yeah, we fixed that.
 
-#### The Business Impact
+## Business Impact
 - Opened up a whole new revenue stream (cha-ching!)
 - Existing clients keep coming back for more
 - New clients showing up just for this feature
 
-### Show Me The Numbers
 
-#### Sales (Because Money Matters)
+## Sales 
+
+Let's talk money - because at the end of the day, that's what keeps the lights on. Our page building journey didn't just solve problems; it created serious business value.
 
 - Created a whole new revenue stream (cha-ching!)
 - Existing clients kept asking for more
 - New clients came knocking specifically for this
 
-Let's talk money - because at the end of the day, that's what keeps the lights on. Our page building journey didn't just solve problems; it created serious business value.
 
 ::PeppChartSales
 ::
-
-[Numbers are in millions, but legal says I can't show the exact figures. Trust me, they're good.]{style="color: var(--color-sys-slight); font-size: var(--step--1); text-align: center; display: block; width: 100%;"}
 
 
 See those spikes? Each one tells a story:
@@ -812,41 +842,45 @@ See those spikes? Each one tells a story:
 - **2022**: Beta testers join the party - revenue climbs despite limited release
 - **2024 Q4**: Full release incoming - stay tuned
 
-#### Resources (The Stuff We Saved)
+## Resources 
+This is all the stuff we saved
+
 - No more developers pulling their hair out over custom pages
 - Clients actually handling their own content (what a concept!)
 - Ditched a ton of technical debt from old custom solutions
 
-#### Usage (People Actually Use It)
+## Usage 
+This is all the people actually using it
+
 - Both business users and buyers are all over it
 - Clients updating their own stuff (and loving it)
 - Template library growing like crazy
 - Pages getting updated way more often
 - Support tickets for page changes? Down like crypto in 2022
 
-### What People Are Saying
+# What People Are Saying
 
-#### The Tech Folks
+## The Tech Folks
 We talked to PS teams, admins, and IT people. Their take?
 - "Finally, we can work on actual tech stuff!"
 - "No more emergency calls about changing a banner"
 - "Updates don't break everything anymore"
 
-#### The Business People
+## The Business People
 Marketing and sales managers can't shut up about how:
 - Campaigns that took weeks now take hours
 - They can actually change stuff without begging IT
 - When opportunity knocks, they can answer right away
 - Their brand actually looks consistent now
 
-#### The End Users
+## The End Users
 The people actually using these pages? They're fans because:
 - Pages don't look like they're from 1999 anymore
 - Content is fresh (because it's easy to update)
 - They can find what they need
 - Everything loads faster than a caffeinated cheetah
 
-### The Big Wins
+# The Big Wins
 Let's break it down:
 1. Clients can handle their own content (like grown-ups!)
 2. Tech teams can focus on actual tech stuff
@@ -854,7 +888,7 @@ Let's break it down:
 4. Everything looks professional (even when Dave from accounting helps design it)
 5. The whole thing actually scales without breaking
 
-## What's Next?
+# What's Next?
 
 We're not done yet. We've got plans. Big plans. Like:
 - More block types (because you can never have too many LEGOs)
@@ -866,6 +900,7 @@ But for now? We turned a major pain point into a money-maker that makes everyone
 
 Remember how clients used to beg for custom homepages? Now they're building them themselves, making them look good, and doing it all without writing a single line of code. Mission accomplished.
 
+::
 
 <!-- ## The Journey (Because Rome Wasn't Built in a Day)
 
