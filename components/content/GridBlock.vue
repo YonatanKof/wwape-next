@@ -41,16 +41,11 @@ const generateHref = (text: string): string => {
 	); // Replace spaces with hyphens
 };
 
-// Example usage:
-// const title = 'The Dynamic Duo: Fixed + Changing Panel';
-// const href = generateHref(title);
-// Output: '#the-dynamic-duo-fixed-changing-panel'
-
 </script>
 <template>
 	<section>
 		<span v-if="title">
-			<h3 :id="generateHref(title)">
+			<h3 class="title" :id="generateHref(title)">
 				<a style="width: 100%" :href="'#' + generateHref(title)"> {{ title }} </a>
 			</h3>
 			<p id="sub-title" v-if="desc">{{ desc }}</p>
@@ -85,11 +80,11 @@ span {
 }
 .title,
 #sub-title {
-	margin-block-start: unset;
-	margin-block-end: var(--space-m);
+	margin-block-start: unset !important;
+	margin-block-end: var(--space-m) !important;
 }
 
 :is(.title):has(+ p) {
-	margin-block-end: var(--space-3xs);
+	margin-block-end: var(--space-3xs) !important;
 }
 </style>
