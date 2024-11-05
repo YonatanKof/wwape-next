@@ -115,7 +115,7 @@ Although Harald Nævdal from *Immortal* and James Hetfield from *Metallica* shar
 
 ### Primary, Secondary & Tertiary Groups
 
-::gridBlock{colNum=2}
+::gridBlock
 :::grid-unit
 We usually divide our audience into two or **three groups**.
 
@@ -166,7 +166,7 @@ A great example of a product addressing multiple *target audience*s is [monday.c
 
 By tailoring their marketing messages, *monday.com* can effectively engage and convert different audience segments.
 
-::gridBlock{colNum=3}
+::gridBlock{colTemplate="1fr 1fr 1fr"}
 :::YouTubePlayer
 ---
 videoId: AlQs-A0z_1g 
