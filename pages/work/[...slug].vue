@@ -32,6 +32,20 @@ nuxtApp.$pageMetaTags({
 	metaPublishedTime: data.value?.article?.date.split('T')[0],
 	metaModifiedTime: data.value?.article?.updated.split('T')[0],
 });
+
+const handleAnchorClick = (event) => {
+  event.preventDefault()
+  const element = document.querySelectorAll('a[href^="#"]')
+  
+  if (element) {
+    element.classList.add('js-scroll-fix')
+    element.scrollIntoView({ behavior: 'smooth' })
+    
+    setTimeout(() => {
+      element.classList.remove('js-scroll-fix')
+    }, 1000)
+  }
+}
 </script>
 
 <template>
@@ -41,20 +55,26 @@ nuxtApp.$pageMetaTags({
 				<section id="article-header">
 					<div id="article-info">
 						<h1 id="title">{{ doc.title }}</h1>
-						<h3 id="sub-title">{{ doc.description }}</h3>
-						<span class="meta-data">
-							<p>Posted {{ $formatDate(doc.date) }}</p>
-							<p v-if="doc.updated">•</p>
-							<p v-if="doc.updated">Updated {{ $formatDate(doc.updated) }}</p>
-							<span class="path" v-if="doc.role"></span>
-							<div v-if="doc.role" class="role">
-								<p>Role:</p>
-								<template v-for="(role, index) in doc.role" :key="index">
-									<i>{{ role }}</i>
-									<p v-if="index < doc.role.length - 1">•</p>
-								</template>
-							</div>
-						</span>
+						<div class="meta-data">
+							<div><h3 id="sub-title">{{ doc.description }}</h3>
+							<span class="info">
+								<p>Posted {{ $formatDate(doc.date) }}</p>
+								<p v-if="doc.updated">•</p>
+								<p v-if="doc.updated">Updated {{ $formatDate(doc.updated) }}</p>
+								<span class="path" v-if="doc.role"></span>
+								<div v-if="doc.role" class="role">
+									<p>Role:</p>
+									<template v-for="(role, index) in doc.role" :key="index">
+										<i>{{ role }}</i>
+										<p v-if="index < doc.role.length - 1">•</p>
+									</template>
+								</div>
+							</span></div>
+							<span class="responsibilities">
+								<!-- <h6>Responsibilities:</h6> -->
+								<code v-for="item in doc.responsibilities">{{ item }}</code>
+							</span>
+						</div>
 					</div>
 				</section>
 				<span class="content-renderer"><ContentRenderer :value="doc" /></span>
@@ -71,19 +91,21 @@ main {
 	margin-block-start: var(--header-plus-height);
 }
 #article-header {
-	@include display-width($width: $display-width-lg);
-}
-h1 {
-	margin-block-end: var(--space-s);
+	@include display-width($width: $display-width-md);
 }
 section {
 	display: grid;
 	height: min-content;
 }
+#title {
+	margin-block-end: var(--space-s);
+	font-size: var(--step-7);
+	// font-variation-settings: 'INFM' 50, 'wght' 800;
+}
 #sub-title {
-	font-family: var(--font-body);
-	font-size: var(--step-2);
-	font-variation-settings: unset;
+	// font-family: var(--font-body);
+	font-size: var(--step-1);
+	// font-variation-settings: unset;
 	line-height: 1.5;
 	max-width: 50ch;
 	margin-block-end: var(--space-2xs);
@@ -93,17 +115,31 @@ article {
 	margin-block-end: var(--space-s);
 }
 .meta-data {
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	gap: var(--space-xs);
+	align-items: center;
+}
+.info {
 	display: flex;
 	flex-direction: row;
 	gap: var(--space-xs);
 	align-items: center;
 }
+.responsibilities {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-4xs);
+	code {
+		margin-block-end: unset;
+	}
+}
 
-.meta-data > p,
+.info > p,
 .role > p,
 .role > i {
 	color: var(--color-sys-slight);
-	font-size: var(--step--2);
+	font-size: var(--step--1);
 	margin: 0;
 }
 .role > i {
