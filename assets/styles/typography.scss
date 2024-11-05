@@ -45,7 +45,7 @@ li {
 	font-size: var(--step-1);
 	line-height: 1.5;
 	color: var(--color-sys-main);
-	text-wrap: balance;
+	// text-wrap: balance;
 	text-wrap: pretty;
 	@media print {
 		font-size: var(--step--3);
@@ -80,11 +80,12 @@ ol {
 li {
 	margin-block-start: 0.125em;
 	padding-inline-start: var(--space-4xs);
+	text-wrap: balance;
 }
 li::marker {
 	color: var(--color-sys-slight);
-	font-family: var(--font-hand);
-	font-variation-settings: 'INFM' 100, 'wght' 444, 'ital' 1;
+	// font-family: var(--font-hand);
+	// font-variation-settings: 'INFM' 100, 'wght' 444, 'ital' 1;
 }
 ul > li::marker {
 	content: '• ';
