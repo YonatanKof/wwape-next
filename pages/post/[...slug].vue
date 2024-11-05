@@ -65,22 +65,7 @@ nuxtApp.$pageMetaTags({
 							auto-sizes
 						/>
 					</section>
-					<hr />
-					<!-- <pre>{{ toc }}</pre> -->
-					<!-- <ul v-if="toc && toc.links">
-						<li v-for="link in toc.links" :key="link.text">
-							<a :href="`#${link.id}`">
-								{{ link.text }}
-							</a>
-							<ul v-if="link.children">
-								<li v-for="child in link.children" :key="child.id">
-									<a :href="`#${child.id}`">
-										{{ child.text }}
-									</a>
-								</li>
-							</ul>
-						</li>
-					</ul> -->
+					<hr class="separator"/>
 					<span class="content-renderer"><ContentRenderer :value="doc" /></span>
 				</article>
 				<!-- <SeeMore :prev="prev" :next="next" /> -->
@@ -120,10 +105,7 @@ section {
 	}
 }
 #article-info {
-	background-color: var(--color-sys-invert-highlight-slight);
-	backdrop-filter: blur(7px);
-	background-image: radial-gradient(var(--color-sys-invert-highlight) 1px, transparent 1px);
-	background-size: 3px 3px;
+	@include cool-doted-bg;
 	grid-column: 1 / span 2;
 	grid-row: 1 / span 2;
 	padding: calc(var(--space-s) + var(--space-3xs));
