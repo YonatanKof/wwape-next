@@ -64,7 +64,7 @@ const { open, close } = useModal({
 </script>
 <template>
 	<ModalsContainer />
-	<span class="lazy-img" @click="open" @keyup.enter="open">
+	<div class="lazy-img" @click="open" @keyup.enter="open">
 		<NuxtImg
 			@click="open"
 			@keyup.enter="open"
@@ -76,7 +76,7 @@ const { open, close } = useModal({
 			loading="lazy"
 		/>
 		<em v-if="desc" v-html="desc"></em>
-	</span>
+	</div>
 </template>
 
 <style lang="scss" scoped>
@@ -88,12 +88,13 @@ img {
 	margin-block-start: v-bind(marginBlockStart);
 	margin-block-end: v-bind(marginBlockEnd);
 }
-span {
+div {
+	margin-block-end: var(--space-xs);
 	@media (width <= $display-width-xs) {
 		display: v-bind(hideOnMobile);
 	}
 }
 em {
-	@include desc-text-under();
+	@include desc-text-under($margin-block-start: var(--space-xs));
 }
 </style>
