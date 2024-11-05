@@ -2,7 +2,8 @@
 :root {
 	// Sizes
 	--header-height: var(--space-3xl);
-	--header-plus-height: calc(var(--header-height) + var(--space-m));
+	--header-plus-height: calc(var(--space-3xl) + var(--space-m));
+	--scroll-padding-block: 7rem;
 
 	// Borders
 	--border-radius-md: var(--space-xs);
@@ -88,7 +89,17 @@
 	--font-wight--bolder: bolder;
 	--font-size-2xl: 2em;
 }
-
+html {
+	scroll-padding-block-start: var(--header-plus-height);
+}
+@media (prefers-reduced-motion: no-preference) {
+	html {
+		scroll-behavior: smooth;
+	}
+	:target {
+		scroll-margin-top: var(--header-plus-height);
+	}
+}
 body {
 	background-color: var(--color-sys-invert-main);
 	color: var(--color-sys-main);
@@ -148,6 +159,7 @@ hr {
 	@include display-width();
 	margin-block-start: var(--header-plus-height);
 }
+
 .dark-mode {
 	--color-sys-main: hsl(34, 0%, 91%);
 
