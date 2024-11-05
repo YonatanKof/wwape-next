@@ -25,6 +25,7 @@ defineProps({
 		<span>
 			<p class="fancy-title" v-html="title"></p>
 			<p v-if="desc" v-html="desc"></p>
+			<slot />
 		</span>
 	</blockquote>
 </template>
@@ -59,17 +60,19 @@ defineProps({
 		color: var(--color-sys-main);
 	}
 	p {
-		font-size: var(--step-0);
+		// font-size: var(--step-0);
+		margin-block-start: 0.25em !important;
 		letter-spacing: unset;
 	}
 	.fancy-title {
 		line-height: 1.5;
 		margin-block: unset;
 		margin-inline-start: var(--space-m);
-		font-family: var(--font-hand);
-		font-size: var(--step-1);
-		text-wrap: balance;
-		font-variation-settings: 'wght' 400;
+		font-family: var(--font-title);
+		font-size: var(--step-2);
+		font-weight: 600;
+		// text-wrap: balance;
+		// font-variation-settings: 'wght' 400;
 	}
 }
 </style>
