@@ -1,3 +1,5 @@
+$display-width-3xl: 1920px;
+$display-width-2xl: 1408px;
 $display-width-xl: 1280px;
 $display-width-lg: 960px;
 $display-width-md: 880px;
@@ -5,6 +7,8 @@ $display-width-sm: 720px;
 $display-width-xs: 544px;
 $display-width-2xs: 426px;
 :root {
+	--display-width-3xl: 1920px;
+	--display-width-2xl: 1408px;
 	--display-width-xl: 1280px;
 	--display-width-lg: 960px;
 	--display-width-md: 880px;
