@@ -2,7 +2,7 @@
 defineProps({
 	sectionWidth: {
 		type: String,
-		default: 'var(--display-width-md)',
+		default: 'var(--display-width-sm)',
 	},
 	marginBlockStart: {
 		type: String,
