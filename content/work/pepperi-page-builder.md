@@ -229,7 +229,7 @@ icon: 📐
 ::
 
 ::GridSection
-## Wireframes: Testing Our Ideas
+## Wireframes
 
 Time to put our research to work. We started rough and refined as we went, testing everything with real users along the way. No point building something pretty if it doesn't work, right?
 
@@ -379,7 +379,7 @@ icon: think
 ---
 ::
 
-## Testing Time: From Paper to Pixels
+## Testing
 
 Before jumping into full-blown development, we needed to make sure our wireframes actually made sense in real life. You know what they say - everyone has a plan until they try to drag and drop a slideshow block.
 
@@ -435,7 +435,7 @@ The testing sessions were eye-opening (and sometimes ego-bruising). Here's what 
    - Section resizing needed work
    - Added quick actions for common block operations
 
-### Phase Takeaways
+### Testing Takeaways
 
 This phase was crucial for:
 - Validating our core UX decisions
@@ -455,7 +455,13 @@ desc: With validation from actual users, we were ready to move into high-fidelit
 
 Alright, let's get into the good stuff and where the magic happens - the actual product. Here's where all that research and wireframing turned into something real. We'll break it down into two parts: the basic building blocks and the fancy features that make pages pop.
 
-The layout is made of Page elements and Block elements, let's see what they all about.
+::QuoteBig
+---
+title: Page Builder Composition
+desc: The Page Builder UI is made of <i>Page-Level Elements</i> and <i>Block Elements</i>, let's see what they all about.
+icon: think
+---
+::
 
 ## Page-Level Elements 
 
@@ -532,9 +538,11 @@ alt: Mobile preview and section hiding features
 
 ::GridSection
 
-## Content Blocks Elements 
+## Blocks Elements 
 
-Essential building blocks that enable users to create engaging pages without coding. Each block serves a specific purpose, from showcasing products with Galleries to driving action with Buttons, all designed to meet B2B commerce needs.
+Essential building blocks that enable users to create engaging pages without coding. Each block serves a specific purpose, from showcasing products with Galleries to driving action with Buttons, all designed to meet B2B commerce needs. Each block has an editor to edit the block's properties, content or UI.
+
+Let's check out the different blocks.
 
 ::
 
@@ -542,18 +550,18 @@ Essential building blocks that enable users to create engaging pages without cod
 :::GridUnit 
 
 #### What You Get
-- Full control over slides (text, images, buttons - the works)
+- Full control over slides (text, images, buttons)
 - Design options that actually make sense
 - Smooth transitions that don't make people dizzy
 - Smart logic based on user roles
-<!-- #### In Action -->
+
 ::::BaseImage
 ---
 src: /work/pepperi-page-builder/builder/Slideshow.webp
 width: 1366
 height: 768
-alt: Slideshow block looking sharp
-desc: Your promotions never looked this good
+alt: A Slideshow block with it's editor in thr page builder
+desc: A Slideshow block with it's editor in thr page builder
 marginBlockStart: var(--space-xs)
 ---
 ::::
@@ -563,8 +571,8 @@ marginBlockStart: var(--space-xs)
 src: /work/pepperi-page-builder/builder/Slideshow-ArrowsControllersOrientations.webp
 width: 1600
 height: 931
-alt: Different slideshow styles
-desc: Mix and match controls, overlays, and layouts
+alt: Different slideshow blocks
+desc: Mix and match controls, overlays, layouts, content and images to create different looks 
 ---
 ::::
 :::
@@ -579,7 +587,7 @@ src: /work/pepperi-page-builder/builder/Slideshow-Editor.webp
 width: 928
 height: 1991
 alt: Slideshow editing interface
-desc: All the controls you need, none you don't
+desc: "Slideshow editor: all the controls you need, none you don't"
 borderRadius: var(--border-radius-xs)
 marginBlockStart: var(--space-xs)
 ---
@@ -901,21 +909,3 @@ But for now? We turned a major pain point into a money-maker that makes everyone
 Remember how clients used to beg for custom homepages? Now they're building them themselves, making them look good, and doing it all without writing a single line of code. Mission accomplished.
 
 ::
-
-<!-- ## The Journey (Because Rome Wasn't Built in a Day)
-
-Let's rewind the tape a bit and see how we got here:
-
-### 2017: The Custom Code Era
-This is where it all started. Custom web pages were like artisanal bread - handcrafted, beautiful, but man, were they expensive and time-consuming to make. Every page was its own special snowflake of code.
-
-### 2019: The JSON Revolution
-We got a little smarter. Built this plugin that let users tweak their content through JSON files. Think of it like giving people a really technical remote control. Not perfect, but hey - it proved people wanted control over their content. You can actually see this light bulb moment in our sales chart - that spike? That's when people realized they could change stuff without calling a developer.
-
-### 2022: The Beta Gang
-We let our first brave group of clients test drive the Page Builder. These early adopters weren't just users - they were our partners in crime, helping us fine-tune everything. The feedback was so good, it basically told us, "You're onto something here."
-
-### 2024: The Big Release
-After all that learning and tweaking, we're finally ready to unleash this thing on the world in Q4. It's like brewing a really good beer - takes time, but worth the wait. -->
-
-
