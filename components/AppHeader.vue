@@ -9,12 +9,13 @@ defineProps({
 <template>
 	<header>
 		<span>
-			<nuxt-link class="home-link" :to="{ name: 'index' }" title="Go to Homepage" aria-label="Go to Homepage">
+			<nuxt-link :to="{ name: 'index' }" aria-label="Go to the about Yonatan Kof homepage">Yonatan Kof</nuxt-link>
+			<!-- <nuxt-link class="home-link" :to="{ name: 'index' }" title="Go to Homepage" aria-label="Go to Homepage">
 				<KofLogoLine class="kof-logo" />
-			</nuxt-link>
+			</nuxt-link> -->
 			<div>
 				<nav v-show="!isSimple">
-					<nuxt-link :to="{ name: 'work' }">Work</nuxt-link>
+					<nuxt-link :to="{ name: 'work' }" aria-label="Go to the graphic design, ux/ui, product design and brand design page ">Work</nuxt-link>
 					<nuxt-link :to="{ name: 'design' }" aria-label="Go to Graphic Arts & Design page">Graphics</nuxt-link>
 					<nuxt-link :to="{ name: 'post' }" aria-label="Go to Post page">Posts</nuxt-link>
 				</nav>
@@ -46,10 +47,8 @@ span {
 	height: var(--space-xl);
 	margin-inline-end: var(--space-2xs);
 	transition: filter 0.35s ease-in-out, transform 0.25s ease-in-out;
-	// filter: drop-shadow(0.075em 0.075em 0.2em var(--color-black-dim));
 	&:hover {
-		transform: scale(1.1) rotate(-0.01turn) translate(-0.125em, 0.125em);
-		// filter: drop-shadow(0.05em 0.05em 0.25em var(--color-black-dim));
+		transform: scale(1.1);
 	}
 }
 i {
@@ -74,18 +73,6 @@ a {
 		border-color:  var(--color-sys-main);
 	}
 }
-// @media (width <= $display-width-sm) {
-// 	header {
-// 		flex-direction: column-reverse;
-// 		align-items: start;
-// 		gap: var(--space-xs);
-// 		padding-block: var(--space-xs);
-// 		// height: unset;
-// 	}
-// 	div {
-// 		width: 100%;
-// 	}
-// }
 @media print {
 	header {
 		display: none !important;
