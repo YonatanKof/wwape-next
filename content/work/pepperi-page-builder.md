@@ -22,11 +22,29 @@ desc: Custom homepages built with our Page Builder - yeah, they look pretty swee
 
 ::GridSection
 
-Look, we get it - B2B clients need web pages that don't suck. That's why we built *Pepperi Page Builder*. It's a no-BS tool that lets businesses create, edit, and design their pages without writing a single line of code. Want to showcase promotions? Set up buyer profiles? Control your workflow? Done, done, and done.
+Let's consider the journey we embarked on with Pepperi Page Builder. Imagine for a moment, a world where B2B clients could craft web pages that not only look professional but also truly resonate with their brand identity. That's exactly the challenge we set out to tackle.
+
+Here's the thing: in the B2B realm, web pages aren't just digital real estate—they're the frontline of business operations. They showcase promotions, display credit lines, highlight fresh products, and break down categories. In other words, they're the digital handshake between businesses and their clients.
+
+But there was a catch. Our clients weren't just asking for run-of-the-mill pages. They wanted:
+
+- Brand-aligned aesthetics that screamed "This is us!"
+- Complete design autonomy (because who knows their brand better than they do?)
+- The ability to tweak and tune at will
+- An escape from the "wait for IT" bottleneck
+
+The question is: how do you transform a complex web development process into a no-code playground that empowers B2B clients? Well, it turns out that the answer lies in understanding the pain points, validating assumptions, and crafting a solution that's both powerful and intuitive.
+
+What if I told you that the journey to creating Pepperi Page Builder was as enlightening as the product itself? From field studies to competitive analysis, from wireframing to user testing—every step was a lesson in balancing functionality with user-friendliness.
+
+The point is, Pepperi Page Builder isn't just a tool; it's a testament to the power of user-centric design in solving real-world B2B challenges. It's about turning the headache of custom web pages into an opportunity for businesses to showcase their unique identity and offerings.
+
+So, think about it this way: we didn't just build a page builder. We crafted a bridge between B2B aspirations and digital reality. And that, dear reader, is what makes this journey worth sharing.
 
 ## Why We Built This Thing
 
-Here's the deal: our clients kept asking for custom web pages. Makes sense - they needed to show their buyers (aka their clients) stuff like:
+Here's the deal: our clients kept asking for custom web pages. It makes sense - they needed to show their buyers (also known as their clients) things like:
+
 - Hot deals and promotions
 - Available credit lines
 - Fresh products
@@ -54,7 +72,7 @@ Custom web pages sound great in theory, but man, they were causing headaches lef
 - Clients couldn't touch these pages without breaking something
 - Our PS team became the bottleneck for every little change
 
-## Reality Check
+## Validation
 
 Before we dove in headfirst, we needed to make sure we weren't building a solution looking for a problem. Here's how we validated our assumptions:
 
@@ -106,7 +124,7 @@ icon: think
 
 > 
 
-## Getting Real: Research Phase
+## Research
 
 Look, we're not the type to just wing it. We did our homework - and then some. Here's how we figured out what actually needed building:
 
@@ -117,10 +135,9 @@ Look, we're not the type to just wing it. We did our homework - and then some. H
 
 Let's break it down.
 
-### 1. Field Studies: Learning from the Wild
+### 1. Field Studies
 
 Before we started cooking up new solutions, we took a good hard look at what was already out there. Smart move, right?
-
 
 Here's the beautiful part - we weren't starting from scratch. Some of our clients had already cobbled together custom homepages. That meant we got to:
 
@@ -147,9 +164,9 @@ We didn't just sit around and chat. We:
 3. Watched them struggle (or succeed) with these tools
 4. Asked them what they loved and hated (and why)
 
-### 3. Card Sorting: Start Making Sense
+### 3. Card Sorting
 
-After collecting all this info, we needed to organize it somehow. Enter card sorting - our way of turning a mess of ideas into something that makes sense.
+Let's start making sense – after collecting all this info, we needed to organize it somehow. Enter card sorting - our way of turning a mess of ideas into something that makes sense.
 
 ::
 
@@ -229,6 +246,7 @@ icon: 📐
 ::
 
 ::GridSection
+
 ## Wireframes
 
 Time to put our research to work. We started rough and refined as we went, testing everything with real users along the way. No point building something pretty if it doesn't work, right?
@@ -245,6 +263,7 @@ icon: think
 
 ::GridBlock{title="1st UX option"}
 :::GridUnit
+
 #### In-place Editor
 The *Wix* and *Squarespace* approach: editing panels pop up right next to what you're working on.
 
@@ -294,8 +313,6 @@ desc: 'Sidebar Editor'
 :::
 ::
 
-
-
 ::GridSection
 
 :::QuoteBig
@@ -311,17 +328,14 @@ icon: think
    Most of our users aren't web designers - they just want to get stuff done without learning a whole new system.
 :::
 
-
-
 So after picking the side panel approach, we had two ways to handle the editing experience. Time for more decisions!
 
 ::
 
-   
 ::GridBlock{title="2nd UX option"}
 
 :::GridUnit
-#### One Panel to Rule Them All
+#### One Interchangeable Panel
 
 A minimalist approach using a single, interchangeable panel for all editing functions. While this design keeps the interface clean and maximizes content viewing space, it requires users to navigate through multiple levels of menus.
 
@@ -345,7 +359,8 @@ desc: One panel, lots of drilling down
 :::
 
 :::GridUnit
-#### The Dynamic Duo: Fixed + Changing Panel
+
+#### Fixed + Interchangeable Panel
 
 A two-panel solution that combines a persistent navigation panel with a dynamic editing area. This approach prioritizes quick access and editing efficiency, though it demands more screen space from users.
 
@@ -381,7 +396,7 @@ icon: think
 
 ## Testing
 
-Before jumping into full-blown development, we needed to make sure our wireframes actually made sense in real life. You know what they say - everyone has a plan until they try to drag and drop a slideshow block.
+Before jumping into full-blown development, we needed to make sure our wireframes actually made sense in real life. You know, everyone has a plan until they the real-world hits them in the face.
 
 ### Interactive Mockups in Action
 
@@ -449,7 +464,6 @@ title: Time to turn these prototypes into the real deal
 desc: With validation from actual users, we were ready to move into high-fidelity design
 ---
 ::
-
 
 ## The Final Design
 
@@ -594,7 +608,6 @@ marginBlockStart: var(--space-xs)
 ::::
 :::
 ::
-
 
 ::GridBlock{title="Gallery Block" desc="Show off your products in style. Think Instagram grid meets B2B sensibility."}
 
