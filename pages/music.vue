@@ -10,7 +10,7 @@ nuxtApp.$pageMetaTags({
 </script>
 
 <template>
-	<main>
+	<main class="main-index">
 		<IntroText
 			title="Playlists and Mixes"
 			text="Yess! You are now on my music page, where I've carefully curated each playlist and mix to by the desire to share the music I love. Whether you're working, relaxing, celebrating, feeling up or down, dexter or sinister – I'm sure you can find something that suits your mood."
