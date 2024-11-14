@@ -34,18 +34,18 @@ nuxtApp.$pageMetaTags({
 });
 
 const handleAnchorClick = (event) => {
-  event.preventDefault()
-  const element = document.querySelectorAll('a[href^="#"]')
-  
-  if (element) {
-    element.classList.add('js-scroll-fix')
-    element.scrollIntoView({ behavior: 'smooth' })
-    
-    setTimeout(() => {
-      element.classList.remove('js-scroll-fix')
-    }, 1000)
-  }
-}
+	event.preventDefault();
+	const element = document.querySelectorAll('a[href^="#"]');
+
+	if (element) {
+		element.classList.add('js-scroll-fix');
+		element.scrollIntoView({ behavior: 'smooth' });
+
+		setTimeout(() => {
+			element.classList.remove('js-scroll-fix');
+		}, 1000);
+	}
+};
 </script>
 
 <template>
@@ -56,20 +56,24 @@ const handleAnchorClick = (event) => {
 					<div id="article-info">
 						<h1 id="title">{{ doc.title }}</h1>
 						<div class="meta-data">
-							<div><h3 id="sub-title">{{ doc.description }}</h3>
-							<span class="info">
-								<p>Posted {{ $formatDate(doc.date) }}</p>
-								<p v-if="doc.updated">•</p>
-								<p v-if="doc.updated">Updated {{ $formatDate(doc.updated) }}</p>
-								<span class="path" v-if="doc.role"></span>
-								<div v-if="doc.role" class="role">
-									<p>Role:</p>
-									<template v-for="(role, index) in doc.role" :key="index">
-										<i>{{ role }}</i>
-										<p v-if="index < doc.role.length - 1">•</p>
-									</template>
-								</div>
-							</span></div>
+							<div>
+								<h3 v-if="doc.description" id="sub-title">{{ doc.description }}</h3>
+								<span class="info">
+									<p>Posted {{ $formatDate(doc.date) }}</p>
+									<p v-if="doc.updated">•</p>
+									<p v-if="doc.updated">Updated {{ $formatDate(doc.updated) }}</p>
+									<span class="pipe" v-if="doc.role"></span>
+									<div v-if="doc.role" class="role">
+										<p>Role:</p>
+										<template v-for="(role, index) in doc.role" :key="index">
+											<code>{{ role }}</code>
+											<!-- <p v-if="index < doc.role.length - 1">•</p> -->
+										</template>
+									</div>
+									<span class="pipe" v-if="doc.client_link"></span>
+									<nuxt-link v-if="doc.client_link" to="doc.client_link">{{ doc.client_name }}</nuxt-link>
+								</span>
+							</div>
 							<span class="responsibilities">
 								<!-- <h6>Responsibilities:</h6> -->
 								<code v-for="item in doc.responsibilities">{{ item }}</code>
@@ -100,14 +104,13 @@ section {
 #title {
 	margin-block-end: var(--space-s);
 	font-size: var(--step-7);
-	// font-variation-settings: 'INFM' 50, 'wght' 800;
 }
 #sub-title {
-	// font-family: var(--font-body);
 	font-size: var(--step-1);
-	// font-variation-settings: unset;
 	line-height: 1.5;
 	max-width: 50ch;
+	font-family: var(--font-body);
+	font-weight: 400;
 	margin-block-end: var(--space-2xs);
 }
 
@@ -128,7 +131,7 @@ article {
 }
 .responsibilities {
 	display: flex;
-	flex-direction: column;
+	flex-flow: wrap;
 	gap: var(--space-4xs);
 	code {
 		margin-block-end: unset;
@@ -137,6 +140,7 @@ article {
 
 .info > p,
 .role > p,
+.info > a,
 .role > i {
 	color: var(--color-sys-slight);
 	font-size: var(--step--1);
@@ -145,7 +149,7 @@ article {
 .role > i {
 	color: var(--color-success-main);
 }
-.path {
+.pipe {
 	width: 1px;
 	height: var(--space-s);
 	background-color: var(--color-sys-dim);
