@@ -81,6 +81,7 @@ const { $formatDate } = useNuxtApp();
 	display: flex;
 	flex-direction: column;
 	gap: var(--space-3xs);
+	text-wrap: balance;
 }
 #title {
 	margin-block-start: unset;
