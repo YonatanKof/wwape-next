@@ -65,7 +65,7 @@ nuxtApp.$pageMetaTags({
 							auto-sizes
 						/>
 					</section>
-					<hr class="separator"/>
+					<!-- <hr class="separator" /> -->
 					<span class="content-renderer"><ContentRenderer :value="doc" /></span>
 				</article>
 				<!-- <SeeMore :prev="prev" :next="next" /> -->
@@ -78,6 +78,9 @@ nuxtApp.$pageMetaTags({
 </template>
 
 <style lang="scss" scoped>
+main {
+	margin-block-start: var(--header-plus-height);
+}
 
 h1 {
 	margin-block-end: var(--space-s);
@@ -165,5 +168,6 @@ hr:last-of-type {
 }
 .separator {
 	@include display-width;
+	width: calc(100% - calc(var(--space-xs-l) * 2));
 }
 </style>
