@@ -11,7 +11,7 @@ image_alt: ''
 description: 'A brief intro and visualisation of <em>design tokens</em>'
 tags: ['Creative']
 ---
-::grid-section
+::GridSection
 
 Design tokens are standardized, reusable variables that define the visual properties of a design system components: colors, typography, spacing, and style-related elements. 
 
@@ -76,14 +76,14 @@ Some products, like [Pepperi](https://www.pepperi.com/), my workplace [(2024)]{s
 
 In the attached video below, as mentioned before, you can see the color tokens, typography and their assignment over the different UI elements in action.
 
-::video-tag
+:::video-tag
 ---
 src: /posts/design-tokens/theme-editing.webm
 controls: true
 desc: Pepperi theme editor in action
 aspectRatio: 720/435
 ---
-::
+:::
 
 ### Reuse
 There are two reuse use cases:
@@ -257,6 +257,8 @@ And lastly 5 variant of the ***focus*** color – you know the drill.
 :::color-token-edit{colorName="focus"}
 :::
 :: -->
+
+::GridSection
 
 ### 2nd Live Example; Updating SVG Tokens!
 
@@ -539,3 +541,4 @@ $z-index-lowest: 1;
 ```
 
  -->
+::

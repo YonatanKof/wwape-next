@@ -12,6 +12,8 @@ description: 'Just a friendly goto place for me to review all the MD types I use
 tags: ['dev']
 ---
 
+::GridSection
+
 Hi all 👋  
 
 A page to review all the `Markdown` syntax I use in this `Nuxt Content` website.
@@ -272,6 +274,12 @@ Visit my website [Yonatan Kof][mywebsite].
 
 IDs to heading are being generate automatically, [You can link to them like so](#footnotes), by referring to [their id](#tertiary-title)
 
+I use it like that [(↓)](#tables){target="_self" .sup}
+
+```md
+I use it like that [(↓)](#tables){target="_self" .sup}
+``` 
+
 <https://yonatankof.com>
 
 Sandy hole with nothing in it to sit down on or to eat: it was a [hobbit-hole][1], and that means comfort.
@@ -366,3 +374,5 @@ desc: Example Description
 ## Footnotes 
 
 [^footnote]: I'm a footnote! -->
+
+::

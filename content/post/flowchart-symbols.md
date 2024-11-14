@@ -11,6 +11,7 @@ image_alt: 'A simple flowchart that represent a viewer liking or disliking this 
 description: 'A visual cheat sheet to help you effectively convey ideas with flowcharts'
 tags: ['Creative']
 ---
+::GridSection
 
 You know, I've seen flowcharts here and there, but when I started working extensively with [Whimsical](https://whimsical.com/), I found myself thinking what the hack are these diagram symbols anyways? Do they have a meaning or are they just nice looking shapes? Well, this is a visual language signs, and as a language they have a meaning, so much so it's been standardized by ISO and ANSI.
 
@@ -20,5 +21,9 @@ With these symbols you can create flowcharts to represents any workflow or proce
  <!-- Whimsical are using just a part of the flowcharts symbols and are mixing some other shapes too. -->
 ## The shape goes as follow: 
 
-::FlowchartSymbols
+::
+
+::GridSection{sectionWidth="var(--display-width-xl)"}
+:::FlowchartSymbols
+:::
 ::

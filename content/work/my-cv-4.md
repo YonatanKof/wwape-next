@@ -12,7 +12,7 @@ description: 'A product designer and then some'
 tags: ['Creative']
 ---
 
-::GridSection{sectionWidth="var(--display-width-md)"}
+::GridSection
 
 Product designer with 15+ years of experience leading design initiatives across agencies, startups, & companies. Passionate about simplifying complexity and creating user-centric products using team leadership, problem-solving, UX research, design systems, and agile methods. Seeking next challenge in design system leadership, team management, or as an IC. Off-hours, I enjoy street photography and solving Nonograms or jigsaw puzzles.
 
