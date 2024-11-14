@@ -1,13 +1,5 @@
 @font-face {
-	font-family: 'RecVar';
-	// font-variation-settings: 'CRSV' 0, 'wght' 400;
-	src: url('~/assets/fonts/Recursive_VF_1.085--subset_range_english_basic.woff2') format('woff2');
-	unicode-range: U+0020-007F, U+00A9, U+2190-2193, U+2018, U+2019, U+201C, U+201D, U+2022;
-	font-display: swap;
-}
-@font-face {
 	font-family: 'ShantellSans';
-	// font-variation-settings: 'INFM' 50, 'wght' 500;
 	src: url('~/assets/fonts/ShantellSans[BNCE,INFM,SPAC,ital,wght].woff2') format('woff2');
 	font-display: swap;
 }
@@ -15,9 +7,9 @@
 
 :root {
 	--font-body: system-ui, sans-serif;
-	--font-mono: RecVar, monospace;
+	--font-mono: monospace;
 	--font-hand: ShantellSans, system-ui, sans-serif;
-	--font-title: Poppins, system-ui, sans-serif;
+	--font-title: 'MD Primer Trial', system-ui, sans-serif;
 }
 body,
 html {
@@ -63,14 +55,8 @@ h5,
 h6 {
 	line-height: 1.25;
 	font-family: var(--font-title);
-	letter-spacing: -0.01em;
-	font-variation-settings: 'INFM' 100, 'wght' 500, 'BNCE' 25, 'ital' 1;
-	font-variation-settings: 'wght' 500, 'ital' 1;
-	font-weight: 600;
-	transition: font-variation-settings 0.5s ease-in-out 0s;
-	// &:hover {
-	// 	font-variation-settings: 'INFM' 50, 'wght' 500, 'BNCE' 25, 'ital' 1;
-	// }
+	font-weight: 700;
+	font-feature-settings: 'ss01', 'ss02', 'ss03', 'ss04';
 }
 ul,
 ol {
@@ -84,8 +70,6 @@ li {
 }
 li::marker {
 	color: var(--color-sys-slight);
-	// font-family: var(--font-hand);
-	// font-variation-settings: 'INFM' 100, 'wght' 444, 'ital' 1;
 }
 ul > li::marker {
 	content: '• ';
@@ -152,7 +136,7 @@ strong {
 }
 h1 {
 	font-size: var(--step-7);
-	font-weight: 700;
+	font-weight: 800;
 	@media print {
 		font-size: var(--step-3);
 	}
@@ -210,47 +194,31 @@ sup {
 		// @include link(none);
 		border-bottom: $none-ul;
 	}
-	// font-family: var(--font-mono);
-	// font-variation-settings: 'wght' 400;
 	font-style: normal;
-	transition: font-variation-settings 0.25s ease-in-out, border-color 0.5s ease-in-out;
+	transition: font-variation-settings 0.25s ease-in-out, border-color 0.25s ease-in-out;
 	color: var(--color-focus-main);
 	text-decoration: none;
-	letter-spacing: 0.01em;
+	// letter-spacing: 0.01em;
 	&:hover {
-		// font-variation-settings: 'wght' 500;
 		border-color: var(--color-focus-slight);
 	}
 }
 
-@mixin focus {
-	&:focus-visible {
-		outline: none;
-	}
-	&:focus {
-		box-shadow: 0 0 0 var(--space-3xs) var(--color-focus-slight);
-	}
-}
 a,
 .link {
 	@include link();
 }
 .router-link-active {
-	border-color: var(--color-brand-dim);
-	// font-variation-settings: 'slnt' -15, 'wght' 725, 'CRSV' 0;
-	&:hover {
-		// font-variation-settings: 'slnt' 0, 'wght' 800, 'CRSV' 0;
-	}
+	color: var(--color-sys-main);
+	border-color: var(--color-focus-slight);
 }
 :is(h1, h2, h3, h4, h5, h6, code) a {
 	color: inherit;
 	text-decoration: inherit;
 	font-family: inherit;
 	border: unset;
-	letter-spacing: inherit;
-	// font-variation-settings: 'INFM' 50, 'wght' 500, 'BNCE' 0;
+	// letter-spacing: inherit;
 	&:before {
-		// font-variation-settings: 'wght' 300;
 		color: var(--color-sys-slight);
 		content: '#';
 		display: inline-block;
@@ -277,7 +245,8 @@ code {
 	margin-block-end: var(--space-s);
 	font-size: 80%;
 	width: max-content;
-	// white-space: nowrap;
+	font-style: italic;
+	letter-spacing: -0.05em;
 }
 pre {
 	position: relative;
