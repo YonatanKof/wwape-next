@@ -110,7 +110,7 @@ svg {
 }
 polyline {
 	fill: none;
-	stroke: var(--color-success-main);
+	stroke: var(--color-brand-main);
 	stroke-width: 8;
 	stroke-linecap: round;
 	stroke-dasharray: var(--length) var(--length);
@@ -127,7 +127,7 @@ line {
 }
 #pivotal {
 	stroke-width: 3;
-	stroke: var(--color-success-main);
+	stroke: var(--color-brand-main);
 }
 text {
 	font-family: var(--font-body);
@@ -142,7 +142,6 @@ text {
 em {
 	@include desc-text-under($margin-block-start: var(--space-m));
 	text-align: start;
-	// margin-block-end: var(--space-xl);
 }
 #title {
 	margin-block-start: unset;
