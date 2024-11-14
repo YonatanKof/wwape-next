@@ -60,7 +60,6 @@ defineProps({
 		color: var(--color-sys-main);
 	}
 	p {
-		// font-size: var(--step-0);
 		margin-block-start: 0.25em !important;
 		letter-spacing: unset;
 	}
@@ -68,11 +67,9 @@ defineProps({
 		line-height: 1.5;
 		margin-block: unset;
 		margin-inline-start: var(--space-m);
-		font-family: var(--font-title);
+		font-family: var(--font-hand);
 		font-size: var(--step-2);
 		font-weight: 600;
-		// text-wrap: balance;
-		// font-variation-settings: 'wght' 400;
 	}
 }
 </style>
