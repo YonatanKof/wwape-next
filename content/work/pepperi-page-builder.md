@@ -10,8 +10,10 @@ social_image: '/work/pepperi-page-builder/pepperi-page-builder-social.jpg'
 image_alt: ''
 description: 'B2B Web Magic: How we turned the headache of custom web pages into a no-code playground for B2B clients'
 tags: ['Creative']
-role: ['Head of design', 'IC']
-responsibilities: ['UX Research & Analysis', 'Stakeholder Management', 'UX Architecture', 'Design']
+role: ['Head of Design', 'IC']
+responsibilities: ['UX Research', 'User Testing', 'Stakeholder Management', 'UX', 'Design']
+client_link: https://www.pepperi.com/
+client_name: Pepperi
 ---
 
 ::PeppMainImg
@@ -28,10 +30,10 @@ Here's the thing: in the B2B realm, web pages aren't just digital real estate—
 
 But there was a catch. Our clients weren't just asking for run-of-the-mill pages. They wanted:
 
-- Brand-aligned aesthetics that screamed "This is us!"
+- Brand-aligned aesthetics that screamed *This is us!*
 - Complete design autonomy (because who knows their brand better than they do?)
 - The ability to tweak and tune at will
-- An escape from the "wait for IT" bottleneck
+- An escape from the *wait for IT* bottleneck
 
 The question is: how do you transform a complex web development process into a no-code playground that empowers B2B clients? Well, it turns out that the answer lies in understanding the pain points, validating assumptions, and crafting a solution that's both powerful and intuitive.
 
@@ -55,7 +57,7 @@ But they weren't just asking for any old pages. They wanted:
 - Pages that look like they belong to their brand
 - Total control over the design
 - The ability to edit stuff whenever they want
-- No more "wait for IT" bottlenecks
+- No more *wait for IT* bottlenecks
 
 ## The Pain Points
 
@@ -149,7 +151,7 @@ Talk about a head start.
 
 ### 2. Getting Everyone's Two Cents
 
-We needed to hear from everyone who'd touch this thing - from the folks building it to the people actually using it. So we assembled what we called our "steering committee" (fancy name for "people who know their stuff"):
+We needed to hear from everyone who'd touch this thing - from the folks building it to the people actually using it. So we assembled what we called our *steering committee* (fancy name for *people who know their stuff*):
 
 - Dev team (the builders)
 - Product team (the planners)
@@ -253,7 +255,7 @@ Time to put our research to work. We started rough and refined as we went, testi
 
 :::QuoteBig
 ---
-title: "What is the best UX for editing?"
+title: What is the best UX for editing?
 desc: After looking at a bunch of page builders, we spotted <strong>two</strong> ways to handle editing. So the big decision was <i>which of the two is preferable?</i>
 icon: think
 ---
@@ -471,8 +473,8 @@ Alright, let's get into the good stuff and where the magic happens - the actual 
 
 ::QuoteBig
 ---
-title: Page Builder Composition
-desc: The Page Builder UI is made of <i>Page-Level Elements</i> and <i>Block Elements</i>, let's see what they all about.
+title: The Page Builder Layout
+desc: As we saw in the #one-interchangeable-panel The Page Builder UI is made of <i>Page-Level Elements</i> and <i>Block Elements</i>, let's see what they all about.
 icon: think
 ---
 ::
@@ -695,7 +697,7 @@ marginBlockStart: var(--space-xs)
 #### Button Styles for Days
 - Solid buttons when you mean business
 - Subtle ones for the gentle nudge
-- Outline style for that "hey, over here" vibe
+- Outline style for that *hey, over here* vibe
 - Add counters to show what's hot
 
 ::::BaseImage
@@ -833,7 +835,7 @@ First off, we put our money where our mouth is:
 But the real test? Other people actually wanted to use it:
 - Clients from different industries jumped on board
 - People started asking for it before we even pitched it
-- The "when can we get this?" emails started rolling in
+- The *when can we get this?* emails started rolling in
 
 ## Homepage Revolution
 Remember how creating custom homepages used to be this whole big thing? Had to get developers involved, took forever, cost a bunch? Yeah, we fixed that.
@@ -883,9 +885,9 @@ This is all the people actually using it
 
 ## The Tech Folks
 We talked to PS teams, admins, and IT people. Their take?
-- "Finally, we can work on actual tech stuff!"
-- "No more emergency calls about changing a banner"
-- "Updates don't break everything anymore"
+- *Finally, we can work on actual tech stuff!*
+- *No more emergency calls about changing a banner*
+- *Updates don't break everything anymore*
 
 ## The Business People
 Marketing and sales managers can't shut up about how:
