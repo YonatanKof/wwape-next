@@ -14,9 +14,16 @@ tags: ['dev']
 
 Hi all 👋  
 
-Just a boring page to review all the *Markdown* styles for this *Nuxt* website.
+A page to review all the `Markdown` syntax I use in this `Nuxt Content` website.
 
-> Markdown is a lightweight markup language that uses plain text formatting syntax, making it easy to write and read formatted documents.
+::QuoteBig
+---
+title: Markdown?! Nuxt Content?! WTF?
+desc: <code>Markdown</code> is a lightweight <i>markup language</i> that uses plain text formatting syntax, making it easy to write and read formatted documents. <code>Nuxt</code> is a meta-framework to build sites better/faster, and <code>Nuxt Content</code> is to use super charged MD files, mainly <code>Vue</code> components in MD files. <br/> 
+---
+::
+
+> After each section I'll add the syntax too.
 
 ## Titles 
 
@@ -327,6 +334,33 @@ desc: Some description
 
 ::SketchEmbed{src="84463519-df2a-475d-b8d2-bd250755763d/p/3195B629-1FA9-4D9B-9AB6-BEA52F6DC7A8/canvas" height="var(--space-7xl)"}
 ::
+
+## Vue Components
+
+::QuoteBig
+---
+title: Example Title
+desc: Example Description
+---
+::
+
+### Default style
+
+```md
+::QuoteBig{title="Example Title" desc="Example Description"}
+::
+```
+
+### `YAML` style
+
+```yaml
+::QuoteBig
+---
+title: Example Title
+desc: Example Description
+---
+::
+```
 
 <!-- 
 ## Footnotes 

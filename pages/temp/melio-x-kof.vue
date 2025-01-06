@@ -25,7 +25,6 @@ const { open, close } = useModal({
 </script>
 <template>
 	<section>
-		<ModalsContainer />
 		<h1>Melio × Kof</h1>
 		<p><i>Hi Guy</i> 👋 we know each other from back in the <em>Matnas Interactive</em> days.</p>
 		<p>

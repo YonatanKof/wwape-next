@@ -5,15 +5,6 @@ definePageMeta({
 import { ModalsContainer, useModal } from 'vue-final-modal';
 import Modal from '~/components/ModalMelio.vue';
 
-const config = useRuntimeConfig();
-const nuxtApp = useNuxtApp();
-nuxtApp.$pageMetaTags({
-	metaTitle: 'Design Systems: Unifying Product, Dev, and Brand Teams with Tech and Design Thinking',
-	metaDesc: `Discover how I create design systems that unify product, development, and brand teams using technology and design thinking—ensuring consistency, scalable solutions, and improved work velocity through cross-functional collaboration – ${config.public.siteOwnerName}`,
-	metaImg: '/misc/design-systems-social.jpg',
-	metaImgAlt: 'Cover image for Design Systems page',
-});
-
 const { open, close } = useModal({
 	component: Modal,
 	attrs: {
@@ -25,25 +16,25 @@ const { open, close } = useModal({
 </script>
 <template>
 	<section>
-		<ModalsContainer />
-		<h1>Design Systems</h1>
-		<blockquote>Unifying Product, Dev, and Brand teams with tech & Design-Thinking</blockquote>
 		<p>
-			I envision, create, lead, manage, and govern design systems that connect product teams, brand identity,
-			developers, and business needs. Design systems that people adopt and use ensure design consistency, cohesive
-			experiences, scalable solutions, and improve velocity and better cross-functional collaboration.
+			At Pepperi I created, lead, managed, and governed a <i>design systems</i> & and <i>brand guide</i> that connect
+			the product team, brand identity, developers, and the business needs.
+		</p>
+		<p>
+			A design systems that people adopt and use ensure design consistency, cohesive experiences, scalable solutions,
+			improve velocity and better cross-functional collaboration.
 		</p>
 		<main>
 			<div id="intro">
 				<span>
 					<span>
+						<p>As a <i>full-stack designer</i>, creating <em>Pepperi Design System</em> was a joy!</p>
 						<p>
-							As a <i>full-stack designer</i> I did several things, creating <em>Pepperi Design System</em> was one of
-							them. This was made possible through an intimate understanding of complex systems, the people who use
-							them, and the businesses that operate them.
+							It was made possible through an intimate knowledge of complex systems, the people who use them, and the
+							businesses that operate them.
 						</p>
 						<p>
-							<span style="display: block">More reasons why I'm a good fit?</span>
+							<span style="display: block">Reasons why I love DS role?</span>
 							<i class="drag-title">Push the button to see!</i>
 						</p>
 					</span>
@@ -56,8 +47,8 @@ const { open, close } = useModal({
 				title="Design Tokens"
 				btnText="Read the Article!"
 				linkTo="/post/design-tokens/"
-				imgSrc="/misc/design-tokens.webm"
-				srcMp4="/misc/design-tokens.mp4"
+				imgSrc="/work/pepperi-design-system/design-tokens.webm"
+				srcMp4="/work/pepperi-design-system/design-tokens.mp4"
 			>
 				<span>
 					<p>
@@ -73,8 +64,8 @@ const { open, close } = useModal({
 				title="Pepperi DS, Storybook"
 				btnText="Visit Storybook"
 				linkTo="https://60ae3e9eff8e4c003b2f90d4-orunuhbrch.chromatic.com/?path=/docs/pepperi-design-system--page"
-				imgSrc="/misc/DesignSystem-1.webm"
-				srcMp4="/misc/DesignSystem-1.mp4"
+				imgSrc="/work/pepperi-design-system/DesignSystem-1.webm"
+				srcMp4="/work/pepperi-design-system/DesignSystem-1.mp4"
 			>
 				<p>
 					Used by the <i>Product</i> and <i>Dev</i> teams to <strong>improve velocity</strong>, this library showcases
@@ -88,8 +79,8 @@ const { open, close } = useModal({
 				title="PDS, Composite Storybook"
 				btnText="Visit Composite Lib."
 				linkTo="https://626ab62298ef5a004ac8cdea-fsmhdxxugw.chromatic.com/?path=/docs/pepperi-extended-level-composition--page"
-				imgSrc="/misc/DesignSystem-2.webm"
-				srcMp4="/misc/DesignSystem-2.mp4"
+				imgSrc="/work/pepperi-design-system/DesignSystem-2.webm"
+				srcMp4="/work/pepperi-design-system/DesignSystem-2.mp4"
 			>
 				<p>
 					This library contains the <i>Organisms</i>, <i>Templates</i> and <i>Pages</i> (WIP) that makes up Pepperi's
@@ -102,8 +93,8 @@ const { open, close } = useModal({
 				title="Pepperi Brand Guide"
 				btnText="Visit the Brand Guide"
 				linkTo="https://brand.pepperi.com/"
-				imgSrc="/misc/brand.webm"
-				srcMp4="/misc/brand.mp4"
+				imgSrc="/work/pepperi-design-system/brand.webm"
+				srcMp4="/work/pepperi-design-system/brand.mp4"
 			>
 				<p>
 					With this design initiative, I've guided management in a journey to strengthen and solidify Pepperi brand.
@@ -122,7 +113,7 @@ main {
 	gap: var(--space-s);
 	margin-block: var(--space-m);
 	@media (width <= $display-width-md) {
-		grid-template-rows: repeat(3, 24rem);
+		grid-template-rows: repeat(3, 28rem);
 	}
 	@media (width <= $display-width-sm) {
 		grid-template-columns: 1fr;

@@ -5,6 +5,7 @@ const props = defineProps({
 });
 
 const goHome = () => clearError({ redirect: '/' });
+const goWork = () => clearError({ redirect: '/work' });
 const goDesign = () => clearError({ redirect: '/design' });
 const goPost = () => clearError({ redirect: '/post' });
 </script>
@@ -17,8 +18,9 @@ const goPost = () => clearError({ redirect: '/post' });
 			<hr />
 			<p>You can now...</p>
 			<div>
-				<button @click="goHome">Go back to the homepage</button>
-				<button @click="goDesign">See some nice designs</button>
+				<button @click="goHome">Back to homepage</button>
+				<button @click="goWork">My work as a designer</button>
+				<button @click="goDesign">See cool graphic art</button>
 				<button @click="goPost">Read some nice articles</button>
 			</div>
 		</section>

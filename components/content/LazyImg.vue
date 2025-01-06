@@ -7,11 +7,11 @@ import Modal from '~/components/FullScreenModal.vue';
 const props = defineProps({
 	src: {
 		type: String,
-		default: '',
+		default: undefined,
 	},
 	alt: {
 		type: String,
-		default: '',
+		default: undefined,
 	},
 	width: {
 		type: [String, Number],
@@ -57,7 +57,6 @@ const { open, close } = useModal({
 });
 </script>
 <template>
-	<ModalsContainer />
 	<span class="lazy-img" @click="open" @keyup.enter="open">
 		<UnLazyImage :thumbhash="thumbhash" :src="refinedSrc" :alt="alt" :width="width" :height="height" auto-sizes />
 		<em v-if="desc">{{ desc }}</em>
@@ -71,6 +70,6 @@ span {
 	}
 }
 em {
-	margin-block-end: 1.5em;
+	@include desc-text-under();
 }
 </style>

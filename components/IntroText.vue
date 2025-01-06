@@ -30,7 +30,7 @@ h1 {
 	margin-block-end: var(--space-2xs);
 }
 p {
-	max-width: 55ch;
+	max-width: 62ch;
 	margin-block-end: var(--space-2xs);
 	&:last-child {
 		margin-block-end: 0;

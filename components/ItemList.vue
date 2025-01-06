@@ -10,7 +10,7 @@ const props = defineProps({
 	},
 	masonryColumnWidth: {
 		type: Number,
-		default: 200,
+		default: 160,
 	},
 	masonryGap: {
 		type: Number,
@@ -19,6 +19,14 @@ const props = defineProps({
 	masonryMaxColumns: {
 		type: Number,
 		default: 2,
+	},
+	showDate: {
+		type: Boolean,
+		default: true,
+	},
+	titleSize: {
+		type: String,
+		default: 'var(--step-2)',
 	},
 });
 const { $formatDate } = useNuxtApp();
@@ -36,7 +44,7 @@ const { $formatDate } = useNuxtApp();
 			<NuxtLink class="item" v-if="item._path" :to="item._path + '/'">
 				<div class="item-content">
 					<h3 id="title">{{ item.title }}</h3>
-					<p id="mata-data">{{ $formatDate(item.date) }}</p>
+					<p v-if="showDate" id="mata-data">{{ $formatDate(item.date) }}</p>
 					<p v-if="item.description" v-html="item.description"></p>
 				</div>
 				<UnLazyImage
@@ -70,21 +78,32 @@ const { $formatDate } = useNuxtApp();
 }
 .item-content {
 	margin: var(--space-s);
-	display: block;
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-3xs);
 }
 #title {
 	margin-block-start: unset;
 	margin-block-end: var(--space-4xs);
+	font-size: v-bind(titleSize);
+	@media (width <= $display-width-xs) {
+		font-size: var(--step-1);
+	}
 }
 #mata-data {
 	font-size: var(--step--2);
 	color: var(--color-sys-slight);
-	margin-block-end: var(--space-3xs);
+	@media (width <= $display-width-xs) {
+		font-size: var(--step--4);
+	}
 }
 p {
 	font-size: var(--step--1);
 	margin-block-end: unset;
 	font-variation-settings: 'slnt' 0, 'wght' 400, 'CRSV' 0;
+	@media (width < $display-width-xs) {
+		font-size: var(--step--2);
+	}
 }
 img {
 	border-radius: unset;
