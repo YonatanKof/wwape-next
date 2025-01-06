@@ -57,7 +57,6 @@ const { open, close } = useModal({
 });
 </script>
 <template>
-	<ModalsContainer />
 	<span class="lazy-img" @click="open" @keyup.enter="open">
 		<UnLazyImage :thumbhash="thumbhash" :src="refinedSrc" :alt="alt" :width="width" :height="height" auto-sizes />
 		<em v-if="desc">{{ desc }}</em>

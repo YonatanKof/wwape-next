@@ -25,7 +25,6 @@ const { open, close } = useModal({
 </script>
 <template>
 	<section>
-		<ModalsContainer />
 		<h1>Design Systems</h1>
 		<blockquote>Unifying Product, Dev, and Brand teams with tech & Design-Thinking</blockquote>
 		<p>

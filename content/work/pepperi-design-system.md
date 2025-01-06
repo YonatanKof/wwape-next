@@ -11,6 +11,7 @@ image_alt: ''
 description: 'Unifying Product, Dev, and Brand teams with tech & Design-Thinking'
 tags: ['Creative']
 role: ['Head of design', 'IC']
+showToc: false
 ---
 
 ::design-systems

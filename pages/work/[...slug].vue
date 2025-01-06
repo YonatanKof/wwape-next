@@ -1,6 +1,7 @@
 <!-- This is a single post -->
 <script setup>
 const { path } = useRoute();
+const { toc } = useContent();
 const cleanPath = path.replace(/\/+$/, '');
 
 const { data, error } = await useAsyncData(cleanPath, async () => {
@@ -32,12 +33,19 @@ nuxtApp.$pageMetaTags({
 	metaPublishedTime: data.value?.article?.date.split('T')[0],
 	metaModifiedTime: data.value?.article?.updated.split('T')[0],
 });
+const show = ref(false);
+
+function confirm() {
+	show.value = false;
+}
 </script>
 
 <template>
 	<main>
 		<ContentDoc>
 			<template v-slot="{ doc }">
+				<button v-if="doc.showToc === true" @click="show = true">Table of content</button>
+				<TableOfContent v-model="show" @confirm="() => confirm()" :tocData="toc" />
 				<main>
 					<section id="article-header">
 						<div id="article-info">
@@ -136,5 +144,15 @@ hr:last-of-type {
 	gap: var(--space-3xs);
 	align-items: center;
 	margin: unset;
+}
+
+button {
+	position: fixed;
+	inset-block-end: var(--space-l);
+	inset-inline-end: calc(var(--space-s) * 2);
+	max-width: calc(var(--space-5xl) * 2 - var(--space-2xs) * 4);
+	max-width: max-content;
+	z-index: 100;
+	width: 100%;
 }
 </style>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ModalsContainer, useModal } from 'vue-final-modal';
+import { useModal } from 'vue-final-modal';
 import Modal from '~/components/FlowChartModal.vue';
 const props = defineProps({
 	modalTitle: {
@@ -44,8 +44,6 @@ const { open, close } = useModal({
 				<p v-if="modalDescription">{{ modalDescription }}</p>
 			</div>
 			<img loading="lazy" :src="modalImage" class="this-image" :alt="`The ` + modalTitle + ` symbol`" height="208" width="152" />
-
-			<ModalsContainer />
 		</article>
 	</div>
 </template>

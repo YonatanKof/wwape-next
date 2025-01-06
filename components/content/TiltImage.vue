@@ -37,7 +37,6 @@ const { open, close } = useModal({
 });
 </script>
 <template>
-	<ModalsContainer />
 	<span>
 		<div @click="open" @keyup.enter="open">
 			<NuxtImg vi-if="img1" class="img1" :src="img1" />

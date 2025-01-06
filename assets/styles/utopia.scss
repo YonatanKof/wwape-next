@@ -1,21 +1,21 @@
 /* Typography */
-/* @link https://utopia.fyi/type/calculator/?c=320,17,1.125,1240,16,1.25,9,4,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+/* @link https://utopia.fyi/type/calculator?c=320,15,1.125,1240,16,1.25,9,4,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
 :root {
-	--step--4: clamp(0.4094rem, 0.7514rem + -0.4413vw, 0.6631rem);
-	--step--3: clamp(0.5119rem, 0.8278rem + -0.4076vw, 0.7463rem);
-	--step--2: clamp(0.64rem, 0.9087rem + -0.3467vw, 0.8394rem);
-	--step--1: clamp(0.8rem, 0.9946rem + -0.2511vw, 0.9444rem);
-	--step-0: clamp(1rem, 1.0842rem + -0.1087vw, 1.0625rem);
-	--step-1: clamp(1.1956rem, 1.1767rem + 0.0946vw, 1.25rem);
-	--step-2: clamp(1.345rem, 1.2693rem + 0.3783vw, 1.5625rem);
-	--step-3: clamp(1.5131rem, 1.3601rem + 0.7652vw, 1.9531rem);
-	--step-4: clamp(1.7019rem, 1.4447rem + 1.2859vw, 2.4413rem);
-	--step-5: clamp(1.9144rem, 1.5187rem + 1.9783vw, 3.0519rem);
-	--step-6: clamp(2.1538rem, 1.5759rem + 2.8891vw, 3.815rem);
-	--step-7: clamp(2.4231rem, 1.6075rem + 4.0783vw, 4.7681rem);
-	--step-8: clamp(2.7263rem, 1.6012rem + 5.625vw, 5.9606rem);
-	--step-9: clamp(3.0669rem, 1.5421rem + 7.6239vw, 7.4506rem);
+	--step--4: clamp(0.4096rem, 0.6464rem + -0.3055vw, 0.5853rem);
+	--step--3: clamp(0.512rem, 0.7094rem + -0.2547vw, 0.6584rem);
+	--step--2: clamp(0.64rem, 0.7758rem + -0.1752vw, 0.7407rem);
+	--step--1: clamp(0.8rem, 0.8449rem + -0.058vw, 0.8333rem);
+	--step-0: clamp(0.9375rem, 0.9158rem + 0.1087vw, 1rem);
+	--step-1: clamp(1.0547rem, 0.9868rem + 0.3397vw, 1.25rem);
+	--step-2: clamp(1.1865rem, 1.0557rem + 0.6539vw, 1.5625rem);
+	--step-3: clamp(1.3348rem, 1.1198rem + 1.0753vw, 1.9531rem);
+	--step-4: clamp(1.5017rem, 1.1748rem + 1.6343vw, 2.4414rem);
+	--step-5: clamp(1.6894rem, 1.2155rem + 2.3693vw, 3.0518rem);
+	--step-6: clamp(1.9006rem, 1.2348rem + 3.3289vw, 3.8147rem);
+	--step-7: clamp(2.1382rem, 1.2233rem + 4.5743vw, 4.7684rem);
+	--step-8: clamp(2.4054rem, 1.1689rem + 6.1827vw, 5.9605rem);
+	--step-9: clamp(2.7061rem, 1.0558rem + 8.2513vw, 7.4506rem);
 }
 
 /* Space */

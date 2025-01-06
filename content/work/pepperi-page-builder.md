@@ -11,6 +11,7 @@ image_alt: ''
 description: 'How we turned the headache of custom web pages into a no-code playground for B2B clients'
 tags: ['Creative']
 role: ['Head of design', 'IC']
+showToc: true
 ---
 
 ::PeppMainImg
@@ -113,7 +114,7 @@ desc: Custom pages our clients built - cool for them, nightmare for us
 
 
  -->
-## Getting Real: Research Phase
+## Research Time
 
 Look, we're not the type to just wing it. We did our homework - and then some. Here's how we figured out what actually needed building:
 
@@ -124,7 +125,7 @@ Look, we're not the type to just wing it. We did our homework - and then some. H
 
 Let's break it down.
 
-### 1. Field Studies: Learning from the Wild
+### 1. Field Studies
 
 Before we started cooking up new solutions, we took a good hard look at what was already out there. Smart move, right?
 
@@ -140,7 +141,7 @@ Talk about a head start.
 
 ### 2. Getting Everyone's Two Cents
 
-We needed to hear from everyone who'd touch this thing - from the folks building it to the people actually using it. So we assembled what we called our "steering committee" (fancy name for "people who know their stuff"):
+We needed to hear from everyone who'd touch this thing - from the folks building it to the people actually using it. So we assembled what we called our *steering committee* (fancy name for *people who know their stuff*):
 
 - Dev team (the builders)
 - Product team (the planners)
@@ -224,7 +225,7 @@ icon: 📐
 :::
 ::
 
-## Wireframes: Testing Our Ideas
+## Wireframes & Testing Ideas
 
 Time to put our research to work. We started rough and refined as we went, testing everything with real users along the way. No point building something pretty if it doesn't work, right?
 
@@ -297,9 +298,9 @@ icon: think
 2. ***User Reality*:** Most of our users aren't web designers - they just want to get stuff done without learning a whole new system.
 
 
-### Low Level Wireframes: The Devil's in the Details
+### Low Level Wireframes
 
-After picking the side panel approach, we had two ways to handle the editing experience. Time for more decisions!
+After picking the side panel approach, we had two ways to handle the editing experience. The devil's in the details so it's time for more decisions!
 
 #### Option 1: One Panel to Rule Them All
    
@@ -359,13 +360,13 @@ icon: think
 ---
 ::
 
-## Testing Time: From Paper to Pixels
+## Test Time
 
 Before jumping into full-blown development, we needed to make sure our wireframes actually made sense in real life. You know what they say - everyone has a plan until they try to drag and drop a slideshow block.
 
-### Interactive Mockups in Action
+### Interactive Mockups
 
-We built clickable prototypes of our designs and let our steering committee loose on them. Nothing beats watching real people try to use your stuff.
+We built clickable prototypes of our designs and let our *steering committee* loose on them. Nothing beats watching real people try to use your stuff.
 
 ::GridBlockTwo{frOne="2fr" frTwo="3fr" gap="var(--space-m)"}
 :::GridUnit
@@ -425,7 +426,7 @@ desc: With validation from actual users, we were ready to move into high-fidelit
 ::
 
 
-## The Final Design: Where the Magic Happens
+## Final Design Magic
 
 Alright, let's get into the good stuff - the actual product. Here's where all that research and wireframing turned into something real. We'll break it down into two parts: the basic building blocks and the fancy features that make pages pop.
 
