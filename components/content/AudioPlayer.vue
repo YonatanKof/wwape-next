@@ -16,22 +16,34 @@ const props = defineProps({
 </script>
 
 <template>
-    <figure>
-        <figcaption>
-            <h4 class="title">
+    <figure class="audio-player">
+        <figcaption class="audio-player__info">
+            <h4 class="audio-player__title">
                 {{ title }}
             </h4>
-            <p>
+            <p class="audio-player__details">
                 {{ details }}
             </p>
         </figcaption>
-        <audio controls :src="file"></audio>
-        <a :href="file"> Download audio </a>
+        <audio 
+            controls 
+            :src="file"
+            :aria-label="`Audio player for ${title}`"
+            class="audio-player__controls"
+        ></audio>
+        <a 
+            :href="file" 
+            :download="title"
+            class="audio-player__download"
+            :aria-label="`Download ${title} audio file`"
+        >
+            <span class="audio-player__download-text">Download audio</span>
+        </a>
     </figure>
 </template>
 
 <style scoped>
-figure {
+.audio-player {
     max-width: 65ch;
     display: flex;
     flex-direction: column;
@@ -43,18 +55,20 @@ figure {
 }
 
 .title {
-    margin-block-start: unset;
+    margin-block-start: 0;
 }
-p {
+
+.audio-player__details {
     font-size: var(--step-0);
 }
-audio {
+
+.audio-player__controls {
     width: 100%;
     border-radius: var(--border-radius-xs);
     margin-block-end: var(--space-2xs);
 }
 
-a {
+.audio-player__download {
     width: max-content;
     font-size: var(--step--1);
 }
