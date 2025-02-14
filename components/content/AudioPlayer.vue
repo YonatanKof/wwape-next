@@ -6,11 +6,11 @@ const props = defineProps({
     },
     title: {
         type: String,
-        required: true
+        default: "The Robot Show Podcast"
     },
     details: {
         type: String,
-        required: true
+        default: "Why read when you can listen? This <i>NotebookLM</i> show covers the article with an energetic, over-the-top, nauseating North American speech."
     }
 })
 </script>
@@ -21,8 +21,7 @@ const props = defineProps({
             <h4 class="audio-player__title">
                 {{ title }}
             </h4>
-            <p class="audio-player__details">
-                {{ details }}
+            <p class="audio-player__details" v-html="details" >
             </p>
         </figcaption>
         <audio 
@@ -44,17 +43,21 @@ const props = defineProps({
 
 <style scoped>
 .audio-player {
-    max-width: 65ch;
     display: flex;
     flex-direction: column;
     gap: 0;
-    margin-block-end: var(--space-m);
+    margin-block: var(--space-m);
     background-color: var(--color-black-dis);
     padding: var(--space-s);
     border-radius: var(--border-radius-xs);
 }
 
-.title {
+.audio-player__title,
+.audio-player__details {
+    max-width: 65ch;
+}
+
+.audio-player__title {
     margin-block-start: 0;
 }
 
