@@ -47,9 +47,10 @@ const props = defineProps({
     flex-direction: column;
     gap: 0;
     margin-block: var(--space-m);
-    background-color: var(--color-black-dis);
+    background-color: var(--color-sys-invert-highlight-slight);
     padding: var(--space-s);
     border-radius: var(--border-radius-xs);
+    border: 1px solid var(--color-sys-dim);
 }
 
 .audio-player__title,
