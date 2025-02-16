@@ -16,6 +16,12 @@ Design tokens are standardized, reusable variables that define the visual proper
 
 Working with design tokens ensure consistency and scalability across various platforms and products.
 
+::AudioPlayer
+---
+file: /posts/design-tokens/design-tokens.mp3
+---
+::
+
 ## Why Design Tokens?
 
 ### Consistency
