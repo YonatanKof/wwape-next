@@ -157,27 +157,34 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-	<div class="custom-slider">
-		<div class="slider-track" ref="trackRef" @click="handleTrackClick">
-			<div class="slider-fill" :style="{ width: fillWidth }"></div>
-			<div
-				class="slider-thumb"
-				ref="thumbRef"
-				:style="{ left: thumbPosition }"
-				@mousedown="startDrag"
-				@touchstart="startDrag"
-			></div>
+	<div class="custom-box">
+		<div class="custom-slider">
+			<div class="slider-track" ref="trackRef" @click="handleTrackClick">
+				<div class="slider-fill" :style="{ width: fillWidth }"></div>
+				<div
+					class="slider-thumb"
+					ref="thumbRef"
+					:style="{ left: thumbPosition }"
+					@mousedown="startDrag"
+					@touchstart="startDrag"
+				></div>
+			</div>
+			<input type="hidden" :name="name" :value="modelValue" />
 		</div>
-		<input type="hidden" :name="name" :value="modelValue" />
 	</div>
 </template>
 
 <style scoped>
-
-.custom-slider {
+.custom-box {
 	--slide-size: var(--space-l);
+	width: calc(100% - var(--slide-size));
+	padding-inline: calc(var(--slide-size) / 2);
+}
+.custom-slider {
 	position: relative;
 	width: 100%;
+	/* width: calc(100% + var(--slide-size)); */
+	inset-inline-start: calc(var(--slide-size) / 2 * -1);
 	height: var(--slide-size);
 	display: flex;
 	align-items: center;
@@ -186,9 +193,10 @@ onBeforeUnmount(() => {
 .slider-track {
 	position: relative;
 	width: 100%;
+	width: calc(100% + var(--slide-size));
 	height: var(--slide-size);
-	background-color: var(--color-sys-dim);
-	box-shadow: inset 0 0 0 var(--space-3xs) var(--color-brand-main);
+	background-color: var(--color-sys-dis);
+	box-shadow: inset 0 0 0 var(--space-3xs) var(--color-sys-main);
 	border-radius: calc(var(--slide-size) * 2);
 	cursor: pointer;
 }
@@ -196,27 +204,28 @@ onBeforeUnmount(() => {
 .slider-fill {
 	position: absolute;
 	height: 100%;
-	background-color: var(--color-brand-main);
+	background-color: var(--color-sys-slight);
 	border-radius: var(--slide-size);
 	pointer-events: none;
 }
 
 .slider-thumb {
 	position: absolute;
-	width: var(--slide-size);
+	width: calc(var(--slide-size) * 1);;
 	height: var(--slide-size);
 	background-color: var(--color-sys-invert-main);
-	border-radius: 50%;
-	transform: translate(-100%);
+	border-radius: var(--slide-size);
+	transform: translate(-50%, calc(var(--space-3xs) * -1));
+	transform: translate(-50%);
 	cursor: grab;
-	/* box-shadow: inset 0 0 0 var(--space-4xs) var(--color-brand-main), var(--shadow-sm); */
-	box-shadow: inset 0 0 0 var(--space-3xs) var(--color-brand-main);
+	/* border: var(--color-sys-main) solid var(--space-3xs); */
+	box-shadow: inset 0 0 0 var(--space-3xs) var(--color-sys-main);
 	transition: background-color 0.25s ease;
 }
 
 .slider-thumb:hover,
 .slider-thumb:active {
-	background-color: var(--color-sys-invert-highlight);
+	/* background-color: var(--color-sys-invert-highlight); */
 }
 
 .slider-thumb:active {
