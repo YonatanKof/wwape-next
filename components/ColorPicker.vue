@@ -6,18 +6,48 @@
 
 			<div class="sliders">
 				<div class="slider-group">
-					<label>H: {{ hue }}°</label>
-					<input type="range" min="0" max="360" v-model.number="hue" @input="updateColor" />
+					<div class="slider-label">
+						<span>Hue: {{ hue }}°</span>
+					</div>
+					<CustomSlider
+						v-model="hue"
+						:min="0"
+						:max="360"
+						:step="1"
+						@input="updateColor"
+						:fill-color="getHueColor(hue)"
+						track-color="#f0f0f0"
+					/>
 				</div>
 
 				<div class="slider-group">
-					<label>S: {{ saturation }}%</label>
-					<input type="range" min="0" max="100" v-model.number="saturation" @input="updateColor" />
+					<div class="slider-label">
+						<span>Saturation: {{ saturation }}%</span>
+					</div>
+					<CustomSlider
+						v-model="saturation"
+						:min="0"
+						:max="100"
+						:step="1"
+						@input="updateColor"
+						:fill-color="getSaturationColor(hue, saturation)"
+						track-color="#f0f0f0"
+					/>
 				</div>
 
 				<div class="slider-group">
-					<label>L: {{ lightness }}%</label>
-					<input type="range" min="0" max="100" v-model.number="lightness" @input="updateColor" />
+					<div class="slider-label">
+						<span>Lightness: {{ lightness }}%</span>
+					</div>
+					<CustomSlider
+						v-model="lightness"
+						:min="0"
+						:max="100"
+						:step="1"
+						@input="updateColor"
+						fill-color="#666666"
+						track-color="#f0f0f0"
+					/>
 				</div>
 			</div>
 
@@ -27,7 +57,8 @@
 </template>
 
 <script setup>
-// import { ref, computed, onMounted } from 'vue';
+import { ref, computed, onMounted } from 'vue';
+import CustomSlider from './CustomSlider.vue';
 
 const props = defineProps({
 	cssVariable: {
@@ -62,6 +93,15 @@ const originalLightness = ref(15);
 const hslString = computed(() => {
 	return `hsl(${hue.value}, ${saturation.value}%, ${lightness.value}%)`;
 });
+
+// Create dynamic colors for sliders
+const getHueColor = (h) => {
+	return `hsl(${h}, 100%, 50%)`;
+};
+
+const getSaturationColor = (h, s) => {
+	return `hsl(${h}, ${s}%, 50%)`;
+};
 
 onMounted(() => {
 	const rootStyles = getComputedStyle(document.documentElement);
@@ -122,7 +162,7 @@ const resetColor = () => {
 
 .inputs-wrapper {
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	gap: 1rem;
 	margin-top: 0.5rem;
 }
@@ -132,6 +172,7 @@ const resetColor = () => {
 	height: 3rem;
 	border-radius: 4px;
 	border: 1px solid #ccc;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .sliders {
@@ -139,23 +180,27 @@ const resetColor = () => {
 }
 
 .slider-group {
+	margin-bottom: 0.75rem;
+}
+
+.slider-label {
 	display: flex;
-	flex-direction: column;
-	margin-bottom: 0.5rem;
-}
-
-.slider-group label {
-	font-size: 0.8rem;
-	margin-bottom: 0.2rem;
-}
-
-.slider-group input {
-	width: 100%;
+	justify-content: space-between;
+	margin-bottom: 0.25rem;
+	font-size: 0.875rem;
 }
 
 .reset-button {
-	padding: 0.3rem 0.6rem;
-	height: fit-content;
+	padding: 0.5rem 0.75rem;
+	background-color: #f3f4f6;
+	border: 1px solid #d1d5db;
+	border-radius: 4px;
+	font-size: 0.875rem;
 	cursor: pointer;
+	transition: background-color 0.2s ease;
+}
+
+.reset-button:hover {
+	background-color: #e5e7eb;
 }
 </style>
