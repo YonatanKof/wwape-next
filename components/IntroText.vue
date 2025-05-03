@@ -19,7 +19,7 @@ const props = defineProps({
 	<div>
 		<h1 v-if="title">{{ title }}</h1>
 		<span>
-			<p v-if="isOn"><SayHi /></p>
+			<p class="hi" v-if="isOn"><SayHi /></p>
 			<p v-if="text" v-html="text"></p>
 			<p v-if="text2" v-html="text2" id="last"></p>
 		</span>
@@ -28,6 +28,9 @@ const props = defineProps({
 <style lang="scss" scoped>
 h1 {
 	margin-block-end: var(--space-2xs);
+}
+.hi {
+	font-size: var(--step-2);
 }
 p {
 	max-width: 62ch;
