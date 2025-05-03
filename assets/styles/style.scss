@@ -142,16 +142,16 @@ hr {
 	background: var(--color-overlay) !important;
 }
 
-.dark-mode {
-	--color-sys-main: hsl(34, 78%, 91%);
+// .dark-mode {
+// 	--color-sys-main: hsl(34, 78%, 91%);
 
-	--color-sys-invert-highlight: color-mix(in hsl, var(--color-sys-invert-main) 55%, black);
-	--color-sys-invert-main: hsl(34, 25%, 15%);
+// 	--color-sys-invert-highlight: color-mix(in hsl, var(--color-sys-invert-main) 55%, black);
+// 	--color-sys-invert-main: hsl(34, 25%, 15%);
 
-	--color-brand-main: hsl(280, 100%, 80%);
-	--color-focus-main: hsl(200, 100%, 40%);
-	--color-caution-main: hsl(0, 100%, 60%);
-	--color-success-main: hsl(126, 100%, 65%);
+// 	--color-brand-main: hsl(280, 100%, 80%);
+// 	--color-focus-main: hsl(200, 100%, 40%);
+// 	--color-caution-main: hsl(0, 100%, 60%);
+// 	--color-success-main: hsl(126, 100%, 65%);
 
-	--color-shadow: var(--color-black-dim);
-}
+// 	--color-shadow: var(--color-black-dim);
+// }

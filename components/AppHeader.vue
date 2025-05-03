@@ -20,7 +20,7 @@ defineProps({
 				<nuxt-link :to="{ name: 'post' }" aria-label="Go to Post page">Posts</nuxt-link>
 				<nuxt-link :to="{ name: 'work' }">Work</nuxt-link>
 			</nav>
-			<ColorModeSwitch />
+			<!-- <ColorModeSwitch /> -->
 		</div>
 	</header>
 </template>
