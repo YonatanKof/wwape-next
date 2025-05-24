@@ -2,8 +2,8 @@
 
 A website by Yonatan Ben Knaan
 
-> This site is a work in progress!  
-> Expect more design and blog posts soon
+![kof-icon](kof-icon.svg#gh-light-mode-only)
+![kof-icon-dark](kof-icon-dark.svg#gh-dark-mode-only)
 
 ## Links
 
