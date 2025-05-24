@@ -12,9 +12,17 @@ description: 'Why do we need to know our target audience? What is exactly? How i
 tags: ['Creative']
 ---
 
+
 <!-- This is part of a series [Crafting a Brand, a Designer's Take](https://www.notion.so/Crafting-a-Brand-a-Designers-take-d02ec6f0108e43b8a9d23c5a498c19d8?pvs=21) – **TBD** -->
 
-> If you aim to go somewhere, and unlike Alice, you only want to walk *short* enough – having a **target** is **crucial**.
+> If you aim to go somewhere and, unlike Alice, you want to walk short enough – having a **target** is **crucial**.
+
+::AudioPlayer
+---
+file: /posts/target-audience/target-audience.mp3
+---
+::
+
 
 ## Context Matters
 
