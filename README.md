@@ -2,8 +2,8 @@
 
 A website by Yonatan Ben Knaan
 
-![kof-icon](/public/kof-icon.svg#gh-light-mode-only)
-![kof-icon-dark](/public/kof-icon-dark.svg#gh-dark-mode-only)
+![kof-icon](/public/kof-icon.png#gh-light-mode-only)
+![kof-icon-dark](/public/kof-icon-dark.png#gh-dark-mode-only)
 
 ## Links
 
