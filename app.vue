@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import { ModalsContainer } from 'vue-final-modal';
 useHead({
 	meta: [
@@ -29,29 +29,16 @@ useHead({
 .page-leave-active,
 .layout-enter-active,
 .layout-leave-active {
-	transition: opacity 0.14s, filter 0.07s;
+	transition: opacity 0.3s, transform 0.3s;
 }
-
 .page-enter-from,
+.layout-enter-from{
+	opacity: 0;
+	transform: translateX(calc(var(--space-s) * -1));
+}
 .page-leave-to,
-.layout-enter-from,
 .layout-leave-to {
 	opacity: 0;
-	filter: blur(0.25rem);
-}
-
-.pop-enter-active,
-.pop-leave-active {
-	transition: opacity 0.4s, transform 0.4s;
-}
-
-.pop-enter-from {
-	opacity: 0;
-	transform: translateX(calc(var(--space-8xl) * -1));
-}
-
-.pop-leave-to {
-	opacity: 0;
-	transform: translateX(var(--space-8xl));
+	transform: translateX(var(--space-s));
 }
 </style>
