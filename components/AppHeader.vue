@@ -64,11 +64,12 @@ div,
 nav {
 	@include flex-center;
 	gap: var(--space-xs);
+	font-size: var(--step-1);
 }
 
 @media (width <=$display-width-2xs) {
 	header {
-		flex-direction: column-reverse;
+		flex-direction: column;
 		align-items: start;
 		gap: var(--space-xs);
 		padding-block: var(--space-xs);
