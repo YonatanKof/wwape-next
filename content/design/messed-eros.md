@@ -11,7 +11,7 @@ image_alt: 'A mesh of Eros statues '
 description: 'Eros for the daughters of Zelophehad'
 tags: ['Creative']
 ---
-Art work for Noa -> now at SwisRing residents 
+Art work for Noa → now at SwisRing residents 
 
 ![A mesh of Eros statues](/designs/messed-eros/messed-eros.webp)
 
