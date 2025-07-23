@@ -64,7 +64,7 @@ div,
 nav {
 	@include flex-center;
 	gap: var(--space-xs);
-	font-size: var(--step-1);
+	// font-size: var(--step-1);
 }
 
 @media (width <=$display-width-2xs) {

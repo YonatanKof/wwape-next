@@ -8,8 +8,8 @@
 @mixin display-width($width: var(--display-width-md)) {
 	max-width: $width;
 	margin: 0 auto;
-	padding-inline-start: calc(max(var(--space-xs-l), env(safe-area-inset-left)));
-	padding-inline-end: calc(max(var(--space-xs-l), env(safe-area-inset-right)));
+	padding-inline-start: calc(max(var(--space-s), env(safe-area-inset-left)));
+	padding-inline-end: calc(max(var(--space-s), env(safe-area-inset-right)));
 }
 
 @mixin linear-gradient($deg, $clr, $int, $end) {
