@@ -28,6 +28,10 @@ const props = defineProps({
 		type: String,
 		default: 'var(--step-2)',
 	},
+	showDesc: {
+		type: Boolean,
+		default: true,
+	}
 });
 const { $formatDate } = useNuxtApp();
 </script>
@@ -45,7 +49,7 @@ const { $formatDate } = useNuxtApp();
 				<div class="item-content">
 					<h3 id="title">{{ item.title }}</h3>
 					<p v-if="showDate" id="mata-data">{{ $formatDate(item.date) }}</p>
-					<p v-if="item.description" v-html="item.description"></p>
+					<p v-if="item.description && showDesc" v-html="item.description"></p>
 				</div>
 				<UnLazyImage
 					:thumbhash="item.cover_image_thumbhash"
@@ -77,7 +81,7 @@ const { $formatDate } = useNuxtApp();
 	@include content-item();
 }
 .item-content {
-	margin: var(--space-s);
+	margin: var(--space-xs);
 	display: flex;
 	flex-direction: column;
 	gap: var(--space-3xs);

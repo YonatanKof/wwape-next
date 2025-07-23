@@ -28,7 +28,7 @@ const { data } = await useAsyncData(`content-/design`, async () => {
 				:limit="designCountLimit"
 				v-slot="{ data }"
 			>
-				<ItemList :design-data="data" />
+				<ItemList :design-data="data" :showDesc="false"/>
 			</ContentQuery>
 			<Pagination
 				v-if="data > 1"
