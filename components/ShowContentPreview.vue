@@ -39,20 +39,37 @@ const props = withDefaults(
 	</nuxt-link>
 </template>
 
-<style scoped>
-section {
-	margin-block-end: var(--space-s);
-}
-.link {
-  /* Also get styles form typography.scss */
-	margin-block-end: var(--space-s);
-  width: max-content;
-}
-div {
-	display: flex;
-	gap: var(--space-2xs-xs);
-}
+<style lang="scss" scoped>
 .ver {
 	flex-direction: column;
+}
+.item {
+	@include content-item();
+}
+a {
+	@include link(none);
+	@include focus();
+}
+.item-content {
+	margin: var(--space-xs);
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-xs);
+	container: xxx / inline-size;
+}
+.preview-img {
+	border-radius: var(--border-radius-xs);
+}
+.preview-block {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: var(--space-xs);
+	width: 100%;
+	@container xxx (width < 400px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	@container xxx (width < 288px) {
+		grid-template-columns: 1fr;
+	}
 }
 </style>
