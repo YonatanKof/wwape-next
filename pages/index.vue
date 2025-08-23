@@ -14,10 +14,7 @@ const { data: post } = await useAsyncData('post-date', () => {
 		<IntroText
 			:is-on="true"
 			title="World Wide Ape"
-			text="I’m <i>Yonatan Ben Knaan</i>, a family man, graphic designer, friend, and an alright dude from <i>Tel Aviv</i>, the cultural capital of the flaming <i>middle east</i>."
-			text2="If life is an <i>RPG</i> and you’re an <i>NPC</i>, then I’m a multiclass product designer and amateur illustrator, developer, photographer, and bedroom DJ."
-		/>
-		<ShowContentPreview :content-data="design" title="Latest design works" link-to="design"/>
-		<ShowContentPreview :content-data="post" title="Latest articles" link-to="post" link/>
+			text="I’m <i>Yonatan Ben Knaan</i>, a graphic designer and an alright dude from <i>Tel Aviv</i>, the cultural capital of the flaming <i>middle east</i>."
+			/>
 	</main>
 </template>
