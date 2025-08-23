@@ -4,45 +4,39 @@ const props = withDefaults(
 		readonly contentData: Array<{
 			title: string;
 			description: string;
-			cover_image: string;
+			social_image: string;
 			image_alt: string;
 		}>;
 		readonly title: string;
 		readonly linkTo: string;
-		readonly link: boolean;
+		readonly isLink: boolean;
 	}>(),
 	{
-		link: false,
+		isLink: false,
 	}
 );
 </script>
 
 <template>
-	<section>
-		<nuxt-link :to="linkTo">
-			<h4 class="link">{{ title }}</h4>
-		</nuxt-link>
-		<div>
-			<NuxtImg
-				v-if="!link"
-				v-for="(image, index) in contentData"
-				:key="index"
-				:src="image.cover_image"
-				:alt="image.image_alt"
-				placeholder
-				fit="cover"
-				width="100"
-				height="100"
-			/>
-		</div>
-    <PrettyLink v-for="(item, index) in contentData" :key="index" />
-		<!-- <div v-if="link" class="ver">
-			<span v-for="(item, index) in contentData" :key="index">
-				<h5>{{ item.title }}</h5>
-				<p v-html="item.description"></p
-			></span>
-		</div> -->
-	</section>
+	<nuxt-link :to="linkTo + '/'" class="item">
+		<span class="item-content">
+			<h4>{{ title }}</h4>
+			<div class="preview-block">
+				<NuxtImg
+					class="preview-img"
+					v-if="!isLink"
+					v-for="(image, index) in contentData"
+					:key="index"
+					:src="image.social_image"
+					:alt="image.image_alt"
+					:placeholder="[600, 315, 20, 20]"
+					fit="cover"
+					width="600"
+					height="315"
+				/>
+			</div>
+		</span>
+	</nuxt-link>
 </template>
 
 <style scoped>
