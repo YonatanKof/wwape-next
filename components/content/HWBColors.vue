@@ -22,17 +22,17 @@ const baseHue = ref(Math.floor(Math.random() * 360));
 			<i> (it's acutely 0 to 359 because of zero-based numbering)</i>
 		</label>
 		<input type="range" id="hue" name="hue" min="0" max="359" v-model="baseHue" />
-		<span>
-			<span id="white-shift">
-				<div 
-					v-for="i in 11"
-					:style="
-						`background-color: hwb(from ` + color + ` calc(h + ` + baseHue + `) calc(w + ` + (i - 1) * 10 + `) b);`
-					"
-				>
-					<p>{{ (i - 1) * 10 }}</p>
-				</div>
-			</span id="black-shift">
+		<span id="white-shift">
+			<div 
+				v-for="i in 11"
+				:style="
+					`background-color: hwb(from ` + color + ` calc(h + ` + baseHue + `) calc(w + ` + (i - 1) * 10 + `) b);`
+				"
+			>
+				<p>{{ (i - 1) * 10 }}</p>
+			</div>
+		</span >
+		<span id="black-shift">
 			<div 
 				v-for="i in 11"
 				:style="
