@@ -22,6 +22,8 @@ tags: ['Creative']
 The hwb() functional notation expresses a color in the sRGB color space according to its hue, whiteness, and blackness.
 An optional alpha component represents the color's transparency.
 
+::HwbCircle
+::
 ::HwbColors
 ::
 

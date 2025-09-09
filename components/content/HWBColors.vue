@@ -1,14 +1,12 @@
 <script setup lang="ts">
-defineProps({
-	color: {
-		type: String,
-		default: 'hwb(0 0% 0%)',
-	},
-	hue: {
-		type: Number,
-		default: 0,
-	},
-});
+// defineProps({
+// 	color: {
+// 		type: String,
+// 		default: 'hwb(0 0% 0%)',
+// 	},
+
+// });
+const color = ref('hwb(0 0% 0%)');
 const baseHue = ref(Math.floor(Math.random() * 360));
 </script>
 
@@ -22,8 +20,8 @@ const baseHue = ref(Math.floor(Math.random() * 360));
 			<i> (it's acutely 0 to 359 because of zero-based numbering)</i>
 		</label>
 		<input type="range" id="hue" name="hue" min="0" max="359" v-model="baseHue" />
-		<span id="white-shift">
-			<div 
+		<div class="color-line" id="white-shift">
+			<div class="color-box"
 				v-for="i in 11"
 				:style="
 					`background-color: hwb(from ` + color + ` calc(h + ` + baseHue + `) calc(w + ` + (i - 1) * 10 + `) b);`
@@ -31,9 +29,9 @@ const baseHue = ref(Math.floor(Math.random() * 360));
 			>
 				<p>{{ (i - 1) * 10 }}</p>
 			</div>
-		</span >
-		<span id="black-shift">
-			<div 
+		</div >
+		<div class="color-line" id="black-shift">
+			<div class="color-box"
 				v-for="i in 11"
 				:style="
 					`background-color: hwb(from ` + color + ` calc(h + ` + baseHue + `) w calc(b + ` + (i - 1) * 10 + `) );`
@@ -41,7 +39,7 @@ const baseHue = ref(Math.floor(Math.random() * 360));
 			>
 				<p style="filter: invert(1)">{{ (i - 1) * 10 }}</p>
 			</div>
-		</span>
+		</div>
 	</section>
 </template>
 
@@ -51,13 +49,13 @@ section {
 	flex-direction: column;
 	gap: 0.25rem;
 }
-span {
+.color-line {
 	display: grid;
 	grid-template-columns: repeat(11, 1fr);
 	gap: var(--space-3xs);
 }
-div {
-	aspect-ratio: 1/1;
+.color-box {
+	aspect-ratio: 1;
 	border-radius: var(--space-3xs);
 	background-color: v-bind(color);
 	display: flex;
