@@ -35,10 +35,13 @@ const shiftOffset = 10;
 
 <style lang="scss" scoped>
 .color-wheel {
-	margin-block: var(--space-m);
+	margin: var(--space-m);
 	position: relative;
-	max-width: calc(var(--space-8xl) * 2);
+	max-width: calc(var(--space-8xl) * 4);
 	aspect-ratio: 1;
+	container-type: inline-size;
+	container-name: wheel;
+	transform: rotateZ(-30deg);
 }
 .circle {
 	clip-path: circle(farthest-side);
@@ -50,10 +53,10 @@ const shiftOffset = 10;
 		hwb(0deg 0% 0%),
 		hwb(60deg 0% 0%),
 		hwb(120deg 0% 0%),
-		hwb(180deg 0% 0%), // skjbs
+		hwb(180deg 0% 0%),
 		hwb(240deg 0% 0%),
 		hwb(300deg 0% 0%),
-		hwb(360deg 0% 0%) // skjhbs
+		hwb(360deg 0% 0%) 
 	);
 }
 .white-to-black {
@@ -83,8 +86,17 @@ const shiftOffset = 10;
 p {
 	color: var(--color-sys-slight);
 	font-family: var(--font-mono);
+	font-size: var(--step-2);
 	font-variation-settings: 'MONO' 1;
-	font-size: var(--step-0);
+	@container wheel (width < 500px) {
+		font-size: var(--step-1);
+	}
+	@container wheel (width < 400px) {
+		font-size: var(--step-0);
+	}
+	@container wheel (width < 300px) {
+		font-size: var(--step--1);
+	}
 }
 .numbers-wb {
 	--inset: var(--space-xs);
@@ -93,19 +105,21 @@ p {
 	width: calc(100% - calc(var(--inset) * 2));
 	height: calc(100% - calc(var(--inset) * 2));
 	z-index: 300;
-	text-align: center;
 	transform: rotateZ(30deg);
 	p {
+		text-align: center;
+		width: 100%;
 		margin: unset;
+		position: absolute;
 	}
-	:first-child {
-		// transform: translateY(50%);
+	:nth-child(1) {
+		top: 4%;
 	}
 	:nth-child(2) {
-		transform: translateY(85%);
+		top: 17%;
 	}
 	:nth-child(3) {
-		transform: translateY(170%);
+		top: 30%;
 	}
 }
 .numbers-degs {
@@ -153,7 +167,7 @@ text {
 }
 circle {
 	stroke: var(--color-sys-dim);
-	stroke-width: 0.5;
+	stroke-width: 0.25;
 	fill: none;
 }
 .drop-shadow {

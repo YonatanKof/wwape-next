@@ -16,22 +16,21 @@ const baseHue = ref(Math.floor(Math.random() * 360));
 		<h4>Color pallet for base hue to Black and White</h4>
 		<label for="hue"
 			>Update hue
-			<code>{{ Number(baseHue) + 1 }}</code>
-			<i> (it's acutely 0 to 359 because of zero-based numbering)</i>
+			<code>{{ baseHue }}</code>
 		</label>
 		<input type="range" id="hue" name="hue" min="0" max="359" v-model="baseHue" />
 		<div class="color-line" id="white-shift">
-			<div class="color-box"
+			<div
+				class="color-box"
 				v-for="i in 11"
-				:style="
-					`background-color: hwb(from ` + color + ` calc(h + ` + baseHue + `) calc(w + ` + (i - 1) * 10 + `) b);`
-				"
+				:style="`background-color: hwb(from ` + color + ` calc(h + ` + baseHue + `) calc(w + ` + (i - 1) * 10 + `) b);`"
 			>
 				<p>{{ (i - 1) * 10 }}</p>
 			</div>
-		</div >
+		</div>
 		<div class="color-line" id="black-shift">
-			<div class="color-box"
+			<div
+				class="color-box"
 				v-for="i in 11"
 				:style="
 					`background-color: hwb(from ` + color + ` calc(h + ` + baseHue + `) w calc(b + ` + (i - 1) * 10 + `) );`
