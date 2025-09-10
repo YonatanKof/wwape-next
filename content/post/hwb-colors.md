@@ -1,5 +1,5 @@
 ---
-title: 'HCL Colors'
+title: 'HWB Colors'
 author_name: 'Yonatan Ben Knaan'
 date: '2025-09-08'
 updated: ''
