@@ -12,8 +12,7 @@ const baseHue = ref(Math.floor(Math.random() * 360));
 
 <template>
 	<section>
-		<h1>The hwb() with from</h1>
-		<h4>Color pallet for base hue to Black and White</h4>
+		<!-- <div style="width: 4rem; height: 4rem; background-color: hwb(from var(--my-color) h w calc(b + 50));"></div> -->
 		<label for="hue"
 			>Update hue
 			<code>{{ baseHue }}</code>
@@ -44,6 +43,7 @@ const baseHue = ref(Math.floor(Math.random() * 360));
 
 <style scoped>
 section {
+	--my-color: hwb(0deg 0% 0%);
 	display: flex;
 	flex-direction: column;
 	gap: 0.25rem;
