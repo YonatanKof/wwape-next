@@ -7,18 +7,18 @@ cover_image: '/posts/hwb-colors/hwb-colors.webp'
 cover_image_height: '320'
 cover_image_thumbhash: 'cDkOPI74eIZ/hIeIZ3gEpPJjQw'
 social_image: '/posts/hwb-colors/hwb-colors-social'
-image_alt: ''
-description: ''
+image_alt: 'The HWB color wheel depiction'
+description: 'Fix your broken colors with HWB model'
 tags: ['Creative']
 ---
-When you think _darker blue_ or _more vibrant red_, you're not adjusting RGBs – you're thinking in terms of hues and their modifications. 
+Hex and RGBs aren't made for people! When you think _darker blue_ or _vibrant red_, you're thinking in terms of hues and their modifications. 
 
 The HWB model works this way, separating the base color from its intensity and brightness adjustments.
 
 Unlike RGB's technical approach, this perceptual model mirrors how we naturally understand color, making palette creation and color manipulation more predictable.
 
 
-# The hwb() circle
+## The HWB model
 
 The `hwb()` function defines colors using **Hue** with **Whiteness** and **Blackness** values, plus optional transparency. Where just the **Hue** is its pure color, 
 adding the **Whiteness** and **Blackness** will change its lightness or darkness, and mixing them will produce everything in between.
@@ -66,7 +66,7 @@ You can add opacity like so `hwb(0deg 0% 0% / .5)`
 }
 ``` -->
 
-# Create a smooth color pallet
+## Create a smooth color pallet
 
 In this example I have a var called `--my-color`
 
@@ -84,3 +84,7 @@ This is how I've built the slider below – have a go
 
 ::HwbColors 
 ::
+
+## What's next?
+
+Use it in you design system?! Contact me <a href="mailto:kof@yonatankof.com">at this email</a>
