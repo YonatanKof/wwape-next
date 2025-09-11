@@ -1,18 +1,10 @@
 <script setup lang="ts">
-// defineProps({
-// 	color: {
-// 		type: String,
-// 		default: 'hwb(0 0% 0%)',
-// 	},
-
-// });
 const color = ref('hwb(0 0% 0%)');
 const baseHue = ref(Math.floor(Math.random() * 360));
 </script>
 
 <template>
 	<section>
-		<!-- <div style="width: 4rem; height: 4rem; background-color: hwb(from var(--my-color) h w calc(b + 50));"></div> -->
 		<label for="hue"
 			><h4>
 				Update hue <code>{{ baseHue }}</code>
