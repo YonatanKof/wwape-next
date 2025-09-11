@@ -82,7 +82,7 @@ This is how I built the slider below – try it out
 
 ---
 
-::HwbColors 
+::HwbColorModel 
 ::
 
 ## What's next?
