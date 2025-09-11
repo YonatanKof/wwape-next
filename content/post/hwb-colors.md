@@ -1,45 +1,45 @@
 ---
-title: 'HWB Colors'
+title: 'HWB Color Model'
 author_name: 'Yonatan Ben Knaan'
 date: '2025-09-08'
 updated: ''
 cover_image: '/posts/hwb-colors/hwb-colors.webp'
 cover_image_height: '320'
 cover_image_thumbhash: 'cDkOPI74eIZ/hIeIZ3gEpPJjQw'
-social_image: '/posts/hwb-colors/hwb-colors-social'
+social_image: '/posts/hwb-colors/hwb-colors-social.jpg'
 image_alt: 'The HWB color wheel depiction'
 description: 'Fix your broken colors with HWB model'
 tags: ['Creative']
 ---
-Hex and RGBs aren't made for people! When you think _darker blue_ or _vibrant red_, you're thinking in terms of hues and their modifications. 
+Hex and RGB aren't made for people! When you think _darker blue_ or _vibrant red_, you're thinking in terms of hues and their modifications. 
 
-The HWB model works this way, separating the base color from its intensity and brightness adjustments.
+The HWB model works this way, separating the base color from its whiteness and blackness adjustments.
 
-Unlike RGB's technical approach, this perceptual model mirrors how we naturally understand color, making palette creation and color manipulation more predictable.
+Unlike RGB's technical approach, this perceptual model mirrors how we naturally perceive color, making palette creation and manipulation more predictable.
 
 
 ## The HWB model
 
-The `hwb()` function defines colors using **Hue** with **Whiteness** and **Blackness** values, plus optional transparency. Where just the **Hue** is its pure color, 
+The `hwb()` function defines colors using **Hue** with **Whiteness** and **Blackness** values, plus optional transparency. Here, the **Hue** is its pure color, 
 adding the **Whiteness** and **Blackness** will change its lightness or darkness, and mixing them will produce everything in between.
 
-#### A simple way to think of the `hwb()` model.
+#### A simple way to understand the `hwb()` model
 
 ::GridBlockTwo{frOne="3fr" frTwo="2fr" gap="var(--space-m)"}
 :::GridUnit
 Basic syntax `hwb(0deg 0% 0%)` 
 
-1st value, `0deg` is the *hue* ranging from 0° to 359° (red to red) as you probably know it from `HSL`
+The first value, `0deg`, is the _hue_ ranging from 0° to 359° (red to red) as you probably know it from `HSL`
 
-2nd value, `0%` is the *white* where `100%` will be pure white
+The second value, `0%`, is the _whiteness_ where `100%` will be pure white
 
-3rd value, `0%` is the *black*  where `100%` will be pure black
+The third value, `0%`, is the _blackness_  where `100%` will be pure black
 
-So `w 0%, b 0%` will be the full hue color
+So `w 0%, b 0%` will give the full hue color
 
-Mixing `w` and `b` will result in a gray, murky color
+Mixing `w` and `b` results in a gray, muted color
 
-You can add opacity like so `hwb(0deg 0% 0% / .5)` 
+You can also add opacity like this `hwb(0deg 0% 0% / .5)` 
 
 
 :::
@@ -66,19 +66,19 @@ You can add opacity like so `hwb(0deg 0% 0% / .5)`
 }
 ``` -->
 
-## Create a smooth color pallet
+## Create a smooth color palette
 
-In this example I have a var called `--my-color`
+In this example, I have a variable called `--my-color`
 
-For it to work properly it should be a pure hue, e.g. `hwb(90deg 0% 0%)`  
+For it to work properly, it should be a pure hue, e.g. `hwb(90deg 0% 0%)`  
 
-Let's use the CSS `from` and `calc` to make it 50% darker  
+Let's use the CSS `from` and `calc` functions to make it 50% darker  
 
 So it will look like this: `background-color: hwb(from var(--my-color) h w calc(b + 50%));`  
 
 Let's make it 50% lighter: `background-color: hwb(from var(--my-color) h calc(w + 50%) b);`
 
-This is how I've built the slider below – have a go
+This is how I built the slider below – try it out
 
 ---
 
@@ -87,4 +87,4 @@ This is how I've built the slider below – have a go
 
 ## What's next?
 
-Use it in you design system?! Contact me <a href="mailto:kof@yonatankof.com">at this email</a>
+Use it in your design system?! Contact me <a href="mailto:kof@yonatankof.com">at this email</a>
