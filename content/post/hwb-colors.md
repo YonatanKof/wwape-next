@@ -44,8 +44,9 @@ You can also add opacity like this `hwb(0deg 0% 0% / .5)`
 
 :::
 :::GridUnit
-::::HwbCircle 
-::::
+<!-- ::::HwbCircle 
+:::: -->
+![image](/posts/hwb-colors/hwb-colors-model.webp)
 :::
 ::
 
