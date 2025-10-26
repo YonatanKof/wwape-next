@@ -10,8 +10,9 @@ const { data: design } = await useAsyncData('design-date', () => {
 		.where({})
 		.find();
 });
+
 const { data: post } = await useAsyncData('post-date', () => {
-	return queryContent('post').limit(3).only(['title', 'description']).sort({ date: -1 }).where({}).find();
+	return queryContent('post').limit(4).only(['title', 'description']).sort({ date: -1 }).where({}).find();
 });
 </script>
 <template>
@@ -22,16 +23,14 @@ const { data: post } = await useAsyncData('post-date', () => {
 			text="I’m <i>Yonatan Ben Knaan</i>, a graphic designer and an alright dude from <i>Tel Aviv</i>, the cultural capital of the flaming <i>middle east</i>."
 		/>
 		<section class="bento">
-			<ShowContentPreview
-				style="grid-column: 1 / 4; grid-row: 1 / -1"
-				:content-data="design"
-				title="Latest design works"
-				link-to="design"
-			/>
-			<span style="grid-column: 4 / -1"
-				><ShowContentPreview :content-data="post" title="Latest articles" link-to="post" isLink />
-				<ShowContentPreview :content-data="post" title="Latest articles" link-to="post" isLink
-			/></span>
+			<ShowContentPreview class="block-design" :content-data="design" sec-title="Latest graphic art" link-to="design" />
+			<ShowContentPreview class="block-post" :content-data="post" sec-title="Latest posts" link-to="post" isLink />
+			<div class="block-music">
+				<span>
+					<p>Playlists</p>
+					<p>and Mixes</p>
+				</span>
+			</div>
 		</section>
 	</main>
 </template>
@@ -40,11 +39,71 @@ const { data: post } = await useAsyncData('post-date', () => {
 .bento {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: 1fr auto;
 	gap: var(--space-s);
+	margin-block-end: var(--space-s);
 	span {
 		display: flex;
 		flex-direction: column;
 		gap: var(--space-s);
+	}
+	@media (width <= 544px) {
+		grid-template-columns: 1fr;
+	}
+}
+.block-design {
+	grid-column: 1 / 4;
+	grid-row: 1;
+	@media (width <= 544px) {
+		grid-column: unset;
+	}
+}
+.block-post {
+	grid-column: 4 / -1;
+	grid-row: 1 / -1;
+	@media (width <= 544px) {
+		grid-column: unset;
+	}
+}
+@keyframes music {
+  0% {
+    transform: rotate3d(1, 2, 3, 16deg);
+  }
+
+  50% {
+    transform: rotate3d(0, 1, 0, 32deg);
+  }
+  100% {
+    transform: rotate3d(3, 2, 1, 64deg);
+  }
+}
+.block-music {
+	grid-column: 1 / 4;
+	grid-row: 2;
+	height: fit-content;
+	background-color: var(--color-sys-invert-highlight);
+	overflow: auto;
+	border-radius: var(--border-radius-xs);
+	transition: transform 0.25s, box-shadow ease-in-out 0.25s;
+	transform: translateY(0);
+	& span {
+		perspective: 180px;
+		animation: 5s infinite alternate music;
+	}
+	& p {
+		font-family: var(--font-hand);
+		line-height: .75;
+		font-size: 600%;
+		text-align: center;
+		white-space: nowrap;
+	}
+	word-break: normal;
+	overflow: hidden;
+	&:hover {
+		transform: translateY(calc(var(--space-3xs) * -1));
+	}
+	@media (width <= 544px) {
+		grid-column: unset;
 	}
 }
 </style>
