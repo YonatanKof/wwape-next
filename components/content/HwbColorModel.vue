@@ -33,8 +33,8 @@ const baseHue = ref(Math.floor(Math.random() * 360));
 				<p style="filter: invert(1)">{{ (i - 1) * 10 }}</p>
 			</div>
 		</div>
-		<h4>From pure white to pure huw to pure black – 10 steps</h4>
-		<div class="color-line" id="both">
+		<!-- <h4>From pure white to pure huw to pure black – 10 steps</h4> -->
+		<!-- <div class="color-line" id="both">
 			<div class="color-line-flipped">
 				<div
 					class="color-box"
@@ -55,11 +55,11 @@ const baseHue = ref(Math.floor(Math.random() * 360));
 			>
 				<p style="filter: invert(1)">{{ i * 20 }}</p>
 			</div>
-		</div>
+		</div> -->
 	</section>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 section {
 	--my-color: hwb(0deg 0% 0%);
 	display: flex;
@@ -70,6 +70,15 @@ section {
 	display: grid;
 	grid-template-columns: repeat(11, 1fr);
 	gap: var(--space-3xs);
+	@media (width <= $display-width-md) {
+		grid-template-columns: repeat(6, 1fr);
+	}
+	@media (width <= $display-width-sm) {
+		grid-template-columns: repeat(4, 1fr);
+	}
+	@media (width <= $display-width-xs) {
+		grid-template-columns: repeat(3, 1fr);
+	}
 }
 .color-line-flipped {
 	grid-column: 1 / 6;

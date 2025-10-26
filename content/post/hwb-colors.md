@@ -43,10 +43,16 @@ You can also add opacity like this `hwb(0deg 0% 0% / .5)`
 
 
 :::
-:::GridUnit
-<!-- ::::HwbCircle 
-:::: -->
-![image](/posts/hwb-colors/hwb-colors-model.webp)
+:::GridUnit{style="background-color: var(--color-sys-dis); border-radius: var(--border-radius-sm); padding-inline: var(--space-xs); padding-block: var(--space-xs) var(--space-4xs); height: max-content;"}
+::::BaseImage
+---
+src: /posts/hwb-colors/hwb-colors-model.webp
+width: 960
+height: 960
+alt: HWB color wheel diagram showing Hue (H) around the circumference, Whiteness (W) on the outer ring, and Blackness (B) towards the center.
+desc: HWB color wheel diagram showing Hue (H) around the circumference, Whiteness (W) on the outer ring, and Blackness (B) towards the center.
+---
+::::
 :::
 ::
 
