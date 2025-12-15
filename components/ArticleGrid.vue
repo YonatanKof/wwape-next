@@ -81,7 +81,7 @@ h4 {
 	--offset: 50px;
 	width: calc(100% + var(--offset));
 	margin-inline-end: calc(var(--offset) * -1);
-	margin-block-start: var(--space-s);
+	margin-block-start: var(--space-2xs);
 	height: 100%;
 	border-radius: var(--border-radius-sm);
 	box-shadow: var(--shadow-md-even);
@@ -91,7 +91,8 @@ h4 {
 	display: flex;
 	flex-direction: column;
 	gap: var(--space-xs);
-	margin-block: var(--space-s);
+	margin-block-start: var(--space-3xs);
+	margin-block-end: var(--space-m);
 	margin-inline: var(--space-s);
 	max-width: calc(var(--space-7xl) * 3);
 }

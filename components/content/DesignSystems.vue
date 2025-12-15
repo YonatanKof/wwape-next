@@ -1,64 +1,14 @@
-<script setup>
-definePageMeta({
-	layout: 'simple',
-});
-import { ModalsContainer, useModal } from 'vue-final-modal';
-import Modal from '~/components/ModalMelio.vue';
-
-const { open, close } = useModal({
-	component: Modal,
-	attrs: {
-		onConfirm() {
-			close();
-		},
-	},
-});
-</script>
 <template>
 	<section>
 		<p>
-			At Pepperi I created, lead, managed, and governed a <i>design systems</i> & and <i>brand guide</i> that connect
-			the product team, brand identity, developers, and the business needs.
+			At Pepperi, I created, led, and governed a <i>design system</i> and <i>brand guide</i> that aligned the product
+			team, brand identity, and development with business needs.
 		</p>
 		<p>
-			A design systems that people adopt and use ensure design consistency, cohesive experiences, scalable solutions,
-			improve velocity and better cross-functional collaboration.
+			A well-adopted design system ensures consistency, cohesive experiences, scalability, improved velocity, and
+			stronger cross-functional collaboration.
 		</p>
 		<main>
-			<div id="intro">
-				<span>
-					<span>
-						<p>As a <i>full-stack designer</i>, creating <em>Pepperi Design System</em> was a joy!</p>
-						<p>
-							It was made possible through an intimate knowledge of complex systems, the people who use them, and the
-							businesses that operate them.
-						</p>
-						<p>
-							<span style="display: block">Reasons why I love DS role?</span>
-							<i class="drag-title">Push the button to see!</i>
-						</p>
-					</span>
-					<button @click="open" @keyup.enter="open">More reasons why + CV</button>
-				</span>
-			</div>
-
-			<ArticleGrid
-				id="article"
-				title="Design Tokens"
-				btnText="Read the Article!"
-				linkTo="/post/design-tokens/"
-				imgSrc="/work/pepperi-design-system/design-tokens.webm"
-				srcMp4="/work/pepperi-design-system/design-tokens.mp4"
-			>
-				<span>
-					<p>
-						Check out my short article on <em>design tokens</em> and how they’re used in this website’s design system,
-						complete with an example in action. 💪
-					</p>
-					<p>Be sure to check it out!</p>
-				</span>
-			</ArticleGrid>
-
 			<ArticleGrid
 				id="product-storybook"
 				title="Pepperi DS, Storybook"
@@ -76,7 +26,7 @@ const { open, close } = useModal({
 
 			<ArticleGrid
 				id="composite-storybook"
-				title="PDS, Composite Storybook"
+				title="Pepperi DS, Composite Storybook"
 				btnText="Visit Composite Lib."
 				linkTo="https://626ab62298ef5a004ac8cdea-fsmhdxxugw.chromatic.com/?path=/docs/pepperi-extended-level-composition--page"
 				imgSrc="/work/pepperi-design-system/DesignSystem-2.webm"
@@ -91,15 +41,14 @@ const { open, close } = useModal({
 			<ArticleGrid
 				id="brand"
 				title="Pepperi Brand Guide"
-				btnText="Visit the Brand Guide"
+				btnText="Visit Brand Guide"
 				linkTo="https://brand.pepperi.com/"
 				imgSrc="/work/pepperi-design-system/brand.webm"
 				srcMp4="/work/pepperi-design-system/brand.mp4"
 			>
 				<p>
-					With this design initiative, I've guided management in a journey to strengthen and solidify Pepperi brand.
-					Here, you can find our brand values, mission statement, visual and design assets, target audience, and user
-					personas.
+					This design initiative guided management to strengthen Pepperi's brand. Here you can find our brand values,
+					mission statement, visual assets, target audience, and user personas.
 				</p>
 			</ArticleGrid>
 		</main>
@@ -109,15 +58,12 @@ const { open, close } = useModal({
 main {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: repeat(3, 20rem);
+	grid-template-rows: 20rem 28rem;
 	gap: var(--space-s);
 	margin-block: var(--space-m);
-	@media (width <= $display-width-md) {
-		grid-template-rows: repeat(3, 28rem);
-	}
-	@media (width <= $display-width-sm) {
+	@media (width <= $display-width-xs) {
 		grid-template-columns: 1fr;
-		grid-template-rows: 28rem auto 28rem 28rem 28rem;
+		grid-template-rows: repeat(3, 32rem);
 	}
 }
 h1 {
@@ -146,80 +92,24 @@ p {
 .button {
 	width: max-content;
 }
-#intro {
-	padding-inline: var(--space-xs);
-	button {
-		width: max-content;
-	}
-	grid-column: 5 / span 4;
-	grid-row: 2;
-	@media (width < $display-width-md) {
-		padding-inline: unset;
-		grid-column: 1 / span 4;
-		grid-row: 1;
-	}
-	@media (width < $display-width-sm) {
-		padding-inline: var(--space-s);
-		grid-column: 1;
-		grid-row: 2;
-	}
-}
-#intro > span {
-	display: block;
-	display: flex;
-	flex-direction: column;
-	gap: var(--space-2xs);
-}
-#brand {
-	grid-column: 9 / span 4;
-	grid-row: 2 / span 2;
-	@media (width < $display-width-md) {
-		grid-column: 9 / span 4;
-		grid-row: 2 / span 2;
-	}
-	@media (width < $display-width-sm) {
-		grid-column: 1;
-		grid-row: 4;
-	}
-}
 #product-storybook {
-	grid-column: 5 / span 8;
+	grid-column: 1 / -1;
 	grid-row: 1;
-	@media (width < $display-width-md) {
-		grid-column: 5 / span 8;
-		grid-row: 1;
-	}
-	@media (width < $display-width-sm) {
-		grid-column: 1;
-		grid-row: 1;
-	}
 }
 #composite-storybook {
-	grid-column: 1 / span 8;
-	grid-row: 3;
-	@media (width < $display-width-md) {
-		grid-column: 1 / span 8;
-		grid-row: 3;
-	}
-	@media (width < $display-width-sm) {
+	grid-column: 1 / span 7;
+	grid-row: 2;
+
+	@media (width < $display-width-xs) {
 		grid-column: 1;
-		grid-row: 5;
-	}
-}
-#article {
-	grid-column: 1 / span 4;
-	grid-row: 1 / span 2;
-	@media (width < $display-width-md) {
-		grid-column: 1 / span 8;
 		grid-row: 2;
 	}
-	@media (width < $display-width-sm) {
+}
+#brand {
+	grid-column: 8 / -1;
+	@media (width < $display-width-xs) {
 		grid-column: 1;
 		grid-row: 3;
 	}
-}
-.drag-title {
-	animation: wobble 1s ease-in-out alternate infinite;
-	white-space: nowrap;
 }
 </style>
