@@ -10,7 +10,7 @@ social_image: '/work/pepperi-page-builder/pepperi-page-builder-social.jpg'
 image_alt: ''
 description: 'How we turned the headache of custom web pages into a no-code playground for B2B clients'
 tags: ['Creative']
-role: ['Head of design', 'IC']
+role: ['Design Lead']
 showToc: true
 ---
 
