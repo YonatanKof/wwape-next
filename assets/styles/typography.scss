@@ -135,11 +135,9 @@ blockquote {
 }
 i,
 em {
-	font-style: normal;
-	font-family: var(--font-hand);
+	font-style: italic;
 	font-size: inherit;
-	font-variation-settings: 'wght' 410, 'ital' 1;
-	line-height: 1;
+	letter-spacing: 0.025em;
 }
 
 strong {
