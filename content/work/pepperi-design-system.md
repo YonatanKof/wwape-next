@@ -8,9 +8,9 @@ cover_image_height: '643'
 cover_image_thumbhash: 'eQiGC4IPpXZwaognf5kvl0dIiYeAqBc'
 social_image: '/work/pepperi-design-system/pepperi-design-system-social.jpg'
 image_alt: ''
-description: 'Unifying Product, Dev, and Brand teams with tech & Design-Thinking'
+description: 'Unifying cross-functional teams with tech & design'
 tags: ['Creative']
-role: ['Head of design', 'IC']
+role: ['Design Lead']
 showToc: false
 ---
 

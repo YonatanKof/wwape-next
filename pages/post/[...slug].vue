@@ -93,10 +93,6 @@ nuxtApp.$pageMetaTags({
 </template>
 
 <style lang="scss" scoped>
-main {
-	max-width: var(--display-width-md);
-	margin-inline: auto;
-}
 h1 {
 	margin-block-end: var(--space-s);
 }

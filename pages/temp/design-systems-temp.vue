@@ -9,7 +9,8 @@ const config = useRuntimeConfig();
 const nuxtApp = useNuxtApp();
 nuxtApp.$pageMetaTags({
 	metaTitle: 'Design Systems: Unifying Product, Dev, and Brand Teams with Tech and Design Thinking',
-	metaDesc: `Discover how I create design systems that unify product, development, and brand teams using technology and design thinking—ensuring consistency, scalable solutions, and improved work velocity through cross-functional collaboration – ${config.public.siteOwnerName}`,
+	metaDesc: `Discover how I create
+	d design systems that unify product, development, and brand teams using technology and design thinking. Ensuring consistency, scalable solutions, and improved work velocity through cross-functional teams – ${config.public.siteOwnerName}`,
 	metaImg: '/misc/design-systems-social.jpg',
 	metaImgAlt: 'Cover image for Design Systems page',
 });
@@ -26,7 +27,7 @@ const { open, close } = useModal({
 <template>
 	<section>
 		<h1>Design Systems</h1>
-		<blockquote>Unifying Product, Dev, and Brand teams with tech & Design-Thinking</blockquote>
+		<blockquote>Unifying the Product, Dev, and Brand teams with tech & Design-Thinking</blockquote>
 		<p>
 			I envision, create, lead, manage, and govern design systems that connect product teams, brand identity,
 			developers, and business needs. Design systems that people adopt and use ensure design consistency, cohesive
