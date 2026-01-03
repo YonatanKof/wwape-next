@@ -13,7 +13,7 @@
 				id="product-storybook"
 				title="Pepperi DS, Storybook"
 				btnText="Visit Storybook"
-				linkTo="https://60ae3e9eff8e4c003b2f90d4-orunuhbrch.chromatic.com/?path=/docs/pepperi-design-system--page"
+				linkTo="https://pds.yonatankof.com/?path=/docs/pepperi-design-system--page"
 				imgSrc="/work/pepperi-design-system/DesignSystem-1.webm"
 				srcMp4="/work/pepperi-design-system/DesignSystem-1.mp4"
 			>
@@ -28,7 +28,7 @@
 				id="composite-storybook"
 				title="Pepperi DS, Composite Storybook"
 				btnText="Visit Composite Lib."
-				linkTo="https://626ab62298ef5a004ac8cdea-fsmhdxxugw.chromatic.com/?path=/docs/pepperi-extended-level-composition--page"
+				linkTo="https://pepperi-composite-ds.netlify.app/?path=/story/pepperi-extended-level-composition--page"
 				imgSrc="/work/pepperi-design-system/DesignSystem-2.webm"
 				srcMp4="/work/pepperi-design-system/DesignSystem-2.mp4"
 			>
