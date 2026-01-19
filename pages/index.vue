@@ -5,7 +5,7 @@ nuxtApp.$pageMetaTags();
 const { data: design } = await useAsyncData('design-date', () => {
 	return queryContent('design')
 		.limit(6)
-		.only(['title', 'social_image', 'image_alt'])
+		.only(['title', 'cover_image', 'cover_image_thumbhash', 'cover_image_height', 'image_alt'])
 		.sort({ date: -1 })
 		.where({})
 		.find();
@@ -14,6 +14,14 @@ const { data: design } = await useAsyncData('design-date', () => {
 const { data: post } = await useAsyncData('post-date', () => {
 	return queryContent('post').limit(4).only(['title', 'description']).sort({ date: -1 }).where({}).find();
 });
+import 'vue3-carousel/carousel.css';
+import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
+
+const carouselConfig = {
+	itemsToShow: 1,
+	wrapAround: true,
+	autoplay: 2500,
+};
 </script>
 <template>
 	<main>
@@ -23,14 +31,30 @@ const { data: post } = await useAsyncData('post-date', () => {
 			text="I’m <i>Yonatan Ben Knaan</i>, a graphic designer and an alright dude from <i>Tel Aviv</i>, the cultural capital of the flaming <i>middle east</i>."
 		/>
 		<section class="bento">
-			<ShowContentPreview class="block-design" :content-data="design" sec-title="Latest graphic art" link-to="design" />
+			<Carousel class="item" v-bind="carouselConfig">
+				<Slide v-for="item in design" :key="item">
+					<UnLazyImage
+						class="carousel-image"
+						:thumbhash="item.cover_image_thumbhash"
+						:src="item.cover_image"
+						:alt="item.image_alt"
+						width="1000"
+						:height="item.cover_image_height"
+					/>
+				</Slide>
+				<template #addons>
+					<Pagination />
+				</template>
+			</Carousel>
+
+			<!-- <ShowContentPreview class="block-design" :content-data="design" sec-title="Latest graphic art" link-to="design" />
 			<ShowContentPreview class="block-post" :content-data="post" sec-title="Latest posts" link-to="post" isLink />
 			<div class="block-music">
 				<span>
 					<p>Playlists</p>
 					<p>and Mixes</p>
 				</span>
-			</div>
+			</div> -->
 		</section>
 	</main>
 </template>
@@ -66,16 +90,16 @@ const { data: post } = await useAsyncData('post-date', () => {
 	}
 }
 @keyframes music {
-  0% {
-    transform: rotate3d(1, 2, 3, 16deg);
-  }
+	0% {
+		transform: rotate3d(1, 2, 3, 16deg);
+	}
 
-  50% {
-    transform: rotate3d(0, 1, 0, 32deg);
-  }
-  100% {
-    transform: rotate3d(3, 2, 1, 64deg);
-  }
+	50% {
+		transform: rotate3d(0, 1, 0, 32deg);
+	}
+	100% {
+		transform: rotate3d(3, 2, 1, 64deg);
+	}
 }
 .block-music {
 	grid-column: 1 / 4;
@@ -92,7 +116,7 @@ const { data: post } = await useAsyncData('post-date', () => {
 	}
 	& p {
 		font-family: var(--font-hand);
-		line-height: .75;
+		line-height: 0.75;
 		font-size: 600%;
 		text-align: center;
 		white-space: nowrap;
@@ -105,5 +129,9 @@ const { data: post } = await useAsyncData('post-date', () => {
 	@media (width <= 544px) {
 		grid-column: unset;
 	}
+}
+.carousel-image{
+	aspect-ratio: 1;
+	object-fit: cover;
 }
 </style>

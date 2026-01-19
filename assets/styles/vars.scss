@@ -4,13 +4,13 @@ $display-width-md: 880px;
 $display-width-sm: 720px;
 $display-width-xs: 544px;
 $display-width-2xs: 426px;
-:root{
-    --display-width-xl: 1280px;
-    --display-width-lg: 960px;
-    --display-width-md: 880px;
-    --display-width-sm: 720px;
-    --display-width-xs: 544px;
-    --display-width-2xs: 426px;
+:root {
+	--display-width-xl: 1280px;
+	--display-width-lg: 960px;
+	--display-width-md: 880px;
+	--display-width-sm: 720px;
+	--display-width-xs: 544px;
+	--display-width-2xs: 426px;
 }
 
 @keyframes wobble {
@@ -22,3 +22,29 @@ $display-width-2xs: 426px;
 		font-variation-settings: 'wght' 700, 'BNCE' -50, 'INFM' 100;
 	}
 }
+
+.carousel {
+	// vue3-carousel
+	--vc-pgn-active-color: var(--color-sys-main);
+	--vc-pgn-background-color: var(--color-sys-dim);
+	--vc-pgn-border-radius: var(--border-radius-md);
+	--vc-pgn-height: calc(0.75 * var(--space-2xs));
+	--vc-pgn-width: calc(0.75 * var(--space-2xs));
+	--vc-pgn-gap: var(--space-3xs);
+	--vc-png-bottom: var(--space-2xs);
+	li {
+		margin: unset;
+		padding: unset;
+	}
+    button {
+		// border: 0.5px solid var(--color-sys-invert-dim) !important;
+        box-shadow: unset;
+        transform: unset;
+    }
+}
+.carousel__pagination {
+	border-radius: 100px;
+	background-color: var(--color-sys-invert-dim);
+	padding: var(--space-3xs);
+	
+  }
