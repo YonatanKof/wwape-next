@@ -42,29 +42,32 @@ const { data: work } = await useAsyncData('work-date', () => {
 		<section class="bento">
 			<Carousel
 				isLink
+				withTitle
 				link-to="design"
 				class="block-design"
 				:content-data="design"
-				:duration="2222"
+				:duration="3333"
 				aspect-ratio="9 / 10"
 				link-to-display-text="Check out the designs"
 			/>
 			<Carousel
 				isLink
+				withTitle
 				link-to="post"
 				class="block-post"
 				:content-data="post"
-				:duration="3333"
+				:duration="4444"
 				aspect-ratio="4 / 3"
 				link-to-display-text="Read a few nice articles"
 			/>
 			<Carousel
 				isLink
+				withTitle
 				link-to="work"
 				class="block-work"
 				:content-data="work"
-				:duration="4444"
-				aspect-ratio="3 / 2"
+				:duration="5555"
+				aspect-ratio="1.4 / 1"
 				link-to-display-text="Some cool case studies"
 			/>
 		</section>
@@ -76,52 +79,51 @@ const { data: work } = await useAsyncData('work-date', () => {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: auto var(--space-6xl) 1fr;
-	padding-block-start: var(--space-xs);
-	padding-block-end: var(--space-xl);
+	padding-block-start: var(--space-xl);
+	padding-block-end: var(--space-2xl);
 	@media (width <= 640px) {
 		grid-template-columns: repeat(9, 1fr);
-		grid-template-rows: auto var(--space-4xl) auto var(--space-xl) auto;
-		padding-block-end: var(--space-xl);
+		grid-template-rows: auto var(--space-2xl) auto var(--space-3xl) auto;
 	}
 	@media (width <= 544px) {
 		grid-template-rows: auto var(--space-xl) auto var(--space-l) auto;
-		padding-block-end: var(--space-xl);
 	}
 }
 .block-design {
 	grid-column: 1 / span 5;
 	grid-row: 1 / span 2;
-	z-index: 10;
 	@media (width <= 640px) {
-		grid-column: 1 / span 6;
+		grid-column: 1 / span 7;
 		grid-row: 1 / span 2;
 	}
 	@media (width <= 544px) {
 		grid-column: 1 / span 7;
 	}
 }
-.block-work {
-	grid-column: 4 / span 5;
-	grid-row: 2 / span 2;
-	z-index: 9;
-	@media (width <= 640px) {
-		grid-column: 3 / -1;
-		grid-row: 2 / span 3;
-	}
-	@media (width <= 640px) {
-		grid-column: 2 / -1;
-	}
-}
 .block-post {
 	grid-column: 7 / -1;
 	grid-row: 1 / span 2;
-	margin-block-start: var(--space-m);
+	margin-block-start: var(--space-2xl);
+	z-index: 10;
 	@media (width <= 640px) {
-		grid-column: 1 / span 6;
-		grid-row: 4 / span 2;
+		grid-column: 3 / -1;
+		grid-row: 2 / span 3;
 		margin-block-start: unset;
 	}
+	@media (width <= 544px) {
+		grid-column: 2 / -1;
+	}
+}
+.block-work {
+	grid-column: 4 / span 6;
+	grid-row: 2 / span 2;
+	z-index: 9;
 	@media (width <= 640px) {
+		grid-row: 4 / span 2;
+		grid-column: 1 / span 6;
+		z-index: 10;
+	}
+	@media (width <= 544px) {
 		grid-column: 1 / span 7;
 	}
 }

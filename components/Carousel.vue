@@ -5,8 +5,7 @@ import { Carousel, Slide, Pagination } from 'vue3-carousel';
 const props = withDefaults(
 	defineProps<{
 		readonly contentData: Array<{
-			// title: string;
-			// description: string;
+			title: string;
 			cover_image: string;
 			cover_image_thumbhash: string;
 			cover_image_height: string;
@@ -17,12 +16,14 @@ const props = withDefaults(
 		readonly linkToDisplayText: string;
 		readonly isLink: boolean;
 		readonly aspectRatio: string;
+		readonly withTitle: boolean;
 	}>(),
 	{
 		duration: 2500,
 		isLink: false,
 		aspectRatio: '1',
 		linkToDisplayText: 'Go the this page',
+		withTitle: false,
 	}
 );
 
@@ -40,6 +41,7 @@ const carouselConfig = {
 		<h5>{{ props.linkToDisplayText }}</h5>
 		<Carousel v-bind="carouselConfig">
 			<Slide v-for="(item, index) in contentData" :key="index">
+				<h6 v-if="withTitle">{{ item.title }}</h6>
 				<UnLazyImage
 					class="carousel-image"
 					:thumbhash="item.cover_image_thumbhash"
@@ -66,7 +68,7 @@ const carouselConfig = {
 	--vc-pgn-width: calc(0.75 * var(--space-2xs));
 	--vc-pgn-gap: calc(0.75 * var(--space-2xs));
 	--vc-png-bottom: var(--space-2xs);
-	box-shadow: var(--shadow-lg);
+	box-shadow: var(--shadow-lg-stronger);
 	aspect-ratio: v-bind(aspectRatio);
 	border-radius: var(--space-m);
 	corner-shape: superellipse(2);
@@ -95,12 +97,19 @@ const carouselConfig = {
 		}
 	}
 }
+// .carousel__slide {
+// 	display: flex;
+// 	flex-direction: column;
+// }
 .carousel-image {
 	aspect-ratio: v-bind(aspectRatio);
 	object-fit: cover;
 }
 </style>
 <style lang="scss" scoped>
+img {
+	border-radius: unset;
+}
 a {
 	@include link(none);
 	@include focus();
@@ -109,7 +118,7 @@ a {
 	h5 {
 		position: absolute;
 		inset: 0;
-		inset-block-start: 40%;
+		inset-block-start: 47.5%;
 		text-align: center;
 		opacity: 0;
 		z-index: 30;
@@ -123,5 +132,13 @@ a {
 			opacity: 1;
 		}
 	}
+}
+h6 {
+	position: absolute;
+	padding: var(--space-s);
+	inset-inline: 0;
+	inset-block-start: 0;
+	color: var(--color-sys-invert-main);
+	background-color: var(--color-sys-slight);
 }
 </style>
