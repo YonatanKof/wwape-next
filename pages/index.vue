@@ -2,13 +2,16 @@
 const nuxtApp = useNuxtApp();
 nuxtApp.$pageMetaTags();
 
-const { data: design } = await useAsyncData('design-date', () => {
-	return queryContent('design')
-		.limit(6)
+const { data: design } = await useAsyncData('design-random', async () => {
+	const all = await queryContent('design')
 		.only(['title', 'cover_image', 'cover_image_thumbhash', 'cover_image_height', 'image_alt'])
-		.sort({ date: -1 })
-		.where({})
 		.find();
+
+	// random 4
+	return all
+		.slice() // avoid mutating original
+		.sort(() => Math.random() - 0.5)
+		.slice(0, 6);
 });
 
 const { data: post } = await useAsyncData('post-date', () => {
@@ -19,6 +22,7 @@ const { data: post } = await useAsyncData('post-date', () => {
 		.where({})
 		.find();
 });
+
 const { data: work } = await useAsyncData('work-date', () => {
 	return queryContent('work')
 		.limit(2)
@@ -36,9 +40,32 @@ const { data: work } = await useAsyncData('work-date', () => {
 			text="I’m <i>Yonatan Ben Knaan</i>, a graphic designer and an alright dude from <i>Tel Aviv</i>, the cultural capital of the flaming <i>middle east</i>."
 		/>
 		<section class="bento">
-			<Carousel isLink :link-to="design" class="block-design" :content-data="design" :duration="2222" />
-			<Carousel isLink :link-to="post" class="block-post" :content-data="post" :duration="3333" aspect-ratio="4 / 3" />
-			<Carousel isLink :link-to="work" class="block-work" :content-data="work" :duration="4444" aspect-ratio="3 / 2" />
+			<Carousel
+				isLink
+				link-to="design"
+				class="block-design"
+				:content-data="design"
+				:duration="2222"
+				link-to-display-text="Check out the designs"
+			/>
+			<Carousel
+				isLink
+				link-to="post"
+				class="block-post"
+				:content-data="post"
+				:duration="3333"
+				aspect-ratio="4 / 3"
+				link-to-display-text="Read a few nice articles"
+			/>
+			<Carousel
+				isLink
+				link-to="work"
+				class="block-work"
+				:content-data="work"
+				:duration="4444"
+				aspect-ratio="3 / 2"
+				link-to-display-text="Some cool case studies"
+			/>
 		</section>
 	</main>
 </template>

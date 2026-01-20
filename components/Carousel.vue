@@ -14,6 +14,7 @@ const props = withDefaults(
 		}>;
 		readonly duration: number;
 		readonly linkTo: string;
+		readonly linkToDisplayText: string;
 		readonly isLink: boolean;
 		readonly aspectRatio: string;
 	}>(),
@@ -21,6 +22,7 @@ const props = withDefaults(
 		duration: 2500,
 		isLink: false,
 		aspectRatio: '1',
+		linkToDisplayText: 'Go the this page',
 	}
 );
 
@@ -35,6 +37,7 @@ const carouselConfig = {
 
 <template>
 	<NuxtLink :to="linkTo">
+		<h5>{{ props.linkToDisplayText }}</h5>
 		<Carousel v-bind="carouselConfig">
 			<Slide v-for="(item, index) in contentData" :key="index">
 				<UnLazyImage
@@ -65,7 +68,7 @@ const carouselConfig = {
 	--vc-png-bottom: var(--space-2xs);
 	box-shadow: var(--shadow-lg);
 	aspect-ratio: v-bind(aspectRatio);
-	border-radius: var(--space-xs);
+	border-radius: var(--space-s);
 	overflow: hidden;
 	button {
 		box-shadow: unset;
@@ -76,17 +79,48 @@ const carouselConfig = {
 		padding: unset;
 		margin: unset;
 	}
+	&::after {
+		content: "";
+		position: absolute;
+		inset: 0;
+		background-color: var(--color-sys-none);
+		transition: background-color ease-in-out 250ms;
+		border-radius: var(--space-s);
+	}
+	&:hover {
+		&::after {
+			background-color: var(--color-sys-slight);
+		}
+	}
 }
 .carousel-image {
 	aspect-ratio: v-bind(aspectRatio);
 	object-fit: cover;
-	// border-radius: 100px !important;
 }
 </style>
 <style lang="scss" scoped>
 a {
 	@include link(none);
 	@include focus();
-	// height: min-content;
+	transition: transform ease-in-out 250ms;
+	position: relative;
+	display: flex;
+	justify-content: center; /* Horizontal */
+	align-items: center; /* Vertical */
+	h5 {
+		position: absolute;
+		text-align: center;
+		opacity: 0;
+		z-index: 30;
+		transition: opacity ease-in-out 250ms, font-variation-settings ease-in-out 250ms;
+		color: var(--color-sys-invert-main);
+		pointer-events: none;
+	}
+	&:hover {
+		transform: scale(1.025);
+		h5 {
+			opacity: 1;
+		}
+	}
 }
 </style>
