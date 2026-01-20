@@ -106,15 +106,14 @@ a {
 	@include focus();
 	transition: transform ease-in-out 250ms;
 	position: relative;
-	display: flex;
-	justify-content: center; /* Horizontal */
-	align-items: center; /* Vertical */
 	h5 {
 		position: absolute;
+		inset: 0;
+		inset-block-start: 40%;
 		text-align: center;
 		opacity: 0;
 		z-index: 30;
-		transition: opacity ease-in-out 250ms, font-variation-settings ease-in-out 250ms;
+		transition: opacity ease-in-out 250ms;
 		color: var(--color-sys-invert-main);
 		pointer-events: none;
 	}
