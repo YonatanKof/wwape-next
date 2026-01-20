@@ -46,6 +46,7 @@ const { data: work } = await useAsyncData('work-date', () => {
 				class="block-design"
 				:content-data="design"
 				:duration="2222"
+				aspect-ratio="9 / 10"
 				link-to-display-text="Check out the designs"
 			/>
 			<Carousel

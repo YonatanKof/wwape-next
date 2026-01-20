@@ -68,7 +68,8 @@ const carouselConfig = {
 	--vc-png-bottom: var(--space-2xs);
 	box-shadow: var(--shadow-lg);
 	aspect-ratio: v-bind(aspectRatio);
-	border-radius: var(--space-s);
+	border-radius: var(--space-m);
+	corner-shape: superellipse(2);
 	overflow: hidden;
 	button {
 		box-shadow: unset;
@@ -80,12 +81,13 @@ const carouselConfig = {
 		margin: unset;
 	}
 	&::after {
-		content: "";
+		content: '';
 		position: absolute;
 		inset: 0;
 		background-color: var(--color-sys-none);
 		transition: background-color ease-in-out 250ms;
-		border-radius: var(--space-s);
+		border-radius: var(--space-m);
+		corner-shape: superellipse(2);
 	}
 	&:hover {
 		&::after {
