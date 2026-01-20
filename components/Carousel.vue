@@ -87,5 +87,6 @@ const carouselConfig = {
 a {
 	@include link(none);
 	@include focus();
+	// height: min-content;
 }
 </style>
