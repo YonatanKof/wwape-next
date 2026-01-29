@@ -81,7 +81,8 @@ const { data: work } = await useAsyncData('work-date', () => {
 	grid-template-rows: auto var(--space-6xl) 1fr;
 	padding-block-start: var(--space-xl);
 	padding-block-end: var(--space-2xl);
-	@media (width <= 640px) {
+	max-width: var(--display-width-sm);
+	@media (width <= 608px) {
 		grid-template-columns: repeat(9, 1fr);
 		grid-template-rows: auto var(--space-2xl) auto var(--space-3xl) auto;
 	}
@@ -93,7 +94,7 @@ const { data: work } = await useAsyncData('work-date', () => {
 	grid-column: 1 / span 5;
 	grid-row: 1 / span 2;
 	@media (width <= 640px) {
-		grid-column: 1 / span 7;
+		grid-column: 1 / span 6;
 		grid-row: 1 / span 2;
 	}
 	@media (width <= 544px) {
@@ -101,12 +102,12 @@ const { data: work } = await useAsyncData('work-date', () => {
 	}
 }
 .block-post {
-	grid-column: 7 / -1;
+	grid-column: 8 / -1;
 	grid-row: 1 / span 2;
 	margin-block-start: var(--space-2xl);
 	z-index: 10;
 	@media (width <= 640px) {
-		grid-column: 3 / -1;
+		grid-column: 4 / -1;
 		grid-row: 2 / span 3;
 		margin-block-start: unset;
 	}
@@ -115,12 +116,12 @@ const { data: work } = await useAsyncData('work-date', () => {
 	}
 }
 .block-work {
-	grid-column: 4 / span 6;
+	grid-column: 5 / span 6;
 	grid-row: 2 / span 2;
 	z-index: 9;
 	@media (width <= 640px) {
 		grid-row: 4 / span 2;
-		grid-column: 1 / span 6;
+		grid-column: 1 / span 5;
 		z-index: 10;
 	}
 	@media (width <= 544px) {
