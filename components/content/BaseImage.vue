@@ -30,7 +30,7 @@ const props = defineProps({
 	},
 	borderRadius: {
 		type: String,
-		default: 'var(--border-radius-xs)',
+		default: 'var(--border-radius-md)',
 	},
 	marginBlockStart: {
 		type: String,
