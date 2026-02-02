@@ -1,76 +1,71 @@
 <template>
-	<div class="pagination-list text-typography_primary">
-		<!-- Chevron -->
-		<nuxt-link v-show="currentPage > 1" class="pagination-item" :to="prevLink">
+	<div v-if="totalPages > 1" class="pagination-list text-typography_primary">
+		<!-- Prev -->
+		<nuxt-link
+			v-if="showPrev"
+			class="pagination-item"
+			:to="prevLink"
+		>
 			<Chevron class="pagination-icon" />
 		</nuxt-link>
-		<!-- First Page -->
-		<nuxt-link :class="['pagination-item', currentPage === 1 ? 'active' : '']" :to="baseUrl">1</nuxt-link>
-		<!-- ... -->
-		<span v-show="currentPage > 2" class="pagination-extra"> ... </span>
-		<template v-for="page in pageRange" :key="page">
-			<nuxt-link
-				v-show="page !== 1 && page !== totalPages"
-				:class="['pagination-item', currentPage === page ? 'active' : '']"
-				:to="getPageUrl(page)"
-				>{{ page }}</nuxt-link
-			>
-		</template>
-		<!-- ... -->
-		<span v-show="currentPage < totalPages - 1" class="pagination-extra"> ... </span>
 
-		<!-- Last Page -->
+		<template v-for="(item, i) in items" :key="i">
+			<span v-if="item === 'ellipsis'" class="pagination-extra">…</span>
+
+			<nuxt-link
+				v-else
+				:class="['pagination-item', item === currentPage ? 'active' : '']"
+				:to="item === 1 ? baseUrl : getPageUrl(item)"
+			>
+				{{ item }}
+			</nuxt-link>
+		</template>
+
+		<!-- Next -->
 		<nuxt-link
-			v-show="totalPages > 1"
-			:class="['pagination-item', currentPage === totalPages ? 'active' : '']"
-			:to="getPageUrl(totalPages)"
-			>{{ totalPages }}</nuxt-link
+			v-if="showNext"
+			class="pagination-item"
+			:to="getPageUrl(currentPage + 1)"
 		>
-		<!-- Chevron -->
-		<nuxt-link v-show="currentPage < totalPages" class="pagination-item" :to="getPageUrl(currentPage + 1)">
 			<Chevron class="pagination-icon flip" />
-			<!-- <img src="/images/Chevron.svg" class="chevron" alt="" /> -->
 		</nuxt-link>
 	</div>
 </template>
 
 <script setup>
-// import { computed } from 'vue';
+import { computed } from 'vue';
+
 const props = defineProps({
-	currentPage: {
-		type: Number,
-		required: true,
-	},
-	totalPages: {
-		type: Number,
-		required: true,
-	},
-	nextPage: {
-		type: Boolean,
-		required: true,
-	},
-	baseUrl: {
-		type: String,
-		required: true,
-	},
-	pageUrl: {
-		type: String,
-		required: true,
-	},
+	currentPage: { type: Number, required: true },
+	totalPages: { type: Number, required: true },
+	baseUrl: { type: String, required: true },
+	pageUrl: { type: String, required: true },
 });
 
-const getPageUrl = (pageNo) => {
-	return `${props.pageUrl}${pageNo}/`;
-};
-// Calculate the page range to show
-const pageRange = [
-	Math.max(1, props.currentPage - 1),
-	props.currentPage,
-	Math.min(props.totalPages, props.currentPage + 1),
-];
+const getPageUrl = (pageNo) => `${props.pageUrl}${pageNo}/`;
 
-const prevLink = computed(() => {
-	return props.currentPage === 2 ? props.baseUrl : `${props.pageUrl}${props.currentPage - 1}/`;
+const showPrev = computed(() => props.totalPages >= 4 && props.currentPage > 1);
+const showNext = computed(() => props.totalPages >= 4 && props.currentPage < props.totalPages);
+
+const prevLink = computed(() =>
+	props.currentPage === 2 ? props.baseUrl : getPageUrl(props.currentPage - 1)
+);
+
+const items = computed(() => {
+	const n = props.totalPages;
+	const c = props.currentPage;
+
+	// n = 1 → hidden by template v-if
+	if (n === 2) return [1, 2];
+	if (n === 3) return [1, 2, 3];
+
+	// n >= 4
+	if (c === 1) return [1, 'ellipsis', n];
+	if (c === 2) return [1, 2, 'ellipsis', n];
+	if (c === n - 1) return [1, 'ellipsis', n - 1, n];
+	if (c === n) return [1, 'ellipsis', n];
+
+	return [1, 'ellipsis', c, 'ellipsis', n];
 });
 </script>
 
