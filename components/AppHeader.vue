@@ -1,4 +1,5 @@
 <script setup lang="ts">
+const config = useRuntimeConfig();
 defineProps({
 	isSimple: {
 		type: Boolean,
@@ -16,7 +17,8 @@ defineProps({
 				<nuxt-link :to="{ name: 'index' }">Visit WWape</nuxt-link>
 			</nav>
 			<nav v-show="!isSimple">
-				<nuxt-link :to="{ name: 'design' }" aria-label="Go to Graphic Arts & Design page">Graphics</nuxt-link>
+			<nuxt-link :to="{ name: 'index' }" :aria-label="`Go to ${config.public.siteName} home page`">WWApe</nuxt-link>
+				<nuxt-link :to="{ name: 'design' }" aria-label="Go to design page">Designs</nuxt-link>
 				<nuxt-link :to="{ name: 'post' }" aria-label="Go to Post page">Posts</nuxt-link>
 				<nuxt-link :to="{ name: 'work' }">Work</nuxt-link>
 			</nav>
@@ -64,15 +66,17 @@ div,
 nav {
 	@include flex-center;
 	gap: var(--space-xs);
-	// font-size: var(--step-1);
 }
 
 @media (width <=$display-width-2xs) {
+	a {
+		font-size: var(--step--2);
+	}
 	header {
 		flex-direction: column;
 		align-items: start;
 		gap: var(--space-xs);
-		padding-block: var(--space-xs);
+		padding-block: var(--space-xs) var(--space-s);
 		height: unset;
 	}
 
