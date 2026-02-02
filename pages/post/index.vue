@@ -14,7 +14,7 @@ const { data } = await useAsyncData('equal', () => {
 </script>
 <template>
 	<div>
-		<IntroText title="Posts" text="Nobody reads! Yet here I share stories and insights from my creative journey – design tips, personal projects, dev stuff, and whatnot"/>
+		<IntroText title="Posts" text="Nobody reads, yet I write stories and insights when I get the chance – design tips, personal projects, dev stuff, and whatnot"/>
 		<ItemList :design-data="data" />
 	</div>
 </template>

@@ -15,7 +15,7 @@ const { data } = await useAsyncData('equal', () => {
 <template>
 	<div>
 		<IntroText 
-			title="UX, Product & Brand Design"
+			title="UX, product design & brand"
 			text="Crafting digital products, design systems & brands that get the job done for 15+ years. From design thinking to design ops – I always focus on valuable, efficient solutions."
 			text2="See it in action 👇"
 		/>
