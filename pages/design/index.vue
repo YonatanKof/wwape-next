@@ -9,7 +9,7 @@ nuxtApp.$pageMetaTags({
 	metaImgAlt: 'Social cover for this site design page',
 });
 // Find the number of blogs present
-const designCountLimit = 20;
+const designCountLimit = 16;
 const { data } = await useAsyncData(`content-/design`, async () => {
 	const _designs = await queryContent('/design').only('title').find();
 	return Math.ceil(_designs.length / designCountLimit);

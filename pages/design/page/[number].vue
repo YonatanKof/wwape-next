@@ -2,7 +2,7 @@
 <script setup>
 // Fetching data
 const { path, params } = useRoute();
-const designCountLimit = 20;
+const designCountLimit = 16;
 
 const getPageLimit = (totalPosts) => {
     return Math.ceil(totalPosts / designCountLimit);
