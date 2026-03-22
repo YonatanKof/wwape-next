@@ -50,6 +50,11 @@ export default defineNuxtPlugin(() => {
 					rel: 'canonical',
 					href: metaCanonicalPath,
 				},
+				{
+					rel: 'icon',
+					href: '/favicon.svg',
+					type: 'image/svg+xml',
+				},
 			],
 		});
 		// This is Nuxt 3's way of setting meta tags
