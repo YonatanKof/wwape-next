@@ -55,6 +55,11 @@ export default defineNuxtPlugin(() => {
 					href: '/favicon.svg',
 					type: 'image/svg+xml',
 				},
+				{
+					rel: 'icon',
+					href: '/favicon.ico',
+					type: 'image/x-icon',
+				},
 			],
 		});
 		// This is Nuxt 3's way of setting meta tags
