@@ -14,8 +14,8 @@ tags: ['Creative']
 > And I'll fight him till he kills me  
 > **– Adam Ant**
 
-![This are the guns of Home Killer](/designs/guns-of-home-killer/guns-of-home-killer.webp)
-*These are the guns of Home Killer*
+::lazy-img{src="/designs/guns-of-home-killer/guns-of-home-killer.webp" alt="This are the guns of Home Killer" desc="These are the guns of Home Killer"}
+::
 
 ##### This is a guns of Home Killer in 3D ↓
 

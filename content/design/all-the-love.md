@@ -11,14 +11,14 @@ tags: ['Creative']
 ---
 {{ $doc.description }} – Inspired by *All the love in the world* by NIN, and oh boy, do I love this song
 
-![All the jagged edges disappear](/designs/all-the-love/all-the-love.webp)
-*All the jagged edges disappear*
+::lazy-img{src="/designs/all-the-love/all-the-love.webp" alt="All the jagged edges disappear" desc="All the jagged edges disappear"}
+::
 
-![The stars are all afire in the sky](/designs/all-the-love/all-the-guns.webp)
-*Colors all look brighter when you're near*
+::lazy-img{src="/designs/all-the-love/all-the-guns.webp" alt="The stars are all afire in the sky" desc="Colors all look brighter when you're near"}
+::
 
-![Colors all look brighter when you're near](/designs/all-the-love/just-a-gun.webp)
-*The stars are all afire in the sky*
+::lazy-img{src="/designs/all-the-love/just-a-gun.webp" alt="Colors all look brighter when you're near" desc="The stars are all afire in the sky"}
+::
 
 ::YouTubePlayer{videoId="BdzWnFqSMMU" title="All The Love In The World"}
 ::

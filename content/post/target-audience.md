@@ -114,8 +114,8 @@ Let’s take, for example, heavy metal music – are all its listeners the same?
 
 In heavy metal music, we can take our group segmentation even further; why just Listeners? What about Musicians? Would you put a drummer and a guitarist in the same group? A prog-rock and a Stoner guitarist in the same group?
 
-![These guys](/posts/target-audience/Guitarist.webp)
-*Harald Nævdal from **Immortal** and James Hetfield from **Metallica***
+::lazy-img{src="/posts/target-audience/Guitarist.webp" alt="These guys" desc="Harald Nævdal from <strong>Immortal</strong> and James Hetfield from <strong>Metallica</strong>"}
+::
 
 Although Harald Nævdal from *Immortal* and James Hetfield from *Metallica* share similar attributes, it would be risky to assume they are in the same group or that their fans are in the same group.
 
@@ -131,8 +131,8 @@ Below I've written down some examples of the three groups of a typical *target a
 
 :::
 :::grid-unit
-![The three groups of a typical target audience](/posts/target-audience/target-audience-diagrm.webp){style="max-width: 35ch;"}
-*Groups of a typical target audience*
+::lazy-img{src="/posts/target-audience/target-audience-diagrm.webp" alt="The three groups of a typical target audience" desc="Groups of a typical target audience" style="max-width: 35ch;"}
+::
 :::
 ::
 
@@ -150,8 +150,8 @@ Three groups!
 
 Let’s look at Figma – they say the product is used by three different teams, or roles: Design, Engineering, and Product. We can clearly see them as different *target audiences*, and though it’s plain to see that Designers are the **Primary** *target audience*, they haven’t skipped the other groups.
 
-![Roles in Figma](/posts/target-audience/figma-roles.webp)
-*Roles in Figma*
+::lazy-img{src="/posts/target-audience/figma-roles.webp" alt="Roles in Figma" desc="Roles in Figma"}
+::
 
 And again, the aim is to:
 
@@ -163,8 +163,8 @@ And we can go even deeper still and break each audience into its own groups.
 
 Let's take Sketch, for example. Like Figma, they support additional groups other than designers. But we can see that within the designers' **Primary** *target audience*, they show specific use cases like Websites, Prototyping, Icons, Feedback, Apps, Symbols, Illustrations & Design Systems. So if you're a magazine layout designer, this isn't your cup of tea.
 
-![Sketch target audience in design](/posts/target-audience/sketch-target-audience-in-design.webp)
-*Sketch target audience in design*
+::lazy-img{src="/posts/target-audience/sketch-target-audience-in-design.webp" alt="Sketch target audience in design" desc="Sketch target audience in design"}
+::
 
 ### **Example:** Targeting Different Audiences, Monday.com
 
@@ -262,8 +262,8 @@ As a rule of thumb, when a product or service starts, it usually addresses a nar
 
 We can actually see it in brands logos – how they start unique and, over time, consolidate into something more homogeneous to address a wider audiences. This is just a visual aspect, but it happens company-wide.
 
-![Logo evolution, turning more homogeneous to address a wider target audience](/posts/target-audience/logo-evolution.webp)
-*Logo evolution, turning more homogeneous to address a wider target audience*
+::lazy-img{src="/posts/target-audience/logo-evolution.webp" alt="Logo evolution, turning more homogeneous to address a wider target audience" desc="Logo evolution, turning more homogeneous to address a wider target audience"}
+::
 
 ## Summary
 

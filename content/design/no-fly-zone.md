@@ -11,5 +11,5 @@ tags: ['Creative']
 ---
 Occupy the beach – stationary means of aviations – pushed back – set in time
 
-![A collage of happenings at the beach](/designs/no-fly-zone/no-fly-zone.webp)
-*So busy at beach – A collage of happenings at the beach*
+::lazy-img{src="/designs/no-fly-zone/no-fly-zone.webp" alt="A collage of happenings at the beach" desc="So busy at beach – A collage of happenings at the beach"}
+::

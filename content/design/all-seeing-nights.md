@@ -12,5 +12,5 @@ tags: ['Creative']
 
 Polluting the night skys
 
-![A collage of lights poles and a megaphone](/designs/all-seeing-nights/all-seeing-nights.webp)
-*A collage of lights poles and a megaphone*
+::lazy-img{src="/designs/all-seeing-nights/all-seeing-nights.webp" alt="A collage of lights poles and a megaphone" desc="A collage of lights poles and a megaphone"}
+::

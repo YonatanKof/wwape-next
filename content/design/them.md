@@ -18,7 +18,8 @@ This is an early calendar where every ray of the headdresses represent a fortnig
 
 <!-- <Them /> -->
 
-![The N'Dhala people calender](/designs/them/them.webp)
+::lazy-img{src="/designs/them/them.webp" alt="The N'Dhala people calender"}
+::
 
 
 

@@ -12,16 +12,20 @@ tags: ['Creative']
 
 Archival stuff here – Being a slightly unhinged, quite stoned young person, can lead to this unkind results.
 
-![SamimSF](/designs/samim/samim-Face.webp)
+::lazy-img{src="/designs/samim/samim-Face.webp" alt="SamimSF"}
+::
 
-![What were the clouds like when you were young?](/designs/samim/samim-Clude.webp)
-*What were the clouds like when you were young?*
+::lazy-img{src="/designs/samim/samim-Clude.webp" alt="What were the clouds like when you were young?" desc="What were the clouds like when you were young?"}
+::
 
-![SamimMF](/designs/samim/samim-Cum.webp)
+::lazy-img{src="/designs/samim/samim-Cum.webp" alt="SamimMF"}
+::
 
-![SamimF](/designs/samim/samim-Musterbate.webp)
+::lazy-img{src="/designs/samim/samim-Musterbate.webp" alt="SamimF"}
+::
 
-![SamimCF](/designs/samim/samim-Plane.webp)
+::lazy-img{src="/designs/samim/samim-Plane.webp" alt="SamimCF"}
+::
 
 
 

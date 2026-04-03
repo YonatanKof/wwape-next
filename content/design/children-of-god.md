@@ -12,8 +12,8 @@ tags: ['Creative']
 
 Are we all children of god?
 
-![Children of God](/designs/children-of-god/children-of-god.webp)
-*We are all children of god*
+::lazy-img{src="/designs/children-of-god/children-of-god.webp" alt="Children of God" desc="We are all children of god"}
+::
 
-![Children of God](/designs/children-of-god/children-of-god-long.webp)
-*Inline Version*
+::lazy-img{src="/designs/children-of-god/children-of-god-long.webp" alt="Children of God" desc="Inline Version"}
+::

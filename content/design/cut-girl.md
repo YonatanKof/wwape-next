@@ -13,8 +13,8 @@ The wind is blowing, it's whistling
 Take your time and place at the table  
 The horned one is to be taken with kind force
 
-![A girl being cut by a grey wind](/designs/cut-girl/cut-girl-GreyWind.webp)
-*Version – Grey*
+::lazy-img{src="/designs/cut-girl/cut-girl-GrayWind.webp" alt="A girl being cut by a grey wind" desc="Version – Grey"}
+::
 
-![A girl being cut by the shopping hands of the electric cockroach](/designs/cut-girl/cut-girl.webp)
-*Version – Busy*
+::lazy-img{src="/designs/cut-girl/cut-girl.webp" alt="A girl being cut by the shopping hands of the electric cockroach" desc="Version – Busy"}
+::

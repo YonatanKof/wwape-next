@@ -14,11 +14,11 @@ Tribute artwork for [_Coastline Paradox_](https://hilaruach.bandcamp.com/track/-
 
 #### Some versions here:
 
-![My love lettering with 2 bones](/designs/hold-my-bones/hold-my-bones-red.webp)
-*Red Version*
+::lazy-img{src="/designs/hold-my-bones/hold-my-bones-red.webp" alt="My love lettering with 2 bones" desc="Red Version"}
+::
 
-![My love lettering with 2 bones](/designs/hold-my-bones/hold-my-bones-dark.webp)
-*Dark Version*
+::lazy-img{src="/designs/hold-my-bones/hold-my-bones-dark.webp" alt="My love lettering with 2 bones" desc="Dark Version"}
+::
 
 My lose translation:
 

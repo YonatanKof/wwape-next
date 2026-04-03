@@ -10,4 +10,5 @@ description: 'We are all a girl being cut'
 tags: ['Creative']
 ---
 
-![Dill Mask – The prints](/designs/fear-head/fear-head.webp)
+::lazy-img{src="/designs/fear-head/fear-head.webp" alt="Dill Mask – The prints"}
+::

@@ -12,5 +12,5 @@ tags: ['Creative']
 
 The city is working it all day through
 
-![A collage of crane and construction sites](/designs/constructed-safety/constructed-safety.webp)
-*A collage of crane and construction sites*
+::lazy-img{src="/designs/constructed-safety/constructed-safety.webp" alt="A collage of crane and construction sites" desc="A collage of crane and construction sites"}
+::

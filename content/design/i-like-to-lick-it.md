@@ -12,11 +12,11 @@ tags: ['Creative']
 
 Back in the days at [Shenkar](https://www.shenkar.ac.il/en), I saw some students investing in ass licking as much as in design. So I came out with a sketch that turned to be _the monster form ass_ – which I like and I like to lick
 
-![The licking monster from the black ass](/designs/i-like-to-lick-it/i-like-to-lick-it-baba.webp)
-*The ass might be black*
+::lazy-img{src="/designs/i-like-to-lick-it/i-like-to-lick-it-baba.webp" alt="The licking monster from the black ass" desc="The ass might be black"}
+::
 
-![The licking monster from the pink ass](/designs/i-like-to-lick-it/i-like-to-lick-it.webp)
-*I like it and I like to lick it*
+::lazy-img{src="/designs/i-like-to-lick-it/i-like-to-lick-it.webp" alt="The licking monster from the pink ass" desc="I like it and I like to lick it"}
+::
 
 
 

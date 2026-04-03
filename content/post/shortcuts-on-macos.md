@@ -17,8 +17,8 @@ But not all is good, you can easily find yourself doing the same task, navigatin
 This can lead to frustration, and even worse – not executing the command because you where too damn lazy navigating them damn menus. 
 <!-- thus hindering your already crippled workflow. Such a shame. -->
 
-![The Merge All Windows command in action triggered manually from the menu](/posts/shortcuts-on-macos/Merge_All_Windows_Example.webp)
-*The `Merge All Windows` command in action triggered manually from the menu ☝️*
+::lazy-img{src="/posts/shortcuts-on-macos/Merge_All_Windows_Example.webp" alt="The Merge All Windows command in action triggered manually from the menu" desc="The <code>Merge All Windows</code> command in action triggered manually from the menu ☝️"}
+::
 
 ## How will this article help you?
 
@@ -40,15 +40,15 @@ Here are two use cases where custom shortcuts will improve your workflow:
 
    The `Merge All Window` command is a great cleaner upper and I use it all over the place – It will merge all of your open windows into one window to be shown as tabs.
    
-   ![Image of the Merge All Windows command in action](/posts/shortcuts-on-macos/Merge_All_Windows.webp)
-   *The Merge All Windows command in action ☝️*
+   ::lazy-img{src="/posts/shortcuts-on-macos/Merge_All_Windows.webp" alt="Image of the Merge All Windows command in action" desc="The Merge All Windows command in action ☝️"}
+   ::
 
 2. **Collapse All Groups**
    
    This command is app specific, this case *Sketch App* (and I also find myself do it a lot in *VS Code*) and it deals with viewing the side panel on a big file or project. Of course you can scroll or close groups and layers manually, but sometimes you'd like the get an overview at a glance. That's where this command comes in handy 🤲
 
-   ![Image of the Collapse All Groups command in action](/posts/shortcuts-on-macos/Collapse_All_Groups.webp){style="max-width: calc(var(--space-8xl) * 3)"}
-   *The Collapse All Groups command in action ☝️*
+   ::lazy-img{src="/posts/shortcuts-on-macos/Collapse_All_Groups.webp" alt="Image of the Collapse All Groups command in action" desc="The Collapse All Groups command in action ☝️" style="max-width: calc(var(--space-8xl) * 3)"}
+   ::
 
 Now let's learn how **solve these problems** and have a better workflow 🎉
 
@@ -57,30 +57,30 @@ Now let's learn how **solve these problems** and have a better workflow 🎉
 
 1. Open the *Keyboard* preferences in the *System Settings*. You can use the macOS *Spotlight* search by clicking `control` `spacebar` (a great shortcut by itself) and start typing what your looking for. We're looking for the *Keyboard* preferences, so I'll start typing `key`, then I'll see it as an option, click it! BTW, I'm using [Raycast](https://www.raycast.com/) instead of the default *Spotlight* search.
 
-   ![Raycast search in action](/posts/shortcuts-on-macos/Extra-Spotlight_Search.webp){style="max-width: calc(var(--space-8xl) * 3)"}
-   *Raycast search in action ☝️*
+   ::lazy-img{src="/posts/shortcuts-on-macos/Extra-Spotlight_Search.webp" alt="Raycast search in action" desc="Raycast search in action ☝️" style="max-width: calc(var(--space-8xl) * 3)"}
+   ::
    
    You can also just look for it in the `System Preferences`, found in the Apple menu.
 
-   ![The Apple menu - You can fine the preferences menu here](/posts/shortcuts-on-macos/Extra-Apple_Menu.webp){style="max-width: calc(var(--space-8xl) * 2)"}
-   *The Apple menu - You can fine the preferences menu here*
+   ::lazy-img{src="/posts/shortcuts-on-macos/Extra-Apple_Menu.webp" alt="The Apple menu - You can fine the preferences menu here" desc="The Apple menu - You can fine the preferences menu here" style="max-width: calc(var(--space-8xl) * 2)"}
+   ::
 
 2. In the *Keyboard* pane click the *Keyboard Shortcuts…* button.
    
-   ![The Keyboard pane on the System Settings, showing the `Keyboard Shortcuts…` button](/posts/shortcuts-on-macos/Keyboard_Pane.webp){style="max-width: calc(var(--space-8xl) * 3)"}
-   *The Keyboard pane on the System Settings, showing the `Keyboard Shortcuts…` button*
+   ::lazy-img{src="/posts/shortcuts-on-macos/Keyboard_Pane.webp" alt="The Keyboard pane on the System Settings, showing the `Keyboard Shortcuts…` button" desc="The Keyboard pane on the System Settings, showing the <code>Keyboard Shortcuts…</code> button" style="max-width: calc(var(--space-8xl) * 3)"}
+   ::
    
 3. This will open a new window, in it select the *App Shortcut* tab. At the bottom of the right panel you'll see `+` and `-` buttons. Clicking the `+` button will open a prompt window.
    
-   ![macOS Keyboard Shortcut Manager](/posts/shortcuts-on-macos/App_Shortcuts_Tab.webp){style="max-width: calc(var(--space-8xl) * 3)"}
-   *macOS Keyboard Shortcut Manager*
+   ::lazy-img{src="/posts/shortcuts-on-macos/App_Shortcuts_Tab.webp" alt="macOS Keyboard Shortcut Manager" desc="macOS Keyboard Shortcut Manager" style="max-width: calc(var(--space-8xl) * 3)"}
+   ::
 
 4. In the prompt window you'll see a few inputs. In the first input, *Application*, leave the default option `All Applications` as is. In the *Menu Title* input, type in the `Merge all window` command. And lastly type the shortcut you want to init the command into the *Keyboard Shortcut* input by hitting the actual shortcut you wanna use.
    
    For this shortcut I'll use the `ctrl` `option` `cmd` `m` combination by typing them while in the input.
    
-   ![macOS Keyboard Shortcut Manager](/posts/shortcuts-on-macos/Prompt_Window.webp){style="max-width: calc(var(--space-8xl) * 3)"}
-   *macOS Keyboard Shortcut Manager*
+   ::lazy-img{src="/posts/shortcuts-on-macos/Prompt_Window.webp" alt="macOS Keyboard Shortcut Manager" desc="macOS Keyboard Shortcut Manager" style="max-width: calc(var(--space-8xl) * 3)"}
+   ::
    
    ### Keep in mind!
 
@@ -102,8 +102,8 @@ Nice! now you can warp scatted windows like a boss and eliminate that document m
 
 For the `Collapse All Groups` command just repeat the previous flow with an exception on item number 4, which is: Pick *Sketch* at the Application dropdown.
 
-![Make the shortcut specific by selecting an app](/posts/shortcuts-on-macos/Custom_Shortcut.webp){style="max-width: calc(var(--space-8xl) * 3)"}
-*Make the shortcut specific by selecting an app*
+::lazy-img{src="/posts/shortcuts-on-macos/Custom_Shortcut.webp" alt="Make the shortcut specific by selecting an app" desc="Make the shortcut specific by selecting an app" style="max-width: calc(var(--space-8xl) * 3)"}
+::
 
 Obviously you'll need to type in the relevant command name and shortcut combination (I'm using  `ctrl` `option` `cmd` `c`), but other then that the 2 use cases are the same. 
 
@@ -119,15 +119,15 @@ There are shitloads of commands and obviously you won't use them all as shortcut
 
 Most apps on the macOS has the [Help Menu](https:/support.apple.com/guide/mac-help/get-help-on-your-mac-hlpvw003/mac) which allows to fussy search for you command just by typing it. Just click `command` `shift` `/` and the search will be waiting for a quick search 🏃
 
-![Look for a command using the Help Menu](/posts/shortcuts-on-macos/HelpMenu.webp)
-*Look for a command using the `Help Menu`*
+::lazy-img{src="/posts/shortcuts-on-macos/HelpMenu.webp" alt="Look for a command using the Help Menu" desc="Look for a command using the <code>Help Menu</code>"}
+::
 
 ### Using Sketch Runner
 
 You can also locate and run commands (and much more) in *Sketch* using a plugin called [SketchRunner](https:/sketchrunner.com/). It's a good one and it does a lot – it *Inserts* symbols, *Goes to* pages, **artboards** or symbols, *Creates* symbols or styles, *Applies* styles and *Installs* plugins — but for the sake of this article — it runs commands (just like the *Help Menu*) but with a nicer UI **and** while showing your latest actions.
 
-![This is the Sketch Runner modal window to Run commands](/posts/shortcuts-on-macos/SketchRunner.webp){style="max-width: calc(var(--space-8xl) * 4)"}
-*This is the Sketch Runner modal window to Run commands*
+::lazy-img{src="/posts/shortcuts-on-macos/SketchRunner.webp" alt="This is the Sketch Runner modal window to Run commands" desc="This is the Sketch Runner modal window to Run commands" style="max-width: calc(var(--space-8xl) * 4)"}
+::
 
 ### Resolving Identical Commands Conflicts
 
@@ -139,13 +139,13 @@ To resolve it you'll need to make the command unique, and the way to do it is by
 
 As seen in the image below 👇
 
-![The two Align Left commands](/posts/shortcuts-on-macos/IdenticalCommands.webp)
-*The two `Align Left` commands ☝️*
+::lazy-img{src="/posts/shortcuts-on-macos/IdenticalCommands.webp" alt="The two Align Left commands" desc="The two <code>Align Left</code> commands ☝️"}
+::
   
 So is you want the `Arrange`'s `Align Left` command, you should type it like that `Arrange->Align Left`
 
-![The resolved two Align commands in the shortcuts menu](/posts/shortcuts-on-macos/IdenticalCommandsResolved.webp){style="max-width: calc(var(--space-8xl) * 3)"}
-*The resolved two Align commands in the shortcuts menu ☝️*
+::lazy-img{src="/posts/shortcuts-on-macos/IdenticalCommandsResolved.webp" alt="The resolved two Align commands in the shortcuts menu" desc="The resolved two Align commands in the shortcuts menu ☝️" style="max-width: calc(var(--space-8xl) * 3)"}
+::
 
 There you have it, a command the is unique as a snowflake ❄️
 
@@ -157,8 +157,8 @@ Most probably that most of the short and "good" shortcuts are already taken by t
 
 Have a look at the Comma plugging for Sketch, all of its commands are using a 3 modifier key combos. It' s taking up namespace and you can easily find yourself overriding or overwritten by some other shortcuts. 
 
-![Comma plugin banner taken form their Github Page](/posts/shortcuts-on-macos/Comma_plugin.png) 
-*Comma plugin banner taken form their Github Page*
+::lazy-img{src="/posts/shortcuts-on-macos/Comma_plugin.png" alt="Comma plugin banner taken form their Github Page" desc="Comma plugin banner taken form their Github Page"}
+::
 
 A brut force way of dealing with this nuisance is using a 4 modifier key combo... `command`+`option`+`alt`+`shift` something — that ain't being used, thought I might by a nuisance by itself and is an extreme finger stretch for sure 🖖
     
@@ -170,15 +170,15 @@ The app is called [Karabiner-Elements](https:/karabiner-elements.pqrs.org) and i
 
 2. Got the the *Complex modification* tab
    
-   ![The Karabiner app on the Complex modification tab - An Empty state](/posts/shortcuts-on-macos/Karabiner_Elements-01-Complex_modification_tab.png)
-   *The Karabiner app on the Complex modification tab - An Empty state*
+   ::lazy-img{src="/posts/shortcuts-on-macos/Karabiner_Elements-01-Complex_modification_tab.png" alt="The Karabiner app on the Complex modification tab - An Empty state" desc="The Karabiner app on the Complex modification tab - An Empty state"}
+   ::
 
 3. Click the *Add rule* button
 
 4. In the prompt window click *Enable* on the 1st item from the example list called Change the caps_lock to command + control + option + shift
    
-   ![A prompt window to enable the command+control+option+shift as Caps lock on Karabiner](/posts/shortcuts-on-macos/Karabiner_Elements-02-Add_rule.png)
-   *A prompt window to enable the command+control+option+shift as `Caps lock` on Karabiner*
+   ::lazy-img{src="/posts/shortcuts-on-macos/Karabiner_Elements-02-Add_rule.png" alt="A prompt window to enable the command+control+option+shift as Caps lock on Karabiner" desc="A prompt window to enable the command+control+option+shift as <code>Caps lock</code> on Karabiner"}
+   ::
 
 That's it, you have it! Now you can add a command using all for 4 keys but clicking just the one key. So now, if you'd like to have the *Collapse All Groups* with `Caps lock` + `c`. Try it, it's nice.  -->
 

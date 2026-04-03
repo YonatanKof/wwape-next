@@ -11,11 +11,11 @@ tags: ['Creative']
 ---
 As us Israeli say → היית עשר
 
-![A crown of penises, cycling form lose to erected hovering in a space](/designs/homo-erectus/homo-erectus.webp)
-*Erected we hover in space*
+::lazy-img{src="/designs/homo-erectus/homo-erectus.webp" alt="A crown of penises, cycling form lose to erected hovering in a space" desc="Erected we hover in space"}
+::
 
-![A crown of penises, cycling form lose to erected hovering in a space](/designs/homo-erectus/homo-erectus-clip.webp)
-*Erected we hover in space*
+::lazy-img{src="/designs/homo-erectus/homo-erectus-clip.webp" alt="A crown of penises, cycling form lose to erected hovering in a space" desc="Erected we hover in space"}
+::
 
 
 ::YouTubePlayer{videoId="4ruRU3ofIII" title="Homo Erectus"}

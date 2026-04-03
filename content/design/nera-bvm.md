@@ -13,14 +13,14 @@ tags: ['Creative']
 
 She had hard life told by men what to do
 
-![bvm](/designs/nera-bvm/nera-bvm-her-face.webp)
-*Women take over a man made tale*
+::lazy-img{src="/designs/nera-bvm/nera-bvm-her-face.webp" alt="bvm" desc="Women take over a man made tale"}
+::
 
-![bvm](/designs/nera-bvm/nera-bvm-her-flower.webp)
-*A Flower of Romance*
+::lazy-img{src="/designs/nera-bvm/nera-bvm-her-flower.webp" alt="bvm" desc="A Flower of Romance"}
+::
 
-![bvm](/designs/nera-bvm/nera-bvm-her-hands-and-man.webp)
-*Hand Made*
+::lazy-img{src="/designs/nera-bvm/nera-bvm-her-hands-and-man.webp" alt="bvm" desc="Hand Made"}
+::
 
 
 

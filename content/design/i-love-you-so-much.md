@@ -13,8 +13,8 @@ tags: ['Creative']
 
 For the Love of _Ilan Gai_
 
-![Some people love too much bad things can happen](/designs/i-love-you-so-much/i-love-you-so-much.webp)
-*Some people love so much bad things can happen*
+::lazy-img{src="/designs/i-love-you-so-much/i-love-you-so-much.webp" alt="Some people love too much bad things can happen" desc="Some people love so much bad things can happen"}
+::
 
 
 

@@ -12,6 +12,6 @@ tags: ['Creative']
 
 {{ $doc.description }}
 
-![My love lettering with 2 bones](/designs/hold-my-raw-bones/hold-my-raw-bones.webp)
-*A raw version for **Hold My Bones** – [See it here](/design/hold-my-bones){target="_self"}*
+::lazy-img{src="/designs/hold-my-raw-bones/hold-my-raw-bones.webp" alt="My love lettering with 2 bones" desc="A raw version for <strong>Hold My Bones</strong> – <a href='/design/hold-my-bones'>See it here</a>"}
+::
 

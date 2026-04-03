@@ -12,5 +12,5 @@ tags: ['Creative']
 
 Turn on the bright lights
 
-![A collage of light poles at sunset near the beach](/designs/surrender-at-sunset/surrender-at-sunset.webp)
-*A collage of light poles at sunset near the beach*
+::lazy-img{src="/designs/surrender-at-sunset/surrender-at-sunset.webp" alt="A collage of light poles at sunset near the beach" desc="A collage of light poles at sunset near the beach"}
+::

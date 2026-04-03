@@ -11,4 +11,5 @@ tags: ['Creative', 'Skull']
 ---
 Don't stretch it, it's *[the Mystery of the Elongated Skulls](https://www.historicmysteries.com/elongated-skulls-mystery/)*
 
-![A glitched elongated human skull](/designs/elongated/elongated.webp)
+::lazy-img{src="/designs/elongated/elongated.webp" alt="A glitched elongated human skull"}
+::

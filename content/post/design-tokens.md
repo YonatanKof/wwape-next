@@ -124,8 +124,8 @@ But what about this CSS declaration?
 
 This big declaration above is just styling for the silly description text under the `img` or `video` tag.
 
-![Description text under the "img" or "video" tag](/posts/design-tokens/slily.webp){style="max-width: 320px;"}
-*Description text under the `img` & `video` tags*
+::lazy-img{src="/posts/design-tokens/slily.webp" alt="Description text under the "img" or "video" tag" desc="Description text under the <code>img</code> & <code>video</code> tags" style="max-width: 320px;"}
+::
 
 Wouldn't be nicer to include it with just one line? For example:
 

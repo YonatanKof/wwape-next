@@ -10,9 +10,9 @@ description: 'A shape I shaped'
 tags: ['Creative']
 ---
 
-![Fishbone](/designs/fishbone/fishbone-v1.webp)
-*A bony fish*
+::lazy-img{src="/designs/fishbone/fishbone-v1.webp" alt="Fishbone" desc="A bony fish"}
+::
 
-![Fishbone](/designs/fishbone/fishbone-v2.webp)
-*Like a [Drawer Tower](https://archiveofaffinities.tumblr.com/post/633871984288235520/moshe-lufenfeld-and-giora-gammerman-the-drawer) by Moshe Lupenfeld and Giora Gamerman*
+::lazy-img{src="/designs/fishbone/fishbone-v2.webp" alt="Fishbone" desc="Like a <a href='https://archiveofaffinities.tumblr.com/post/633871984288235520/moshe-lufenfeld-and-giora-gammerman-the-drawer'>Drawer Tower</a> by Moshe Lupenfeld and Giora Gamerman"}
+::
 

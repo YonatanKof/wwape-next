@@ -10,4 +10,5 @@ description: 'We are all a girl being cut'
 tags: ['Creative']
 ---
 
-![Dill Mask – The prints](/designs/sun-king/sun-king.webp)
+::lazy-img{src="/designs/sun-king/sun-king.webp" alt="Dill Mask – The prints"}
+::

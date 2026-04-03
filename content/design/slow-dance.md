@@ -10,4 +10,5 @@ description: ''
 tags: ['Creative']
 ---
 
-![](/designs/slow-dance/slow-dance.webp)
+::lazy-img{src="/designs/slow-dance/slow-dance.webp"}
+::

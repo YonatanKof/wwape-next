@@ -14,8 +14,8 @@ tags: ['Creative']
 > From going through the motions  
 > ***– Adam Ant***
 
-![Homekiller](/designs/killer-in-the-home/killer-in-the-home.webp)
-*Homekiller hovering at his home*
+::lazy-img{src="/designs/killer-in-the-home/killer-in-the-home.webp" alt="Homekiller" desc="Homekiller hovering at his home"}
+::
 
 ::YouTubePlayer{videoId="DtN3b9-Eqfk" title="Homekiller at home"}
 ::

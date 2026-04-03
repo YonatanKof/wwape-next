@@ -39,8 +39,8 @@ In terms of graphic design an *icon system* is a collection of icons that work t
 
 You can see [in this link a nice example of an icon system](https://www.sketch.com/s/84463519-df2a-475d-b8d2-bd250755763d)  I created for [Pepperi](https://www.pepperi.com/) B2B commerce company – it utilizes color tokens and is hooked up to Pepperi's theme editor. You can also [checkout its **Storybook** in this link](https://60ae3e9eff8e4c003b2f90d4-rocitoujqz.chromatic.com/?path=/docs/components-icon--base).
 
-![Some of Pepperi icons](/posts/simple-icon-system/Pepp-Icons.webp)
-*Some of Pepperi icons ☝️*
+::lazy-img{src="/posts/simple-icon-system/Pepp-Icons.webp" alt="Some of Pepperi icons" desc="Some of Pepperi icons ☝️"}
+::
 
 ### Icon system for development
 

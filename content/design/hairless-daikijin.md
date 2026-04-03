@@ -11,6 +11,8 @@ tags: ['Creative', 'Tribeless']
 ---
 {{ $doc.description}} - {{ $doc.image_alt }}
 
-![An Oni Daikijin mask over geometric background](/designs/hairless-daikijin/daikijin.webp)
+::lazy-img{src="/designs/hairless-daikijin/daikijin.webp" alt="An Oni Daikijin mask over geometric background"}
+::
 
-![An Oni Daikijin mask over geometric background - the dark version](/designs/hairless-daikijin/daikijin-dark.webp)
+::lazy-img{src="/designs/hairless-daikijin/daikijin-dark.webp" alt="An Oni Daikijin mask over geometric background - the dark version"}
+::

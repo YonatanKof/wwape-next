@@ -14,9 +14,11 @@ tags: ['Creative']
 
 A manly tale of a godly birth by an excluded woman  
 
-![bvm](/designs/rosa-bvm/rosa-bvm.webp)
+::lazy-img{src="/designs/rosa-bvm/rosa-bvm.webp" alt="bvm"}
+::
 
-![bvm](/designs/rosa-bvm/rosa-bvm-detail.webp)
+::lazy-img{src="/designs/rosa-bvm/rosa-bvm-detail.webp" alt="bvm"}
+::
 
 
 

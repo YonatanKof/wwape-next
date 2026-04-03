@@ -14,5 +14,5 @@ tags: ['Creative']
 > And I've seen him in the pictures  
 > ***– Adam Ant***
 
-![A man falling through a single helix for guns](/designs/fall-of-home-killer/fall-of-home-killer.webp)
-*Killer in the home*
+::lazy-img{src="/designs/fall-of-home-killer/fall-of-home-killer.webp" alt="A man falling through a single helix for guns" desc="Killer in the home"}
+::

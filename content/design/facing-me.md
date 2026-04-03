@@ -17,5 +17,5 @@ A radiant abyss where men meet themselves
 We're in hell  
 **– The Ripper** 	
 
-![It is facing me](/designs/facing-me/facing-me.webp)
-*The missing gun is facing me*
+::lazy-img{src="/designs/facing-me/facing-me.webp" alt="It is facing me" desc="The missing gun is facing me"}
+::

@@ -16,13 +16,16 @@ A cruel soldier – A wicked beast, battle ready to lose ahead
 
 Just the start wretched series – Of addict blood, known like a head 
 
-![Dill Mask – The prints](/designs/dill-mask/dill-mask-prints.webp)
-*{{ $doc.description }}*
+::lazy-img{src="/designs/dill-mask/dill-mask-prints.webp" alt="Dill Mask – The prints" desc="Animal, Sun King and City Living composed for Ms. Shamir, Dill in Hebrew, therefor the Dill masks"}
+::
 
 <!-- ![Dill Mask – In motion](/designs/dill-mask/dill-mask-move.webp) -->
 
-![Dill Mask – Bug](/designs/dill-mask/dill-mask-Bug.webp)
+::lazy-img{src="/designs/dill-mask/dill-mask-Bug.webp" alt="Dill Mask – Bug"}
+::
 
-![Dill Mask – Sun](/designs/dill-mask/dill-mask-Sun.webp)
+::lazy-img{src="/designs/dill-mask/dill-mask-Sun.webp" alt="Dill Mask – Sun"}
+::
 
-![Dill Mask – Animal](/designs/dill-mask/dill-mask-Animal.webp)
+::lazy-img{src="/designs/dill-mask/dill-mask-Animal.webp" alt="Dill Mask – Animal"}
+::
