@@ -134,9 +134,9 @@ button,
 .icon-btn {
 	padding: var(--space-2xs);
 }
-// img ~ em {
-// 	@include desc-text-under();
-// }
+img ~ em {
+	@include desc-text-under();
+}
 hr {
 	border: none;
 	border-bottom: solid 1px var(--color-sys-dim);
