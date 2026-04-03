@@ -4,8 +4,6 @@ author_name: 'Yonatan Ben Knaan'
 date: '2021-07-23'
 updated: '2021-07-23'
 cover_image: '/designs/to-buy-and-sell/to-buy-and-sell-tn.webp'
-cover_image_height: '1000'
-cover_image_thumbhash: 'VxsDHwoIh7aLdndzjFaIiFh1g4v42IYP'
 social_image: '/designs/to-buy-and-sell/to-buy-and-sell-social.jpg'
 image_alt: "An Hebrew take of Aphrodite's Child's 666 album cover"
 description: "You know, it's the Beast of Revelation"

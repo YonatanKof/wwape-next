@@ -4,8 +4,6 @@ author_name: 'Yonatan Ben Knaan'
 date: '2002-02-28'
 updated: ''
 cover_image: '/designs/samim/samim-Face-tn.webp'
-cover_image_height: '1000'
-cover_image_thumbhash: 'G2oGHwxqVmdviXZiZkiIp5eBWcAnBHkE'
 social_image: '/designs/samim/samim-Plane-social.jpg'
 image_alt: 'We put our faith in clouds'
 description: "This is the verb for 'put' form Heb to Eng"

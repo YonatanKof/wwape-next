@@ -4,8 +4,6 @@ author_name: 'Yonatan Ben Knaan'
 date: '2023-11-27'
 updated: ''
 cover_image: '/designs/24-hours-with/24-hours-with-tn.webp'
-cover_image_height: '1500'
-cover_image_thumbhash: '5QcGDQJZmJCGSIcXmIdpZwd5coAY'
 social_image: '/designs/24-hours-with/24-hours-with-social.jpg'
 image_alt: "A digital painting of a snake's face, with multiple large teeth and it's tongue sticking out"
 description: 'Who is the king? Personified by a snake? An anthropomorphic transformation to challenges us with the inherent distinction between human and an animal, the snake... or was it a mongoose?'

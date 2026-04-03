@@ -4,8 +4,6 @@ author_name: Yonatan Ben Knaan
 date: '2020-11-12'
 updated: '2024--08-28'
 cover_image: '/posts/md-content-types/md-content-types.webp'
-cover_image_height: '450'
-cover_image_thumbhash: 'rUcCDYTnaWZ3iHePYol4cxd4cH74'
 social_image: /posts/md-content-types/md-content-types.webp
 image_alt: 'Logo of the Markdown syntax'
 description: 'Just a friendly goto place for me to review all the MD types I use in this website'
