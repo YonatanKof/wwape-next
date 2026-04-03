@@ -25,3 +25,54 @@ A website by Yonatan Ben Knaan
 - [Vue Masonry Wall](https://vue-masonry-wall.yeger.eu/)
 - [Vue Final Modal?](https://vue-final-modal.org/)
 - [Vue Typewriter Effect](https://ayitinya.github.io/vue-typewriter-effect/)
+
+## Image workflow
+
+Blur placeholders (thumbhash map) and image dimensions are generated automatically from images in `public/`.
+
+**After adding or replacing an image:**
+
+```bash
+npm run thumbhash
+```
+
+Skips already-processed images. Use `--force` to rebuild all.
+
+### `::lazy-img` component
+
+Use instead of standard markdown image syntax for lazy loading + blur placeholder.
+
+**Basic**
+```md
+::lazy-img{src="/path/to/image.webp" alt="Description"}
+::
+```
+
+**With caption**
+```md
+::lazy-img{src="/path/to/image.webp" alt="Description" desc="Caption text"}
+::
+```
+
+Caption renders with `v-html` — links, bold, and code can be used:
+```md
+::lazy-img{src="/path/to/image.webp" alt="Description" desc="By <a href='https://example.com'>Author</a>"}
+::
+```
+
+**With dynamic caption (front matter value)**
+```md
+::lazy-img{src="/path/to/image.webp" alt="Description"}
+{{ $doc.description }}
+::
+```
+
+### Cover images
+
+Set `cover_image` in front matter — thumbhash and height are looked up automatically from `thumbhash map.json`:
+
+```yaml
+cover_image: '/designs/my-work/my-work-tn.webp'
+```
+
+`cover_image_thumbhash` and `cover_image_height` are no longer needed.

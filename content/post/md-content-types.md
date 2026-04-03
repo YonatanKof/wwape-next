@@ -232,35 +232,53 @@ export default {
 
 ## Images
 
-> In order to have the image caption right there should be 2 things:
+### Simple markdown image
 
-[Syntax ↓]{.dimmed}
-
-`![alt](src)`
+The native markdown syntax still works for quick, unstyled images with no lazy loading.
 
 [Input ↓]{.dimmed}
 
-`![Night Thoughts](/misc/night-thoughts.webp)`
-
-[Output ↓]{.dimmed}
-
-![Night Thoughts](/misc/night-thoughts.webp)
-
-##### To add a nice looking subtitle
-
-
-- No space between the image and the caption 
-- The caption should have an `*`, i.e be an `em` tag
-
-[Input ↓]{.dimmed}
 ```md
 ![Night Thoughts](/misc/night-thoughts.webp)
-*Night Thoughts by William Blake, Watercolor*
 ```
 
 [Output ↓]{.dimmed}
+
 ![Night Thoughts](/misc/night-thoughts.webp)
-*Night Thoughts by William Blake, Watercolor*
+
+### `::lazy-img` component
+
+The preferred way. Gives you lazy loading, blur placeholder from thumbhash, and an optional styled caption.
+
+#### Basic
+
+[Input ↓]{.dimmed}
+
+```md
+::lazy-img{src="/misc/night-thoughts.webp" alt="Night Thoughts"}
+::
+```
+
+[Output ↓]{.dimmed}
+
+::lazy-img{src="/misc/night-thoughts.webp" alt="Night Thoughts"}
+::
+
+#### With a caption
+
+Use the `desc` prop. Since it renders with `v-html`, you can include HTML: `<a>`, `<strong>`, `<code>`.
+
+[Input ↓]{.dimmed}
+
+```md
+::lazy-img{src="/misc/night-thoughts.webp" alt="Night Thoughts" desc="Night Thoughts by William Blake, Watercolor"}
+::
+```
+
+[Output ↓]{.dimmed}
+
+::lazy-img{src="/misc/night-thoughts.webp" alt="Night Thoughts" desc="Night Thoughts by William Blake, Watercolor"}
+::
 
 ## Links
 
