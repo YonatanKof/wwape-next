@@ -85,6 +85,9 @@ const { open, close } = useModal({
 
 <style lang="scss" scoped>
 span {
+	display: block;
+	margin-block-start: var(--space-s);
+	margin-block-end: var(--space-2xs);
 	@media (width <= $display-width-xs) {
 		display: v-bind(hideOnMobile);
 	}

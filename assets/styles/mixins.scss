@@ -34,21 +34,21 @@
 	color: var(--color-sys-slight);
 	font-size: var(--step--1);
 	margin-inline-start: calc(var(--space-2xs) * 1.5);
+	margin-inline-start: var(--space-s);
 	display: inline-block;
-	margin-block: var(--space-xs);
+	margin-block: var(--space-s);
 	position: relative;
-	margin-block-end: 1.5em;
 	line-height: 1.35;
 	font-variation-settings: "wght" 300, "ital" 1, "SPAC" 5;
 	&::before {
 		content: '';
 		display: inline-block;
-		width: calc(var(--space-4xs) * 0.75);
+		width: calc(var(--space-3xs) * 0.75);
+		width: var(--space-4xs);
 		height: 100%;
 		background-color: var(--color-sys-dim);
 		position: absolute;
-		inset-inline-start: calc(var(--space-xs) * -1);
+		inset-inline-start: calc(var(--space-s) * -1);
 		border-radius: var(--border-radius-xs);
-
 	}
 }
