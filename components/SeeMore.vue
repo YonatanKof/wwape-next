@@ -38,8 +38,8 @@ defineProps({
 
 <style lang="scss" scoped>
 .more {
-	display: flex;
-	flex-direction: row;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 	gap: var(--space-s);
 }
 .item {
