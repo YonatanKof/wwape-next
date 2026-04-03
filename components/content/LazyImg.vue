@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import { withTrailingSlash, withLeadingSlash, joinURL } from 'ufo';
 import { useRuntimeConfig, computed } from '#imports';
-import { ModalsContainer, useModal } from 'vue-final-modal';
+import { useModal } from 'vue-final-modal';
 import Modal from '~/components/FullScreenModal.vue';
+import thumbhashMap from '~/assets/data/thumbhashes.json';
 
 const props = defineProps({
 	src: {
@@ -44,6 +45,17 @@ const refinedSrc = computed(() => {
 	}
 	return props.src;
 });
+
+type ThumbhashEntry = { hash: string; width: number; height: number };
+const map = thumbhashMap as Record<string, ThumbhashEntry>;
+
+const resolvedThumbhash = computed(() => props.thumbhash ?? map[props.src ?? '']?.hash ?? undefined);
+
+const resolvedPlaceholderRatio = computed(() => {
+	const entry = map[props.src ?? ''];
+	return entry ? entry.width / entry.height : undefined;
+});
+
 const { open, close } = useModal({
 	component: Modal,
 	attrs: {
@@ -58,7 +70,15 @@ const { open, close } = useModal({
 </script>
 <template>
 	<span class="lazy-img" @click="open" @keyup.enter="open">
-		<UnLazyImage :thumbhash="thumbhash" :src="refinedSrc" :alt="alt" :width="width" :height="height" auto-sizes />
+		<UnLazyImage
+			:thumbhash="resolvedThumbhash"
+			:src="refinedSrc"
+			:alt="alt"
+			:width="width"
+			:height="height"
+			:style="resolvedPlaceholderRatio ? { aspectRatio: resolvedPlaceholderRatio } : undefined"
+			auto-sizes
+		/>
 		<em v-if="desc" v-html="desc"></em>
 	</span>
 </template>

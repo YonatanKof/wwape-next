@@ -1,4 +1,18 @@
 <script setup>
+import thumbhashMap from '~/assets/data/thumbhashes.json';
+
+function coverHash(src) {
+	return thumbhashMap[src]?.hash ?? undefined;
+}
+function coverHeight(src, fallback) {
+	return thumbhashMap[src]?.height ?? fallback;
+}
+function coverRatio(src) {
+	const entry = thumbhashMap[src];
+	if (!entry) return undefined;
+	return entry.width / entry.height;
+}
+
 const props = defineProps({
 	designData: {
 		type: Array,
@@ -52,11 +66,12 @@ const { $formatDate } = useNuxtApp();
 					<p v-if="item.description && showDesc" v-html="item.description"></p>
 				</div>
 				<UnLazyImage
-					:thumbhash="item.cover_image_thumbhash"
+					:thumbhash="coverHash(item.cover_image)"
 					:src="item.cover_image"
 					:alt="item.image_alt"
 					width="1000"
-					:height="item.cover_image_height"
+					:height="coverHeight(item.cover_image, item.cover_image_height)"
+					:style="coverRatio(item.cover_image) ? { aspectRatio: coverRatio(item.cover_image) } : undefined"
 				/>
 			</NuxtLink>
 

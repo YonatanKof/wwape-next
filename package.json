@@ -6,7 +6,8 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "thumbhash": "node scripts/generate-thumbhashes.mjs"
   },
   "devDependencies": {
     "@nuxt/content": "npm:@nuxt/content-edge@latest",
@@ -18,7 +19,9 @@
     "@vueuse/nuxt": "^10.11.0",
     "nuxt": "^3.12.3",
     "nuxt-clarity-analytics": "^0.0.6",
-    "sass": "^1.66.1"
+    "sass": "^1.66.1",
+    "sharp": "^0.34.5",
+    "thumbhash": "^0.1.1"
   },
   "dependencies": {
     "@nuxt/ui": "^2.22.3",
