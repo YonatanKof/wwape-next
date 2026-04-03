@@ -12,6 +12,7 @@ description: 'The city is working at it, all day long'
 tags: ['Creative']
 ---
 
-The city is working it all day through – A collage of crane and construction sites
+The city is working it all day through
 
 ![A collage of crane and construction sites](/designs/constructed-safety/constructed-safety.webp)
+*A collage of crane and construction sites*

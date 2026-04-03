@@ -12,6 +12,7 @@ description: "Turn on the bright lights"
 tags: ['Creative']
 ---
 
-Turn on the bright lights – A collage of light poles at sunset near the beach
+Turn on the bright lights
 
 ![A collage of light poles at sunset near the beach](/designs/surrender-at-sunset/surrender-at-sunset.webp)
+*A collage of light poles at sunset near the beach*

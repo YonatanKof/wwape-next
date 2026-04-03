@@ -11,7 +11,7 @@ image_alt: 'A collage image of Cupid & Psyche'
 description: 'We looked for them all night long but we found something different'
 tags: ['Creative', 'Skull']
 ---
-{{ $doc.description }} – An housewarming gift for the beloved **SwisRing** family 
+{{ $doc.description }}
 
-::lazy-img{src="/designs/cupid-and-pyche/cupid-and-pyche.webp" thumbhash="DxgKFQQId3aJB5iHiHdodwiEhFAo" alt="A collage image of Cupid & Psyche"}
+::lazy-img{src="/designs/cupid-and-pyche/cupid-and-pyche.webp" thumbhash="DxgKFQQId3aJB5iHiHdodwiEhFAo" alt="A collage image of Cupid & Psyche" desc="An housewarming gift for the beloved <strong>SwisRing</strong> family"}
 ::

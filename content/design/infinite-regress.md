@@ -14,13 +14,12 @@ tags: ['Creative']
 
 {{ $doc.description }}
 
-::GridBlockTwo{frOne="2fr"}
+::GridBlockTwo
 :::GridUnit
 ::::lazy-img{src="/designs/boxed/boxed-dark.webp" thumbhash="0wcSBwAnSIhphpiAelmYd4iYdj+2CJwE" alt="A black and white woodblock with a surrounding pattern of circles" desc="Dark version"}
 ::::
 :::
 :::GridUnit
-But as he said, if you're thinking about my baby, it don't matter if you're black or white
 ::::lazy-img{src="/designs/boxed/boxed.webp" thumbhash="9wcKBwD3eYeLdWiMdSi42Ehnhl35FmwA" alt="A black and white woodblock with a surrounding pattern of circles" desc="Bright version"}
 ::::
 :::

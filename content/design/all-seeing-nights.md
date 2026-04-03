@@ -12,6 +12,7 @@ description: "Polluting the night skys"
 tags: ['Creative']
 ---
 
-Polluting the night skys – A collage of lights poles and a megaphone
+Polluting the night skys
 
 ![A collage of lights poles and a megaphone](/designs/all-seeing-nights/all-seeing-nights.webp)
+*A collage of lights poles and a megaphone*

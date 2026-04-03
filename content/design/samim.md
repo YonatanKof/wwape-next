@@ -12,7 +12,7 @@ description: "This is the verb for 'put' form Heb to Eng"
 tags: ['Creative']
 ---
 
-Archival stuff here
+Archival stuff here – Being a slightly unhinged, quite stoned young person, can lead to this unkind results.
 
 ![SamimSF](/designs/samim/samim-Face.webp)
 
