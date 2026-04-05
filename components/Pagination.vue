@@ -1,11 +1,7 @@
 <template>
 	<div v-if="totalPages > 1" class="pagination-list text-typography_primary">
 		<!-- Prev -->
-		<nuxt-link
-			v-if="showPrev"
-			class="pagination-item"
-			:to="prevLink"
-		>
+		<nuxt-link @click="haptic" v-if="showPrev" class="pagination-item" :to="prevLink">
 			<Chevron class="pagination-icon" />
 		</nuxt-link>
 
@@ -13,6 +9,7 @@
 			<span v-if="item === 'ellipsis'" class="pagination-extra">…</span>
 
 			<nuxt-link
+				@click="haptic"
 				v-else
 				:class="['pagination-item', item === currentPage ? 'active' : '']"
 				:to="item === 1 ? baseUrl : getPageUrl(item)"
@@ -22,11 +19,7 @@
 		</template>
 
 		<!-- Next -->
-		<nuxt-link
-			v-if="showNext"
-			class="pagination-item"
-			:to="getPageUrl(currentPage + 1)"
-		>
+		<nuxt-link @click="haptic" v-if="showNext" class="pagination-item" :to="getPageUrl(currentPage + 1)">
 			<Chevron class="pagination-icon flip" />
 		</nuxt-link>
 	</div>
@@ -34,6 +27,9 @@
 
 <script setup>
 import { computed } from 'vue';
+import { useWebHaptics } from 'web-haptics/vue';
+const { trigger } = useWebHaptics();
+const haptic = () => trigger([{ duration: 50 }], { intensity: 1 });
 
 const props = defineProps({
 	currentPage: { type: Number, required: true },
@@ -47,9 +43,7 @@ const getPageUrl = (pageNo) => `${props.pageUrl}${pageNo}/`;
 const showPrev = computed(() => props.totalPages >= 4 && props.currentPage > 1);
 const showNext = computed(() => props.totalPages >= 4 && props.currentPage < props.totalPages);
 
-const prevLink = computed(() =>
-	props.currentPage === 2 ? props.baseUrl : getPageUrl(props.currentPage - 1)
-);
+const prevLink = computed(() => (props.currentPage === 2 ? props.baseUrl : getPageUrl(props.currentPage - 1)));
 
 const items = computed(() => {
 	const n = props.totalPages;

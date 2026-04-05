@@ -1,20 +1,27 @@
 <script setup>
 const config = useRuntimeConfig();
+import { useWebHaptics } from 'web-haptics/vue';
+const { trigger } = useWebHaptics();
+const haptic = () => trigger([{ duration: 50 }], { intensity: 1 });
 </script>
 <template>
 	<footer class="footer">
 		<p class="links">
-			<nuxt-link href="//github.com/yonatankof" target="_blank" rel="nofollow noopener noreferrer">GitHub</nuxt-link>
-			<nuxt-link href="//linkedin.com/in/yonatankof" target="_blank" rel="nofollow noopener noreferrer"
+			<nuxt-link @click="haptic" href="//github.com/yonatankof" target="_blank" rel="nofollow noopener noreferrer"
+				>GitHub</nuxt-link
+			>
+			<nuxt-link @click="haptic" href="//linkedin.com/in/yonatankof" target="_blank" rel="nofollow noopener noreferrer"
 				>Linkedin</nuxt-link
 			>
-			<nuxt-link href="//dribbble.com/yonatan_kof" target="_blank" rel="nofollow noopener noreferrer"
+			<nuxt-link @click="haptic" href="//dribbble.com/yonatan_kof" target="_blank" rel="nofollow noopener noreferrer"
 				>Dribbble</nuxt-link
 			>
-			<nuxt-link href="//instagram.com/yonatan_kof/" target="_blank" rel="nofollow noopener noreferrer"
+			<nuxt-link @click="haptic" href="//instagram.com/yonatan_kof/" target="_blank" rel="nofollow noopener noreferrer"
 				>Instagram</nuxt-link
 			>
-			<nuxt-link :to="{ name: 'music' }" aria-label="Goto Playlists and Mixes page">Mixed Music</nuxt-link>
+			<nuxt-link @click="haptic" :to="{ name: 'music' }" aria-label="Goto Playlists and Mixes page"
+				>Mixed Music</nuxt-link
+			>
 		</p>
 		<span class="footer__copyright">
 			<p>

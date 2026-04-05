@@ -1,5 +1,9 @@
 <script setup lang="ts">
 const config = useRuntimeConfig();
+import { useWebHaptics } from 'web-haptics/vue';
+const { trigger } = useWebHaptics();
+const haptic = () => trigger([{ duration: 50 }], { intensity: 1 });
+
 defineProps({
 	isSimple: {
 		type: Boolean,
@@ -9,18 +13,18 @@ defineProps({
 </script>
 <template>
 	<header>
-		<nuxt-link class="home-link" :to="{ name: 'index' }" title="Go to Homepage" aria-label="Go to Homepage">
+		<nuxt-link @click="haptic" class="home-link" :to="{ name: 'index' }" title="Go to Homepage" aria-label="Go to Homepage">
 			<ScriptKofLogo class="kof-logo" />
 		</nuxt-link>
 		<div>
 			<nav v-show="isSimple">
-				<nuxt-link :to="{ name: 'index' }">Visit WWape</nuxt-link>
+				<nuxt-link @click="haptic"  :to="{ name: 'index' }">Visit WWape</nuxt-link>
 			</nav>
 			<nav v-show="!isSimple">
-			<nuxt-link :to="{ name: 'index' }" :aria-label="`Go to ${config.public.siteName} home page`">WWApe</nuxt-link>
-				<nuxt-link :to="{ name: 'design' }" aria-label="Go to design page">Designs</nuxt-link>
-				<nuxt-link :to="{ name: 'post' }" aria-label="Go to Post page">Posts</nuxt-link>
-				<nuxt-link :to="{ name: 'work' }">Work</nuxt-link>
+				<nuxt-link @click="haptic"  :to="{ name: 'index' }" :aria-label="`Go to ${config.public.siteName} home page`">WWApe</nuxt-link>
+				<nuxt-link @click="haptic"  :to="{ name: 'design' }" aria-label="Go to design page">Designs</nuxt-link>
+				<nuxt-link @click="haptic"  :to="{ name: 'post' }" aria-label="Go to Post page">Posts</nuxt-link>
+				<nuxt-link @click="haptic"  :to="{ name: 'work' }">Work</nuxt-link>
 			</nav>
 			<!-- <ColorModeSwitch /> -->
 		</div>
@@ -35,7 +39,9 @@ defineProps({
 	width: var(--space-2xl);
 	height: var(--space-2xl);
 	margin-inline-end: var(--space-2xs);
-	transition: filter 0.35s ease-in-out, transform 0.25s ease-in-out;
+	transition:
+		filter 0.35s ease-in-out,
+		transform 0.25s ease-in-out;
 	filter: drop-shadow(0.075em 0.075em 0.2em var(--color-black-dim));
 
 	&:hover {

@@ -1,4 +1,8 @@
 <script setup>
+import { useWebHaptics } from 'web-haptics/vue';
+const { trigger } = useWebHaptics();
+const haptic = () => trigger([{ duration: 35 }], { intensity: 1 });
+
 defineProps({
 	prev: {
 		type: Object,
@@ -16,19 +20,19 @@ defineProps({
 		<h3 id="title">See More</h3>
 		<hr />
 		<nav class="more">
-			<nuxt-link class="item" v-if="prev" :to="prev?._path">
+			<nuxt-link @click="haptic" class="item" v-if="prev" :to="prev?._path">
 				<h6 id="" class="item-content"><span>Back:</span> {{ prev.title }}</h6>
 				<img :src="prev?.social_image" :alt="prev?.image_alt" />
 			</nuxt-link>
-			<nuxt-link v-else class="item">
+			<nuxt-link @click="haptic" v-else class="item">
 				<h6 id="" class="item-content">No previous items</h6>
 				<img src="/no-prev-next.webp" alt="An image for no previous items" />
 			</nuxt-link>
-			<nuxt-link class="item" v-if="next" :to="next?._path">
+			<nuxt-link @click="haptic" class="item" v-if="next" :to="next?._path">
 				<h6 id="" class="item-content"><span>Next:</span> {{ next.title }}</h6>
 				<img :src="next?.social_image" :alt="next?.image_alt" />
 			</nuxt-link>
-			<nuxt-link v-else class="item">
+			<nuxt-link @click="haptic" v-else class="item">
 				<h6 id="" class="item-content">No next items</h6>
 				<img src="/no-prev-next.webp" alt="An image for no next items" />
 			</nuxt-link>

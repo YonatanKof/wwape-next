@@ -1,5 +1,7 @@
 <script setup>
 import thumbhashMap from '~/assets/data/thumbhashes.json';
+import { useWebHaptics } from 'web-haptics/vue';
+const { trigger } = useWebHaptics();
 
 function coverHash(src) {
 	return thumbhashMap[src]?.hash ?? undefined;
@@ -59,7 +61,7 @@ const { $formatDate } = useNuxtApp();
 		:max-columns="masonryMaxColumns"
 	>
 		<template #default="{ item, index }" :key="index">
-			<NuxtLink class="item" v-if="item._path" :to="item._path + '/'">
+			<NuxtLink @click="trigger([{ duration: 50 }], { intensity: 1 })" class="item" v-if="item._path" :to="item._path + '/'">
 				<div class="item-content">
 					<h3 id="title">{{ item.title }}</h3>
 					<p v-if="showDate" id="mata-data">{{ $formatDate(item.date) }}</p>
