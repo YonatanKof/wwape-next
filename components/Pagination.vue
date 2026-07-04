@@ -74,7 +74,7 @@ a {
 	justify-content: center;
 	align-items: center;
 	gap: var(--space-3xs);
-	margin-block-end: var(--space-s);
+	margin-block-start: var(--space-l);
 }
 .pagination-item {
 	display: flex;

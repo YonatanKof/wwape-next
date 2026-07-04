@@ -4,12 +4,15 @@
 const { path } = useRoute();
 const cleanPath = path.replace(/\/+$/, '');
 // For the previous & next items
-const [prev, next] = await queryContent('/post')
-	.only(['_path', 'title', 'social_image'])
-	.sort({ date: -1 })
-	.findSurround(cleanPath);
+const { data: surround } = await useContentData(`post-surround-${cleanPath}`, () =>
+	queryContent('/post')
+		.only(['_path', 'title', 'social_image'])
+		.sort({ date: -1 })
+		.findSurround(cleanPath),
+);
+const [prev, next] = surround.value ?? [null, null];
 // Data for the meta tags ↓
-const { data, error } = await useAsyncData(cleanPath, async () => {
+const { data, error } = await useContentData(cleanPath, async () => {
 	// Remove a trailing slash in case the browser adds it, it might break the routing
 	// fetch document where the document path matches with the current route
 	let article = queryContent('/post').where({ _path: cleanPath }).findOne();

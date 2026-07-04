@@ -49,7 +49,7 @@ footer {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-block-end: var(--space-m);
+	padding-block: var(--space-l);
 	gap: var(--space-2xs);
 	@media print {
 		display: none !important;

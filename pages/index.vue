@@ -2,7 +2,7 @@
 const nuxtApp = useNuxtApp();
 nuxtApp.$pageMetaTags();
 
-const { data: design } = await useAsyncData('design-random', async () => {
+const { data: design } = await useContentData('design-random', async () => {
 	const all = await queryContent('design')
 		.only(['title', 'cover_image', 'cover_image_thumbhash', 'cover_image_height', 'image_alt'])
 		.find();
@@ -14,7 +14,7 @@ const { data: design } = await useAsyncData('design-random', async () => {
 		.slice(0, 6);
 });
 
-const { data: post } = await useAsyncData('post-date', () => {
+const { data: post } = await useContentData('post-date', () => {
 	return queryContent('post')
 		.limit(4)
 		.only(['title', 'cover_image', 'cover_image_thumbhash', 'cover_image_height', 'image_alt'])
@@ -23,7 +23,7 @@ const { data: post } = await useAsyncData('post-date', () => {
 		.find();
 });
 
-const { data: work } = await useAsyncData('work-date', () => {
+const { data: work } = await useContentData('work-date', () => {
 	return queryContent('work')
 		.limit(2)
 		.only(['title', 'cover_image', 'cover_image_thumbhash', 'cover_image_height', 'image_alt'])
@@ -37,12 +37,13 @@ const { data: work } = await useAsyncData('work-date', () => {
 		<IntroText
 			:is-on="true"
 			title="World Wide Ape"
-			text="I’m <i>Yonatan Ben Knaan</i>, a graphic designer and an alright dude from <i>Tel Aviv</i>, the cultural capital of the flaming <i>middle east</i>."
+			text="I’m <i>Yonatan Ben Knaan</i>, a graphic designer and an alright dude from <i>Tel Aviv</i>, the cultural capital of the flaming middle east."
 		/>
 		<section class="bento">
 			<Carousel
 				isLink
 				withTitle
+				priority
 				link-to="design"
 				class="block-design"
 				:content-data="design"
@@ -78,9 +79,8 @@ const { data: work } = await useAsyncData('work-date', () => {
 .bento {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: auto var(--space-6xl) 1fr;
-	padding-block-start: var(--space-xl);
-	padding-block-end: var(--space-2xl);
+	grid-template-rows: auto var(--space-7xl) 1fr;
+	padding-block: var(--space-xl);
 	max-width: var(--display-width-sm);
 	@media (width <= 608px) {
 		grid-template-columns: repeat(9, 1fr);
