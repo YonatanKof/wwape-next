@@ -8,7 +8,7 @@ nuxtApp.$pageMetaTags({
 	metaImg: '/images/posts-social.jpg',
 	metaImgAlt: 'Social cover for this site posts page',
 });
-const { data } = await useAsyncData('equal', () => {
+const { data } = await useContentData('post-list', () => {
 	return queryContent('post').sort({ date: -1 }).where({}).find();
 });
 </script>

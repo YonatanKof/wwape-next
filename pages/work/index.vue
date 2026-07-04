@@ -8,7 +8,7 @@ nuxtApp.$pageMetaTags({
 	metaImg: '/images/work-social.jpg',
 	metaImgAlt: 'Social cover for this site work page',
 });
-const { data } = await useAsyncData('equal', () => {
+const { data } = await useContentData('work-list', () => {
 	return queryContent('work').sort({ date: -1 }).where({}).find();
 });
 </script>

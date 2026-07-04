@@ -4,7 +4,7 @@ const { path } = useRoute();
 const { toc } = useContent();
 const cleanPath = path.replace(/\/+$/, '');
 
-const { data, error } = await useAsyncData(cleanPath, async () => {
+const { data, error } = await useContentData(cleanPath, async () => {
 	// Remove a trailing slash in case the browser adds it, it might break the routing
 	// fetch document where the document path matches with the current route
 	let article = queryContent('/work').where({ _path: cleanPath }).findOne();

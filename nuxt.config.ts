@@ -16,7 +16,7 @@ export default defineNuxtConfig({
 		'/hunt/**': { redirect: '/work/**' },
 	},
 	content: {
-		documentDriven: true,
+		documentDriven: false,
 		highlight: {
 			langs: ['json', 'js', 'ts', 'html', 'css', 'scss', 'vue', 'shell', 'mdc', 'md', 'yaml'],
 			// Theme used in all color schemes.

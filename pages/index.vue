@@ -2,7 +2,7 @@
 const nuxtApp = useNuxtApp();
 nuxtApp.$pageMetaTags();
 
-const { data: design } = await useAsyncData('design-random', async () => {
+const { data: design } = await useContentData('design-random', async () => {
 	const all = await queryContent('design')
 		.only(['title', 'cover_image', 'cover_image_thumbhash', 'cover_image_height', 'image_alt'])
 		.find();
@@ -14,7 +14,7 @@ const { data: design } = await useAsyncData('design-random', async () => {
 		.slice(0, 6);
 });
 
-const { data: post } = await useAsyncData('post-date', () => {
+const { data: post } = await useContentData('post-date', () => {
 	return queryContent('post')
 		.limit(4)
 		.only(['title', 'cover_image', 'cover_image_thumbhash', 'cover_image_height', 'image_alt'])
@@ -23,7 +23,7 @@ const { data: post } = await useAsyncData('post-date', () => {
 		.find();
 });
 
-const { data: work } = await useAsyncData('work-date', () => {
+const { data: work } = await useContentData('work-date', () => {
 	return queryContent('work')
 		.limit(2)
 		.only(['title', 'cover_image', 'cover_image_thumbhash', 'cover_image_height', 'image_alt'])
