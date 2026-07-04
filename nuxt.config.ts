@@ -17,7 +17,6 @@ export default defineNuxtConfig({
 	},
 	content: {
 		documentDriven: true,
-		toc: true,
 		highlight: {
 			langs: ['json', 'js', 'ts', 'html', 'css', 'scss', 'vue', 'shell', 'mdc', 'md', 'yaml'],
 			// Theme used in all color schemes.
@@ -33,6 +32,10 @@ export default defineNuxtConfig({
 			},
 		},
 		markdown: {
+			toc: {
+				depth: 3,
+				searchDepth: 3,
+			},
 			anchorLinks: {
 				depth: 6,
 			},
