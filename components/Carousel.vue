@@ -115,14 +115,14 @@ const priorityPlaceholder = computed(() => {
 	// vue3-carousel
 	--vc-pgn-active-color: var(--color-sys-main);
 	--vc-pgn-background-color: var(--color-sys-dim);
-	--vc-pgn-border-radius: var(--border-radius-md);
+	--vc-pgn-border-radius: var(--border-radius-sm);
 	--vc-pgn-height: calc(0.75 * var(--space-2xs));
 	--vc-pgn-width: calc(0.75 * var(--space-2xs));
 	--vc-pgn-gap: calc(0.75 * var(--space-2xs));
 	--vc-png-bottom: var(--space-2xs);
 	box-shadow: var(--shadow-lg-stronger);
 	aspect-ratio: v-bind(aspectRatio);
-	border-radius: var(--space-m);
+	border-radius: var(--border-radius-sm);
 	corner-shape: superellipse(2);
 	overflow: hidden;
 	button {
@@ -140,7 +140,7 @@ const priorityPlaceholder = computed(() => {
 		inset: 0;
 		background-color: var(--color-sys-none);
 		transition: background-color ease-in-out 250ms;
-		border-radius: var(--space-m);
+		border-radius: var(--border-radius-sm);
 		corner-shape: superellipse(2);
 	}
 	&:hover {
