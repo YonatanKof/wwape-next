@@ -43,6 +43,7 @@ const { data: work } = await useAsyncData('work-date', () => {
 			<Carousel
 				isLink
 				withTitle
+				priority
 				link-to="design"
 				class="block-design"
 				:content-data="design"

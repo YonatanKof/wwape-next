@@ -1,6 +1,11 @@
 <script setup lang="ts">
 import 'vue3-carousel/carousel.css';
 import { Carousel, Slide, Pagination } from 'vue3-carousel';
+import { thumbHashToDataURL } from 'thumbhash';
+import thumbhashMap from '~/assets/data/thumbhashes.json';
+
+type ThumbhashEntry = { hash: string; width: number; height: number };
+const hashMap = thumbhashMap as Record<string, ThumbhashEntry>;
 
 const props = withDefaults(
 	defineProps<{
@@ -17,6 +22,7 @@ const props = withDefaults(
 		readonly isLink: boolean;
 		readonly aspectRatio: string;
 		readonly withTitle: boolean;
+		readonly priority?: boolean;
 	}>(),
 	{
 		duration: 2500,
@@ -24,6 +30,7 @@ const props = withDefaults(
 		aspectRatio: '1',
 		linkToDisplayText: 'Go the this page',
 		withTitle: false,
+		priority: false,
 	}
 );
 
@@ -34,6 +41,30 @@ const carouselConfig = {
 	disableOnClick: true,
 	pauseAutoplayOnHover: true,
 };
+
+function base64ToBytes(b64: string): Uint8Array {
+	const bin =
+		typeof atob !== 'undefined'
+			? atob(b64)
+			: Buffer.from(b64, 'base64').toString('binary');
+	const out = new Uint8Array(bin.length);
+	for (let i = 0; i < bin.length; i++) out[i] = bin.charCodeAt(i);
+	return out;
+}
+
+const priorityPlaceholder = computed(() => {
+	if (!props.priority) return undefined;
+	const src = props.contentData[0]?.cover_image;
+	const hash = src
+		? hashMap[src]?.hash ?? props.contentData[0]?.cover_image_thumbhash
+		: undefined;
+	if (!hash) return undefined;
+	try {
+		return thumbHashToDataURL(base64ToBytes(hash));
+	} catch {
+		return undefined;
+	}
+});
 </script>
 
 <template>
@@ -42,9 +73,30 @@ const carouselConfig = {
 		<Carousel v-bind="carouselConfig">
 			<Slide v-for="(item, index) in contentData" :key="index">
 				<h6 v-if="withTitle">{{ item.title }}</h6>
-				<UnLazyImage
+				<NuxtImg
+					v-if="priority && index === 0"
 					class="carousel-image"
-					:thumbhash="item.cover_image_thumbhash"
+					:src="item.cover_image"
+					:alt="item.image_alt"
+					width="1000"
+					:height="item.cover_image_height"
+					sizes="100vw md:55vw lg:400px"
+					format="webp"
+					quality="80"
+					loading="eager"
+					fetchpriority="high"
+					decoding="async"
+					preload
+					:style="
+						priorityPlaceholder
+							? { backgroundImage: `url(${priorityPlaceholder})`, backgroundSize: 'cover' }
+							: undefined
+					"
+				/>
+				<UnLazyImage
+					v-else
+					class="carousel-image"
+					:thumbhash="hashMap[item.cover_image]?.hash ?? item.cover_image_thumbhash"
 					:src="item.cover_image"
 					:alt="item.image_alt"
 					width="1000"
