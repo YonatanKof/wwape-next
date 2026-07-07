@@ -27,7 +27,7 @@ const props = defineProps({
 </template>
 <style lang="scss" scoped>
 h1 {
-	margin-block-end: var(--space-2xs);
+	margin-block-end: var(--space-s);
 }
 p {
 	max-width: 62ch;
@@ -37,6 +37,6 @@ p {
 	}
 }
 div {
-	margin-block-end: var(--space-m);
+	margin-block-end: var(--space-l);
 }
 </style>
