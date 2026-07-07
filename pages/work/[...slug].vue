@@ -1,7 +1,6 @@
 <!-- This is a single post -->
 <script setup>
 const { path } = useRoute();
-const { toc } = useContent();
 const cleanPath = path.replace(/\/+$/, '');
 
 const { data, error } = await useContentData(cleanPath, async () => {
@@ -45,7 +44,7 @@ function confirm() {
 		<ContentDoc>
 			<template v-slot="{ doc }">
 				<button v-if="doc.showToc === true" @click="show = true">Table of content</button>
-				<TableOfContent v-model="show" @confirm="() => confirm()" :tocData="toc" />
+				<TableOfContent v-model="show" @confirm="() => confirm()" :tocData="doc.body?.toc" />
 				<main>
 					<section id="article-header">
 						<div id="article-info">
@@ -104,6 +103,7 @@ main {
 	flex-direction: row;
 	gap: var(--space-xs);
 	align-items: center;
+	margin-block: var(--space-xs);
 }
 
 .meta-data > p,
