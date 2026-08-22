@@ -6,13 +6,13 @@ updated: '2024--08-28'
 cover_image: '/posts/md-content-types/md-content-types.webp'
 social_image: /posts/md-content-types/md-content-types.webp
 image_alt: 'Logo of the Markdown syntax'
-description: 'Just a friendly goto place for me to review all the MD types I use in this website'
+description: All the MD types I use in this website including Nuxt Content's MDC Syntax
 tags: ['dev']
 ---
 
-Hi all 👋  
+Hi all 👋 
 
-A page to review all the `Markdown` syntax I use in this `Nuxt Content` website.
+A page to review all the `Markdown` syntax I use in this [Nuxt Content](https://content.nuxt.com/docs/files/markdown) website.
 
 ::QuoteBig
 ---
@@ -70,6 +70,7 @@ How to write titles.
 
 > This is a *Blockquote*. Write `>` to use it
 
+Hello [World]{.make-it-pop}!
 
 ::gridBlock{colNum="2" gap="var(--space-m)"}
 :::grid-unit
@@ -87,6 +88,8 @@ How to write titles.
 >> The human face a furnace sealed,
 >>
 > The human heart its hungry gorge.
+
+> After their 1995 debut _Delta Aquarids_, they returned the following year with *Violent Relaxation*, and ~~Access Denied~~ followed in 1999.
 ```
 :::
 :::grid-unit
@@ -103,6 +106,12 @@ How to write titles.
 >> The human face a furnace sealed,
 >>
 > The human heart its hungry gorge.
+
+> After their 1995 debut 
+> - _Delta Aquarids_, they returned the following year 
+> - with *Violent Relaxation*, and 
+> - ~~Access Denied~~ followed in 1999.
+
 :::
 ::
 
@@ -266,7 +275,7 @@ The preferred way. Gives you lazy loading, blur placeholder from thumbhash, and 
 
 #### With a caption
 
-Use the `desc` prop. Since it renders with `v-html`, you can include HTML: `<a>`, `<strong>`, `<code>`.
+<!-- Use the `desc` prop. Since it renders with `v-html`, you can include HTML: `<a>`, `<strong>`, `<code>`. -->
 
 [Input ↓]{.dimmed}
 
@@ -297,15 +306,44 @@ Sandy hole with nothing in it to sit down on or to eat: it was a [hobbit-hole][1
 
 ## Tables
 
-| Syntax    | Description |
-| --------- | ----------- |
-| Header    | Title       |
-| Paragraph | Text        |
+Simple example of a table:
 
-| Syntax    | Description |   Test Text |
+::gridBlock{colNum="2" gap="var(--space-m)"}
+:::grid-unit
+###### [Input ↓]{.dimmed}
+```md
+| Header 1st cell    | Last header cell |
+| --------- | ----------- |
+| Row 1 Cell 1    | Row 1 Cell 2       |
+| Row 2 Cell 2 | Row 2 Cell 2        |
+```
+:::
+:::grid-unit
+###### [Output ↓]{.dimmed}
+| Header 1st cell    | Last header cell |
+| --------- | ----------- |
+| Row 1 Cell 1    | Row 1 Cell 2       |
+| Row 2 Cell 2 | Row 2 Cell 2        |
+:::
+::
+
+Example of a table with aligned cells using `:` for positioning:
+
+###### [Input ↓]{.dimmed}
+
+```md
+| Header 1st cell    | 2nd header cell |   Last header cell |
 | :-------- | :---------: | ----------: |
-| Header    |    Title    | Here's this |
-| Paragraph |    Text     |    And more |
+| 1st row | Veterans of the French dance scene | Here's this cell content |
+| 2nd row | Serge Souque, Loic Van Pouke and Stephane Holwick | And more |
+```
+
+###### [Output ↓]{.dimmed}
+
+| Header 1st cell    | 2nd header cell |   Last header cell |
+| :-------- | :---------: | ----------: |
+| 1st row | Veterans of the French dance scene | Here's this cell content |
+| 2nd row | Serge Souque, Loic Van Pouke and Stephane Holwick | And more |
 
 ## Checkbox – MIA
 

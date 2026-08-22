@@ -31,6 +31,7 @@
 	--color-brand-slight: color-mix(in hsl, var(--color-brand-main) 80%, transparent);
 	--color-brand-dim: color-mix(in hsl, var(--color-brand-main) 40%, transparent);
 	--color-brand-dis: color-mix(in hsl, var(--color-brand-main) 10%, transparent);
+	--color-brand-hardly: color-mix(in hsl, var(--color-brand-main) 5%, transparent);
 	--color-brand-none: color-mix(in hsl, var(--color-brand-main) 0%, transparent);
 
 	--color-focus-main: hsl(200, 100%, 30%);
@@ -50,38 +51,38 @@
 	--color-overlay: var(--color-black-slight);
 
 	/* prettier-ignore */
-	--shadow-sm-even: 
-		0 0 0.1rem var(--color-shadow), 
+	--shadow-sm-even:
+		0 0 0.1rem var(--color-shadow),
 		0 0 0.2rem var(--color-shadow),
 		0 0 0.3rem var(--color-shadow);
 	/* prettier-ignore */
-	--shadow-sm: 
-		0 0.1rem 0.1rem var(--color-shadow), 
+	--shadow-sm:
+		0 0.1rem 0.1rem var(--color-shadow),
 		0 0.2rem 0.2rem var(--color-shadow),
 		0 0.3rem 0.3rem var(--color-shadow);
 	/* prettier-ignore */
-	--shadow-md-even: 
-		0 0 0.2rem var(--color-shadow), 
+	--shadow-md-even:
+		0 0 0.2rem var(--color-shadow),
 		0 0 0.4rem var(--color-shadow),
 		0 0 0.8rem var(--color-shadow);
 	/* prettier-ignore */
-	--shadow-md: 
-		0 0.2rem 0.2rem var(--color-shadow), 
+	--shadow-md:
+		0 0.2rem 0.2rem var(--color-shadow),
 		0 0.4rem 0.4rem var(--color-shadow),
 		0 0.8rem 0.8rem var(--color-shadow);
 	/* prettier-ignore */
-	--shadow-lg-even: 
-		0 0 0.5rem var(--color-shadow), 
+	--shadow-lg-even:
+		0 0 0.5rem var(--color-shadow),
 		0 0 1.5rem var(--color-shadow),
 		0 0 2rem var(--color-shadow);
 	/* prettier-ignore */
-	--shadow-lg: 
-	0 0.25rem 0.5rem var(--color-shadow), 
+	--shadow-lg:
+	0 0.25rem 0.5rem var(--color-shadow),
 	0 0.75rem 1.5rem var(--color-shadow),
 	0 1rem 2rem var(--color-shadow);
 	/* prettier-ignore */
-	--shadow-lg-stronger: 
-		0 0.25rem 0.5rem var(--color-black-dis), 
+	--shadow-lg-stronger:
+		0 0.25rem 0.5rem var(--color-black-dis),
 		0 0.75rem 1.5rem var(--color-shadow),
 		0 1.25rem 2rem var(--color-shadow);
 
@@ -92,6 +93,7 @@
 body {
 	background-color: var(--color-sys-invert-main);
 	color: var(--color-sys-main);
+	contain: layout;
 }
 
 img {

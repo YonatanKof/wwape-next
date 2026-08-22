@@ -1,13 +1,17 @@
 @font-face {
 	font-family: 'RecVar';
-	font-variation-settings: 'CRSV' 0, 'wght' 400;
+	font-variation-settings:
+		'CRSV' 0,
+		'wght' 400;
 	src: url('~/assets/fonts/Recursive_VF_1.085--subset_range_english_basic.woff2') format('woff2');
 	unicode-range: U+0020-007F, U+00A9, U+2190-2193, U+2018, U+2019, U+201C, U+201D, U+2022;
 	font-display: swap;
 }
 @font-face {
 	font-family: 'ShantellSans';
-	font-variation-settings: 'INFM' 50, 'wght' 500;
+	font-variation-settings:
+		'INFM' 50,
+		'wght' 500;
 	src: url('~/assets/fonts/ShantellSans[BNCE,INFM,SPAC,ital,wght].woff2') format('woff2');
 	font-display: swap;
 }
@@ -56,11 +60,19 @@ h5,
 h6 {
 	line-height: 1.125;
 	font-family: var(--font-hand);
-	font-variation-settings: 'INFM' 100, 'wght' 500, 'BNCE' 25, 'ital' 1;
+	font-variation-settings:
+		'INFM' 100,
+		'wght' 500,
+		'BNCE' 25,
+		'ital' 1;
 	transition: font-variation-settings 0.5s ease-in-out 0s;
 	text-wrap: balance;
 	&:hover {
-		font-variation-settings: 'INFM' 50, 'wght' 500, 'BNCE' 25, 'ital' 1;
+		font-variation-settings:
+			'INFM' 50,
+			'wght' 500,
+			'BNCE' 25,
+			'ital' 1;
 	}
 }
 blockquote {
@@ -107,7 +119,10 @@ blockquote {
 	li::marker {
 		color: var(--color-sys-slight);
 		font-family: var(--font-hand);
-		font-variation-settings: 'INFM' 100, 'wght' 444, 'ital' 1;
+		font-variation-settings:
+			'INFM' 100,
+			'wght' 444,
+			'ital' 1;
 	}
 	ul > li::marker {
 		content: '• ';
@@ -200,14 +215,22 @@ sup {
 		border-bottom: $none-ul;
 	}
 	font-family: var(--font-mono);
-	font-variation-settings: 'slnt' -15, 'wght' 400, 'CRSV' 0;
+	font-variation-settings:
+		'slnt' -15,
+		'wght' 400,
+		'CRSV' 0;
 	font-style: normal;
-	transition: font-variation-settings 0.25s ease-in-out, border-color 0.25s ease-in-out;
+	transition:
+		font-variation-settings 0.25s ease-in-out,
+		border-color 0.25s ease-in-out;
 	color: var(--color-brand-main);
 	text-decoration: none;
 	letter-spacing: 0.01em;
 	&:hover {
-		font-variation-settings: 'slnt' -7, 'wght' 600, 'CRSV' 0;
+		font-variation-settings:
+			'slnt' -7,
+			'wght' 600,
+			'CRSV' 0;
 		border-color: var(--color-brand-slight);
 	}
 }
@@ -226,9 +249,15 @@ a,
 }
 .router-link-active {
 	border-color: var(--color-brand-dim);
-	font-variation-settings: 'slnt' -15, 'wght' 725, 'CRSV' 0;
+	font-variation-settings:
+		'slnt' -15,
+		'wght' 725,
+		'CRSV' 0;
 	&:hover {
-		font-variation-settings: 'slnt' 0, 'wght' 800, 'CRSV' 0;
+		font-variation-settings:
+			'slnt' 0,
+			'wght' 800,
+			'CRSV' 0;
 	}
 }
 :is(h1, h2, h3, h4, h5, h6, code) a {
@@ -236,7 +265,10 @@ a,
 	text-decoration: inherit;
 	font-family: inherit;
 	border: unset;
-	font-variation-settings: 'INFM' 50, 'wght' 500, 'BNCE' 0;
+	font-variation-settings:
+		'INFM' 50,
+		'wght' 500,
+		'BNCE' 0;
 	&:before {
 		font-variation-settings: 'wght' 300;
 		color: var(--color-sys-slight);
@@ -247,14 +279,19 @@ a,
 		opacity: 0;
 		width: 1.25em;
 		transform: scale(0.75) translateX(-0.25em);
-		transition: opacity 0.25s ease-in-out, transform 0.35s ease-in-out;
+		transition:
+			opacity 0.25s ease-in-out,
+			transform 0.35s ease-in-out;
 	}
 	&:hover::before {
 		transform: scale(1) translateX(0);
 		opacity: 1;
 	}
 	&:hover {
-		font-variation-settings: 'INFM' 100, 'wght' 600, 'BNCE' 50;
+		font-variation-settings:
+			'INFM' 100,
+			'wght' 600,
+			'BNCE' 50;
 		border: unset;
 	}
 }
@@ -285,12 +322,13 @@ code,
 pre {
 	font-family: var(--font-mono);
 	word-spacing: normal;
-	word-break: break-word;
+	word-break: normal;
+	white-space: break-spaces;
 	word-wrap: anywhere;
 }
 
 pre code {
-	white-space: pre;
+	white-space: normal;
 	background-color: unset;
 	padding: unset;
 	border-radius: unset;

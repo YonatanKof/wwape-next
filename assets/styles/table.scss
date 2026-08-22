@@ -7,17 +7,35 @@ table {
     overflow: hidden;
     box-shadow: var(--shadow-sm);
 
+
 }
+
 thead {
-    background-color: var(--color-brand-dis);
+    background-color: var(--color-brand-hardly);
     font-family: var(--font-hand);
     font-variation-settings: 'wght' 600, 'ital' 1;
 
 }
+
 th,
 td {
+    text-align: start;
+    font-family: var(--font-body);
     padding: var(--space-s);
+
+    &[align='left'] {
+        text-align: left;
+    }
+
+    &[align='center'] {
+        text-align: center;
+    }
+
+    &[align='right'] {
+        text-align: right;
+    }
 }
+
 tr:nth-child(even) {
-    background-color: var(--color-brand-dis);
+    background-color: var(--color-brand-hardly);
 }
