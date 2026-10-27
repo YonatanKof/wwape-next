@@ -11,7 +11,38 @@ export default defineNuxtConfig({
 		'nuxt-clarity-analytics',
 		'@nuxt/image',
 		`@nuxtjs/color-mode`,
+		// Robots before sitemap so disallowed routes are left out of the sitemap.
+		'@nuxtjs/robots',
+		'@nuxtjs/sitemap',
 	],
+	// Always the production origin. Canonical tags still read DEPLOY_PRIME_URL.
+	site: {
+		url: 'https://wwape.com',
+		name: 'WWApe',
+	},
+	robots: {
+		// pages/temp is unpublished, except the public CV at /temp/cv.
+		allow: ['/temp/cv'],
+		disallow: ['/temp'],
+		metaTag: false,
+		robotsEnabledValue: 'index, follow',
+	},
+	sitemap: {
+		// Content paths match the public routes. documentDriven stays off.
+		strictNuxtContentPaths: true,
+		discoverImages: false,
+		discoverVideos: false,
+		// Prerendered into dist/. Skip the runtime cache so Netlify does not
+		// route /sitemap.xml through a builder function.
+		cacheMaxAgeSeconds: false,
+		runtimeCacheStorage: false,
+		sources: ['/api/sitemap-urls'],
+	},
+	nitro: {
+		prerender: {
+			routes: ['/robots.txt', '/sitemap.xml'],
+		},
+	},
 	routeRules: {
 		'/hunt/**': { redirect: '/work/**' },
 	},
