@@ -3,14 +3,6 @@
 // const { toc } = useContent();
 const { path } = useRoute();
 const cleanPath = path.replace(/\/+$/, '');
-// For the previous & next items
-const { data: surround } = await useContentData(`post-surround-${cleanPath}`, () =>
-	queryContent('/post')
-		.only(['_path', 'title', 'social_image'])
-		.sort({ date: -1 })
-		.findSurround(cleanPath),
-);
-const [prev, next] = surround.value ?? [null, null];
 // Data for the meta tags ↓
 const { data, error } = await useContentData(cleanPath, async () => {
 	// Remove a trailing slash in case the browser adds it, it might break the routing
@@ -20,6 +12,15 @@ const { data, error } = await useContentData(cleanPath, async () => {
 		article: await article,
 	};
 });
+if (!data.value?.article) throwPageNotFound(error.value);
+// For the previous & next items
+const { data: surround } = await useContentData(`post-surround-${cleanPath}`, () =>
+	queryContent('/post')
+		.only(['_path', 'title', 'social_image'])
+		.sort({ date: -1 })
+		.findSurround(cleanPath),
+);
+const [prev, next] = surround.value ?? [null, null];
 
 const config = useRuntimeConfig();
 // const siteTitle = `A post by ${config.public.siteOwnerName} of the ${config.public.siteName}`;
@@ -89,7 +90,7 @@ nuxtApp.$pageMetaTags({
 				<!-- <SeeMore :prev="prev" :next="next" /> -->
 			</template>
 			<template #not-found>
-				<ErrorMsg />
+				<MissingPage />
 			</template>
 		</ContentDoc>
 	</main>

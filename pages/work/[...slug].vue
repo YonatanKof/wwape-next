@@ -11,6 +11,7 @@ const { data, error } = await useContentData(cleanPath, async () => {
 		article: await article,
 	};
 });
+if (!data.value?.article) throwPageNotFound(error.value);
 
 const config = useRuntimeConfig();
 
@@ -69,7 +70,7 @@ function confirm() {
 				</main>
 			</template>
 			<template #not-found>
-				<ErrorMsg />
+				<MissingPage />
 			</template>
 		</ContentDoc>
 	</main>
