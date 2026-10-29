@@ -1,7 +1,7 @@
 
 <script setup>
 // Fetching data
-const { path, params } = useRoute();
+const { params } = useRoute();
 const designCountLimit = 16;
 
 const getPageLimit = (totalPosts) => {
@@ -12,18 +12,18 @@ const getPageNumber = () => {
     return Number(params.number);
 };
 
-// Attempt to get the number
-const router = useRouter();
-let pageNo;
-try {
-    pageNo = getPageNumber();
-    if (isNaN(pageNo) || pageNo <= 0) {
-        router.replace('/design/');
-    }
-} catch (err) {
-    console.error(err);
-    router.replace('/design/');
-}
+const pageNo = getPageNumber();
+if (!Number.isInteger(pageNo) || pageNo < 1) throwPageNotFound();
+
+const { data: pageItems } = await useContentData(`design-page-items-${pageNo}`, () =>
+	queryContent('/design')
+		.only(['title'])
+		.sort({ date: -1 })
+		.skip(designCountLimit * (pageNo - 1))
+		.limit(designCountLimit)
+		.find(),
+);
+if (!pageItems.value?.length) throwPageNotFound();
 
 const config = useRuntimeConfig();
 
@@ -75,10 +75,7 @@ nuxtApp.$pageMetaTags({
             </template>
             <!-- In case not found -->
             <template #not-found>
-                <!-- Show hero and message -->
-                <section id="main">
-                    <ItemList :data="[]" message="There are no posts in this page, maybe try searching on another one."/>
-                </section>
+                <MissingPage />
             </template>
         </ContentQuery>
     </main>

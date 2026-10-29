@@ -2,14 +2,6 @@
 const config = useRuntimeConfig();
 const { path } = useRoute();
 const cleanPath = path.replace(/\/+$/, '');
-// For the previous & next items
-const { data: surround } = await useContentData(`design-surround-${cleanPath}`, () =>
-	queryContent('/design')
-		.only(['_path', 'title', 'social_image'])
-		.sort({ date: -1 })
-		.findSurround(cleanPath),
-);
-const [prev, next] = surround.value ?? [null, null];
 // Data for the meta tags ↓
 const { data, error } = await useContentData(cleanPath, async () => {
 	// Remove a trailing slash in case the browser adds it, it might break the routing
@@ -19,6 +11,15 @@ const { data, error } = await useContentData(cleanPath, async () => {
 		article: await article,
 	};
 });
+if (!data.value?.article) throwPageNotFound(error.value);
+// For the previous & next items
+const { data: surround } = await useContentData(`design-surround-${cleanPath}`, () =>
+	queryContent('/design')
+		.only(['_path', 'title', 'social_image'])
+		.sort({ date: -1 })
+		.findSurround(cleanPath),
+);
+const [prev, next] = surround.value ?? [null, null];
 
 // Set the meta
 const dynamicUrl = config.public.baseUrl;
@@ -61,7 +62,7 @@ nuxtApp.$pageMetaTags({
 				<SeeMore :prev="prev" :next="next" />
 			</template>
 			<template #not-found>
-				<ErrorMsg />
+				<MissingPage />
 			</template>
 		</ContentDoc>
 	</main>
