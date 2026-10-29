@@ -1,4 +1,7 @@
+import { siteUrl } from './utils/site-url';
+
 const siteOwnerNameHere = 'Yonatan Ben Knaan';
+// Social images are still prefixed with this deploy URL. Page URLs use siteUrl.
 const baseUrlHere = process.env.DEPLOY_PRIME_URL;
 const SiteNameHere = 'WWApe';
 
@@ -15,9 +18,9 @@ export default defineNuxtConfig({
 		'@nuxtjs/robots',
 		'@nuxtjs/sitemap',
 	],
-	// Always the production origin. Canonical tags still read DEPLOY_PRIME_URL.
+	// Production origin for sitemap, robots, and canonical URLs.
 	site: {
-		url: 'https://wwape.com',
+		url: siteUrl,
 		name: 'WWApe',
 	},
 	robots: {

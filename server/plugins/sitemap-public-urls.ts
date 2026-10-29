@@ -1,4 +1,6 @@
-const PRODUCTION_ORIGIN = 'https://wwape.com';
+import { siteUrl } from '../../utils/site-url';
+
+const PRODUCTION_ORIGIN = siteUrl;
 const CV_PATH = '/temp/cv';
 
 function pathnameOf(loc: string) {

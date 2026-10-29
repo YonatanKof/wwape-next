@@ -1,9 +1,8 @@
+import { absolutePageUrl } from '~/utils/site-url';
+
 export default defineNuxtPlugin(() => {
 	const config = useRuntimeConfig();
-	const { path } = useRoute();
-	const cleanPath = path.replace(/\/+$/, '');
-	const dynamicUrl = config.public.baseUrl;
-	const canonicalPath = dynamicUrl + cleanPath;
+	const route = useRoute();
 
 	// This is my abstraction for setting meta tags
 	const usePageMetaTags = ({
@@ -35,10 +34,12 @@ export default defineNuxtPlugin(() => {
 		metaImageWidth = 1200,
 		metaImageHeight = 630,
 		metaImageType = 'image/jpeg' as 'image/jpeg' | 'image/gif' | 'image/png' | null | undefined,
-		metaCanonicalPath = canonicalPath,
+		metaCanonicalPath = undefined as string | undefined,
 		metaPublishedTime = undefined,
 		metaModifiedTime = undefined,
 	} = {}) => {
+		const canonicalHref = () => metaCanonicalPath ?? absolutePageUrl(route.path);
+
 		useHead({
 			titleTemplate: (titleChunk) => {
 				return titleChunk ? `${titleChunk} - ` + metaTitle : metaTitle;
@@ -48,7 +49,7 @@ export default defineNuxtPlugin(() => {
 				{
 					hid: 'canonical',
 					rel: 'canonical',
-					href: metaCanonicalPath,
+					href: canonicalHref,
 				},
 				{
 					rel: 'icon',
@@ -77,6 +78,7 @@ export default defineNuxtPlugin(() => {
 			ogSiteName: metaSiteName,
 			ogDescription: () => metaDesc,
 			ogType: metaOgType,
+			ogUrl: canonicalHref,
 			ogImage: metaImg,
 			ogImageAlt: metaImgAlt,
 			ogImageWidth: metaImageWidth,
