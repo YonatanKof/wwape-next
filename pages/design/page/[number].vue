@@ -25,11 +25,9 @@ const { data: pageItems } = await useContentData(`design-page-items-${pageNo}`, 
 );
 if (!pageItems.value?.length) throwPageNotFound();
 
-const config = useRuntimeConfig();
-
 const nuxtApp = useNuxtApp();
 nuxtApp.$pageMetaTags({
-	metaTitle: `Amazing design work and illustrations by ${config.public.siteOwnerName} of the ${config.public.siteName}`,
+	metaTitle: `Design & illustration – Page ${pageNo} | WWApe`,
 	metaDesc: 'Browse a collection of personal design projects and illustrations that explore creativity in everyday life. Simple, expressive, and visually engaging pieces that reflect a unique artistic style',
 	metaImg: '/images/designs-social.jpg',
 	metaImgAlt: 'Social cover for this site design page',

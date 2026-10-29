@@ -32,7 +32,7 @@ const cleanDescription = data.value?.article?.description.replace(/<[^>]*>/g, ''
 
 const nuxtApp = useNuxtApp();
 nuxtApp.$pageMetaTags({
-	metaTitle: `A post by ${config.public.siteOwnerName} of the ${config.public.siteName}`,
+	metaTitle: 'Post | WWApe',
 	metaTitleData: data.value?.article?.title,
 	metaDesc: cleanDescription,
 	metaImg: image,

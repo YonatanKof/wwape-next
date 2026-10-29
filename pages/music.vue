@@ -1,8 +1,7 @@
 <script setup>
-const config = useRuntimeConfig();
 const nuxtApp = useNuxtApp();
 nuxtApp.$pageMetaTags({
-	metaTitle: `Playlists and Mixes by ${config.public.siteOwnerName} of the ${config.public.siteName}`,
+	metaTitle: 'Playlists & DJ mixes | WWApe',
 	metaDesc: 'Listen to eclectic DJ mixes and curated playlists featuring a blend of electronic, indie, and ambient sounds. Perfect for work or play',
 	metaImg: '/images/music-social.jpg',
 	metaImgAlt: 'Social cover for this site posts page',

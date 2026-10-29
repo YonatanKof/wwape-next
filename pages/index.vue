@@ -1,6 +1,8 @@
 <script setup>
 const nuxtApp = useNuxtApp();
-nuxtApp.$pageMetaTags();
+nuxtApp.$pageMetaTags({
+	metaTitle: 'Yonatan Ben Knaan – Design, art, writing & UX | WWApe',
+});
 
 const { data: design } = await useContentData('design-random', async () => {
 	const all = await queryContent('design')
