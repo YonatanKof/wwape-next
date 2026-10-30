@@ -1,7 +1,7 @@
 <script setup>
 const nuxtApp = useNuxtApp();
 nuxtApp.$pageMetaTags({
-	metaTitle: 'Posts on design & what not | WWApe',
+	metaTitle: 'Posts on whatnot by Yonatan Ben Knaan | WWApe',
 	metaDesc: 'Browse a collection of personal design projects and illustrations that explore creativity in everyday life. Simple, expressive, and visually engaging pieces that reflect a unique artistic style',
 	metaImg: '/images/posts-social.jpg',
 	metaImgAlt: 'Social cover for this site posts page',

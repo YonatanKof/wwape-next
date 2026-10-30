@@ -24,7 +24,7 @@ const { $formatDate } = useNuxtApp();
 
 const nuxtApp = useNuxtApp();
 nuxtApp.$pageMetaTags({
-	metaTitle: 'Product design case study | WWApe',
+	metaTitle: 'Yonatan Ben Knaan | WWApe',
 	metaTitleData: data.value?.article?.title,
 	metaDesc: cleanDescription,
 	metaImg: image,

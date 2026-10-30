@@ -1,7 +1,7 @@
 <script setup>
 const nuxtApp = useNuxtApp();
 nuxtApp.$pageMetaTags({
-	metaTitle: 'Product design work | WWApe',
+	metaTitle: 'Product design by Yonatan Ben Knaan | WWApe',
 	metaDesc: 'Browse a collection of professional product design (UX/UI) projects',
 	metaImg: '/images/work-social.jpg',
 	metaImgAlt: 'Social cover for this site work page',

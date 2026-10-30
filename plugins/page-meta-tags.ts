@@ -42,7 +42,7 @@ export default defineNuxtPlugin(() => {
 		// Item pages pass the content title as metaTitleData. ContentDoc also
 		// writes that raw title into <title> and og:title, so this string is
 		// the document title, and og:title is registered above useContentHead.
-		const pageTitle = metaTitleData ? `${metaTitleData} – ${metaTitle}` : metaTitle;
+		const pageTitle = metaTitleData ? `${metaTitleData} by ${metaTitle}` : metaTitle;
 
 		useHead({
 			title: pageTitle,
