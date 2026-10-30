@@ -1,9 +1,7 @@
 <script setup>
-const config = useRuntimeConfig();
-
 const nuxtApp = useNuxtApp();
 nuxtApp.$pageMetaTags({
-	metaTitle: `Amazing product works by ${config.public.siteOwnerName} of the ${config.public.siteName}`,
+	metaTitle: 'Product design by Yonatan Ben Knaan | WWApe',
 	metaDesc: 'Browse a collection of professional product design (UX/UI) projects',
 	metaImg: '/images/work-social.jpg',
 	metaImgAlt: 'Social cover for this site work page',

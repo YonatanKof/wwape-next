@@ -6,7 +6,7 @@ export default defineNuxtPlugin(() => {
 
 	// This is my abstraction for setting meta tags
 	const usePageMetaTags = ({
-		metaTitle = `A site by ${config.public.siteOwnerName} of the ${config.public.siteName}`,
+		metaTitle = 'Yonatan Ben Knaan – Design, art, writing & UX | WWApe',
 		metaAuthor = config.public.siteOwnerName,
 		metaSiteName = config.public.siteName,
 		// metaArticleAuthor = undefined,
@@ -39,12 +39,22 @@ export default defineNuxtPlugin(() => {
 		metaModifiedTime = undefined,
 	} = {}) => {
 		const canonicalHref = () => metaCanonicalPath ?? absolutePageUrl(route.path);
+		// Item pages pass the content title as metaTitleData. ContentDoc also
+		// writes that raw title into <title> and og:title, so this string is
+		// the document title, and og:title is registered above useContentHead.
+		const pageTitle = metaTitleData ? `${metaTitleData} by ${metaTitle}` : metaTitle;
 
 		useHead({
-			titleTemplate: (titleChunk) => {
-				return titleChunk ? `${titleChunk} - ` + metaTitle : metaTitle;
-			},
+			title: pageTitle,
+			titleTemplate: () => pageTitle,
 			htmlAttrs: { lang: 'en' },
+			meta: [
+				{
+					property: 'og:title',
+					content: pageTitle,
+					tagPriority: 'high',
+				},
+			],
 			link: [
 				{
 					hid: 'canonical',
@@ -74,7 +84,7 @@ export default defineNuxtPlugin(() => {
 			articlePublishedTime: metaPublishedTime,
 			articleModifiedTime: metaModifiedTime,
 
-			ogTitle: () => (metaTitleData ? metaTitleData + ` - ` + metaTitle : metaTitle),
+			ogTitle: pageTitle,
 			ogSiteName: metaSiteName,
 			ogDescription: () => metaDesc,
 			ogType: metaOgType,
@@ -85,7 +95,7 @@ export default defineNuxtPlugin(() => {
 			ogImageHeight: metaImageHeight,
 			ogImageType: metaImageType,
 
-			twitterTitle: () => (metaTitleData ? metaTitleData + ` - ` + metaTitle : metaTitle),
+			twitterTitle: pageTitle,
 			twitterDescription: () => metaDesc,
 			twitterCard: metaTwitterCard,
 			twitterSite: metaTwitterSite,
