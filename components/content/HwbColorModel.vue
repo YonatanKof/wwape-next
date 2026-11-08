@@ -1,6 +1,8 @@
 <script setup lang="ts">
 const color = ref('hwb(0 0% 0%)');
-const baseHue = ref(Math.floor(Math.random() * 360));
+// Created once on the server and reused from the Nuxt payload. A new
+// Math.random() during client setup does not match the server markup.
+const baseHue = useState('hwb-color-model-base-hue', () => Math.floor(Math.random() * 360));
 </script>
 
 <template>
