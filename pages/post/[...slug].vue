@@ -60,13 +60,12 @@ nuxtApp.$pageMetaTags({
 							<hr />
 							<h3 id="sub-title" v-html="doc.description"></h3>
 						</div>
-						<UnLazyImage
+						<PriorityCover
+							v-if="doc.cover_image"
 							id="article-image"
-							:thumbhash="doc.cover_image_thumbhash"
 							:src="doc.cover_image"
 							:alt="doc.image_alt"
-							:height="doc.cover_image_height"
-							auto-sizes
+							sizes="(max-width: 880px) 100vw, 640px"
 						/>
 					</section>
 					<hr />

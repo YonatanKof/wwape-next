@@ -69,7 +69,13 @@ export default defineNuxtPlugin(() => {
 				{
 					rel: 'icon',
 					href: '/favicon.ico',
+					sizes: '32x32',
 					type: 'image/x-icon',
+				},
+				{
+					rel: 'apple-touch-icon',
+					href: '/apple-touch-icon.png',
+					sizes: '180x180',
 				},
 			],
 		});
