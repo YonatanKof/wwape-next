@@ -17,15 +17,21 @@ const props = defineProps({
 	modalBigImage: {
 		type: String,
 	},
+	symbols: {
+		type: Array,
+		default: () => [],
+	},
+	symbolIndex: {
+		type: Number,
+		default: 0,
+	},
 });
 
 const { open, close } = useModal({
 	component: Modal,
 	attrs: {
-		title: props.modalTitle,
-		description: props.modalDescription,
-		shape: props.modalShape,
-		bigImage: props.modalBigImage,
+		symbols: props.symbols,
+		startIndex: props.symbolIndex,
 		onConfirm() {
 			close();
 		},
