@@ -73,34 +73,18 @@ const priorityPlaceholder = computed(() => {
 		<Carousel v-bind="carouselConfig">
 			<Slide v-for="(item, index) in contentData" :key="index">
 				<h6 v-if="withTitle">{{ item.title }}</h6>
-				<NuxtImg
-					v-if="priority && index === 0"
+				<SizedImage
 					class="carousel-image"
+					:eager="priority && index === 0"
 					:src="item.cover_image"
 					:alt="item.image_alt"
-					width="1000"
-					:height="item.cover_image_height"
-					sizes="100vw md:55vw lg:400px"
-					format="webp"
-					quality="80"
-					loading="eager"
-					fetchpriority="high"
-					decoding="async"
-					preload
+					:thumbhash="hashMap[item.cover_image]?.hash ?? item.cover_image_thumbhash"
+					sizes="(max-width: 768px) 100vw, (max-width: 1024px) 55vw, 400px"
 					:style="
-						priorityPlaceholder
+						priority && index === 0 && priorityPlaceholder
 							? { backgroundImage: `url(${priorityPlaceholder})`, backgroundSize: 'cover' }
 							: undefined
 					"
-				/>
-				<UnLazyImage
-					v-else
-					class="carousel-image"
-					:thumbhash="hashMap[item.cover_image]?.hash ?? item.cover_image_thumbhash"
-					:src="item.cover_image"
-					:alt="item.image_alt"
-					width="1000"
-					:height="item.cover_image_height"
 				/>
 			</Slide>
 			<template #addons>
