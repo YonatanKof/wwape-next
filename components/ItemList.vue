@@ -67,7 +67,14 @@ const { $formatDate } = useNuxtApp();
 					<p v-if="showDate" id="mata-data">{{ $formatDate(item.date) }}</p>
 					<p v-if="item.description && showDesc" v-html="item.description"></p>
 				</div>
+				<PriorityCover
+					v-if="index < 2 && item.cover_image"
+					:src="item.cover_image"
+					:alt="item.image_alt"
+					sizes="(max-width: 640px) 50vw, 420px"
+				/>
 				<UnLazyImage
+					v-else
 					:thumbhash="coverHash(item.cover_image)"
 					:src="item.cover_image"
 					:alt="item.image_alt"
