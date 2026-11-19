@@ -73,13 +73,12 @@ const { $formatDate } = useNuxtApp();
 					:alt="item.image_alt"
 					sizes="(max-width: 640px) 50vw, 420px"
 				/>
-				<UnLazyImage
+				<SizedImage
 					v-else
-					:thumbhash="coverHash(item.cover_image)"
 					:src="item.cover_image"
 					:alt="item.image_alt"
-					width="1000"
-					:height="coverHeight(item.cover_image, item.cover_image_height)"
+					:thumbhash="coverHash(item.cover_image)"
+					sizes="(max-width: 640px) 50vw, 420px"
 					:style="coverRatio(item.cover_image) ? { aspectRatio: coverRatio(item.cover_image) } : undefined"
 				/>
 			</NuxtLink>

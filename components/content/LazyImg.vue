@@ -70,14 +70,14 @@ const { open, close } = useModal({
 </script>
 <template>
 	<span class="lazy-img" @click="open" @keyup.enter="open">
-		<UnLazyImage
+		<SizedImage
 			:thumbhash="resolvedThumbhash"
 			:src="refinedSrc"
 			:alt="alt"
 			:width="width"
 			:height="height"
+			sizes="(max-width: 880px) 100vw, 880px"
 			:style="resolvedPlaceholderRatio ? { aspectRatio: resolvedPlaceholderRatio } : undefined"
-			auto-sizes
 		/>
 		<em v-if="desc" v-html="desc"></em>
 	</span>
