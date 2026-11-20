@@ -90,6 +90,8 @@ const { $formatDate } = useNuxtApp();
 					:modalShape="item.shape"
 					:modalImage="item.image"
 					:modalBigImage="item.bigImage"
+					:symbols="designData"
+					:symbol-index="index"
 				/>
 			</div>
 		</template>
