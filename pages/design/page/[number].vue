@@ -50,7 +50,7 @@ nuxtApp.$pageMetaTags({
             <!-- In case it is found -->
             <template v-slot="{ data }">
                 <section id="main" class="!pt-0">
-                    <ItemList :design-data="data" />
+                    <ItemList :design-data="data" :showDesc="false" />
                     <ContentQuery
                         path="/design"
                         :only="['title', 'date', '_path', 'cover_image', 'cover_image_thumbhash', 'cover_image_height', 'image_alt', 'description']"
