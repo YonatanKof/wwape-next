@@ -29,6 +29,9 @@ export default defineNitroPlugin((nitroApp) => {
 			// content/cv/my-cv.md has no page route.
 			if (path.startsWith('/cv/'))
 				return false;
+			// Button playground is noindex and stays out of the sitemap.
+			if (path === '/playground' || path.startsWith('/playground/'))
+				return false;
 			return true;
 		});
 

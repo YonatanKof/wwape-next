@@ -5,7 +5,7 @@ const onClick = () =>
 </script>
 
 <template>
-	<button aria-label="Color Mode" @click="onClick">
+	<IconButton aria-label="Color Mode" @click="onClick">
 		<!-- ColorScheme placeholder tag is a span, I style it below -->
 		<ColorScheme placeholder="...">
 			<template v-if="colorMode.value === 'dark'">
@@ -19,16 +19,13 @@ const onClick = () =>
 				</SvgIconBase>
 			</template>
 		</ColorScheme>
-	</button>
+	</IconButton>
 </template>
 <style scoped>
-button {
-	padding: 0.5em;
-}
 /* ColorScheme placeholder tag is this span */
-/* The width and height are the same as the SvglconBase.vue size prop: 1.25rem */
+/* The width and height are the same as the SvgIconBase.vue size prop: 1.25rem */
 span {
-    width: 1.25rem;
-    height: 1.25rem;
+	width: 1.25rem;
+	height: 1.25rem;
 }
 </style>
